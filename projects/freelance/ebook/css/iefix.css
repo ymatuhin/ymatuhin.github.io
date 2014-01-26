@@ -1,0 +1,9 @@
+#footer {
+	margin-top:20px;
+}
+.centerbook li:first-child span{
+	margin-top:-18px;
+}
+.centerbook li{
+	height:100%;
+}

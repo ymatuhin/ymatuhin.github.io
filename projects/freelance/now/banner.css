@@ -1,0 +1,76 @@
+body, html {height:100%;}
+body {position:relative;}
+#shadow {
+	display:none;
+	position:absolute;
+	z-index:9;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(bg.png) 0 0;
+}
+#shadow .banner .shadoww{
+	background:#37528e;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	behavior: url(PIE.php);
+	height:266px;
+}
+#shadow .banner {
+	position:relative;
+	width:542px;
+	height:266px;
+	left:50%;
+	top:50%;
+	margin:-133px 0 0 -271px;
+}
+#shadow .banner .close{
+	position:relative;
+	display:block;
+	color:#fff;
+	font:12px Calibri,sans-serif;
+	float:right;
+	text-decoration:none;
+	padding-right:20px;
+	right:10px;
+	top:12px;
+}
+#shadow .banner .close span{
+	position:absolute;
+	right:0;
+	top:0;
+	display:block;
+	height:16px;
+	width:16px;
+	background:url(icons.jpg) -145px -38px no-repeat;
+	cursor:pointer;
+}
+#shadow .banner .follow{
+	position:relative;
+	display:inline;
+	color:#fff;
+	font:24px Calibri,sans-serif;
+	top:86px;
+	left:51px;
+}
+#shadow .banner .follow span{
+	position:absolute;
+	right:-171px;
+	top:-14px;
+	display:block;
+	width:144px;
+	height:54px;
+	background:url(icons.jpg) 0 0 no-repeat;
+}
+#shadow .banner .like{
+	display:block;
+	position:absolute;
+	top:175px;
+	left:194px;
+	width:158px;
+	height:53px;
+	background:url(icons.jpg) 0 -54px no-repeat;
+}

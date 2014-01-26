@@ -1,0 +1,71 @@
+@import url("common-ie.css");
+.tovar {
+	margin-left:-2px;
+}
+.line a {
+    color: #464646; /* ÷вет ссылок */
+}
+.line a:visited {
+	color: #464646; /* ÷вет посещенных ссылок */
+}
+.line a:active {
+    color: #464646; /* ÷вет активных ссылок */
+}
+
+.inputArea form input,  .inputArea form textarea  {
+	clear:none;
+	padding:0;
+}
+.inputArea form input.hover {
+	margin-top:1px;
+	margin-bottom:-17px;
+}
+.text5 {
+	height:28px;
+	position:absolute;
+	top:250px;
+}
+.code {
+	position:absolute;
+	top:255px;
+	left:80px;
+	margin-bottom:0px;
+	width:10px;
+}
+.send {
+	position:absolute;
+	top:255px;
+	left:250px;
+}
+.tovar {
+	margin-left:-2px;
+}
+a.button:hover {
+	color:#fff !important;
+}
+*{
+		behavior: expression(
+		onmouseover = function() {this.className += ' hover'},
+		onmouseout = function() {this.className = this.className.replace('hover', '')},
+		style.behavior = null
+        );
+}
+a.container-zayavka.hover{
+    	display:block;
+}
+.forma .inputArea form.hover, .forma .inputArea.hover , .forma.hover {
+	display:block;
+	zoom:1;
+}
+
+.inputArea form label {
+	float:left;
+	display:block;
+	color:#fff;
+	text-align:right;
+	width:71px;
+	padding:2px 9px 0 0;
+	margin:15px 0 0;
+	font: 12px Tahoma;
+	font-weight:bold;
+}

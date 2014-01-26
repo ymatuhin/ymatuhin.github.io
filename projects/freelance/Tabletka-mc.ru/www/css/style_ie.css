@@ -1,0 +1,35 @@
+* html #wrapper,
+* html #footer {
+	width: expression((documentElement.clientWidth||document.body.clientWidth)<980?'980px':'');
+}	
+.h-box {margin-top:-2px;}
+
+#header {padding-bottom:18px;}
+
+.topmenu li a {position:relative;cursor:pointer;}
+
+.leftnav {padding:18px 0 10px 0px;list-style-image:url(../img/bull-ie7.png);}
+.leftnav li{padding:3px 0 10px 0px;}
+.leftnav li a{	padding-left:17px;}
+
+#footer input[type=text] {
+	padding-top:6px;
+}
+table tr td{
+	background:url(../img/nav-sideleft-hr.png) bottom left repeat-x;
+}
+table tr td a.complete  {margin-left:-26px;}
+
+.mini-nav {
+	padding:0px 0 10px 0px;
+	list-style-image:url(../img/mini-nav-arrow.png);
+	list-style-position: inside;
+	font:18px 'PFAgoraSansProMedium', Arial, sans-serif;zoom:1;
+}
+.mini-nav li{
+	padding:7px 0 7px 4px;
+	margin-left:4px;zoom:1;
+	background:url(../img/nav-sideleft-hr.png) bottom left no-repeat;
+}
+.mini-nav li.active{padding-left:30px !important;margin-left:-22px;}
+.mini-nav li a{ zoom:1;}

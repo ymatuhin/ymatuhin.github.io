@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Простое горизонтальное меню с ссылками в виде блоков(ширина блоков выставляется автоматически)</title>
+	<meta name="robots" content="noindex,nofollow">
+<style type="text/css">
+body,html {
+	margin:0;
+	padding:0;
+}
+#nav{
+	width:900px;
+	border:1px solid #000;
+	float:right;
+	list-style:none;
+	margin:13px 0 0 -1px;
+	padding:0 30px 0 0;
+	background-color:transparent;
+	height:28px;
+	font:14px/28px  Arial, Helvetica, sans-serif;
+}
+#nav li{
+	border-left:1px solid #fff;
+	padding:5px 18px;
+	position:relative;
+	float:left;
+}
+#nav a{
+	color:#FFF;
+	float:left;
+}
+#back{
+	width:1000px;
+	background:url(gradient.png);
+	height:49px;
+}
+#m{
+	display:block;
+	background:url('main_m.png');
+	width:23px;
+	height:23px;
+	float:left;
+	border-bottom:1px solid #fff;
+}
+</style>
+</head>
+<body>
+	<div id="back">
+		<ul id="nav">
+			<li style="border-left:0px solid #fff;"><a href="#" id="m"></a></li>
+			<li><a href="#">Портфолио</a></li>
+			<li><a href="#">Команда</a></li>
+			<li><a href="#">Дизайн интерьера</a></li>
+			<li><a href="#">Ремонт и отделка</a></li>
+			<li><a href="#">Контактная информация</a></li>
+		</ul>
+	</div>
+</body>
+</html>
