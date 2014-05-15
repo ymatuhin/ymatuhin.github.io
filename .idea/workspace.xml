@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c198968-e82a-422f-85e4-fa5167008753" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/analize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/articles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/css/pfagorasanspro-medium-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/css/pfagorasanspro-medium-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/css/pfagorasanspro-medium-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/css/pfagorasanspro-medium-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/css/style_ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/articles-sideright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/banner-sideright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/bull-ie7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/bull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/findfield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/footer-hr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/bgtop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/bubles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/clouds.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/docs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/left-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/plus1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/plus2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/plus3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/plus4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/plus5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/plus6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/pulse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/right-col-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/right-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/header/sity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/job-sideright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/line1-calk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/menu-active-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/menu-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/menu-shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/menu-slash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/min-bull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/mini-nav-active (2).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/mini-nav-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/mini-nav-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/nav-sideleft-hr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/news-date.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/star-sideright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/img/subm-clear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/inner-with-table.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/inner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/Tabletka-mc.ru/www/news.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/css/iefix.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/img/header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/img/right-tizer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/img/sidebar-title-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/img/sidebar-title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/img/top-tizer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/ebook/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/images/action-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/images/photo-min.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/images/photo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/images/video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/active-inner-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/banner240x140.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/banner240x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/banner460x90.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/banner980x90.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/bg-inner-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/button-feedback.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/button-partners.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/clock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/descr-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/footer-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/input-text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/left-col-head.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/logo-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/menu-bg-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/menu-slash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/rg-ru.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/ria-news.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/search-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/search-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/img/top-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/greenopenrussia/sobitie.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/images/first-face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/images/gallery-big-img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/images/gallery-min-img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/images/news-img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/images/unido.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/banner200x145.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/banner505x83.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/bg-flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/bg-menu-slash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/bg-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/button-lang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/face-buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/face-slash.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/flags.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/gallery-big-ramka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/gallery-min-ramka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/shadow-news-img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/img/youtube.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/icie/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/menu_freelance/fixie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/menu_freelance/gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/menu_freelance/main_m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/menu_freelance/menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/now/PIE.htc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/now/PIE.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/now/banner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/now/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/now/icons.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/now/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/nav-hove.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/PIE.htc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/css/lte-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/css/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/button.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/content-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/content-bottom2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/days.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/fon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/menu-l-r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/menubg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/nav (2).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/nav-hove-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/nav-hove.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/outer-zamer-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/pager.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/sendbutton.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/slider-bg-bot - копия.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/slider-bg-bot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/slider-bg-top - копия.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/slider-bg-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/zamer-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/img/zamer-label.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/js/jquery.cycle.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/js/jquery.placeholder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/outer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/slides/slide-one.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/slides/slide-three.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/www/slides/slide-two.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/perspektiva/дополнения.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/PIE.htc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/PIE.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/css/ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/expressInstall.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_01_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_01_thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_02_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_02_thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_03_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_03_thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_04_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_04_thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_05_large.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/image_05_thumb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/images/venilyator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/img/buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/img/guarantee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/img/intro.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/img/promo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/img/shop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/img/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/inner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/intro.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/admin1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/admin2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/admin4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/cap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/admin/order.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/help.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/shop/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/podarki/www/swfobject.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/css/960.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/002_1.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/014.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/DSC_0243.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/images/DSC_0271.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/051.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/klin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/img/submit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/prom32/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/OrganicTabs/css/holmes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/OrganicTabs/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/OrganicTabs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/OrganicTabs/js/organictabs.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/OrganicTabs/js/withoutPlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/OrganicTabs/withoutPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/border-radius.htc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/border-radius/border-radius.htc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/border-radius/border-radius.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/common-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/common-ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/holmes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/inside-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/inside.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/monitoring-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/monitoring.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/newspaperc-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/newspaperc-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/newspaperc-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/newspaperc-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/tovar-aksessuar (2).css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/tovar-aksessuar-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/tovar-aksessuar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/trimble-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/css/trimble.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/asfaltouklad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/avtograder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/buldozer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/code.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/exkovator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/gps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/inside-cm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/inside-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/inside-type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/liveinternet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/magellan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/sistemi-lazernogo-skanirovaniya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/sistemi-monitoringa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/sistemi-upravleniya-tehnikoy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/sokkia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/taheometri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/top100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/topcon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/tovar-aksessuar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/tovar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/images/trimble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/button-inside-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/button-inside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/inside-background-alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/inside-monitoring-button-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/Optimization Report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-active-ie6-2nd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-active-ie6-3rd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-first-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/old/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/img/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/inside-monitoring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/inside.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/accordian-src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/accordian.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/forms (2).js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/forms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/closeX.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar-black-border.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar-text-buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar-white-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar-white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar4-hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/controlbar4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/fullexpand.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/geckodimmer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/loader.white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/resize.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/scrollarrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/zoomin.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/graphics/zoomout.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/highslide-with-gallery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/highslide.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/highslide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/inside.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/pngfix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/js/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/tovar-aksessuar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/ftp/trimble.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/pravki.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/aboutcompany-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/aboutcompany.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/common-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/common-ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/holmes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/inside-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/inside.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/monitoring-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/monitoring.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/newspaperc-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/newspaperc-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/newspaperc-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/newspaperc-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/tovar-aksessuar-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/tovar-aksessuar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/trimble-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/css/trimble.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/asfaltouklad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/avtograder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/buldozer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/code.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/exkovator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/gps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/inside-cm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/inside-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/inside-type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/liveinternet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/magellan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/sistemi-lazernogo-skanirovaniya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/sistemi-monitoringa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/sistemi-upravleniya-tehnikoy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/sokkia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/taheometri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/top100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/topcon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/tovar-aksessuar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/tovar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/images/trimble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/button-inside-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/button-inside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/inside-background-alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/inside-monitoring-button-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/Optimization Report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-active-ie6-2nd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-active-ie6-3rd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-first-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/old/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/img/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/inside-monitoring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/inside.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/accordian-src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/accordian.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/forms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/closeX.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar-black-border.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar-text-buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar-white-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar-white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar4-hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/controlbar4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/fullexpand.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/geckodimmer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/loader.white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/resize.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/scrollarrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/zoomin.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/graphics/zoomout.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/highslide-with-gallery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/highslide.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/highslide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/inside.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/pngfix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/js/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/tovar-aksessuar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy-25.02/trimble.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/aboutcompany-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/aboutcompany.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/common-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/common-ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/holmes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/inside-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/inside.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/monitoring-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/monitoring.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/newspaperc-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/newspaperc-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/newspaperc-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/newspaperc-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/tovar-aksessuar-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/tovar-aksessuar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/trimble-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/css/trimble.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_nav_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_nav_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_se.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_shadow_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_title_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_title_main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_title_over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancy_title_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancybox-ie6.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancybox-ie678.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancybox-x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancybox-y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/fancybox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/jquery.easing-1.3.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/jquery.fancybox-1.3.4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/jquery.fancybox-1.3.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/jquery.fancybox-1.3.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/fancybox/jquery.mousewheel-3.0.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/asfaltouklad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/avtograder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/buldozer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/code.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/exkovator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/gps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/inside-cm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/inside-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/inside-type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/liveinternet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/magellan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/sistemi-lazernogo-skanirovaniya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/sistemi-monitoringa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/sistemi-upravleniya-tehnikoy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/sokkia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/taheometri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/top100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/topcon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/tovar-aksessuar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/tovar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/images/trimble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-active-ie6-2nd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-active-ie6-3rd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-first-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/button-inside-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/button-inside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/inside-background-alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/Optimization Report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-active-ie6-2nd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-active-ie6-3rd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-first-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/old/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/img/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/inside-monitoring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/inside.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/IE7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/IE8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/IE9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/ie7-squish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/jquery-1.4.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/organictabs.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/pngfix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/src/IE7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/src/IE8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/src/IE9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/src/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/js/src/ie7-squish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/tovar-aksessuar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www-rezerv-copy/trimble.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/common-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/common-ie8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/holmes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/inside-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/inside.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/monitoring-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/monitoring.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/newspaperc-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/newspaperc-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/newspaperc-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/newspaperc-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/tovar-aksessuar-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/tovar-aksessuar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/trimble-ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/css/trimble.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/asfaltouklad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/avtograder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/buldozer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/code.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/exkovator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/gps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/inside-cm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/inside-image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/inside-type.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/liveinternet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/magellan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/sistemi-lazernogo-skanirovaniya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/sistemi-monitoringa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/sistemi-upravleniya-tehnikoy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/sokkia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/taheometri.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/top100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/topcon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/tovar-aksessuar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/tovar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/images/trimble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/button-inside-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/button-inside.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/inside-background-alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/inside-monitoring-button-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/Optimization Report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-active-ie6-1st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-active-ie6-2nd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-active-ie6-3rd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-first-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-first-ie6-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-first-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-last-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back-last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akord-podmenu-back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/akordmenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/arrow-podrobnee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/button-zayavka-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/button-zayavka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/footer-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/inside-minitoring-gorizontal-line-begin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/inside-minitoring-gorizontal-line-end.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/inside-minitoring-gorizontal-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/inside-monitoring-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/list-item-style.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/menuborderdot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/navhover-ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/navhover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/old/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/right-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/search_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/sitemap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/tab-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/tab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/img/traktor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/inside-monitoring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/inside.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/accordian-src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/accordian.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/forms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/closeX.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar-black-border.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar-text-buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar-white-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar-white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar4-hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/controlbar4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/fullexpand.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/geckodimmer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/loader.white.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/resize.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/scrollarrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/zoomin.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/graphics/zoomout.cur" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/highslide-with-gallery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/highslide.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/highslide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/inside.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/pngfix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/js/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/tovar-aksessuar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/www/trimble.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/__MACOSX/._README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/__MACOSX/._index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/__MACOSX/._jquery-1.4.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/__MACOSX/._menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/__MACOSX/._style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/jquery-1.4.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/аккордеон/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/ajax.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/10_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/10_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/11_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/11_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/12_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/12_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/1_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/1_s (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/1_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/2_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/2_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/3_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/3_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/4_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/4_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/5_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/5_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/6_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/7_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/7_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/8_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/8_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/9_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/9_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_nav_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_nav_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_se.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancybox-x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancybox-y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancybox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.easing-1.3.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.fancybox-1.3.4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.fancybox-1.3.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.fancybox-1.3.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.mousewheel-3.0.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/jquery-1.4.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/ajax.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/10_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/10_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/11_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/11_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/12_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/12_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/1_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/1_s (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/1_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/2_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/2_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/3_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/3_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/4_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/4_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/5_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/5_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/6_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/6_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/7_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/7_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/8_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/8_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/9_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/example/9_s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_loading.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_nav_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_nav_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_ne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_nw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_se.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_sw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_shadow_w.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancy_title_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancybox-x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancybox-y.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/fancybox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.easing-1.3.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.fancybox-1.3.4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.fancybox-1.3.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.fancybox-1.3.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/fancybox/jquery.mousewheel-3.0.4.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/jquery-1.4.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/слайдер/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/NewsPaperCTTRegular-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/generator_config.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/newspaperc-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/newspaperc-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/newspaperc-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/newspaperc-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/specimen_files/easytabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/specimen_files/grid_12-825-55-15.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/specimen_files/specimen_stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/rusgeocom/шрифт/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/article.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/change.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS55F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS55F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS55F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS55F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS56F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS56F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS56F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS56F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS75F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS75F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS75F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS75F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS76F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS76F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS76F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/PTS76F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/style-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/article-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/article-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/article-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/article-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/sertificat1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/sertificat2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/images/slide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/active-page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-about1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-bot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-menu-inner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-menu-inner2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-menu2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bg-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/bull-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/button-slider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/input-text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/lang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/shadow-slider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/textarea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/img/vidjets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/js/jquery-1.4.4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/js/jquery.bxSlider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/js/slides.min.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/price.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/service.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/lastproject/vacancy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/article-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/article.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS55F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS55F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS55F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS55F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS56F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS56F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS56F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS56F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS75F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS75F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS75F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS75F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS76F-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS76F-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS76F-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/PTS76F-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/style-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/gallery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/article-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/article-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/article-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/article-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/sertificat1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/sertificat2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/images/slide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/active-page.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/bg-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/bg-about1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/bg-bot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/bg-menu-inner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/bg-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/bg-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/button-send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/button-slider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/input-text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/lang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/shadow-slider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/telephone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/textarea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/img/vidjets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/js/jquery-1.4.4.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/js/jquery.bxSlider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/js/slides.min.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/price.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/service.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/sd-service-ohrana/www/vacancy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/img/back-gradient.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/img/back-img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/img/block.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/img/hands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/podpiska-pokupatelya.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/site-zagluwka/podpiska-prodavca.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/2555255.rar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/css/ie7fix.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/img/buttonbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/img/hbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/img/header.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/img/img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/img/tel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/spb-nedvij/qwer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/css/ie7min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/css/jquery.ennui.contentslider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/css/jquery.lightbox-0.5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/act.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/active-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/adress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/contact-forms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/country-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/fot-btns.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/gr-range.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/main-bg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/map2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/nav-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/outer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/second-slogan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/sertifikat1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/sertifikat2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/sertifikat3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/slogan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/stars-mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/stars.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/sub-menu-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/bar/top-line.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/cs_leftImg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/cs_rightImg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/foto-r1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/corner.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/firm1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/firm2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/firm3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/firm4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/firm5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/ico-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/ico-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/ico-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/ico-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/ico-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/ico-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/mobile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/ico/mobile1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/lightbox-blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/lightbox-btn-close.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/lightbox-btn-next.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/lightbox-btn-prev.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/images/lightbox-ico-loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/jquery.ennui.contentslider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/jquery.lightbox-0.5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/jquery.lightbox-0.5.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/jquery.lightbox-0.5.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/js/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/licenzii.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/news.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/otel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/otziv.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/sovet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/strani.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/tours.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/freelance/vse-sezoni/tours_1.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots.txt" afterPath="$PROJECT_DIR$/robots.txt" />
+    </list>
+    <ignored path="ymatuhin.github.io_ym.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ymatuhin.github.io_ym" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13293944" vertical-offset="0" max-vertical-offset="2130">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="774" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ymatuhin.github.io_ym" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ymatuhin.github.io_ym" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ymatuhin.github.io_ym" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="css&#9;FILE&#9;file:///Users/ymatuhin/Projects/ymatuhin.github.io_ym/css/main.css" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c198968-e82a-422f-85e4-fa5167008753" name="Default" comment="" />
+      <created>1399220637893</created>
+      <updated>1399220637893</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13293944" vertical-offset="0" max-vertical-offset="2130">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
