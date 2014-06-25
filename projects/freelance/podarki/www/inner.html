@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="swfobject.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+	<script type="text/javascript">
+	  VK.init({apiId: 3024378, onlyWidgets: true});
+	</script>
+	<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen, projection" /><![endif]-->
+</head>
+<body onload="time()">
+<div id="wrapper" class="inner"a>
+	<div id="header">
+
+		<h1 class="logo">Чёткие подарки</h1>
+		<ul class="top-menu">
+			<li><a href="#">для неё</a></li>
+			<li><a href="#">для него</a></li>
+			<li><a href="#">для нас</a></li>
+		</ul>
+
+		<div class="shop">
+			<?
+			$strpath="shop/index.php";
+			$adrself=getcwd();
+			for($i=0; $i<100; $i++)
+			 {
+				if(file_exists("public_html"))break;
+				if (!file_exists($strpath)) chdir("..");
+				else break;
+			 }
+			include ($strpath);
+			chdir($adrself);
+			 ?>
+		</div>
+
+		<div class="clear"></div>
+
+		<ul class="main-menu">
+			<li><a href="#">Обратная связь</a>|</li>
+			<li><a href="#">FAQ</a>|</li>
+			<li><a href="#">Помощь</a>|</li>
+			<li><a href="#">Доставка и оплата</a>|</li>
+			<li><a href="#">Гарантия</a>|</li>
+			<li><a href="#">Правила покупки</a>|</li>
+			<li><a href="#">Карта сайта</a></li>
+		</ul>
+
+		<div class="clear"></div>
+
+		<div class="hbox">
+			<a href="#" class="title">100% Гарантия возврата</a>
+			<img src="img/guarantee.png" alt="" />
+			<p class="descr">Если Вам не понравится<br />покупке — мы <b>вернём Вам<br />деньги</b>. Купите четкий<br />подарок, и если вдруг не<br />удовлетворит в течение<br />7 дней — мы вернем всю<br />сумму за покупку!</p>
+		</div>
+
+		<div class="hbox">
+			<a href="#" class="title">Успей купить за полцены!!! </a>
+			<img src="img/promo.png" alt="" />
+			<p class="descr">Сегодня супер АКЦИЯ:<br /><b>СКИДКА до 50%</b> на всё!<br /><b>Успей купить</b> для себя и <br />любимых четкие подарки! <br /><br /><b>До конца акции:</b>
+				<span id="t" ></span>
+			</p>
+			<!-- Обратный счетчик -->
+			<script type="text/javascript">
+			timeend= new Date();
+			// IE и FF по разному отрабатывают getYear()
+			timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
+			// для задания обратного отсчета до определенной даты укажите дату в формате:
+			// timeend= new Date(ГОД, МЕСЯЦ-1, ДЕНЬ);
+			// Для задания даты с точностью до времени укажите дату в формате:
+			// timeend= new Date(ГОД, МЕСЯЦ-1, ДЕНЬ, ЧАСЫ-1, МИНУТЫ);
+			function time() {
+				today = new Date();
+				today = Math.floor((timeend-today)/1000);
+				tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+				tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+				thour=today%24; today=Math.floor(today/24);
+				timestr=thour+" ч. "+tmin+" мин. "+tsec+" с.";
+				document.getElementById('t').innerHTML=timestr;
+				document.getElementById('t1').innerHTML=timestr;
+				window.setTimeout("time()",1000);
+			}
+
+			</script>
+
+		</div>
+		<div class="hbox">
+			<a href="#" class="title">100% Гарантия возврата</a>
+			<img src="img/guarantee.png" alt="" />
+			<p class="descr">Если Вам не понравится<br />покупке — мы <b>вернём Вам<br />деньги</b>. Купите четкий<br />подарок, и если вдруг не<br />удовлетворит в течение<br />7 дней — мы вернем всю<br />сумму за покупку!</p>
+		</div>
+	</div><!-- #header-->
+
+	<div id="content">
+
+		<h2><span>Чёткие подарки</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Для нас</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Сетка складная для белья и игрушек</a></h2>
+
+		<h3>Сетка складная для белья и игрушек</h3>
+
+		<div class="leftbox">
+			<div id="gallery">
+				<div id="panel">
+					<img id="largeImage" src="images/image_01_large.jpg" width="610"/>
+				</div>
+
+				<div id="thumbs">
+					<img src="images/image_01_thumb.jpg" />
+					<img src="images/image_02_thumb.jpg" />
+					<img src="images/image_03_thumb.jpg" />
+					<img src="images/image_04_thumb.jpg" />
+					<img src="images/image_05_thumb.jpg" />
+				</div>
+			</div>
+			<script>
+
+			$('#thumbs').delegate('img','click', function(){
+				$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+				$('#description').html($(this).attr('alt'));
+			});
+
+			</script>
+
+			<p class="title">Характеристика</p>
+			<p>Телефон просто супер. Пользуюсь им с ноября, очень довольна. Интернет, летает. Очень шустрый! Не подводил, не зависал. <b>Очень</b> довольна камерой. С начало смутило то, что нет вспышки, а когда разобралась с настройками, поняла, что она там не очень и <b>нужна</b>. Камера класс! Очень удобное и интересное меню. К размерам <b>правда</b>, надо привыкнуть.</p>
+
+			<p class="title">Инструкция по применению</p>
+			<div id="vk_comments"></div>
+			<script type="text/javascript">
+			VK.Widgets.Comments("vk_comments", {limit: 5, width: "610", attach: "*"});
+			</script>
+		</div>
+		<div class="rightbox">
+			<p class="price"><s>200руб.</s>&nbsp; <span>115 руб.</span></p>
+			<div id="vk_like"></div>
+			<script type="text/javascript">
+			VK.Widgets.Like("vk_like", {type: "button", height: 18});
+			</script>
+			<p class="color">Выберете цвет и кликните «В КОРЗИНУ»</p>
+			<ul class="buttons">
+				<li><a class="green" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Зеленый</a></li>
+				<li><a class="pink" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Розовый</a></li>
+				<li><a class="red" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Красный</a></li>
+				<li><a class="violet" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Фиолетовый</a></li>
+				<li><a class="green" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Зеленый</a></li>
+				<li><a class="pink" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Розовый</a></li>
+				<li><a class="red" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Красный</a></li>
+				<li><a class="violet" href="javascript:void(0);" onclick="this.style.backgroundPosition = '0 -50px';">Фиолетовый</a></li>
+			</ul>
+
+			<a href="#" class="other">Посмотреть мои покупки</a>
+
+			<div class="add">
+				<p class="dop">С этим подарком обычно берут:</p>
+				<div class="tovar">
+					<img src="images/venilyator.png" alt="" />
+					<a href="#" class="name">USB вентилятор металлический</a>
+					<p><s>750 руб.</s> 375 руб.</p>
+					<a class="in" href="javascript:c('1341488939')">Добавить в корзину</a>
+				</div>
+				<div class="tovar">
+					<img src="images/venilyator.png" alt="" />
+					<a href="#" class="name">USB вентилятор металлический</a>
+					<p><s>750 руб.</s> 375 руб.</p>
+					<a class="in" href="javascript:c('1341488939')">Добавить в корзину</a>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div><!-- #content-->
+
+	<div id="footer">
+
+		<div class="menu-line"></div>
+		<ul class="main-menu">
+			<li><a href="#">Обратная связь</a>|</li>
+			<li><a href="#">FAQ</a>|</li>
+			<li><a href="#">Помощь</a>|</li>
+			<li><a href="#">Доставка и оплата</a>|</li>
+			<li><a href="#">Гарантия</a>|</li>
+			<li><a href="#">Правила покупки</a>|</li>
+			<li><a href="#">Карта сайта</a></li>
+		</ul>
+		<div class="menu-line"></div>
+		<p class="tel">тел.: 8 908 161-33-94</p>
+		<p class="mail">Эл.почта: ip.blinov@gmail.com</p>
+		<p class="copy">2012&copy; Chetkiepodarki.ru</p>
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+</body>
+</html>

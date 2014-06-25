@@ -1,0 +1,733 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, caption, table, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+input[type="checkbox"], input[type="radio"] { vertical-align: middle }
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+select, textarea {
+    margin: 1px;
+    padding: 3px;
+}
+ol, ul { list-style: none }
+li, dd { margin-bottom: 6px }
+p { margin: 5px 0 }
+body { background: #fff url(../images/bar/top-line.gif) left top repeat-x }
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    line-height: normal;
+}
+h1 { font-size: 2em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.17em }
+h4 { font-size: 1em }
+h5 { font-size: 0.83em }
+h6 { font-size: 0.67em }
+body, td, textarea, input, select {
+    font: 12px  Arial, Tahoma, sans-serif;
+    color: #000;
+    line-height: normal;
+}
+a {
+    color: #000;
+    text-decoration: underline;
+}
+a:hover { text-decoration: none }
+/*__________ Reset #END __________*/
+/*____________ Helpers____________*/
+.clear {
+    clear: both;
+    height: 0;
+}
+.no-bg { background: none !important }
+/*__________ General __________*/
+
+#main-bg.mbg {
+    margin-top: 17px;
+    width: 100%;
+    background: #fff url(../images/bar/main-bg1.jpg) center top no-repeat;
+}
+#main-bg {
+    margin-top: 17px;
+    width: 100%;
+    background: #fff url(../images/bar/outer-bg.jpg) center top no-repeat;
+}
+
+#wrapper {
+    min-width: 1000px;
+    max-width: 1440px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+/*__________ Header __________*/
+#main-bg.mbg #header, #main-bg #header {
+    position: relative;
+    padding: 0 0 32px 0;
+    padding-left: 2%;
+	height:280px;
+    background: url(../images/bar/slogan.png) 62% bottom no-repeat;
+}
+#main-bg #header { background: url(../images/bar/second-slogan.png) 35% 90% no-repeat }
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 2%;
+}
+ .logo img { display: block }
+.main-nav {
+    position: absolute;
+    top: 55px;
+    left: 305px;
+    right: 305px;
+}
+.main-nav, .nav-bg {
+    background: url(../images/bar/nav-bg.png) left bottom no-repeat;
+    height: 45px;
+    padding: 0 0 0 4px;
+}
+.nav-bg {
+    background-position: right top;
+    height: 30px;
+    padding: 15px 0 0 0;
+}
+ .nav-bg li {
+     float: left;
+     width: 19%;
+     text-align: center;
+ }
+ .nav-bg li:first-child { width: 24% }
+ .nav-bg li.active {
+     background: url('../images/bar/active-menu.png') center center no-repeat;
+     height: 28px;
+     margin-top: -6px;
+ }
+  .nav-bg li.active a {
+      line-height: 28px;
+      text-decoration: none;
+      color: #75b218;
+  }
+ .nav-bg a {
+     color: #3b799e;
+     font-size: 14px;
+ }
+.sub-nav {
+    margin-left: 20px;
+    width: 93%;
+    min-width: 470px;
+    height: 27px;
+    background: url(../images/bar/sub-menu-sprite.png) 0 0 no-repeat;
+}
+ .sub-nav ul {
+     padding-left: 8px;
+     height: 27px;
+     background: url(../images/bar/sub-menu-sprite.png) 100% -54px no-repeat;
+     width: 74%;
+ }
+  .sub-nav ul li a { color: #fff }
+  .sub-nav ul li {
+      float: left;
+      background: url(../images/bar/sub-menu-sprite.png) 0 -27px;
+      height: 27px;
+      line-height: 27px;
+      text-align: center;
+  }
+  .sub-nav ul li.sub1 { width: 23% }
+  .sub-nav ul li.sub2 { width: 19% }
+  .sub-nav ul li.sub3 { width: 14% }
+  .sub-nav ul li.sub4 { width: 44% }
+.tel-numb {
+    padding: 32px 60px 0 0;
+    float: right;
+    background: url(../images/ico/mobile.png) right 8px no-repeat;
+}
+ .tel-numb p {
+     color: #fff;
+     margin: 0;
+     text-align: right;
+ }
+  .tel-numb p a { color: #fff }
+ .tel-numb p.name {
+     color: #a0d6f1;
+     font-size: 20px;
+     font-style: italic;
+ }
+.number {
+    font-size: 36px;
+    font-style: italic;
+}
+ .number sup {
+     font-size: 12px;
+     color: #a0d6f1;
+ }
+.map-btn {
+    float: left;
+    margin: 202px 0 0 0;
+    height: 40px;
+    padding: 40px 0 0 52px;
+}
+.map-btn, .map-bg { background: url(../images/bar/map.png) left bottom no-repeat }
+.map-bg {
+    background-position: right top;
+    height: 34px;
+    padding: 5px 50px 0 0;
+}
+ .map-bg a {
+     color: #58a21d;
+     font-size: 16px;
+     text-decoration: none;
+ }
+/* табы */
+.wrap-sect {
+    float: left;
+    padding: 25px 0 0 0;
+    width: 70%;
+    margin: 0 0 0 6%;
+}
+.section {
+    position: relative;
+    width: 100%;
+}
+ .section .title {
+     position: absolute;
+     left: 1%;
+     top: 1%;
+     font-weight: bold;
+     font-size: 18px;
+     font-style: italic;
+ }
+ul.tabs {
+    height: 28px;
+    line-height: 25px;
+    list-style: none;
+    margin: 0 0 3px 0;
+    padding: 0 8% 0 0;
+}
+.tabs li {
+    font-size: 14px;
+    float: right;
+    display: inline;
+    margin: 0 8% -1% 0;
+    padding: 0 3px 1px;
+    color: #3b799e;
+    cursor: pointer;
+    font-style: italic;
+    position: relative;
+}
+.tabs li:hover i { text-decoration: none }
+.tabs li.current {
+    color: #3b799e;
+    background: url(../images/bar/act.png) 37% bottom no-repeat;
+    padding: 0 13px 7px;
+}
+.tabs li span {
+    color: #fff;
+    padding: 0 5px;
+    font-size: 13px;
+    background: url(../images/bar/gr-range.png) center center no-repeat;
+    text-decoration: none;
+}
+.tabs li i { text-decoration: underline }
+.box {
+    display: none;
+    width: 95%;
+    border: 1px solid #dddddd;
+    background: #f6f6f6;
+    padding: 12px 0 7px 11px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+ .box p { margin: 0 }
+.box.visible { display: block }
+/*__________ content __________*/
+#content { margin: 61px 0 0 0 }
+ #content .info {
+     float: left;
+     padding: 0 0 0 2%;
+     width: 20%;
+     line-height: 24px;
+     font-style: italic;
+ }
+  #content .info span { color: #75b218 }
+ #content .bread-crumb {
+     float: left;
+     padding: 2px 0 2px 5%;
+     width: 17%;
+     line-height: 24px;
+     font-style: italic;
+     margin-top: -60px;
+     background: #f3f3f3;
+ }
+  #content .bread-crumb a, #footer .foot-block span a { color: #3b799e }
+/* -----------------------------------------OTHER------------------------------------------------*/
+ #content .right-col { padding: 0 11% 0 23% }
+  #content .right-col p {
+      line-height: 18px;
+      margin-top: 18px;
+  }
+#content.licenzii #gallery { padding-top: 15px }
+#content.licenzii  { padding:0;}
+#content.licenzii  .right-col{padding:0;margin-left:25%;margin-right:-3%;width:690px;}
+#content.about .right-col h2 {
+    margin-bottom: -20px;
+    margin-left: -5px;
+}
+#content .right-col h2 {
+    font-weight: regular;
+    font: 24px Arial,sans-serif;
+}
+#content.news .right-col .otz-date {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+#content.news .right-col h2 {
+    font-weight: regular;
+    font: 24px Arial,sans-serif;
+    margin-bottom: -15px;
+    margin-left: -5px;
+}
+#content .right-col .titles a {
+    display: inline-block;
+    float: left;
+    padding: 10px 15px 0;
+    width: 200px;
+}
+#content .right-col .otz-date a { color: #3b799e }
+#content .right-col .otz-date {
+    margin: 20px 0 15px;
+    padding: 0;
+}
+#content .right-col .otz-text {
+    font-style: italic;
+    padding-top: 0;
+    margin: 0 0 40px 0;
+}
+.pager { margin-top: -10px }
+ .pager a {
+     padding: 0 0 0 5px;
+     color: #3b799e;
+ }
+/* -------------------------------------------OTEL----------------------------------------------*/
+#content.otel .left-col {
+    float: left;
+    padding: 0 0 0 5%;
+    width: 19%;
+    min-width: 250px;
+}
+ #content.otel .left-col ul { margin: 5px 0 30px 0 }
+ #content.otel .left-col h2 {
+     font-weight: regular;
+     font: 18px Arial,sans-serif;
+ }
+#content.otel .right-col { padding: 0 11% 0 30% }
+ #content.otel .right-col p {
+     line-height: 18px;
+     margin-top: 18px;
+ }
+ #content.otel .right-col h2 {
+	float:left;
+     font-weight: regular;
+     font: 24px Arial,sans-serif;
+     margin-left: -2px;
+     display: inline-block;
+ }
+#content.otel .left-col ul li { display: inline-block }
+#content.otel .stars {
+    float: right;
+    display: block;
+    height: 10px;
+    width: 85px;
+    background: url(../images/bar/stars-mini.png) left top no-repeat;
+    margin: 2px 0 3px 3px;
+}
+#content.otel .right-col .stars { 
+	display:inline;
+	float:left;
+	margin-top: 5px;	
+    height: 16px;
+    width: 85px;
+    background: url(../images/bar/stars.png) left top no-repeat;
+}
+#gallery {
+    clear: both;
+    padding-top: 70px;
+}
+ #gallery img {
+     display: inline-block;
+     padding: 0 3% 0 0;
+ }
+#content.otel .bread-crumb {
+    width: 21%;
+    min-width: 280px;
+}
+#content.otel h2.otel-lc-country {
+    color: #75b218;
+    font-size: 24px;
+}
+#content.otel h2.otel-lc-otel { margin-top: 40px }
+/* ----------------------------------------OTZIV-------------------------------------------------*/
+#content .right-col .otz-date {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+#content .right-col .otz-text {
+    font-style: italic;
+    padding-top: 0;
+    margin-top: 0;
+}
+/* ---------------------------------------------SOVET--------------------------------------------*/
+#content.sovet .bread-crumb { width: 22% }
+#content.sovet .left-col {
+    float: left;
+    padding: 0 0 0 5%;
+    width: 25%;
+}
+ #content.sovet .left-col ul { margin: 5px 0 30px 0 }
+ #content.sovet .left-col h2 {
+     font-weight: regular;
+     font: 18px Arial,sans-serif;
+     margin-left: -2px;
+ }
+#content.sovet .right-col { padding: 0 11% 0 32% }
+ #content.sovet .right-col .otz-date a, #content.sovet .left-col ul li a { color: #3b799e }
+ #content.sovet .right-col .otz-date {
+     margin: 20px 0 15px;
+     padding: 0;
+ }
+ #content.sovet .right-col .otz-text {
+     font-style: italic;
+     padding-top: 0;
+     margin: 0 0 40px 0;
+ }
+#content.sovet .left-col .pager { margin-top: -10px }
+ #content.sovet .left-col .pager a {
+     padding: 0 0 0 5px;
+     color: #3b799e;
+ }
+/* -------------------------------------------STRANI----------------------------------------------*/
+#main-bg.strani { background: #fff url(../images/bar/country-bg.jpg) center top no-repeat }
+ #main-bg.strani .countries { padding: 0 }
+/* -------------------------------------------TOURS----------------------------------------------*/
+#content.tours .left-col {
+    float: left;
+    padding: 0 0 0 5%;
+    width: 15%;
+}
+ #content.tours .left-col ul { margin: 5px 0 30px 0 }
+ #content.tours .left-col h2 {
+     font-weight: regular;
+     font: 18px Arial,sans-serif;
+ }
+#content.tours .right-col { padding: 0 5% 0 25% }
+ #content.tours .right-col p {
+     line-height: 18px;
+     margin-top: 18px;
+ }
+ #content.tours .right-col h2 {
+     font-weight: regular;
+     font: 24px Arial,sans-serif;
+     margin-left: -2px;
+     margin-bottom: -25px;
+ }
+.hot-left, .hot-right {
+    width: 43%;
+    float: left;
+    padding: 40px 5% 0 0;
+}
+ #content.toursul .tabs { height: 100px }
+ #content.tours .tabs li {
+    float: left;
+    clear: both;
+}
+ #content.tours .tabs li.active i { color: #58A21D }
+ #content.tours .tabs li span { margin-left: 10px }
+/* ------------------------------------------TOURS1-----------------------------------------------*/
+#content.tours .hot-left, #content.tours .hot-right {
+    width: 43%;
+    float: left;
+    padding: 40px 5% 0 0;
+}
+.map-btn2 {
+    float: left;
+    height: 40px;
+    padding: 0px 0 0 52px;
+    margin: 115px 0 0 10px;
+}
+.map-btn2, .map-bg2 { background: url(../images/bar/map2.png) left bottom no-repeat }
+.map-bg2 {
+    background-position: right top;
+    height: 34px;
+    padding: 5px 50px 0 0;
+}
+#content.tours .map-bg2 a {
+    color: #58a21d;
+    font-size: 16px;
+    text-decoration: none;
+}
+#content.tours .call-me {
+    color: #58A21D;
+    font-style: italic;
+    position: relative;
+    top: -15px;
+    left: -40px;
+}
+#content.tours #gallery {
+    clear: both;
+    padding-top: 70px;
+}
+ #content.tours #gallery img {
+     display: inline-block;
+     padding: 0 3% 0 0;
+ }
+#content.tours .bc-tour { width: 26% }
+/* --------------------------------------------CONTACT---------------------------------------------*/
+#content.contact .right-col { padding-left: 55%;width:390px;padding-right:0;}
+ #content.contact .right-col p { padding-top: 10px }
+#content.contact .pro-map {
+    margin-left: 5%;
+    margin-top: 30px;
+    width: 456px;
+    height: 373px;
+    background: url(../images/bar/adress.png) no-repeat;
+    float: left;
+    margin-bottom: 50px;
+}
+#content.contact h2 { padding-left: 5% }
+#content.contact form .left {
+    width: 101px;
+    float: left;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+#content.contact form .right {
+    width: 279px;
+    float: left;
+    margin-top: 50px;
+}
+ #content.contact form .right textarea {
+     width: 273px;
+     height: 87px;
+     background: url(../images/bar/contact-forms.png) no-repeat;
+     border: 0;
+     resize: none;
+     outline: none;
+     -moz-appearance: none;
+ }
+ #content.contact form .right #name, #content.contact form .right #num, #content.contact form .right #email {
+     background: url(../images/bar/contact-forms.png) 0 -93px no-repeat;
+     width: 210px;
+     height: 21px;
+     resize: none;
+     outline: none;
+     -moz-appearance: none;
+     margin: 10px 0 0;
+ }
+#content.contact form .left label {
+    float: right;
+    clear: both;
+    margin-bottom: 17px;
+}
+#content.contact form .left label.name { margin-top: 78px }
+#content.contact .map-btn2 {
+    float: left;
+    height: 40px;
+    padding: 0px 0 0 52px;
+    margin: 15px 0 0 -6px;
+}
+#content.contact .map-btn2, #content.contact .map-bg2 { background: url(../images/bar/map2.png) left bottom no-repeat }
+#content.contact .map-bg2 {
+    background-position: right top;
+    height: 34px;
+    padding: 7px 0px 0 0;
+}
+#content.contact  .map-bg2 a {
+    color: #58a21d;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: -50px;
+    padding: 5px 20px 0;
+}
+/* -----------------------------------------------------------------------------------------*/
+.left-col a, .right-col a { color: #3b799e }
+.countries {
+    float: left;
+    padding: 65px 0 0 0;
+    margin: 0 0 0 5%;
+}
+ .countries .block-countr {
+     float: left;
+     width: 30%;
+     margin-right: 2%;
+     margin-bottom: 40px;
+ }
+ .countries .left-img {
+     float: left;
+     width: 30%;
+     text-align: right;
+     margin: 0 1% 0 0;
+ }
+ .countries .right-links {
+     float: left;
+     padding: 8px 0 0 0;
+     width: 69%;
+ }
+  .countries .right-links a {
+      color: #3b799e;
+      line-height: 22px;
+      margin-right: 2px;
+  }
+.right-links .country-name {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #75b218;
+}
+.mrg-r { margin-right: 0 !important }
+.wrap-news {
+    margin: 35px 0 0 0;
+    background: #f6f6f6;
+    padding: 23px 0 15px 0;
+}
+.left-block, .right-block {
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+}
+.right-block {
+    padding-left: 12%;
+    width: 33%;
+}
+.br-cr, .friends {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+ .br-cr li {
+     float: left;
+     margin: 0 7px 0 0;
+ }
+  .br-cr li a {
+      font-size: 12px;
+      color: #75b218;
+      font-weight: normal;
+      vertical-align: middle;
+  }
+.titl-news {
+    display: block;
+    padding: 25px 0 20px 0;
+    line-height: 18px;
+}
+ .titl-news a { color: #3b799e }
+.helpers {
+    padding: 10px 0 0 0;
+    line-height: 24px;
+}
+ .helpers a { color: #3b799e }
+.friends { margin: 90px 0 125px 0 }
+ .friends ul {
+     width: 95%;
+     padding: 0 0 0 5%;
+ }
+ .friends li {
+     float: left;
+     width: 15%;
+     margin: 0 1% 0 0;
+     text-align: center;
+ }
+  .friends li i {
+      display: block;
+      padding: 37px 0 0 0;
+      text-align: left;
+  }
+/* slider */
+#two, #one, #three, #four { width: 100% !important }
+.hot-left, .hot-right {
+    width: 43%;
+    float: left;
+    padding: 0 5% 0 0;
+}
+.rest-name {
+    font-size: 14px;
+    color: #3b799e;
+    font-style: italic;
+}
+.img-left {
+    float: left;
+    padding: 7px 0 0 0;
+}
+ .img-left img { display: block }
+.descript {
+    float: left;
+    padding: 11px 0 0 18px;
+}
+.stars-block { }
+ .stars-block span {
+     float: left;
+     font-size: 14px;
+     font-style: italic;
+     line-height: 16px;
+ }
+ .stars-block .stars {
+     float: left;
+     display: block;
+     height: 16px;
+     width: 85px;
+     background: url(../images/bar/stars.png) left top no-repeat;
+     margin: 0 0 3px 6px;
+ }
+.cost {
+    font-size: 30px;
+    margin: 16px 0 0 0;
+    display: block;
+}
+.information {
+    font-size: 11px;
+    line-height: 18px;
+    margin: 3px 0 0 0;
+}
+/*__________ Footer __________*/
+#footer {
+    border-top: 4px solid #d2f0ff;
+    padding: 0 0 0 5%;
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+ #footer .foot-block {
+     width: 30%;
+     margin-right: 5%;
+     float: left;
+	 margin-left:-1px;
+ }
+  #footer .foot-block span { line-height: 15px }
+  #footer .foot-block .br-cr { margin: 0 0 2px 0 }
+ #footer .foot-block-right {
+     width: 30%;
+     float: right;
+ }
+ #footer .contact { padding: 25px 0 0 0 }
+  #footer .contact li {
+      margin: 0;
+      line-height: 18px;
+  }
+   #footer .contact li a { color: #3b799e }
+.soc {
+    float: right;
+    margin: 27px 0 0 0;
+}
+#footer .foot-block span {
+    line-height: 15px;
+    display: inline-block;
+    padding-top: 25px;
+}

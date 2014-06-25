@@ -1,0 +1,107 @@
+* html #wrapper,
+* html #footer {
+	width: expression(
+	(document.compatMode && document.compatMode == 'CSS1Compat') ?
+	(document.documentElement.clientWidth < 925 ? "925px" :
+	(document.documentElement.clientWidth > 1600 ? "1600px" : "auto")) :
+	(document.body.clientWidth > 925 ? "925px" :
+	(document.body.clientWidth < 1600 ? "1600px" : "auto")));
+}
+@font-face {
+    font-family: 'NewsPaperCTTRegular';
+    src: url('newspaperc-regular-webfont.eot');
+    src: url('newspaperc-regular-webfont.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+* html #middle {
+	margin-top:-32px;
+}
+* html .number {
+	margin-right:2px;
+	margin-top:-1px;
+}
+* html .min {
+	margin-top:0px;
+}
+* html .home {
+	margin-top:-2px;
+}
+#header img {
+	float:left;
+}
+.traktor {
+	clear:both;
+}
+#nav li{
+	display:inline;
+	zoom:1;
+	margin-left:-1px;
+}
+ul#nav{
+	display:block;
+	margin-left:-2px;
+}
+#nav li a:hover,#nav li a.active {
+	background:url('../img/navhover-ie6.png') transparent no-repeat;
+}
+* html .search_go {
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	right: 60px;
+	top: 5px;
+}
+.top_search {
+	padding: 14px 40px 9px 15px;
+}
+ul.menu li a, ul.menu ul.menu li a, ul.menu li {
+	zoom:1;
+}
+
+* html ul.menu li ul li a.first, * html ul.menu ul.menu li ul li a.first {
+  width:330px;
+  float:left;
+  margin-bottom:-3px;
+  background: url('../img/akord-podmenu-back-first-ie6.png') no-repeat;  
+  height:64px;
+}
+* html ul.menu li ul li a.first:hover, * html ul.menu ul.menu li ul li a.first:hover {
+	background: url('../img/akord-podmenu-back-first-ie6-active.png') no-repeat;  
+}
+* html ul.menu li.onee a.active, * html ul.menu li.onee a.active:hover {
+    background: url('../img/akord-active-ie6-1st.png') no-repeat;
+	height:109px;
+	position:relative;
+}
+* html ul.menu li.twoo a.active, * html ul.menu li.twoo a.active:hover {
+    background: url('../img/akord-active-ie6-2nd.png') no-repeat;
+	height:109px;
+	position:relative;
+}
+* html ul.menu lI.three a.active, * html ul.menu li.three a.active:hover {
+    background: url('../img/akord-active-ie6-3rd.png') no-repeat;
+	height:109px;
+	position:relative;
+}
+ul.menu a.active, ul.menu ul.menu li a.active, ul.menu a.active:hover, ul.menu ul.menu li a.active:hover {
+	z-index:1;
+}
+ul.menu li ul li a, ul.menu ul.menu li ul li a {
+	z-index:2; 
+}
+* html ul.menu ul{
+    margin-top:-18px;
+}
+ul.menu li ul li a img, ul.menu ul.menu li ul li a img{
+	margin:6px 0 0 90px;
+}
+ul.menu li ul li a, ul.menu ul.menu li ul li a {
+	margin-bottom:-3px;
+}
+#bread-crumbs i{
+	height:14px;
+}
+* html #bread-crumbs i{
+	height:8px;
+}

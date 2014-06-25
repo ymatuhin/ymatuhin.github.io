@@ -1,0 +1,36 @@
+@import url("common.css");
+.caregorii {	
+	float:left;
+	width:33%;
+	height:140px;
+	text-align:center;
+	padding:10px 0 20px;
+	position:relative;
+}
+.back{
+	clear:both;
+	width:33%;
+	height:140px;
+	text-align:center;
+	margin:10px 0 30px 33%;
+	position:relative;
+}
+a.button {
+	display:block;
+	width:188px;
+	height:31px;	
+	text-align:center;
+	position:absolute;
+	top:120px;
+	left:20%;
+	padding-top:7px;
+	font-family:tahoma;
+	font-size:14px;
+}
+a.button:hover {
+	color:#fff;
+	background:url('../img/button.png') no-repeat;	
+}
+p {
+	clear:both;
+}
