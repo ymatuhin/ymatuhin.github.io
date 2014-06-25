@@ -1,0 +1,3 @@
+http-server
+guard
+sass --watch --sourcemap main.scss:main.css
