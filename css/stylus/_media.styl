@@ -1,0 +1,41 @@
+$media_cache = {}
+ieArr = 'lte-ie9', 'ie9', 'lte-ie8', 'ie8', 'lte-ie7', 'ie7'
+$media_aliases = {
+	lte-ie9:			'screen'
+	ie9:				'screen and (min-width:0\0)'
+	lte-ie8:			'\0screen\,screen\9'
+	ie8:				'\0screen'
+	lte-ie7:			'screen\9'
+	ie7:				'screen\9'
+
+	retina:				'(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)'
+	phone:				'(max-width: 480px)'
+	less-tablet:		'(max-width: 767px)'
+	tablet:				'(min-width: 481px) and (max-width: 767px)'
+	small-desktop:		'(min-width: 768px) and (max-width: 991px)'
+	medium-desktop:		'(min-width: 992px) and (max-width: 1199px)'
+	more-desktop:		'(min-width: 1200px)'
+}
+
+media($condition)
+	helper($condition)
+		unless $media_cache[$condition]
+			$media_cache[$condition] = ()
+		push($media_cache[$condition], block)
+	+helper($condition)
+		{selector() + ''}
+			{block}
+
+apply_media_cache()
+	for $media, $blocks in $media_cache
+		$mediaAliases = $media
+		$media = unquote($media_aliases[$media] || $media)
+		$media = '(%s)' % $media unless match('\(', $media)
+
+		@media $media
+			for $block in $blocks
+				if ie
+					{$block}
+				if !ie
+					unless $mediaAliases in ieArr
+						{$block}

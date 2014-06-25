@@ -1,0 +1,13 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: page-font-family;
+  background: page-bg;
+  color: page-text-color;
+}
+body {
+  width: 980px;
+  margin: 0 auto;
+  background: #f00;
+  z-index: 2;
+}

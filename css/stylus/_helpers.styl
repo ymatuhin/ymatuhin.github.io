@@ -1,0 +1,30 @@
+.hidden
+[hidden]
+	display none !important
+	visibility hidden
+
+.invisible
+	visibility hidden
+
+.ir
+	text-indent 100%
+	white-space nowrap
+	overflow hidden
+
+.clearfix
+	if ie
+		zoom 1
+
+	&:before
+	&:after
+		display table
+		content ""
+
+	&:after
+		clear both
+
+.clear
+	clear both
+
+.js .no-script
+	@extend .hidden

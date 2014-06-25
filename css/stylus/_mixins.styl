@@ -1,0 +1,86 @@
+ir()
+	@extend .ir
+
+clearfix()
+	@extend .clearfix
+
+opacity(n)
+	z if 0 // Do nothing in IE
+	opacity n
+	if ie
+		-ms-filter unquote('"progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')"')
+		*filter unquote('alpha(opacity=' + round(n * 100) + ')')
+
+reset()
+	if match('p', ''+arguments)
+		padding 0
+	if match('m', ''+arguments)
+		margin 0
+	if match('b', ''+arguments)
+		border 0
+	if match('l', ''+arguments)
+		list-style-type none
+
+helper()
+	display inline-block
+	vertical-align middle
+	height 100%
+	width 0
+
+no-focus-border()
+	&:focus
+		outline none
+
+		if ie
+			ie-dummy unquote('expression(this.hideFocus=true)')
+
+// background transparency
+bg-opacity(color, alpha = 1)
+	ms-color = argb(color, alpha)
+	if !ie
+		background rgb(color)
+		background rgba(color, alpha)
+
+	if ie
+		background transparent
+		filter s('progid:DXImageTransform.Microsoft.gradient(startColorstr=%s,endColorstr=%s)', ms-color, ms-color)
+
+		// ie7
+		*background rgba-ie(color, alpha)
+		zoom 1
+		&:nth-child(n)
+			*filter none
+
+hex(decimal)
+	hex-value = ('0') ('1') ('2') ('3') ('4') ('5') ('6') ('7') ('8') ('9') ('A') ('B') ('C') ('D') ('E') ('F')
+	unquote(hex-value[floor(decimal / 16)] + hex-value[floor(decimal % 16)])
+
+argb(color, alpha = 1)
+	unquote('#') + hex(alpha * 255) + hex(red(color)) + hex(green(color)) + hex(blue(color))
+// #END background transparency
+
+placeholder()
+	if !ie
+		&:-moz-placeholder
+			color arguments
+		&:-ms-input-placeholder
+			color arguments
+		&::-webkit-input-placeholder
+			color arguments
+
+background-clip()
+	if !ie
+		-webkit-background-clip arguments
+		-moz-background-clip arguments
+		background-clip arguments
+
+select-color(color)
+	if !ie
+		&::-webkit-selection background: color /* Safari and Chrome */
+		&::-moz-selection background: color /* Firefox */
+		&::selection background: color
+
+		img
+			&::-webkit-selection {background: transparent} /* Safari and Chrome */
+			&::-moz-selection {background: transparent} /* Firefox */
+			&::selection {background: transparent}
