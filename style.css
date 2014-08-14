@@ -1,0 +1,36 @@
+
+::-moz-selection 	{ background-color: #000; color: #fff; }
+::selection 		{ background-color: #000; color: #fff; }
+
+
+a					{ outline: 0; color: #ec1d6f; text-decoration: none;}
+a:hover 			{ opacity:1; text-decoration:none }
+p a:hover 			{
+	color: #ec1d6f;opacity:0.6; text-decoration:none
+}
+a:active 			{
+	opacity: 1;
+}
+
+body 				{
+	background: #fbfbfb;
+	color: #8e8e8e;
+	font-family: 'Cuprum', Tahoma, 'Trebuchet MS', sans-serif;
+	font-size: 2em;
+	/*font-size: 2vmax;*/
+	padding:5%;
+	margin: 0;
+
+
+	-webkit-transition: font-size .5s;
+	-moz-transition: font-size .5s;
+	transition: font-size .5s;
+}
+
+p:first-child {
+
+	font-size:3em;
+
+}
+
+.grayedOut{ color:#CCC; padding-top:10%}
