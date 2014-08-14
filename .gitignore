@@ -9,3 +9,4 @@ client/bower_components
 dist
 /server/config/local.env.js
 >>>>>>> Stashed changes
+.DS_Store
