@@ -16,11 +16,9 @@ body 				{
 	background: #fbfbfb;
 	color: #8e8e8e;
 	font-family: 'Cuprum', Tahoma, 'Trebuchet MS', sans-serif;
-	font-size: 2em;
-	/*font-size: 2vmax;*/
+	font-size: .9em;
 	padding:5%;
 	margin: 0;
-
 
 	-webkit-transition: font-size .5s;
 	-moz-transition: font-size .5s;
@@ -28,9 +26,31 @@ body 				{
 }
 
 p:first-child {
-
 	font-size:3em;
-
 }
 
 .grayedOut{ color:#CCC; padding-top:10%}
+
+@media (min-width: 481px) {
+	body {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 769px) {
+	body {
+		font-size: 1.6em;
+	}
+}
+
+@media (min-width: 920px) {
+	body {
+		font-size: 2em;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 2.2em;
+	}
+}
