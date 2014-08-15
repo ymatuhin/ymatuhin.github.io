@@ -9,6 +9,8 @@
 Посмотреть [Вконтакте](http://vk.com/app3210355_33730242) или [локальную копию](http://ymatuhin.bitbucket.org/projects/chat_on/);
 *  Калькулятор проектов – разработка калькулятора стоимости проектов.     
 Посмотреть на [офф. сайте](http://msocial.calculateproject.ru) или [локальную копию](http://ymatuhin.bitbucket.org/projects/calculator/);
+*  Renault – разработка заглушки для конкурса.   
+Посмотреть [локальную копию](http://ymatuhin.bitbucket.org/projects/renault-drive/);
 *  Seo langing – разработка лэддинг страницы о SEO.   
 Посмотреть [локальную копию](http://ymatuhin.bitbucket.org/projects/seo-landing/);
 *  Медицинский центр «Таблетка» – разработка страниц сайта.   
