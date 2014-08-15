@@ -7,7 +7,7 @@
 * [Vanilla slider](https://github.com/ymatuhin/vanilla_slider) – тестовое задание на должность front-end разработчика в пражский офис babyblog.ru;
 * [Презентация](https://github.com/ymatuhin/less-presentation) – «LESS» динамический язык стилевой разметки;
 * [Triangulation](https://github.com/ymatuhin/triangulation) – эксперимент с триангуляцией и canvas;
-* [Заготовка для шашек](http://ymatuhin.github.io/checkers/) – поле для игры в шашки (был написан алгоритм для битья, но утерян после переустановки системы). Осталась только заготовка, но весьма симпатичная.
+* [Заготовка для шашек](https://github.com/ymatuhin/checkers/) – поле для игры в шашки (был написан алгоритм для битья, но утерян после переустановки системы). Осталась только заготовка, но весьма симпатичная.
 * [Bem html to css](https://github.com/ymatuhin/Bem-html-2-css) – эксперимент с генерацией css из html c БЭМ классами;
 
 Так же вы можете посмотреть мое [портфолио](https://github.com/ymatuhin/ymatuhin.github.io/blob/master/works.md).
