@@ -8,5 +8,4 @@
 * [Triangulation](https://github.com/ymatuhin/triangulation) – Эксперимент с триангуляцией и canvas;
 * [Bem html to css](https://github.com/ymatuhin/Bem-html-2-css) – Эксперимент с генерацией css из html c БЭМ классами;
 
-На этом пока что все.
-Спасибо.
+Так же вы можете посмотреть мое [портфолио](https://github.com/ymatuhin/ymatuhin.github.io/blob/master/works.md).
