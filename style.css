@@ -1,18 +1,11 @@
-
 ::-moz-selection 	{ background-color: #000; color: #fff; }
 ::selection 		{ background-color: #000; color: #fff; }
 
-
 a					{ outline: 0; color: #ec1d6f; text-decoration: none;}
-a:hover 			{ opacity:1; text-decoration:none }
-p a:hover 			{
-	color: #ec1d6f;opacity:0.6; text-decoration:none
-}
-a:active 			{
-	opacity: 1;
-}
+a:hover 			{ opacity:.7; text-decoration:none }
+a:active 			{ opacity: 1; }
 
-body 				{
+body {
 	background: #fbfbfb;
 	color: #8e8e8e;
 	font-family: 'Cuprum', Tahoma, 'Trebuchet MS', sans-serif;
@@ -25,11 +18,33 @@ body 				{
 	transition: font-size .5s;
 }
 
-p:first-child {
-	font-size:3em;
+h1 {
+	font-size: 3em;
+	font-weight: normal;
 }
 
-.grayedOut{ color:#CCC; padding-top:10%}
+.markdown h1 {
+	font-size: 2em;
+}
+
+.markdown blockquote {
+	margin-left: 0;
+	padding-left: 1em;
+	border-left: .2em solid rgba(142, 142, 142, .5);
+	opacity: .5;
+}
+
+.markdown ol {
+	padding-left: 1.5em;
+}
+
+.markdown li {
+	line-height: 1.3em;
+	margin-bottom: .7em;
+}
+
+.tags{ color:#CCC; }
+.tags_index{ padding-top:10% }
 
 @media (min-width: 481px) {
 	body {
