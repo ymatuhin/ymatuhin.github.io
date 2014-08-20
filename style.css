@@ -1,9 +1,21 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
 ::-moz-selection 	{ background-color: #000; color: #fff; }
 ::selection 		{ background-color: #000; color: #fff; }
 
-a					{ outline: 0; color: #ec1d6f; text-decoration: none;}
+a					{ outline: 0; color: #ec1d6f; text-decoration: none;background: transparent;}
 a:hover 			{ opacity:.7; text-decoration:none }
 a:active 			{ opacity: 1; }
+
+a:active,
+a:hover {
+  outline: 0;
+}
 
 body {
 	background: #fbfbfb;
@@ -20,6 +32,11 @@ body {
 
 h1 {
 	font-size: 3em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2em;
 	font-weight: normal;
 }
 
