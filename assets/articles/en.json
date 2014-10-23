@@ -1,4 +1,10 @@
 [{
+	"title": "Shortest integer number from 0 to 1 on javascript",
+	"description": "The shortest solution this small task",
+	"date": "23.10.14",
+	"link": "get_random_0_or_1",
+	"tags": "bit operations, round, javascript"
+}, {
 	"title": "Hello World",
 	"description": "My first article in blog",
 	"date": "20.10.14",
