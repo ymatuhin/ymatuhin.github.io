@@ -1,39 +1,73 @@
 <!DOCTYPE>
 <title>Юрий Матюхин - ymatuhin.github.io</title>
-<meta http-equiv="refresh" content="0; url=https://y-m.herokuapp.com">
-<link rel="canonical" href="https://y-m.herokuapp.com" />
-
-<script>setTimeout(function(){ location.href = 'https://y-m.herokuapp.com/' }, 3000)</script>
 
 <base href="/">
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="Привет, я Юрий Матюхин, фронтэнд разработчик и автор нескольких проектов. Вы можете связаться со мной по почте –  ymatuhin@yandex.ru либо по скайпу – ymatuhin.">
 <meta name="keywords" content="Юрий, Матюхин, ymatuhin, ymatuhin@yandex.ru, front, end, developer, фронтэнд, разработчик, angularjs, vanillajs, jquery, html, css, bem">
 
+<style>.loading { opacity: 0; }</style>
+<script>
+	if (location.hash === '' && location.pathname !== '/') {
+		document.documentElement.classList.add('loading');
+		location.href = '/#!' + location.pathname;
+	}
+</script>
+
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic">
 <link rel="icon" type="image/png" href="/favicon.png">
 <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
 
 
-<link rel="stylesheet" href="app/edefa3f3.app.css"/>
+<link rel="stylesheet" href="app/bc90307a.app.css"/>
 <body ng-app="ymatuhingithubioApp" ng-class="lang">
-
-<!-- <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a> -->
+	<script>if (document.body.getAttribute('snapshot')) { document.body.classList.add('loading'); location.href = '/#!' + location.pathname; }</script>
+	<!-- <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a> -->
 
 	<lang></lang>
 
 	<navigation ng-show="url != '/'"></navigation>
 
-	<div ng-view=""></div>
+	<div ng-view="">
+		<div class="seo-content">
+			<div class="nav ru"><a href="/">На главную</a> –<a href="/projects/" ng-class="{'active': url === '/projects' }">Проекты</a> –<a href="/folio" ng-class="{'active': url === '/folio' }">Портфолио</a> –<a href="/blog/" ng-class="{'active': url === '/blog' }">Блог</a>
+			</div>
+			<div class="nav en"><a href="/">Home</a> –<a href="/projects/" ng-class="{'active': url === '/projects' }">Projects</a> –<a href="/folio" ng-class="{'active': url === '/folio' }">Portfolio</a> –<a href="/blog/" ng-class="{'active': url === '/blog' || url.indexOf('/blog/') != -1 }">Blog</a>
+			</div>
+			<div class="ru ng-scope">
+				<h2>Привет, я Юрий Матюхин, фронтэнд разработчик. В свободное, и не совсем, время веду <a href="/blog/">блог</a> и пишу несколько <a href="/projects/">проектов/экспериментов</a>.</h2>
+				<br>
+				<p>Мой <a href="//github.com/ymatuhin">github</a> и последние работы из <a href="/folio/">портфолио</a>.</p>
+			</div>
+			<div class="en ng-scope">
+				<h2>Hi, i'm Yury Matuhin, frontend developer. When i have a free time, i like to write articles to my <a href="/blog/">blog</a> and develop some <a href="/projects/">projects/experiments</a>.</h2>
+				<br>
+				<p>My <a href="//github.com/ymatuhin">github</a> account and the latest work in <a href="/folio/">portfolio</a>.</p>
+			</div>
+			<div class="ru">
+				<br>
+				<p>Пиште мне на <a href="mailto:ymatuhin@yandex.ru">ymatuhin@yandex.ru</a> или в <a href="skype:ymatuhin?chat">скайп</a> (ymatuhin).
+					<br>Мой <a href="//www.linkedin.com/in/ymatuhin">LinkedIn</a> и резюме на <a href="//hh.ru/resume/d6644a6fff02080e290039ed1f517854583433">hh.ru</a>
+				</p>
+				<br ng-show="url == '/'">
+				<p class="tags">#frontend #vanillajs #angularjs #jquery #html #css #bem</p>
+			</div>
+			<div class="en">
+				<br>
+				<p>Write me on <a href="mailto:ymatuhin@yandex.ru">ymatuhin@yandex.ru</a> or <a href="skype:ymatuhin?chat">skype</a> (ymatuhin).
+					<br>My <a href="//www.linkedin.com/in/ymatuhin">LinkedIn</a> and resume from <a href="//hh.ru/resume/d6644a6fff02080e290039ed1f517854583433">hh.ru</a>
+				</p>
+				<br ng-show="url == '/'">
+				<p class="tags">#frontend #vanillajs #angularjs #jquery #html #css #bem</p>
+			</div>
+		</div>
+	</div>
 
-	<div id="disqus_thread" ng-if="url.indexOf('blog') !== -1"></div>
+	<!-- <div id="disqus_thread" ng-if="url.indexOf('blog') !== -1"></div> -->
 
 	<footer></footer>
 
 	<script src="app/7ef39ab1.vendor.js"></script>
 
-	<script src="app/559c4d8c.app.js"></script>
-
-
-	<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter25884803 = new Ya.Metrika({id:25884803, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/25884803" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+	<script src="app/f5a84255.app.js"></script>
 </body>
