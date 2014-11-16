@@ -22,11 +22,10 @@
 <link rel="stylesheet" href="app/bc90307a.app.css"/>
 <body ng-app="ymatuhingithubioApp" ng-class="lang">
 	<script>if (document.body.getAttribute('snapshot')) { document.body.classList.add('loading'); location.href = '/#!' + location.pathname; }</script>
-	<!-- <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a> -->
 
 	<lang></lang>
 
-	<navigation ng-show="url != '/'"></navigation>
+	<div data-navigation ng-show="url != '/'"></div>
 
 	<div ng-view="">
 		<div class="seo-content">
@@ -35,12 +34,12 @@
 			<div class="nav en"><a href="/">Home</a> –<a href="/projects/" ng-class="{'active': url === '/projects' }">Projects</a> –<a href="/folio/" ng-class="{'active': url === '/folio' }">Portfolio</a> –<a href="/blog/" ng-class="{'active': url === '/blog' || url.indexOf('/blog/') != -1 }">Blog</a>
 			</div>
 			<div class="ru ng-scope">
-				<h2>Привет, я Юрий Матюхин, фронтэнд разработчик. В свободное, и не совсем, время веду <a href="/blog/">блог</a> и пишу несколько <a href="/projects/">проектов/экспериментов</a>.</h2>
+				<h2>Привет, я Юрий Матюхин, фронтэнд разработчик. В свободное, и не совсем, время веду <a href="/blog/">блог</a> и пишу несколько <a href="/projects/">проектов и/или экспериментов</a>.</h2>
 				<br>
 				<p>Мой <a href="//github.com/ymatuhin">github</a> и последние работы из <a href="/folio/">портфолио</a>.</p>
 			</div>
 			<div class="en ng-scope">
-				<h2>Hi, i'm Yury Matuhin, frontend developer. When i have a free time, i like to write articles to my <a href="/blog/">blog</a> and develop some <a href="/projects/">projects/experiments</a>.</h2>
+				<h2>Hi, i'm Yury Matuhin, frontend developer. When i have a free time, i like to write articles to my own <a href="/blog/">blog</a> and develop some <a href="/projects/">projects and/or experiments</a>.</h2>
 				<br>
 				<p>My <a href="//github.com/ymatuhin">github</a> account and the latest work in <a href="/folio/">portfolio</a>.</p>
 			</div>
@@ -65,7 +64,7 @@
 
 	<!-- <div id="disqus_thread" ng-if="url.indexOf('blog') !== -1"></div> -->
 
-	<footer></footer>
+	<div data-footer></div>
 
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
@@ -97,5 +96,5 @@
 
 	<script src="app/7ef39ab1.vendor.js"></script>
 
-	<script src="app/5a578ec6.app.js"></script>
+	<script src="app/5934f33f.app.js"></script>
 </body>
