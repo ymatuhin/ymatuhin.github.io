@@ -69,6 +69,7 @@ blockquote {
 	margin: 0 -2em;
 	padding: 1px 2em;
 	background: #ecf0f1;
+	clear: both;
 }
 
 ul, ol {
@@ -101,7 +102,7 @@ h6:hover .short-link { opacity: 1; }
 
 .my-photo {
 	float: right;
-	margin: 8px 0 .3em 1em;
+	margin: 0 0 1em .3em;
 	border-radius: 3px;
 }
 
@@ -114,4 +115,10 @@ h6:hover .short-link { opacity: 1; }
 .sbrace {margin-left: 0.3em}
 .hbrace {margin-left: -0.3em}
 
-/*@media (max-width: 480px) {}*/
+@media (max-width: 480px) {
+	.my-photo {
+		display: block;
+		float: none;
+		margin: 0 auto 1em;
+	}
+}
