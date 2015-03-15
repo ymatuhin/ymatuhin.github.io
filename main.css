@@ -99,6 +99,12 @@ h6:hover .short-link { opacity: 1; }
 	border-bottom: 1px solid;
 }
 
+.my-photo {
+	float: right;
+	margin: 8px 0 .3em 1em;
+	border-radius: 3px;
+}
+
 .unstyle { margin-left: 0; }
 /*ul.month li p { font-weight: normal; }*/
 
