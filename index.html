@@ -1,100 +1,35 @@
-<!DOCTYPE>
-<title>Юрий Матюхин - ymatuhin.github.io</title>
+<!doctype html>
+<html manifest='/offline.appcache' lang="ru">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title>Юрий Матюхин — Персональная страница разработчика интерфейсов</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/main.css">
 
-<base href="/">
-<meta name="viewport" content="width=device-width">
-<meta name="description" content="Привет, я Юрий Матюхин, фронтэнд разработчик и автор нескольких проектов. Вы можете связаться со мной по почте –  ymatuhin@yandex.ru либо по скайпу – ymatuhin.">
-<meta name="keywords" content="Юрий, Матюхин, ymatuhin, ymatuhin@yandex.ru, front, end, developer, фронтэнд, разработчик, angularjs, vanillajs, jquery, html, css, bem">
+	<h1>Юрий Матюхин</h1>
 
-<style>.loading { opacity: 0; }</style>
-<script>
-	if (location.hash === '' && location.pathname !== '/') {
-		document.documentElement.classList.add('loading');
-		location.href = '/#!' + location.pathname;
-	}
-</script>
+	<p>Привет, я разработчик пользовательских интерфейсов и это моя персональная страница.</p>
 
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cuprum:400,700&subset=latin,cyrillic">
-<link rel="icon" type="image/png" href="/favicon.png">
-<!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
+	<p>Если вас интересует мой <em>опыт</em> и/или <em>резюме</em>, то у меня есть <a href="/work/">специальная страница</a> со всей, нужной для вас, информацией.</p>
 
+	<p>Мне нравится моя работа. Я люблю делать вещи, которые могут помочь мне и другим людям. Поэтому у меня есть <a href="/projects/">несколько проектов</a>, которые я делал. Загляните, возможно вы найдете что-то интересное для себя.</p>
 
-<link rel="stylesheet" href="app/bc90307a.app.css"/>
-<body ng-app="ymatuhingithubioApp" ng-class="lang">
-	<script>if (document.body.getAttribute('snapshot')) { document.body.classList.add('loading'); location.href = '/#!' + location.pathname; }</script>
+	<p>Я люблю смотреть фильмы, слушать музыку и читать книги (хотя кто не любит этого?). Мне стало любопытно сделать список всех книг которые я прочитал, фильмов которые посмотрел и любимых музыкальных исполнителей. Поэтому я планирую сделать несколько разделов на этом сайте, в которых и будет эта информация.</p>
 
-	<lang></lang>
+	<p>Еще у меня появилась <i>новая</i> рубрика — <a href="/month-in-three-words/">месяц в трех словах</a>. Там я описываю прошедший месяц тремя словами. Сейчас это моя альтернатива дневнику, который я еще не готов вести. Думаю это поможет мне не забывать анализировать свою жизнь, хотя бы несколько раз в месяц. И оставлять для себя маленькие «узелки на память».</p>
 
-	<div data-navigation ng-show="url != '/'"></div>
+	<p>Какое-то время назад, тут находился мой блог, но я решил удалить его. Это не значит что я перестал писать, просто я еще толком не решил, как все это организовать. Однако некоторые вещи, о которых я писал, натолкнули меня на определенные идеи. В частности, мой опыт внедрения привычек я планирую перевести в <em>отдельный проект</em>.</p>
 
-	<div ng-view="">
-		<div class="seo-content">
-			<div class="nav ru"><a href="/">На главную</a> –<a href="/projects/" ng-class="{'active': url === '/projects' }">Проекты</a> –<a href="/folio/" ng-class="{'active': url === '/folio' }">Портфолио</a> –<a href="/blog/" ng-class="{'active': url === '/blog' }">Блог</a>
-			</div>
-			<div class="nav en"><a href="/">Home</a> –<a href="/projects/" ng-class="{'active': url === '/projects' }">Projects</a> –<a href="/folio/" ng-class="{'active': url === '/folio' }">Portfolio</a> –<a href="/blog/" ng-class="{'active': url === '/blog' || url.indexOf('/blog/') != -1 }">Blog</a>
-			</div>
-			<div class="ru ng-scope">
-				<h2>Привет, я Юрий Матюхин, фронтэнд разработчик. В свободное, и не совсем, время веду <a href="/blog/">блог</a> и пишу несколько <a href="/projects/">проектов и/или экспериментов</a>.</h2>
-				<br>
-				<p>Мой <a href="//github.com/ymatuhin">github</a> и последние работы из <a href="/folio/">портфолио</a>.</p>
-			</div>
-			<div class="en ng-scope">
-				<h2>Hi, i'm Yury Matuhin, frontend developer. When i have a free time, i like to write articles to my own <a href="/blog/">blog</a> and develop some <a href="/projects/">projects and/or experiments</a>.</h2>
-				<br>
-				<p>My <a href="//github.com/ymatuhin">github</a> account and the latest work in <a href="/folio/">portfolio</a>.</p>
-			</div>
-			<div class="ru">
-				<br>
-				<p>Пиште мне на <a href="mailto:ymatuhin@yandex.ru">ymatuhin@yandex.ru</a> или в <a href="skype:ymatuhin?chat">скайп</a> (ymatuhin).
-					<br>Мой <a href="//www.linkedin.com/in/ymatuhin">LinkedIn</a> и резюме на <a href="//hh.ru/resume/d6644a6fff02080e290039ed1f517854583433">hh.ru</a>
-				</p>
-				<br ng-show="url == '/'">
-				<p class="tags">#frontend #vanillajs #angularjs #jquery #html #css #bem</p>
-			</div>
-			<div class="en">
-				<br>
-				<p>Write me on <a href="mailto:ymatuhin@yandex.ru">ymatuhin@yandex.ru</a> or <a href="skype:ymatuhin?chat">skype</a> (ymatuhin).
-					<br>My <a href="//www.linkedin.com/in/ymatuhin">LinkedIn</a> and resume from <a href="//hh.ru/resume/d6644a6fff02080e290039ed1f517854583433">hh.ru</a>
-				</p>
-				<br ng-show="url == '/'">
-				<p class="tags">#frontend #vanillajs #angularjs #jquery #html #css #bem</p>
-			</div>
-		</div>
-	</div>
+	<blockquote>
 
-	<!-- <div id="disqus_thread" ng-if="url.indexOf('blog') !== -1"></div> -->
+	<p>Спасибо всем, кто следил за моим блогом, подписывался на обновления и поддерживал меня. Мне было очень приятно. Надеюсь, что мои новые проекты найдут «свою» аудиторию.</p>
 
-	<div data-footer></div>
+	</blockquote>
 
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (d, w, c) {
-			(w[c] = w[c] || []).push(function() {
-				try {
-					w.yaCounter25884803 = new Ya.Metrika({id:25884803,
-						webvisor:true,
-						clickmap:true,
-						trackLinks:true,
-						accurateTrackBounce:true});
-				} catch(e) { }
-			});
+	<p>Если вы хотите связаться со мной — посмотрите страницу с <a href="/contact/">контактной информацией</a>. Там есть все, что для этого необходимо.</p>
 
-			var n = d.getElementsByTagName("script")[0],
-			s = d.createElement("script"),
-			f = function () { n.parentNode.insertBefore(s, n); };
-			s.type = "text/javascript";
-			s.async = true;
-			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+	<p><em>С наилучшими пожеланиями, Юрий Матюхин.</em></p>
 
-			if (w.opera == "[object Opera]") {
-				d.addEventListener("DOMContentLoaded", f, false);
-			} else { f(); }
-		})(document, window, "yandex_metrika_callbacks");
-	</script>
-	<noscript><div><img src="//mc.yandex.ru/watch/25884803" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-
-	<script src="app/7ef39ab1.vendor.js"></script>
-
-	<script src="app/5934f33f.app.js"></script>
-</body>
+	<script type="text/javascript" src="/code.js"></script>
+</html>

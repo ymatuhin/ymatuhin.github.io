@@ -1,0 +1,111 @@
+/* Normalize css */
+
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100% }
+body { margin: 0 }
+a { background-color: transparent }
+a:active, a:hover { outline: 0 }
+abbr[title] { border-bottom: 1px dotted }
+b, strong { font-weight: bold }
+dfn { font-style: italic }
+h1 { font-size: 2em; margin: 0.67em 0 }
+mark { background: #ff0; color: #000 }
+small { font-size: 80% }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline }
+sup { top: -0.5em }
+sub { bottom: -0.25em }
+img { border: 0 }
+figure { margin: 1em 40px }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0 }
+pre { overflow: auto }
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em }
+table { border-collapse: collapse; border-spacing: 0 }
+td, th { padding: 0 }
+
+/* My rules */
+
+html {
+	font: 1.125em/1.4 TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0 auto;
+	padding: 2em;
+	max-width: 35em;
+	color: #222;
+}
+
+body > *:first-child { margin-top: 0; }
+body > *:last-child,
+body > p:last-of-type { margin-bottom: 0; }
+
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+/*h1, h2, h3, h4, h5, h6 { font-weight: 500; }*/
+
+a:link { color:#008ACE }
+a:visited { color:#B40EB4 }
+a:hover { color:#c00 }
+a:focus { outline:none }
+
+blockquote {
+	margin: 0 -2em;
+	padding: 1px 2em;
+	background: #ecf0f1;
+}
+
+ul, ol {
+	margin-left: -40px;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+h1:hover .short-link,
+h2:hover .short-link,
+h3:hover .short-link,
+h4:hover .short-link,
+h5:hover .short-link,
+h6:hover .short-link { opacity: 1; }
+
+.short-link {
+	opacity: 0;
+	border: 0;
+	margin-left: -0.74em;
+
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.short-link:hover {
+	border-bottom: 1px solid;
+}
+
+.unstyle { margin-left: 0; }
+/*ul.month li p { font-weight: normal; }*/
+
+/* Висячая пунктуация © Студия Артемия Лебедева */
+.slaquo {margin-left: 0.48em}
+.hlaquo {margin-left: -0.48em}
+.sbrace {margin-left: 0.3em}
+.hbrace {margin-left: -0.3em}
+
+/*@media (max-width: 480px) {}*/
