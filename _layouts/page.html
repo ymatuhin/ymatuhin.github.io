@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<small><a href="/">Главная</a>
+
+{% if page.categories %}
+	{% if page.categories contains "blog" %}
+	 → <a href="/{{ page.categories }}/">Блог</a>
+	{% endif %}
+{% endif %}
+
+ → Эта страница</small>
+
+{{ content }}
+
+<p class="thanks">
+	<em>{{ page.date | date: "%b %-d, %Y" }}{% if page.date %}<br>{% endif %}
+		С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.
+	</em>
+</p>

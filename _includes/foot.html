@@ -1,0 +1,27 @@
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+<script src="/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>
+	InstantClick.init();
+
+	addTypo();
+
+	// mobile hack
+	window.scrollTo(0, 1);
+
+	InstantClick.on('change', addTypo);
+
+	function addTypo () {
+		if (document.querySelector('.slaquo, .sbrace') == null) return;
+
+		function forEachElement(selector, fn) {
+			var elements = document.querySelectorAll(selector);
+			for (var i = 0; i < elements.length; i++) fn(elements[i], i);
+		}
+
+		forEachElement('body *:not(script):not(style)', function(el, i){
+			el.innerHTML = el.innerHTML.replace(/«/g, '<span class="slaquo"> </span> <span class="hlaquo"> «</span>')
+			el.innerHTML = el.innerHTML.replace(/\(/g, '<span class="sbrace"> </span> <span class="hbrace"> (</span>')
+		});
+	}
+</script>
