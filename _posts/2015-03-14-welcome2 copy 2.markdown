@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome before to джейквил Jekyll!"
+title:  "Welcome before to Jekyll zzz!"
 date:   2015-03-12
 categories: notes
-tags: [frontend, angularjs, js]
+tags: [frontend, webdev, js]
 ---
 
 

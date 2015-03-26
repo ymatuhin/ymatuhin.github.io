@@ -8,6 +8,9 @@ layout: default
 	{% if page.categories contains "blog" %}
 	 → <a href="/{{ page.categories }}/">Блог</a>
 	{% endif %}
+	{% if page.categories contains "notes" %}
+	 → <a href="/{{ page.categories }}/">Заметки разработчика интерфейсов</a>
+	{% endif %}
 {% endif %}
 
  → Эта страница</small>
@@ -19,3 +22,7 @@ layout: default
 		С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.
 	</em>
 </p>
+
+{% if page.is_post %}
+	{% include prev_next.html %}
+{% endif %}

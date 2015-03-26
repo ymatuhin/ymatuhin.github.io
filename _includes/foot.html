@@ -1,5 +1,5 @@
 <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
+<link rel="stylesheet" href="/css/main.css">
 <script src="/js/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>
 	InstantClick.init();
@@ -12,7 +12,7 @@
 	InstantClick.on('change', addTypo);
 
 	function addTypo () {
-		if (document.querySelector('.slaquo, .sbrace') == null) return;
+		if (document.querySelector('.slaquo, .sbrace') !== null) return;
 
 		function forEachElement(selector, fn) {
 			var elements = document.querySelectorAll(selector);
