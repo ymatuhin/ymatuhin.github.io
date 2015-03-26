@@ -54,7 +54,7 @@ blockquote {
 	padding: 0;
 	list-style-type: none;
 }
-.posts li { position: relative; margin-bottom: 2em }
+.posts li { position: relative; margin-bottom: 1.4em }
 .posts li:before {
 	content: "—";
 	white-space: nowrap;

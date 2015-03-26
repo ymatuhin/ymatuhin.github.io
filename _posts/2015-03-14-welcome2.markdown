@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome before to джейквил Jekyll!"
 date:   2015-03-12
 categories: notes
+permalink: welcome2
 tags: [frontend, angularjs, js]
 ---
 
