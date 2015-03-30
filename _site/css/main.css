@@ -163,6 +163,11 @@ h6:hover .short-link {
 
 #instantclick-bar { background: #008ACE }
 
+.b-share {
+	padding-left: 1px !important;
+	margin-bottom: 1.5em !important;
+}
+
 abbr[title]{border-bottom:1px dotted}
 dfn{font-style:italic}
 b,strong{font-weight:bold}

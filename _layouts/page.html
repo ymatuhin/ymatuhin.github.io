@@ -17,11 +17,16 @@ layout: default
 
 {{ content }}
 
-<p class="thanks">
-	<em>{{ page.date | date: "%b %-d, %Y" }}{% if page.date %}<br>{% endif %}
-		С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.
-	</em>
-</p>
+
+<div class="thanks">
+	{% if page.date %}
+		<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
+		<em>{{ page.date | date: "%b %-d, %Y" }}</em>
+		<br>
+	{% endif %}
+
+	<em>С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.</em>
+</div>
 
 {% if page.is_post %}
 	{% include prev_next.html %}
