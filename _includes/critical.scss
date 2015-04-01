@@ -1,8 +1,7 @@
----
----
-
 @charset "utf-8";
 
+// Fake need to other styles work fine
+.q {zoom:1}
 
 @import "variables",
         "document",
