@@ -62,59 +62,12 @@
 
 
 
-	<span>123</span>
-
-<link rel="stylesheet" href="/css/secondary.css">
+	<link rel="stylesheet" href="/css/secondary.css">
 <script src="/js/instantclick.min.js" data-no-instant></script>
-<script data-no-instant>
-	loadInstantClick();
-
-	function addTypo () {
-		if (document.querySelector('.slaquo, .sbrace') !== null) return;
-
-		function forEachElement(selector, fn) {
-			var elements = document.querySelectorAll(selector);
-			for (var i = 0; i < elements.length; i++) fn(elements[i], i);
-		}
-
-		forEachElement('p, ol, ul, blockquote, h1, h2, h3, h4', function(el, i){
-			el.innerHTML = el.innerHTML.replace(/«/g, '<span class="slaquo"> </span> <span class="hlaquo"> «</span>')
-			el.innerHTML = el.innerHTML.replace(/\(/g, '<span class="sbrace"> </span> <span class="hbrace"> (</span>')
-		});
-	}
-
-	function loadInstantClick() {
-		InstantClick.init();
-		addTypo();
-
-		InstantClick.on('change', onAjaxLoadPage);
-	}
-
-	function onAjaxLoadPage () {
-		addTypo()
-
-		if (yaCounter28017147) yaCounter28017147.hit(location.href)
-
-		setTimeout(function () {
-			if (!document.getElementById('disqus_thread') || !DISQUS)
-				return
-
-			DISQUS.reset({
-				reload: true,
-				config: function () {
-					this.page.identifier = location.pathname;
-					this.page.url = location.href;
-				}
-			});
-		}, 500);
-	}
-
-</script>
+<script src="/js/code.js" data-no-instant></script>
 
 <!-- Yandex Metrica -->
-
 <script src="//mc.yandex.ru/metrika/watch.js" data-no-instant></script>
 <script>try { var yaCounter28017147 = new Ya.Metrika({id:28017147, webvisor:true, clickmap:true}); } catch(e) { }</script>
-
 <div class="noscript"><img src="//mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div>
 </html>
