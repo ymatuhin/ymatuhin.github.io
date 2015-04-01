@@ -1,0 +1,27 @@
+/* Document */
+html {
+    font: 1.25em/1.5 $text-font;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 35em;
+    color: $text-color;
+    background: $bg-color;
+}
+
+body > *:first-child {
+    margin-top: 0;
+    padding-top: 0
+}
+
+html.js .noscript {
+    display: none !important;
+    visibility: hidden;
+}

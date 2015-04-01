@@ -117,7 +117,7 @@ h6:hover .short-link {
 }
 
 /* Arrows */
-.page-arrows-box { margin: 2em 0 0; position: relative; }
+.page-arrows-box { padding: 2em 0 0; position: relative; }
 .page-arrows {
 	max-width: 46%;
 	-ms-text-overflow: ellipsis;
@@ -136,8 +136,6 @@ h6:hover .short-link {
 .page-arrows_prev:before { content: '«'; right: 100%; }
 .page-arrows_next:after { content: '»'; left: 100%; }
 
-/* Footer thanks block */
-.thanks { margin: 2em 0 0 }
 
 @media (max-width: 480px) {
 	html { font-size: 1em }
@@ -167,6 +165,7 @@ h6:hover .short-link {
 	padding-left: 1px !important;
 	margin-bottom: 1.5em !important;
 }
+.b-share a { border: 0; }
 
 abbr[title]{border-bottom:1px dotted}
 dfn{font-style:italic}

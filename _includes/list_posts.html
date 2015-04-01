@@ -1,22 +1,37 @@
-<!-- Thanks to kizu.ru -->
-
-
 {% assign list_posts_items = '' %}
 
 {% capture list_posts_category %}{{ page.url | replace: '/', ''}}{% endcapture %}
 
-{% for post in site.posts %}
-    {% unless post.invisible and site.debug != true %}
-        {% for category in post.categories %}
-            {% if list_posts_category contains category or category == "all" %}
-                {% assign processed_post = post %}
-                {% capture list_posts_items %}{{ list_posts_items }}
-                    <li><a href="{{ post.url }}/">{{ post.title }}</a>&nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }}</em></li>{% endcapture %}
-            {% endif %}
-        {% endfor %}
-    {% endunless %}
-{% endfor %}
-
+{% if list_posts_category != "all" %}
+    {% for post in site.posts %}
+        {% unless post.invisible and site.debug != true %}
+            {% for category in post.categories %}
+                {% if list_posts_category contains category or category == "all" %}
+                    {% assign processed_post = post %}
+                    {% capture list_posts_items %}{{ list_posts_items }}
+                        <li><a href="{{ post.url }}/">{{ post.title }}</a>&nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }}</em><br>
+                        {% for tag in post.tags %}
+                            <strong class="tag">{{ tag }}</strong>
+                        {% endfor %}
+                        </li>{% endcapture %}
+                {% endif %}
+            {% endfor %}
+        {% endunless %}
+    {% endfor %}
+{% else %}
+    {% for post in site.posts %}
+        {% unless post.invisible and site.debug != true %}
+            {% assign processed_post = post %}
+            {% capture list_posts_items %}{{ list_posts_items }}
+                <li><a href="{{ post.url }}/">{{ post.title }}</a>
+                &nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }}</em><br>
+                {% for tag in post.tags %}
+                    <strong class="tag">{{ tag }}</strong>
+                {% endfor %}
+                </li>{% endcapture %}
+        {% endunless %}
+    {% endfor %}
+{% endif %}
 
 {% if list_posts_items != '' %}
 

@@ -1,0 +1,27 @@
+/* Anchor links */
+.short-link {
+    opacity: 0;
+    border: 0;
+    margin-left: -.74em;
+
+    -webkit-transition: opacity .3s 1s;
+    transition: opacity .3s 1s;
+}
+.short-link:hover { border-bottom: 1px solid }
+.short-link:focus {
+    opacity: 1;
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+}
+
+h1:hover .short-link,
+h2:hover .short-link,
+h3:hover .short-link,
+h4:hover .short-link,
+h5:hover .short-link,
+h6:hover .short-link {
+    opacity: 1;
+
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+}

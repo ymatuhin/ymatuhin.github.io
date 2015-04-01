@@ -1,0 +1,57 @@
+abbr[title] {
+	border-bottom: 1px dotted
+}
+dfn {
+	font-style: italic
+}
+b,
+strong {
+	font-weight: bold
+}
+mark {
+	background: #ff0;
+	color: #000
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+sup {
+	top: -.5em
+}
+sub {
+	bottom: -.25em
+}
+img {
+	border: 0
+}
+small {
+	font-size: 80%
+}
+figure {
+	margin: 1em 40px
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+td,
+th {
+	padding: 0
+}
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}

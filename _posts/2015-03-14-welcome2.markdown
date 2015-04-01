@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome1 before to джейквил Jekyll!"
 date:   2015-03-12
-categories: [blog, notes]
+categories: all
 permalink: welcome2
 tags: [frontend, angularjs, js]
 ---

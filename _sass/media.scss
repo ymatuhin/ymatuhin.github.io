@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+    html { font-size: 1em }
+    body { padding: 1em }
+    ul, ol { margin-left: 0 }
+    .short-link {
+        margin-left: 0;
+        opacity: 1;
+        -webkit-transition: none;
+        transition: none;
+    }
+    blockquote,
+    .highlighting {
+        margin: 1em -1em;
+        padding: 1px 1em;
+        border-radius: 0;
+    }
+    .my-photo {
+        display: block;
+        float: none;
+        margin: 0 auto 1em;
+    }
+    .posts li:before { position: static }
+}

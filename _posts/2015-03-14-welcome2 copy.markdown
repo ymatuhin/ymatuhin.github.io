@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome before to Jekyll zzz!"
 date:   2015-03-12
-categories: notes
+categories: front-end-notes
 tags: [frontend, webdev, js]
 ---
 

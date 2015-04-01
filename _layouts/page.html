@@ -5,10 +5,13 @@ layout: default
 <small><a href="/">Главная</a>
 
 {% if page.categories %}
+	{% if page.categories contains "all" %}
+	 → <a href="/{{ page.categories }}/">Все записи</a>
+	{% endif %}
 	{% if page.categories contains "blog" %}
 	 → <a href="/{{ page.categories }}/">Блог</a>
 	{% endif %}
-	{% if page.categories contains "notes" %}
+	{% if page.categories contains "front-end-notes" %}
 	 → <a href="/{{ page.categories }}/">Заметки разработчика интерфейсов</a>
 	{% endif %}
 {% endif %}
@@ -19,8 +22,9 @@ layout: default
 
 
 <div class="thanks">
+	<script type="text/javascript" async src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
+
 	{% if page.date %}
-		<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" data-yashareTheme="counter"></div>
 		<em>{{ page.date | date: "%b %-d, %Y" }}</em>
 		<br>
 	{% endif %}
@@ -30,4 +34,23 @@ layout: default
 
 {% if page.is_post %}
 	{% include prev_next.html %}
+{% endif %}
+
+
+{% if page.is_post %}
+	<br>
+	<br>
+	<div class="qwe">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var sn = 'ymatuhin';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + sn + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+	</script>
+	<div class="noscript">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></div>
+	</div>
 {% endif %}
