@@ -6,5 +6,9 @@
 		<br>
 	{% endif %}
 
-	<em>С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.</em>
+	{% if page.url == '/' %}
+		<em>С наилучшими пожеланиями, {{ site.title }}.</em>
+	{% else %}
+		<em>С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.</em>
+	{% endif %}
 </div>
