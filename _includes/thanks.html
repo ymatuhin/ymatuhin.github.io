@@ -1,0 +1,10 @@
+<div class="thanks">
+	<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="icon" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,gplus"></div>
+
+	{% if page.date %}
+		<em>{{ page.date | date: "%b %-d, %Y" }}</em>
+		<br>
+	{% endif %}
+
+	<em>С наилучшими пожеланиями, <a href="/">{{ site.title }}</a>.</em>
+</div>
