@@ -23,6 +23,8 @@ require(["yaMetrica"], function(metrica) {
 	metrica.init();
 });
 
+require(["http://yastatic.net/share/share.js"]);
+
 require(["cssLoader"], function(cssLoader) {
 	cssLoader.load('/css/secondary.css');
 });
