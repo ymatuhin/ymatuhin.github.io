@@ -23,13 +23,31 @@ a:link { color:#008ACE }
 a:visited { color:#B40EB4 }
 a:hover { color:#c00 }
 
-
 blockquote {
     margin: 1em -2em;
     padding: 1px 2em;
     background: $gray-color;
     border-radius: 3px;
     clear: both;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+h1 + img,
+h2 + img,
+h3 + img {
+    margin-top: 0;
+}
+
+iframe {
+    margin: 1em auto;
+    display: block;
+    max-width: 100%;
 }
 
 /* Висячая пунктуация © Студия Артемия Лебедева */

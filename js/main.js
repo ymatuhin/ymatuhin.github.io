@@ -8,13 +8,12 @@ require(["instantclick.min", "typo", "disqus"], function(ic, typo, disqus) {
 	InstantClick.on('change', onAjaxLoadFn);
 
 	typo.go();
-	metrica.init();
 	disqus.init();
 
 	function onAjaxLoadFn () {
 		typo.go();
 
-		// Reload metrica
+		// Try reload metrica
 		try { yaCounter28017147.hit(location.href) } catch(e) { }
 		setTimeout(disqus.reload, 1000);
 	}

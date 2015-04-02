@@ -2,130 +2,331 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Юрий Матюхин</title>
-    <description>Привет, я разработчик пользовательских интерфейсов и это моя персональная страница.
-</description>
+    <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Apr 2015 13:56:35 +0300</pubDate>
-    <lastBuildDate>Thu, 02 Apr 2015 13:56:35 +0300</lastBuildDate>
+    <pubDate>Thu, 02 Apr 2015 17:26:28 +0300</pubDate>
+    <lastBuildDate>Thu, 02 Apr 2015 17:26:28 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Welcome before to Jekyll zzz!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Хорошие привычки – день 4</title>
+        <description>&lt;p&gt;Прошло еще три дня с моего последнего отчета и вот я пишу очередной. Самочувствие хорошее, раньше очень часто хотелось спать в течении дня, но сегодня уже не так сложно как было до этого.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;difficult&quot; href=&quot;#difficult&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Сложности&lt;/h2&gt;
+&lt;p&gt;Основные сложности были связаны с тем, что я плохо планировал свое время, и из-за того что тратил на ненужные мелочи не успевал выполнить основные дела. Порой было очень сложно проснуться, особенно на второй и третий день. Один раз пропустил пробежку, но вообще бег мне нравится. Хотя дается мне очень с трудом. Даже весьма обидно когда ты пробегаешь совсем чуть чуть и понимаешь что уже устал и дальше бежать очень очень сложно. Но через пару дней я заметил что пробегаю уже почти в два раза больше чем раньше, и это сильно мотивирует :-)&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;pleasurably&quot; href=&quot;#pleasurably&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Приятности&lt;/h2&gt;
+&lt;p&gt;Отдельно мне понравилась идея 30 минут творчества, давно я уже как-то таким не занимался, и это мне приносит большое удовольствие. Есть пара рисунков ручкой, а вчера решал интересную задачку на codewars&lt;sup&gt;&lt;a id=&quot;back_to_codewars&quot; href=&quot;#codewars&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Правда решена она пока только на листочке.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Из самых эффективных и &lt;strong&gt;суперполезных&lt;/strong&gt; привычек оказалась слушать аудиокниги во время пробежки и ходьбы по городу. Я раньше думал, что аудиокниги больше занимают времени, и лучше просто книгу почитать или что-то еще поделать. Но теперь я уверен, что это просто супер эффективно и ты по сути не тратишь на это время вообще !)&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;С шахматами у меня пока не очень хорошо все складывается, играть играю, но в 80% проигрываю, обидно, эх :-)&lt;/p&gt;
 
+&lt;p&gt;Сегодня пойду в коворкинг&lt;sup&gt;&lt;a id=&quot;back_to_co_working&quot; href=&quot;#co_working&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; Zavod, в котором будет проходить &lt;a href=&quot;http://vk.com/eclubonzavod&quot;&gt;встреча&lt;/a&gt; для общения на английском языке. До этого не бывал там, и даже не знаю платно это или нет. Но очень хочется сходить и попробовать пообщаться. Английский язык – весьма важная штука, и зная его уже точно нигде не пропадешь.&lt;/p&gt;
+
+&lt;p&gt;Вот как-то так в общих чертах. Осталось только привести процент выполнения этих привычек.&lt;/p&gt;
+
+&lt;p&gt;Посмотрев числа, оказалось что во вторник было меньше всего, а дальше по возрастающей все лучше и лучше.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;percentage&quot; href=&quot;#percentage&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Процент выполнения привычек&lt;/h2&gt;
+&lt;ul&gt;
+	&lt;li&gt;Вторник – &lt;strong&gt;65%&lt;/strong&gt;&lt;/li&gt;
+	&lt;li&gt;Среда – &lt;strong&gt;85%&lt;/strong&gt;&lt;/li&gt;
+	&lt;li&gt;Четверг – &lt;strong&gt;90%&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Общий процент с учетом понедельника –&lt;strong&gt; 81.25%&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Эксперимент продолжается, все таки не прошло даже недели. Но некоторые положительные результаты видны уже сейчас, несмотря на то, что привычки в основном ведут к изменениям в долгосрочной перспективе. Главное не останавливаться !)&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+	&lt;ol&gt;
+		&lt;li&gt;
+			&lt;p&gt;&lt;a id=&quot;codewars&quot; href=&quot;//codewars.com&quot;&gt;codewars.com&lt;/a&gt; – ресурс для решения задачек на разных языках программирования. &lt;a href=&quot;#back_to_codewars&quot;&gt;↑&lt;/a&gt;&lt;/p&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;p&gt;&lt;a id=&quot;co_working&quot;&gt;&lt;/a&gt;Коворкинг (англ. co-working — совместно работающие) — это модель работы, в которой участники, оставаясь независимыми и свободными, используют общее пространство для своей деятельности. В частности, коворкинг популярен среди фрилансеров, удаленных сотрудников: переводчиков, программистов, дизайнеров и начинающих предпринимателей. Коворкинг занимает промежуточное место между работой из дома и использованием отдельного офиса. &lt;a href=&quot;#back_to_co_working&quot;&gt;↑&lt;/a&gt;&lt;/p&gt;
+			&lt;p&gt;Источник: &lt;a href=&quot;https://ru.wikipedia.org/wiki/Коворкинг&quot; title=&quot;Коворкинг – Википедия&quot;&gt;Коворкинг — Википедия&lt;/a&gt;&lt;/p&gt;
+		&lt;/li&gt;
+	&lt;/ol&gt;
+
+	&lt;p&gt;P.S. &lt;a href=&quot;//codewars.com/users/ymatuhin&quot; title=&quot;Юрий Матюхин на codewars.com&quot;&gt;мой профиль&lt;/a&gt; на codewars.&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
-        <pubDate>Thu, 12 Mar 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end-notes/welcome2%20copy%202.html</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end-notes/welcome2%20copy%202.html</guid>
+        <pubDate>Fri, 13 Feb 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/good_habits_day_4</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/good_habits_day_4</guid>
         
-        <category>frontend</category>
+        <category>привычки</category>
         
-        <category>webdev</category>
-        
-        <category>js</category>
+        <category>саморазвитие</category>
         
         
-        <category>front-end-notes</category>
+        <category>blog</category>
         
       </item>
     
       <item>
-        <title>Welcome before to Jekyll zzz!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Хорошие привычки – день 1</title>
+        <description>&lt;p&gt;Вот и закончился первый день, время подвести итог предыдущего дня :-)&lt;/p&gt;
+&lt;p&gt;День вчера был невероятно длинный, из-за дополнительных 5 часов времени, поскольку раньше я вставал примерно в 12, а сейчас в 7. Но несмотря на это, я все-таки не успел сделать некоторые запланированные дела. Ах да, чуть не забыл, забудьте про мускатный орех, ооочень отвратная штуковина, буду пить просто молоко с медом.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;performance&quot; href=&quot;#performance&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Выполнение привычек&lt;/h2&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+	&lt;li&gt;На утро у меня 7 дел, из которых все я выполнил — &lt;em&gt;100%&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;Днем 5, из которых 3 выполнено — &lt;em&gt;60%&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;Вечер 6, выполнил 5 — &lt;em&gt;83%&lt;/em&gt;&lt;/li&gt;
+	&lt;li&gt;В течении дня — 2 из 2-ух — &lt;em&gt;100%&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 12 Mar 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end-notes/welcome2%20copy.html</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end-notes/welcome2%20copy.html</guid>
+&lt;p&gt;Общая эффективность понедельника — &lt;strong&gt;85%&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Конечно я ожидал что будут все 100%, но не так уж это просто как мне изначально показалось. Зато есть куда расти. И полученной цифре в 85% я вполне доволен, ведь не каждый день получится выполнять все дела, и поэтому я ориентировался как раз на 85%, думаю даже этого будет достаточно для заметного улучшения самочувствия или чего-то еще. &lt;/p&gt;</description>
+        <pubDate>Tue, 10 Feb 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/good_habits_day_1</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/good_habits_day_1</guid>
         
-        <category>frontend</category>
+        <category>привычки</category>
         
-        <category>webdev</category>
-        
-        <category>js</category>
+        <category>саморазвитие</category>
         
         
-        <category>front-end-notes</category>
+        <category>blog</category>
         
       </item>
     
       <item>
-        <title>Welcome1 before to джейквил Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Эксперимент по внедрению хороших привычек</title>
+        <description>&lt;p&gt;Прочитав вчера вечером статью на лайфхакере про привычки, я всерьез задумался о том, что есть много вещей которые вроде бы было бы неплохо делать, но не делаются ну никак. Так-же вспомнив про то, что для того, чтобы привычка привыклась нужно выполнять её в течении &lt;b&gt;21 дня&lt;/b&gt;. Так и было решено составить список привычек, которыми нужно будет овладеть, и следить за результатами этого всего.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Я составил список привычек, которые буду выполнять. Во всех руководствах по привычкам, которые мне попадались, советуют одновременно внедрять &lt;i&gt;не более трех привычек&lt;/i&gt;. Но такой подход показался мне слишком долгим, поэтому у меня их будет немного больше.&lt;/p&gt;
+&lt;p&gt;Для удобства я разбил эти привычки по времени.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;list_habbits&quot; href=&quot;#list_habbits&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Список привычек&lt;/h2&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Итак, на утро у меня:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;проснуться рано (в 7), сразу встать с кровати (никаких еще 5 минуточек)&lt;/li&gt;
+	&lt;li&gt;выпить стакан чистой воды&lt;/li&gt;
+	&lt;li&gt;сделать зарядку (около 10 минут)&lt;/li&gt;
+	&lt;li&gt;пробежка (во время неё я буду слушать аудиокурсы по английскому, и во время ходьбы в течении дня на улице)&lt;/li&gt;
+	&lt;li class=&quot;&quot;&gt;душ&lt;/li&gt;
+	&lt;li&gt;повторить 5 слов выученных вчера&lt;/li&gt;
+	&lt;li&gt;составить план на день/неделю&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Днем:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;30 минут на тренировку дома (планирую пройти курс 100 отжиманий) + вести журнал тренировок&lt;/li&gt;
+	&lt;li&gt;30 минут на чтение книг&lt;/li&gt;
+	&lt;li&gt;30 минут на творчество (рисовать, писать и т.д.)&lt;/li&gt;
+	&lt;li&gt;30 минут на собственные проекты&lt;/li&gt;
+	&lt;li&gt;15 минут на портфолио работ&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;p&gt;&lt;strong&gt;Вечером:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;медитация&lt;/li&gt;
+	&lt;li class=&quot;&quot;&gt;чистить зубы перед сном&lt;/li&gt;
+	&lt;li&gt;горячий душ&lt;/li&gt;
+	&lt;li&gt;стакан горячего молока с медом и мускатным орехом&lt;/li&gt;
+	&lt;li&gt;проветрить комнату перед сном&lt;/li&gt;
+	&lt;li&gt;ложиться спать в одно время&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;В течении дня:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;учить 5 иностранных слов в день&lt;/li&gt;
+	&lt;li&gt;одна партия в шахматы с записью ходов&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;На пятницу:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;сходить в коворкинг на встречу по английскому языку, если я не ошибаюсь то там каждую неделю так В любом случае в течении 21 дня я буду стараться выполнять все из задуманного, а после этого мне уже будет виднее от чего можно будет отказаться, а что добавить :-)&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Thu, 12 Mar 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/welcome2</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/welcome2</guid>
+        <pubDate>Sun, 08 Feb 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/experiment_to_introduce_good_habits</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/experiment_to_introduce_good_habits</guid>
         
-        <category>frontend</category>
+        <category>привычки</category>
         
-        <category>angularjs</category>
-        
-        <category>js</category>
+        <category>саморазвитие</category>
         
         
-        <category>all</category>
+        <category>blog</category>
         
       </item>
     
       <item>
-        <title>Welcome before to джейквил Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Английский как по нотам</title>
+        <description>&lt;p&gt;Если вы изучаете английский язык, и еще не видели этот канал, вам нужно это увидеть. Представляю вам youtube канал – &quot;&lt;a href=&quot;https://www.youtube.com/user/krutopridumal/featured&quot; title=&quot;Английский как по нотам&quot;&gt;Английский как по нотам&lt;/a&gt;&quot; (krutopridumal). Так-же есть группа &lt;a href=&quot;http://vk.com/krutopridumal&quot; title=&quot;Английский как по нотам&quot;&gt;Вконтакте&lt;/a&gt;, но думаю ютуб будет удобнее.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;О чем этот канал? Да все о том-же английском, но увлекательная его особенность в том, что все примеры из английского берутся из известных песен или из фильмов. В общем лучше один раз увидеть, чем я буду пересказывать что там есть.
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Прикрепляю сюда некоторые из моих любимых видео, это диалоги из Бойцовского клуба и Матрицы. Приятного просмотра.
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/7JSggwopqoE&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/cgpr2XazMnI&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</description>
+        <pubDate>Thu, 05 Feb 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/english_as_the_notes</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/english_as_the_notes</guid>
+        
+        <category>английский язык</category>
+        
+        <category>музыка</category>
+        
+        <category>фильмы</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Выступление Вадима Макишвили — 36 (FrontTalks)</title>
+        <description>&lt;p&gt;Хочу поделиться с теми, кто возможно еще не видел этот доклад от Вадима, особенно он касается айтишников, но и людям других профессий я думаю будет интересно послушать. Происходило все это в рамках FrontTalks, а сам Вадим работает в Яндексе.&lt;/p&gt;
 
+&lt;p&gt;Когда услышал первый раз этот доклад, он задел меня за живое как говорится, и тогда я захотел поделиться этим докладом с другими. Я посоветовал его &lt;a href=&quot;http://kartamyshev.github.io/_site/&quot; title=&quot;Константин Картамышев&quot;&gt;Косте&lt;/a&gt;, и он отреагировал похожим образом. И даже посетил это мероприятие и послушал доклад в живую. Но блог у меня появился только сейчас, и поэтому вот этот доклад. Смотрите, думайте, делитесь впечатлениями :-)&lt;/p&gt;
+
+&lt;iframe src=&quot;https://www.youtube.com/embed/xPPCzryZK44&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Ссылка на &lt;a href=&quot;https://events.yandex.ru/lib/talks/2235/&quot; title=&quot;Доклад 36&quot;&gt;Событиях Яндекса&lt;/a&gt; если видео по каким-то причинам не работает.&lt;/p&gt;
+
+&lt;p&gt;Добавлю сюда же картинку, о которой говорится в докладе, надеюсь кому-то пригодится.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/36/90-let-nedeli.jpg&quot; alt=&quot;Сколько осталось жить в неделях, макиашвили 36, доклад-интрига.&quot;&gt;&lt;/p&gt;</description>
+        <pubDate>Sun, 01 Feb 2015 11:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/speech_by_vadim_makishvili_36</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/speech_by_vadim_makishvili_36</guid>
+        
+        <category>36</category>
+        
+        <category>FrontTalks</category>
+        
+        <category>Яндекс</category>
+        
+        <category>Вадим Макишвили</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Vivaldi – новый браузер по мотивам старой Оперы</title>
+        <description>&lt;p&gt;Мои поздравления всем, но в особенности поклонникам старой оперы, которые возможно все еще сидят на ней, или уже перешли на другой новомодный браузер, но все еще грезят воспоминаниями, у есть меня для вас великолепная новость — старая опера возвращается! (&lt;em&gt;осторожно много графики&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;Да да, именно так, крутые ребята (25 человек), в числе которых Йон фон Течнер (соавтор старой Оперы), выпускают новый браузер на основе хромиума — &lt;strong&gt;Vivaldi&lt;/strong&gt;. Подробную информацию о нем можно почитать на &lt;a href=&quot;vivaldi.com&quot; title=&quot;Vivaldi&quot;&gt;официальном сайте&lt;/a&gt;(en) или в обзорах на хабре &lt;a href=&quot;http://habrahabr.ru/post/248941/&quot;&gt;тут&lt;/a&gt; и &lt;a href=&quot;http://habrahabr.ru/post/248961/&quot;&gt;тут&lt;/a&gt;. А я опишу новые (или старые) фишки, которые есть в этом браузере.&lt;/p&gt;
+&lt;p&gt;Вот так выглядит браузер сразу после установки (mac os)&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view.png&quot; alt=&quot;Vivaldi – вид по умолчанию&quot;&gt;&lt;/p&gt;
+&lt;p&gt;А так если браузер не в фокусе:&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view_inactive.png&quot; alt=&quot;Vivaldi – вид по умолчанию без фокуса&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Мне кажется это очень удачным решением, чтобы браузер не отвлекал лишними цветами, когда человек находится в другом приложении. Надеюсь эта фишка перейдет и в другие приложения.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;quick_commands&quot; href=&quot;#quick_commands&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Быстрые команды&lt;/h2&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_fast_commands.png&quot; alt=&quot;Vivaldi – быстрые команды&quot;&gt;
+&lt;p&gt;Тенденция к такого рода вещам уже привычна для текстовых редакторов, но вот для браузеров это в новинку. Диалоговое окно открывается по нажатии на F2 и предлагает вам быстрый способ работать с браузером. Можно искать среди открытых вкладок, перемещаться по ним, переходить к настройкам браузера и многое другое.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;big_tabs&quot; href=&quot;#big_tabs&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Большие вкладки (табы) с превью, группировкой и возможностью поменять расположение.&lt;/h2&gt;
+&lt;table&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;background: transparent; vertical-align: center;&quot;&gt;&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_top.png&quot; alt=&quot;Vivaldi – раскрытые табы вверху&quot;&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;background: transparent&quot;&gt;
+				&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_left.png&quot; alt=&quot;Vivaldi – раскрытые табы слева&quot;&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_settings.png&quot; alt=&quot;Vivaldi – Окно настроек&quot;&gt;
+
+&lt;h2&gt;&lt;a id=&quot;color_changes&quot; href=&quot;#color_changes&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Цвет панели табов меняется в зависимости от сайта&lt;/h2&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_colorful.png&quot; alt=&quot;Vivaldi – смена цвета панели табов в зависимости от открытого сайта&quot;&gt; Насколько я понял, цвет выбирается из favicon.
+
+&lt;h2&gt;&lt;a id=&quot;speed_dial&quot; href=&quot;#speed_dial&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Speed Dial + закладки + история на одном окне, в очень удобном виде&lt;/h2&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_special_dial.png&quot; alt=&quot;Vivaldi – Speed Dial&quot;&gt;
+&lt;p&gt;Так-же можно перенести закладки в Speed Dial, правда у меня почему-то не прогрузились картинки сайтов с закладок, но я думаю это пофиксят или я что-то сделал не так.&lt;/p&gt;
+&lt;p&gt;Импорт из сафари работает на ура, плюс ко всему он импортирует страницы которые отложены для чтения!&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;aside_panel&quot; href=&quot;#aside_panel&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Боковая панель&lt;/h2&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_left_panel.png&quot; alt=&quot;Vivaldi – боковая панель&quot;&gt;
+&lt;p&gt;Боковая панель выполнена в традициях старой оперы. В ней располагаются закладки, почта (еще не работает, но скоро будет), менеджер загрузок, и заметки!&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;download_manager&quot; href=&quot;#download_manager&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Менеджер загрузок и старый диалог&lt;/h2&gt;
+&lt;p&gt;Менеджер загрузок такой же как и в старой Опере. Даже диалог спрашивает, что делать со скачиваемым файлом.
+	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_1.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
+	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_2.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
+	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_3.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;notes_in_browser&quot; href=&quot;#notes_in_browser&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Заметки прямо в браузере&lt;/h2&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_notes.png&quot; alt=&quot;Vivaldi – Заметки&quot;&gt; Так же есть возможность добавить ссылку к заметке и сгенерировать превью.
+
+&lt;h2&gt;&lt;a id=&quot;page_actions&quot; href=&quot;#page_actions&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Page actions — или действия со страницей&lt;/h2&gt;
+&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions.png&quot; alt=&quot;Vivaldi – page actions&quot;&gt;
+&lt;p&gt;Одним кликом мышки можно поиграться фильтрами для сайта. Добавилась важная для разработчиков штука как подсветка всех блоков или подсветка по ховеру. Один минус, страница перезагружается :-)
+	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_hover.png&quot; alt=&quot;Vivaldi – page actions hover&quot;&gt;
+	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_outline.png&quot; alt=&quot;Vivaldi – page outline&quot;&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;features&quot; href=&quot;#features&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Над чем сейчас работают в Vivaldi&lt;/h2&gt;
+&lt;ul&gt;
+	&lt;li&gt;почта как в старой опере;&lt;/li&gt;
+	&lt;li&gt;синхронизация;&lt;/li&gt;
+	&lt;li&gt;навигация на клавиатуре&lt;/li&gt;
+	&lt;li&gt;быстродействие&lt;/li&gt;
+	&lt;li&gt;расширения Они так-же принимают предложения по функциям и пожеланиям, которые можно оставить у них на &lt;a href=&quot;https://vivaldi.com/#Feedback&quot; title=&quot;Vivaldi оставить отзыв&quot;&gt;сайте&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;p.s. текущая версия у меня сильно нестабильна, поскольку браузер в стадии «технического показа», но думаю в скором времени все наладится.&lt;/p&gt;
+&lt;p&gt;Как вы думаете составит ли новый браузер Vivaldi конкуренцию хотя бы тому-же Яндекс Браузеру, не говоря уже о хроме? Жду ваши ответы в комментариях :-)&lt;/p&gt;</description>
+        <pubDate>Wed, 28 Jan 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/vivaldi_a_new_browser_based_on_the_old_opera</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/vivaldi_a_new_browser_based_on_the_old_opera</guid>
+        
+        <category>vivaldi</category>
+        
+        <category>браузер</category>
+        
+        <category>opera</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Привет, мир!</title>
+        <description>&lt;p&gt;Добрый день, дорогие друзья. Это первая запись в моем блоге, традиционно она называется «Привет мир!», и в ней я постараюсь написать о чем я буду тут писать.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;write_about&quot; href=&quot;#write_about&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Итак в этом блоге я буду писать о:&lt;/h2&gt;
+&lt;ul&gt;
+	&lt;li&gt;моей жизни, и с её значительными событиями связанными с тематикой блога;&lt;/li&gt;
+	&lt;li&gt;развитии нового стартапа (ITmatters), который мы собираемся запустить в следующем месяце с моим другом и коллегой — Константином Картамышевым;&lt;/li&gt;
+	&lt;li&gt;планировании, постановкой целей и о том, как их добиться;&lt;/li&gt;
+	&lt;li&gt;саморазвитии, самосовершенствовании и личностному росту, естественно с экспериментами на себе;&lt;/li&gt;
+	&lt;li&gt;крутые фишки, которые можно внедрить в сайт или ресурс и которые будут внедряться в наш стартап;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Этот блог я планирую вести как личный дневник, с описанием основных моих действий для достижения поставленных целей. Иногда я буду писать о книгах, фильмах, песнях которые мне понравились, и которые я мог бы порекомендовать, в дальнейшем для этого возможно появится отдельная рубрика. Я так-же расскажу как планирую свое время, чем пользуюсь для этого, на чем я вообще работаю и как.&lt;/p&gt;
+
+&lt;blockquote&gt;
+	&lt;p&gt;&lt;b&gt;UPD: &lt;/b&gt;
+		Изменен дизайн блога, переезд с wordpress на jekyll + github pages + DISQUS комментарии.
+		&lt;br&gt;
+		Добавлена новая категория для записей — «заметки разработчика интерфейсов».
+	&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
-        <pubDate>Thu, 12 Mar 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/welcome-to-jekyll.html</guid>
+        <pubDate>Mon, 26 Jan 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/hello_world</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/hello_world</guid>
+        
+        <category>планы</category>
+        
+        <category>стартап</category>
         
         
         <category>blog</category>

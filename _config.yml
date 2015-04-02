@@ -1,13 +1,11 @@
 # Site settings
 title: Юрий Матюхин
 email: ymatuhin@yandex.ru
-description: >
-  Привет, я разработчик пользовательских интерфейсов и это моя персональная страница.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ymatuhin.ru" # the base hostname & protocol for your site
 twitter_username: ymatuhin
 github_username: ymatuhin
-permalink: /:categories/:title.html
+permalink: /:categories/:title
 sass:
   style: compressed
 
