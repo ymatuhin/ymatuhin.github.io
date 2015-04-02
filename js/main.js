@@ -3,7 +3,7 @@ requirejs.config({
 	paths: { }
 });
 
-require(["instantclick.min", "typo", "disqus", "yaMetrica"], function(ic, typo, disqus, metrica) {
+require(["instantclick.min", "typo", "disqus"], function(ic, typo, disqus) {
 	InstantClick.init();
 	InstantClick.on('change', onAjaxLoadFn);
 
@@ -14,9 +14,14 @@ require(["instantclick.min", "typo", "disqus", "yaMetrica"], function(ic, typo, 
 	function onAjaxLoadFn () {
 		typo.go();
 
-		metrica.reload();
+		// Reload metrica
+		try { yaCounter28017147.hit(location.href) } catch(e) { }
 		setTimeout(disqus.reload, 1000);
 	}
+});
+
+require(["yaMetrica"], function(metrica) {
+	metrica.init();
 });
 
 require(["cssLoader"], function(cssLoader) {
