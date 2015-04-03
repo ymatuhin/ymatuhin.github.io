@@ -5,8 +5,8 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Apr 2015 17:22:18 +0300</pubDate>
-    <lastBuildDate>Fri, 03 Apr 2015 17:22:18 +0300</lastBuildDate>
+    <pubDate>Sat, 04 Apr 2015 00:02:09 +0300</pubDate>
+    <lastBuildDate>Sat, 04 Apr 2015 00:02:09 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -315,8 +315,8 @@
         <title>Vivaldi — новый браузер по мотивам старой Оперы</title>
         <description>&lt;p&gt;Мои поздравления всем, но в особенности поклонникам старой оперы, которые возможно все еще сидят на ней, или уже перешли на другой новомодный браузер, но все еще грезят воспоминаниями, у есть меня для вас великолепная новость — старая опера возвращается! (&lt;em&gt;осторожно много графики&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;Да да, именно так, крутые ребята (25 человек), в числе которых Йон фон Течнер (соавтор старой Оперы), выпускают новый браузер на основе хромиума — &lt;strong&gt;Vivaldi&lt;/strong&gt;. Подробную информацию о нем можно почитать на &lt;a href=&quot;vivaldi.com&quot; title=&quot;Vivaldi&quot;&gt;официальном сайте&lt;/a&gt;(en) или в обзорах на хабре &lt;a href=&quot;http://habrahabr.ru/post/248941/&quot;&gt;тут&lt;/a&gt; и &lt;a href=&quot;http://habrahabr.ru/post/248961/&quot;&gt;тут&lt;/a&gt;. А я опишу новые (или старые) фишки, которые есть в этом браузере.&lt;/p&gt;
-&lt;p&gt;Вот так выглядит браузер сразу после установки (mac os)&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view.png&quot; alt=&quot;Vivaldi – вид по умолчанию&quot;&gt;&lt;/p&gt;
-&lt;p&gt;А так если браузер не в фокусе:&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view_inactive.png&quot; alt=&quot;Vivaldi – вид по умолчанию без фокуса&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Вот так выглядит браузер сразу после установки (mac os)&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view.png&quot; alt=&quot;Vivaldi – вид по умолчанию&quot;&gt;&lt;/p&gt;
+&lt;p&gt;А так если браузер не в фокусе:&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view_inactive.png&quot; alt=&quot;Vivaldi – вид по умолчанию без фокуса&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Мне кажется это очень удачным решением, чтобы браузер не отвлекал лишними цветами, когда человек находится в другом приложении. Надеюсь эта фишка перейдет и в другие приложения.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;quick_commands&quot; href=&quot;#quick_commands&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Быстрые команды&lt;/h2&gt;
@@ -334,13 +334,13 @@
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_settings.png&quot; alt=&quot;Vivaldi – Окно настроек&quot;&gt;
+&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_settings.png&quot; alt=&quot;Vivaldi – Окно настроек&quot;&gt;
 
 &lt;h2&gt;&lt;a id=&quot;color_changes&quot; href=&quot;#color_changes&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Цвет панели табов меняется в зависимости от сайта&lt;/h2&gt;
 &lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_colorful.png&quot; alt=&quot;Vivaldi – смена цвета панели табов в зависимости от открытого сайта&quot;&gt; Насколько я понял, цвет выбирается из favicon.
 
 &lt;h2&gt;&lt;a id=&quot;speed_dial&quot; href=&quot;#speed_dial&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Speed Dial + закладки + история на одном окне, в очень удобном виде&lt;/h2&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_special_dial.png&quot; alt=&quot;Vivaldi – Speed Dial&quot;&gt;
+&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_special_dial.png&quot; alt=&quot;Vivaldi – Speed Dial&quot;&gt;
 &lt;p&gt;Так-же можно перенести закладки в Speed Dial, правда у меня почему-то не прогрузились картинки сайтов с закладок, но я думаю это пофиксят или я что-то сделал не так.&lt;/p&gt;
 &lt;p&gt;Импорт из сафари работает на ура, плюс ко всему он импортирует страницы которые отложены для чтения!&lt;/p&gt;
 
@@ -351,7 +351,7 @@
 &lt;h2&gt;&lt;a id=&quot;download_manager&quot; href=&quot;#download_manager&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Менеджер загрузок и старый диалог&lt;/h2&gt;
 &lt;p&gt;Менеджер загрузок такой же как и в старой Опере. Даже диалог спрашивает, что делать со скачиваемым файлом.
 	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_1.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
-	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_2.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
+	&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_2.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
 	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_3.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
 &lt;/p&gt;
 
@@ -361,8 +361,8 @@
 &lt;h2&gt;&lt;a id=&quot;page_actions&quot; href=&quot;#page_actions&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Page actions — или действия со страницей&lt;/h2&gt;
 &lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions.png&quot; alt=&quot;Vivaldi – page actions&quot;&gt;
 &lt;p&gt;Одним кликом мышки можно поиграться фильтрами для сайта. Добавилась важная для разработчиков штука как подсветка всех блоков или подсветка по ховеру. Один минус, страница перезагружается :-)
-	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_hover.png&quot; alt=&quot;Vivaldi – page actions hover&quot;&gt;
-	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_outline.png&quot; alt=&quot;Vivaldi – page outline&quot;&gt;
+	&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_hover.png&quot; alt=&quot;Vivaldi – page actions hover&quot;&gt;
+	&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_outline.png&quot; alt=&quot;Vivaldi – page outline&quot;&gt;
 &lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;features&quot; href=&quot;#features&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Над чем сейчас работают в Vivaldi&lt;/h2&gt;
