@@ -1,5 +1,7 @@
 {% if page.url != '/' %}
 
+	<small><a href="/">Главная</a>
+
 	{% if page.categories %}
 		{% if page.categories contains "all" %}
 		 → <a href="/{{ page.categories }}/">Все записи</a>
