@@ -1,0 +1,18 @@
+.short-link:hover { border-bottom: 1px solid }
+.short-link:focus {
+    opacity: 1;
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+}
+
+h1:hover .short-link,
+h2:hover .short-link,
+h3:hover .short-link,
+h4:hover .short-link,
+h5:hover .short-link,
+h6:hover .short-link {
+    opacity: 1;
+
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+}

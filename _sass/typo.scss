@@ -1,21 +1,13 @@
 /* Headers */
-
-h1, h2, h3, h4 {
-    font-weight: normal;
-    margin: 0;
-    padding: .67em 0
-}
-
 h1 { font-size: 2em }
 h1, h2, h3, h4 { font-weight: normal; margin: 0; padding: .67em 0 }
 h1 + *, h2 + *, h3 + *, h4 + * { margin-top: 0 }
 
-
 /* Link */
 a {
-    text-decoration: none;
-    border-bottom: 1px solid;
-    background-color: transparent;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	background-color: transparent;
 }
 
 a:active, a:hover { outline: 0 }
@@ -24,63 +16,9 @@ a:visited { color:#B40EB4 }
 a:hover { color:#c00 }
 
 blockquote {
-    margin: 1em -2em;
-    padding: 1px 2em;
-    background: $gray-color;
-    border-radius: 3px;
-    clear: both;
-}
-
-
-img {
-    max-width: 100%;
-    display: block;
-    margin: 1em auto;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2)
-}
-
-img.noshadow {
-    box-shadow: none !important;
-}
-
-h1 + img,
-h2 + img,
-h3 + img {
-    margin-top: 0;
-}
-
-iframe {
-    margin: 1em auto;
-    display: block;
-    max-width: 100%;
-}
-
-/* Висячая пунктуация © Студия Артемия Лебедева */
-.slaquo {margin-left: .48em}
-.hlaquo {margin-left: -.48em}
-.sbrace {margin-left: .3em}
-.hbrace {margin-left: -.3em}
-
-/* Код */
-pre {
-    overflow: auto
-}
-code,
-kbd,
-pre,
-samp {
-    font-family: $code-font;
-    font-size: 1em
-}
-code {
-    font-weight: normal;
-    padding: .1em .3em;
-    background: $gray-color;
-    border-radius: 3px;
-}
-pre code {
-    font-weight: inherit;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
+	margin: 1em -2em;
+	padding: 1px 2em;
+	background: $gray-color;
+	border-radius: 3px;
+	clear: both;
 }
