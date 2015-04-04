@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Fake need to other styles work fine
-.q {zoom:1}
+i{top:0}
 
 @import "variables",
         "document",
@@ -13,7 +13,3 @@
 
 /* Footer thanks block */
 .thanks { margin: 2.5em 0 0 }
-
-small {
-	font-size: 80%
-}
