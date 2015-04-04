@@ -5,9 +5,52 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Apr 2015 13:58:39 +0300</pubDate>
-    <lastBuildDate>Sat, 04 Apr 2015 13:58:39 +0300</lastBuildDate>
+    <pubDate>Sat, 04 Apr 2015 14:54:14 +0300</pubDate>
+    <lastBuildDate>Sat, 04 Apr 2015 14:54:14 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>«Оттипографируй это»!</title>
+        <description>&lt;p&gt;Сейчас, возможность создать свой сайт или страничку в интернете есть практически у каждого человека. Не нужно знать различных языков (&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;, &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt;) и особенностей хостинга, чтобы создать себе сайт. Однако многие люди, публикующие свои материалы в сети, не заботятся об их внешнем виде.&lt;/p&gt;
+
+&lt;p&gt;Типографика позволяет улучшить визуально наш текст и добавить своеобразный блеск вашему сайту.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+	&lt;p&gt;Типогра́фика — искусство оформления печатного текста.&lt;/p&gt;
+	&lt;p&gt;Источник: //ru.wikipedia.org/wiki/Типографика&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Поскольку типографика связана непосредственно с печатным текстом, то есть отдельное направление типографики — &lt;em&gt;веб-типографика&lt;/em&gt;, в котором учтены особенности текста в сети интернет.&lt;/p&gt;
+
+&lt;p&gt;Но я спешу вас обрадовать, вам не нужно изучать самостоятельно это искусство. Все уже сделано за нас. Нам остается только воспользоваться чужими трудами :-)&lt;/p&gt;
+
+&lt;p&gt;Есть самая известная, на данный момент, студия, которая занимается разработкой сайтов, оформлением книг и много чем еще — Студия Артемия Лебедева. В рамках студии они написали инструмент (&lt;em&gt;типограф&lt;/em&gt;), который помогал бы им в оформлении текстов.&lt;/p&gt;
+
+&lt;p&gt;Этот типограф есть в открытом доступе, и любой желающий может воспользоваться им для своих текстов. &lt;a href=&quot;//www.artlebedev.ru/tools/typograf/&quot;&gt;Оттипографировать свой текст!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Подробнее про этот инструмент можно почитать &lt;a href=&quot;//www.artlebedev.ru/tools/typograf/about/&quot;&gt;там-же&lt;/a&gt; на сайте.&lt;/p&gt;
+
+&lt;p&gt;Я лишь хочу добавить, что инструмент очень полезен и делает ваш текст круче. Помимо замены кавычек и тире, он ставит неразрывные пробелы, чтобы не получалось некрасивых переносов слов, частиц, запятых и т.д. Это особенно важно если у вас есть мобильная или адаптивная версия сайта.&lt;/p&gt;
+
+&lt;p&gt;На самом деле этот типограф не единственный в своем роде, но он был первым. Если вас интересуют другие типографы, то советую вам почитать &lt;a href=&quot;//www.typograf.ru/flog/&quot;&gt;эту статью&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Типографируйте свой текст перед публикацией. И не забудьте &lt;a href=&quot;//tech.yandex.ru/speller/&quot;&gt;проверить его на ошибки&lt;/a&gt; :-)&lt;/p&gt;</description>
+        <pubDate>Sat, 04 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/typograf</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/typograf</guid>
+        
+        <category>типограф</category>
+        
+        <category>подготовка контента</category>
+        
+        <category>Артемий Лебедев</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Итоги внедрения хороших привычкек спустя 2 месяца</title>
