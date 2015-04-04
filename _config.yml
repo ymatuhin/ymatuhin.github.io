@@ -8,6 +8,12 @@ github_username: ymatuhin
 permalink: /:categories/:title
 sass:
   style: compressed
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: []
 
 # Build settings
 markdown: kramdown
