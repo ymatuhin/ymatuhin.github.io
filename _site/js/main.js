@@ -1,9 +1,9 @@
 requirejs.config({
 	baseUrl: '/js/',
-	paths: { }
+	paths: {}
 });
 
-require(["instantclick.min", "typo", "disqus", "share42"], function(ic, typo, disqus, share42) {
+require(['instantclick.min', 'typo', 'disqus', 'share42'], function(ic, typo, disqus, share42) {
 	InstantClick.init();
 	InstantClick.on('change', onAjaxLoadFn);
 
@@ -22,10 +22,10 @@ require(["instantclick.min", "typo", "disqus", "share42"], function(ic, typo, di
 	}
 });
 
-require(["yaMetrica"], function(metrica) {
+require(['yaMetrica'], function(metrica) {
 	metrica.init();
 });
 
-require(["cssLoader"], function(cssLoader) {
+require(['cssLoader'], function(cssLoader) {
 	cssLoader.load('/css/secondary.css');
 });
