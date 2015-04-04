@@ -9,7 +9,7 @@ description: >
 <h1>Юрий Матюхин</h1>
 <p>Привет! Я разработчик пользовательских интерфейсов, блогер и автор нескольких проектов.</p>
 
-<h2><a id="writing" href="#writing" class="short-link">#</a> Пишу (последние записи)</h2>
+<h2><a id="writing" href="#writing" class="short-link">#</a> Пишу <small>(последние записи)</small></h2>
 <ul class="posts" style="margin-top: 0; margin-bottom: 2em;">
 {% for post in site.posts offset:0 limit:3 %}
 	<li><a href="{{ post.url }}/">{{ post.title }}</a>&nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }}</em><br>
