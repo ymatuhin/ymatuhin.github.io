@@ -1,8 +1,3 @@
-requirejs.config({
-	baseUrl: '/js/',
-	paths: {}
-});
-
 require(['instantclick.min', 'typo', 'disqus', 'share42'], function(ic, typo, disqus, share42) {
 	InstantClick.init();
 	InstantClick.on('change', onAjaxLoadFn);
