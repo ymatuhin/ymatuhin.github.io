@@ -5,9 +5,57 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Apr 2015 18:32:27 +0300</pubDate>
-    <lastBuildDate>Sun, 05 Apr 2015 18:32:27 +0300</lastBuildDate>
+    <pubDate>Sun, 05 Apr 2015 21:10:40 +0300</pubDate>
+    <lastBuildDate>Sun, 05 Apr 2015 21:10:40 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Ищем самый быстрый DNS для вас</title>
+        <description>&lt;p&gt;Раньше сотрудникам корпорации Google разрешалось тратить 20% рабочего времени на собственные проекты. Сейчас, к сожалению, это уже не так. Но благодаря тем 20% которые у них были раньше, эти ребята сделали программу, про которую я собираюсь вам сейчас рассказать.&lt;/p&gt;
+
+&lt;p&gt;Эта программа ищет самый быстрый для вашей сети DNS, что позволяет ускорить скорость загрузки сайтов. Называется она Namebench (Open-source DNS Benchmark Utility).&lt;/p&gt;
+
+&lt;blockquote&gt;
+	&lt;p&gt;&lt;strong&gt;DNS&lt;/strong&gt; (англ. Domain Name System — система доменных имён) — компьютерная распределённая система для получения информации о доменах.&lt;/p&gt;
+	&lt;p&gt;Источник: ru.wikipedia.org/wiki/DNS&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;Я не буду вдаваться в подробности работы DNS, прочитать про это вы можете и в википедии. Лучше расскажу вам про саму программу.&lt;/p&gt;
+
+&lt;p&gt;Вы можете ознакомиться с проектом на его странице &lt;a href=&quot;//code.google.com/p/namebench/&quot;&gt;code.google.com&lt;/a&gt;. Далее нужно будет скачать версию под вашу операционную систему по &lt;a href=&quot;//code.google.com/p/namebench/downloads/list&quot;&gt;этой ссылке&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;После того как программа скачалась, запустите её. В настройках менять, на сколько я знаю, практически ничего не нужно. Могу только порекомендовать поставить параметр &lt;code&gt;Health Check Perfomance&lt;/code&gt; на &lt;code&gt;Slow&lt;/code&gt; если у вас нестабильная сеть.&lt;/p&gt;
+
+&lt;img style=&quot;border-radius: 6px;&quot; src=&quot;/img/find_the_best_dns/programm.png&quot; alt=&quot;Скриншот программы Namebench&quot;&gt;
+
+&lt;p&gt;Теперь остается только нажать на &lt;code&gt;Start&lt;/code&gt;. Хочу предупредить что проверка может занять весьма длительное время (порядка 3-4 часов), а результат — бесполезным (может оказаться что у вас и так самый быстрый DNS).&lt;/p&gt;
+
+&lt;p&gt;После окончания проверки в браузере откроется окно с результатами.&lt;/p&gt;
+
+&lt;img src=&quot;/img/find_the_best_dns/results.png&quot; alt=&quot;Результат работы Namebench&quot;&gt;
+
+&lt;p&gt;В моем скриншоте мне не нужно ничего менять в настройках. Но вам могут порекомендовать изменить ваши настройки DNS. На скриншоте ниже в правом верхнем углу написаны рекомендованные настройки в порядке скорости.&lt;/p&gt;
+
+&lt;img src=&quot;/img/find_the_best_dns/results2.jpg&quot; alt=&quot;Результат работы Namebench&quot;&gt;
+
+&lt;p&gt;Теперь вам нужно будет указать эти настройки в своей операционной системе. Как это сделать вы можете найти в &lt;a href=&quot;https://www.google.ru/search?newwindow=1&amp;safe=off&amp;hl=en-RU&amp;q=как+вручную+указать+dns+серверы&quot;&gt;гугле&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Если у вас все получилось, или возникли какие-то проблемы, то напишите об этом в комментариях к статье. Я постараюсь помочь чем могу :-)&lt;/p&gt;</description>
+        <pubDate>Sun, 05 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/find_the_best_dns</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/find_the_best_dns</guid>
+        
+        <category>интернет</category>
+        
+        <category>DNS</category>
+        
+        <category>Google</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>«Оттипографируй это»!</title>
@@ -18,7 +66,7 @@
 
 &lt;blockquote&gt;
 	&lt;p&gt;Типогра́фика — искусство оформления печатного текста.&lt;/p&gt;
-	&lt;p&gt;Источник: //ru.wikipedia.org/wiki/Типографика&lt;/p&gt;
+	&lt;p&gt;Источник: ru.wikipedia.org/wiki/Типографика&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
@@ -302,13 +350,13 @@
     
       <item>
         <title>Английский как по нотам (krutopridumal)</title>
-        <description>&lt;p&gt;Если вы изучаете английский язык, и еще не видели этот канал, вам нужно это увидеть. Представляю вам youtube канал — «&lt;a href=&quot;//www.youtube.com/user/krutopridumal/featured&quot; title=&quot;Английский как по нотам&quot;&gt;Английский как по нотам&lt;/a&gt;» (&lt;strong&gt;krutopridumal&lt;/strong&gt;). Так-же есть группа &lt;a href=&quot;//vk.com/krutopridumal&quot; title=&quot;Английский как по нотам&quot;&gt;Вконтакте&lt;/a&gt;, но думаю ютуб будет удобнее.&lt;/p&gt;
+        <description>&lt;p&gt;Если вы изучаете английский язык, и еще не видели этот канал, то я рекомендую посмотреть его. Представляю вам youtube канал — «&lt;a href=&quot;//www.youtube.com/user/krutopridumal/featured&quot; title=&quot;Английский как по нотам&quot;&gt;Английский как по нотам&lt;/a&gt;» (&lt;strong&gt;krutopridumal&lt;/strong&gt;). У этого проекта так-же есть группа &lt;a href=&quot;//vk.com/krutopridumal&quot; title=&quot;Английский как по нотам&quot;&gt;Вконтакте&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;В скором будущем у них появится сайт, который сейчас находится «в разработке» — &lt;a href=&quot;//krutopridumal.ru/&quot;&gt;krutopridumal.ru&lt;/a&gt;. Там уже есть крутое пианино. Угадаете что за мелодию предлагают сыграть на нем?)&lt;/p&gt;
+&lt;p&gt;В скором будущем у них появится сайт, который сейчас находится «в разработке» — &lt;a href=&quot;//krutopridumal.ru/&quot;&gt;krutopridumal.ru&lt;/a&gt;. Там уже есть крутое пианино. Угадаете что за мелодию предлагают сыграть на нем?)&lt;/p&gt;
 
 &lt;p&gt;О чем этот канал? Да все о том-же английском, но увлекательная его особенность в том, что все примеры из английского берутся из известных песен или из фильмов. В общем лучше один раз увидеть, чем я буду пересказывать что там есть.
 
-&lt;p&gt;Прикрепляю сюда некоторые из моих любимых видео — это диалоги из Бойцовского клуба и Матрицы. Приятного просмотра.
+&lt;p&gt;Прикрепляю сюда некоторые из моих любимых видео — это диалоги из Бойцовского клуба и Матрицы. Приятного просмотра.
 
 &lt;iframe src=&quot;//www.youtube.com/embed/7JSggwopqoE&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
