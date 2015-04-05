@@ -5,8 +5,8 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Apr 2015 18:21:28 +0300</pubDate>
-    <lastBuildDate>Sun, 05 Apr 2015 18:21:28 +0300</lastBuildDate>
+    <pubDate>Sun, 05 Apr 2015 18:32:27 +0300</pubDate>
+    <lastBuildDate>Sun, 05 Apr 2015 18:32:27 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -237,7 +237,7 @@
       </item>
     
       <item>
-        <title>Эксперимент по внедрению хороших привычек</title>
+        <title>Эксперимент по внедрению хороших привычек за 21 день</title>
         <description>&lt;p&gt;Прочитав вчера вечером статью на лайфхакере про привычки, я всерьез задумался о том, что есть много вещей которые вроде бы было бы неплохо делать, но не делаются ну никак. Так-же вспомнив про то, что для того, чтобы привычка привыклась нужно выполнять её в течении &lt;b&gt;21 дня&lt;/b&gt;. Так и было решено составить список привычек, которыми нужно будет овладеть, и следить за результатами этого всего.&lt;/p&gt;
 
 &lt;p&gt;Я составил список привычек, которые буду выполнять. Во всех руководствах по привычкам, которые мне попадались, советуют одновременно внедрять &lt;i&gt;не более трех привычек&lt;/i&gt;. Но такой подход показался мне слишком долгим, поэтому у меня их будет немного больше.&lt;/p&gt;
@@ -301,16 +301,18 @@
       </item>
     
       <item>
-        <title>Английский как по нотам</title>
-        <description>&lt;p&gt;Если вы изучаете английский язык, и еще не видели этот канал, вам нужно это увидеть. Представляю вам youtube канал — «&lt;a href=&quot;https://www.youtube.com/user/krutopridumal/featured&quot; title=&quot;Английский как по нотам&quot;&gt;Английский как по нотам&lt;/a&gt;» (krutopridumal). Так-же есть группа &lt;a href=&quot;http://vk.com/krutopridumal&quot; title=&quot;Английский как по нотам&quot;&gt;Вконтакте&lt;/a&gt;, но думаю ютуб будет удобнее.&lt;/p&gt;
+        <title>Английский как по нотам (krutopridumal)</title>
+        <description>&lt;p&gt;Если вы изучаете английский язык, и еще не видели этот канал, вам нужно это увидеть. Представляю вам youtube канал — «&lt;a href=&quot;//www.youtube.com/user/krutopridumal/featured&quot; title=&quot;Английский как по нотам&quot;&gt;Английский как по нотам&lt;/a&gt;» (&lt;strong&gt;krutopridumal&lt;/strong&gt;). Так-же есть группа &lt;a href=&quot;//vk.com/krutopridumal&quot; title=&quot;Английский как по нотам&quot;&gt;Вконтакте&lt;/a&gt;, но думаю ютуб будет удобнее.&lt;/p&gt;
+
+&lt;p&gt;В скором будущем у них появится сайт, который сейчас находится «в разработке» — &lt;a href=&quot;//krutopridumal.ru/&quot;&gt;krutopridumal.ru&lt;/a&gt;. Там уже есть крутое пианино. Угадаете что за мелодию предлагают сыграть на нем?)&lt;/p&gt;
 
 &lt;p&gt;О чем этот канал? Да все о том-же английском, но увлекательная его особенность в том, что все примеры из английского берутся из известных песен или из фильмов. В общем лучше один раз увидеть, чем я буду пересказывать что там есть.
 
-&lt;p&gt;Прикрепляю сюда некоторые из моих любимых видео, это диалоги из Бойцовского клуба и Матрицы. Приятного просмотра.
+&lt;p&gt;Прикрепляю сюда некоторые из моих любимых видео — это диалоги из Бойцовского клуба и Матрицы. Приятного просмотра.
 
-&lt;iframe src=&quot;https://www.youtube.com/embed/7JSggwopqoE&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;//www.youtube.com/embed/7JSggwopqoE&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&quot;https://www.youtube.com/embed/cgpr2XazMnI&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</description>
+&lt;iframe src=&quot;//www.youtube.com/embed/cgpr2XazMnI&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</description>
         <pubDate>Thu, 05 Feb 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/blog/english_as_the_notes</link>
         <guid isPermaLink="true">http://ymatuhin.ru/blog/english_as_the_notes</guid>
@@ -320,6 +322,8 @@
         <category>музыка</category>
         
         <category>фильмы</category>
+        
+        <category>krutopridumal</category>
         
         
         <category>blog</category>
