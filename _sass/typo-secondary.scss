@@ -33,6 +33,12 @@ code {
 	border-radius: 3px;
 }
 
+mark {
+	border-radius: 3px;
+	padding: .05em .1em;
+	background: #Dff !important;
+}
+
 pre code {
 	font-weight: inherit;
 	padding: 0;
