@@ -6,6 +6,8 @@ url: "http://ymatuhin.ru" # the base hostname & protocol for your site
 twitter_username: ymatuhin
 github_username: ymatuhin
 permalink: /:categories/:title
+gems:
+  - jekyll-sitemap
 sass:
   style: compressed
 compress_html:
