@@ -5,9 +5,33 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Apr 2015 10:02:54 +0300</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 10:02:54 +0300</lastBuildDate>
+    <pubDate>Tue, 07 Apr 2015 19:33:59 +0300</pubDate>
+    <lastBuildDate>Tue, 07 Apr 2015 19:33:59 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Как исключить свои просмотры из Яндекс Метрики</title>
+        <description>&lt;p&gt;Если вы пользуетесь Яндекс Метрикой для вашего сайта или блога, то вам наверняка интересно сколько же человек его посещает. Но эти данные часто портятся тем, что вы то-же посещаете этот сайт.&lt;/p&gt;
+
+&lt;p&gt;У меня часто раньше так бывало, когда ты тестируешь новую функцию или обновление и получаешь &lt;b&gt;1000+&lt;/b&gt; просмотров проекта в Метрике :-)&lt;/p&gt;
+
+&lt;p&gt;Но этого можно легко избежать. Вам нужно нажать на кнопку редактирования счетчика &lt;img width=&quot;35&quot; height=&quot;32&quot; class=&quot;inline noshadow&quot; src=&quot;/img/ya-metrica/button.png&quot; alt=&quot;Яндекс Метрика — кнопка редактирование счетчика&quot;&gt;. Перейти на вкладку &lt;mark&gt;Фильтры&lt;/mark&gt; и поставить галочку для пункта «Не учитывать мои посещения».&lt;/p&gt;
+
+&lt;img src=&quot;/img/ya-metrica/filters.png&quot; width=&quot;700&quot; height=&quot;501&quot; alt=&quot;Яндекс Метрика — фильтр счетчика&quot;&gt;
+
+&lt;p&gt;Теперь можете спокойно тестировать, просматривать и редактировать ваш сайт не боясь испортить статистику в Яндекс Метрике.&lt;/p&gt;</description>
+        <pubDate>Wed, 08 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/how_to_exclude_my_views_from_yandex_metrica</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/how_to_exclude_my_views_from_yandex_metrica</guid>
+        
+        <category>Яндекс</category>
+        
+        <category>Метрика</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Как расшарить мобильный интернет с Yota на компьютер без огрничений</title>
@@ -442,86 +466,6 @@
         <category>Яндекс</category>
         
         <category>Вадим Макишвили</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Vivaldi — новый браузер по мотивам старой Оперы</title>
-        <description>&lt;p&gt;Мои поздравления всем, но в особенности поклонникам старой оперы, которые возможно все еще сидят на ней, или уже перешли на другой новомодный браузер, но все еще грезят воспоминаниями, у есть меня для вас великолепная новость — старая опера возвращается! (&lt;em&gt;осторожно много графики&lt;/em&gt;)&lt;/p&gt;
-&lt;p&gt;Да да, именно так, крутые ребята (25 человек), в числе которых Йон фон Течнер (соавтор старой Оперы), выпускают новый браузер на основе хромиума — &lt;strong&gt;Vivaldi&lt;/strong&gt;. Подробную информацию о нем можно почитать на &lt;a href=&quot;vivaldi.com&quot; title=&quot;Vivaldi&quot;&gt;официальном сайте&lt;/a&gt;(en) или в обзорах на хабре &lt;a href=&quot;http://habrahabr.ru/post/248941/&quot;&gt;тут&lt;/a&gt; и &lt;a href=&quot;http://habrahabr.ru/post/248961/&quot;&gt;тут&lt;/a&gt;. А я опишу новые (или старые) фишки, которые есть в этом браузере.&lt;/p&gt;
-&lt;p&gt;Вот так выглядит браузер сразу после установки (mac os)&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view.png&quot; alt=&quot;Vivaldi – вид по умолчанию&quot;&gt;&lt;/p&gt;
-&lt;p&gt;А так если браузер не в фокусе:&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_default_view_inactive.png&quot; alt=&quot;Vivaldi – вид по умолчанию без фокуса&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Мне кажется это очень удачным решением, чтобы браузер не отвлекал лишними цветами, когда человек находится в другом приложении. Надеюсь эта фишка перейдет и в другие приложения.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;quick_commands&quot; href=&quot;#quick_commands&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Быстрые команды&lt;/h2&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_fast_commands.png&quot; alt=&quot;Vivaldi – быстрые команды&quot;&gt;
-&lt;p&gt;Тенденция к такого рода вещам уже привычна для текстовых редакторов, но вот для браузеров это в новинку. Диалоговое окно открывается по нажатии на F2 и предлагает вам быстрый способ работать с браузером. Можно искать среди открытых вкладок, перемещаться по ним, переходить к настройкам браузера и многое другое.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;big_tabs&quot; href=&quot;#big_tabs&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Большие вкладки (табы) с превью, группировкой и возможностью поменять расположение.&lt;/h2&gt;
-&lt;table&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;background: transparent; vertical-align: center;&quot;&gt;&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_top.png&quot; alt=&quot;Vivaldi – раскрытые табы вверху&quot;&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;background: transparent&quot;&gt;
-				&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_left.png&quot; alt=&quot;Vivaldi – раскрытые табы слева&quot;&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_settings.png&quot; alt=&quot;Vivaldi – Окно настроек&quot;&gt;
-
-&lt;h2&gt;&lt;a id=&quot;color_changes&quot; href=&quot;#color_changes&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Цвет панели табов меняется в зависимости от сайта&lt;/h2&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_tabs_colorful.png&quot; alt=&quot;Vivaldi – смена цвета панели табов в зависимости от открытого сайта&quot;&gt; Насколько я понял, цвет выбирается из favicon.
-
-&lt;h2&gt;&lt;a id=&quot;speed_dial&quot; href=&quot;#speed_dial&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Speed Dial + закладки + история на одном окне, в очень удобном виде&lt;/h2&gt;
-&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_special_dial.png&quot; alt=&quot;Vivaldi – Speed Dial&quot;&gt;
-&lt;p&gt;Так-же можно перенести закладки в Speed Dial, правда у меня почему-то не прогрузились картинки сайтов с закладок, но я думаю это пофиксят или я что-то сделал не так.&lt;/p&gt;
-&lt;p&gt;Импорт из сафари работает на ура, плюс ко всему он импортирует страницы которые отложены для чтения!&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;aside_panel&quot; href=&quot;#aside_panel&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Боковая панель&lt;/h2&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_left_panel.png&quot; alt=&quot;Vivaldi – боковая панель&quot;&gt;
-&lt;p&gt;Боковая панель выполнена в традициях старой оперы. В ней располагаются закладки, почта (еще не работает, но скоро будет), менеджер загрузок, и заметки!&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;download_manager&quot; href=&quot;#download_manager&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Менеджер загрузок и старый диалог&lt;/h2&gt;
-&lt;p&gt;Менеджер загрузок такой же как и в старой Опере. Даже диалог спрашивает, что делать со скачиваемым файлом.
-	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_1.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
-	&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_2.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
-	&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_download_3.png&quot; alt=&quot;Vivaldi – окно загрузки&quot;&gt;
-&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;notes_in_browser&quot; href=&quot;#notes_in_browser&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Заметки прямо в браузере&lt;/h2&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_notes.png&quot; alt=&quot;Vivaldi – Заметки&quot;&gt; Так же есть возможность добавить ссылку к заметке и сгенерировать превью.
-
-&lt;h2&gt;&lt;a id=&quot;page_actions&quot; href=&quot;#page_actions&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Page actions — или действия со страницей&lt;/h2&gt;
-&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions.png&quot; alt=&quot;Vivaldi – page actions&quot;&gt;
-&lt;p&gt;Одним кликом мышки можно поиграться фильтрами для сайта. Добавилась важная для разработчиков штука как подсветка всех блоков или подсветка по ховеру. Один минус, страница перезагружается :-)
-	&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_hover.png&quot; alt=&quot;Vivaldi – page actions hover&quot;&gt;
-	&lt;img class=&quot;noshadow&quot; src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/vivaldi/vivaldi_page_actions_outline.png&quot; alt=&quot;Vivaldi – page outline&quot;&gt;
-&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;features&quot; href=&quot;#features&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Над чем сейчас работают в Vivaldi&lt;/h2&gt;
-&lt;ul&gt;
-	&lt;li&gt;почта как в старой опере;&lt;/li&gt;
-	&lt;li&gt;синхронизация;&lt;/li&gt;
-	&lt;li&gt;навигация на клавиатуре&lt;/li&gt;
-	&lt;li&gt;быстродействие&lt;/li&gt;
-	&lt;li&gt;расширения Они так-же принимают предложения по функциям и пожеланиям, которые можно оставить у них на &lt;a href=&quot;https://vivaldi.com/#Feedback&quot; title=&quot;Vivaldi оставить отзыв&quot;&gt;сайте&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;p.s. текущая версия у меня сильно нестабильна, поскольку браузер в стадии «технического показа», но думаю в скором времени все наладится.&lt;/p&gt;
-&lt;p&gt;Как вы думаете составит ли новый браузер Vivaldi конкуренцию хотя бы тому-же Яндекс Браузеру, не говоря уже о хроме? Жду ваши ответы в комментариях :-)&lt;/p&gt;</description>
-        <pubDate>Wed, 28 Jan 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/vivaldi_a_new_browser_based_on_the_old_opera</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/vivaldi_a_new_browser_based_on_the_old_opera</guid>
-        
-        <category>vivaldi</category>
-        
-        <category>браузер</category>
-        
-        <category>opera</category>
         
         
         <category>front-end</category>

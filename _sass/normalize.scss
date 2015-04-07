@@ -9,8 +9,10 @@ strong {
 	font-weight: bold
 }
 mark {
-	background: #ff0;
-	color: #000
+	background: #fff100;
+	color: #000;
+	border-radius: 3px;
+	padding: .05em .1em;
 }
 sub,
 sup {
