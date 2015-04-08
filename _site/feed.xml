@@ -5,9 +5,54 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Apr 2015 23:52:49 +0300</pubDate>
-    <lastBuildDate>Tue, 07 Apr 2015 23:52:49 +0300</lastBuildDate>
+    <pubDate>Thu, 09 Apr 2015 00:36:37 +0300</pubDate>
+    <lastBuildDate>Thu, 09 Apr 2015 00:36:37 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Punto Switcher в каждый дом</title>
+        <description>&lt;p&gt;Сегодня, я хочу рассказать вам о популярной программе Punto Switcher. Если вы разрабатываете что-либо, пробовали уже Punto Switcher и вам он не очень понравился, то не спешите закрывать вкладку. Возможно вы просто не правильно его готовите :-)&lt;/p&gt;
+
+&lt;blockquote&gt;
+	&lt;img class=&quot;fl-left noshadow&quot; width=&quot;125&quot; height=&quot;125&quot; src=&quot;/img/punto/logo-punto-switcher.gif&quot; alt=&quot;Логотип Punto Switcher&quot; /&gt;
+
+	&lt;p&gt;&lt;b&gt;Punto Switcher&lt;/b&gt; — программа для автоматического переключения между различными раскладками клавиатуры в операционных системах семейства Microsoft Windows и Mac OS X.&lt;/p&gt;
+
+	&lt;p class=&quot;clear&quot;&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/punto_switcher&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Punto Switcher следит за вашей раскладкой клавиатуры. Он знает, что «ghbdtn» — это «mark», а «пщщв ьщктштп» — это «good morning».&lt;/p&gt;
+
+&lt;img src=&quot;/img/punto/example.gif&quot; alt=&quot;Пример использования программы Punto Switcher&quot;&gt;
+
+&lt;p&gt;Сама программа великолепно подходит для обычных пользователей. Особенно если вы часто общаетесь в соц. сетях. Но для программистов и разработчиков, использование этой программы со стандартными настройками может превратиться в настоящий ад.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Почему?&lt;/b&gt; Да потому, что когда мы пишем код, программа может подумать, что мы хотим написать что-то на русском языке. И она автоматически переключит нам язык (а мы потом исправляй назад). Чаще всего именно эту причину я слышал от своих знакомых разработчиков, на мой вопрос: «Почему ты не используешь Punto Switcher?».&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;my_suggestion&quot; href=&quot;#my_suggestion&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что я предлагаю?&lt;/h2&gt;
+&lt;p&gt;Я предлагаю полностью отключить автоматическую смену раскладки клавиатуры. Звук если хотите, то можно тоже выключить.&lt;/p&gt;
+
+&lt;p&gt;Смысл этого действия в том, что нам все еще доступны горячие клавиши. И благодаря им, мы можем сменить раскладку последнего написанного слова или выделенного текста. И теперь мы полностью контролируем весь, написанный нами, текст. И если у нас была включена неправильная раскладка, то мы просто нажимаем горячую клавишу (по умолчанию это &lt;code&gt;Alt&lt;/code&gt; для Mac OS и &lt;code&gt;break&lt;/code&gt; для Windows).&lt;/p&gt;
+
+&lt;img src=&quot;/img/punto/settings.png&quot; alt=&quot;Окно настроек с горячими клавишами программы Punto Switcher&quot;&gt;
+
+&lt;p&gt;Сейчас, я настолько привык к этой программе, что очень расстраиваюсь работая за чужим компьютером невозможностью быстро исправить неправильную раскладку для текста. Приходится все удалять, менять раскладку и писать заново.&lt;/p&gt;
+
+&lt;p&gt;В качестве заключения, привожу ссылку на &lt;a href=&quot;//punto.yandex.ru/&quot;&gt;Punto Switcher&lt;/a&gt; и справку для &lt;a href=&quot;//help.yandex.ru/punto-mac/&quot;&gt;Mac OS&lt;/a&gt; и &lt;a href=&quot;//help.yandex.ru/punto-win/&quot;&gt;Windows&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;P.S. будьте осторожны при установке. Не поставьте случайно вместе с ним Яндекс Браузер и другой, ненужный вам софт.&lt;/p&gt;</description>
+        <pubDate>Thu, 09 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/all/punto_switcher_to_every_home</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/all/punto_switcher_to_every_home</guid>
+        
+        <category>раскладка клавиатуры</category>
+        
+        <category>автоматическая смена языка</category>
+        
+        
+        <category>all</category>
+        
+      </item>
     
       <item>
         <title>Как исключить свои просмотры из статистики в Яндекс.Метрике</title>
@@ -81,7 +126,7 @@
 
 &lt;blockquote&gt;
 	&lt;p&gt;&lt;strong&gt;DNS&lt;/strong&gt; (англ. Domain Name System — система доменных имён) — компьютерная распределённая система для получения информации о доменах.&lt;/p&gt;
-	&lt;p&gt;Источник: ru.wikipedia.org/wiki/DNS&lt;/p&gt;
+	&lt;p&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/DNS&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
@@ -130,7 +175,7 @@
 
 &lt;blockquote&gt;
 	&lt;p&gt;Типогра́фика — искусство оформления печатного текста.&lt;/p&gt;
-	&lt;p&gt;Источник: ru.wikipedia.org/wiki/Типографика&lt;/p&gt;
+	&lt;p&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/Типографика&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
@@ -439,36 +484,6 @@
         
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Выступление Вадима Макишвили — 36 (FrontTalks)</title>
-        <description>&lt;p&gt;Хочу поделиться с теми, кто возможно еще не видел этот доклад от Вадима, особенно он касается айтишников, но и людям других профессий я думаю будет интересно послушать. Происходило все это в рамках FrontTalks, а сам Вадим работает в Яндексе.&lt;/p&gt;
-
-&lt;p&gt;Когда услышал первый раз этот доклад, он задел меня за живое как говорится, и тогда я захотел поделиться этим докладом с другими. Я посоветовал его &lt;a href=&quot;http://kartamyshev.github.io/_site/&quot; title=&quot;Константин Картамышев&quot;&gt;Косте&lt;/a&gt;, и он отреагировал похожим образом. И даже посетил это мероприятие и послушал доклад в живую. Но блог у меня появился только сейчас, и поэтому вот этот доклад. Смотрите, думайте, делитесь впечатлениями :-)&lt;/p&gt;
-
-&lt;iframe src=&quot;https://www.youtube.com/embed/xPPCzryZK44&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Ссылка на &lt;a href=&quot;https://events.yandex.ru/lib/talks/2235/&quot; title=&quot;Доклад 36&quot;&gt;Событиях Яндекса&lt;/a&gt; если видео по каким-то причинам не работает.&lt;/p&gt;
-
-&lt;p&gt;Добавлю сюда же картинку, о которой говорится в докладе, надеюсь кому-то пригодится.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ymatuhin.bitbucket.org/ymatuhin.ru/img/36/90-let-nedeli.jpg&quot; alt=&quot;Сколько осталось жить в неделях, макиашвили 36, доклад-интрига.&quot;&gt;&lt;/p&gt;</description>
-        <pubDate>Sun, 01 Feb 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/speech_by_vadim_makishvili_36</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/speech_by_vadim_makishvili_36</guid>
-        
-        <category>36</category>
-        
-        <category>FrontTalks</category>
-        
-        <category>Яндекс</category>
-        
-        <category>Вадим Макишвили</category>
-        
-        
-        <category>front-end</category>
         
       </item>
     

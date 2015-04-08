@@ -2,10 +2,24 @@ img {
 	max-width: 100%;
 	display: block;
 	margin: 1em auto;
+	vertical-align: middle;
 	box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2)
 }
 img.noshadow { box-shadow: none !important; }
 img.inline { display: inline-block; vertical-align: middle; margin: 0; }
+
+.fl-left {
+	float: left;
+}
+
+.fl-right {
+	float: right;
+}
+
+.clear { clear: both; }
+
+img.fl-left { margin-right: 1em; }
+img.fl-right { margin-left: 1em; }
 
 iframe {
 	margin: 1em auto;
