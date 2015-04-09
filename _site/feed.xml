@@ -5,13 +5,13 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Apr 2015 07:28:57 +0300</pubDate>
-    <lastBuildDate>Thu, 09 Apr 2015 07:28:57 +0300</lastBuildDate>
+    <pubDate>Thu, 09 Apr 2015 13:58:11 +0300</pubDate>
+    <lastBuildDate>Thu, 09 Apr 2015 13:58:11 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Punto Switcher в каждый дом</title>
-        <description>&lt;p&gt;Сегодня, я хочу рассказать вам о популярной программе Punto Switcher. Если вы разрабатываете что-либо, пробовали уже Punto Switcher и вам он не очень понравился, то не спешите закрывать вкладку. Возможно вы просто не правильно его готовите :-)&lt;/p&gt;
+        <description>&lt;p&gt;Сегодня, я хочу рассказать вам о популярной программе Punto Switcher. Если вы разрабатываете что-либо, пробовали использовать Punto Switcher и вам он не очень понравился, то не спешите закрывать вкладку. Возможно, вы просто не правильно его готовите :-)&lt;/p&gt;
 
 &lt;blockquote&gt;
 	&lt;img class=&quot;fl-left noshadow&quot; width=&quot;125&quot; height=&quot;125&quot; src=&quot;/img/punto/logo-punto-switcher.gif&quot; alt=&quot;Логотип Punto Switcher&quot; /&gt;
@@ -25,7 +25,7 @@
 
 &lt;img src=&quot;/img/punto/example.gif&quot; alt=&quot;Пример использования программы Punto Switcher&quot;&gt;
 
-&lt;p&gt;Сама программа великолепно подходит для обычных пользователей. Особенно если вы часто общаетесь в соц. сетях. Но для программистов и разработчиков, использование этой программы со стандартными настройками может превратиться в настоящий ад.&lt;/p&gt;
+&lt;p&gt;Сама программа великолепно подходит для большинства пользователей. Особенно если вы часто общаетесь или набираете текс. Но для программистов и разработчиков использование этой программы, со стандартными настройками, может превратиться в настоящий ад.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;Почему?&lt;/b&gt; Просто когда мы пишем код, программа может подумать, что мы хотим написать что-то на русском языке. И она автоматически переключит нам язык (а мы потом исправляй назад). Чаще всего именно эту причину я слышал от своих знакомых разработчиков, на мой вопрос: «Почему ты не используешь Punto Switcher?».&lt;/p&gt;
 
