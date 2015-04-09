@@ -1,24 +1,30 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 
-<title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endif %}">
+	<title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endif %}">
 
-<meta property="og:description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endif %}">
+	<!-- TODO: Edit share information -->
+	<meta property="og:title" content="My Shared Article Title" />
+	<meta property="og:description" content="Description of shared article" />
+	<meta property="og:url" content="http://example.com/my_article.html" />
+	<meta property="og:image" content="http://example.com/foo.jpg" />
 
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-<script>document.documentElement.className = "js"</script>
+	<script>document.documentElement.className = "js"</script>
 
-<!-- critical.css -->
-<style>
-	{% capture include_to_scssify %}
-		{% include critical.scss %}
-	{% endcapture %}
-	{{ include_to_scssify | scssify }}
-</style>
+	<!-- critical.css -->
+	<style>
+		{% capture include_to_scssify %}
+			{% include critical.scss %}
+		{% endcapture %}
+		{{ include_to_scssify | scssify }}
+	</style>
 
-<noscript><link rel="stylesheet" type="text/css" href="/css/secondary.css"></noscript>
+	<noscript><link rel="stylesheet" type="text/css" href="/css/secondary.css"></noscript>
+</head>
