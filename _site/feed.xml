@@ -5,8 +5,8 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Apr 2015 13:58:11 +0300</pubDate>
-    <lastBuildDate>Thu, 09 Apr 2015 13:58:11 +0300</lastBuildDate>
+    <pubDate>Thu, 09 Apr 2015 13:58:39 +0300</pubDate>
+    <lastBuildDate>Thu, 09 Apr 2015 13:58:39 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -21,7 +21,7 @@
 	&lt;p class=&quot;clear&quot;&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/punto_switcher&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Punto Switcher следит за вашей раскладкой клавиатуры. Он знает, что «ghbdtn» — это «mark», а «пщщв ьщктштп» — это «good morning».&lt;/p&gt;
+&lt;p&gt;Punto Switcher следит за вашей раскладкой клавиатуры. Он знает, что «ghbdtn» — это «привет», а «пщщв ьщктштп» — это «good morning».&lt;/p&gt;
 
 &lt;img src=&quot;/img/punto/example.gif&quot; alt=&quot;Пример использования программы Punto Switcher&quot;&gt;
 
