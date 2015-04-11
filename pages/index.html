@@ -14,10 +14,11 @@ description: >
 {% for post in site.posts offset:0 limit:3 %}
 	<li><a href="{{ post.url }}/">{{ post.title }}</a>&nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }}</em><br>
 	{% for tag in post.tags %}
-		<strong class="tag">{{ tag }}</strong>
+		<a href="/tags/#{{tag | replace: ' ', '_'}}" class="tag">{{ tag }}</a>
 	{% endfor %}
 {% endfor %}
 </ul>
+
 
 <blockquote>
 	<p>Теперь у меня есть две категории: <a href="/blog/">блог</a> и <a href="/front-end/">заметки разработчика интерфейсов</a>. А так-же страница со <a href="/all/">всеми записями</a> для тех, кто читает и то и другое. Еще все это можно <a href="/feed.xml" target="_blank">читать по RSS</a>.</p>

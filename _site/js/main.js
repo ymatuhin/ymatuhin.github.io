@@ -17,11 +17,9 @@ require(['instantclick.min', 'typo', 'disqus', 'share42'], function(ic, typo, di
 	}
 });
 
-if (!~location.href.indexOf('//localhost:4000')) {
-	require(['yaMetrica'], function(metrica) {
-		metrica.init();
-	});
-}
+require(['yaMetrica'], function(metrica) {
+	metrica.init();
+});
 
 require(['cssLoader'], function(cssLoader) {
 	cssLoader.load('/css/secondary.css');

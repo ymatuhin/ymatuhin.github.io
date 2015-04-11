@@ -1,0 +1,71 @@
+---
+layout: post
+title: Безопасное использование CDN для jQuery и других библиотек
+categories: front-end
+tags: [CDN, jQuery, fallback]
+description: >
+  Как безопасно загрузить популярные JavaScript библиотеки из публичных CDN с fallback-ом на локальную библиотеку, если с CDN возникнут какие-то проблемы.
+---
+
+<p>Один из главных советов для оптимизации скорости загрузки сайтов является использование публичных <abbr title="Content Delivery Network">CDN</abbr> с популярными библиотеками, такими как jQuery или AngularJS.</p>
+
+<h2>Преимущества CDN</h2>
+
+<ol>
+  <li>Увеличение скорости загрузки, поскольку пользователь сможет получить контент по оптимальному маршруту за минимальное время из ближайшей точки;</li>
+  <li>Снижение нагрузки на наш сервер, ведь скрипты мы загружаем с чужих серверов.</li>
+</ol>
+
+<p>В настоящий момент, очень многие используют CDN для загрузки своих скриптов. К примеру, часто можно видеть вот такой код:</p>
+
+{% highlight html %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+{% endhighlight %}
+
+<p>Однако многие забывают о том, что нужно проверить, загрузился ли наш скрипт. И если не загрузился, то загрузить его с нашего сайта.</p>
+
+{% highlight html %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+{% endhighlight %}
+
+<p>Конечно, это самый простой способ, применимый для большинства сайтов. Для больших <abbr title="Single Page Application">SPA</abbr> я рекомендовал бы воспользоваться асинхронной загрузкой скриптов через <a href="http://requirejs.org/">RequireJS</a>.</p>
+
+<p>Пример загрузки jQuery из CDN с безопасной загрузкой с нашего сервера если с CDN возникли какие-то проблемы:</p>
+
+{% highlight javascript %}
+requirejs.config({
+  enforceDefine: true,
+  paths: {
+  jquery: [
+    'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min',
+    // Если из CDN наша библиотека не загрузилась,
+    // то загружать из папки lib файл jquery.js
+    'lib/jquery'
+    ]
+  }
+});
+
+require(['jquery'], function ($) { /* Ваш код тут */ });
+{% endhighlight %}
+
+<p>В примерах использовалась библиотека jQuery, но так-же можно загружать и другие библиотеки.</p>
+
+<h2>Список бесплатных CDN</h2>
+<ol>
+  <li><a href="//developers.google.com/speed/libraries/">Google CDN</a></li>
+  <li><a href="//tech.yandex.ru/jslibs/">Yandex CDN</a> (RU)</li>
+  <li><a href="//code.jquery.com/">jQuery CDN</a> (только для jQuery)</li>
+  <li><a href="//www.asp.net/ajax/cdn">Microsoft CDN</a></li>
+  <li><a href="https://cdnjs.com/">Cdnjs</a></li>
+  <li><a href="http://www.jsdelivr.com/">jsDelivr</a></li>
+  <li><a href="http://osscdn.com/">OssCDN</a></li>
+</ol>
+
+<p>Из всех, вышеперечисленных сервисов, только Яндекс на русском языке. Поэтому если вы не сильны в английском, я бы рекомендовал именно его. К тому-же, там действительно много популярных библиотек.</p>
+
+<p>Если вы используете Bootstrap, то можно воспользоваться <a href="http://www.bootstrapcdn.com/">Bootstrap CDN</a>.</p>
+
+<p>Если вы пишите свой, публичный скрипт, то его можно загрузить в jsDelivr и пользоваться им через CDN.</p>
+
+<p>А вы используете CDN для загрузки библиотек на своих проектах?</p>

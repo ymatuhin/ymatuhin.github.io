@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ymatuhin.ru/front-end/safe_use_of_cdn_and_jquery</loc>
+    <lastmod>2015-04-11T00:00:00+03:00</lastmod>
+  </url>
+  <url>
     <loc>http://ymatuhin.ru/all/punto_switcher_to_every_home</loc>
     <lastmod>2015-04-09T00:00:00+03:00</lastmod>
   </url>
@@ -83,7 +87,10 @@
     <loc>http://ymatuhin.ru/projects/</loc>
   </url>
   <url>
+    <loc>http://ymatuhin.ru/tags/</loc>
+  </url>
+  <url>
     <loc>http://ymatuhin.ru/404.html</loc>
-    <lastmod>2015-03-15T14:37:59+03:00</lastmod>
+    <lastmod>2015-04-10T18:17:41+03:00</lastmod>
   </url>
 </urlset>
