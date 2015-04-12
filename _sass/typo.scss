@@ -8,6 +8,9 @@ a {
 	text-decoration: none;
 	border-bottom: 1px solid;
 	background-color: transparent;
+
+	-webkit-transition: color .2s;
+	transition: color .2s;
 }
 
 a:active, a:hover { outline: 0 }

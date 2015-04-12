@@ -1,11 +1,20 @@
 /* Tag lists in posts */
 .tags { margin: -1.3em 0 0; padding-bottom: 1.3em; }
 .tag {
-    font-size: .8em;
-    font-weight: normal;
-    padding: .2em .4em;
-    background: $gray-color;
-    border-radius: 3px;
-    border: 0;
-    color: #666 !important;
+	font-size: .8em;
+	font-weight: normal;
+	padding: .2em .4em;
+	background: $gray-color;
+	border-radius: 3px;
+	border: 0;
+	color: #444 !important;
+	font-style: italic;
+}
+
+.tag {
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.tag:hover {
+	background: darken($gray-color, 5%);
 }

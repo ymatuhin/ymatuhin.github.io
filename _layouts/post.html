@@ -6,7 +6,7 @@ is_post: true
 <h1><a id="title" href="#title" class="short-link">#</a> {{ page.title }}</h1>
 <p class="tags">
 	{% for tag in page.tags %}
-		<a href="/tags/#{{tag | replace: ' ', '_'}}" class="tag">{{ tag }}</a>
+		<a class="tag" href="/tags/#{{tag | replace: ' ', '_'}}">{{ tag }}</a>
 	{% endfor %}
 </p>
 

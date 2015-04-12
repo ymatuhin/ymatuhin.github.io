@@ -5,9 +5,37 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Apr 2015 00:27:36 +0300</pubDate>
-    <lastBuildDate>Sun, 12 Apr 2015 00:27:36 +0300</lastBuildDate>
+    <pubDate>Mon, 13 Apr 2015 00:17:16 +0300</pubDate>
+    <lastBuildDate>Mon, 13 Apr 2015 00:17:16 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Отзыв о расширении Data Saver (beta) от Google</title>
+        <description>&lt;p&gt;Совсем недавно, Google выпустила расширение экономящее трафик под названием Data Saver (beta). Такой аналог режима турбо от Оперы, но только для браузеров на движке хромиума.&lt;/p&gt;
+
+&lt;p&gt;Я решил его протестировать, поскольку я расшариваю мобильный интернет с телефона на Mac и было бы неплохо уменьшить трафик (хоть у меня и безлимитный интернет). Тем более, что из-за этого (в теории) сайты должны загружаться быстрее.&lt;/p&gt;
+
+&lt;img src=&quot;/img/data_saver/rezult.png&quot; alt=&quot;Результаты работы расширения Data Saver от Google&quot;&gt;
+
+&lt;p&gt;Результаты тестирования получились не очень утешительными. Экономия (если это можно так назвать) составила &lt;strong&gt;4.6%&lt;/strong&gt;. И это не один день тестирования, это месяц обычного использования браузера каждый день, в среднем по 8-9 часов.&lt;/p&gt;
+
+&lt;p&gt;Конечно, слово beta намекает нам, что расширение еще не готово, но все-равно очень слабенько. Смотрел некоторые другие обзоры, у некоторых экономия порядка 40% получилась. Я не знаю что они такого смотрели (может сутками flickr), по собственному опыту я видел что ужимаются изображения, и у них немного уменьшается качество.&lt;/p&gt;
+
+&lt;p&gt;В любом случае, расширение, для меня, практически бесполезное. Пользоваться им дальше не вижу никакого смысла. Если вы уже попробовали это расширение, или собираетесь попробовать — напишите в комментариях насколько эффективно оно для вас. Может быть это только у меня так :-)&lt;/p&gt;</description>
+        <pubDate>Mon, 13 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/review_about_chrome_data_saver_extension</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/review_about_chrome_data_saver_extension</guid>
+        
+        <category>Google</category>
+        
+        <category>отзыв</category>
+        
+        <category>расширение</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Безопасное использование CDN для jQuery и других библиотек</title>
@@ -456,70 +484,6 @@
         <pubDate>Tue, 10 Feb 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/blog/good_habits_day_1</link>
         <guid isPermaLink="true">http://ymatuhin.ru/blog/good_habits_day_1</guid>
-        
-        <category>привычки</category>
-        
-        <category>саморазвитие</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Эксперимент по внедрению хороших привычек за 21 день</title>
-        <description>&lt;p&gt;Прочитав вчера вечером статью на лайфхакере про привычки, я всерьез задумался о том, что есть много вещей которые вроде бы было бы неплохо делать, но не делаются ну никак. Так-же вспомнив про то, что для того, чтобы привычка привыклась нужно выполнять её в течении &lt;b&gt;21 дня&lt;/b&gt;. Так и было решено составить список привычек, которыми нужно будет овладеть, и следить за результатами этого всего.&lt;/p&gt;
-
-&lt;p&gt;Я составил список привычек, которые буду выполнять. Во всех руководствах по привычкам, которые мне попадались, советуют одновременно внедрять &lt;i&gt;не более трех привычек&lt;/i&gt;. Но такой подход показался мне слишком долгим, поэтому у меня их будет немного больше.&lt;/p&gt;
-&lt;p&gt;Для удобства я разбил эти привычки по времени.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;list_habbits&quot; href=&quot;#list_habbits&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Список привычек&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Итак, на утро у меня:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;проснуться рано (в 7), сразу встать с кровати (никаких еще 5 минуточек);&lt;/li&gt;
-	&lt;li&gt;выпить стакан чистой воды;&lt;/li&gt;
-	&lt;li&gt;сделать зарядку (около 10 минут);&lt;/li&gt;
-	&lt;li&gt;пробежка (во время неё я буду слушать аудиокурсы по английскому, и во время ходьбы в течении дня на улице);&lt;/li&gt;
-	&lt;li&gt;душ;&lt;/li&gt;
-	&lt;li&gt;повторить 5 слов выученных вчера;&lt;/li&gt;
-	&lt;li&gt;составить план на день/неделю;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Днем:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;30 минут на тренировку дома (планирую пройти курс 100 отжиманий) + вести журнал тренировок;&lt;/li&gt;
-	&lt;li&gt;30 минут на чтение книг;&lt;/li&gt;
-	&lt;li&gt;30 минут на творчество (рисовать, писать и т.д.);&lt;/li&gt;
-	&lt;li&gt;30 минут на собственные проекты;&lt;/li&gt;
-	&lt;li&gt;15 минут на портфолио работ;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Вечером:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;медитация;&lt;/li&gt;
-	&lt;li&gt;чистить зубы перед сном;&lt;/li&gt;
-	&lt;li&gt;горячий душ;&lt;/li&gt;
-	&lt;li&gt;стакан горячего молока с медом и мускатным орехом;&lt;/li&gt;
-	&lt;li&gt;проветрить комнату перед сном;&lt;/li&gt;
-	&lt;li&gt;ложиться спать в одно время;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;В течении дня:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;учить 5 иностранных слов в день;&lt;/li&gt;
-	&lt;li&gt;одна партия в шахматы с записью ходов;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;На пятницу:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;сходить в коворкинг на встречу по английскому языку, если я не ошибаюсь то там каждую неделю так;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;В любом случае в течении 21 дня я буду стараться выполнять все из задуманного, а после этого мне уже будет виднее от чего можно будет отказаться, а что добавить :-)&lt;/p&gt;</description>
-        <pubDate>Sun, 08 Feb 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/experiment_to_introduce_good_habits</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/experiment_to_introduce_good_habits</guid>
         
         <category>привычки</category>
         
