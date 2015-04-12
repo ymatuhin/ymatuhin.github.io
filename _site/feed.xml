@@ -5,8 +5,8 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Apr 2015 00:17:16 +0300</pubDate>
-    <lastBuildDate>Mon, 13 Apr 2015 00:17:16 +0300</lastBuildDate>
+    <pubDate>Mon, 13 Apr 2015 00:17:56 +0300</pubDate>
+    <lastBuildDate>Mon, 13 Apr 2015 00:17:56 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,8 +23,8 @@
 
 &lt;p&gt;В любом случае, расширение, для меня, практически бесполезное. Пользоваться им дальше не вижу никакого смысла. Если вы уже попробовали это расширение, или собираетесь попробовать — напишите в комментариях насколько эффективно оно для вас. Может быть это только у меня так :-)&lt;/p&gt;</description>
         <pubDate>Mon, 13 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/review_about_chrome_data_saver_extension</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/review_about_chrome_data_saver_extension</guid>
+        <link>http://ymatuhin.ru/blog/review_about_chrome_data_saver_extension</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/review_about_chrome_data_saver_extension</guid>
         
         <category>Google</category>
         
@@ -33,7 +33,7 @@
         <category>расширение</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     
