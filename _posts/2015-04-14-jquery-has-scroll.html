@@ -1,0 +1,47 @@
+---
+layout: post
+title: Минималистичный плагин для jQuery, который проверяет на наличие вертикального скролла
+categories: front-end
+tags: [jQuery, сниппет, полоса прокрутки, VanillaJS]
+description: >
+  Проверка наличия полосы прокрутки (скролла) в браузере или элементе на jQuery и VanillaJS.
+---
+
+<p>Сегодня, столкнулся с задачей, в которой нужно было определить есть ли полоса прокрутки у элемента или нет. Немного погуглив, нашел несколько интересных вариантов, которыми я хочу с вами поделиться.</p>
+
+{% highlight javascript %}
+(function($) {
+    $.fn.hasScrollBar = function() {
+        var hasScrollBar = {},
+            e = this.get(0);
+        hasScrollBar.vertical = e.scrollHeight > e.clientHeight;
+        hasScrollBar.horizontal = e.scrollWidth > e.clientWidth;
+        return hasScrollBar;
+    }
+})(jQuery);
+
+// Пример
+$('html').hasScrollBar().vertical
+$('html').hasScrollBar().horizontal
+{% endhighlight %}
+
+<p>В дополнение к этому нашел <em>Vanilla JS</em> версию:</p>
+
+
+{% highlight javascript %}
+function hasVerticalScroll(node) {
+  if ( node == undefined ) {
+    if ( window.innerHeight )
+      return document.body.offsetHeight > innerHeight;
+    else
+      return document.documentElement.scrollHeight >
+          document.documentElement.offsetHeight ||
+          document.body.scrollHeight > document.body.offsetHeight;
+  }
+  else { return node.scrollHeight > node.offsetHeight; }
+}
+
+// Пример (если не передать параметр node — то проверит у body)
+hasVerticalScroll()
+{% endhighlight %}
+

@@ -3,7 +3,7 @@ layout: page
 is_post: true
 ---
 
-<h1><a id="title" href="#title" class="short-link">#</a> {{ page.title }}</h1>
+<h1><a id="title" href="#title" class="short-link">#</a>&nbsp;{{ page.title }}</h1>
 <p class="tags">
 	{% for tag in page.tags %}
 		<a class="tag" href="/tags/#{{tag | replace: ' ', '_'}}">{{ tag }}</a>
