@@ -5,9 +5,41 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Apr 2015 14:44:47 +0300</pubDate>
-    <lastBuildDate>Tue, 14 Apr 2015 14:44:47 +0300</lastBuildDate>
+    <pubDate>Wed, 15 Apr 2015 22:49:15 +0300</pubDate>
+    <lastBuildDate>Wed, 15 Apr 2015 22:49:15 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Как исправить ошибку «Страница не найдена» при шаринге в Facebook</title>
+        <description>&lt;p&gt;Иногда Facebook не желает расшаривать наши страницы, по крайней мере у меня так бывает часто. После нажатия на кнопку «поделиться», Facebook сообщает нам, что страница не найдена, хотя мы только что её смотрели. Нехорошо это.&lt;/p&gt;
+
+&lt;img class=&quot;rounded&quot; src=&quot;/img/facebook_sharing_error/facebook_sharing_error.png&quot; alt=&quot;Ошибка в Facebook при нажатии на кнопку поделиться&quot;&gt;
+
+&lt;p&gt;Но это легко исправить, нужно только знать как. Как много все-таки в мире легких вещей, если только знать как и что делать :-)&lt;/p&gt;
+
+&lt;p&gt;Для этого нужно перейти по ссылке в &lt;a href=&quot;//developers.facebook.com/tools/debug/&quot;&gt;Debugger&lt;/a&gt; от Facebook. Вы увидите поле, в которое нужно ввести ссылку, которую у вас не получилось расшарить и нажать на кнопку &lt;mark&gt;Debug&lt;/mark&gt;.&lt;/p&gt;
+
+&lt;img class=&quot;rounded&quot; src=&quot;/img/facebook_sharing_error/facebook_debugger.png&quot; alt=&quot;Окно Debugger в Facebook&quot;&gt;
+
+&lt;p&gt;После этого, нужно нажать на кнопку &lt;mark&gt;Fetch new scrape information&lt;/mark&gt;, для того, чтобы Facebook обновил информацию о нашей странице в своей базе. Кстати, этот способ так-же подойдет, если вы изменили заголовок или описание вашей страницы, а при шаринге отображаются старые.&lt;/p&gt;
+
+&lt;img class=&quot;rounded&quot; src=&quot;/img/facebook_sharing_error/facebook_debugger_refetch.png&quot; alt=&quot;Окно Debugger в Facebook c кнопкой Fetch&quot;&gt;
+
+&lt;p&gt;Теперь Facebook обновил информацию в своей базе о вашей странице и ей можно спокойно расшарить.&lt;/p&gt;</description>
+        <pubDate>Wed, 15 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/facebook-fix-sharing-with-debugger</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/facebook-fix-sharing-with-debugger</guid>
+        
+        <category>Facebook</category>
+        
+        <category>фикс</category>
+        
+        <category>ошибка</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Минималистичный плагин для jQuery, который проверяет на наличие вертикального скролла</title>
@@ -47,8 +79,8 @@
 
 &lt;p&gt;Первый пример использую в работе, все работает без нареканий. Второй я толком не тестировал :-)&lt;/p&gt;</description>
         <pubDate>Tue, 14 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/jquery-has-scroll</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/jquery-has-scroll</guid>
+        <link>http://ymatuhin.ru/front-end/jquery-has-scroll%20copy</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/jquery-has-scroll%20copy</guid>
         
         <category>jQuery</category>
         
@@ -450,64 +482,6 @@
         <guid isPermaLink="true">http://ymatuhin.ru/blog/good_habits_end</guid>
         
         <category>итоги</category>
-        
-        <category>привычки</category>
-        
-        <category>саморазвитие</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Хорошие привычки — день 4</title>
-        <description>&lt;p&gt;Прошло еще три дня с моего последнего отчета и вот я пишу очередной. Самочувствие хорошее, раньше очень часто хотелось спать в течении дня, но сегодня уже не так сложно как было до этого.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;difficult&quot; href=&quot;#difficult&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Сложности&lt;/h2&gt;
-&lt;p&gt;Основные сложности были связаны с тем, что я плохо планировал свое время, и из-за того что тратил на ненужные мелочи не успевал выполнить основные дела. Порой было очень сложно проснуться, особенно на второй и третий день. Один раз пропустил пробежку, но вообще бег мне нравится. Хотя дается мне очень с трудом. Даже весьма обидно когда ты пробегаешь совсем чуть чуть и понимаешь что уже устал и дальше бежать очень очень сложно. Но через пару дней я заметил что пробегаю уже почти в два раза больше чем раньше, и это сильно мотивирует :-)&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;pleasurably&quot; href=&quot;#pleasurably&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Приятности&lt;/h2&gt;
-&lt;p&gt;Отдельно мне понравилась идея 30 минут творчества, давно я уже как-то таким не занимался, и это мне приносит большое удовольствие. Есть пара рисунков ручкой, а вчера решал интересную задачку на codewars&lt;sup&gt;&lt;a id=&quot;back_to_codewars&quot; href=&quot;#codewars&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Правда решена она пока только на листочке.&lt;/p&gt;
-
-&lt;p&gt;Из самых эффективных и &lt;strong&gt;суперполезных&lt;/strong&gt; привычек оказалась слушать аудиокниги во время пробежки и ходьбы по городу. Я раньше думал, что аудиокниги больше занимают времени, и лучше просто книгу почитать или что-то еще поделать. Но теперь я уверен, что это просто супер эффективно и ты по сути не тратишь на это время вообще !)&lt;/p&gt;
-
-&lt;p&gt;С шахматами у меня пока не очень хорошо все складывается, играть играю, но в 80% проигрываю, обидно, эх :-)&lt;/p&gt;
-
-&lt;p&gt;Сегодня пойду в коворкинг&lt;sup&gt;&lt;a id=&quot;back_to_co_working&quot; href=&quot;#co_working&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; Zavod, в котором будет проходить &lt;a href=&quot;http://vk.com/eclubonzavod&quot;&gt;встреча&lt;/a&gt; для общения на английском языке. До этого не бывал там, и даже не знаю платно это или нет. Но очень хочется сходить и попробовать пообщаться. Английский язык — весьма важная штука, и зная его уже точно нигде не пропадешь.&lt;/p&gt;
-
-&lt;p&gt;Вот как-то так в общих чертах. Осталось только привести процент выполнения этих привычек.&lt;/p&gt;
-
-&lt;p&gt;Посмотрев числа, оказалось что во вторник было меньше всего, а дальше по возрастающей все лучше и лучше.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;percentage&quot; href=&quot;#percentage&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Процент выполнения привычек&lt;/h2&gt;
-&lt;ul&gt;
-	&lt;li&gt;Вторник — &lt;strong&gt;65%&lt;/strong&gt;;&lt;/li&gt;
-	&lt;li&gt;Среда — &lt;strong&gt;85%&lt;/strong&gt;;&lt;/li&gt;
-	&lt;li&gt;Четверг — &lt;strong&gt;90%&lt;/strong&gt;;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Общий процент с учетом понедельника —&lt;strong&gt; 81.25%&lt;/strong&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Эксперимент продолжается, все таки не прошло даже недели. Но некоторые положительные результаты видны уже сейчас, несмотря на то, что привычки в основном ведут к изменениям в долгосрочной перспективе. Главное не останавливаться !)&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-	&lt;ol&gt;
-		&lt;li&gt;
-			&lt;p&gt;&lt;a id=&quot;codewars&quot; href=&quot;//codewars.com&quot;&gt;codewars.com&lt;/a&gt; — ресурс для решения задачек на разных языках программирования. &lt;a href=&quot;#back_to_codewars&quot;&gt;↑&lt;/a&gt;&lt;/p&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;p&gt;&lt;a id=&quot;co_working&quot;&gt;&lt;/a&gt;Коворкинг (англ. co-working — совместно работающие) — это модель работы, в которой участники, оставаясь независимыми и свободными, используют общее пространство для своей деятельности. В частности, коворкинг популярен среди фрилансеров, удаленных сотрудников: переводчиков, программистов, дизайнеров и начинающих предпринимателей. Коворкинг занимает промежуточное место между работой из дома и использованием отдельного офиса. &lt;a href=&quot;#back_to_co_working&quot;&gt;↑&lt;/a&gt;&lt;/p&gt;
-			&lt;p&gt;Источник: &lt;a href=&quot;https://ru.wikipedia.org/wiki/Коворкинг&quot; title=&quot;Коворкинг – Википедия&quot;&gt;Коворкинг — Википедия&lt;/a&gt;&lt;/p&gt;
-		&lt;/li&gt;
-	&lt;/ol&gt;
-
-	&lt;p&gt;P.S. &lt;a href=&quot;//codewars.com/users/ymatuhin&quot; title=&quot;Юрий Матюхин на codewars.com&quot;&gt;мой профиль&lt;/a&gt; на codewars.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-        <pubDate>Fri, 13 Feb 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/good_habits_day_4</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/good_habits_day_4</guid>
         
         <category>привычки</category>
         
