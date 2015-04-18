@@ -5,18 +5,18 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Apr 2015 10:49:01 +0300</pubDate>
-    <lastBuildDate>Sat, 18 Apr 2015 10:49:01 +0300</lastBuildDate>
+    <pubDate>Sat, 18 Apr 2015 10:54:48 +0300</pubDate>
+    <lastBuildDate>Sat, 18 Apr 2015 10:54:48 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Международный день box-sizing и лучшие практики</title>
         <description>&lt;p&gt;Недавно я использовал в проекте css свойство &lt;code&gt;box-sizing: border-box&lt;/code&gt;. В процессе этого я узнал про «Международный день box-sizing» (International box-sizing Awareness Day). И хочу рассказать вам что это за праздник, лучшие практики и поддержку свойства box-sizing.&lt;/p&gt;
 
-&lt;h2&gt;Международный день box-sizing&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;international_box-sizing_awareness_day&quot; href=&quot;#international_box-sizing_awareness_day&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Международный день box-sizing&lt;/h2&gt;
 &lt;p&gt;Этот мини праздник отмечается 1 февраля каждого года. Первого февраля 2012 года Пол Айриш (Paul Irish) опубликовал свою статью &lt;a href=&quot;http://www.paulirish.com/2012/box-sizing-border-box-ftw/&quot;&gt;* { Box-sizing: Border-box } FTW&lt;/a&gt;. Спустя два года Крис Койер (Chris Coyier) объявил на сайте &lt;a href=&quot;https://css-tricks.com/international-box-sizing-awareness-day/&quot;&gt;css-tricks.com&lt;/a&gt;, что первое февраля будет считаться «Международным днем box-sizing», в честь даты написания статьи Полом.&lt;/p&gt;
 
-&lt;h2&gt;Лучшая практика&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;best_practice&quot; href=&quot;#best_practice&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Лучшая практика&lt;/h2&gt;
 &lt;p&gt;Раньше для применения модели border-box для всех элементов я часто видел следующий код:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;*,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -38,11 +38,11 @@
 
 &lt;p&gt;Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме &lt;code&gt;html&lt;/code&gt; наследуют &lt;code&gt;box-sizing&lt;/code&gt; от родителя.&lt;/p&gt;p
 
-&lt;h2&gt;Поддержка браузерами&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;browser_support&quot; href=&quot;#browser_support&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Поддержка браузерами&lt;/h2&gt;
 &lt;p&gt;Я рекомендую использование этого свойства для всех проектов IE8 и выше. Firefox &lt;= 28 все еще требует префикс &lt;code&gt;-moz-&lt;/code&gt;, и &lt;= iOS4, Android &lt;= 2.3 требует &lt;code&gt;-webkit-&lt;/code&gt;, но все остальные браузеры используют без префиксов.&lt;/p&gt;
 
 
-&lt;h2&gt;Производительность&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;perfomance&quot; href=&quot;#perfomance&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Производительность&lt;/h2&gt;
 &lt;p&gt;Вы можете сказать, что использование универсального селектора &lt;code&gt;*&lt;/code&gt; очень плохо влияет на производительности. На самом деле &lt;code&gt;*&lt;/code&gt; настолько же быстрый как &lt;code&gt;h1&lt;/code&gt;. Он может быть медленный если вы используете что-то на подобии &lt;code&gt;.foo &gt; *&lt;/code&gt;, поэтому не делайте так.&lt;/p&gt;
 &lt;p&gt;Приведу пример, опубликованный Полом, в котором он сравнивает производительность сайта New York Times со стандартной моделью W3C и с моделью &lt;code&gt;border-box&lt;/code&gt;:&lt;/p&gt;
 

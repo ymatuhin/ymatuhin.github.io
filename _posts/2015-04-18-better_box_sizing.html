@@ -9,10 +9,10 @@ description: >
 
 <p>Недавно я использовал в проекте css свойство <code>box-sizing: border-box</code>. В процессе этого я узнал про «Международный день box-sizing» (International box-sizing Awareness Day). И хочу рассказать вам что это за праздник, лучшие практики и поддержку свойства box-sizing.</p>
 
-<h2>Международный день box-sizing</h2>
+<h2><a id="international_box-sizing_awareness_day" href="#international_box-sizing_awareness_day" class="short-link">#</a>&nbsp;Международный день box-sizing</h2>
 <p>Этот мини праздник отмечается 1 февраля каждого года. Первого февраля 2012 года Пол Айриш (Paul Irish) опубликовал свою статью <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">* { Box-sizing: Border-box } FTW</a>. Спустя два года Крис Койер (Chris Coyier) объявил на сайте <a href="https://css-tricks.com/international-box-sizing-awareness-day/">css-tricks.com</a>, что первое февраля будет считаться «Международным днем box-sizing», в честь даты написания статьи Полом.</p>
 
-<h2>Лучшая практика</h2>
+<h2><a id="best_practice" href="#best_practice" class="short-link">#</a>&nbsp;Лучшая практика</h2>
 <p>Раньше для применения модели border-box для всех элементов я часто видел следующий код:</p>
 
 {% highlight css %}
@@ -38,11 +38,11 @@ html {
 
 <p>Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме <code>html</code> наследуют <code>box-sizing</code> от родителя.</p>p
 
-<h2>Поддержка браузерами</h2>
+<h2><a id="browser_support" href="#browser_support" class="short-link">#</a>&nbsp;Поддержка браузерами</h2>
 <p>Я рекомендую использование этого свойства для всех проектов IE8 и выше. Firefox <= 28 все еще требует префикс <code>-moz-</code>, и <= iOS4, Android <= 2.3 требует <code>-webkit-</code>, но все остальные браузеры используют без префиксов.</p>
 
 
-<h2>Производительность</h2>
+<h2><a id="perfomance" href="#perfomance" class="short-link">#</a>&nbsp;Производительность</h2>
 <p>Вы можете сказать, что использование универсального селектора <code>*</code> очень плохо влияет на производительности. На самом деле <code>*</code> настолько же быстрый как <code>h1</code>. Он может быть медленный если вы используете что-то на подобии <code>.foo > *</code>, поэтому не делайте так.</p>
 <p>Приведу пример, опубликованный Полом, в котором он сравнивает производительность сайта New York Times со стандартной моделью W3C и с моделью <code>border-box</code>:</p>
 
