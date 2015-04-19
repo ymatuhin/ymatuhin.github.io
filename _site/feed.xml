@@ -5,8 +5,8 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 18 Apr 2015 11:22:07 +0300</pubDate>
-    <lastBuildDate>Sat, 18 Apr 2015 11:22:07 +0300</lastBuildDate>
+    <pubDate>Sun, 19 Apr 2015 20:48:38 +0300</pubDate>
+    <lastBuildDate>Sun, 19 Apr 2015 20:48:38 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -36,7 +36,7 @@
     &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sizing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inherit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме &lt;code&gt;html&lt;/code&gt; наследуют &lt;code&gt;box-sizing&lt;/code&gt; от родителя.&lt;/p&gt;p
+&lt;p&gt;Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме &lt;code&gt;html&lt;/code&gt; наследуют &lt;code&gt;box-sizing&lt;/code&gt; от родителя.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;browser_support&quot; href=&quot;#browser_support&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Поддержка браузерами&lt;/h2&gt;
 &lt;p&gt;Я рекомендую использование этого свойства для всех проектов IE8 и выше. Firefox до 28 все еще требует префикс &lt;code&gt;-moz-&lt;/code&gt;, iOS до 4 версии, Android до версии 2.3 требуют &lt;code&gt;-webkit-&lt;/code&gt;, но все остальные браузеры используют без префиксов.&lt;/p&gt;
