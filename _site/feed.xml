@@ -5,12 +5,12 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Apr 2015 23:41:21 +0300</pubDate>
-    <lastBuildDate>Sun, 19 Apr 2015 23:41:21 +0300</lastBuildDate>
+    <pubDate>Sun, 19 Apr 2015 23:44:06 +0300</pubDate>
+    <lastBuildDate>Sun, 19 Apr 2015 23:44:06 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Трюки с SVG и безопасное использование в современных реалиях</title>
+        <title>Трюки с SVG и поддержка старыми браузерами</title>
         <description>&lt;p style=&quot;margin-top:0&quot;&gt;&lt;img style=&quot;margin-top:0&quot; class=&quot;noshadow&quot; src=&quot;/img/svg/svg_logo.png&quot; alt=&quot;Логотип SVG&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Раньше я не использовал SVG, поскольку рабочие проекты были с поддержкой Internet Explorer 6/7. Да и не требовалось поддержки ретины. Но сейчас, спустя время, настало время использовать SVG на полную.&lt;/p&gt;
