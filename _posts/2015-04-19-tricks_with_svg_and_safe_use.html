@@ -1,0 +1,68 @@
+---
+layout: post
+title: Трюки с SVG и безопасное использование в современных реалиях
+categories: front-end
+tags: [svg, изображения, css, сниппет]
+description: >
+  Как использовать SVG в современных реалиях, поддержка браузерами, несколько fallback-ов для старых браузеров.
+---
+
+<p style="margin-top:0"><img style="margin-top:0" class="noshadow" src="/img/svg/svg_logo.png" alt="Логотип SVG"></p>
+
+<p>Раньше я не использовал SVG, поскольку рабочие проекты были с поддержкой Internet Explorer 6/7. Да и не требовалось поддержки ретины. Но сейчас, спустя время, настало время использовать SVG на полную.</p>
+
+<h2><a id="support" href="#support" class="short-link">#</a>&nbsp;Поддержка браузерами</h2>
+
+<p>На данный момент, SVG поддерживается всеми современными браузерами, начиная с Inernet Explorer 9 (<a href="http://caniuse.com/#feat=svg">CIU</a>). По данным сайта Can I Use, SVG поддерживается в мире на 94.55% и на 83.13% в России. Самая главная проблема — это IE 8, доля которого все еще достаточно велика.</p>
+
+<h2><a id="fallback" href="#fallback" class="short-link">#</a>&nbsp;Fallback</h2>
+<p>У нас есть два варианта использования SVG изображений:</p>
+<ol>
+	<li>В теге <code>img</code> — <code>&lt;img src=&quot;test.svg&quot; alt=&quot;&quot;&gt;</code>
+	<li>Через CSS свойство <code>background-image</code> — <code>background-image: url(test.svg)</code>
+</ol>
+
+<p>Для этих двух способов есть очень изящные решения. Начнем со способа в котором мы используем через тег <code>img</code>. </p>
+
+<h3><a id="with-img-tag" href="#with-img-tag" class="short-link">#</a>&nbsp;Использование SVG изображения через тег <code>img</code></h3>
+Вместо привычно кода, напишем в нашем HTML следующий код:</p>
+
+{% highlight html %}
+<svg width="100" height="100">
+  <image xlink:href="test.svg" src="test.png" width="100" height="100"/>
+</svg>
+{% endhighlight %}
+
+<p>После обработки этого кода браузером, который поддерживает SVG, он проигнорирует атрибут <code>src</code> и покажет векторную картинку <code>test.svg</code>.</p>
+
+{% highlight html %}
+<svg width="96" height="96">
+  <image xlink:href="test.svg" width="100" height="100"/>
+</svg>
+{% endhighlight %}
+
+<p>А браузеры, которые не поддерживают SVG, проигнорируют неизвестный тег SVG. Но из-за того, что img и image это одно и то-же, то они увидят этот код вот таким:</p>
+
+{% highlight css %}
+<img src="test.png" width="100" height="100">
+{% endhighlight %}
+
+<p>То есть покажут нашу <code>png</code> картинку. Вот такая вот магия :-)</p>
+
+<h3><a id="with-css-property" href="#with-css-property" class="short-link">#</a>&nbsp;Использование SVG изображения через CSS свойство background-image</h3>
+<p>Тут есть несколько решений. Одно из них использовать библиотеку Modernizr и если в браузере не будет поддержки SVG, то можно будет задать фоновое изображение другого формата через класс у html <code>.no-svg</code>.</p>
+
+<p>Этот путь требует библиотеку Modernizr и наличие включенного JavaScript. Но этого можно избежать, весь есть более <em>элегантное</em> решение. Вот оно:</p>
+
+{% highlight css %}
+.my-element {
+  background-image: url(test.png);
+  background-image:
+    linear-gradient(transparent, transparent),
+    url(test.svg);
+}
+{% endhighlight %}
+
+<p>Этот способ использует multiple backgrounds для определения поддержки SVG. Он практически идеален, за исключением стандартного браузера Android 2.3.</p>
+
+<p>Теперь, я буду использовать SVG гораздо чаще. Осталось только разобраться как экспортировать его из фигур в Photoshop, но это совсем другая история...</p>

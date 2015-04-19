@@ -5,9 +5,79 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Apr 2015 20:48:38 +0300</pubDate>
-    <lastBuildDate>Sun, 19 Apr 2015 20:48:38 +0300</lastBuildDate>
+    <pubDate>Sun, 19 Apr 2015 23:41:21 +0300</pubDate>
+    <lastBuildDate>Sun, 19 Apr 2015 23:41:21 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Трюки с SVG и безопасное использование в современных реалиях</title>
+        <description>&lt;p style=&quot;margin-top:0&quot;&gt;&lt;img style=&quot;margin-top:0&quot; class=&quot;noshadow&quot; src=&quot;/img/svg/svg_logo.png&quot; alt=&quot;Логотип SVG&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Раньше я не использовал SVG, поскольку рабочие проекты были с поддержкой Internet Explorer 6/7. Да и не требовалось поддержки ретины. Но сейчас, спустя время, настало время использовать SVG на полную.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;support&quot; href=&quot;#support&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Поддержка браузерами&lt;/h2&gt;
+
+&lt;p&gt;На данный момент, SVG поддерживается всеми современными браузерами, начиная с Inernet Explorer 9 (&lt;a href=&quot;http://caniuse.com/#feat=svg&quot;&gt;CIU&lt;/a&gt;). По данным сайта Can I Use, SVG поддерживается в мире на 94.55% и на 83.13% в России. Самая главная проблема — это IE 8, доля которого все еще достаточно велика.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;fallback&quot; href=&quot;#fallback&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Fallback&lt;/h2&gt;
+&lt;p&gt;У нас есть два варианта использования SVG изображений:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;В теге &lt;code&gt;img&lt;/code&gt; — &lt;code&gt;&amp;lt;img src=&amp;quot;test.svg&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;
+	&lt;li&gt;Через CSS свойство &lt;code&gt;background-image&lt;/code&gt; — &lt;code&gt;background-image: url(test.svg)&lt;/code&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Для этих двух способов есть очень изящные решения. Начнем со способа в котором мы используем через тег &lt;code&gt;img&lt;/code&gt;. &lt;/p&gt;
+
+&lt;h3&gt;&lt;a id=&quot;with-img-tag&quot; href=&quot;#with-img-tag&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Использование SVG изображения через тег &lt;code&gt;img&lt;/code&gt;&lt;/h3&gt;
+Вместо привычно кода, напишем в нашем HTML следующий код:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xlink:href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test.png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;После обработки этого кода браузером, который поддерживает SVG, он проигнорирует атрибут &lt;code&gt;src&lt;/code&gt; и покажет векторную картинку &lt;code&gt;test.svg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;96&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xlink:href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;А браузеры, которые не поддерживают SVG, проигнорируют неизвестный тег SVG. Но из-за того, что img и image это одно и то-же, то они увидят этот код вот таким:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;test.png&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;То есть покажут нашу &lt;code&gt;png&lt;/code&gt; картинку. Вот такая вот магия :-)&lt;/p&gt;
+
+&lt;h3&gt;&lt;a id=&quot;with-css-property&quot; href=&quot;#with-css-property&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Использование SVG изображения через CSS свойство background-image&lt;/h3&gt;
+&lt;p&gt;Тут есть несколько решений. Одно из них использовать библиотеку Modernizr и если в браузере не будет поддержки SVG, то можно будет задать фоновое изображение другого формата через класс у html &lt;code&gt;.no-svg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Этот путь требует библиотеку Modernizr и наличие включенного JavaScript. Но этого можно избежать, весь есть более &lt;em&gt;элегантное&lt;/em&gt; решение. Вот оно:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.my-element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(test.png)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;linear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;sx&quot;&gt;url(test.svg)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Этот способ использует multiple backgrounds для определения поддержки SVG. Он практически идеален, за исключением стандартного браузера Android 2.3.&lt;/p&gt;
+
+&lt;p&gt;Теперь, я буду использовать SVG гораздо чаще. Осталось только разобраться как экспортировать его из фигур в Photoshop, но это совсем другая история...&lt;/p&gt;</description>
+        <pubDate>Sun, 19 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/tricks_with_svg_and_safe_use</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/tricks_with_svg_and_safe_use</guid>
+        
+        <category>svg</category>
+        
+        <category>изображения</category>
+        
+        <category>css</category>
+        
+        <category>сниппет</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Международный день box-sizing и лучшие практики</title>
@@ -407,49 +477,6 @@
         
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>«Оттипографируй это»!</title>
-        <description>&lt;p&gt;Сейчас, возможность создать свой сайт или страничку в интернете есть практически у каждого человека. Не нужно знать различных языков (&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;, &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt;) и особенностей хостинга, чтобы создать себе сайт. Однако многие люди, публикующие свои материалы в сети, не заботятся об их внешнем виде.&lt;/p&gt;
-
-&lt;p&gt;Типографика позволяет улучшить визуально наш текст и добавить своеобразный блеск вашему сайту.&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-	&lt;p&gt;Типогра́фика — искусство оформления печатного текста.&lt;/p&gt;
-	&lt;p&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/Типографика&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;Поскольку типографика связана непосредственно с печатным текстом, то есть отдельное направление типографики — &lt;em&gt;веб-типографика&lt;/em&gt;, в котором учтены особенности текста в сети интернет.&lt;/p&gt;
-
-&lt;p&gt;Но я спешу вас обрадовать, вам не нужно изучать самостоятельно это искусство. Все уже сделано за нас. Нам остается только воспользоваться чужими трудами :-)&lt;/p&gt;
-
-&lt;p&gt;Есть самая известная, на данный момент, студия, которая занимается разработкой сайтов, оформлением книг и много чем еще — Студия Артемия Лебедева. В рамках студии они написали инструмент (&lt;em&gt;типограф&lt;/em&gt;), который помогал бы им в оформлении текстов.&lt;/p&gt;
-
-&lt;p&gt;Этот типограф есть в открытом доступе, и любой желающий может воспользоваться им для своих текстов. &lt;a href=&quot;//www.artlebedev.ru/tools/typograf/&quot;&gt;Оттипографировать свой текст!&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Подробнее про этот инструмент можно почитать &lt;a href=&quot;//www.artlebedev.ru/tools/typograf/about/&quot;&gt;там-же&lt;/a&gt; на сайте.&lt;/p&gt;
-
-&lt;p&gt;Я лишь хочу добавить, что инструмент очень полезен и делает ваш текст круче. Помимо замены кавычек и тире, он ставит неразрывные пробелы, чтобы не получалось некрасивых переносов слов, частиц, запятых и т.д. Это особенно важно если у вас есть мобильная или адаптивная версия сайта.&lt;/p&gt;
-
-&lt;p&gt;Конечно, этот типограф не единственный в своем роде, но он был первым. Если вас интересуют другие типографы, то советую вам почитать &lt;a href=&quot;//www.typograf.ru/flog/&quot;&gt;эту статью&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Типографируйте свой текст перед публикацией. И не забудьте &lt;a href=&quot;//tech.yandex.ru/speller/&quot;&gt;проверить его на ошибки&lt;/a&gt; :-)&lt;/p&gt;</description>
-        <pubDate>Sat, 04 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/typograf</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/typograf</guid>
-        
-        <category>типограф</category>
-        
-        <category>подготовка контента</category>
-        
-        <category>Артемий Лебедев</category>
-        
-        
-        <category>front-end</category>
         
       </item>
     
