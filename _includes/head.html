@@ -10,6 +10,15 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ymatuhin">
+	<meta name="twitter:creator" content="@ymatuhin">
+
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endif %}">
+	<meta name="twitter:domain" content="ymatuhin.ru">
+	<meta name="twitter:image:src" content="{{page.image}}">
+
 	<script>document.documentElement.className = "js"</script>
 
 	<!-- critical.css -->
