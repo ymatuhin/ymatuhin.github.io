@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://ymatuhin.ru/blog/test</loc>
+    <loc>http://ymatuhin.ru/blog/extension_for_google_chrome_flickr_tab</loc>
     <lastmod>2015-04-23T00:00:00+03:00</lastmod>
-  </url>
-  <url>
-    <loc>http://ymatuhin.ru/front-end/one_more_article_about_rem_vs_em%20copy</loc>
-    <lastmod>2015-04-22T00:00:00+03:00</lastmod>
   </url>
   <url>
     <loc>http://ymatuhin.ru/front-end/one_more_article_about_rem_vs_em</loc>
