@@ -1,10 +1,11 @@
-img {
-	max-width: 100%;
-	display: block;
-	margin: 1em auto;
-	vertical-align: middle;
-	box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2)
-}
+// .message {
+// 	background: #fff100;
+// 	color: #000;
+// 	border-radius: 3px;
+// 	padding: .5em 1em !important;
+// 	margin: -1em 0 1em !important;
+// }
+
 img.rounded { border-radius: 6px; }
 img.noshadow { box-shadow: none !important; }
 img.inline { display: inline-block; vertical-align: middle; margin: 0; }
