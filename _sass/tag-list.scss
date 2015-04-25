@@ -15,6 +15,9 @@
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
+.tag strong {
+	font-weight: normal;
+}
 .tag:hover {
 	background: darken($gray-color, 5%);
 }

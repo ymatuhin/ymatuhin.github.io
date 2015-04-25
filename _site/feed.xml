@@ -5,9 +5,67 @@
     <description></description>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Apr 2015 10:18:14 +0300</pubDate>
-    <lastBuildDate>Fri, 24 Apr 2015 10:18:14 +0300</lastBuildDate>
+    <pubDate>Sat, 25 Apr 2015 22:13:02 +0300</pubDate>
+    <lastBuildDate>Sat, 25 Apr 2015 22:13:02 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Все еще сидите на Sublime Text? Тогда мы идем к вам!</title>
+        <description>&lt;p&gt;В пятницу я пробовал в работе разные текстовые редакторы. Большинство из них очень плохи. Тот-же Brackets от Adobe — вообще не изменился, те-же проблемы, в том числе со шрифтами и не очень приятный внешний вид. Но один из редакторов оказался наоборот очень крутым.&lt;/p&gt;
+
+&lt;p&gt;И этот редактор — &lt;strong&gt;Atom&lt;/strong&gt; от Github.&lt;/p&gt;
+
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_vs_sublime.jpg&quot; alt=&quot;&quot;&gt;
+
+&lt;p&gt;Он превзошел все мои ожидания! Я пробовал его наверное пол года или больше назад и мне он показался сыроватым, но теперь — совсем другое дело. Более того, я перешел на него со своего Sublime Text 3 и сейчас расскажу почему.&lt;/p&gt;
+
+&lt;h2&gt;Внешний вид&lt;/h2&gt;
+&lt;p&gt;После первого запуска Atom, мне захотелось удалить Sublime Text. Хотя до этого у меня не было никаких претензий к нему. Вот пара скриншотов саблайма и атома.&lt;/p&gt;
+
+&lt;p&gt;Открытый файл html в Atom потом Sublime.&lt;/p&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_post.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_post.jpg&quot; alt=&quot;&quot;&gt;
+
+&lt;p&gt;Сразу видна классная функция подсветки добавленных и измененных файлов от git в боковой панели и в файлах.&lt;/p&gt;
+
+&lt;p&gt;Окно настроек в Atom потом Sublime.&lt;/p&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_settings.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_settings.jpg&quot; alt=&quot;&quot;&gt;
+
+&lt;h2&gt;Установка пакетов&lt;/h2&gt;
+&lt;p&gt;В Sublime Text это делалось с помощью пакета Package Control, который нужно было еще установить.&lt;/p&gt;
+&lt;p&gt;В Atom есть визуальный интерфейс для настроек и установки пакетов, в котором можно почитать описание пакета и количество установок прямо в редакторе.&lt;/p&gt;
+
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_install_package.jpg&quot; alt=&quot;&quot;&gt;
+
+&lt;h2&gt;Переход на Atom c Sublime Text&lt;/h2&gt;
+&lt;p&gt;Это единственный текстовый редактор на который можно перейти с Sublime без проблем и переучиваний. Все сочетания клавиш работаю так-же как и там. Это просто бомба!&lt;/p&gt;
+
+&lt;p&gt;По поводу пакетов в Atom их уже большое количество. По крайней мере все мои потребности они решают. Ну и удобство их установки просто поражает.&lt;/p&gt;
+
+&lt;p&gt;В Atom его по умолчанию нет менеджера пакетов, но есть пакет project-manager, который решает эту проблему.&lt;/p&gt;
+
+&lt;p&gt;Вообще мне кажется что это тот-же Sublime, только красивее, удобнее и лучше.&lt;/p&gt;
+
+&lt;h2&gt;Скачать Atom&lt;/h2&gt;
+&lt;p&gt;Даже не знаю что еще такого лестного о нем сказать. Наверное лучше один раз увидеть, чем сто раз услышать. Поэтому вы можете скачать Atom на &lt;a href=&quot;https://atom.io/&quot;&gt;официальном сайте&lt;/a&gt;. Посмотреть доступные пакеты для Atom на &lt;a href=&quot;https://atom.io/packages&quot;&gt;этой странице&lt;/a&gt; и конечно-же в самом редакторе.&lt;/p&gt;
+
+&lt;p&gt;В комментариях пишите ваши отзывы и мнения о Atom. В дальнейшем планирую рассказать про лучшие пакеты к нему.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/still_using_sublime_text_then_we_go_to_you</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/still_using_sublime_text_then_we_go_to_you</guid>
+        
+        <category>Atom</category>
+        
+        <category>Sublime Text</category>
+        
+        <category>текстовый редактор</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Добавляем красоты в наш Google Chrome с расширением Flickr Tab</title>
@@ -490,30 +548,6 @@
         
         
         <category>all</category>
-        
-      </item>
-    
-      <item>
-        <title>Как исключить свои просмотры из статистики в Яндекс.Метрике</title>
-        <description>&lt;p&gt;Если вы пользуетесь Яндекс Метрикой для вашего сайта или блога, то вам наверняка интересно сколько же человек его посещает. Но эти данные часто портятся тем, что вы то-же посещаете этот сайт.&lt;/p&gt;
-
-&lt;p&gt;У меня часто раньше так бывало, когда ты тестируешь новую функцию или обновление и получаешь &lt;b&gt;1000+&lt;/b&gt; просмотров проекта в Метрике :-)&lt;/p&gt;
-
-&lt;p&gt;Но этого можно легко избежать. Вам нужно нажать на кнопку редактирования счетчика &lt;img width=&quot;35&quot; height=&quot;32&quot; class=&quot;inline noshadow&quot; src=&quot;/img/ya-metrica/button.png&quot; alt=&quot;Яндекс Метрика — кнопка редактирование счетчика&quot;&gt;. Перейти на вкладку &lt;mark&gt;Фильтры&lt;/mark&gt; и поставить галочку для пункта «Не учитывать мои посещения».&lt;/p&gt;
-
-&lt;img src=&quot;/img/ya-metrica/filters.png&quot; alt=&quot;Яндекс Метрика — фильтр счетчика&quot;&gt;
-
-&lt;p&gt;Теперь можете спокойно тестировать, просматривать и редактировать ваш сайт не боясь испортить статистику в Яндекс Метрике.&lt;/p&gt;</description>
-        <pubDate>Wed, 08 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/how_to_exclude_my_views_from_yandex_metrica</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/how_to_exclude_my_views_from_yandex_metrica</guid>
-        
-        <category>Яндекс</category>
-        
-        <category>Метрика</category>
-        
-        
-        <category>front-end</category>
         
       </item>
     
