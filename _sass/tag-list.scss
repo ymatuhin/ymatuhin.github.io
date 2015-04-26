@@ -21,3 +21,5 @@
 .tag:hover {
 	background: darken($gray-color, 5%);
 }
+.tags + * { margin-top: 0 }
+.tags + * > * { margin-top: 0 }

@@ -6,9 +6,118 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 10:31:29 +0300</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 10:31:29 +0300</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 15:19:19 +0300</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 15:19:19 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Мои дополнения к текстовому редактору Atom</title>
+        <description>&lt;p&gt;&lt;/p&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_packages.jpg&quot; alt=&quot;Мои дополнения к текстовому редактору Atom&quot;&gt;
+
+&lt;p&gt;Вчера я писал про текстовый редактор Atom (&lt;a href=&quot;/front-end/still_using_sublime_text_then_we_go_to_you/&quot;&gt;Все еще сидите на Sublime Text? Тогда мы идем к вам!&lt;/a&gt;), а сегодня хочу продолжить о нем разговор и рассказать о моих дополнениях к нему.&lt;/p&gt;
+
+&lt;h2&gt;Список установленных дополнений&lt;/h2&gt;
+&lt;p&gt;В скобочках общее количество установок.&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;b&gt;linter&lt;/b&gt; (~262 000)
+        &lt;br&gt; + coffeelint, jshint, stylint, tidy
+        &lt;br&gt;Проверка кода на ошибки (coffeescript, js, stylus, html)
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;stylus&lt;/b&gt; (~12 000)
+        &lt;br&gt;Добавляет кучу снипетов для stylus
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;atom-beautify&lt;/b&gt; (~148 000)
+        &lt;br&gt;Форматирует ваш код (есть куча настроек)
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;autocomplete-plus&lt;/b&gt; (~290 000)
+        &lt;br&gt;Добавляет окошко автодополнения (по умолчанию выбор варианта стоит на
+        &lt;code&gt;Tab&lt;/code&gt;, но в настройках можно поставить и
+        &lt;code&gt;Enter&lt;/code&gt;)
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;color-picker&lt;/b&gt; (~205 000)
+        &lt;br&gt;Тут думаю все понятно, добавляет окошко для выбора цвета
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;easy-motion&lt;/b&gt; (~1 100)
+        &lt;br&gt;При нажатии на
+        &lt;code&gt;cmd+shift+e&lt;/code&gt; все первые буквы слов заменяются, и вам нужно набрать их чтобы перейти к началу этого слова. Так-же есть комбинация для перехода в конец слова. Как это происходит:
+        &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_easy-motion.gif&quot; alt=&quot;Дополнение easy-motion к текстовому редактору Atom&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;emmet&lt;/b&gt; (~115 000)
+        &lt;br&gt;Думаю не нуждается в представлении :-)
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;file-icons&lt;/b&gt; (~113 000)
+        &lt;br&gt;Заменяет стандартные иконки в боковом меню на красивые и под каждый тип файлов
+        &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_file-icons.jpg&quot; alt=&quot;Дополнение file-icons к текстовому редактору Atom&quot;&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;jekyll&lt;/b&gt; (~1 500)
+        &lt;br&gt;Добавляет снипеты для работы с jekyll и некоторые функции (но я редко им пользуюсь, думаю удалить)
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;angularjs&lt;/b&gt; (~26 000)
+        &lt;br&gt;Добавляет снипеты для angularjs в html и js
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;project-manager&lt;/b&gt; (~78 000)
+        &lt;br&gt;Менеджер пакетов практически такой-же как в Sublime
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;merge-conflicts&lt;/b&gt; (~72 000)
+        &lt;br&gt;Пока не пользовался, но судя по названию помогает мержить конфликты (КЭП?)
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;minimap&lt;/b&gt; (~260 000)
+        &lt;br&gt;Мини карта файла, как и в Sublime Text
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;open-in-browser&lt;/b&gt; (~5 000)
+        &lt;br&gt;Добавляет команду для открытия файла в браузере
+        &lt;br&gt;
+        &lt;br&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;project-palette-finder&lt;/b&gt; (~5 000)
+        &lt;br&gt;Ищет использованные цвета в проекте и показывает их в отдельном окне
+        &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_palette_finder.jpg&quot; alt=&quot;Дополнение project-palette-finder к текстовому редактору Atom&quot;&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Если вы очень скучаете по этому чудесному окошку в Sublime Text, которое выскакивает на каждое 20е сохранение, то для Atom есть дополнение для этого — &lt;a href=&quot;https://github.com/thiagopnts/unregistered&quot;&gt;unregistered&lt;/a&gt;.&lt;/p&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_unregistered.jpg&quot; alt=&quot;Дополнение unregistered к текстовому редактору Atom&quot;&gt;
+&lt;/li&gt;
+
+&lt;p&gt;А какие дополнения используете вы? Напишите об этом в комментариях.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 26 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/my_atom_packages</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/my_atom_packages</guid>
+        
+        <category>Atom</category>
+        
+        <category>дополнения</category>
+        
+        <category>текстовый редактор</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Все еще сидите на Sublime Text? Тогда мы идем к вам!</title>
@@ -16,7 +125,7 @@
 
 &lt;p&gt;И этот редактор — &lt;strong&gt;Atom&lt;/strong&gt; от Github.&lt;/p&gt;
 
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_vs_sublime.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_vs_sublime.jpg&quot; alt=&quot;Все еще сидите на Sublime Text? Тогда мы идем к вам!&quot;&gt;
 
 &lt;p&gt;Он превзошел все мои ожидания! Я пробовал его наверное пол года или больше назад и мне он показался сыроватым, но теперь — совсем другое дело. Более того, я перешел на него со своего Sublime Text 3 и сейчас расскажу почему.&lt;/p&gt;
 
@@ -24,34 +133,34 @@
 &lt;p&gt;После первого запуска Atom, мне захотелось удалить Sublime Text. Хотя до этого у меня не было никаких претензий к нему. Вот пара скриншотов саблайма и атома.&lt;/p&gt;
 
 &lt;p&gt;Открытый файл html в Atom потом Sublime.&lt;/p&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_post.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_post.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_post.jpg&quot; alt=&quot;Пример поста в текстовом редакторе Atom&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_post.jpg&quot; alt=&quot;Пример поста в текстовом редакторе Sublime Text 3&quot;&gt;
 
 &lt;p&gt;Сразу видна классная функция подсветки добавленных и измененных файлов от git в боковой панели и в файлах.&lt;/p&gt;
 
 &lt;p&gt;Окно настроек в Atom потом Sublime.&lt;/p&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_settings.jpg&quot; alt=&quot;&quot;&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_settings.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_settings.jpg&quot; alt=&quot;Окно настроек в текстовом редакторе Atom&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_settings.jpg&quot; alt=&quot;Окно настроек в текстовом редакторе Sublime Text 3&quot;&gt;
 
-&lt;h2&gt;&lt;a id=&quot;packages&quot; href=&quot;#packages&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Установка пакетов&lt;/h2&gt;
-&lt;p&gt;В Sublime Text это делалось с помощью пакета Package Control, который нужно было еще установить.&lt;/p&gt;
-&lt;p&gt;В Atom есть визуальный интерфейс для настроек и установки пакетов, в котором можно почитать описание пакета и количество установок прямо в редакторе.&lt;/p&gt;
+&lt;h2&gt;&lt;a id=&quot;packages&quot; href=&quot;#packages&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Установка дополнений&lt;/h2&gt;
+&lt;p&gt;В Sublime Text это делалось с помощью плагина Package Control, который нужно было еще установить.&lt;/p&gt;
+&lt;p&gt;В Atom есть визуальный интерфейс для настроек и установки плагинов, в котором можно почитать описание дополнения и количество установок прямо в редакторе.&lt;/p&gt;
 
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_install_package.jpg&quot; alt=&quot;&quot;&gt;
+&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_install_package.jpg&quot; alt=&quot;Установка дополнений в текстовом редакторе Atom&quot;&gt;
 
 &lt;h2&gt;&lt;a id=&quot;migrate&quot; href=&quot;#migrate&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Переход на Atom c Sublime Text&lt;/h2&gt;
 &lt;p&gt;Это единственный текстовый редактор на который можно перейти с Sublime без проблем и переучиваний. Все сочетания клавиш работаю так-же как и там. Это просто бомба!&lt;/p&gt;
 
-&lt;p&gt;По поводу пакетов в Atom их уже большое количество. По крайней мере все мои потребности они решают. Ну и удобство их установки просто поражает.&lt;/p&gt;
+&lt;p&gt;По поводу дополнений в Atom их уже большое количество. По крайней мере все мои потребности они решают. Ну и удобство их установки просто поражает.&lt;/p&gt;
 
-&lt;p&gt;В Atom его по умолчанию нет менеджера пакетов, но есть пакет project-manager, который решает эту проблему.&lt;/p&gt;
+&lt;p&gt;В Atom его по умолчанию нет менеджера пакетов (дополнений), но есть дополнение project-manager, который решает эту проблему.&lt;/p&gt;
 
 &lt;p&gt;Вообще мне кажется что это тот-же Sublime, только красивее, удобнее и лучше.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;download&quot; href=&quot;#download&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Скачать Atom&lt;/h2&gt;
-&lt;p&gt;Даже не знаю что еще такого лестного о нем сказать. Наверное лучше один раз увидеть, чем сто раз услышать. Поэтому вы можете скачать Atom на &lt;a href=&quot;https://atom.io/&quot;&gt;официальном сайте&lt;/a&gt;. Посмотреть доступные пакеты для Atom на &lt;a href=&quot;https://atom.io/packages&quot;&gt;этой странице&lt;/a&gt; и конечно-же в самом редакторе.&lt;/p&gt;
+&lt;p&gt;Даже не знаю что еще такого лестного о нем сказать. Наверное лучше один раз увидеть, чем сто раз услышать. Поэтому вы можете скачать Atom на &lt;a href=&quot;https://atom.io/&quot;&gt;официальном сайте&lt;/a&gt;. Посмотреть доступные плагины для Atom на &lt;a href=&quot;https://atom.io/packages&quot;&gt;этой странице&lt;/a&gt; и конечно-же в самом редакторе.&lt;/p&gt;
 
-&lt;p&gt;В комментариях пишите ваши отзывы и мнения о Atom. В дальнейшем планирую рассказать про лучшие пакеты к нему.&lt;/p&gt;
+&lt;p&gt;В комментариях пишите ваши отзывы и мнения о Atom. В дальнейшем планирую рассказать про лучшие дополнения к нему.&lt;/p&gt;
 </description>
         <pubDate>Sat, 25 Apr 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/front-end/still_using_sublime_text_then_we_go_to_you</link>
@@ -504,51 +613,6 @@
         
         
         <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Punto Switcher в каждый дом</title>
-        <description>&lt;p&gt;Сегодня, я хочу рассказать вам о популярной программе Punto Switcher. Если вы разрабатываете что-либо, пробовали использовать Punto Switcher и вам он не очень понравился, то не спешите закрывать вкладку. Возможно, вы просто не правильно его готовите :-)&lt;/p&gt;
-
-&lt;blockquote&gt;
-	&lt;img class=&quot;fl-left noshadow&quot; width=&quot;125&quot; height=&quot;125&quot; src=&quot;/img/punto/logo-punto-switcher.gif&quot; alt=&quot;Логотип Punto Switcher&quot; /&gt;
-
-	&lt;p&gt;&lt;b&gt;Punto Switcher&lt;/b&gt; — программа для автоматического переключения между различными раскладками клавиатуры в операционных системах семейства Microsoft Windows и Mac OS X.&lt;/p&gt;
-
-	&lt;p class=&quot;clear&quot;&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/punto_switcher&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Punto Switcher следит за вашей раскладкой клавиатуры. Он знает, что «ghbdtn» — это «привет», а «пщщв ьщктштп» — это «good morning».&lt;/p&gt;
-
-&lt;img src=&quot;/img/punto/example.gif&quot; alt=&quot;Пример использования программы Punto Switcher&quot;&gt;
-
-&lt;p&gt;Сама программа великолепно подходит для большинства пользователей. Особенно если вы часто общаетесь или набираете текс. Но для программистов и разработчиков использование этой программы, со стандартными настройками, может превратиться в настоящий ад.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Почему?&lt;/b&gt; Просто когда мы пишем код, программа может подумать, что мы хотим написать что-то на русском языке. И она автоматически переключит нам язык (а мы потом исправляй назад). Чаще всего именно эту причину я слышал от своих знакомых разработчиков, на мой вопрос: «Почему ты не используешь Punto Switcher?».&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;my_suggestion&quot; href=&quot;#my_suggestion&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что я предлагаю?&lt;/h2&gt;
-&lt;p&gt;Я предлагаю полностью отключить автоматическую смену раскладки клавиатуры. Звук если хотите, то можно тоже выключить.&lt;/p&gt;
-
-&lt;p&gt;Смысл этого действия в том, что нам все еще доступны горячие клавиши. И благодаря им, мы можем сменить раскладку последнего написанного слова или выделенного текста. И теперь мы полностью контролируем весь, написанный нами, текст. И если у нас была включена неправильная раскладка, то мы просто нажимаем горячую клавишу (по умолчанию это &lt;code&gt;Alt&lt;/code&gt; для Mac OS и &lt;code&gt;break&lt;/code&gt; для Windows).&lt;/p&gt;
-
-&lt;img src=&quot;/img/punto/settings.png&quot; alt=&quot;Окно настроек с горячими клавишами программы Punto Switcher&quot;&gt;
-
-&lt;p&gt;Сейчас, я настолько привык к этой программе, что очень расстраиваюсь работая за чужим компьютером невозможностью быстро исправить неправильную раскладку для текста. Приходится все удалять, менять раскладку и писать заново.&lt;/p&gt;
-
-&lt;p&gt;В качестве заключения, привожу ссылку на &lt;a href=&quot;//punto.yandex.ru/&quot;&gt;Punto Switcher&lt;/a&gt; и справку для &lt;a href=&quot;//help.yandex.ru/punto-mac/&quot;&gt;Mac OS&lt;/a&gt; и &lt;a href=&quot;//help.yandex.ru/punto-win/&quot;&gt;Windows&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;P.S. будьте осторожны при установке. Не поставьте случайно вместе с ним Яндекс Браузер и другой, ненужный вам софт.&lt;/p&gt;</description>
-        <pubDate>Thu, 09 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/all/punto_switcher_to_every_home</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/all/punto_switcher_to_every_home</guid>
-        
-        <category>раскладка клавиатуры</category>
-        
-        <category>автоматическая смена языка</category>
-        
-        
-        <category>all</category>
         
       </item>
     
