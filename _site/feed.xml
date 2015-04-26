@@ -3,10 +3,11 @@
   <channel>
     <title>Юрий Матюхин</title>
     <description></description>
+    <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Apr 2015 22:13:02 +0300</pubDate>
-    <lastBuildDate>Sat, 25 Apr 2015 22:13:02 +0300</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 10:28:14 +0300</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 10:28:14 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -19,7 +20,7 @@
 
 &lt;p&gt;Он превзошел все мои ожидания! Я пробовал его наверное пол года или больше назад и мне он показался сыроватым, но теперь — совсем другое дело. Более того, я перешел на него со своего Sublime Text 3 и сейчас расскажу почему.&lt;/p&gt;
 
-&lt;h2&gt;Внешний вид&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;interface&quot; href=&quot;#interface&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Внешний вид&lt;/h2&gt;
 &lt;p&gt;После первого запуска Atom, мне захотелось удалить Sublime Text. Хотя до этого у меня не было никаких претензий к нему. Вот пара скриншотов саблайма и атома.&lt;/p&gt;
 
 &lt;p&gt;Открытый файл html в Atom потом Sublime.&lt;/p&gt;
@@ -32,13 +33,13 @@
 &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_settings.jpg&quot; alt=&quot;&quot;&gt;
 &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_settings.jpg&quot; alt=&quot;&quot;&gt;
 
-&lt;h2&gt;Установка пакетов&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;packages&quot; href=&quot;#packages&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Установка пакетов&lt;/h2&gt;
 &lt;p&gt;В Sublime Text это делалось с помощью пакета Package Control, который нужно было еще установить.&lt;/p&gt;
 &lt;p&gt;В Atom есть визуальный интерфейс для настроек и установки пакетов, в котором можно почитать описание пакета и количество установок прямо в редакторе.&lt;/p&gt;
 
 &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_install_package.jpg&quot; alt=&quot;&quot;&gt;
 
-&lt;h2&gt;Переход на Atom c Sublime Text&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;migrate&quot; href=&quot;#migrate&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Переход на Atom c Sublime Text&lt;/h2&gt;
 &lt;p&gt;Это единственный текстовый редактор на который можно перейти с Sublime без проблем и переучиваний. Все сочетания клавиш работаю так-же как и там. Это просто бомба!&lt;/p&gt;
 
 &lt;p&gt;По поводу пакетов в Atom их уже большое количество. По крайней мере все мои потребности они решают. Ну и удобство их установки просто поражает.&lt;/p&gt;
@@ -47,7 +48,7 @@
 
 &lt;p&gt;Вообще мне кажется что это тот-же Sublime, только красивее, удобнее и лучше.&lt;/p&gt;
 
-&lt;h2&gt;Скачать Atom&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;download&quot; href=&quot;#download&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Скачать Atom&lt;/h2&gt;
 &lt;p&gt;Даже не знаю что еще такого лестного о нем сказать. Наверное лучше один раз увидеть, чем сто раз услышать. Поэтому вы можете скачать Atom на &lt;a href=&quot;https://atom.io/&quot;&gt;официальном сайте&lt;/a&gt;. Посмотреть доступные пакеты для Atom на &lt;a href=&quot;https://atom.io/packages&quot;&gt;этой странице&lt;/a&gt; и конечно-же в самом редакторе.&lt;/p&gt;
 
 &lt;p&gt;В комментариях пишите ваши отзывы и мнения о Atom. В дальнейшем планирую рассказать про лучшие пакеты к нему.&lt;/p&gt;
