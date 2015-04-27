@@ -3,7 +3,8 @@ body,
 code,
 a.tag,
 blockquote,
-.highlight {
+.highlight,
+.highlight * {
 	-webkit-transition: background .5s ease-in-out, color .5s ease-in-out;
 	        transition: background .5s ease-in-out, color .5s ease-in-out;
 }
@@ -15,10 +16,10 @@ blockquote,
 		background: #22252c;
 	}
 
-	blockquote,
-	.highlight,
 	code,
-	a.tag {
+	a.tag,
+	blockquote,
+	.highlight {
 		background: lighten(#22252c, 5%);
 		color: #9fa4b3 !important;
 	}

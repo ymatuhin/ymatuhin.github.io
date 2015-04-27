@@ -31,7 +31,8 @@
 
 	input {
 		position: absolute;
-		bottom: 100%;
+		z-index: -10;
+		opacity: 0;
 
 		&:checked ~ label {
 			&.day { top: -58px }

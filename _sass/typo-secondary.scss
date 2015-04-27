@@ -5,7 +5,16 @@
 // 	padding: .5em 1em !important;
 // 	margin: -1em 0 1em !important;
 // }
-#disqus_thread { margin-bottom: -1em }
+#disqus_thread {
+	margin: .5em -2em -1em !important;
+	padding: 1em;
+	background: $bg-color;
+	border-radius: 3px;
+
+	iframe {
+		margin: 0 auto;
+	}
+}
 
 img.rounded { border-radius: 6px; }
 img.noshadow { box-shadow: none !important; }

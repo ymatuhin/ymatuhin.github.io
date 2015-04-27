@@ -1,18 +1,28 @@
+@media (max-width: 800px) {
+	blockquote,
+	.highlight,
+	#disqus_thread {
+		border-radius: 0 !important;
+	}
+}
+
 @media (max-width: 480px) {
 	html { font-size: 1em }
 	body { padding: 1em }
 	ul, ol { margin-left: 0 }
+
 	.short-link {
 		margin-left: 0;
 		opacity: 1;
 		-webkit-transition: none;
 		transition: none;
 	}
+
 	blockquote,
-	.highlighting {
+	.highlight,
+	#disqus_thread {
 		margin: 1em -1em;
 		padding: 1px 1em;
-		border-radius: 0;
 	}
 	.posts li:before { position: static }
 	.message { margin-top: 0 !important }

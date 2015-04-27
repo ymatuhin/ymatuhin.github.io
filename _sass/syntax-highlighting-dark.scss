@@ -6,10 +6,6 @@
 .dark-mode .highlight {
     color: #93a1a1;
 
-    -webkit-transition: color .5s ease-in-out;
-            transition: color .5s ease-in-out;
-    * { -webkit-transition: color .5s ease-in-out; transition: color .5s ease-in-out; }
-
     .c { color: #586e75 } /* Comment */
     .err { color: #93a1a1 } /* Error */
     .g { color: #93a1a1 } /* Generic */
