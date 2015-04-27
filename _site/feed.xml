@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Apr 2015 14:04:19 +0300</pubDate>
-    <lastBuildDate>Mon, 27 Apr 2015 14:04:19 +0300</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2015 14:09:52 +0300</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2015 14:09:52 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -31,8 +31,8 @@
 &lt;p&gt;Теперь все работает хорошо.&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/atomemmetwithstylus</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/atomemmetwithstylus</guid>
+        <link>http://ymatuhin.ru/front-end/atom_emmet_with_stylus</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/atom_emmet_with_stylus</guid>
         
         <category>Atom</category>
         
