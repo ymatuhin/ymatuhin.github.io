@@ -6,9 +6,48 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 22:34:45 +0300</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 22:34:45 +0300</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2015 14:04:19 +0300</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2015 14:04:19 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Учим Emmet под Atom работать со Stylus</title>
+        <description>&lt;p&gt;&lt;/p&gt;
+&lt;img class=&quot;rounded noshadow&quot; src=&quot;/img/atom/atom_stylus_emmet.jpg&quot; alt=&quot;Мои дополнения к текстовому редактору Atom&quot;&gt;
+
+&lt;p&gt;Расширение &lt;strong&gt;Emmet&lt;/strong&gt; отлично работает с html, css, sass, scss, less. Но есть одна проблема — &lt;em&gt;Stylus&lt;/em&gt;. Видимо из-за того, что этот препроцессор не так распространен то в Emmet официально нет его поддержки. То есть наши правила на подобии &lt;code&gt;bd+&lt;/code&gt; не раскрываются.&lt;/p&gt;
+
+&lt;p&gt;Несмотря на то, что в дополнении Stylus уже идут многие сниппеты похожие на Emmet, но не все. А переучиваться не хочется, ведь Emmet более распространен среди текстовых редакторов. Значит нужно что-то придумать для этого.&lt;/p&gt;
+
+&lt;p&gt;Решение нашлось очень простое, выглядит как небольшой костыль, но оно полностью рабочее. Основной смысл в том, чтобы принудительно вызывать Emmet при нажатии на Tab в файлах Stylus.&lt;/p&gt;
+
+&lt;p&gt;Заходим в настройки Keymap (Atom → Open Your Keymap). И в самом низу дописываем следующие строки:&lt;/p&gt;
+
+&lt;pre&gt;
+&#39;atom-text-editor[data-grammar~=&quot;stylus&quot;]:not([mini])&#39;:
+    &#39;tab&#39;: &#39;emmet:expand-abbreviation-with-tab&#39;
+&lt;/pre&gt;
+
+&lt;p&gt;Теперь все работает хорошо.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/atomemmetwithstylus</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/atomemmetwithstylus</guid>
+        
+        <category>Atom</category>
+        
+        <category>emmet</category>
+        
+        <category>stylus</category>
+        
+        <category>дополнения</category>
+        
+        <category>текстовый редактор</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Мои дополнения к текстовому редактору Atom</title>
@@ -540,79 +579,6 @@
         
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Безопасное использование CDN для jQuery и других библиотек</title>
-        <description>&lt;p&gt;Один из главных советов для оптимизации скорости загрузки сайтов является использование публичных &lt;abbr title=&quot;Content Delivery Network&quot;&gt;CDN&lt;/abbr&gt; с популярными библиотеками, такими как jQuery или AngularJS.&lt;/p&gt;
-
-&lt;h2&gt;Преимущества CDN&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Увеличение скорости загрузки, поскольку пользователь сможет получить контент по оптимальному маршруту за минимальное время из ближайшей точки;&lt;/li&gt;
-  &lt;li&gt;Снижение нагрузки на наш сервер, ведь скрипты мы загружаем с чужих серверов.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;В настоящий момент, очень многие используют CDN для загрузки своих скриптов. К примеру, часто можно видеть вот такой код:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Однако многие забывают о том, что нужно проверить, загрузился ли наш скрипт. И если не загрузился, то загрузить его с нашего сайта.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;script src=&amp;quot;js/vendor/jquery-1.11.2.min.js&amp;quot;&amp;gt;&amp;lt;\/script&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Конечно, это самый простой способ, применимый для большинства сайтов. Для больших &lt;abbr title=&quot;Single Page Application&quot;&gt;SPA&lt;/abbr&gt; я рекомендовал бы воспользоваться асинхронной загрузкой скриптов через &lt;a href=&quot;http://requirejs.org/&quot;&gt;RequireJS&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Пример загрузки jQuery из CDN с безопасной загрузкой с нашего сервера если с CDN возникли какие-то проблемы:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;requirejs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;enforceDefine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;jquery&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&amp;#39;http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// Если из CDN наша библиотека не загрузилась,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// то загружать из папки lib файл jquery.js&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&amp;#39;lib/jquery&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;jquery&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* Ваш код тут */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;В примерах использовалась библиотека jQuery, но так-же можно загружать и другие библиотеки.&lt;/p&gt;
-
-&lt;h2&gt;Список бесплатных CDN&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;//developers.google.com/speed/libraries/&quot;&gt;Google CDN&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;//tech.yandex.ru/jslibs/&quot;&gt;Yandex CDN&lt;/a&gt; (RU)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;//code.jquery.com/&quot;&gt;jQuery CDN&lt;/a&gt; (только для jQuery)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;//www.asp.net/ajax/cdn&quot;&gt;Microsoft CDN&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cdnjs.com/&quot;&gt;Cdnjs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.jsdelivr.com/&quot;&gt;jsDelivr&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://osscdn.com/&quot;&gt;OssCDN&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Из всех, вышеперечисленных сервисов, только Яндекс на русском языке. Поэтому если вы не сильны в английском, я бы рекомендовал именно его. К тому-же, там действительно много популярных библиотек.&lt;/p&gt;
-
-&lt;p&gt;Если вы используете Bootstrap, то можно воспользоваться &lt;a href=&quot;http://www.bootstrapcdn.com/&quot;&gt;Bootstrap CDN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Если вы пишите свой, публичный скрипт, то его можно загрузить в jsDelivr и пользоваться им через CDN.&lt;/p&gt;
-
-&lt;p&gt;А вы используете CDN для загрузки библиотек на своих проектах?&lt;/p&gt;</description>
-        <pubDate>Sat, 11 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/safe_use_of_cdn_and_jquery</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/safe_use_of_cdn_and_jquery</guid>
-        
-        <category>CDN</category>
-        
-        <category>jQuery</category>
-        
-        <category>fallback</category>
-        
-        
-        <category>front-end</category>
         
       </item>
     

@@ -1,0 +1,27 @@
+---
+layout: post
+title: Учим Emmet под Atom работать со Stylus
+categories: front-end
+tags: [Atom, emmet, stylus, дополнения, текстовый редактор]
+image: /img/atom/atom_stylus_emmet.jpg
+description: >
+  Чиним работоспособность расширение Emmet под Atom для препроцессора Stylus.
+---
+
+<p></p>
+<img class="rounded noshadow" src="/img/atom/atom_stylus_emmet.jpg" alt="Мои дополнения к текстовому редактору Atom">
+
+<p>Расширение <strong>Emmet</strong> отлично работает с html, css, sass, scss, less. Но есть одна проблема — <em>Stylus</em>. Видимо из-за того, что этот препроцессор не так распространен то в Emmet официально нет его поддержки. То есть наши правила на подобии <code>bd+</code> не раскрываются.</p>
+
+<p>Несмотря на то, что в дополнении Stylus уже идут многие сниппеты похожие на Emmet, но не все. А переучиваться не хочется, ведь Emmet более распространен среди текстовых редакторов. Значит нужно что-то придумать для этого.</p>
+
+<p>Решение нашлось очень простое, выглядит как небольшой костыль, но оно полностью рабочее. Основной смысл в том, чтобы принудительно вызывать Emmet при нажатии на Tab в файлах Stylus.</p>
+
+<p>Заходим в настройки Keymap (Atom → Open Your Keymap). И в самом низу дописываем следующие строки:</p>
+
+<pre>
+'atom-text-editor[data-grammar~="stylus"]:not([mini])':
+    'tab': 'emmet:expand-abbreviation-with-tab'
+</pre>
+
+<p>Теперь все работает хорошо.</p>
