@@ -1,0 +1,41 @@
+.dark-mode-switcher {
+	position: fixed;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+	width: 64px;
+	height: 64px;
+
+	label {
+		position: absolute;
+		top: 16px;
+		left: 50%;
+		margin-left: -16px;
+		cursor: pointer;
+
+		-webkit-transition: top .5s ease-in-out;
+		        transition: top .5s ease-in-out;
+
+		.wait & {
+			-webkit-transition-property: none;
+			        transition-property: none;
+		}
+
+		&.night { top: -58px }
+	}
+
+	img {
+		margin: 0;
+		box-shadow: none;
+	}
+
+	input {
+		position: absolute;
+		bottom: 100%;
+
+		&:checked ~ label {
+			&.day { top: -58px }
+			&.night { top: 16px }
+		}
+	}
+}

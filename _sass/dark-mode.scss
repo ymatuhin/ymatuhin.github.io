@@ -1,0 +1,30 @@
+html,
+body,
+code,
+a.tag,
+blockquote,
+.highlight {
+	-webkit-transition: background .5s ease-in-out, color .5s ease-in-out;
+	        transition: background .5s ease-in-out, color .5s ease-in-out;
+}
+
+.dark-mode {
+	body,
+	& {
+		color: lighten(#9fa4b3, 25%);
+		background: #22252c;
+	}
+
+	blockquote,
+	.highlight,
+	code,
+	a.tag {
+		background: lighten(#22252c, 5%);
+		color: #9fa4b3 !important;
+	}
+
+	a:active, a:hover { outline: 0 }
+	a:link { color: lighten(#008ACE, 20%) }
+	a:visited { color: lighten(#B40EB4, 30%) }
+	a:hover { color: lighten(#c00, 20%) }
+}
