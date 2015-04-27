@@ -6,7 +6,8 @@
 // 	margin: -1em 0 1em !important;
 // }
 #disqus_thread {
-	margin: .5em -2em -1em !important;
+	margin: .5em -2em -1em;
+	margin-top: .5em !important;
 	padding: 1em;
 	background: $bg-color;
 	border-radius: 3px;

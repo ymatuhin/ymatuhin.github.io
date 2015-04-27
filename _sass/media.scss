@@ -21,8 +21,8 @@
 	blockquote,
 	.highlight,
 	#disqus_thread {
-		margin: 1em -1em;
-		padding: 1px 1em;
+		margin: 1em -1em !important;
+		padding: 1px 1em !important;
 	}
 	.posts li:before { position: static }
 	.message { margin-top: 0 !important }
