@@ -1,0 +1,23 @@
+---
+layout: post
+title: Исключаем папки из обычного и Fuzzy поиска в Atom
+categories: front-end
+tags: [Atom, fuzzy]
+---
+
+<p>Порой, чтобы открыть нужный файл, нужно знать все его название. А все из-за того, что у нас очень много файлов в папках <code>node_modules</code> и <code>bower_components</code> и они мешают открытию написанных нами файлов.</p>
+
+<p>Решается эта <em>проблема</em> достаточно легко. Заходим в настройки Config (Atom → Open Your Config). Ищем там строку <code>core</code> и дописываем туда <code>ignoredNames</code>:</p>
+
+<div class="highlight">
+<pre>
+core:
+  ignoredNames: [
+    "node_modules"
+    "bower_components"
+    ".tmp"
+  ]
+</pre>
+</div>
+
+<p>Теперь все файлы внутри этих папок исключены из поиска обычного и Fuzzy. И нужные нам файлы легко будет найти.</p>

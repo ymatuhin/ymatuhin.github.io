@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ymatuhin.ru/front-end/atom_exclude_foilder</loc>
+    <lastmod>2015-04-30T00:00:00+03:00</lastmod>
+  </url>
+  <url>
     <loc>http://ymatuhin.ru/front-end/atom_emmet_with_stylus</loc>
     <lastmod>2015-04-27T00:00:00+03:00</lastmod>
   </url>

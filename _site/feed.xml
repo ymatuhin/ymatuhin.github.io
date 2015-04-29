@@ -6,9 +6,41 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Apr 2015 08:01:50 +0300</pubDate>
-    <lastBuildDate>Tue, 28 Apr 2015 08:01:50 +0300</lastBuildDate>
+    <pubDate>Thu, 30 Apr 2015 00:26:53 +0300</pubDate>
+    <lastBuildDate>Thu, 30 Apr 2015 00:26:53 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Исключаем папки из обычного и Fuzzy поиска в Atom</title>
+        <description>&lt;p&gt;Порой, чтобы открыть нужный файл, нужно знать все его название. А все из-за того, что у нас очень много файлов в папках &lt;code&gt;node_modules&lt;/code&gt; и &lt;code&gt;bower_components&lt;/code&gt; и они мешают открытию написанных нами файлов.&lt;/p&gt;
+
+&lt;p&gt;Решается эта &lt;em&gt;проблема&lt;/em&gt; достаточно легко. Заходим в настройки Config (Atom → Open Your Config). Ищем там строку &lt;code&gt;core&lt;/code&gt; и дописываем туда &lt;code&gt;ignoredNames&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;
+core:
+  ignoredNames: [
+    &quot;node_modules&quot;
+    &quot;bower_components&quot;
+    &quot;.tmp&quot;
+  ]
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Теперь все файлы внутри этих папок исключены из поиска обычного и Fuzzy. И нужные нам файлы легко будет найти.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Apr 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/atom_exclude_foilder</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/atom_exclude_foilder</guid>
+        
+        <category>Atom</category>
+        
+        <category>fuzzy</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Учим Emmet под Atom работать со Stylus</title>
@@ -43,8 +75,6 @@
         <category>stylus</category>
         
         <category>дополнения</category>
-        
-        <category>текстовый редактор</category>
         
         
         <category>front-end</category>
@@ -553,34 +583,6 @@
         
         
         <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Отзыв о расширении Data Saver (beta) от Google</title>
-        <description>&lt;p&gt;Совсем недавно, Google выпустила расширение экономящее трафик под названием &lt;a href=&quot;//chrome.google.com/webstore/detail/data-saver-beta/pfmgfdlgomnbgkofeojodiodmgpgmkac&quot;&gt;Data Saver (beta)&lt;/a&gt;. Такой аналог режима турбо от Оперы, но только для браузеров на движке хромиума.&lt;/p&gt;
-
-&lt;p&gt;Я решил его протестировать, поскольку я расшариваю мобильный интернет с телефона на Mac и было бы неплохо уменьшить трафик (хоть у меня и безлимитный интернет). Тем более, что из-за этого (в теории) сайты должны загружаться быстрее.&lt;/p&gt;
-
-&lt;img src=&quot;/img/data_saver/rezult.png&quot; alt=&quot;Результаты работы расширения Data Saver от Google&quot;&gt;
-
-&lt;p&gt;Результаты тестирования получились не очень утешительными. Экономия (если это можно так назвать) составила &lt;strong&gt;4.6%&lt;/strong&gt;. И это не один день тестирования, это месяц обычного использования браузера каждый день, в среднем по 8-9 часов.&lt;/p&gt;
-
-&lt;p&gt;Конечно, слово beta намекает нам, что расширение еще не готово, но все-равно очень слабенько. Смотрел некоторые другие обзоры, у некоторых экономия порядка 40% получилась. Я не знаю что они такого смотрели (может сутками flickr), по собственному опыту я видел что ужимаются изображения, и у них немного уменьшается качество.&lt;/p&gt;
-
-&lt;p&gt;В любом случае, расширение, для меня, практически бесполезное. Пользоваться им дальше не вижу никакого смысла. Если вы уже попробовали это расширение, или собираетесь попробовать — напишите в комментариях насколько эффективно оно для вас. Может быть это только у меня так :-)&lt;/p&gt;</description>
-        <pubDate>Mon, 13 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/review_about_chrome_data_saver_extension</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/review_about_chrome_data_saver_extension</guid>
-        
-        <category>Google</category>
-        
-        <category>отзыв</category>
-        
-        <category>расширения</category>
-        
-        
-        <category>blog</category>
         
       </item>
     
