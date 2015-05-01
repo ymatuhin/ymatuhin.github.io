@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Apr 2015 19:07:53 +0300</pubDate>
-    <lastBuildDate>Thu, 30 Apr 2015 19:07:53 +0300</lastBuildDate>
+    <pubDate>Fri, 01 May 2015 10:53:59 +0300</pubDate>
+    <lastBuildDate>Fri, 01 May 2015 10:53:59 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -24,7 +24,7 @@
 
 &lt;p&gt;Так-же есть возможность использовать через командную строку. Подробнее об этом можно почитать в &lt;a href=&quot;//www.gitignore.io/docs&quot;&gt;документации&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 02 May 2015 00:00:00 +0300</pubDate>
+        <pubDate>Sun, 03 May 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/front-end/auto_generate_gitignore</link>
         <guid isPermaLink="true">http://ymatuhin.ru/front-end/auto_generate_gitignore</guid>
         
