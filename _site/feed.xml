@@ -6,9 +6,40 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 May 2015 13:20:07 +0300</pubDate>
-    <lastBuildDate>Wed, 06 May 2015 13:20:07 +0300</lastBuildDate>
+    <pubDate>Wed, 06 May 2015 19:02:09 +0300</pubDate>
+    <lastBuildDate>Wed, 06 May 2015 19:02:09 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Крутые вебинары от Geekbrains (Школа Программирования)</title>
+        <description>&lt;img style=&quot;margin-top: 10px;&quot; class=&quot;rounded bordered&quot; src=&quot;/img/geekbrains/logo.png&quot; alt=&quot;Логотип Geekbrains&quot;&gt;
+
+&lt;p style=&quot;margin-top: 0&quot;&gt;Хочу поделиться с вами хорошими вебинарами от Geekbrains (Школа Программирования). Я совсем недавно нашел этот сайт и эти вебинары, поэтому успел посмотреть только несколько записей. Но общее впечатление очень хорошее. Хотя тут все зависит от того, кто ведет эти вебинары.&lt;/p&gt;
+
+&lt;p&gt;Многие вебинары доступны на &lt;a href=&quot;//youtube.com/user/progliveru/videos&quot;&gt;Youtube канале&lt;/a&gt; школы программирования, но не все. Остальные видео можно найти на сайте &lt;a href=&quot;http://geekbrains.ru/events&quot;&gt;Geekbrains&lt;/a&gt;. Но чтобы их просмотреть, нужно там зарегистрироваться (они будут присылать вам раз в несколько дней письма про курсы и т.д.).&lt;/p&gt;
+
+&lt;p&gt;Приведу несколько вебинаров которые мне понравились:&lt;/p&gt;
+&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GGmbRM0Khvo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p class=&quot;media-title&quot;&gt;Вопросы личностного развития. Часть 1. Эффективная постановка личных целей&lt;/p&gt;
+&lt;br&gt;
+
+&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MufNlCv8o5Y&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p class=&quot;media-title&quot;&gt;Карьера в ИТ: Путь джедая&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 May 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/all/cool_webinars_on_geekbrains</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/all/cool_webinars_on_geekbrains</guid>
+        
+        <category>вебинар</category>
+        
+        <category>школа программирования</category>
+        
+        
+        <category>all</category>
+        
+      </item>
     
       <item>
         <title>Стилизуем инструменты разработчика (dev tools) в Google Chrome</title>
@@ -467,74 +498,6 @@ core:
         <guid isPermaLink="true">http://ymatuhin.ru/front-end/one_more_article_about_rem_vs_em</guid>
         
         <category>единицы измерения</category>
-        
-        <category>css</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Трюки с SVG и поддержка старыми браузерами</title>
-        <description>&lt;p style=&quot;margin-top:0&quot;&gt;&lt;img style=&quot;margin-top:0&quot; class=&quot;noshadow&quot; src=&quot;/img/svg/svg_logo.png&quot; alt=&quot;Логотип SVG&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Раньше я не использовал SVG, поскольку рабочие проекты были с поддержкой Internet Explorer 6/7. Да и не требовалось поддержки ретины. Но сейчас, спустя время, настало время использовать SVG на полную.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;support&quot; href=&quot;#support&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Поддержка браузерами&lt;/h2&gt;
-
-&lt;p&gt;На данный момент, SVG поддерживается всеми современными браузерами, начиная с Inernet Explorer 9 (&lt;a href=&quot;http://caniuse.com/#feat=svg&quot;&gt;CIU&lt;/a&gt;). По данным сайта Can I Use, SVG поддерживается в мире на 94.55% и на 83.13% в России. Самая главная проблема — это IE 8, доля которого все еще достаточно велика.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;fallback&quot; href=&quot;#fallback&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Fallback&lt;/h2&gt;
-&lt;p&gt;У нас есть два варианта использования SVG изображений:&lt;/p&gt;
-&lt;ol&gt;
-	&lt;li&gt;В теге &lt;code&gt;img&lt;/code&gt; — &lt;code&gt;&amp;lt;img src=&amp;quot;test.svg&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;
-	&lt;li&gt;Через CSS свойство &lt;code&gt;background-image&lt;/code&gt; — &lt;code&gt;background-image: url(test.svg)&lt;/code&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Для этих двух способов есть очень изящные решения. Начнем со способа в котором мы используем тег &lt;code&gt;img&lt;/code&gt;. &lt;/p&gt;
-
-&lt;h3&gt;&lt;a id=&quot;with-img-tag&quot; href=&quot;#with-img-tag&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Использование SVG изображения через тег &lt;code&gt;img&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Вместо привычно кода, напишем в нашем HTML следующий код:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xlink:href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test.png&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;После обработки этого кода браузером, который поддерживает SVG, он проигнорирует атрибут &lt;code&gt;src&lt;/code&gt; и покажет векторную картинку &lt;code&gt;test.svg&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;svg&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;96&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;96&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;image&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xlink:href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;А браузеры, которые не поддерживают SVG, проигнорируют неизвестный тег SVG. Но из-за того, что img и image это одно и то-же, то они увидят этот код вот таким:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;test.png&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;То есть покажут нашу &lt;code&gt;png&lt;/code&gt; картинку. Вот такая вот магия :-)&lt;/p&gt;
-
-&lt;h3&gt;&lt;a id=&quot;with-css-property&quot; href=&quot;#with-css-property&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Использование SVG изображения через CSS свойство background-image&lt;/h3&gt;
-&lt;p&gt;Тут есть несколько решений. Одно из них использовать библиотеку Modernizr и если в браузере не будет поддержки SVG, то можно будет задать фоновое изображение другого формата через класс у html &lt;code&gt;no-svg&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Этот путь требует библиотеку Modernizr и наличие включенного JavaScript. Но этого можно избежать, весь есть более &lt;em&gt;элегантное&lt;/em&gt; решение:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.my-element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(test.png)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;linear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;sx&quot;&gt;url(test.svg)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Этот способ использует multiple backgrounds для определения поддержки SVG. Он практически идеален, за исключением стандартного браузера Android 2.3.&lt;/p&gt;
-
-&lt;p&gt;Теперь, я буду использовать SVG гораздо чаще. Осталось только разобраться как экспортировать его из фигур в Photoshop, но это совсем другая история...&lt;/p&gt;</description>
-        <pubDate>Sun, 19 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/tricks_with_svg_and_safe_use</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/tricks_with_svg_and_safe_use</guid>
-        
-        <category>svg</category>
-        
-        <category>изображения</category>
         
         <category>css</category>
         
