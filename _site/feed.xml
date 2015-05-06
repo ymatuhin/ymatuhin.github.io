@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 May 2015 09:18:31 +0300</pubDate>
-    <lastBuildDate>Wed, 06 May 2015 09:18:31 +0300</lastBuildDate>
+    <pubDate>Wed, 06 May 2015 11:34:24 +0300</pubDate>
+    <lastBuildDate>Wed, 06 May 2015 11:34:24 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -26,7 +26,7 @@
 
 &lt;img class=&quot;rounded&quot; src=&quot;/img/dev_tools/dev_tools.png&quot; alt=&quot;Google Chrome styled dev tools&quot;&gt;
 
-&lt;p&gt;Теперь немного о неприятном. Темы очень часто выглядят убого. Еще есть проблема с привыканием. К примеру, я привык, что если в консоли цифра синяя — это Number, а если красная — String. Но в каждой теме свои цвета, и сложнее ориентироваться.&lt;/p&gt;
+&lt;p&gt;Теперь немного о неприятном. Темы очень часто выглядят убого. Еще есть проблема с привыканием. К примеру, я привык, что если в консоли цифра синяя — это Number, а если красная — String. Но в каждой теме свои цвета, и становится сложнее в них ориентироваться.&lt;/p&gt;
 
 &lt;p&gt;Сейчас я не буду переходить на стилизованные dev tools. Однако если будет крутая, темная тема от Atom то я бы посмотрел на это.&lt;/p&gt;
 </description>
