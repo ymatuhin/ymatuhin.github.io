@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 May 2015 20:13:27 +0300</pubDate>
-    <lastBuildDate>Wed, 06 May 2015 20:13:27 +0300</lastBuildDate>
+    <pubDate>Sat, 09 May 2015 01:24:55 +0300</pubDate>
+    <lastBuildDate>Sat, 09 May 2015 01:24:55 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -49,6 +49,9 @@
 &lt;p&gt;Для того, чтобы установить тему для dev tools, нужно включить экспериментальные функции. Чтобы это сделать введите в адресной строке Google Chrome &lt;code&gt;chrome://flags/#enable-devtools-experiments&lt;/code&gt;. Рядом с пунктом &lt;em&gt;Enable Developer Tools experiments&lt;/em&gt; нажмите &lt;em&gt;Enable&lt;/em&gt;. Теперь перезапустите браузер (внизу должна быть кнопка).&lt;/p&gt;
 
 &lt;img class=&quot;rounded&quot; src=&quot;/img/dev_tools/flags.png&quot; alt=&quot;Google Chrome Flags&quot;&gt;
+
+&lt;p&gt;Откройте инструменты разработчика (cmd+shif+i / F12), зайдите в настройки (иконка шестеренки), перейдите во вкладку &lt;strong&gt;Experiments&lt;/strong&gt; и поставьте галочку рядом с пунктом «Allow custom UI themes».&lt;/p&gt;
+&lt;p&gt;Теперь можно спокойно устанавливать темы из магазина.&lt;/p&gt;
 
 &lt;h2&gt;Поиск и установка тем&lt;/h2&gt;
 &lt;p&gt;Найти темы можно в магазине &lt;a href=&quot;https://chrome.google.com/webstore/category/extensions&quot;&gt;Google Chrome&lt;/a&gt;. Искать по запросу dev themes. Но это не очень удобно, почти все темы собраны на сайте &lt;a href=&quot;http://devthemez.com/themes/chrome-developer-tools&quot;&gt;devthemez.com&lt;/a&gt;. И там-же есть темы для dev tools.&lt;/p&gt;
