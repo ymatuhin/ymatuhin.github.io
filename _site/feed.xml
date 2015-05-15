@@ -6,9 +6,362 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 May 2015 10:55:47 +0300</pubDate>
-    <lastBuildDate>Wed, 13 May 2015 10:55:47 +0300</lastBuildDate>
+    <pubDate>Fri, 15 May 2015 15:11:36 +0300</pubDate>
+    <lastBuildDate>Fri, 15 May 2015 15:11:36 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Вопросы для собеседования кандидату на должность Front-end разработчика</title>
+        <description>&lt;p&gt;&lt;em&gt;Это перевод популярного репозитория от html5bp — &lt;a href=&quot;//h5bp.github.io/Front-end-Developer-Interview-Questions/&quot;&gt;Front-end Job Interview Questions&lt;/a&gt; (en),  который существует с 2009 года. Список вопросов составлялся и дополнятся известными во front-end людьми, поэтому на этот список можно положиться. Перевод делал не я (вернее я хотел, но он оказался уже переведен).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/front_end_interview/mem.jpg&quot; class=&quot;rounded bordered&quot; alt=&quot;&quot; /&gt;
+&lt;strong&gt;Замечание:&lt;/strong&gt; Этот репозиторий содержит подборку вопросов, которые могут быть использованы на собеседованиях на должность front-end разработчика. Здесь предлагаются лишь идеи, не нужно задавать все вопросы сразу (иначе в один час точно не уложитесь).&lt;/p&gt;
+
+&lt;p&gt;Также, имейте в виду, что многие вопросы не требуют однозначного короткого ответа, а лишь помогают завести беседу на ту или иную тему (предоставляя кандидату возможность показать себя во всей красе).&lt;/p&gt;
+
+&lt;h2 id=&quot;a-idtoc-hreftoc-classshort-linka-&quot;&gt;&lt;a id=&quot;toc&quot; href=&quot;#toc&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Содержание&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#general&quot;&gt;Общие вопросы&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#html&quot;&gt;Вопросы по HTML&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#js&quot;&gt;Вопросы по JavaScript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jscode&quot;&gt;Примеры кода на JavaScript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jquery&quot;&gt;Вопросы по jQuery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#css&quot;&gt;Вопросы по CSS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fun&quot;&gt;“Светская беседа«&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#contributors&quot;&gt;Первоначальные авторы&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;a-idgeneral-hrefgeneral-classshort-linka---toc&quot;&gt;&lt;a id=&quot;general&quot; href=&quot;#general&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Общие вопросы: &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Вы пользуетесь Твиттером?
+    &lt;ul&gt;
+      &lt;li&gt;Если да, то кто присутствует в вашей ленте?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Кого из мировых front-end разработчиков вы знаете?
+    &lt;ul&gt;
+      &lt;li&gt;А российских front-end’щиков?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;У Вас есть аккаунт на GitHub?
+    &lt;ul&gt;
+      &lt;li&gt;Если да, то за какими интересными проектами вы следите?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Какие блоги Вы читаете?&lt;/li&gt;
+  &lt;li&gt;Какие системы управления версиями вам приходилось использовать?&lt;/li&gt;
+  &lt;li&gt;Расскажите о своей среде разработки (ОС, редактор, браузер(ы), прочие инструменты)&lt;/li&gt;
+  &lt;li&gt;Опишите последовательность Ваших действий, когда вы создаете новую Web-страницу&lt;/li&gt;
+  &lt;li&gt;Можете ли пояснить разницу между progressive enhancement и graceful degradation?
+    &lt;ul&gt;
+      &lt;li&gt;Бонус, если также расскажете про feature detection (определение возможностей браузера)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Объясните, что означает «Семантическая разметка»&lt;/li&gt;
+  &lt;li&gt;Какой Ваш основной браузер для разработки и какими инструментами Вы в нем пользуетесь?&lt;/li&gt;
+  &lt;li&gt;Как можно оптимизировать загрузку внешних ресурсов на странице?
+    &lt;ul&gt;
+      &lt;li&gt;Комбинация из потенциальных решений:
+        &lt;ul&gt;
+          &lt;li&gt;Конкатенация&lt;/li&gt;
+          &lt;li&gt;Минификация&lt;/li&gt;
+          &lt;li&gt;Использование CDN&lt;/li&gt;
+          &lt;li&gt;Кэширования&lt;/li&gt;
+          &lt;li&gt;и т.д.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Каково преимущество в подгрузке внешних ресурсов с нескольких доменов?
+    &lt;ul&gt;
+      &lt;li&gt;Сколько ресурсов браузер может одновременно качать с одного домена?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Назовите три способа уменьшения времени загрузки страницы (воспринимаемого или реального)&lt;/li&gt;
+  &lt;li&gt;Если Вы присоединились к проекту, где для форматирования используются табы, а Вы привыкли использовать пробелы, как Вы поступите?
+    &lt;ul&gt;
+      &lt;li&gt;Предложите использовать EditorConfig (&lt;a href=&quot;//editorconfig.org&quot;&gt;editorconfig.org&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;Останетесь верным своим привычкам&lt;/li&gt;
+      &lt;li&gt;Выполните команду &lt;code&gt;:retab!&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Используете ли приёмы для ускорения написания кода (сниппеты, Emmet)?&lt;/li&gt;
+  &lt;li&gt;Знакомы ли с шаблонизаторами (Smarty, HAML etc.)&lt;/li&gt;
+  &lt;li&gt;Реализуйте примитивное слайд-шоу
+    &lt;ul&gt;
+      &lt;li&gt;Бонус, если Вы это сделаете без использования JS&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Какие инструменты Вы используете для тестирования производительности кода?
+    &lt;ul&gt;
+      &lt;li&gt;JSPerf (&lt;a href=&quot;//jsperf.com/&quot;&gt;jsperf.com&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;Dromaeo (&lt;a href=&quot;//dromaeo.com/&quot;&gt;dromaeo.com&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;и т.д.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Если бы у Вас была возможность освоить новую технологию в этом году, что бы это было?&lt;/li&gt;
+  &lt;li&gt;Объясните важность стандартов и комитетов по стандартам&lt;/li&gt;
+  &lt;li&gt;Что такое FOUC (Flash Of Unstyled Content)? Как его избежать?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-idhtml-hrefhtml-classshort-linka--html-toc&quot;&gt;&lt;a id=&quot;html&quot; href=&quot;#html&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Вопросы по HTML: &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Для чего нужен &lt;code&gt;doctype&lt;/code&gt; и сколько разновидностей Вы можете назвать?&lt;/li&gt;
+  &lt;li&gt;В чем разница между standards mode и quirks mode?&lt;/li&gt;
+  &lt;li&gt;Какие ограничения накладывают стандарты XHTML?
+    &lt;ul&gt;
+      &lt;li&gt;Могут ли возникнуть проблемы при подаче страниц с типом &lt;code&gt;application/xhtml+xml&lt;/code&gt;?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Как следует оформлять страницу, в которой контент может быть на разных языках?
+    &lt;ul&gt;
+      &lt;li&gt;Что нужно иметь в виду при разработке многоязычных сайтов?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Можно ли использовать синтаксис XHTML в HTML5?&lt;/li&gt;
+  &lt;li&gt;Как использовать XML в HTML5?&lt;/li&gt;
+  &lt;li&gt;Чем полезны &lt;code&gt;data-&lt;/code&gt; атрибуты?&lt;/li&gt;
+  &lt;li&gt;Какие box-модели есть в HTML4 и есть ли отличия в HTML5?&lt;/li&gt;
+  &lt;li&gt;Если рассматривать HTML5 как открытую web-платформу, на чем она строится, из каких компонентов состоит?&lt;/li&gt;
+  &lt;li&gt;Объясните разницу между cookies, sessionStorage и localStorage.&lt;/li&gt;
+  &lt;li&gt;Знакомы ли с подводными камнями вёрстки почтовых шаблонов?&lt;/li&gt;
+  &lt;li&gt;Какая разница между &lt;code&gt;GET&lt;/code&gt; и &lt;code&gt;POST&lt;/code&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-idjs-hrefjs-classshort-linka--javascript-toc&quot;&gt;&lt;a id=&quot;js&quot; href=&quot;#js&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Вопросы по JavaScript: &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Какими js-библиотеками Вы пользовались?&lt;/li&gt;
+  &lt;li&gt;Вы когда-нибудь заглядывали в исходный код библиотек/фреймворков, которыми пользовались?&lt;/li&gt;
+  &lt;li&gt;Чем JavaScript отличается от Java?&lt;/li&gt;
+  &lt;li&gt;Что-такое хэш-таблица?&lt;/li&gt;
+  &lt;li&gt;Что такое &lt;code&gt;неопределенные (undefined)&lt;/code&gt; и &lt;code&gt;необъявленные (undeclared)&lt;/code&gt; переменные?&lt;/li&gt;
+  &lt;li&gt;Что такое замыкание и как/для чего его используют?
+    &lt;ul&gt;
+      &lt;li&gt;Как вы предпочитаете их использовать?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Где обычно используются анонимные функции?&lt;/li&gt;
+  &lt;li&gt;Объясните «JavaScript module pattern» и где он (паттерн) применяется
+    &lt;ul&gt;
+      &lt;li&gt;Бонус, если упомянута чистота глобального пространства имен&lt;/li&gt;
+      &lt;li&gt;Что, если Ваш модуль не заключен в пространство имен?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Как Вы организуете свой код? (module pattern, наследование)&lt;/li&gt;
+  &lt;li&gt;В чем разница между host-объектами и нативными объектами?&lt;/li&gt;
+  &lt;li&gt;В чем разница между последними двумя строчками:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;person&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;В чем разница между &lt;code&gt;.call&lt;/code&gt; и &lt;code&gt;.apply&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;Что делает и для чего нужна функция &lt;code&gt;Function.prototype.bind&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;Когда Вы оптимизируете свой код?&lt;/li&gt;
+  &lt;li&gt;Объясните, как работает наследование в JavaScript?&lt;/li&gt;
+  &lt;li&gt;Где до сих пор используется &lt;code&gt;document.write()&lt;/code&gt;?
+    &lt;ul&gt;
+      &lt;li&gt;В большинстве генерируемых баннеров, хотя так делать не рекомендуется&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;В чем разница между feature detection (определение возможностей браузера), feature inference (предположение возможностей) и анализом строки user-agent?&lt;/li&gt;
+  &lt;li&gt;Расскажите об AJAX как можно более подробно&lt;/li&gt;
+  &lt;li&gt;Объясните, как работает JSONP (и почему это не настоящий AJAX)&lt;/li&gt;
+  &lt;li&gt;Вы когда-нибудь использовали шаблонизацию на JavaScript?
+    &lt;ul&gt;
+      &lt;li&gt;Если да, какие библиотеки использовали? (Mustache.js, Handlebars etc.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Объясните, что такое «hoisting»&lt;/li&gt;
+  &lt;li&gt;Объясните event bubbling&lt;/li&gt;
+  &lt;li&gt;В чем разница между «атрибутом» (attribute) и «свойством» (property)?&lt;/li&gt;
+  &lt;li&gt;Почему &lt;em&gt;не следует&lt;/em&gt; расширять нативные JavaScript объекты?&lt;/li&gt;
+  &lt;li&gt;Почему &lt;em&gt;следует&lt;/em&gt; расширять нативные JavaScript объекты?&lt;/li&gt;
+  &lt;li&gt;В чем разница между событиями &lt;code&gt;document load&lt;/code&gt; и &lt;code&gt;document ready&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;В чем разница между &lt;code&gt;==&lt;/code&gt; и &lt;code&gt;===&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;Как получить параметры из URL’а текущего окна?&lt;/li&gt;
+  &lt;li&gt;Объясните &lt;code&gt;same-origin policy&lt;/code&gt; в контексте JavaScript&lt;/li&gt;
+  &lt;li&gt;Объясните &lt;code&gt;event delegation&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Какие Вы знаете паттерны организации наследования в JavaScript?&lt;/li&gt;
+  &lt;li&gt;Сделайте так, чтобы этот код работал:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;duplicator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [1,2,3,4,5,1,2,3,4,5]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Опишите принцип мемоизации (избежание повторных вычислений) в JavaScript&lt;/li&gt;
+  &lt;li&gt;Почему тернарный оператор так называется?&lt;/li&gt;
+  &lt;li&gt;Что такое арность функции?&lt;/li&gt;
+  &lt;li&gt;Что делает строчка &lt;code&gt;&quot;use strict&quot;;&lt;/code&gt;? Какие достоинства и недостатки от её использования?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-idjscode-hrefjscode-classshort-linka----javascript-toc&quot;&gt;&lt;a id=&quot;jscode&quot; href=&quot;#jscode&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примеры кода на JavaScript &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;o&quot;&gt;~~&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.14&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вопрос: Какое значение возвращает данное предложение?
+&lt;strong&gt;Ответ: 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;i&amp;#39;m a lasagna hog&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вопрос: Какое значение возвращает данное предложение?
+&lt;strong&gt;Ответ: «goh angasal a m’i»&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;bar&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вопрос: Чему равно window.foo?
+&lt;strong&gt;Ответ: «bar»&lt;/strong&gt;,
+только если выражение window.foo было ложным, иначе переменная сохранит своё изначальное значение&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot; World&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt; 
+&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вопрос: Что покажут эти два alert?
+&lt;strong&gt;Ответ: «Hello World» и ReferenceError: bar is not defined&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вопрос: Чему равно foo.length?
+&lt;strong&gt;Ответ: &lt;code&gt;2&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вопрос: Чему равно foo.length?
+&lt;strong&gt;Ответ: &lt;code&gt;undefined&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;a-idjquery-hrefjquery-classshort-linka--jquery-toc&quot;&gt;&lt;a id=&quot;jquery&quot; href=&quot;#jquery&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Вопросы по jQuery: &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Объясните «chaining».&lt;/li&gt;
+  &lt;li&gt;Объясните «deferreds».&lt;/li&gt;
+  &lt;li&gt;Какие Вы знаете приемы оптимизации кода, использующего jQuery?&lt;/li&gt;
+  &lt;li&gt;Что делает &lt;code&gt;.end()&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;Как добавить пространство имён к обработчику событий? Для чего это нужно?&lt;/li&gt;
+  &lt;li&gt;Назовите 4 разных вида аргументов, которые принимает функция jQuery()?
+    &lt;ul&gt;
+      &lt;li&gt;Селектор (строка), HTML (строка), Callback (функция), HTMLElement, объект, массив, массив элементов, объект jQuery etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Что такое очередь эффектов (fx queue)?&lt;/li&gt;
+  &lt;li&gt;В чем разница между &lt;code&gt;.get()&lt;/code&gt;, &lt;code&gt;[]&lt;/code&gt;, и &lt;code&gt;.eq()&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;В чем разница между &lt;code&gt;.bind()&lt;/code&gt;, &lt;code&gt;.live()&lt;/code&gt;, и &lt;code&gt;.delegate()&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;В чем разница между &lt;code&gt;$&lt;/code&gt; и &lt;code&gt;$.fn&lt;/code&gt;? Что вообще такое &lt;code&gt;$.fn&lt;/code&gt;?&lt;/li&gt;
+  &lt;li&gt;Оптимизируйте данный селектор:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;.foo div#bar:eq(0)&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;a-idcss-hrefcss-classshort-linka--css-toc&quot;&gt;&lt;a id=&quot;css&quot; href=&quot;#css&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Вопросы по CSS: &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Что такое «reset» CSS и для чего он нужен?&lt;/li&gt;
+  &lt;li&gt;Объясните, что такое плавающие элементы (floats) и как они работают?&lt;/li&gt;
+  &lt;li&gt;Какие вы знаете методы запрета обтекания (clearing) и какие где применяются?&lt;/li&gt;
+  &lt;li&gt;Что такое CSS спрайты? Как они реализуются на странице или сайте?&lt;/li&gt;
+  &lt;li&gt;Какие Ваши любимые методы подмены текста картинкой (image replacement) и когда Вы их используете?&lt;/li&gt;
+  &lt;li&gt;CSS property hacks, conditionally included .css files…&lt;/li&gt;
+  &lt;li&gt;Как Вы обеспечиваете отображение страниц в старых/ограниченных браузерах?
+    &lt;ul&gt;
+      &lt;li&gt;Какие приёмы/процессы Вы при этом используете?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Какими способами можно визуально скрыть элемент (оставив его доступным для экранного диктора, screen reader)?&lt;/li&gt;
+  &lt;li&gt;Вы когда-нибудь использовали сеточную верстку (grid system, grid design)? Если да, какая Ваша любимая?&lt;/li&gt;
+  &lt;li&gt;Приходилось ли вам использовать или реализовывать media queries или верстку под мобильные устройства?&lt;/li&gt;
+  &lt;li&gt;Приходилось ли вам стилизовать SVG?&lt;/li&gt;
+  &lt;li&gt;Как оптимизировать страницы для печати?&lt;/li&gt;
+  &lt;li&gt;Какие есть подводные камни в оптимизации производительности CSS?&lt;/li&gt;
+  &lt;li&gt;Вы используете CSS препроцессоры? (SASS, Compass, Bourbon, Stylus, LESS)
+    &lt;ul&gt;
+      &lt;li&gt;Если да, расскажите, что вам в них нравится и не нравится?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Как Вы сверстаете макет, который использует нестандартные шрифты?
+    &lt;ul&gt;
+      &lt;li&gt;Webfonts (сервисы вроде Google Webfonts, Typekit, Fontsquirrel etc.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Объясните, как браузер определяет, на какие элементы накладывать CSS стили?&lt;/li&gt;
+  &lt;li&gt;Приходилось ли сталкиваться с Retina-дисплеями?&lt;/li&gt;
+  &lt;li&gt;Слышали ли о системе БЭМ (Блок-Элемент-Модификатор)?
+    &lt;ul&gt;
+      &lt;li&gt;Если да, то в чем её суть? Расскажите о системе нотификации селекторов.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-idfun-hreffun-classshort-linka---toc&quot;&gt;&lt;a id=&quot;fun&quot; href=&quot;#fun&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; «Светская беседа»: &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Самое крутое, что Вы когда либо делали и чем гордитесь?&lt;/li&gt;
+  &lt;li&gt;Вы знаете секретный жест HTML5-банды?&lt;/li&gt;
+  &lt;li&gt;(&lt;a href=&quot;https://vimeo.com/18848658&quot;&gt;непереводимый юмор&lt;/a&gt;) Are you now, or have you ever been, on a boat.&lt;/li&gt;
+  &lt;li&gt;Что Вы больше всего любите в Ваших инструментах разработки?&lt;/li&gt;
+  &lt;li&gt;У Вас есть какие-нибудь личные проекты?&lt;/li&gt;
+  &lt;li&gt;Возьмите листок бумаги и напишите в столбик буквы A B C D E. Теперь отсортируйте столбик в алфавитном порядке по убыванию, не написав ни строчки кода.
+    &lt;ul&gt;
+      &lt;li&gt;Засеките, через сколько времени кандидат перевернет листок&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Пират или ниндзя?
+    &lt;ul&gt;
+      &lt;li&gt;Бонус за комбинацию. Аргументированную. +2 за зомби-пират-ниндзя-обезьяну&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Чем бы Вы занимались, если бы не Web-разработкой?&lt;/li&gt;
+  &lt;li&gt;Какая Ваша любимая «фишка» Internet Explorer?&lt;/li&gt;
+  &lt;li&gt;Закончите предложение: Brendan Eich и Doug Crockford являются &lt;strong&gt;__&lt;/strong&gt;&lt;em&gt;__&lt;/em&gt; языка JavaScript.&lt;/li&gt;
+  &lt;li&gt;jQuery: хорошая библиотека или великая библиотека? Тема для дискуссии…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-idcontributors-hrefcontributors-classshort-linka---toc&quot;&gt;&lt;a id=&quot;contributors&quot; href=&quot;#contributors&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Первоначальные авторы &lt;a href=&quot;#toc&quot;&gt;[↑]&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;@bentruyman (bentruyman.com)&lt;/li&gt;
+  &lt;li&gt;@cowboy (benalman.com)&lt;/li&gt;
+  &lt;li&gt;@roger_raymond (twitter.com/iansym)&lt;/li&gt;
+  &lt;li&gt;@ajpiano (ajpiano.com)&lt;/li&gt;
+  &lt;li&gt;@paul_irish (paulirish.com)&lt;/li&gt;
+  &lt;li&gt;@SlexAxton (alexsexton.com)&lt;/li&gt;
+  &lt;li&gt;@boazsender (boazsender.com)&lt;/li&gt;
+  &lt;li&gt;@miketaylr (miketaylr.com)&lt;/li&gt;
+  &lt;li&gt;@vladikoff (vladfilippov.com)&lt;/li&gt;
+  &lt;li&gt;@gf3 (gf3.ca)&lt;/li&gt;
+  &lt;li&gt;@jon_neal (twitter.com/jon_neal)&lt;/li&gt;
+  &lt;li&gt;@wookiehangover (wookiehangover.com)&lt;/li&gt;
+  &lt;li&gt;@darcy_clarke (darcyclarke.me)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 15 May 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/front_end_developer_interview_quersions</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/front_end_developer_interview_quersions</guid>
+        
+        <category>frontend</category>
+        
+        <category>работа</category>
+        
+        <category>вопросы</category>
+        
+        <category>перевод</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Быстрый дебаг CSS слоев с Pesticide</title>
@@ -420,49 +773,6 @@ core:
         
         
         <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Добавляем красоты в наш Google Chrome с расширением Flickr Tab</title>
-        <description>&lt;p&gt;Вот такой милый пес появился у меня при открытии новой вкладки в Google Chrome. И про это я хочу сегодня рассказать вам.&lt;/p&gt;
-
-&lt;img class=&quot;rounded&quot; src=&quot;/img/flickr_extension/new_tab_by_flickr_1.png&quot; alt=&quot;Расширение для Google Chrome — Flickr Tab&quot;&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Flickr — фотохостинг, предназначенный для хранения и дальнейшего использования пользователем цифровых фотографий и видеороликов. Один из самых популярных сайтов среди блогеров для размещения фотографий.&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;Источник:&lt;/i&gt; ru.wikipedia.org/wiki/Flickr&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;У него недавно появилось новое расширение — &lt;strong&gt;Flickr Tab&lt;/strong&gt; (&lt;a href=&quot;//chrome.google.com/webstore/detail/flickr-tab/bhnpmdabjgpimmnbmhefncbghknfegog&quot;&gt;посмотреть&lt;/a&gt; в магазине расширений Google Chrome). Оно добавляет в наши пустые и белые вкладки красивые фотографии, неизвестных нам фотографов, которые поделились своими фотографиями на фотохостинге Flickr. &lt;/p&gt;
-
-&lt;p&gt;Расширение делает наши новые вкладки красивее и приятней, я порой задерживаюсь на новой вкладке перед тем как ввести запрос в адресную строку, чтобы посмотреть новую фотографию.&lt;/p&gt;
-
-&lt;p&gt;Похожее расширение есть и у Google, в нем на каждой новой вкладке показываются изображения картин. Но мне это не очень понравилось, а вот расширение от Flickr пришлось как раз по душе.&lt;/p&gt;
-
-&lt;p&gt;Перед тем, как вы побежите скачивать это расширение (или Google Chrome), я предлагаю вам посмотреть еще пару снимков из этого расширения:&lt;/p&gt;
-
-&lt;img class=&quot;rounded&quot; src=&quot;/img/flickr_extension/new_tab_by_flickr_2.png&quot; alt=&quot;Расширение для Google Chrome — Flickr Tab&quot;&gt;
-
-&lt;img class=&quot;rounded&quot; src=&quot;/img/flickr_extension/new_tab_by_flickr_3.png&quot; alt=&quot;Расширение для Google Chrome — Flickr Tab&quot;&gt;
-
-&lt;img class=&quot;rounded&quot; src=&quot;/img/flickr_extension/new_tab_by_flickr_4.png&quot; alt=&quot;Расширение для Google Chrome — Flickr Tab&quot;&gt;
-
-&lt;p&gt;Как по мне — очень оригинально и радует глаз :-)&lt;/p&gt;</description>
-        <pubDate>Thu, 23 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/extension_for_google_chrome_flickr_tab</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/extension_for_google_chrome_flickr_tab</guid>
-        
-        <category>flickr</category>
-        
-        <category>расширения</category>
-        
-        <category>браузер</category>
-        
-        <category>Google</category>
-        
-        
-        <category>blog</category>
         
       </item>
     
