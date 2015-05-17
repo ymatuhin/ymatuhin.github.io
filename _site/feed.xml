@@ -6,12 +6,12 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 May 2015 18:09:49 +0300</pubDate>
-    <lastBuildDate>Sun, 17 May 2015 18:09:49 +0300</lastBuildDate>
+    <pubDate>Sun, 17 May 2015 18:13:26 +0300</pubDate>
+    <lastBuildDate>Sun, 17 May 2015 18:13:26 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Разбираемся со сборкой front end на Gulp (Часть</title>
+        <title>Разбираемся со сборкой front end на Gulp (часть 1)</title>
         <description>&lt;p&gt;В последнее время &lt;strong&gt;Gulp&lt;/strong&gt; набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем &lt;strong&gt;Grunt&lt;/strong&gt;. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.&lt;/p&gt;
 
 &lt;img class=&quot;rounded bordered&quot; src=&quot;/img/gulp/logo.png&quot; alt=&quot;Gulp логотип / gulp logo&quot;&gt;
