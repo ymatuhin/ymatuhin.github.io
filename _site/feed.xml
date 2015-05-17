@@ -6,9 +6,109 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 May 2015 17:54:19 +0300</pubDate>
-    <lastBuildDate>Fri, 15 May 2015 17:54:19 +0300</lastBuildDate>
+    <pubDate>Sun, 17 May 2015 18:06:40 +0300</pubDate>
+    <lastBuildDate>Sun, 17 May 2015 18:06:40 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Разбираемся со сборкой front end на Gulp (Часть 1)</title>
+        <description>&lt;p&gt;В последнее время &lt;strong&gt;Gulp&lt;/strong&gt; набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем &lt;strong&gt;Grunt&lt;/strong&gt;. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.&lt;/p&gt;
+
+&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/gulp/logo.png&quot; alt=&quot;Gulp логотип / gulp logo&quot;&gt;
+
+&lt;h2&gt;&lt;a id=&quot;what_is&quot; href=&quot;#what_is&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что такое Gulp?&lt;/h2&gt;
+
+&lt;p&gt;Gulp — это инструмент сборки front-a. Он позволяет автоматизировать повторяющиеся задачи (сборка и минификация CSS- и JS-файлов, запуск тестов, перезагрузка браузера и другие). Тем самым Gulp ускоряет и оптимизирует процесс веб-разработки.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;install&quot; href=&quot;#install&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Установка Gulp&lt;/h2&gt;
+&lt;p&gt;Установить Gulp достаточно легко. Если у вас что-то не получится, пишите в комментариях или загуглите вашу проблему. Итак для установки нужно сделать 3 шага:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установить Gulp глобально;&lt;/li&gt;
+&lt;li&gt;Установить Gulp как &lt;code&gt;devDependencies&lt;/code&gt; (зависимости для разработки);&lt;/li&gt;
+&lt;li&gt;Создать файл &lt;code&gt;gulpfile.js&lt;/code&gt;;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Первый шаг — устанавливаем глобально Gulp. Открываем терминал и пишем:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --global gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;После этого вам нужно установить Gulp как &lt;code&gt;devDependencies&lt;/code&gt; для вашего проекта. Убедитесь в том, что у вас есть файл &lt;code&gt;package.json&lt;/code&gt;. Если его нет, то создайте его написав в консоль &lt;code&gt;npm init&lt;/code&gt;. Теперь можно установить Gulp как &lt;code&gt;devDependencies&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;И наконец, вам нужно создать &lt;code&gt;gulpfile.js&lt;/code&gt; в корне вашего проекта, который будет содержать ваши задачи (tasks). В качестве промежуточного шага, мы установим плагин &lt;code&gt;gulp-util&lt;/code&gt;. Чтобы показать как устанавливаются плагины:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-util&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Теперь настало время написать нашу первую задачку. Открываем только что созданный файл &lt;code&gt;gulpfile.js&lt;/code&gt; и пишем в него следующее:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/* File: gulpfile.js */&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// собираем все наши плагины&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;gutil&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-util&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// создаем задачку, которая будет выполняться по умолчанию&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gutil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Gulp is running!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;И теперь нам остается запустить gulp в терминале и мы увидим нечто похожее на это:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; gulp
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Using gulpfile ~/Projects/gulp-scotch-io/gulpfile.js
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Starting &lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;...
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Gulp is running!
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Finished &lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt; after &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; ms&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;a id=&quot;overview&quot; href=&quot;#overview&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Обзор&lt;/h2&gt;
+&lt;p&gt;Сам по себе Gulp очень скуден на возможности. Но все, что вам нужно вынесено в отдельные плагины. Они совместно с Gulp творят чудеса.&lt;/p&gt;
+
+&lt;p&gt;Api у gulp очень маленькое, и содержит всего 4 функции высшего порядка:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gulp.task&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp.src&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp.dest&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp.watch&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;gulp.task&lt;/code&gt; определяет наши задачи. В качестве аргументов принимает название, зависимости (массив) и функцию (основные действия). Зависимостей может и не быть:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;mytask&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//сделать что-то&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;dependenttask&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;mytask&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//сделать что-то после того, как &amp;#39;mytask&amp;#39; будет выполнен&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;gulp.src&lt;/code&gt; указывает на файлы, которые мы хотим использовать. Он использует &lt;code&gt;.pipe&lt;/code&gt; доступа к файлам через плагины.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gulp.dest&lt;/code&gt; указывает на папку, в которую мы хотим сохранить измененные файлы.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;gulp.src&lt;/code&gt; и &lt;code&gt;gulp.dest&lt;/code&gt; используется для простой копии файлов:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;copyHtml&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// скопировать все html файлы из source/ в public/&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;source/*.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;public&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;В gulp встроена система реагирования на изменения файлов (&lt;code&gt;gulp.watch&lt;/code&gt;). Вы можете использовать эту задачу для запуска других необходимых вам задач при изменении файлов.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;source/**/*.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;copyHtml&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Этот пример будет выполнять задачу &lt;code&gt;copyHtml&lt;/code&gt; когда любой html файл в папке source изменится.&lt;/p&gt;
+
+&lt;p&gt;В следующей статье мы разберемся подробнее о задачах, синхронность и асинхронностью и напишем что-нибудь полезное.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 May 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/see_into_gulp</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/see_into_gulp</guid>
+        
+        <category>gulp</category>
+        
+        <category>frontend</category>
+        
+        <category>сборка</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Вопросы для собеседования кандидату на должность Front-end разработчика</title>
@@ -710,64 +810,6 @@ core:
         <category>Atom</category>
         
         <category>дополнения</category>
-        
-        <category>текстовый редактор</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Все еще сидите на Sublime Text? Тогда мы идем к вам!</title>
-        <description>&lt;p&gt;В пятницу я пробовал в работе разные текстовые редакторы. Большинство из них очень плохи. Тот-же Brackets от Adobe — вообще не изменился, те-же проблемы, в том числе со шрифтами и не очень приятный внешний вид. Но один из редакторов оказался наоборот очень крутым.&lt;/p&gt;
-
-&lt;p&gt;И этот редактор — &lt;strong&gt;Atom&lt;/strong&gt; от Github.&lt;/p&gt;
-
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_vs_sublime.jpg&quot; alt=&quot;Все еще сидите на Sublime Text? Тогда мы идем к вам!&quot;&gt;
-
-&lt;p&gt;Он превзошел все мои ожидания! Я пробовал его наверное пол года или больше назад и мне он показался сыроватым, но теперь — совсем другое дело. Более того, я перешел на него со своего Sublime Text 3 и сейчас расскажу почему.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;interface&quot; href=&quot;#interface&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Внешний вид&lt;/h2&gt;
-&lt;p&gt;После первого запуска Atom, мне захотелось удалить Sublime Text. Хотя до этого у меня не было никаких претензий к нему. Вот пара скриншотов саблайма и атома.&lt;/p&gt;
-
-&lt;p&gt;Открытый файл html в Atom потом Sublime.&lt;/p&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_post.jpg&quot; alt=&quot;Пример поста в текстовом редакторе Atom&quot;&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_post.jpg&quot; alt=&quot;Пример поста в текстовом редакторе Sublime Text 3&quot;&gt;
-
-&lt;p&gt;Сразу видна классная функция подсветки добавленных и измененных файлов от git в боковой панели и в файлах.&lt;/p&gt;
-
-&lt;p&gt;Окно настроек в Atom потом Sublime.&lt;/p&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_settings.jpg&quot; alt=&quot;Окно настроек в текстовом редакторе Atom&quot;&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/sublime_settings.jpg&quot; alt=&quot;Окно настроек в текстовом редакторе Sublime Text 3&quot;&gt;
-
-&lt;h2&gt;&lt;a id=&quot;packages&quot; href=&quot;#packages&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Установка дополнений&lt;/h2&gt;
-&lt;p&gt;В Sublime Text это делалось с помощью плагина Package Control, который нужно было еще установить.&lt;/p&gt;
-&lt;p&gt;В Atom есть визуальный интерфейс для настроек и установки плагинов, в котором можно почитать описание дополнения и количество установок прямо в редакторе.&lt;/p&gt;
-
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_install_package.jpg&quot; alt=&quot;Установка дополнений в текстовом редакторе Atom&quot;&gt;
-
-&lt;h2&gt;&lt;a id=&quot;migrate&quot; href=&quot;#migrate&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Переход на Atom c Sublime Text&lt;/h2&gt;
-&lt;p&gt;Это единственный текстовый редактор на который можно перейти с Sublime без проблем и переучиваний. Все сочетания клавиш работаю так-же как и там. Это просто бомба!&lt;/p&gt;
-
-&lt;p&gt;По поводу дополнений в Atom их уже большое количество. По крайней мере все мои потребности они решают. Ну и удобство их установки просто поражает.&lt;/p&gt;
-
-&lt;p&gt;В Atom его по умолчанию нет менеджера пакетов (дополнений), но есть дополнение project-manager, который решает эту проблему.&lt;/p&gt;
-
-&lt;p&gt;Вообще мне кажется что это тот-же Sublime, только красивее, удобнее и лучше.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;download&quot; href=&quot;#download&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Скачать Atom&lt;/h2&gt;
-&lt;p&gt;Даже не знаю что еще такого лестного о нем сказать. Наверное лучше один раз увидеть, чем сто раз услышать. Поэтому вы можете скачать Atom на &lt;a href=&quot;https://atom.io/&quot;&gt;официальном сайте&lt;/a&gt;. Посмотреть доступные плагины для Atom на &lt;a href=&quot;https://atom.io/packages&quot;&gt;этой странице&lt;/a&gt; и конечно-же в самом редакторе.&lt;/p&gt;
-
-&lt;p&gt;В комментариях пишите ваши отзывы и мнения о Atom. В дальнейшем планирую рассказать про лучшие дополнения к нему.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 25 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/still_using_sublime_text_then_we_go_to_you</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/still_using_sublime_text_then_we_go_to_you</guid>
-        
-        <category>Atom</category>
-        
-        <category>Sublime Text</category>
         
         <category>текстовый редактор</category>
         
