@@ -6,9 +6,79 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 May 2015 18:23:57 +0300</pubDate>
-    <lastBuildDate>Sun, 17 May 2015 18:23:57 +0300</lastBuildDate>
+    <pubDate>Wed, 20 May 2015 22:33:21 +0300</pubDate>
+    <lastBuildDate>Wed, 20 May 2015 22:33:21 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Подготавливаем графику на сайте для retina экранов</title>
+        <description>&lt;p&gt;Сейчас, с большой популярностью MacBook-ов, айфонов и других устройств с большим DPI, изображения на сайте нужно оптимизировать, чтобы они не были смазанными. Для этого у нас есть несколько решений. Самые популярные это сделать иконочный шрифт или использовать SVG. Но что если нет возможности или не хочется с этим иметь дело, или вы очень любите PNG. Решение конечно же есть. В виде плагина для Photoshop, js-библиотеки и sass/less/stylus примеси.&lt;/p&gt;
+
+&lt;p&gt;Но обо всем по порядку, ведь каждый пункт стоит того.&lt;/p&gt;
+
+
+&lt;h2&gt;&lt;a id=&quot;retinize_it&quot; href=&quot;#retinize_it&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Photoshop плагин Retinize It&lt;/h2&gt;
+
+&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/retina/retinizeit.png&quot; alt=&quot;Retinize It логотип / Retinize It logo&quot;&gt;
+
+&lt;p&gt;Как написано на официальном сайте: «Лучший плагин к Photoshop для оптимизации графики на сайте для iOS и Retina-дисплеев». Скачать его можно на &lt;a href=&quot;http://retinize.it/&quot;&gt;странице проекта&lt;/a&gt;.&lt;/p&gt;
+
+&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/retina/install.png&quot; alt=&quot;Как работает Retinize It&quot;&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Выберите слои или или группу слоев&lt;/li&gt;
+    &lt;li&gt;Запустите Retinize It (можно добавить сочетание клавиш)&lt;/li&gt;
+    &lt;li&gt;Назовите ваши файлы&lt;/li&gt;
+    &lt;li&gt;Получите ваши нарезанные изображения&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Для дальнейшего использования рекомендую сохранять файлы с постфиксами @2x, @3x. К примеру: &lt;code&gt;file.png&lt;/code&gt;, &lt;code&gt;file@2x.png&lt;/code&gt;, &lt;code&gt;file@3x.png&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;h2&gt;&lt;a id=&quot;retina_js&quot; href=&quot;#retina_js&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем retina.js для тегов img&lt;/h2&gt;
+&lt;p&gt;Тут все просто, подключаем js библиотеку, и она определит нужно ли загружать изображение для retina экранов. Если нужно, то ссылка на исходный файл заменяется на &lt;code&gt;***@2x.***&lt;/code&gt; или &lt;code&gt;***@3x.***&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;less_mixin&quot; href=&quot;#less_mixin&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примесь для LESS&lt;/h2&gt;
+&lt;p&gt;Скачать примесь можно &lt;a href=&quot;http://imulus.github.io/retinajs/&quot;&gt;на сайте&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;После подключения она будет доступна для использования. Написав следующее: &lt;code&gt;.at2x(@path, @width, @height);&lt;/code&gt; (вместо @path, @width и @height нужно написать ваш путь к изображению и его размеры).&lt;/p&gt;
+
+&lt;p&gt;Пример:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nn&quot;&gt;#logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.at2x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/images/my_image.png&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Эта примесь раскроется как:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nn&quot;&gt;#logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&amp;#39;/images/my_image.png&amp;#39;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-webkit-min-device-pixel-ratio&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nn&quot;&gt;#logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&amp;#39;/images/my_image@2x.png&amp;#39;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Подробнее о retina.js и примесях можно прочитать &lt;a href=&quot;http://imulus.github.io/retinajs/&quot;&gt;на сайте&lt;/a&gt;, скачать можно там-же.&lt;/p&gt;
+
+&lt;p&gt;Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 May 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/prepare_graphics_for_retina_screens</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/prepare_graphics_for_retina_screens</guid>
+        
+        <category>retina</category>
+        
+        <category>photoshop</category>
+        
+        <category>графика</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Разбираемся со сборкой front end на Gulp (часть 1)</title>
@@ -703,115 +773,6 @@ core:
         <category>stylus</category>
         
         <category>дополнения</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Мои дополнения к текстовому редактору Atom</title>
-        <description>&lt;p&gt;&lt;/p&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_packages.jpg&quot; alt=&quot;Мои дополнения к текстовому редактору Atom&quot;&gt;
-
-&lt;p&gt;Вчера я писал про текстовый редактор Atom (&lt;a href=&quot;/front-end/still_using_sublime_text_then_we_go_to_you/&quot;&gt;Все еще сидите на Sublime Text? Тогда мы идем к вам!&lt;/a&gt;), а сегодня хочу продолжить о нем разговор и рассказать о моих дополнениях к нему.&lt;/p&gt;
-
-&lt;h2&gt;Список установленных дополнений/расширений&lt;/h2&gt;
-&lt;p&gt;В скобочках общее количество установок.&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;&lt;b&gt;linter&lt;/b&gt; (~262 000)
-        &lt;br&gt; + coffeelint, jshint, stylint, tidy
-        &lt;br&gt;Проверка кода на ошибки (coffeescript, js, stylus, html)
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;stylus&lt;/b&gt; (~12 000)
-        &lt;br&gt;Добавляет кучу снипетов для stylus
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;atom-beautify&lt;/b&gt; (~148 000)
-        &lt;br&gt;Форматирует ваш код (есть куча настроек)
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;autocomplete-plus&lt;/b&gt; (~290 000)
-        &lt;br&gt;Добавляет окошко автодополнения (по умолчанию выбор варианта стоит на
-        &lt;code&gt;Tab&lt;/code&gt;, но в настройках можно поставить и
-        &lt;code&gt;Enter&lt;/code&gt;)
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;color-picker&lt;/b&gt; (~205 000)
-        &lt;br&gt;Тут думаю все понятно, добавляет окошко для выбора цвета
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;easy-motion&lt;/b&gt; (~1 100)
-        &lt;br&gt;При нажатии на
-        &lt;code&gt;cmd+shift+e&lt;/code&gt; все первые буквы слов заменяются, и вам нужно набрать их чтобы перейти к началу этого слова. Так-же есть комбинация для перехода в конец слова. Как это происходит:
-        &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_easy-motion.gif&quot; alt=&quot;Дополнение easy-motion к текстовому редактору Atom&quot;&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;emmet&lt;/b&gt; (~115 000)
-        &lt;br&gt;Думаю не нуждается в представлении :-)
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;file-icons&lt;/b&gt; (~113 000)
-        &lt;br&gt;Заменяет стандартные иконки в боковом меню на красивые и под каждый тип файлов
-        &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_file-icons.jpg&quot; alt=&quot;Дополнение file-icons к текстовому редактору Atom&quot;&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;jekyll&lt;/b&gt; (~1 500)
-        &lt;br&gt;Добавляет снипеты для работы с jekyll и некоторые функции (но я редко им пользуюсь, думаю удалить)
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;angularjs&lt;/b&gt; (~26 000)
-        &lt;br&gt;Добавляет снипеты для angularjs в html и js
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;project-manager&lt;/b&gt; (~78 000)
-        &lt;br&gt;Менеджер пакетов практически такой-же как в Sublime
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;merge-conflicts&lt;/b&gt; (~72 000)
-        &lt;br&gt;Пока не пользовался, но судя по названию помогает мержить конфликты (КЭП?)
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;minimap&lt;/b&gt; (~260 000)
-        &lt;br&gt;Мини карта файла, как и в Sublime Text
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;open-in-browser&lt;/b&gt; (~5 000)
-        &lt;br&gt;Добавляет команду для открытия файла в браузере
-        &lt;br&gt;
-        &lt;br&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;project-palette-finder&lt;/b&gt; (~5 000)
-        &lt;br&gt;Ищет использованные цвета в проекте и показывает их в отдельном окне
-        &lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_palette_finder.jpg&quot; alt=&quot;Дополнение project-palette-finder к текстовому редактору Atom&quot;&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Если вы очень скучаете по этому чудесному окошку в Sublime Text, которое выскакивает на каждое 20е сохранение, то для Atom есть дополнение для этого — &lt;a href=&quot;https://github.com/thiagopnts/unregistered&quot;&gt;unregistered&lt;/a&gt;.&lt;/p&gt;
-&lt;img class=&quot;rounded&quot; src=&quot;/img/atom/atom_unregistered.jpg&quot; alt=&quot;Дополнение unregistered к текстовому редактору Atom&quot;&gt;
-&lt;/li&gt;
-
-&lt;p&gt;А какие дополнения/расширения используете вы? Напишите об этом в комментариях.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 26 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/my_atom_packages</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/my_atom_packages</guid>
-        
-        <category>Atom</category>
-        
-        <category>дополнения</category>
-        
-        <category>текстовый редактор</category>
         
         
         <category>front-end</category>
