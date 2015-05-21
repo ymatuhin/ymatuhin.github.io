@@ -6,9 +6,42 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 May 2015 12:28:17 +0300</pubDate>
-    <lastBuildDate>Thu, 21 May 2015 12:28:17 +0300</lastBuildDate>
+    <pubDate>Thu, 21 May 2015 16:05:01 +0300</pubDate>
+    <lastBuildDate>Thu, 21 May 2015 16:05:01 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Решаем проблему греющихся MacBook Pro/Air</title>
+        <description>&lt;p&gt;Я обладатель MacBook Pro Mid 2012 уже более года и не понаслышке знаю о горячем ноуте. Одно дело согревающая теплота зимой, другое летом когда и так очень жарко. Сегодня мы решим эту проблему.&lt;/p&gt;
+
+&lt;p&gt;Маки греются по нескольким причинам, самые основные это: цельный корпус (плохая вентиляция), тишина работы (не позволяет кулерам хорошо охлаждать), выполнение сложных вычислений и работа с графикой.&lt;/p&gt;
+
+&lt;p&gt;Теперь мы знаем причины и можем их исправить.&lt;/p&gt;
+&lt;p&gt;Первое что приходит на ум — использовать охлаждающую подставку для ноутбука.&lt;/p&gt;
+&lt;p&gt;Второе — это не класть мак на колени/подушки/одеяла чтобы не закрывать отверстия для охлаждения.&lt;/p&gt;
+&lt;p&gt;Третье — это закрыть по возможности тяжелые программы и приложения (выглядит как костыль).&lt;/p&gt;
+&lt;p&gt;Четвертое — увеличить скорость вращения кулеров. Нужно понимать что при этом увеличится шум от ноутбука.&lt;/p&gt;
+
+&lt;p&gt;Первое решение требует дополнительных расходов и не совсем удобно. Второе и третье желательно применять, но температура все ещё будет высока. А вот четвертый вариант очень хорош. Нужно только поставить нужный софт и включать его по необходимости. Для этого есть чудесная программа &lt;mark&gt;smcFanControl&lt;/mark&gt;, которая как раз именно это и делает.&lt;/p&gt;
+
+&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/mac/smcFanControl.png&quot; alt=&quot;Интерфейс настроек smcFanControl для Mac OS&quot;&gt;
+
+&lt;p&gt;Интерфейс программы крайне прост, поэтому ничего подробно тут я объяснять не буду. Я добавил себе профиль SuperPower в котором скорость оборотов поставил 5100, что есть достаточно для охлаждения ноутбука и при этом ноутбоук не сильно шумит.&lt;/p&gt;
+
+&lt;p&gt;Осталось только оставить &lt;a href=&quot;//www.eidac.de/smcfancontrol/smcfancontrol_2_4.zip&quot;&gt;ссылку для скачивания&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/solve_the_problem_of_basking_macbook</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/solve_the_problem_of_basking_macbook</guid>
+        
+        <category>MacBook</category>
+        
+        <category>утилиты</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Подготавливаем графику на сайте для retina экранов</title>
@@ -739,45 +772,6 @@ core:
         <category>Atom</category>
         
         <category>fuzzy</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Учим Emmet под Atom работать со Stylus</title>
-        <description>&lt;p&gt;&lt;/p&gt;
-&lt;img class=&quot;rounded noshadow&quot; src=&quot;/img/atom/atom_stylus_emmet.jpg&quot; alt=&quot;Мои дополнения к текстовому редактору Atom&quot;&gt;
-
-&lt;p&gt;Расширение &lt;strong&gt;Emmet&lt;/strong&gt; отлично работает с html, css, sass, scss, less. Но есть одна проблема — &lt;em&gt;Stylus&lt;/em&gt;. Видимо из-за того, что этот препроцессор не так распространен то в Emmet официально нет его поддержки. То есть наши правила на подобии &lt;code&gt;bd+&lt;/code&gt; не раскрываются.&lt;/p&gt;
-
-&lt;p&gt;Несмотря на то, что в дополнении Stylus уже идут многие сниппеты похожие на Emmet, но не все. А переучиваться не хочется, ведь Emmet более распространен среди текстовых редакторов. Значит нужно что-то придумать для этого.&lt;/p&gt;
-
-&lt;p&gt;Решение нашлось очень простое, выглядит как небольшой костыль, но оно полностью рабочее. Основной смысл в том, чтобы принудительно вызывать Emmet при нажатии на Tab в файлах Stylus.&lt;/p&gt;
-
-&lt;p&gt;Заходим в настройки Keymap (Atom → Open Your Keymap). И в самом низу дописываем следующие строки:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;
-&lt;pre&gt;
-&#39;atom-text-editor[data-grammar~=&quot;stylus&quot;]:not([mini])&#39;:
-    &#39;tab&#39;: &#39;emmet:expand-abbreviation-with-tab&#39;
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Теперь все работает хорошо.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 27 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/atom_emmet_with_stylus</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/atom_emmet_with_stylus</guid>
-        
-        <category>Atom</category>
-        
-        <category>emmet</category>
-        
-        <category>stylus</category>
-        
-        <category>дополнения</category>
         
         
         <category>front-end</category>
