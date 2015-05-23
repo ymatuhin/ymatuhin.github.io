@@ -9,11 +9,11 @@ tags: [yota, мобильный интернет]
 
 <p>Сейчас, в Брянске стал доступен для подключения новый мобильный оператор — Yota. Что привлекательного в нем? А то, что за 240 рублей в месяц вы получаете <strong>безлимитный мобильный интернет</strong> c 4G (если телефон поддерживает).</p>
 
-<img src="/img/yota/yota.png" height="300" alt="Логотип Yota — Оператор сотовой связи">
+<img class="rounded " src="/img/yota/yota.png" height="300" alt="Логотип Yota — Оператор сотовой связи">
 
 <p>Но есть одна проблема, этим интернетом нельзя поделиться на ваш компьютер (через wifi к примеру). Точнее говоря можно, но у вас ограничится скорость и только на пол часа.</p>
 
-<img src="/img/yota/yota_sharing.png" width="675" alt="Подключение общего доступа в Yota">
+<img class="rounded bordered" src="/img/yota/yota_sharing.png" width="675" alt="Подключение общего доступа в Yota">
 
 <h2><a id="instruction" href="#instruction" class="short-link">#</a> Инструкции</h2>
 
@@ -21,7 +21,7 @@ tags: [yota, мобильный интернет]
 <p>К нашей радости сейчас это ограничение не сложно обойти.</p>
 <p>Если у вас Windows, тогда вам нужно открыть программу <mark>Выполнить</mark> (можно через сочетание клавиш <code>WIN + R</code>) , ввести в ней <code>regedit.exe</code> и следовать по следующему пути: <code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters</code>. Затем нужно нажать правой кнопкой на пустом пространстве (в правом окне) и выбрать <code>NEW > QWORD (64-bit) Value</code>. Назовите её <code>DefaultTTL</code>, после двойным щелчком мыши по ней в правой части переключите радиокнопку на <code>Decimal (Десятичное)</code> и введите значение <code>65</code>.</p>
 
-<img src="/img/yota/regedit.png" width="400" alt="Изменяем TTL по умолчанию">
+<img class="rounded bordered" src="/img/yota/regedit.png" width="400" alt="Изменяем TTL по умолчанию">
 
 <p>Для Mac OS все куда проще :-) Нужно открыть <mark>Терминал</mark> и вставить туда следующую команду: <code>sudo sysctl -w net.inet.ip.ttl=65</code></p>
 

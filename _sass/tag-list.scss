@@ -7,19 +7,16 @@
 	background: $gray-color;
 	border-radius: 3px;
 	border: 0;
-	color: #444 !important;
+	color: #000 !important;
 	font-style: italic;
+	opacity: .5;
 }
 
 .tag {
-	-webkit-transition: background .2s;
-	transition: background .2s;
+	-webkit-transition: opacity .2s;
+	transition: opacity .2s;
 }
-.tag strong {
-	font-weight: normal;
-}
-.tag:hover {
-	background: darken($gray-color, 5%);
-}
+.tag strong { font-weight: normal; }
+.tag:hover { opacity: 1; }
 .tags + * { margin-top: 0 }
 .tags + * > * { margin-top: 0 }

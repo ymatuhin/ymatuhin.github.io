@@ -17,7 +17,19 @@
 	}
 }
 
-img { box-shadow: 0 0 25px 0 rgba(0, 0, 0, .2) }
+.styled { list-style-type: none; padding-left: 0; }
+.styled > li { position: relative; padding-left: 40px; }
+.styled > li:before {
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 1.5em;
+	line-height: .8;
+	content: '■';
+	color: #fff000;
+}
+
+img { box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1) }
 img.rounded { border-radius: 6px; }
 img.noshadow { box-shadow: none !important; }
 img.inline { display: inline-block; vertical-align: middle; margin: 0; }
