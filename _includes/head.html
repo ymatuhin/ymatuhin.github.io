@@ -5,7 +5,7 @@
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 
 	<title>{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% else %}Привет! Я разработчик пользовательских интерфейсов (занимаюсь front end-ом). Тут я веду блог, рассказываю о своих проектах, интересных штуках, изучаю новые технологии, рассказываю про книги и свою жизнь (чуть чуть).{% endif %}{% endif %}">
+	<meta name="description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% else %}Меня зовут Юрий Матюхин (ymatuhin) и я разработчик пользовательских интерфейсов (front end). Веду блог, рассказываю о проектах, интересных штуках, изучаю новые технологии.{% endif %}{% endif %}">
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
