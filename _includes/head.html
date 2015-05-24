@@ -16,12 +16,7 @@
 	<script>document.documentElement.className += " js "</script>
 
 	<!-- critical.css -->
-	<style>
-		{% capture include_to_scssify %}
-			{% include critical.scss %}
-		{% endcapture %}
-		{{ include_to_scssify | scssify }}
-	</style>
+	<style>{% capture include_to_scssify %}i{top:0}{% include critical.scss %}{% endcapture %}{{include_to_scssify | scssify}}</style>
 
 	<noscript><link rel="stylesheet" type="text/css" href="/css/secondary.css"></noscript>
 </head>
