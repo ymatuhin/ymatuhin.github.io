@@ -1,6 +1,6 @@
 /* Document */
 html {
-    font: 1.25em/1.5 $text-font;
+    font: 1.25em/1.5 $text-font !important;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -12,8 +12,9 @@ body {
     margin: 0 auto;
     padding: 2em;
     max-width: 36em;
-    color: $text-color;
-    background: $bg-color;
+    color: $text-color !important;
+    background: $bg-color !important;
+    font: inherit !important;
 }
 
 body > *:first-child {
