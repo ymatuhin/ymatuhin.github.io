@@ -33,6 +33,13 @@ blockquote {
 	clear: both;
 }
 
+mark {
+	background: #fffab2;
+	color: #333;
+	border-radius: 3px;
+	padding: .05em .2em;
+}
+
 small {
 	font-size: 80%
 }
