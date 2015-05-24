@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 480px) {
-	html { font-size: 1em }
+	html { font-size: 1em !important }
 	body { padding: 1em }
 	ul, ol { margin-left: 0 }
 
