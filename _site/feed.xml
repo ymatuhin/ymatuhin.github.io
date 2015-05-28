@@ -6,9 +6,56 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 May 2015 16:45:20 +0300</pubDate>
-    <lastBuildDate>Thu, 28 May 2015 16:45:20 +0300</lastBuildDate>
+    <pubDate>Thu, 28 May 2015 16:45:23 +0300</pubDate>
+    <lastBuildDate>Thu, 28 May 2015 16:45:23 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Проблема верстки под современные браузеры или борьба с расширениями</title>
+        <description>&lt;p&gt;Я думаю для вас не секрет, что почти у всех современных и популярных браузеров есть дополнения, расширения, аддоны и прочее. С одной стороны, появление всех этих аддонов — хороший знак. Они дополняют новые функции, которых нет в самом браузере. Но как и везде есть и обратная сторона монеты — расширения могут делать практически все, в том числе не до конца поняв что они наделали.&lt;/p&gt;
+
+&lt;p&gt;К чему я все это? А к тому, расширения имеют доступ к нашему &lt;code&gt;html&lt;/code&gt; файлу, и могу внедрять в него свои стили и js-код. Вреда от js коллизий я пока не замечал, а вот переопределить в расширении стили для &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;body&lt;/code&gt; — запросто.&lt;/p&gt;
+
+&lt;p&gt;Конечно они могут сделать все, что захотят. Но наша задача, сделать так, чтобы они не сломали случайно наш красивенький сайт.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;why&quot; href=&quot;#why&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Почему так происходит?&lt;/h2&gt;
+
+&lt;p&gt;Основной причиной для этого является стилизация страницы настроек для плагина (это касается Google Chrome). Т.к. страница настроек это обычная html страница, то к ней пишут стили для &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;body&lt;/code&gt; и т.д.&lt;/p&gt;
+
+&lt;p&gt;Что чаще всего случайно ломают? Сложно сказать, я замечал в основном только несоответствия по шрифтам и фону.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;what_to_do&quot; href=&quot;#what_to_do&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что нам со всем этим делать?&lt;/h2&gt;
+
+&lt;p&gt;Первое что нужно, это переписать свои стили, отвечающие за шрифт и фон для &lt;code&gt;html&lt;/code&gt; и &lt;code&gt;body&lt;/code&gt; с добавлением &lt;code&gt;!important&lt;/code&gt;. К примеру вот так:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#fff&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(..)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;no-repeat&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sans-serif&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inherit&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inherit&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Свойство &lt;code&gt;inherit&lt;/code&gt; не работает в IE &lt; 8 версии. Поэтому если вы поддерживаете 7 версию этого чудесного браузера, вам нужно будет переписать этот участок кода самому в зависимости от ваших требований.&lt;/p&gt;
+
+&lt;p&gt;Это тот необходимый минимум, которого хватает наверное в 90% случаев. А у вас съезжал сайт из-за расширений?&lt;/p&gt;
+</description>
+        <pubDate>Thu, 28 May 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/the_problem_of_web_dev_for_modern_browsers_or_fighting_with_extensions</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/the_problem_of_web_dev_for_modern_browsers_or_fighting_with_extensions</guid>
+        
+        <category>css</category>
+        
+        <category>фикс</category>
+        
+        <category>костыль</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Решаем проблему греющихся MacBook Pro/Air</title>
@@ -741,38 +788,6 @@
         <category>ресурсы</category>
         
         <category>книги</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Исключаем папки из обычного и Fuzzy поиска в Atom</title>
-        <description>&lt;p&gt;Порой, чтобы открыть нужный файл, нужно знать все его название. А все из-за того, что у нас очень много файлов в папках &lt;code&gt;node_modules&lt;/code&gt; и &lt;code&gt;bower_components&lt;/code&gt; и они мешают открытию написанных нами файлов.&lt;/p&gt;
-
-&lt;p&gt;Решается эта &lt;em&gt;проблема&lt;/em&gt; достаточно легко. Заходим в настройки Config (Atom → Open Your Config). Ищем там строку &lt;code&gt;core&lt;/code&gt; и дописываем туда &lt;code&gt;ignoredNames&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;
-&lt;pre&gt;
-core:
-  ignoredNames: [
-    &quot;node_modules&quot;
-    &quot;bower_components&quot;
-    &quot;.tmp&quot;
-  ]
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Теперь все файлы внутри этих папок исключены из поиска обычного и Fuzzy. И нужные нам файлы легко будет найти.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Apr 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/atom_exclude_foilder</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/atom_exclude_foilder</guid>
-        
-        <category>Atom</category>
-        
-        <category>fuzzy</category>
         
         
         <category>front-end</category>
