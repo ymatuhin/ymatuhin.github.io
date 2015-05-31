@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 May 2015 21:12:14 +0300</pubDate>
-    <lastBuildDate>Sat, 30 May 2015 21:12:14 +0300</lastBuildDate>
+    <pubDate>Sun, 31 May 2015 12:41:47 +0300</pubDate>
+    <lastBuildDate>Sun, 31 May 2015 12:41:47 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -270,7 +270,7 @@
         <title>Вопросы для собеседования кандидату на должность Front-end разработчика</title>
         <description>&lt;p&gt;&lt;em&gt;Это перевод популярного репозитория от html5bp — &lt;a href=&quot;//h5bp.github.io/Front-end-Developer-Interview-Questions/&quot;&gt;Front-end Job Interview Questions&lt;/a&gt; (en),  который существует с 2009 года. Список вопросов составлялся и дополнятся известными во front-end людьми, поэтому на этот список можно положиться. Перевод делал не я (вернее я хотел, но он оказался уже переведен).&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/front_end_interview/mem.jpg&quot; class=&quot;rounded bordered&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/img/front_end_interview/mem.jpg&quot; class=&quot;rounded bordered&quot; alt=&quot;Вопросы для собеседования кандидату на должность Front-end разработчика&quot; /&gt;
 &lt;strong&gt;Замечание:&lt;/strong&gt; Этот репозиторий содержит подборку вопросов, которые могут быть использованы на собеседованиях на должность front-end разработчика. Здесь предлагаются лишь идеи, не нужно задавать все вопросы сразу (иначе в один час точно не уложитесь).&lt;/p&gt;
 
 &lt;p&gt;Также, имейте в виду, что многие вопросы не требуют однозначного короткого ответа, а лишь помогают завести беседу на ту или иную тему (предоставляя кандидату возможность показать себя во всей красе).&lt;/p&gt;

@@ -34,6 +34,7 @@ img.rounded { border-radius: 6px; }
 img.noshadow { box-shadow: none !important; }
 img.inline { display: inline-block; vertical-align: middle; margin: 0; }
 img.bordered { border: 1px solid rgba(0, 0, 0, .2); position: relative; top: -1px; left: -1px; }
+img.inline { display: inline; }
 
 .media-title {
 	text-align: center;
