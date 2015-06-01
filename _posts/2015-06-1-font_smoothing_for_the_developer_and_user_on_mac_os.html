@@ -3,7 +3,7 @@ layout: post
 title: Сглаживание шрифтов для разработчика и пользователя на Mac OS
 categories: front-end
 tags: [css, сглаживание шрифта, mac os, расширение]
-published: false
+image: /img/font-smooth/compare.png
 ---
 
 <p>Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как <code>-webkit-font-smoothing</code>, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.</p>
@@ -25,12 +25,12 @@ published: false
 <h2><a id="use-in-work" href="#use-in-work" class="short-link">#</a> Используем в работе</h2>
 <p>Очень хорошо этим свойством обрабатываются подгружаемые шрифты.</p>
 
-{% highlight css %}
+{% highlight css %}
 html {
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-{% endhighlight %}
+{% endhighlight %}
 
 <p>Вот и все, больше ничего не нужно. Теперь ваш сайт стал чуточку красивее и элегантней, хоть это и не так заметно с первого взгляда.</p>
 

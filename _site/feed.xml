@@ -6,9 +6,69 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 31 May 2015 12:41:47 +0300</pubDate>
-    <lastBuildDate>Sun, 31 May 2015 12:41:47 +0300</lastBuildDate>
+    <pubDate>Mon, 01 Jun 2015 12:32:38 +0300</pubDate>
+    <lastBuildDate>Mon, 01 Jun 2015 12:32:38 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Сглаживание шрифтов для разработчика и пользователя на Mac OS</title>
+        <description>&lt;p&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;examples&quot; href=&quot;#examples&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примеры сглаживания шрифтов&lt;/h2&gt;
+&lt;p&gt;В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.&lt;/p&gt;
+
+&lt;p&gt;
+    Кликните по изображению, чтобы открыть его в новой вкладке.
+    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/compare.png&quot;&gt;&lt;img class=&quot;noshadow&quot; src=&quot;/img/font-smooth/compare.png&quot; atl=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot;&gt;&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/yandex.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/yandex.png&quot; atl=&quot;yandex.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/yandex_with.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/yandex_with.png&quot; atl=&quot;yandex.ru со сглаживанием antialiased на Mac OS&quot;&gt;&lt;/a&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search.png&quot; atl=&quot;google.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;&lt;/a&gt;
+    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search_with.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search_with.png&quot; atl=&quot;google.ru со сглаживанием antialiased на Mac OS&quot;&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;use-in-work&quot; href=&quot;#use-in-work&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем в работе&lt;/h2&gt;
+&lt;p&gt;Очень хорошо этим свойством обрабатываются подгружаемые шрифты.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Вот и все, больше ничего не нужно. Теперь ваш сайт стал чуточку красивее и элегантней, хоть это и не так заметно с первого взгляда.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;use-in-browser&quot; href=&quot;#use-in-browser&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем в браузере как пользователи&lt;/h2&gt;
+&lt;p&gt;Для этого вам нужно установить расширение для Chrome / Firefox — &lt;a href=&quot;//userstyles.org&quot;&gt;Stylish&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;В настройках создать новый стиль (write new style), назвать его (у меня Font render), поставить галочку &lt;code&gt;Enable&lt;/code&gt;, и в поле &lt;code&gt;code&lt;/code&gt; вставить следующий текст:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/stylish.png&quot;&gt;&lt;img class=&quot;bordered rounded&quot; src=&quot;/img/font-smooth/stylish.png&quot; atl=&quot;Расширение для Chrome и Firefox — Stylish. Скриншот с макросом на сглаживание шрифтов в Mac OS&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;И нажать на кнопку сохранить (save). Теперь можно закрыть это окно и сглаживание будет по умолчанию включено на всех сайтах. Я именно так и сделал :-)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/front-end/font_smoothing_for_the_developer_and_user_on_mac_os</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/front-end/font_smoothing_for_the_developer_and_user_on_mac_os</guid>
+        
+        <category>css</category>
+        
+        <category>сглаживание шрифта</category>
+        
+        <category>mac os</category>
+        
+        <category>расширение</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Проблема верстки под современные браузеры или борьба с расширениями</title>
@@ -752,42 +812,6 @@
         <category>gitignore</category>
         
         <category>сервисы</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Хорошие ресурсы для изучающих Git на русском языке</title>
-        <description>&lt;p&gt;&lt;/p&gt;
-&lt;img class=&quot;rounded noshadow&quot; src=&quot;/img/git/git_guide.png&quot; alt=&quot;Git - the simple guide. Простое руководство по работе с git.&quot;&gt;
-
-&lt;p&gt;Руководств по Git на английском языке великое множество, но на русском на порядок меньше. Я, конечно, согласен с тем, что нужно учить английский и читать в оригинале, но у меня с этим есть небольшие проблемы. И если есть возможность найти эту-же информацию на русском языке, то для меня выбор очевиден.&lt;/p&gt;
-
-&lt;p&gt;Я выбрал три хороших ресурса для изучающих Git на русском языке, которыми хочу поделиться с вами:&lt;/p&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;&lt;a href=&quot;http://rogerdudler.github.io/git-guide/index.ru.html&quot;&gt;Git the simple guide&lt;/a&gt; — простое руководство по работе с git. &lt;br&gt; Но для кого-то этого материала может не хватить, поскольку там описано все очень кратко и только основные моменты.
-    &lt;li&gt;&lt;a href=&quot;//git-scm.com/book/ru/v1&quot;&gt;Pro Git&lt;/a&gt; — исчерпывающая книга по Git, которую можно купить на Амазоне или читать онлайн / скачать бесплатно.&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;//githowto.com/ru&quot;&gt;Git How To&lt;/a&gt; — это интерактивный тур, который познакомит вас с основами Git. Тур создан с пониманием того, что лучшим способом научиться чему-нибудь — сделать это своими руками.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Очень понравился ресурс &lt;em&gt;Git the simple guide&lt;/em&gt; и &lt;em&gt;Git How To&lt;/em&gt;. У меня уже был опыт работы с Git, но только через GUI. Поэтому первый ресурс мне очень подошел.&lt;/p&gt;
-
-&lt;p&gt;Кстати если вас не привлекает работа через терминал, то в конце &lt;a href=&quot;http://rogerdudler.github.io/git-guide/index.ru.html&quot;&gt;&lt;em&gt;Git the simple guide&lt;/em&gt;&lt;/a&gt; есть полезные ссылки с программами для работы c Git через графические интерфейсы (GUI) и несколько руководств.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/good_resources_for_learning_git</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/good_resources_for_learning_git</guid>
-        
-        <category>git</category>
-        
-        <category>tutorials</category>
-        
-        <category>ресурсы</category>
-        
-        <category>книги</category>
         
         
         <category>front-end</category>
