@@ -1,0 +1,36 @@
+<section class="main-header regular">
+	<div class="vertical-container">
+		<div class="wrapper clearfix">
+
+			<header>
+				<a href="/" role="banner">
+					<h4 id="main-title">Юрий Матюхин</h4>
+					<h5 id="main-subtitle">Front end разработчик</h5>
+				</a>
+			</header>
+
+			<nav id="main-nav" role="navigation">
+				{% if page.url == '/blog/index.html' or page.url == '/blog/' %}
+					<a class="active">Блог</a>
+				{% elsif page.url contains '/blog/' %}
+					<a href="/blog/" class="active">Блог</a>
+				{% else %}
+					<a href="/blog/">Блог</a>
+				{% endif %}
+
+				{% if page.url == '/projects/' %}
+					<a class="active">Мои проекты</a>
+				{% else %}
+					<a href="/projects/">Мои проекты</a>
+				{% endif %}
+
+				{% if page.url == '/about/' %}
+					<a class="active">Обо мне</a>
+				{% else %}
+					<a href="/about/">Обо мне</a>
+				{% endif %}
+			</nav>
+
+		</div>
+	</div>
+</section>

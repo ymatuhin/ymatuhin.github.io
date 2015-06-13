@@ -1,0 +1,60 @@
+{% assign count = 1 %}
+
+{% assign tags_list = page.tags | sort %}
+{% assign max_count = site.related_posts_max %}
+
+{% assign cached = "" %}
+
+{% capture related_posts %}
+{% for post in site.posts %}
+{% assign index_post = forloop.index %}
+{% assign post_tags = post.tags | sort %}
+   {% if count <= max_count %}
+     {% if tags_list == post_tags %}
+       {% if post.title != page.title %}
+			<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
+			<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
+       {% assign count = count | plus:'1' %}
+       {% endif %}
+     {% else %}
+
+      {% for cat in post_tags %}
+      {% for dog in tags_list %}
+        {% if cat == dog %}
+			{% unless cached contains post.url %}
+				<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
+				<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
+				{% assign count = count | plus:'1' %}
+			{% endunless %}
+
+			{% capture cached %}
+				{{ cached | append: post.url }}
+			{% endcapture %}
+        {% endif %}
+      {% endfor %}
+      {% endfor %}
+
+     {% endif %}
+   {% endif %}
+{% endfor %}
+{% endcapture %}
+
+<h4>Похожие записи</h4>
+{% if count == 1 %}
+	<ul id="posts-list" style="margin-top:0">
+		{% for post in site.related_posts limit:5 %}
+			<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
+			<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<ul id="posts-list" style="margin-top:0">
+		{% assign needPosts = 6 | minus: count %}
+		{{ related_posts }}
+
+		{% for post in site.related_posts limit: needPosts %}
+			<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
+			<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
+		{% endfor %}
+	</ul>
+{% endif %}

@@ -2,21 +2,46 @@
 layout: post
 title: Сглаживание шрифтов для разработчика и пользователя на Mac OS
 categories: front-end
-tags: [css, сглаживание шрифта, mac os, расширение]
+tags: [css, сглаживание шрифта, mac os, расширение]
 image: /img/font-smooth/compare.png
 ---
 
 <p>Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как <code>-webkit-font-smoothing</code>, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.</p>
 
 <h2><a id="examples" href="#examples" class="short-link">#</a> Примеры сглаживания шрифтов</h2>
+
 <p>В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.</p>
 
-<p>
-    Кликните по изображению, чтобы открыть его в новой вкладке.
-    <a target="_blank" href="/img/font-smooth/compare.png"><img class="noshadow" src="/img/font-smooth/compare.png" atl="Сравнение сглаживаний шрифтов в Mac OS"></a>
-    <a target="_blank" href="/img/font-smooth/yandex.png"><img class="inline bordered rounded" width="49%" src="/img/font-smooth/yandex.png" atl="yandex.ru со сглаживанием по умолчанию на Mac OS"></a>
-    <a target="_blank" href="/img/font-smooth/yandex_with.png"><img class="inline bordered rounded" width="49%" src="/img/font-smooth/yandex_with.png" atl="yandex.ru со сглаживанием antialiased на Mac OS"></a>
-    <br>
+
+<figure>
+	<img alt="Сравнение сглаживаний шрифтов в Mac OS" src="/img/font-smooth/compare.png">
+	<figcaption>Сравнение сглаживаний шрифтов в Mac OS</figcaption>
+</figure>
+
+<ul class="projects-list clearfix">
+    <li>
+        <a href="#">
+            <img width="46%" src="/img/font-smooth/yandex.png" atl="yandex.ru со сглаживанием по умолчанию на Mac OS">
+            <div class="caption">
+                <div>
+                    <h4>Spaceships</h4>
+                    <span>A interesting view of the galaxy</span>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img width="46%" src="/img/font-smooth/yandex_with.png" atl="yandex.ru со сглаживанием antialiased на Mac OS">
+            <div class="caption">
+                <div>
+                    <h4>Spaceships</h4>
+                    <span>A interesting view of the galaxy</span>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
     <br>
     <a target="_blank" href="/img/font-smooth/google_search.png"><img class="inline bordered rounded" width="49%" src="/img/font-smooth/google_search.png" atl="google.ru со сглаживанием по умолчанию на Mac OS"></a>
     <a target="_blank" href="/img/font-smooth/google_search_with.png"><img class="inline bordered rounded" width="49%" src="/img/font-smooth/google_search_with.png" atl="google.ru со сглаживанием antialiased на Mac OS"></a>
@@ -46,7 +71,5 @@ html, body, body * {
   -moz-osx-font-smoothing: grayscale !important;
 }
 {% endhighlight %}
-
-<a target="_blank" href="/img/font-smooth/stylish.png"><img class="bordered rounded" src="/img/font-smooth/stylish.png" atl="Расширение для Chrome и Firefox — Stylish. Скриншот с макросом на сглаживание шрифтов в Mac OS"></a>
 
 <p>И нажать на кнопку сохранить (save). Теперь можно закрыть это окно и сглаживание будет по умолчанию включено на всех сайтах. Я именно так и сделал :-)</p>

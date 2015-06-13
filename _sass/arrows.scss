@@ -1,21 +1,9 @@
 /* Arrows */
-.page-arrows-box { padding: 2em 0 1em; margin-bottom: 0; position: relative; clear: both; }
-.page-arrows {
+.post-nav { position: relative; clear: both; }
+.post-nav a {
     max-width: 46%;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-
-.page-arrows-box:after { content: ''; clear: both; display: block; }
-.page-arrows:before,
-.page-arrows:after {
-    position: absolute;
-    padding: 0 .2em;
-}
-
-.page-arrows_prev { float: left; }
-.page-arrows_next { float: right; }
-.page-arrows_prev:before { content: '«'; right: 100%; }
-.page-arrows_next:after { content: '»'; left: 100%; }

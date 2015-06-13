@@ -141,17 +141,13 @@
     <lastmod>2015-01-28T00:00:00+03:00</lastmod>
   </url>
   <url>
-    <loc>http://ymatuhin.ru/blog/hello_world</loc>
-    <lastmod>2015-01-26T00:00:00+03:00</lastmod>
+    <loc>http://ymatuhin.ru/404.html</loc>
   </url>
   <url>
-    <loc>http://ymatuhin.ru/all/</loc>
+    <loc>http://ymatuhin.ru/about/</loc>
   </url>
   <url>
     <loc>http://ymatuhin.ru/autoprefixer_instruction/</loc>
-  </url>
-  <url>
-    <loc>http://ymatuhin.ru/blog/</loc>
   </url>
   <url>
     <loc>http://ymatuhin.ru/books/</loc>
@@ -160,10 +156,10 @@
     <loc>http://ymatuhin.ru/contact/</loc>
   </url>
   <url>
-    <loc>http://ymatuhin.ru/front-end/</loc>
+    <loc>http://ymatuhin.ru/</loc>
   </url>
   <url>
-    <loc>http://ymatuhin.ru/</loc>
+    <loc>http://ymatuhin.ru/blog/</loc>
   </url>
   <url>
     <loc>http://ymatuhin.ru/job/</loc>
@@ -178,7 +174,237 @@
     <loc>http://ymatuhin.ru/tags/</loc>
   </url>
   <url>
-    <loc>http://ymatuhin.ru/404.html</loc>
-    <lastmod>2015-05-28T16:45:19+03:00</lastmod>
+    <loc>http://ymatuhin.ru/tag/vivaldi/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/opera/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/36/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/fronttalks/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%92%D0%B0%D0%B4%D0%B8%D0%BC_%D0%9C%D0%B0%D0%BA%D0%B8%D1%88%D0%B2%D0%B8%D0%BB%D0%B8/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/krutopridumal/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BF%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B8/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%81%D0%B0%D0%BC%D0%BE%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B8%D1%82%D0%BE%D0%B3%D0%B8/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%82%D0%B8%D0%BF%D0%BE%D0%B3%D1%80%D0%B0%D1%84/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%90%D1%80%D1%82%D0%B5%D0%BC%D0%B8%D0%B9_%D0%9B%D0%B5%D0%B1%D0%B5%D0%B4%D0%B5%D0%B2/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/dns/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/google/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/yota/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%80%D0%B0%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D1%8B/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%BC%D0%B5%D0%BD%D0%B0_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/cdn/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/jquery/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/fallback/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BE%D1%82%D0%B7%D1%8B%D0%B2/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%81%D0%BD%D0%B8%D0%BF%D0%BF%D0%B5%D1%82/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BF%D0%BE%D0%BB%D0%BE%D1%81%D0%B0_%D0%BF%D1%80%D0%BE%D0%BA%D1%80%D1%83%D1%82%D0%BA%D0%B8/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/vanillajs/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/facebook/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%84%D0%B8%D0%BA%D1%81/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B8/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/css/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/svg/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D1%8B_%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D1%8F/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/flickr/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/atom/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/sublime_text/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/emmet/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/stylus/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/fuzzy/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/git/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/tutorials/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/gitignore/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/dev_tools/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B2%D0%B5%D0%B1%D0%B8%D0%BD%D0%B0%D1%80/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/pesticide/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/debug/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/frontend/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/gulp/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/retina/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/photoshop/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/macbook/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%8B/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%81%D0%B3%D0%BB%D0%B0%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%B0/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/mac_os/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/blog/page2/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/blog/page3/</loc>
   </url>
 </urlset>

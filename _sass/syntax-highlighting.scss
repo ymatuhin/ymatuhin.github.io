@@ -2,14 +2,9 @@
  * Syntax highlighting styles
  */
 .highlight {
-    margin: 1em -2em;
-    padding: 1em 2em;
-    background: $gray-color;
-    border-radius: 3px;
-
-
     pre {
         margin: 0;
+        font-size: inherit;
     }
     // @extend %vertical-rhythm;
 

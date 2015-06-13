@@ -1,22 +1,78 @@
 <head>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<link rel="shortcut icon" href="/favicon.ico?v=2">
 
-	<title>{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}</title>
-	<meta name="description" content="{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{% if page.excerpt %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% else %}Меня зовут Юрий Матюхин (ymatuhin) и я разработчик пользовательских интерфейсов (front end). Веду блог, рассказываю о проектах, интересных штуках, изучаю новые технологии.{% endif %}{% endif %}">
+	{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
 
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+	{% capture page_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
 
-	<meta property="og:image" content="http://ymatuhin.ru{{page.image}}">
-	<meta name="twitter:image:src" content="http://ymatuhin.ru{{page.image}}">
+	{% capture page_date %}{% if page.date %}{{ page.date | date: "%Y-%m-%d"}}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}{% endcapture %}
+
+	{% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
+
+	<title>{{ page_title }}</title>
+	<meta name="description" content="{{ page_description }}">
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}">
+
+	<!-- Feed and canonical -->
+	<link rel="canonical" href="{{ page_url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@ymatuhin">
+	<meta name="twitter:creator" content="@ymatuhin">
+	{% if page.image %}
+	<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+	{% endif %}
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="{{ page_title }}">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="{{ page_url }}">
+	<meta property="og:description" content="{{ page_description }}">
+	{% if page.image %}
+	<meta property="og:image" content="{{ site.url }}{{ page.image }}">
+	{% endif %}
+
+	<!-- Dublin Core -->
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+
+	<meta name="DC.Identifier" content="{{page_url}}">
+	<meta name="DC.Identifier" schema="DCterms:URI"
+	content="{{page_url}}">
+	<meta name="DC.Format" schema="DCterms:IMT" content="text/html">
+	<meta name="DC.Type" content="text/html">
+	<meta name="DC.Title" xml:lang="RU" content="{{ page_title }}">
+	<meta name="DC.Creator" content="{{ site.title }}">
+	<meta name="DC.Publisher" content="{{ site.title }}">
+	<meta name="DC.Contributor" content="{{ site.title }}">
+	<meta name="DC.Publisher.Address" content="ymatuhin@yandex.ru">
+	<meta name="DC.Language" scheme="dcterms:RFC1766" content="RU">
+	{% if page_date %}
+		<meta name="DC.Date" scheme="ISO8601" content="{{ page_date }}">
+	{% endif %}
+	<meta name="DC.Description" xml:lang="RU"
+	content="{{ page_description }}">
+
+	<!-- GEO META TAGS -->
+	<meta name="geo.placename" content="Брянск, Брянская область, Россия, 241050">
+	<meta name="geo.position" content="53.2350000;34.3465000">
+	<meta name="geo.region" content="RU-Брянская область">
+	<meta name="ICBM" content="53.2350000, 34.3465000">
 
 	<script>document.documentElement.className += " js "</script>
 
-	<!-- critical.css -->
-	<style>{% capture include_to_scssify %}i{top:0}{% include critical.scss %}{% endcapture %}{{include_to_scssify | scssify}}</style>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/secondary.css">
 
-	<noscript><link rel="stylesheet" type="text/css" href="/css/secondary.css"></noscript>
+	<!--[if lt IE 9]>
+		<script src="/js/html5shiv.js"></script>
+		<script src="/js/respond.min.js"></script>
+	<![endif]-->
 </head>

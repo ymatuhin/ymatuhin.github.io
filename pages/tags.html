@@ -7,24 +7,11 @@ description: >
 ---
 
 <style>
-	h2 {
-		padding-bottom: 0;
-		margin: 1.5em 0 .5em;
-	}
-
-	h2 em { display: inline-block; }
-	h2 em:first-letter { text-transform: uppercase; }
-
 	.cloud { margin-bottom: 5em; }
-
-	.posts { margin: 0; }
-	.medium { font-size: 1.3em; }
-	.large { font-size: 1.7em; }
-	.huge { font-size: 2em; }
-	}
+	.cloud .medium { font-size: 1.3em; }
+	.cloud .large { font-size: 1.7em; }
+	.cloud .huge { font-size: 2em; }
 </style>
-
-<h1><a id="tags-cloud" href="#tags-cloud" class="short-link">#</a> {{ page.title }}</h1>
 
 
 {% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
@@ -33,25 +20,6 @@ description: >
   {% for tag in tags %}
   {% assign number = site.tags[tag].size %}
   {% assign slug = tag | replace: ' ', '_' %}
-    <a class="{% if number <= 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% elsif number <= 100000 %}huge{% else %}small{% endif %}" href="#{{ slug }}">{{ tag }}</a>
+    <a class="{% if number <= 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% elsif number <= 100000 %}huge{% else %}small{% endif %}" href="/tag/{{ tag | downcase | replace: ' ', '_' }}/">{{ tag }}</a>
   {% endfor %}
 </div>
-
-{% assign sorted_array = site.tags | sort %}
-
-{% for tag in sorted_array %}
-  {% assign t = tag | first %}
-  {% assign posts = tag | last %}
-
-<h2><a id="{{t | replace: ' ', '_' }}" href="#{{t | replace: ' ', '_' }}" class="short-link">#</a> <em>{{ t }}</em></h2>
-
-<ul class="posts">
-{% for post in posts %}
-  {% if post.tags contains t %}
-  <li><a href="{{ post.url }}/">{{ post.title }}</a>&nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }}</em>
-  {% endif %}
-{% endfor %}
-</ul>
-{% endfor %}
-
-<br>

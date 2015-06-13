@@ -1,41 +1,37 @@
 ---
-layout: page
-title: Разработчик пользовательских интерфейсов, блогер и автор нескольких проектов
 permalink: /
+layout: default
+title: Разработчик интерфейсов / front end разработчик
+description: >
+  Меня зовут Юрий Матюхин (ymatuhin) и я разработчик интерфейсов / front end разработчик. Веду блог о web разработке, интересных штуках, технологиях и новостях.
+keywords: >
+  front end разработчик программист интерфейсов web сайты html css javascript
 ---
 
-<h1>Юрий Матюхин</h1>
-<p>Привет! Я разработчик пользовательских интерфейсов (занимаюсь <em>front end</em>-ом). Веду блог, в котором рассказываю о своих проектах, интересных штуках, про книги и немного про свою жизнь. Ещё изучаю современные подходы в области front end и пишу об этом тут.</p>
+<div class="main-header home">
+	<div class="vertical-container">
+		<div class="wrapper clearfix">
 
-<h2><a id="writing" href="#writing" class="short-link">#</a> Пишу <small><em>(последние записи)</em></small></h2>
+			<header role="banner">
+				<h1 id="main-title">Юрий Матюхин</h1>
+				<h2 id="main-subtitle">— Front end разработчик —</h2>
+			</header>
 
-<p>Теперь у меня есть две категории: <a href="/blog/">блог</a> и <a href="/front-end/">заметки разработчика интерфейсов</a>. А так-же страница со <a href="/all/">всеми записями</a> для тех, кто читает и то и другое.</p>
+			<nav id="main-nav" role="navigation">
+				<a href="/blog/" class="">Блог</a>
+				<a href="/projects/">Мои проекты</a>
+				<a href="/about/" class="">Обо мне</a>
+			</nav>
+		</div>
+	</div>
+</div>
 
-<ul class="posts" style="margin: 2em 0;">
-{% for post in site.posts offset:0 limit:3 %}
-	<li><a href="{{ post.url }}/">{{ post.title }}</a>&nbsp;—&nbsp;<em class="published">{{ post.date | date: "%d&nbsp;%B, %Y" }} в
-		<mark>{% if post.categories[0] == 'blog' %}<a href="/blog/">Блоге</a>{% elsif post.categories[0] == 'all' %}<a href="/all/">Записях</a>{% else %}<a href="/front-end/">Заметках разработчика</a>{% endif %}</mark>
-		</em><br>
-	{% for tag in post.tags %}
-		<a href="/tags/#{{tag | replace: ' ', '_'}}" class="tag">{{ tag }}</a>
-	{% endfor %}
-{% endfor %}
-</ul>
-
-<blockquote>
-    <p>Подпишитесь на <a href="http://eepurl.com/bkY7hb">еженедельную рассылку</a> новых записей или <a href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS ленту</a>. Все теги к записям кликабельны, нажав на тег — вы увидите список всех записей с такой меткой (<a href="/tags/">облако тегов</a>).</p>
-</blockquote>
-
-
-<h2><a id="job" href="#job" class="short-link">#</a> Работаю</h2>
-<p>Если вас интересует мой <em>опыт</em> и/или <em>резюме</em>, то у меня есть <a href="/job/">специальная страница</a> со всей, нужной для вас, информацией.</p>
-<p>Мне нравится моя работа. Я люблю делать вещи, которые могут помочь мне и другим людям. Поэтому у меня есть <a href="/projects/">несколько проектов</a>, которые я выполнил. Загляните, возможно вы найдете что-то интересное для себя.</p>
-
-<h2><a id="rest" href="#rest" class="short-link">#</a> Отдыхаю</h2>
-<p>Я люблю смотреть фильмы, слушать музыку и читать книги (хотя кто не любит этого?). Мне стало любопытно сделать <a href="/books/">список книг</a> (уже сделал) которые я прочитал, фильмов которые посмотрел и любимых музыкальных исполнителей. Поэтому я планирую сделать несколько разделов на этом сайте, в которых и будет эта информация.</p>
-
-<p>Еще у меня появилась <em>новая рубрика</em> — <a href="/month-in-three-words/">месяц в трех словах</a>. Там я описываю прошедший месяц тремя словами. Сейчас это моя альтернатива дневнику, который я еще не готов вести. Думаю это поможет мне не забывать анализировать свою жизнь, хотя бы несколько раз в месяц. И оставлять для себя маленькие «узелки на память».</p>
-
-
-<h2><a id="contact" href="#contact" class="short-link">#</a> Контактная информация</h2>
-<p>Если вы хотите связаться со мной — посмотрите страницу с <a href="/contact/">контактной информацией</a>. Там есть все, что для этого необходимо.</p>
+<footer class="keywords section-subtitle" role="contentinfo">
+	<h3>#front end разработчик</h3>
+	<h3>#разработчик интерфейсов</h3>
+	<h4>#программист</h4>
+	<h5>#html</h5>
+	<h5>#css</h5>
+	<h5>#javascript</h5>
+	<h5>#web сайты</h5>
+</footer>

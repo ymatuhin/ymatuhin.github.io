@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Jun 2015 12:32:38 +0300</pubDate>
-    <lastBuildDate>Mon, 01 Jun 2015 12:32:38 +0300</lastBuildDate>
+    <pubDate>Sat, 13 Jun 2015 18:14:24 +0300</pubDate>
+    <lastBuildDate>Sat, 13 Jun 2015 18:14:24 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -15,14 +15,39 @@
         <description>&lt;p&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;examples&quot; href=&quot;#examples&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примеры сглаживания шрифтов&lt;/h2&gt;
+
 &lt;p&gt;В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.&lt;/p&gt;
 
-&lt;p&gt;
-    Кликните по изображению, чтобы открыть его в новой вкладке.
-    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/compare.png&quot;&gt;&lt;img class=&quot;noshadow&quot; src=&quot;/img/font-smooth/compare.png&quot; atl=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot;&gt;&lt;/a&gt;
-    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/yandex.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/yandex.png&quot; atl=&quot;yandex.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;&lt;/a&gt;
-    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/yandex_with.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/yandex_with.png&quot; atl=&quot;yandex.ru со сглаживанием antialiased на Mac OS&quot;&gt;&lt;/a&gt;
-    &lt;br&gt;
+
+&lt;figure&gt;
+	&lt;img alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/compare.png&quot;&gt;
+	&lt;figcaption&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul class=&quot;projects-list clearfix&quot;&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img width=&quot;46%&quot; src=&quot;/img/font-smooth/yandex.png&quot; atl=&quot;yandex.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;
+            &lt;div class=&quot;caption&quot;&gt;
+                &lt;div&gt;
+                    &lt;h4&gt;Spaceships&lt;/h4&gt;
+                    &lt;span&gt;A interesting view of the galaxy&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;#&quot;&gt;
+            &lt;img width=&quot;46%&quot; src=&quot;/img/font-smooth/yandex_with.png&quot; atl=&quot;yandex.ru со сглаживанием antialiased на Mac OS&quot;&gt;
+            &lt;div class=&quot;caption&quot;&gt;
+                &lt;div&gt;
+                    &lt;h4&gt;Spaceships&lt;/h4&gt;
+                    &lt;span&gt;A interesting view of the galaxy&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
     &lt;br&gt;
     &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search.png&quot; atl=&quot;google.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;&lt;/a&gt;
     &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search_with.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search_with.png&quot; atl=&quot;google.ru со сглаживанием antialiased на Mac OS&quot;&gt;&lt;/a&gt;
@@ -49,8 +74,6 @@
   &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/stylish.png&quot;&gt;&lt;img class=&quot;bordered rounded&quot; src=&quot;/img/font-smooth/stylish.png&quot; atl=&quot;Расширение для Chrome и Firefox — Stylish. Скриншот с макросом на сглаживание шрифтов в Mac OS&quot;&gt;&lt;/a&gt;
-
 &lt;p&gt;И нажать на кнопку сохранить (save). Теперь можно закрыть это окно и сглаживание будет по умолчанию включено на всех сайтах. Я именно так и сделал :-)&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jun 2015 00:00:00 +0300</pubDate>
@@ -61,7 +84,7 @@
         
         <category>сглаживание шрифта</category>
         
-        <category>mac os</category>
+        <category>mac os</category>
         
         <category>расширение</category>
         

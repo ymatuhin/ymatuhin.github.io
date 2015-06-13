@@ -2,17 +2,48 @@
 layout: default
 ---
 
-{% include breadcrumb.html %}
+<div class="page-wrap">
+	{% include header.html %}
 
-{{ content }}
+	<div class="main-content">
+		<div class="wrapper">
 
-{% if page.is_post %}
-	{% include prev_next.html %}
-{% endif %}
+			<header class="section-header">
+				<h1 class="section-title">{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-{% if page.is_post %}
-	<div id="disqus_thread"></div>
-	<div class="noscript">Пожалуйста влючите JavaScript чтобы увидеть <a href="https://disqus.com/?ref_noscript" rel="nofollow">комментарии.</a></div>
-{% endif %}
+				{% if page.is_post %}
+					<span class="section-subtitle">
+						{% assign m = page.date | date: "%-m" %}
 
-{% include thanks.html %}
+						<time datetime="{{ page.date }}" pubdate="">{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</time>{% for tag in page.tags %}, <a class="tag_list_link" href="/tag/{{ tag | downcase | replace: ' ', '_' }}/">{{tag}}</a>{% endfor %}
+					</span>
+				{% else %}
+					<h2 class="section-subtitle">
+						{% if page.s_description %}
+							{{ page.s_description }}
+						{% else %}
+							{{ page.description }}
+						{% endif %}
+					</h2>
+				{% endif %}
+			</header>
+
+			<section class="page-content clearfix" role="main">
+				{{ content }}
+			</section>
+
+			{% if page.is_post %}
+			<aside role="complementary">
+					{% include prev_next.html %}
+					<br>
+					{% include featured.html %}
+					<br>
+					{% include comments.html %}
+			</aside>
+			{% endif %}
+
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}

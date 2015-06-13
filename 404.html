@@ -1,73 +1,25 @@
-<!doctype html>
-<html manifest="no-manifest" lang="ru">
-	<meta charset="utf-8">
-	<title>Страница не найдена</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="refresh" content="3;url=http://ymatuhin.ru">
+---
+layout: default
+title: Страница не найдена
+---
 
-	<style>
-		* {
-			line-height: 1.3;
-			margin: 0;
-		}
+<div class="main-header home">
+	<div class="vertical-container">
+		<div class="wrapper clearfix">
 
-		html {
-			display: table;
-			height: 100%;
-			text-align: center;
-			width: 100%;
-			color: #666;
+			<header role="banner">
+				<a href="/">
+					<h1 id="main-title">Страница не найдена</h1>
+					<h2 id="main-subtitle">Извините, но этой страницы больше нет  :(</h2>
+				</a>
+			</header>
 
-			-ms-text-size-adjust: 100%;
-			-webkit-text-size-adjust: 100%;
-			-webkit-font-smoothing: antialiased;
-			text-rendering: optimizelegibility;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		a {
-			text-decoration: none;
-			border-bottom: 1px solid;
-		}
-
-		a:link{ color:#008ACE }
-		a:visited{ color:#B40EB4 }
-		a:hover{ color:#c00 }
-		a:focus{ outline:none }
-
-		body {
-			display: table-cell;
-			vertical-align: middle;
-			margin: 2em auto;
-			font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-		}
-
-		h1 {
-			color: #222;
-			font-size: 2em;
-			font-weight: 400;
-		}
-
-		p {
-			margin: 16px auto;
-			font-size: 1.125em;
-			width: 22em;
-		}
-
-		@media only screen and (max-width: 280px) {
-			body, p {
-				width: 95%;
-			}
-
-			h1 {
-				font-size: 1.5em;
-				margin: 0 0 0.3em;
-			}
-		}
-	</style>
-
-	<h1>Страница не найдена</h1>
-	<p>Извините, но запрашиваемая страница не существует. Возможно вы зашли по неверной ссылке или страница была удалена автором.</p>
-
-	<p>Вас автоматически перенаправит на главную в течении <b>3-х</b> секунд. Если этого не произошло, то нажмите на ссылку <a href="/">главная страница</a>.</p>
+			<nav id="main-nav" role="navigation">
+				<a href="/blog/" class="">Блог</a>
+				<a href="/projects/">Мои проекты</a>
+				<a href="/about/" class="">Обо мне</a>
+			</nav>
+		</div>
+	</div>
+</div>
 </html>

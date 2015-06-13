@@ -1,0 +1,48 @@
+---
+layout: page
+title: Блог разработчика интерфейсов / front end разработчика
+description: >
+  Пишу статьи о разработке web интерфейсов, верстке, фреймворках, новостях и новых технолоигиях в мире front end разработки.
+keywords: >
+  заметки разработчика блог верстка статьи front end javascript css web
+s_description: >
+  Пишу <em>статьи</em> о разработке web интерфейсов, верстке и саморазвитии
+---
+
+
+<ul id="posts-list" class="hfeed">
+    {% for post in paginator.posts %}
+        {% assign m = post.date | date: "%-m" %}
+
+        <li class="clearfix">
+            <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
+                <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+                <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
+                <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
+                <address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+            </article>
+        </li>
+    {% endfor %}
+</ul>
+
+<div role="navigation" class="post-nav clearfix">
+
+      {% if paginator.previous_page %}
+        <a rel="next" href="{{ paginator.previous_page_path | replace: 'index.html', '' }}" class="button to-right">Позже</a>
+      {% endif %}
+
+      {% if paginator.next_page %}
+        <a rel="prev" href="{{ paginator.next_page_path }}" class="button to-left">Раньше</a>
+      {% endif %}
+
+</div>
+
+<div class="keywords section-subtitle" role="contentinfo">
+	<h6>#заметки разработчика</h6>
+	<h6>#блог разработчика</h6>
+	<h6>#верстка статьи</h6>
+	<h6>#статьи разработчика</h6>
+	<h6>#frontend разработка</h6>
+	<h6>#блог web разработка</h6>
+	<h6>#блог web разработчика</h6>
+</div>
