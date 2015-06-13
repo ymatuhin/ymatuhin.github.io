@@ -360,11 +360,6 @@ h4 + p {
 .page-content {
     margin-top: 50px;
 }
-
-.page-content p:first-child {
-    margin-top: 0;
-}
-
 .main-content .page-content:first-child {
     margin-top: 0;
 }
