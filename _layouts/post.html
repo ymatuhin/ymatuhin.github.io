@@ -1,6 +1,42 @@
 ---
-layout: page
+layout: default
 is_post: true
 ---
 
-{{ content }}
+
+<div class="page-wrap">
+	{% include header.html %}
+
+	<div class="main-content hfeed">
+		<article class="wrapper hentry" itemscope itemtype="http://schema.org/BlogPosting">
+
+			<header class="section-header">
+				<h1 class="section-title entry-title">{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
+
+				<span class="section-subtitle">
+					{% assign m = page.date | date: "%-m" %}
+
+					<abbr class="published updated" title='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</abbr>
+	                <meta itemprop="datePublished" content='{{ page.date | date: "%Y-%m-%d" }}'>
+
+					{% for tag in page.tags %}, <a class="tag_list_link" href="/tag/{{ tag | downcase | replace: ' ', '_' }}/"><span itemprop="keywords">{{tag}}</span></a>{% endfor %}
+
+					<address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+				</span>
+			</header>
+
+			<section class="page-content clearfix" role="main" itemprop="articleBody">
+				{{ content }}
+			</section>
+
+			<aside role="complementary">
+					{% include prev_next.html %}
+					<br>
+					{% include featured.html %}
+					<br>
+					{% include comments.html %}
+			</aside>
+
+		</article>
+	</div>
+</div>

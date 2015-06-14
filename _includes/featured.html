@@ -12,8 +12,12 @@
    {% if count <= max_count %}
      {% if tags_list == post_tags %}
        {% if post.title != page.title %}
-			<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
-			<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
+           <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
+               <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+               <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
+               <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
+               <address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+           </article>
        {% assign count = count | plus:'1' %}
        {% endif %}
      {% else %}
@@ -22,8 +26,12 @@
       {% for dog in tags_list %}
         {% if cat == dog %}
 			{% unless cached contains post.url %}
-				<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
-				<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
+                <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
+                    <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+                    <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
+                    <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
+                    <address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+                </article>
 				{% assign count = count | plus:'1' %}
 			{% endunless %}
 
@@ -39,22 +47,32 @@
 {% endfor %}
 {% endcapture %}
 
-<h4>Похожие записи</h4>
-{% if count == 1 %}
-	<ul id="posts-list" style="margin-top:0">
-		{% for post in site.related_posts limit:5 %}
-			<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
-			<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
-		{% endfor %}
-	</ul>
-{% else %}
-	<ul id="posts-list" style="margin-top:0">
-		{% assign needPosts = 6 | minus: count %}
-		{{ related_posts }}
+<aside role="complementary">
+    <h4>Похожие записи</h4>
+    {% if count == 1 %}
+    	<ul id="posts-list hfeed" style="margin-top:0">
+    		{% for post in site.related_posts limit:5 %}
+                <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
+                    <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+                    <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
+                    <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
+                    <address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+                </article>
+    		{% endfor %}
+    	</ul>
+    {% else %}
+    	<ul id="posts-list" style="margin-top:0">
+    		{% assign needPosts = 6 | minus: count %}
+    		{{ related_posts }}
 
-		{% for post in site.related_posts limit: needPosts %}
-			<li><time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
-			<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a></li>
-		{% endfor %}
-	</ul>
-{% endif %}
+    		{% for post in site.related_posts limit: needPosts %}
+                <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
+                    <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+                    <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
+                    <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
+                    <address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+                </article>
+    		{% endfor %}
+    	</ul>
+    {% endif %}
+</aside>

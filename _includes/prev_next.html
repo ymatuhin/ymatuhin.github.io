@@ -1,7 +1,6 @@
 <!-- Thanks to kizu.ru -->
 
-
-<div class="post-nav clearfix">
+<nav class="post-nav clearfix" role="navigation">
     {% include share.html %}
 
     <br>
@@ -13,4 +12,4 @@
     {% if page.next %}
         <a href="{{ page.next.url }}/" class="button to-right">{{page.next.title}}</a>
     {% endif %}
-</div>
+</nav>
