@@ -2,7 +2,7 @@
 -----   Reset   -----
 ------------------------------------------*/
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}.clearfix:before,.clearfix:after{content:" ";display:table;}.clearfix:after {clear:both;}html,body{overflow-x:hidden;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}.page-content abbr[title], .page-content dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}.clearfix:before,.clearfix:after{content:" ";display:table;}.clearfix:after {clear:both;}html,body{overflow-x:hidden;}
 
 /* --------------------------------------
 -----   COLORS   -----
@@ -47,10 +47,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     background: #B59A65;
     color: #fff;
 }
-figcaption {
-    background: #B59A65;
-    background: rgba(181, 154, 101,.5);
-}
 
 /* Basic links */
 
@@ -59,19 +55,26 @@ a:hover, #posts-list a:hover {
     border-color: #D4A16B;
 }
 
+
 /* --------------------------------------
 -----   TYPOGRAPHY   -----
 ------------------------------------------*/
 
 /* Font families are groupped here - individual styles are below */
 
-body, #posts-list h3 {
+body,
+#posts-list h3,
+#posts-list h6 {
     font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
 }
 h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #posts-list abbr, .main-footer, .projects-list span {
     font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif
 }
 
+/* h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+ */
 #main-title, #main-subtitle {
     font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
 }
@@ -85,8 +88,8 @@ body {
 }
 a {
     text-decoration: none;
-    color: #ccc;
-    border-bottom: 1px dotted #ccc;
+    color: #D4A16B;
+    border-bottom: 1px solid #D4A16B;
 }
 p {
     margin: 40px 0;
@@ -108,8 +111,8 @@ ol {
 }
 
 pre {
-    background: none repeat scroll 0 0 #F7F7F7;
-    border: 5px solid #E9E9E9;
+    background: #faf7f2;
+    border: 5px solid #fae2c3;
     font-family: Consolas, Courier, Monaco, monospace;
     font-size: 12px;
     line-height: 19px;
@@ -156,14 +159,12 @@ code {
     background: #eee;
     padding: .1em .2em;
     border-radius: 3px;
-    white-space: nowrap;
     font-family: Consolas, Courier, Monaco, monospace;
 }
 
 pre code {
     background-color: transparent;
     padding: 0;
-    white-space: inherit;
 }
 
 blockquote {
@@ -235,7 +236,7 @@ h4 + p {
     margin-bottom: 15px;
 }
 .section-title {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.4;
     color: #212121;
     text-transform: uppercase;
@@ -416,7 +417,8 @@ h4 + p {
     padding: 16px 0 13px 125px;
     border: none;
 }
-#posts-list h3 {
+#posts-list h3,
+#posts-list h6 {
     font-weight: 400;
 }
 
@@ -504,16 +506,40 @@ iframe {
 figure {
     position: relative;
     margin: 40px 0;
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
 }
 figcaption {
     bottom: 10px;
     color: #fff;
     font-size: 12px;
     line-height: 12px;
-    padding: 13px 16px 11px;
     position: absolute;
+    left: 10px;
     right: 10px;
     text-transform: uppercase;
+}
+
+figcaption span {
+    display: inline-block;
+    vertical-align: bottom;
+    background: #888;
+    background: rgba(0, 0, 0, .5);
+    padding: 13px 16px 11px;
+    max-width: 100%;
+    box-sizing: border-box;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+figcaption.left {
+    left: 10px;
+    right: auto;
 }
 
 /* ---------------------
@@ -586,8 +612,7 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
 -----   A bit of responsiveness   -----
 -------------------------*/
 
-@media all and (max-width: 840px) {
-
+@media all and (max-width: 940px) {
     .main-header.regular {
         height: auto;
     }
@@ -600,11 +625,20 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
     .main-header.regular header, .main-header.regular #main-nav, .copy, .social {
         float: none;
     }
-    .wrapper {
-        padding: 0 25px;
-    }
     .copy {
-        margin: 10px;
+        margin: 10px 0 20px;
+    }
+}
+
+@media all and (max-width: 840px) {
+    .page-content {
+        margin: 0;
+    }
+    .main-content .wrapper {
+        margin: 50px auto;
+    }
+    .wrapper {
+        padding: 0 15px;
     }
     .one-half {
         width: 100%;

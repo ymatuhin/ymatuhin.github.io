@@ -2,7 +2,7 @@
 layout: page
 title: Блог разработчика интерфейсов / front end разработчика
 description: >
-  Пишу статьи о разработке web интерфейсов, верстке, фреймворках, новостях и новых технолоигиях в мире front end разработки.
+  Cтатьи и заметки о разработке web интерфейсов, верстке, фреймворках, новостях и новых технолоигиях в мире front end разработки.
 keywords: >
   заметки разработчика блог верстка статьи front end javascript css web
 s_description: >
@@ -19,7 +19,7 @@ s_description: >
                 <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
                 <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
                 <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
-                <address hidden itemprop="author" class="vcard author"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+                <address itemprop="author" class="vcard author visuallyhidden"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
             </article>
         </li>
     {% endfor %}
@@ -37,7 +37,7 @@ s_description: >
 
 </div>
 
-<div class="keywords section-subtitle" role="contentinfo">
+<div class="keywords section-subtitle visuallyhidden" role="contentinfo">
 	<h6>#заметки разработчика</h6>
 	<h6>#блог разработчика</h6>
 	<h6>#верстка статьи</h6>

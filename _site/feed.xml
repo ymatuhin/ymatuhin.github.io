@@ -6,59 +6,58 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Jun 2015 12:32:21 +0300</pubDate>
-    <lastBuildDate>Sun, 14 Jun 2015 12:32:21 +0300</lastBuildDate>
+    <pubDate>Tue, 16 Jun 2015 23:19:05 +0300</pubDate>
+    <lastBuildDate>Tue, 16 Jun 2015 23:19:05 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Сглаживание шрифтов для разработчика и пользователя на Mac OS</title>
-        <description>&lt;p&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
+        <description>&lt;p class=&quot;typl8-drop-cap&quot;&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;examples&quot; href=&quot;#examples&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примеры сглаживания шрифтов&lt;/h2&gt;
 
 &lt;p&gt;В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.&lt;/p&gt;
 
-
-&lt;figure&gt;
-	&lt;img alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/compare.png&quot;&gt;
-	&lt;figcaption&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/figcaption&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/compare.png&quot;&gt;
+	&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;ul class=&quot;projects-list clearfix&quot;&gt;
-    &lt;li&gt;
-        &lt;a href=&quot;#&quot;&gt;
-            &lt;img width=&quot;46%&quot; src=&quot;/img/font-smooth/yandex.png&quot; atl=&quot;yandex.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;
-            &lt;div class=&quot;caption&quot;&gt;
-                &lt;div&gt;
-                    &lt;h4&gt;Spaceships&lt;/h4&gt;
-                    &lt;span&gt;A interesting view of the galaxy&lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-        &lt;a href=&quot;#&quot;&gt;
-            &lt;img width=&quot;46%&quot; src=&quot;/img/font-smooth/yandex_with.png&quot; atl=&quot;yandex.ru со сглаживанием antialiased на Mac OS&quot;&gt;
-            &lt;div class=&quot;caption&quot;&gt;
-                &lt;div&gt;
-                    &lt;h4&gt;Spaceships&lt;/h4&gt;
-                    &lt;span&gt;A interesting view of the galaxy&lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-    &lt;br&gt;
+&lt;div class=&quot;gallery clearfix&quot;&gt;
+	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/yandex.png&quot;&gt;
+		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+	&lt;!-- &lt;img class=&quot;bordered&quot; src=&quot;/img/font-smooth/yandex.png&quot; atl=&quot;yandex.ru со сглаживанием по умолчанию на Mac OS&quot;&gt; --&gt;
+	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/yandex_with.png&quot;&gt;
+		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+	&lt;!-- &lt;img class=&quot;bordered&quot; src=&quot;/img/font-smooth/yandex_with.png&quot; atl=&quot;yandex.ru со сглаживанием antialiased на Mac OS&quot;&gt; --&gt;
+
+	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/google_search.png&quot;&gt;
+		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+
+	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/google_search_with.png&quot;&gt;
+		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
+	&lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;!-- &lt;p&gt;
     &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search.png&quot; atl=&quot;google.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;&lt;/a&gt;
     &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search_with.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search_with.png&quot; atl=&quot;google.ru со сглаживанием antialiased на Mac OS&quot;&gt;&lt;/a&gt;
-&lt;/p&gt;
+&lt;/p&gt; --&gt;
 
 &lt;h2&gt;&lt;a id=&quot;use-in-work&quot; href=&quot;#use-in-work&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем в работе&lt;/h2&gt;
 &lt;p&gt;Очень хорошо этим свойством обрабатываются подгружаемые шрифты.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Вот и все, больше ничего не нужно. Теперь ваш сайт стал чуточку красивее и элегантней, хоть это и не так заметно с первого взгляда.&lt;/p&gt;
@@ -70,8 +69,8 @@
 &lt;p&gt;В настройках создать новый стиль (write new style), назвать его (у меня Font render), поставить галочку &lt;code&gt;Enable&lt;/code&gt;, и в поле &lt;code&gt;code&lt;/code&gt; вставить следующий текст:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;И нажать на кнопку сохранить (save). Теперь можно закрыть это окно и сглаживание будет по умолчанию включено на всех сайтах. Я именно так и сделал :-)&lt;/p&gt;

@@ -7,9 +7,13 @@ layout: page
   {% for tag in post.tags %}
   {% if tag == page.tag %}
   <li class="clearfix">
-	{% assign m = post.date | date: "%-m" %}
-	<time datetime="{{ post.date }}" pubdate="">{{ post.date | date: "%-m"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</time>
-	<a href="{{ post.url }}/"><h3>{{ post.title }}</h3></a>
+      {% assign m = post.date | date: "%-m" %}
+      <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
+          <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+          <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
+          <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h6 itemprop="headline">{{ post.title }}</h6></a>
+          <address itemprop="author" class="vcard author visuallyhidden"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
+      </article>
   </li>
   {% endif %}
   {% endfor %}
