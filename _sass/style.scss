@@ -534,7 +534,7 @@ figcaption span {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    line-height: 1.3;
 }
 
 figcaption.left {
