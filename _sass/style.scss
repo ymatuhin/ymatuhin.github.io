@@ -177,6 +177,7 @@ blockquote > p {
    /* line-height: 30px; */
    font-weight: 300;
 }
+blockquote p + p { text-indent: 0; }
 blockquote cite {
    color: #999999;
    display: inline-block;

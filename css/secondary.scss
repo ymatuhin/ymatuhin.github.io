@@ -54,9 +54,11 @@ html, body {
     & > * {
         display: inline;
         padding: 0 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
         white-space: nowrap;
-        color: inherit;
-        font-size: 12px;
+        color: #B59A65 !important;
+        font-size: 10px;
     }
 }
 
