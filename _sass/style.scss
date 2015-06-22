@@ -65,10 +65,12 @@ a:hover, #posts-list a:hover {
 body,
 #posts-list h3,
 #posts-list h6 {
-    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 200 !important;
 }
 h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #posts-list abbr, .main-footer, .projects-list span {
-    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500 !important;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -76,7 +78,8 @@ h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #po
 }
  */
 #main-title, #main-subtitle {
-    font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif
+    font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+    font-weight: 400 !important;
 }
 
 /* Basic typographic elements */
@@ -215,19 +218,20 @@ h4 + p {
 }
 #main-title {
     font-size: 62px;
-    line-height: 62px;
+    line-height: 80px;
     font-weight: 700;
-    margin: 0 0 15px;
+    margin: 0;
     text-transform: none;
 }
 .main-header.regular #main-title {
     font-size: 52px;
-    line-height: 52px;
+    line-height: 60px;
 }
 
 #main-subtitle {
+    margin: 0;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 40px;
     font-weight: 400;
 }
 
@@ -281,9 +285,9 @@ h4 + p {
 #main-nav a, .button {
     font-size: 14px;
     line-height: 14px;
-    padding: 12px 24px 11px;
+    padding: 11px 20px;
     display: inline-block;
-    margin: 7px;
+    margin: 5px 10px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -320,17 +324,14 @@ h4 + p {
 
 .main-header.regular {
     /* height: 250px; */
-    height: 200px;
-}
-.main-header.regular #main-title {
-    margin-bottom: 10px;
+    height: 160px;
 }
 .main-header.regular .vertical-container {
     text-align: left;
 }
 .main-header.regular #main-nav {
     float: right;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .main-header.regular header {
     float: left;
@@ -343,7 +344,7 @@ h4 + p {
 .wrapper {
     max-width: 1040px;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 .main-content .wrapper {
     margin: 100px auto 150px;

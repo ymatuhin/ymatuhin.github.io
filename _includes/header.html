@@ -11,23 +11,23 @@
 
 			<nav id="main-nav" role="navigation">
 				{% if page.url == '/blog/index.html' or page.url == '/blog/' %}
-					<a class="active">Блог</a>
+					<a class="active">Блог</a><!--
 				{% elsif page.url contains '/blog/' %}
-					<a href="/blog/" class="active">Блог</a>
+					<a href="/blog/" class="active">Блог</a><!--
 				{% else %}
-					<a href="/blog/">Блог</a>
+					<a href="/blog/">Блог</a><!--
 				{% endif %}
 
 				{% if page.url == '/projects/' %}
-					<a class="active">Мои проекты</a>
+					--><a class="active">Мои проекты</a><!--
 				{% else %}
-					<a href="/projects/">Мои проекты</a>
+					--><a href="/projects/">Мои проекты</a><!--
 				{% endif %}
 
 				{% if page.url == '/about/' %}
-					<a class="active">Обо мне</a>
+					--><a class="active">Обо мне</a>
 				{% else %}
-					<a href="/about/">Обо мне</a>
+					--><a href="/about/">Обо мне</a>
 				{% endif %}
 			</nav>
 
