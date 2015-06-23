@@ -6,22 +6,6 @@
 
     h3 { color: #666; text-transform: uppercase; }
 
-    .typl8-drop-cap:first-letter {
-      float: left;
-      margin: 10px 10px 0 0;
-      padding: 0 20px;
-      font-size: 4em;
-      font-family: inherit;
-      line-height: 1;
-      text-indent: 0;
-      background: transparent;
-      color: inherit;
-    }
-
-    p + .typl8-drop-cap {
-      text-indent: 0;
-      margin-top: 0;
-    }
 
     p {
       -webkit-hyphens: auto;
@@ -39,10 +23,9 @@
      */
 
 
-    p + p {
-      text-indent: 1.5em; /* indent subsequent paragraphs */
-      margin-top: -1.5em; /* no top margin on subsequent paragraphs */
-    }
+    /* p + p {
+      margin-top: -15px; no top margin on subsequent paragraphs
+    } */
 
     pre code {
       word-wrap: normal;

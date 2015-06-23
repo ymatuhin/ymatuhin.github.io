@@ -95,7 +95,7 @@ a {
     border-bottom: 1px solid #D4A16B;
 }
 p {
-    margin: 40px 0;
+    margin: 30px 0;
 }
 ul {
     list-style: square inside;
@@ -173,7 +173,7 @@ pre code {
 blockquote {
    border-left: 3px solid #b3b3b3;
    padding-left: 20px;
-   margin: 40px 0;
+   margin: 30px 0;
 }
 blockquote > p {
    /* font-size: 24px; */
@@ -220,6 +220,7 @@ h4 + p {
     font-size: 62px;
     line-height: 80px;
     font-weight: 700;
+    /* padding-bottom: 4px; */
     margin: 0;
     text-transform: none;
 }
@@ -233,16 +234,13 @@ h4 + p {
     font-size: 24px;
     line-height: 40px;
     font-weight: 400;
+    /* padding-bottom: 8px; */
 }
 
 /* Section titles */
-
-.section-header {
-    margin-bottom: 15px;
-}
 .section-title {
     font-size: 28px;
-    line-height: 1.4;
+    line-height: 45px;
     color: #212121;
     text-transform: uppercase;
     font-weight: 700;
@@ -254,7 +252,8 @@ h4 + p {
     text-transform: uppercase;
     font-weight: 700;
     display: block;
-    margin-top: 5px;
+    padding: 6px 0;
+    margin: 0;
 }
 
 /* --------------------------------------
@@ -361,9 +360,13 @@ h4 + p {
 }
 
 .page-content {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .main-content .page-content:first-child {
+    margin-top: 0;
+}
+
+.page-content > *:first-child {
     margin-top: 0;
 }
 
@@ -507,7 +510,7 @@ iframe {
 }
 figure {
     position: relative;
-    margin: 40px 0;
+    margin: 30px 0;
 
     iframe {
         display: block;

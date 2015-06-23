@@ -23,15 +23,22 @@ h3 + *,
 h4 + *,
 h5 + *,
 h6 + * {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+    margin-top: 45px;
+}
+
 p + ul,
-p + ol,
-p + .highlight,
-p + blockquote {
-    margin-top: -25px;
+p + ol {
+    margin-top: -15px;
 }
 
 html, body {
