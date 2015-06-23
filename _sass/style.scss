@@ -218,7 +218,7 @@ h4 + p {
 }
 #main-title {
     font-size: 62px;
-    line-height: 80px;
+    line-height: 60px;
     font-weight: 700;
     /* padding-bottom: 4px; */
     margin: 0;
@@ -226,13 +226,13 @@ h4 + p {
 }
 .main-header.regular #main-title {
     font-size: 52px;
-    line-height: 60px;
+    line-height: 45px;
 }
 
 #main-subtitle {
     margin: 0;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 45px;
     font-weight: 400;
     /* padding-bottom: 8px; */
 }
@@ -284,7 +284,7 @@ h4 + p {
 #main-nav a, .button {
     font-size: 14px;
     line-height: 14px;
-    padding: 11px 20px;
+    padding: 13px 20px 14px;
     display: inline-block;
     margin: 5px 10px;
     text-transform: uppercase;
@@ -323,14 +323,14 @@ h4 + p {
 
 .main-header.regular {
     /* height: 250px; */
-    height: 160px;
+    height: 150px;
 }
 .main-header.regular .vertical-container {
     text-align: left;
 }
 .main-header.regular #main-nav {
     float: right;
-    margin-top: 25px;
+    margin-top: 17.5px;
 }
 .main-header.regular header {
     float: left;
@@ -346,7 +346,7 @@ h4 + p {
     padding: 0 40px;
 }
 .main-content .wrapper {
-    margin: 100px auto 150px;
+    margin: 85px auto 150px;
 }
 
 .page-wrap {
@@ -360,7 +360,8 @@ h4 + p {
 }
 
 .page-content {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-top: 58px;
 }
 .main-content .page-content:first-child {
     margin-top: 0;
