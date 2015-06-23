@@ -50,6 +50,19 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 /* Basic links */
 
+
+/* a:link{color:#008ACE}
+a:hover{color:#CC0000}
+a:visited{color:#B40EB4}
+a:visited:hover{color:#CC0000} */
+a:focus{outline:none}
+
+a {
+    color: #D4A16B;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
 a:hover, #posts-list a:hover {
     color: #D4A16B;
     border-color: #D4A16B;
@@ -88,11 +101,6 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #222;
-}
-a {
-    text-decoration: none;
-    color: #D4A16B;
-    border-bottom: 1px solid #D4A16B;
 }
 p {
     margin: 30px 0;
@@ -350,6 +358,7 @@ h4 + p {
 }
 
 .page-wrap {
+    position: relative;
     min-height: 100%;
     margin-bottom: -120px; /* footer heigth */
 }
