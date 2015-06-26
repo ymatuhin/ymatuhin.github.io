@@ -55,11 +55,6 @@ p + ol {
     display: none;
 }
 
-.bordered {
-    border: 2px solid #1ABC9C;
-    box-sizing: border-box;
-}
-
 .gallery {
     margin: 30px 0 40px -10px;
 
@@ -81,6 +76,8 @@ p + ol {
 
 .gallery_half figure {
     width: 50%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .visuallyhidden {
@@ -114,7 +111,8 @@ img {
 .clear { clear: both; }
 
 @media all and (max-width: 840px) {
-    .gallery figure {
+    .gallery figure,
+    .gallery_half figure {
         float: none;
         width: auto !important;
     }

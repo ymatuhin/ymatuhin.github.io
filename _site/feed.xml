@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Jun 2015 10:48:24 +0300</pubDate>
-    <lastBuildDate>Fri, 26 Jun 2015 10:48:24 +0300</lastBuildDate>
+    <pubDate>Fri, 26 Jun 2015 14:50:17 +0300</pubDate>
+    <lastBuildDate>Fri, 26 Jun 2015 14:50:17 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -18,12 +18,12 @@
 
 &lt;p&gt;В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.&lt;/p&gt;
 
-&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+&lt;figure class=&quot;noborder&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
 	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/compare.png&quot;&gt;
 	&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;div class=&quot;gallery clearfix&quot;&gt;
+&lt;div class=&quot;gallery_half clearfix&quot;&gt;
 	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
 		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/yandex.png&quot;&gt;
 		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
@@ -154,7 +154,11 @@
 &lt;/ul&gt;
 &lt;p&gt;Первое решение требует дополнительных расходов и не совсем удобно. Второе и третье желательно применять, но температура все ещё будет высока. А вот четвертый вариант очень хорош. Нужно только поставить нужный софт и включать его по необходимости. Для этого есть чудесная программа &lt;mark&gt;smcFanControl&lt;/mark&gt;, которая как раз именно это и делает.&lt;/p&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/mac/smcFanControl.png&quot; alt=&quot;Интерфейс настроек smcFanControl для Mac OS&quot;&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Новый интернет браузер Vivaldi (вид по умолчанию)&quot; src=&quot;/img/mac/smcFanControl.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Интерфейс настроек smcFanControl для Mac OS&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Интерфейс программы крайне прост, поэтому ничего подробно тут я объяснять не буду. Я добавил себе профиль Super puper в котором скорость оборотов поставил около 5100, что есть достаточно для охлаждения ноутбука и при этом ноутбоук не сильно шумит. Можно поиграть со скоростью оборотов и шумом и выбрать то, что подойдет именно вам.&lt;/p&gt;
 

@@ -480,51 +480,55 @@ h4 + p {
 -----   Figures   -----
 -------------------------*/
 
-img {
+img,
+iframe {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
 }
-iframe {
-    max-width: 100%;
-}
+
 figure {
     position: relative;
+    text-align: center;
+    font-size: 12px;
     margin: 30px 0;
+    color: #fff;
+    text-shadow: 1px 1px 0px #16A085;
+
+    img {
+        border: 2px solid #1ABC9C;
+    }
+
+    &.inline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &.noborder img {
+        border: 0;
+    }
+
+    &.right_cap {
+        text-align: right;
+    }
+
+    &.left_cap {
+        text-align: left;
+    }
 
     iframe {
         display: block;
         margin: 0 auto;
     }
 }
+
 figcaption {
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    color: #fff;
-    font-size: 12px;
-    line-height: 12px;
-    text-transform: uppercase;
-}
-
-figcaption span {
-    display: inline-block;
-    vertical-align: bottom;
-    background: #1ABC9C;
-    padding: 15px;
     max-width: 100%;
-    box-sizing: border-box;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-shadow: 1px 1px 0px #16A085;
-    line-height: 15px;
-}
-
-figcaption.left {
-    left: 10px;
-    right: auto;
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 15px 0;
+    background: #16A085;
+    line-height: 1.4;
 }
 
 /* ---------------------
