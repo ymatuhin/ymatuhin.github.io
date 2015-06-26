@@ -6,13 +6,13 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Jun 2015 14:50:17 +0300</pubDate>
-    <lastBuildDate>Fri, 26 Jun 2015 14:50:17 +0300</lastBuildDate>
+    <pubDate>Fri, 26 Jun 2015 23:54:47 +0300</pubDate>
+    <lastBuildDate>Fri, 26 Jun 2015 23:54:47 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Сглаживание шрифтов для разработчика и пользователя на Mac OS</title>
-        <description>&lt;p class=&quot;typl8-drop-cap&quot;&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
+        <description>&lt;p&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;examples&quot; href=&quot;#examples&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примеры сглаживания шрифтов&lt;/h2&gt;
 

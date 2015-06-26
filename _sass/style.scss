@@ -146,7 +146,7 @@ blockquote {
     padding-left: 30px;
     margin: 30px 0;
     font-size: 1.25em;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 blockquote > p {
    font-weight: 400;
@@ -480,11 +480,15 @@ h4 + p {
 -----   Figures   -----
 -------------------------*/
 
-img,
-iframe {
+img {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
+}
+
+iframe {
+    vertical-align: top;
+    max-width: 100%;
 }
 
 figure {
@@ -495,7 +499,8 @@ figure {
     color: #fff;
     text-shadow: 1px 1px 0px #16A085;
 
-    img {
+    img,
+    iframe {
         border: 2px solid #1ABC9C;
     }
 
