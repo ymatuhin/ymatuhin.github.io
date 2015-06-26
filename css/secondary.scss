@@ -3,19 +3,9 @@
 
 @charset "utf-8";
 
-/* Safari fix scroll */
-html { overflow: hidden; }
-body { overflow: auto; position: relative; }
-
-/* Font smooth */
-html, body {
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  text-rendering: optimizeSpeed !important;
-}
-
-
 @import "variables",
+        "reset",
+        "document",
         "style",
         "anchor-links",
         "anchor-links-hovers",
@@ -37,10 +27,6 @@ p + ol {
     margin-top: -15px;
 }
 
-html, body {
-    height: 100%;
-}
-
 .page-wrap {
     min-height: 100%;
 }
@@ -60,7 +46,7 @@ html, body {
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        color: #B59A65 !important;
+        color: $color-1 !important;
         font-size: 10px;
     }
 }
@@ -70,7 +56,7 @@ html, body {
 }
 
 .bordered {
-    border: 2px solid #D4A16B;
+    border: 2px solid #1ABC9C;
     box-sizing: border-box;
 }
 

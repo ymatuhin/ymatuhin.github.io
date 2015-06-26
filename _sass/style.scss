@@ -1,71 +1,35 @@
 /* --------------------------------------
------   Reset   -----
-------------------------------------------*/
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}.page-content abbr[title], .page-content dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}.clearfix:before,.clearfix:after{content:" ";display:table;}.clearfix:after {clear:both;}html,body{overflow-x:hidden;}
-
-/* --------------------------------------
 -----   COLORS   -----
 ------------------------------------------*/
 
 /* These rules are grouped based on color shades */
 
-/* Selection */
-
-::selection {
-    background: #FDF2E3;
-    color: #291A03;
-}
-::-moz-selection {
-    background: #FDF2E3;
-    color: #291A03;
-}
 
 /* Main text & navigation buttons */
 
 #main-title, #main-subtitle {
-    color: #FBE3C4;
+    color: $color-2;
 }
 #main-nav a, .button {
-    color: #FBE3C4;
-    border: 2px solid #FBE3C4;
+    color: $color-2;
+    border: 2px solid $color-2;
 }
 
 #main-nav a:hover, #main-nav a.active {
-    background: #FBE3C4;
+    background: $color-2;
     color: #291A03;
 }
 
 /* Regular buttons & img captions */
 
-.button {
-    border-color: #B59A65;
-    color: #B59A65;
+a.button {
+    border-color: #1ABC9C;
+    color: #1ABC9C;
 }
-.button:hover {
-    border-color: #B59A65;
-    background: #B59A65;
+a.button:hover {
+    border-color: #1ABC9C;
+    background: #1ABC9C;
     color: #fff;
-}
-
-/* Basic links */
-
-
-/* a:link{color:#008ACE}
-a:hover{color:#CC0000}
-a:visited{color:#B40EB4}
-a:visited:hover{color:#CC0000} */
-a:focus{outline:none}
-
-a {
-    color: #D4A16B;
-    text-decoration: none;
-    border-bottom: 1px solid;
-}
-
-a:hover, #posts-list a:hover {
-    color: #D4A16B;
-    border-color: #D4A16B;
 }
 
 
@@ -79,11 +43,11 @@ body,
 #posts-list h3,
 #posts-list h6 {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 200 !important;
+    font-weight: 200;
 }
 h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #posts-list abbr, .main-footer, .projects-list span {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 500 !important;
+    font-weight: 500;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -92,16 +56,15 @@ h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #po
  */
 #main-title, #main-subtitle {
     font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
-    font-weight: 400 !important;
+    font-weight: 400;
+}
+
+.tag_list_link {
+    font-weight: 400;
 }
 
 /* Basic typographic elements */
 
-body {
-    font-size: 18px;
-    line-height: 30px;
-    color: #222;
-}
 p {
     margin: 30px 0;
 }
@@ -122,8 +85,8 @@ ol {
 }
 
 pre {
-    background: #faf7f2;
-    border: 5px solid #fae2c3;
+    background: #ECF0F1;
+    border: 3px solid #1ABC9C;
     font-family: Consolas, Courier, Monaco, monospace;
     font-size: 12px;
     line-height: 19px;
@@ -179,14 +142,16 @@ pre code {
 }
 
 blockquote {
-   border-left: 3px solid #b3b3b3;
-   padding-left: 20px;
-   margin: 30px 0;
+    border-left: 3px solid #1ABC9C;
+    padding-left: 30px;
+    margin: 30px 0;
+    font-size: 1.25em;
+    line-height: 1.5;
 }
 blockquote > p {
-   /* font-size: 24px; */
-   /* line-height: 30px; */
-   font-weight: 300;
+   font-weight: 400;
+   margin: 0;
+   padding: 15px 0;
 }
 blockquote p + p { text-indent: 0; }
 blockquote cite {
@@ -210,7 +175,7 @@ q {
 
 h4 {
     font-size: 14px;
-    margin: 25px 0 10px;
+    margin: 30px 0 15px;
     text-transform: uppercase;
     color: #666;
 }
@@ -249,14 +214,14 @@ h4 + p {
 .section-title {
     font-size: 28px;
     line-height: 45px;
-    color: #212121;
+    color: #2C3E50;
     text-transform: uppercase;
     font-weight: 700;
 }
 .section-subtitle {
     font-size: 12px;
     line-height: 18px;
-    color: #ccc;
+    color: #95A5A6;
     text-transform: uppercase;
     font-weight: 700;
     display: block;
@@ -275,15 +240,22 @@ h4 + p {
 -------------------------*/
 
 .main-header {
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     background-position: 50% 50%;
-    background-color: #333;
-    background-image: url(/img/bg2.jpg); /* main bg image */
+    background-color: #0f0f0f;
+    background-image: url(/img/bg5.jpg); /* main bg image */
+
     top: 0;
     left: 0;
     width: 100%;
     display: table;
+}
+
+.main-footer {
+    background-position: 50% 50%;
+    background-color: #0f0f0f;
+    background-image: url(/img/bg5.jpg); /* main bg image */
 }
 
 #main-nav {
@@ -314,7 +286,7 @@ h4 + p {
     height: 100%;
 }
 .vertical-container {
-    background: rgba(34, 34, 34, .6);
+    /* background: rgba(34, 34, 34, .6); */
     position: relative;
     top: 0;
     left: 0;
@@ -408,7 +380,7 @@ h4 + p {
     font-size: 12px;
     line-height: 12px;
     font-weight: bold;
-    color: #ccc;
+    color: #95A5A6;
     width: 115px;
     text-transform: uppercase;
     float: left;
@@ -421,19 +393,15 @@ h4 + p {
     content: "";
     width: 5px;
     height: 5px;
-    background: #ccc;
+    background: #95A5A6;
     float: right;
     margin: 3px 15px 0 0;
 }
 #posts-list a {
     display: block;
-    color: #222;
+    /* color: #222; */
     padding: 16px 0 13px 125px;
     border: none;
-}
-#posts-list h3,
-#posts-list h6 {
-    font-weight: 400;
 }
 
 .post-nav {
@@ -464,7 +432,7 @@ h4 + p {
 ------------------------------------------*/
 
 .main-footer {
-    background: #323538;
+    /* background: #323538; */
     display: table;
     position: relative;
     width: 100%;
@@ -483,10 +451,12 @@ h4 + p {
 .copy {
     float: left;
     margin: 0;
+    line-height: 30px;
 }
 .social {
     margin: 0;
     float: right;
+    line-height: 30px;
 }
 .social li {
     list-style: none;
@@ -540,15 +510,14 @@ figcaption {
 figcaption span {
     display: inline-block;
     vertical-align: bottom;
-    background: #D4A16B;
-    background: rgba(212, 161, 107, .75);
+    background: #1ABC9C;
     padding: 15px;
     max-width: 100%;
     box-sizing: border-box;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden;
-    text-shadow: 1px 1px 0px #D4A16B;
+    text-shadow: 1px 1px 0px #16A085;
     line-height: 15px;
 }
 
@@ -640,15 +609,9 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
     .main-header.regular header, .main-header.regular #main-nav, .copy, .social {
         float: none;
     }
-    .copy {
-        margin: 10px 0 20px;
-    }
 }
 
 @media all and (max-width: 840px) {
-    .page-content {
-        margin: 0;
-    }
     .main-content .wrapper {
         margin: 45px auto 30px;
     }

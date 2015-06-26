@@ -1,8 +1,8 @@
 /* Anchor links */
 .short-link {
-    opacity: 0;
+    opacity: 1;
     border: 0;
-    margin-left: -0.83em;
+    /* margin-left: -0.83em; */
 
     -webkit-transition: opacity .3s 1s;
     transition: opacity .3s 1s;
