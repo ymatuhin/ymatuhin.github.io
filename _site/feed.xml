@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Jun 2015 14:23:25 +0300</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2015 14:23:25 +0300</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2015 14:31:31 +0300</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2015 14:31:31 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -48,7 +48,7 @@
 	&lt;h5&gt;transition height auto&lt;/h5&gt;
 &lt;/footer&gt;
 </description>
-        <pubDate>Sun, 28 Jun 2015 00:00:00 +0300</pubDate>
+        <pubDate>Mon, 29 Jun 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/blog/height_transition_css</link>
         <guid isPermaLink="true">http://ymatuhin.ru/blog/height_transition_css</guid>
         
@@ -127,8 +127,8 @@
 &lt;p&gt;И нажать на кнопку сохранить (save). Теперь можно закрыть это окно и сглаживание будет по умолчанию включено на всех сайтах. Я именно так и сделал :-)&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jun 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/font_smoothing_for_the_developer_and_user_on_mac_os</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/font_smoothing_for_the_developer_and_user_on_mac_os</guid>
+        <link>http://ymatuhin.ru/blog/font_smoothing_for_the_developer_and_user_on_mac_os</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/font_smoothing_for_the_developer_and_user_on_mac_os</guid>
         
         <category>css</category>
         
@@ -139,7 +139,7 @@
         <category>расширение</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     
