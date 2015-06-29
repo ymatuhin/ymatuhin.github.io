@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 29 Jun 2015 14:31:31 +0300</pubDate>
-    <lastBuildDate>Mon, 29 Jun 2015 14:31:31 +0300</lastBuildDate>
+    <pubDate>Mon, 29 Jun 2015 15:06:34 +0300</pubDate>
+    <lastBuildDate>Mon, 29 Jun 2015 15:06:34 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -176,8 +176,8 @@
 &lt;p&gt;Это тот необходимый минимум, которого хватает наверное в 90% случаев. А у вас съезжал сайт из-за расширений?&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/the_problem_of_web_dev_for_modern_browsers_or_fighting_with_extensions</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/the_problem_of_web_dev_for_modern_browsers_or_fighting_with_extensions</guid>
+        <link>http://ymatuhin.ru/blog/problems_of_the_extensions</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/problems_of_the_extensions</guid>
         
         <category>css</category>
         
@@ -186,7 +186,7 @@
         <category>костыль</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     
@@ -289,8 +289,8 @@
 &lt;p&gt;Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/prepare_graphics_for_retina_screens</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/prepare_graphics_for_retina_screens</guid>
+        <link>http://ymatuhin.ru/blog/prepare_graphics_for_retina_screens</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/prepare_graphics_for_retina_screens</guid>
         
         <category>retina</category>
         
@@ -299,12 +299,12 @@
         <category>графика</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     
       <item>
-        <title>Разбираемся со сборкой front end на Gulp (часть 1)</title>
+        <title>Разбираемся со сборкой front end на Gulp</title>
         <description>&lt;p&gt;В последнее время &lt;strong&gt;Gulp&lt;/strong&gt; набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем &lt;strong&gt;Grunt&lt;/strong&gt;. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.&lt;/p&gt;
 
 &lt;img class=&quot;rounded bordered&quot; src=&quot;/img/gulp/logo.png&quot; alt=&quot;Gulp логотип / gulp logo&quot;&gt;
@@ -389,8 +389,8 @@
 &lt;p&gt;В следующей статье мы разберемся подробнее о задачах, синхронность и асинхронностью и напишем что-нибудь полезное.&lt;/p&gt;
 </description>
         <pubDate>Sun, 17 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/see_into_gulp</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/see_into_gulp</guid>
+        <link>http://ymatuhin.ru/blog/see_into_gulp</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/see_into_gulp</guid>
         
         <category>gulp</category>
         
@@ -399,7 +399,7 @@
         <category>сборка</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     
@@ -740,8 +740,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 15 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/front_end_developer_interview_quersions</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/front_end_developer_interview_quersions</guid>
+        <link>http://ymatuhin.ru/blog/front_end_developer_interview_quersions</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/front_end_developer_interview_quersions</guid>
         
         <category>frontend</category>
         
@@ -752,7 +752,7 @@
         <category>перевод</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     
@@ -785,8 +785,8 @@
 &lt;p&gt;Красивой CSS разметки вам вместе с Pesticide :)&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/faster_debug_css_layout_with_pesticide</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/faster_debug_css_layout_with_pesticide</guid>
+        <link>http://ymatuhin.ru/blog/faster_debug_css_with_pesticide</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/faster_debug_css_with_pesticide</guid>
         
         <category>css</category>
         
@@ -795,7 +795,7 @@
         <category>debug</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     

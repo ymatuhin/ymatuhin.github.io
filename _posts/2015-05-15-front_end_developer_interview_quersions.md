@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Вопросы для собеседования кандидату на должность Front-end разработчика
-categories: front-end
+redirect_from:
+  - /front-end/front_end_developer_interview_quersions/
+categories: blog
 tags: [frontend, работа, вопросы, перевод]
 image: /img/front_end_interview/mem.jpg
 ---
