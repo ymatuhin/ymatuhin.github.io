@@ -509,6 +509,16 @@ figure {
         vertical-align: top;
     }
 
+    &.inside figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        max-width: 100%;
+        -ms-transform: translateX(-50%); /* IE 9 */
+        -webkit-transform: translateX(-50%); /* Safari */
+        transform: translateX(-50%);
+    }
+
     &.noborder img {
         border: 0;
     }
@@ -534,6 +544,11 @@ figcaption {
     margin: 15px 0;
     background: #16A085;
     line-height: 1.4;
+
+    a {
+        font-style: italic;
+        color: #fff;
+    }
 }
 
 /* ---------------------
