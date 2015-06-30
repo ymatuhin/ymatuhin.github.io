@@ -40,12 +40,13 @@ p + ol {
     padding: 5px;
     text-align: center;
 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
     & > * {
         display: inline;
         padding: 0 5px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
         color: #ECF0F1 !important;
         font-size: 10px;
     }

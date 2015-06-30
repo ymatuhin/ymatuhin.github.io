@@ -19,6 +19,8 @@ body {
     font: 18px/30px $font-text;
     background: $color-bg;
     color: $color-text;
+
+    min-width: 380px;
 }
 
 /* Basic links */
