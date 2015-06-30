@@ -129,11 +129,18 @@ sup {
 }
 
 var,
-code {
+code,
+mark {
     background: #eee;
     padding: .1em .2em;
     border-radius: 3px;
     font-family: Consolas, Courier, Monaco, monospace;
+}
+
+mark {
+    background: #F1C40F;
+    color: #2C3E50;
+    font-weight: normal;
 }
 
 pre code {

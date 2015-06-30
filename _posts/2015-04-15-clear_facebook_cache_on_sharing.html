@@ -1,0 +1,48 @@
+---
+layout: post
+title: Очищаем КЭШ в FaceBook при шаринге
+categories: front-end
+tags: ['Facebook', '404']
+redirect_from:
+  - /front-end/facebook-fix-sharing-with-debugger/
+keywords: >
+  facebook поделиться не работает шаринг другая картинка share кеш очистить кэш 404 cache фейсбук
+description: >
+  Не работает шаринг в Facebook? Показывает «Страница не найдена» (404) при шаринге (share)? Нужно всего лишь очистить КЭШ в FaceBook.
+---
+
+<p>Иногда Facebook не желает расшаривать наши страницы, по крайней мере у меня так бывает часто. После нажатия на кнопку «<em>поделиться</em>», Facebook сообщает нам, что страница не найдена. Или быть может при попытке поделиться у вас показывается совсем <em>другая картинка</em>. Надо это как-то исправлять.</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="550" height="280" alt="Ошибка при шаринге в Facebook — «Страница не найдена» (404)" src="/img/facebook_sharing_error/facebook_sharing_error.png">
+	<figcaption itemprop="description">Ошибка при шаринге в Facebook — «Страница не найдена» (404)</figcaption>
+</figure>
+
+<p>Но это легко исправить, нужно только знать как. Как много все-таки в мире легких вещей, если только знать как и что делать :-)</p>
+
+<p>Чтобы исправить ошибку «Страница не найдена» при шаринге, нужно <em>очистить КЭШ</em> у Facebook. Для этого нужно перейти по ссылке в <a href="//developers.facebook.com/tools/debug/">Debugger</a>. Вы увидите поле, в которое нужно ввести ссылку, которую у вас не получилось расшарить и нажать на кнопку <mark>Debug</mark>.</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="550" height="280" alt="Debugger — окно для очистки КЭШа в Facebook" src="/img/facebook_sharing_error/facebook_debugger.png">
+	<figcaption itemprop="description">Debugger — окно для очистки КЭШа в Facebook</figcaption>
+</figure>
+
+<p>После этого, нужно нажать на кнопку <mark>Fetch new scrape information</mark>, для того, чтобы Facebook обновил информацию о нашей странице в своей базе. Кстати, этот способ так-же подойдет, если вы изменили заголовок или описание вашей страницы, а при шаринге отображаются старые.</p>
+
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="550" height="280" alt="Debugger — окно для очистки КЭШа в Facebook" src="/img/facebook_sharing_error/facebook_debugger_refetch.png">
+	<figcaption itemprop="description">Debugger — окно для очистки КЭШа в Facebook</figcaption>
+</figure>
+
+<p>Теперь Facebook почистил свой кэш и обновил информацию о вашей странице. И её теперь можно легко расшарить с правильными данными.</p>
+
+<footer class="keywords section-subtitle" role="contentinfo">
+	<h3>кеш facebook</h3>
+	<h3>фейсбук кэш</h3>
+	<h4>facebook шаринг</h4>
+	<h4>другая картинка facebook share</h4>
+	<h5>facebook 404</h5>
+	<h5>facebook поделиться не работает</h5>
+	<h5>очистить кэш в facebook</h5>
+</footer>
