@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 	<link rel="shortcut icon" href="/favicon.ico?v=2">
-	<link rel="image_src" href="/apple-touch-icon.png">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 	{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
@@ -28,8 +27,11 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@ymatuhin">
 	<meta name="twitter:creator" content="@ymatuhin">
+
 	{% if page.image %}
-	<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+		<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+	{% else %}
+		<meta name="twitter:image" content="{{ site.url }}apple-touch-icon.png">
 	{% endif %}
 
 	<!-- Open Graph data -->
@@ -38,7 +40,9 @@
 	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ page_url }}">
 	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ page_description }}">
 	{% if page.image %}
-	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}{{ page.image }}">
+		<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}{{ page.image }}">
+	{% else %}
+		<meta name="twitter:image" content="{{ site.url }}apple-touch-icon.png">
 	{% endif %}
 
 	<!-- Dublin Core -->
