@@ -30,8 +30,6 @@
 
 	{% if page.image %}
 		<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-	{% else %}
-		<meta name="twitter:image" content="{{ site.url }}apple-touch-icon.png">
 	{% endif %}
 
 	<!-- Open Graph data -->
@@ -41,8 +39,6 @@
 	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ page_description }}">
 	{% if page.image %}
 		<meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}{{ page.image }}">
-	{% else %}
-		<meta name="twitter:image" content="{{ site.url }}apple-touch-icon.png">
 	{% endif %}
 
 	<!-- Dublin Core -->
