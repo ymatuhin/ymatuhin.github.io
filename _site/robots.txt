@@ -1,5 +1,4 @@
 # Allow crawling of all content
 User-agent: *
-Allow: /
-Disallow: /404.html
+Disallow:
 Sitemap: http://ymatuhin.ru/sitemap.xml
