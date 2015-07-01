@@ -42,11 +42,11 @@ a.button:hover {
 body,
 #posts-list h3,
 #posts-list h6 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 200;
 }
 h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #posts-list abbr, .main-footer, .projects-list span {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -252,6 +252,7 @@ h4 + p {
     background-position: 50% 50%;
     background-color: #0f0f0f;
     background-image: url(/img/bg5.jpg); /* main bg image */
+    position: relative;
 
     top: 0;
     left: 0;
@@ -506,6 +507,11 @@ figure {
     color: #ECF0F1;
     text-shadow: 1px 1px 0px #16A085;
 
+    & > a {
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+    }
+
     img,
     iframe {
         border: 2px solid #1ABC9C;
@@ -645,7 +651,7 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
 
 @media all and (max-width: 840px) {
     .main-content .wrapper {
-        margin: 45px auto 30px;
+        margin: 75px auto 30px;
     }
     .wrapper {
         padding: 0 15px;
@@ -672,4 +678,72 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         margin: 20px 0 0 0 !important;
     }
 
+}
+
+.main-header:hover .search,
+.search:hover {
+    input,
+    button {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.search {
+    position: absolute;
+    top: 100%;
+    right: 30px;
+    height: 42px;
+    border: 3px dashed #ECF0F1;
+    border-top: 0;
+    margin-top: 3px;
+
+    input,
+    button {
+        position: relative;
+        opacity: 0;
+        -webkit-transition: opacity .3s;
+                transition: opacity .3s;
+
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        height: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        line-height: 42px;
+        font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        cursor: default;
+        visibility: hidden;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    input {
+        padding: 0 15px 0 5px;
+        border: 3px solid #1ABC9C;
+        border-width: 0 0 3px 3px;
+        height: 45px;
+        margin-left: -3px;
+        min-width: 180px;
+    }
+
+    button {
+        padding: 0 15px;
+        background: #1ABC9C;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        min-width: 90px;
+        cursor: pointer;
+
+        border: 3px solid #1ABC9C;
+        border-width: 0 3px 3px 0;
+        height: 45px;
+        margin-right: -3px;
+    }
 }

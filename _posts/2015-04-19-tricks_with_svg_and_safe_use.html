@@ -1,13 +1,18 @@
 ---
 layout: post
 title: Трюки с SVG и поддержка старыми браузерами
-categories: front-end
+categories: blog
+redirect_from:
+  - /front-end/tricks_with_svg_and_safe_use/
 tags: [svg, изображения, css]
 description: >
   Как безопасно использовать SVG, поддержка браузерами, несколько fallback-ов для старых браузеров.
 ---
 
-<p style="margin-top:0"><img style="margin-top:0" class="noshadow" src="/img/svg/svg_logo.png" alt="Логотип SVG"></p>
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="400" height="200" alt="Логотип SVG" src="/img/svg/svg_logo.png">
+	<figcaption itemprop="description">Логотип SVG</figcaption>
+</figure>
 
 <p>Раньше я не использовал SVG, поскольку рабочие проекты были с поддержкой Internet Explorer 6/7. Да и не требовалось поддержки ретины. Но сейчас, спустя время, настало время использовать SVG на полную.</p>
 
@@ -16,13 +21,14 @@ description: >
 <p>На данный момент, SVG поддерживается всеми современными браузерами, начиная с Inernet Explorer 9 (<a href="http://caniuse.com/#feat=svg">CIU</a>). По данным сайта Can I Use, SVG поддерживается в мире на 94.55% и на 83.13% в России. Самая главная проблема — это IE 8, доля которого все еще достаточно велика.</p>
 
 <h2><a id="fallback" href="#fallback" class="short-link">#</a>&nbsp;Fallback</h2>
-<p>У нас есть два варианта использования SVG изображений:</p>
+<p>У нас есть несколько вариантов использования SVG изображений в HTML странице:</p>
 <ol>
 	<li>В теге <code>img</code> — <code>&lt;img src=&quot;test.svg&quot; alt=&quot;&quot;&gt;</code>
 	<li>Через CSS свойство <code>background-image</code> — <code>background-image: url(test.svg)</code>
+    <li>Вставить svg инлайн (не рассматривается в статье)</li>
 </ol>
 
-<p>Для этих двух способов есть очень изящные решения. Начнем со способа в котором мы используем тег <code>img</code>. </p>
+<p>Для первых двух способов есть очень изящные решения. Начнем со способа в котором мы используем тег <code>img</code>. </p>
 
 <h3><a id="with-img-tag" href="#with-img-tag" class="short-link">#</a>&nbsp;Использование SVG изображения через тег <code>img</code></h3>
 <p>Вместо привычно кода, напишем в нашем HTML следующий код:</p>

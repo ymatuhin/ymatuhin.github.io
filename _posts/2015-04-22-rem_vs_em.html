@@ -1,14 +1,18 @@
 ---
 layout: post
 title: Еще одна статья про REM vs EM
-categories: front-end
+categories: blog
+redirect_from:
+  - /front-end/one_more_article_about_rem_vs_em/
 tags: [единицы измерения, css]
 image: /img/rem_vs_em/rem.png
 description: >
   В этой статье я расскажу в чем различия между REM и EM, и как начать использовать REM в своих проектах уже сейчас.
 ---
 
-<p style="margin-top:0"><img style="margin-top:0" src="/img/rem_vs_em/rem.png" alt="Единицы измерения — REM"></p>
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="375" height="112" alt="Rem vs em in CSS" src="/img/rem_vs_em/rem.png">
+</figure>
 
 <p>Навозившись в текущем проекте с подсчетами EM-ов я решил поискать альтернативу этому способу. Конечно я знал что существуют REM-ы и думал что их все-еще нельзя использовать, но я был не прав. </p>
 
@@ -84,4 +88,9 @@ h1 {
 
 <p>Что делать тем, кто не поддерживает REM? На этот случай у нас в запасе есть отличное JavaScript решение этой проблемы — <a href="http://chuckcarpenter.github.io/REM-unit-polyfill/">Rem-unit-polyfill</a>. Прочитать подробнее о ней можно на странице проекта, но вкратце подключаем этот файл к нам на страницу, и REM работают везде. Я пока еще не тестировал эту библиотеку, но у неё сейчас 454 звезды и 125 форков, поэтому я склонен доверять ей. Как только я проверю её, я обновлю этот пост.</p>
 
-<p>А чем пользуетесь вы в своих проектах?</p>
+<p>А уже используете <em>REM</em> в своих проектах?</p>
+
+<footer class="keywords section-subtitle" role="contentinfo">
+	<h3>rem em</h3>
+	<h4>rem em CSS</h4>
+</footer>
