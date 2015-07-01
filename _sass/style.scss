@@ -730,6 +730,9 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         height: 45px;
         margin-left: -3px;
         min-width: 180px;
+
+        -moz-appearance:none;
+       -webkit-appearance:none;
     }
 
     button {
