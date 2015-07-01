@@ -712,7 +712,6 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         border: 0;
         padding: 0;
         margin: 0;
-        line-height: 42px;
         font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
         font-weight: 200;
         cursor: default;
@@ -724,7 +723,7 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
     }
 
     input {
-        padding: 0 15px 0 5px;
+        padding: 0 15px 2px 5px;
         border: 3px solid #1ABC9C;
         border-width: 0 0 3px 3px;
         height: 45px;
@@ -732,7 +731,14 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         min-width: 180px;
 
         -moz-appearance:none;
-       -webkit-appearance:none;
+        -webkit-appearance:none;
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            display: none;
+        }
     }
 
     button {
@@ -746,6 +752,7 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
 
         border: 3px solid #1ABC9C;
         border-width: 0 3px 3px 0;
+        line-height: 42px;
         height: 45px;
         margin-right: -3px;
     }
