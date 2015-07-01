@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Международный день box-sizing и лучшие практики
-categories: front-end
+categories: blog
+redirect_from:
+  - /front-end/better_box_sizing/
 tags: [лучшие практики, праздники разработчиков, css]
 description: >
   Лучшие практики использования CSS свойства box-sizing и праздник посвященный этому свойству.
@@ -46,6 +48,9 @@ html {
 <p>Вы можете сказать, что использование универсального селектора <code>*</code> очень плохо влияет на производительности. На самом деле <code>*</code> настолько же быстрый как <code>h1</code>. Он может быть медленный если вы используете что-то на подобии <code>.foo > *</code>, поэтому не делайте так.</p>
 <p>Приведу пример, опубликованный Полом, в котором он сравнивает производительность сайта New York Times со стандартной моделью W3C и с моделью <code>border-box</code>:</p>
 
-<img src="/img/box_sizing/w3c_vs_borderbox.png" alt="Производительность сайта New York Times со стандартной моделью W3C и с моделью border-box">
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="607" height="291" src="/img/box_sizing/w3c_vs_borderbox.png" alt="Производительность сайта New York Times со стандартной моделью W3C и с моделью border-box">
+	<figcaption itemprop="description">Производительность сайта New York Times со стандартной моделью W3C и с моделью border-box</figcaption>
+</figure>
 
 <p>Как вы видите, разница составила не больше 5%. <br>Всем rock, peace and box-sizing !)</p>
