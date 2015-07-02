@@ -723,12 +723,12 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
     }
 
     input {
-        padding: 0 15px 2px 5px;
+        padding: 0 15px 2px;
         border: 3px solid #1ABC9C;
         border-width: 0 0 3px 3px;
         height: 45px;
         margin-left: -3px;
-        min-width: 180px;
+        width: 210px;
 
         -moz-appearance:none;
         -webkit-appearance:none;
