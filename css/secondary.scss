@@ -141,3 +141,18 @@ img {
     z-index: 999999;
     pointer-events: none;
 }
+
+// javascript_styleguide
+a[aria-hidden] {
+    border: 0;
+
+    &:before {
+        content: '# ';
+        color: #2980B9;
+    }
+
+    & + a[id] {
+        border: 0;
+        color: inherit;
+    }
+}
