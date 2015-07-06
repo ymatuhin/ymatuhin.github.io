@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Jul 2015 12:56:19 +0300</pubDate>
-    <lastBuildDate>Fri, 03 Jul 2015 12:56:19 +0300</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 13:42:32 +0300</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 13:42:32 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -181,8 +181,6 @@
         
         <category>css</category>
         
-        <category>фикс</category>
-        
         <category>костыль</category>
         
         
@@ -194,6 +192,7 @@
         <title>Решаем проблему греющихся MacBook Pro/Air</title>
         <description>&lt;p&gt;Я, обладатель MacBook Pro Mid 2012 уже более года и не понаслышке знаю о том, каким он бывает горячим. Но одно дело согревающая теплота зимой, другое летом, когда и так очень жарко. Сегодня мы будем решать эту проблему.&lt;/p&gt;
 
+&lt;h2&gt;&lt;a id=&quot;reasons&quot; href=&quot;#reasons&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Почему Macbook сильно греется?&lt;/h2&gt;
 &lt;p&gt;Маки греются по нескольким причинам, самые основные это: цельный корпус (плохая вентиляция), тишина работы (не позволяет кулерам хорошо охлаждать), выполнение сложных вычислений и работа с графикой.&lt;/p&gt;
 
 &lt;p&gt;Теперь мы знаем причины и можем их исправить.&lt;/p&gt;
@@ -203,8 +202,10 @@
 	&lt;li&gt;&lt;em&gt;Третье&lt;/em&gt; — это закрыть по возможности тяжелые программы и приложения (выглядит как костыль).&lt;/li&gt;
 	&lt;li&gt;&lt;em&gt;Четвертое&lt;/em&gt; — увеличить скорость вращения кулеров. Нужно понимать что при этом увеличится шум от ноутбука.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Первое решение требует дополнительных расходов и не совсем удобно. Второе и третье желательно применять, но температура все ещё будет высока. А вот четвертый вариант очень хорош. Нужно только поставить нужный софт и включать его по необходимости. Для этого есть чудесная программа &lt;mark&gt;smcFanControl&lt;/mark&gt;, которая как раз именно это и делает.&lt;/p&gt;
 
+&lt;h2&gt;&lt;a id=&quot;rezolve&quot; href=&quot;#rezolve&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Охлаждаем наш Macbook&lt;/h2&gt;
+
+&lt;p&gt;Первое решение требует дополнительных расходов и не совсем удобно. Второе и третье желательно применять, но температура все ещё будет высока. А вот четвертый вариант очень хорош. Нужно только поставить нужный софт и включать его по необходимости. Для этого есть чудесная программа &lt;mark&gt;smcFanControl&lt;/mark&gt;, которая как раз именно это и делает.&lt;/p&gt;
 
 &lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
 	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Новый интернет браузер Vivaldi (вид по умолчанию)&quot; src=&quot;/img/mac/smcFanControl.png&quot;&gt;
@@ -214,6 +215,18 @@
 &lt;p&gt;Интерфейс программы крайне прост, поэтому ничего подробно тут я объяснять не буду. Я добавил себе профиль Super puper в котором скорость оборотов поставил около 5100, что есть достаточно для охлаждения ноутбука и при этом ноутбоук не сильно шумит. Можно поиграть со скоростью оборотов и шумом и выбрать то, что подойдет именно вам.&lt;/p&gt;
 
 &lt;p&gt;Осталось только оставить &lt;a href=&quot;//www.eidac.de/smcfancontrol/smcfancontrol_2_4.zip&quot;&gt;ссылку для скачивания&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;footer class=&quot;keywords section-subtitle&quot; role=&quot;contentinfo&quot;&gt;
+	&lt;h3&gt;macbook греется&lt;/h3&gt;
+	&lt;h4&gt;греется macbook pro&lt;/h4&gt;
+	&lt;h4&gt;греется macbook air&lt;/h4&gt;
+	&lt;h5&gt;греется macbook air&lt;/h5&gt;
+	&lt;h5&gt;macbook air сильно греется&lt;/h5&gt;
+	&lt;h5&gt;macbook pro retina греется&lt;/h5&gt;
+	&lt;h6&gt;греется macbook pro 13&lt;/h6&gt;
+	&lt;h6&gt;почему греется macbook&lt;/h6&gt;
+&lt;/footer&gt;
 </description>
         <pubDate>Fri, 22 May 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/blog/solve_the_problem_of_basking_macbook</link>
@@ -229,21 +242,22 @@
       </item>
     
       <item>
-        <title>Подготавливаем графику на сайте для retina экранов</title>
+        <title>Оптимизация верстки под retina дисплеи</title>
         <description>&lt;p&gt;Сейчас, с большой популярностью MacBook-ов, айфонов и других устройств с большим DPI, изображения на сайте нужно оптимизировать, чтобы они не были смазанными. Для этого у нас есть несколько решений. Самые популярные это сделать иконочный шрифт или использовать SVG. Но что если нет возможности или не хочется с этим иметь дело, или вы очень любите PNG. Решение конечно же есть. В виде плагина для Photoshop, js-библиотеки и sass/less/stylus примеси.&lt;/p&gt;
 
-&lt;h2&gt;&lt;a id=&quot;theory&quot; href=&quot;#theory&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Теория&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;theory&quot; href=&quot;#theory&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Теория подготовки сайта к Retina дисплеям&lt;/h2&gt;
 &lt;p&gt;Я буду объяснять своими словами. Из-за того что плотность точек на retina экранах больше, изображение оказывается размытым (поскольку растягивается). Чтобы это побороть, нужно использовать изображение в 2 или 3 раза больше оригинального и масштабировать средствами html и css до размеров x1. Тогда на retina экранах изображение будет выглядеть отлично. Но для этого нужно сначала нарезать 2 или 3 размера изображений, а потом использовать js библиотеку и примесь в препроцессоре (для удобства). Обо всем по порядку...&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;retinize_it&quot; href=&quot;#retinize_it&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Photoshop плагин Retinize It&lt;/h2&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/retina/retinizeit.png&quot; alt=&quot;Retinize It логотип / Retinize It logo&quot;&gt;
-
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;520&quot; alt=&quot;Retinize It — плагин для фотошопа для оптимизации графики под ретина&quot; src=&quot;/img/retina/retinizeit.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Retinize It — плагин для фотошопа для оптимизации графики под ретина&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Как написано на официальном сайте: «Лучший плагин к Photoshop для оптимизации графики на сайте для iOS и Retina-дисплеев». Скачать его можно на &lt;a href=&quot;http://retinize.it/&quot;&gt;странице проекта&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Плагин представляет собой записанные действия, которые можно будет воспроизводить через горячие клавиши или пункты меню. Плагин выделяет слои, создает новый файл с ними, делает трим (обрезку краев) и сохраняет изображение в 1-м, 2-х или 3-х размерах.&lt;/p&gt;
-
 
 &lt;p&gt;Работать с ним очень просто:&lt;/p&gt;
 &lt;ol&gt;
@@ -253,16 +267,19 @@
     &lt;li&gt;Получите ваши нарезанные изображения&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/retina/install.png&quot; alt=&quot;Как работает Retinize It&quot;&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;940&quot; alt=&quot;Как работает плагин Retinize It&quot; src=&quot;/img/retina/install.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Как работает плагин Retinize It&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Для дальнейшего использования рекомендую сохранять файлы с постфиксами @2x, @3x. К примеру: &lt;code&gt;file.png&lt;/code&gt;, &lt;code&gt;file@2x.png&lt;/code&gt;, &lt;code&gt;file@3x.png&lt;/code&gt;.&lt;/p&gt;
-
 
 &lt;h2&gt;&lt;a id=&quot;retina_js&quot; href=&quot;#retina_js&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем retina.js для тегов img&lt;/h2&gt;
 &lt;p&gt;Тут все просто, подключаем js библиотеку, и она определит нужно ли загружать изображение для retina экранов. Если нужно, то ссылка на исходный файл заменяется на &lt;code&gt;***@2x.***&lt;/code&gt; или &lt;code&gt;***@3x.***&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;less_mixin&quot; href=&quot;#less_mixin&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примесь для LESS&lt;/h2&gt;
-&lt;p&gt;Скачать примесь можно &lt;a href=&quot;http://imulus.github.io/retinajs/&quot;&gt;на сайте&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Скачать примесь можно &lt;a href=&quot;http://imulus.github.io/retinajs/&quot; rel=&quot;nofollow&quot;&gt;на сайте&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;После подключения она будет доступна для использования. Написав следующее: &lt;code&gt;.at2x(@path, @width, @height);&lt;/code&gt; (вместо @path, @width и @height нужно написать ваш путь к изображению и его размеры).&lt;/p&gt;
 
@@ -284,9 +301,21 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Подробнее о retina.js и примесях можно прочитать &lt;a href=&quot;http://imulus.github.io/retinajs/&quot;&gt;на сайте&lt;/a&gt;, скачать можно там-же.&lt;/p&gt;
+&lt;p&gt;Подробнее о retina.js и примесях можно прочитать &lt;a href=&quot;http://imulus.github.io/retinajs/&quot; rel=&quot;nofollow&quot;&gt;на сайте&lt;/a&gt;, скачать можно там-же.&lt;/p&gt;
 
 &lt;p&gt;Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)&lt;/p&gt;
+
+
+&lt;footer class=&quot;keywords section-subtitle&quot; role=&quot;contentinfo&quot;&gt;
+	&lt;h3&gt;ретина изображения&lt;/h3&gt;
+	&lt;h3&gt;верстка retina&lt;/h3&gt;
+	&lt;h3&gt;картинка ретина&lt;/h3&gt;
+	&lt;h4&gt;верстка ретина&lt;/h4&gt;
+	&lt;h4&gt;верстка под retina&lt;/h4&gt;
+	&lt;h5&gt;верстка под ретину&lt;/h5&gt;
+	&lt;h5&gt;ретина оптимизация&lt;/h5&gt;
+	&lt;h5&gt;оптимизация верстки под retina&lt;/h5&gt;
+&lt;/footer&gt;
 </description>
         <pubDate>Thu, 21 May 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/blog/prepare_graphics_for_retina_screens</link>
@@ -307,7 +336,10 @@
         <title>Разбираемся со сборкой front end на Gulp</title>
         <description>&lt;p&gt;В последнее время &lt;strong&gt;Gulp&lt;/strong&gt; набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем &lt;strong&gt;Grunt&lt;/strong&gt;. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.&lt;/p&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/gulp/logo.png&quot; alt=&quot;Gulp логотип / gulp logo&quot;&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;400&quot; alt=&quot;Собираем front end на gulp&quot; src=&quot;/img/gulp/logo.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Собираем front end на gulp&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;h2&gt;&lt;a id=&quot;what_is&quot; href=&quot;#what_is&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что такое Gulp?&lt;/h2&gt;
 
@@ -407,8 +439,12 @@
         <title>Вопросы для собеседования кандидату на должность Front-end разработчика</title>
         <description>&lt;p&gt;&lt;em&gt;Это перевод популярного репозитория от html5bp — &lt;a href=&quot;//h5bp.github.io/Front-end-Developer-Interview-Questions/&quot;&gt;Front-end Job Interview Questions&lt;/a&gt; (en),  который существует с 2009 года. Список вопросов составлялся и дополнятся известными во front-end людьми, поэтому на этот список можно положиться. Перевод делал не я (вернее я хотел, но он оказался уже переведен).&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/front_end_interview/mem.jpg&quot; class=&quot;rounded bordered&quot; alt=&quot;Вопросы для собеседования кандидату на должность Front-end разработчика&quot; /&gt;
-&lt;strong&gt;Замечание:&lt;/strong&gt; Этот репозиторий содержит подборку вопросов, которые могут быть использованы на собеседованиях на должность front-end разработчика. Здесь предлагаются лишь идеи, не нужно задавать все вопросы сразу (иначе в один час точно не уложитесь).&lt;/p&gt;
+&lt;figure itemscope=&quot;&quot; itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;760&quot; alt=&quot;Типичный диалог на собеседовании front end разработчиков&quot; src=&quot;/img/front_end_interview/mem.jpg&quot; /&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Типичный диалог на собеседовании front end разработчика&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Замечание:&lt;/strong&gt; Этот репозиторий содержит подборку вопросов, которые могут быть использованы на собеседованиях на должность front-end разработчика. Здесь предлагаются лишь идеи, не нужно задавать все вопросы сразу (иначе в один час точно не уложитесь).&lt;/p&gt;
 
 &lt;p&gt;Также, имейте в виду, что многие вопросы не требуют однозначного короткого ответа, а лишь помогают завести беседу на ту или иную тему (предоставляя кандидату возможность показать себя во всей красе).&lt;/p&gt;
 
@@ -749,8 +785,6 @@
         
         <category>вопросы</category>
         
-        <category>перевод</category>
-        
         
         <category>blog</category>
         
@@ -758,9 +792,12 @@
     
       <item>
         <title>Быстрый дебаг CSS слоев с Pesticide</title>
-        <description>&lt;p style=&quot;margin-top: 0&quot;&gt;Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/SASS/LESS библиотека — &lt;strong&gt;Pesticide&lt;/strong&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/SASS/LESS библиотека — &lt;strong&gt;Pesticide&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/pesticide/logo.png&quot; alt=&quot;Логотип CSS библиотеки — Pesticide&quot;&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;530&quot; alt=&quot;Логотип библиотеки для дебага CSS — Pesticide&quot; src=&quot;/img/pesticide/logo.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Логотип библиотеки для дебага CSS — Pesticide&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Что делает этот ваш Pesticide? На официальном сайте: «Kill your CSS layout bugs. Without 2000 clicks in Chrome Dev Tools». На самом деле принцип её работы очень прост, и я думаю многие разработчики писали у себя в стилях во время разработки нечто вроде этого:&lt;/p&gt;
 
@@ -769,12 +806,20 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Но Адам Морс (Adam Morse) пошел дальше, и добавил свой цвет для каждого элемента. И теперь, если немного привыкнуть, то по цвету можно определять цвет элемента и его область. &lt;/p&gt;
 
-&lt;p&gt;Сам CSS файл до смешного прост, познакомиться подробнее с Pesticide можно на официальном сайте &lt;a href=&quot;//pesticide.io&quot;&gt;pesticide.io&lt;/a&gt;. Посмотреть исходники и скачать файл можно с &lt;a href=&quot;https://github.com/mrmrs/pesticide&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Сам CSS файл до смешного прост, познакомиться подробнее с Pesticide можно на официальном сайте &lt;a href=&quot;//pesticide.io&quot;&gt;pesticide.io&lt;/a&gt;. Посмотреть исходники и скачать файл можно с &lt;a href=&quot;https://github.com/mrmrs/pesticide&quot; rel=&quot;nofollow&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/pesticide/github.png&quot; alt=&quot;Pesticide на Github&quot;&gt;
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/pesticide/ya.png&quot; alt=&quot;Pesticide на  Yandex&quot;&gt;
+&lt;div class=&quot;gallery_half clearfix&quot;&gt;
+    &lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+    	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;640&quot; alt=&quot;Пример использования Pesticide на Github&quot; src=&quot;/img/pesticide/github.png&quot;&gt;
+    	&lt;figcaption itemprop=&quot;description&quot;&gt;Пример использования Pesticide на Github&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+    	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;640&quot; alt=&quot;Пример использования Pesticide на Yandex&quot; src=&quot;/img/pesticide/ya.png&quot;&gt;
+    	&lt;figcaption itemprop=&quot;description&quot;&gt;Пример использования Pesticide на Yandex&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Мне кажется, что подключать эту библиотеку как css файл на свой проект не рационально. Особенно когда у неё есть расширения для браузеров (&lt;a href=&quot;https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh&quot;&gt;Chrome&lt;/a&gt;, &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/pesticide/&quot;&gt;Firefox&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;Мне кажется, что подключать эту библиотеку как css файл на свой проект не рационально. Особенно когда у неё есть расширения для браузеров (&lt;a href=&quot;https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh&quot; rel=&quot;nofollow&quot;&gt;Chrome&lt;/a&gt;, &lt;a href=&quot;https://addons.mozilla.org/en-US/firefox/addon/pesticide/&quot; rel=&quot;nofollow&quot;&gt;Firefox&lt;/a&gt;). &lt;/p&gt;
 
 &lt;p&gt;Но с расширениями есть одна проблема — они сбрасывается при перезагрузке страницы. В таком случае нам придется обязательно подключать pesticide как css файл чтобы избежать этого.&lt;/p&gt;
 
@@ -801,32 +846,37 @@
     
       <item>
         <title>Крутые вебинары от Geekbrains (Школа Программирования)</title>
-        <description>&lt;img style=&quot;margin-top: 10px;&quot; class=&quot;rounded bordered&quot; src=&quot;/img/geekbrains/logo.png&quot; alt=&quot;Логотип Geekbrains&quot;&gt;
+        <description>&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;256&quot; alt=&quot;Крутые вебинары от Geekbrains&quot; src=&quot;/img/geekbrains/logo.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Крутые вебинары от Geekbrains&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p style=&quot;margin-top: 0&quot;&gt;Хочу поделиться с вами хорошими вебинарами от Geekbrains (Школа Программирования). Я совсем недавно нашел этот сайт и эти вебинары, поэтому успел посмотреть только несколько записей. Но общее впечатление очень хорошее. Хотя тут все зависит от того, кто ведет эти вебинары.&lt;/p&gt;
+&lt;p&gt;Хочу поделиться с вами хорошими вебинарами от Geekbrains (Школа Программирования). Я совсем недавно нашел этот сайт и эти вебинары, поэтому успел посмотреть только несколько записей. Но общее впечатление очень хорошее. Хотя тут все зависит от того, кто ведет эти вебинары.&lt;/p&gt;
 
 &lt;p&gt;Многие вебинары доступны на &lt;a href=&quot;//youtube.com/user/progliveru/videos&quot;&gt;Youtube канале&lt;/a&gt; школы программирования, но не все. Остальные видео можно найти на сайте &lt;a href=&quot;http://geekbrains.ru/events&quot;&gt;Geekbrains&lt;/a&gt;. Но чтобы их просмотреть, нужно там зарегистрироваться (они будут присылать вам раз в несколько дней письма про курсы и т.д.).&lt;/p&gt;
 
 &lt;p&gt;Приведу несколько вебинаров которые мне понравились:&lt;/p&gt;
-&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GGmbRM0Khvo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 
-&lt;p class=&quot;media-title&quot;&gt;Вопросы личностного развития. Часть 1. Эффективная постановка личных целей&lt;/p&gt;
-&lt;br&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
+    &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;https://www.youtube.com/embed/GGmbRM0Khvo&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;figcaption itemprop=&quot;description&quot;&gt;Вопросы личностного развития. Часть 1. Эффективная постановка личных целей&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/MufNlCv8o5Y&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p class=&quot;media-title&quot;&gt;Карьера в ИТ: Путь джедая&lt;/p&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
+    &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;https://www.youtube.com/embed/MufNlCv8o5Y&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;figcaption itemprop=&quot;description&quot;&gt;Карьера в ИТ: Путь джедая&lt;/figcaption&gt;
+&lt;/figure&gt;
 </description>
         <pubDate>Thu, 07 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/all/cool_webinars_on_geekbrains</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/all/cool_webinars_on_geekbrains</guid>
+        <link>http://ymatuhin.ru/blog/cool_webinars_on_geekbrains</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/cool_webinars_on_geekbrains</guid>
         
         <category>вебинар</category>
         
         <category>школа программирования</category>
         
         
-        <category>all</category>
+        <category>blog</category>
         
       </item>
     
@@ -837,9 +887,13 @@
 &lt;h2&gt;Подготовка&lt;/h2&gt;
 &lt;p&gt;Для того, чтобы установить тему для dev tools, нужно включить экспериментальные функции. Чтобы это сделать введите в адресной строке Google Chrome &lt;code&gt;chrome://flags/#enable-devtools-experiments&lt;/code&gt;. Рядом с пунктом &lt;em&gt;Enable Developer Tools experiments&lt;/em&gt; нажмите &lt;em&gt;Enable&lt;/em&gt;. Теперь перезапустите браузер (внизу должна быть кнопка).&lt;/p&gt;
 
-&lt;img class=&quot;rounded bordered&quot; src=&quot;/img/dev_tools/flags.png&quot; alt=&quot;Google Chrome Flags&quot;&gt;
 
-&lt;p&gt;Откройте инструменты разработчика (cmd+shif+i / F12), зайдите в настройки (иконка шестеренки), перейдите во вкладку &lt;strong&gt;Experiments&lt;/strong&gt; и поставьте галочку рядом с пунктом «Allow custom UI themes».&lt;/p&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;700&quot; alt=&quot;Google Chrome — флаги&quot; src=&quot;/img/dev_tools/flags.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Google Chrome — флаги&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Откройте инструменты разработчика (&lt;code&gt;cmd + shif + i / F12&lt;/code&gt;), зайдите в настройки (иконка шестеренки), перейдите во вкладку &lt;strong&gt;Experiments&lt;/strong&gt; и поставьте галочку рядом с пунктом «Allow custom UI themes».&lt;/p&gt;
 &lt;p&gt;Теперь можно спокойно устанавливать темы из магазина.&lt;/p&gt;
 
 &lt;h2&gt;Поиск и установка тем&lt;/h2&gt;
@@ -847,22 +901,25 @@
 
 &lt;p&gt;Теперь переходим в магазин, выбираем нужную нам тему и устанавливаем её. Теперь при открытии инструментов разработчика вы увидите вашу тему.&lt;/p&gt;
 
-&lt;img src=&quot;/img/dev_tools/dev_tools.png&quot; alt=&quot;Google Chrome styled dev tools&quot;&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;1280&quot; alt=&quot;Стилизованая панель разработчика в Google Chrome&quot; src=&quot;/img/dev_tools/dev_tools.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Стилизованая панель разработчика в Google Chrome&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;Теперь немного о неприятном. Темы очень часто выглядят убого. Еще есть проблема с привыканием. К примеру, я привык, что если в консоли цифра синяя — это Number, а если красная — String. Но в каждой теме свои цвета, и становится сложнее в них ориентироваться.&lt;/p&gt;
 
 &lt;p&gt;Сейчас я не буду переходить на стилизованные dev tools. Однако если будет крутая, темная тема от Atom то я бы посмотрел на это.&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/styling_chrome_dev_tools</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/styling_chrome_dev_tools</guid>
+        <link>http://ymatuhin.ru/blog/styling_chrome_dev_tools</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/styling_chrome_dev_tools</guid>
         
         <category>Google</category>
         
         <category>dev tools</category>
         
         
-        <category>front-end</category>
+        <category>blog</category>
         
       </item>
     

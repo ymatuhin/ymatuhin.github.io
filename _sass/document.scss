@@ -14,12 +14,10 @@ html { overflow: hidden; }
 body {
     overflow: auto;
     position: relative;
-
     font-weight: 200;
     font: 18px/30px $font-text;
-    background: $color-bg;
     color: $color-text;
-
+    background-color: #141414;
     min-width: 380px;
 }
 

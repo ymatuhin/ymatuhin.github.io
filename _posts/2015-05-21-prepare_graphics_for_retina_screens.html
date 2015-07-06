@@ -1,27 +1,32 @@
 ---
 layout: post
-title: Подготавливаем графику на сайте для retina экранов
+title: Оптимизация верстки под retina дисплеи
+description: >
+  Подготавливаем верску сайта под ретина дисплеи, оптимизируем верстку и изображения.
 redirect_from:
   - /front-end/prepare_graphics_for_retina_screens/
 categories: blog
+keywords: >
+  retina верстка изображения дисплеи ретина картинка графика оптимизация сайт
 tags: [retina, photoshop, графика]
 image: /img/retina/retinizeit.png
 ---
 
 <p>Сейчас, с большой популярностью MacBook-ов, айфонов и других устройств с большим DPI, изображения на сайте нужно оптимизировать, чтобы они не были смазанными. Для этого у нас есть несколько решений. Самые популярные это сделать иконочный шрифт или использовать SVG. Но что если нет возможности или не хочется с этим иметь дело, или вы очень любите PNG. Решение конечно же есть. В виде плагина для Photoshop, js-библиотеки и sass/less/stylus примеси.</p>
 
-<h2><a id="theory" href="#theory" class="short-link">#</a> Теория</h2>
+<h2><a id="theory" href="#theory" class="short-link">#</a> Теория подготовки сайта к Retina дисплеям</h2>
 <p>Я буду объяснять своими словами. Из-за того что плотность точек на retina экранах больше, изображение оказывается размытым (поскольку растягивается). Чтобы это побороть, нужно использовать изображение в 2 или 3 раза больше оригинального и масштабировать средствами html и css до размеров x1. Тогда на retina экранах изображение будет выглядеть отлично. Но для этого нужно сначала нарезать 2 или 3 размера изображений, а потом использовать js библиотеку и примесь в препроцессоре (для удобства). Обо всем по порядку...</p>
 
 <h2><a id="retinize_it" href="#retinize_it" class="short-link">#</a> Photoshop плагин Retinize It</h2>
 
-<img class="rounded bordered" src="/img/retina/retinizeit.png" alt="Retinize It логотип / Retinize It logo">
-
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="520" alt="Retinize It — плагин для фотошопа для оптимизации графики под ретина" src="/img/retina/retinizeit.png">
+	<figcaption itemprop="description">Retinize It — плагин для фотошопа для оптимизации графики под ретина</figcaption>
+</figure>
 
 <p>Как написано на официальном сайте: «Лучший плагин к Photoshop для оптимизации графики на сайте для iOS и Retina-дисплеев». Скачать его можно на <a href="http://retinize.it/">странице проекта</a>.</p>
 
 <p>Плагин представляет собой записанные действия, которые можно будет воспроизводить через горячие клавиши или пункты меню. Плагин выделяет слои, создает новый файл с ними, делает трим (обрезку краев) и сохраняет изображение в 1-м, 2-х или 3-х размерах.</p>
-
 
 <p>Работать с ним очень просто:</p>
 <ol>
@@ -31,16 +36,19 @@ image: /img/retina/retinizeit.png
     <li>Получите ваши нарезанные изображения</li>
 </ol>
 
-<img class="rounded bordered" src="/img/retina/install.png" alt="Как работает Retinize It">
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="940" alt="Как работает плагин Retinize It" src="/img/retina/install.png">
+	<figcaption itemprop="description">Как работает плагин Retinize It</figcaption>
+</figure>
 
 <p>Для дальнейшего использования рекомендую сохранять файлы с постфиксами @2x, @3x. К примеру: <code>file.png</code>, <code>file@2x.png</code>, <code>file@3x.png</code>.</p>
-
 
 <h2><a id="retina_js" href="#retina_js" class="short-link">#</a> Используем retina.js для тегов img</h2>
 <p>Тут все просто, подключаем js библиотеку, и она определит нужно ли загружать изображение для retina экранов. Если нужно, то ссылка на исходный файл заменяется на <code>***@2x.***</code> или <code>***@3x.***</code>.</p>
 
 <h2><a id="less_mixin" href="#less_mixin" class="short-link">#</a> Примесь для LESS</h2>
-<p>Скачать примесь можно <a href="http://imulus.github.io/retinajs/">на сайте</a>.</p>
+<p>Скачать примесь можно <a href="http://imulus.github.io/retinajs/" rel="nofollow">на сайте</a>.</p>
 
 <p>После подключения она будет доступна для использования. Написав следующее: <code>.at2x(@path, @width, @height);</code> (вместо @path, @width и @height нужно написать ваш путь к изображению и его размеры).</p>
 
@@ -66,6 +74,18 @@ image: /img/retina/retinizeit.png
 {% endhighlight %}
 
 
-<p>Подробнее о retina.js и примесях можно прочитать <a href="http://imulus.github.io/retinajs/">на сайте</a>, скачать можно там-же.</p>
+<p>Подробнее о retina.js и примесях можно прочитать <a href="http://imulus.github.io/retinajs/" rel="nofollow">на сайте</a>, скачать можно там-же.</p>
 
 <p>Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)</p>
+
+
+<footer class="keywords section-subtitle" role="contentinfo">
+	<h3>ретина изображения</h3>
+	<h3>верстка retina</h3>
+	<h3>картинка ретина</h3>
+	<h4>верстка ретина</h4>
+	<h4>верстка под retina</h4>
+	<h5>верстка под ретину</h5>
+	<h5>ретина оптимизация</h5>
+	<h5>оптимизация верстки под retina</h5>
+</footer>
