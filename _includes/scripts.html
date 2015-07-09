@@ -6,7 +6,7 @@
             try {
                 links[i].ontouchend = clickFn.bind(i);
             } catch (e) {}
-        })(i)
+        })(i);
 
         function clickFn (index) {
             window.location = links[index].getAttribute('href');
