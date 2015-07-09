@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Стиль написания кода на JavaScript
+title: Гайд по стилю кода на JavaScript от AirBnB
 description: >
   Общие рекомендации по стилю написания кода от Airbnb. Влючая сравнения производительности и лучшие практики.
 categories: blog
@@ -8,11 +8,10 @@ keywords: >
   front end собеседование работа вопросы перевод должность кандидат
 tags: [frontend, codestyle, javascript, лучшие практики]
 image: /img/styleguide/styleguide.jpg
-published: false
 ---
 
 <blockquote>
-    <p>Перевод AirBnB Style Guide — <a rel="nofollow" href="//github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> (en) на русский язык от команды Uprock. Подробнее на <a rel="nofollow" href="//habrahabr.ru/company/uprock/blog/204848/">хабре</a>.</p>
+    <p>Перевод AirBnB Style Guide — <a rel="nofollow" href="//github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> (en) на русский язык от команды Uprock. За что им огромное спасибо! Подробнее о переводе на <a rel="nofollow" href="//habrahabr.ru/company/uprock/blog/204848/">хабре</a>.</p>
 </blockquote>
 
 <figure itemscope itemtype="//schema.org/ImageObject">
@@ -20,7 +19,7 @@ published: false
 	<figcaption itemprop="description">Нельзя просто взять и следовать стилю написания кода на JavaScript</figcaption>
 </figure>
 
-<p>Стиль вашего кода, может сказать о вас достаточно много. Это один из показателей опытного разработчика. Помимо исключительно визуальной составляющей в переводе содержатся бенчмарки и рекомендации по производительности. Статья является отличным дополнением к <a href="/blog/front_end_developer_interview_quersions/">вопросам для собеседования кандидату на должность Front-end разработчика</a>. Будет чем блеснуть на собеседовании 😉</p>
+<p>Стиль вашего кода, может сказать о вас достаточно много. Это один из показателей опытного разработчика. Помимо исключительно визуальной составляющей,  в переводе содержатся бенчмарки и рекомендации по производительности. А в некоторых случаях, использование такого кодстайла, может избавить вас он проблем связанных с тонкостями языка. Статья является отличным дополнением к <a href="/blog/front_end_developer_interview_quersions/">вопросам для собеседования кандидату на должность Front-end разработчика</a> и к вашему скилу как разработчика 😉</p>
 
 <h2><a id="Оглавление" class="anchor" href="#Оглавление" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="TOC">Оглавление</a></h2>
 
@@ -87,7 +86,7 @@ bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span
 
 <span class="en">console</span><span class="c1">.log</span>(foo[<span class="c1">0</span>], bar[<span class="c1">0</span>]); <span class="c">// =&gt; 9, 9.</span></pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Объекты" class="anchor" href="#Объекты" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="objects">Объекты</a></h2>
@@ -130,7 +129,7 @@ bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span
   type<span class="k">:</span> <span class="s"><span class="pds">'</span>alien<span class="pds">'</span></span>
 };</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Массивы" class="anchor" href="#Массивы" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="arrays">Массивы</a></h2>
@@ -173,7 +172,7 @@ itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre><
   ...
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Строки" class="anchor" href="#Строки" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="strings">Строки</a></h2>
@@ -249,7 +248,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
   <span class="k">return</span> <span class="s"><span class="pds">'</span>&lt;ul&gt;&lt;li&gt;<span class="pds">'</span></span> <span class="k">+</span> items.<span class="c1">join</span>(<span class="s"><span class="pds">'</span>&lt;/li&gt;&lt;li&gt;<span class="pds">'</span></span>) <span class="k">+</span> <span class="s"><span class="pds">'</span>&lt;/li&gt;&lt;/ul&gt;<span class="pds">'</span></span>;
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Функции" class="anchor" href="#Функции" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="functions">Функции</a></h2>
@@ -300,7 +299,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
   <span class="c">// ...код...</span>
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Свойства" class="anchor" href="#Свойства" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="properties">Свойства</a></h2>
@@ -331,7 +330,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 
 <span class="k">var</span> isJedi <span class="k">=</span> getProp(<span class="s"><span class="pds">'</span>jedi<span class="pds">'</span></span>);</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Переменные" class="anchor" href="#Переменные" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="variables">Переменные</a></h2>
@@ -430,7 +429,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
   <span class="k">return</span> <span class="c1">true</span>;
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Области-видимости" class="anchor" href="#Области-видимости" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="hoisting">Области видимости</a></h2>
@@ -511,7 +510,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Более подробно можно прочитать в статье <a rel="nofollow" href="//www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting">JavaScript Scoping &amp; Hoisting</a> от <a rel="nofollow" href="//www.adequatelygood.com/">Ben Cherry</a></p>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Условные-выражения-и-равенства" class="anchor" href="#Условные-выражения-и-равенства" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="conditionals">Условные выражения и равенства</a></h2>
@@ -556,7 +555,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Более подробно можно прочитать в статье <a rel="nofollow" href="//javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108">Truth Equality and JavaScript</a> от Angus Croll</p>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Блоки-кода" class="anchor" href="#Блоки-кода" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="blocks">Блоки кода</a></h2>
@@ -584,7 +583,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
   <span class="k">return</span> <span class="c1">false</span>;
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Комментарии" class="anchor" href="#Комментарии" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="comments">Комментарии</a></h2>
@@ -666,7 +665,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
   <span class="k">return</span> <span class="v">this</span>;
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Пробелы" class="anchor" href="#Пробелы" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="whitespace">Пробелы</a></h2>
@@ -752,7 +751,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
     .attr(<span class="s"><span class="pds">'</span>transform<span class="pds">'</span></span>, <span class="s"><span class="pds">'</span>translate(<span class="pds">'</span></span> <span class="k">+</span> (radius <span class="k">+</span> margin) <span class="k">+</span> <span class="s"><span class="pds">'</span>,<span class="pds">'</span></span> <span class="k">+</span> (radius <span class="k">+</span> margin) <span class="k">+</span> <span class="s"><span class="pds">'</span>)<span class="pds">'</span></span>)
     .<span class="c1">call</span>(tron.led);</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Запятые" class="anchor" href="#Запятые" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="commas">Запятые</a></h2>
@@ -813,7 +812,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
     <span class="s"><span class="pds">'</span>Superman<span class="pds">'</span></span>
   ];</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Точки-с-запятой" class="anchor" href="#Точки-с-запятой" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="semicolons">Точки с запятой</a></h2>
@@ -839,7 +838,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
   <span class="k">return</span> name;
 })();</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Приведение-типов" class="anchor" href="#Приведение-типов" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="type-coercion">Приведение типов</a></h2>
@@ -910,7 +909,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <span class="c">// хорошо</span>
 <span class="k">var</span> hasAge <span class="k">=</span> <span class="k">!!</span>age;</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Соглашение-об-именовании" class="anchor" href="#Соглашение-об-именовании" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="naming-conventions">Соглашение об именовании</a></h2>
@@ -1007,7 +1006,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
   <span class="en">console</span><span class="c1">.log</span>(msg);
 };</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Геттеры-и-сеттеры-функции-для-доступа-к-значениям-объекта" class="anchor" href="#Геттеры-и-сеттеры-функции-для-доступа-к-значениям-объекта" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="accessors">Геттеры и сеттеры: функции для доступа к значениям объекта</a></h2>
@@ -1054,7 +1053,7 @@ dragon.setAge(<span class="c1">25</span>);</pre></div></li>
   <span class="k">return</span> <span class="v">this</span>[key];
 };</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Конструкторы" class="anchor" href="#Конструкторы" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="constructors">Конструкторы</a></h2>
@@ -1131,7 +1130,7 @@ luke.jump()
   <span class="k">return</span> <span class="s"><span class="pds">'</span>Jedi - <span class="pds">'</span></span> <span class="k">+</span> <span class="v">this</span>.getName();
 };</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="События" class="anchor" href="#События" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="events">События</a></h2>
@@ -1160,7 +1159,7 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
   <span class="c">// делаем что-нибудь с data.listingId</span>
 });</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Модули" class="anchor" href="#Модули" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="modules">Модули</a></h2>
@@ -1190,7 +1189,7 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
   <span class="c1">global</span>.FancyInput <span class="k">=</span> FancyInput;
 }(<span class="v">this</span>);</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="jquery" class="anchor" href="#jquery" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="jquery">jQuery</a></h2>
@@ -1245,7 +1244,7 @@ $(<span class="s"><span class="pds">'</span>.sidebar &gt; ul<span class="pds">'<
 <span class="c">// хорошо</span>
 $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>ul<span class="pds">'</span></span>);</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Совместимость-ecmascript-5" class="anchor" href="#Совместимость-ecmascript-5" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="es5">Совместимость ECMAScript 5</a></h2>
@@ -1253,7 +1252,7 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <ul>
 <li><p>Опирайтесь на <a rel="nofollow" href="//kangax.github.com/es5-compat-table/">таблицу совместимости</a> с ES5 от <a rel="nofollow" href="//twitter.com/kangax/">Kangax</a></p>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Тестирование" class="anchor" href="#Тестирование" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="testing">Тестирование</a></h2>
@@ -1265,7 +1264,7 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
   <span class="k">return</span> <span class="c1">true</span>;
 }</pre></div>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Быстродействие" class="anchor" href="#Быстродействие" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="performance">Быстродействие</a></h2>
@@ -1280,7 +1279,7 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <li><a rel="nofollow" href="//jsperf.com/ya-string-concat">Long String Concatenation</a></li>
 <li><p>В процессе наполнения...</p>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="Ресурсы" class="anchor" href="#Ресурсы" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="resources">Ресурсы</a></h2>
@@ -1346,7 +1345,7 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <li><a rel="nofollow" href="//dustindiaz.com/">Dustin Diaz</a></li>
 <li><p><a rel="nofollow" href="//net.tutsplus.com/?s=javascript">nettuts</a></p>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p></li>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
 
 <h2><a id="В-реальном-мире" class="anchor" href="#В-реальном-мире" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="in-the-wild">В реальном мире</a></h2>
@@ -1376,4 +1375,4 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <li><strong>ZocDoc</strong>: <a rel="nofollow" href="//github.com/ZocDoc/javascript">ZocDoc/javascript</a></li>
 </ul>
 
-<p><strong><a href="#%D0%9E%D0%B3%D0%BB%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">[⬆]</a></strong></p>
+<p><strong><a href="#Оглавление">[⬆]</a></strong></p>
