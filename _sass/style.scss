@@ -152,7 +152,7 @@ blockquote {
     border-left: 3px solid #1ABC9C;
     padding-left: 30px;
     margin: 30px 0;
-    font-size: 1.25em;
+    font-size: 1.125em;
     line-height: 1.7;
 }
 blockquote > p {
@@ -470,7 +470,8 @@ h4 + p {
 }
 .social li {
     list-style: none;
-    display: inline;
+    display: inline-block;
+    vertical-align: top;
     margin: 0 10px;
 }
 .social li:last-child {
@@ -631,56 +632,6 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
     transition: all 150ms linear;
 }
 
-/* ---------------------
------   A bit of responsiveness   -----
--------------------------*/
-
-@media all and (max-width: 940px) {
-    .main-header.regular {
-        height: auto;
-    }
-    .main-header.regular .vertical-container {
-        padding: 30px 0;
-    }
-    .main-header.regular .vertical-container, .main-footer .vertical-container {
-        text-align: center;
-    }
-    .main-header.regular header, .main-header.regular #main-nav, .copy, .social {
-        float: none;
-    }
-}
-
-@media all and (max-width: 840px) {
-    .main-content .wrapper {
-        margin: 75px auto 30px;
-    }
-    .wrapper {
-        padding: 0 15px;
-    }
-    .one-half {
-        width: 100%;
-    }
-}
-
-/* If you're using a "wacky" portfolio grid, it should be fixed when the
-        browser resizes below 1040px */
-
-@media all and (max-width: 1140px) {
-
-    .projects-list {
-        width: 100%;
-        margin-left: 0;
-    }
-    .projects-list li, .projects-list a {
-        float: none;
-        max-width: 100%;
-    }
-    .projects-list li {
-        margin: 20px 0 0 0 !important;
-    }
-
-}
-
 .main-header:hover .search,
 .search:hover {
     input,
@@ -730,6 +681,7 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         height: 45px;
         margin-left: -3px;
         width: 210px;
+        border-radius: 0;
 
         -moz-appearance:none;
         -webkit-appearance:none;
@@ -757,4 +709,87 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         height: 45px;
         margin-right: -3px;
     }
+}
+
+
+
+/* ---------------------
+-----   A bit of responsiveness   -----
+-------------------------*/
+
+@media all and (max-width: 940px) {
+    .main-header.regular {
+        height: auto;
+    }
+    .main-header.regular .vertical-container {
+        padding: 30px 0;
+    }
+    .main-header.regular .vertical-container, .main-footer .vertical-container {
+        text-align: center;
+    }
+    .main-header.regular header, .main-header.regular #main-nav, .copy, .social {
+        float: none;
+    }
+}
+
+@media all and (max-width: 840px) {
+    .main-content .wrapper {
+        margin: 75px auto 30px;
+    }
+    .wrapper {
+        padding: 0 15px;
+    }
+    .one-half {
+        width: 100%;
+    }
+    #posts-list a {
+        padding-left: 0;
+    }
+    .search {
+        right: 0;
+    }
+    #main-nav {
+        margin-top: 10px;
+
+        .home & {
+            margin-top: 25px;
+        }
+
+        a {
+            margin: 5px;
+        }
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    blockquote {
+        padding-left: 15px;
+        font-size: 1.125em;
+        line-height: 1.5;
+    }
+    blockquote > p {
+       padding: 7.5px 0;
+    }
+}
+
+/* If you're using a "wacky" portfolio grid, it should be fixed when the
+        browser resizes below 1040px */
+
+@media all and (max-width: 1140px) {
+
+    .projects-list {
+        width: 100%;
+        margin-left: 0;
+    }
+    .projects-list li, .projects-list a {
+        float: none;
+        max-width: 100%;
+    }
+    .projects-list li {
+        margin: 20px 0 0 0 !important;
+    }
+
 }
