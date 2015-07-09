@@ -773,6 +773,14 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
     blockquote > p {
        padding: 7.5px 0;
     }
+
+    .search {
+        input,
+        button {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 /* If you're using a "wacky" portfolio grid, it should be fixed when the
