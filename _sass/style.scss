@@ -421,11 +421,11 @@ h4 + p {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin: 0;
 }
 
 .post-nav a.to-left { float: left; }
 .post-nav a.to-right { float: right; }
-
 
 /* ---------------------
 -----   List   -----
@@ -780,6 +780,10 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
             opacity: 1;
             visibility: visible;
         }
+    }
+    .post-nav a.button {
+        max-width: 100%;
+        float: none;
     }
 }
 
