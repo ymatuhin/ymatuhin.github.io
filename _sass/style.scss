@@ -42,12 +42,14 @@ a.button:hover {
 body,
 #posts-list h3,
 #posts-list h6 {
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: -apple-system,
+      ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #posts-list abbr, .main-footer, .projects-list span {
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-family: -apple-system,
+      ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -205,14 +207,14 @@ h4 + p {
     text-transform: none;
 }
 .main-header.regular #main-title {
-    font-size: 52px;
+    font-size: 48px;
     line-height: 45px;
 }
 
 #main-subtitle {
     margin: 0;
     font-size: 24px;
-    line-height: 45px;
+    line-height: 30px;
     font-weight: 400;
     /* padding-bottom: 8px; */
 }
@@ -305,7 +307,7 @@ h4 + p {
 
 .main-header.regular {
     /* height: 250px; */
-    height: 150px;
+    height: 117px;
     border-bottom: 3px solid #1ABC9C;
 }
 .main-header.regular .vertical-container {
@@ -313,7 +315,7 @@ h4 + p {
 }
 .main-header.regular #main-nav {
     float: right;
-    margin-top: 17.5px;
+    margin-top: 10px;
 }
 .main-header.regular header {
     float: left;
@@ -329,23 +331,23 @@ h4 + p {
     padding: 0 40px;
 }
 .main-content .wrapper {
-    margin: 90px auto;
+    margin: 75px auto;
 }
 
 .page-wrap {
     position: relative;
     background: #fff;
     min-height: 100%;
-    margin-bottom: -120px; /* footer heigth */
+    margin-bottom: -117px; /* footer heigth */
 }
 .page-wrap:after {
     content: "";
     display: block;
-    height: 120px; /* footer heigth */
+    height: 117px; /* footer heigth */
 }
 
 .page-content {
-    margin-top: 60px;
+    margin-top: 45px;
 }
 .main-content .page-content:first-child {
     margin-top: 0;
@@ -440,7 +442,7 @@ h4 + p {
     display: table;
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 117px;
 
     border-top: 3px solid #1ABC9C;
     background-position: 50% 50%;
@@ -664,7 +666,8 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         border: 0;
         padding: 0;
         margin: 0;
-        font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-family: -apple-system,
+      ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
         font-weight: 300;
         cursor: default;
         visibility: hidden;
