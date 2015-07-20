@@ -1,11 +1,17 @@
+{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+
+{% capture page_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+
+{% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
+
 <noindex>
     <span class="section-subtitle">
         Поделиться записью в
-        <a href="http://vk.com/share.php?url={{ site.url}}{{ page.url }}/&amp;title={{ page.title }}&amp;description={{ page.description }}&amp;image={{ post.image }}" target="_blank">VK</a>,
-        <a href="https://twitter.com/home?status={{ page.title }} — {{ site.url}}{{ page.url }}/" target="_blank">Twitter</a>,
-        <a href="https://www.facebook.com/share.php?u={{ site.url}}{{ page.url }}/&amp;title={{ page.title }}&amp;p[images][0]={{ post.image }}" target="_blank">Facebook</a>,
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url}}{{ page.url }}&amp;title={{ page_title }}&amp;summary={{page_description}}&amp;source={{ site.url}}{{ page.url }}/" target="_blank">LinkedIn</a>,
+        <a href="http://vk.com/share.php?url={{ page_url }}/&amp;title={{ page_title }}&amp;description={{ page_description }}&amp;image={{ post.image }}" target="_blank">VK</a>,
+        <a href="https://twitter.com/home?status={{ page_title }} — {{ page_url }}/" target="_blank">Twitter</a>,
+        <a href="https://www.facebook.com/share.php?u={{ page_url }}/&amp;title={{ page_title }}&amp;p[images][0]={{ post.image }}" target="_blank">Facebook</a>,
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page_url }}&amp;title={{ page_title }}&amp;summary={{page_description}}&amp;source={{ page_url }}/" target="_blank">LinkedIn</a>,
 
-        <a href="https://plus.google.com/share?url={{ site.url}}{{ page.url }}/" target="_blank">Google+</a>
+        <a href="https://plus.google.com/share?url={{ page_url }}/" target="_blank">Google+</a>
     </span>
 </noindex>
