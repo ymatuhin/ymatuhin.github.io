@@ -22,6 +22,7 @@ compress_html:
   endings: all
   ignore:
     envs: []
+source: ./
 destination: ../dist
 
 # Build settings
