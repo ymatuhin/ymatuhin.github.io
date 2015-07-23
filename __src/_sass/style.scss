@@ -387,7 +387,7 @@ h4 + p {
     line-height: 12px;
     font-weight: bold;
     color: #95A5A6;
-    width: 115px;
+    width: 124px;
     text-transform: uppercase;
     float: left;
     padding-top: 26px;
@@ -807,4 +807,18 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         margin: 20px 0 0 0 !important;
     }
 
+}
+
+summary {
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+details[open] summary {
+    background: #16A085;
 }

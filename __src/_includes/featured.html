@@ -52,8 +52,8 @@
 {% endcapture %}
 
 <div>
-    <h4>Похожие публикации</h4>
     {% if count == 1 %}
+        <h4>Последние публикации</h4>
     	<ul id="posts-list" class="hfeed" style="margin-top:0">
     		{% for post in site.related_posts limit:5 %}
                 <li class="clearfix">
@@ -66,20 +66,9 @@
     		{% endfor %}
     	</ul>
     {% else %}
+        <h4>Похожие публикации</h4>
     	<ul id="posts-list" style="margin-top:0">
-    		{% assign needPosts = 6 | minus: count %}
     		{{ related_posts }}
-
-    		{% for post in site.related_posts limit: needPosts %}
-                <li class="clearfix">
-                    <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
-                        <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
-                        <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
-                        <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h6 itemprop="headline">{{ post.title }}</h6></a>
-                        <noindex><address itemprop="author" class="vcard author visuallyhidden"><a class="url fn" href="/about/">Юрий Матюхин</a></address></noindex>
-                    </article>
-                </li>
-    		{% endfor %}
     	</ul>
     {% endif %}
 </div>
