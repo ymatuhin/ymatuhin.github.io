@@ -10,12 +10,12 @@
 			</header>
 
 			<nav id="main-nav" role="navigation">
-				{% if page.url == '/blog/index.html' or page.url == '/blog/' %}
+				{% if page.url == '/index.html' or page.url == '/' %}
 					<a class="active">Блог</a><!--
 				{% elsif page.url contains '/blog/' %}
-					<a href="/blog/" class="active">Блог</a><!--
+					<a href="/" class="active">Блог</a><!--
 				{% else %}
-					<a href="/blog/">Блог</a><!--
+					<a href="/">Блог</a><!--
 				{% endif %}
 
 				{% if page.url == '/projects/' %}

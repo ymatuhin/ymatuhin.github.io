@@ -6,7 +6,7 @@ url: "http://ymatuhin.ru" # the base hostname & protocol for your site
 twitter_username: ymatuhin
 github_username: ymatuhin
 paginate: 15
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 permalink: /:categories/:title
 related_posts_max: 5
 gems:
