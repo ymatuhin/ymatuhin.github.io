@@ -6,9 +6,83 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jul 2015 12:42:07 +0300</pubDate>
-    <lastBuildDate>Thu, 23 Jul 2015 12:42:07 +0300</lastBuildDate>
+    <pubDate>Thu, 23 Jul 2015 14:08:12 +0300</pubDate>
+    <lastBuildDate>Thu, 23 Jul 2015 14:08:12 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Вопросы и ответы на собеседовании разработчика интерфейсов&amp;nbsp;#1</title>
+        <description>&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Разбор вопросов на собеседовании разработчика интерфейсов #1&quot; src=&quot;/img/front_end_interview/head.jpg&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Разбор вопросов на собеседовании разработчика интерфейсов #1&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Это первый пост из серии ответов на вопросы, которые спрашивают у разработчиков интерфейсов на собеседованиях. Я разберу интересную задачку, которая мне встретилась только один раз и сильно меня впечатлила. Если вы собеседуете разработчиков, можете так-же задавать этот вопрос во время собеседований.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;source&quot; href=&quot;#source&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; Исходные данные&lt;/h2&gt;
+
+&lt;p&gt;Пустая &lt;code&gt;html&lt;/code&gt; страница, открытая в последней версии хрома, в которой мы написали следующий код:&lt;/p&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Задача на собеседовании разработчика интерфейсов #1&quot; src=&quot;/img/front_end_interview/ex/tree.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Задача на собеседовании разработчика интерфейсов #1&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;&lt;a id=&quot;question&quot; href=&quot;#question&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; Вопросы&lt;/h2&gt;
+&lt;ul&gt;
+    &lt;li&gt;Что мы увидим, когда откроем страницу?
+    &lt;li&gt;Как будет выглядеть DOM дерево?
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a id=&quot;answer&quot; href=&quot;#answer&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; Ответы&lt;/h2&gt;
+&lt;details&gt;
+    &lt;summary&gt;Что мы увидим, когда откроем страницу?&lt;/summary&gt;
+
+    &lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+    	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Задача на собеседовании разработчика интерфейсов #1 — Скриншот демо страницы&quot; src=&quot;/img/front_end_interview/ex/view.png&quot;&gt;
+    	&lt;figcaption itemprop=&quot;description&quot;&gt;Скриншот демо страницы — Задача на собеседовании разработчика интерфейсов #1&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;p&gt;&lt;strong&gt;Удивлены?&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;Чтобы понять почему произошло именно так, нужно посмотреть в DOM получившееся дерево. Мне смотря на код было понятно, что все надписи будут на новой строке. Но откуда взялся отступ после первой строки?&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;Как будет выглядеть DOM дерево?&lt;/summary&gt;
+
+    &lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+    	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;DOM дерево страницы — Задача на собеседовании разработчика интерфейсов #1&quot; src=&quot;/img/front_end_interview/ex/dom.png&quot;&gt;
+    	&lt;figcaption itemprop=&quot;description&quot;&gt;DOM дерево страницы — Задача на собеседовании разработчика интерфейсов #1&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;p&gt;Многие слышали, что внутри тега &lt;code&gt;p&lt;/code&gt; не должно быть блочных элементов, но не все видели это на практике. Любопытно что &lt;code&gt;Text3&lt;/code&gt; остался вообще без тегов, а после него стоит пустой &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/demo/interview/tree/&quot;&gt;Демо&lt;/a&gt;&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;p&gt;Вот такие интересные вопросы, встречаются на собеседованиях у front end разработчиков. А какие интересные вопросы знаете вы? 😉&lt;/p&gt;
+
+&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+    &lt;h3&gt;вопросы задаваемые +на собеседовании&lt;/h3&gt;
+    &lt;h4&gt;ответы +при собеседовании +на работу&lt;/h4&gt;
+    &lt;h4&gt;вопросы +для собеседования +на работу&lt;/h4&gt;
+    &lt;h5&gt;собеседование разработчика вопросы +и ответы&lt;/h5&gt;
+    &lt;h5&gt;собеседование программиста&lt;/h5&gt;
+&lt;/footer&gt;
+</description>
+        <pubDate>Fri, 24 Jul 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/frontend_interview_answers</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/frontend_interview_answers</guid>
+        
+        <category>работа</category>
+        
+        <category>собеседование</category>
+        
+        <category>вопросы</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Используем новый системный шрифт San Franciso от Apple</title>
@@ -1911,109 +1985,6 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
         <category>photoshop</category>
         
         <category>графика</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Разбираемся со сборкой front end на Gulp</title>
-        <description>&lt;p&gt;В последнее время &lt;strong&gt;Gulp&lt;/strong&gt; набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем &lt;strong&gt;Grunt&lt;/strong&gt;. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.&lt;/p&gt;
-
-&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;400&quot; alt=&quot;Собираем front end на gulp&quot; src=&quot;/img/gulp/logo.png&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Собираем front end на gulp&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt;&lt;a id=&quot;what_is&quot; href=&quot;#what_is&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что такое Gulp?&lt;/h2&gt;
-
-&lt;p&gt;Gulp — это инструмент сборки front-a. Он позволяет автоматизировать повторяющиеся задачи (сборка и минификация CSS- и JS-файлов, запуск тестов, перезагрузка браузера и другие). Тем самым Gulp ускоряет и оптимизирует процесс веб-разработки.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;install&quot; href=&quot;#install&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Установка Gulp&lt;/h2&gt;
-&lt;p&gt;Установить Gulp достаточно легко. Если у вас что-то не получится, пишите в комментариях или загуглите вашу проблему. Итак для установки нужно сделать 3 шага:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Установить Gulp глобально;&lt;/li&gt;
-&lt;li&gt;Установить Gulp как &lt;code&gt;devDependencies&lt;/code&gt; (зависимости для разработки);&lt;/li&gt;
-&lt;li&gt;Создать файл &lt;code&gt;gulpfile.js&lt;/code&gt;;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Первый шаг — устанавливаем глобально Gulp. Открываем терминал и пишем:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --global gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;После этого вам нужно установить Gulp как &lt;code&gt;devDependencies&lt;/code&gt; для вашего проекта. Убедитесь в том, что у вас есть файл &lt;code&gt;package.json&lt;/code&gt;. Если его нет, то создайте его написав в консоль &lt;code&gt;npm init&lt;/code&gt;. Теперь можно установить Gulp как &lt;code&gt;devDependencies&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;И наконец, вам нужно создать &lt;code&gt;gulpfile.js&lt;/code&gt; в корне вашего проекта, который будет содержать ваши задачи (tasks). В качестве промежуточного шага, мы установим плагин &lt;code&gt;gulp-util&lt;/code&gt;. Чтобы показать как устанавливаются плагины:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install --save-dev gulp-util&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Теперь настало время написать нашу первую задачку. Открываем только что созданный файл &lt;code&gt;gulpfile.js&lt;/code&gt; и пишем в него следующее:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/* File: gulpfile.js */&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// собираем все наши плагины&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;gutil&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;gulp-util&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// создаем задачку, которая будет выполняться по умолчанию&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gutil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Gulp is running!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;И теперь нам остается запустить gulp в терминале и мы увидим нечто похожее на это:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; gulp
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Using gulpfile ~/Projects/gulp-scotch-io/gulpfile.js
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Starting &lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;...
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Gulp is running!
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12:32:08&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; Finished &lt;span class=&quot;s1&quot;&gt;&amp;#39;default&amp;#39;&lt;/span&gt; after &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; ms&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2&gt;&lt;a id=&quot;overview&quot; href=&quot;#overview&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Обзор&lt;/h2&gt;
-&lt;p&gt;Сам по себе Gulp очень скуден на возможности. Но все, что вам нужно вынесено в отдельные плагины. Они совместно с Gulp творят чудеса.&lt;/p&gt;
-
-&lt;p&gt;Api у gulp очень маленькое, и содержит всего 4 функции высшего порядка:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;gulp.task&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gulp.src&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gulp.dest&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gulp.watch&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;gulp.task&lt;/code&gt; определяет наши задачи. В качестве аргументов принимает название, зависимости (массив) и функцию (основные действия). Зависимостей может и не быть:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;mytask&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;//сделать что-то&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;dependenttask&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;mytask&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;//сделать что-то после того, как &amp;#39;mytask&amp;#39; будет выполнен&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code&gt;gulp.src&lt;/code&gt; указывает на файлы, которые мы хотим использовать. Он использует &lt;code&gt;.pipe&lt;/code&gt; доступа к файлам через плагины.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;gulp.dest&lt;/code&gt; указывает на папку, в которую мы хотим сохранить измененные файлы.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;gulp.src&lt;/code&gt; и &lt;code&gt;gulp.dest&lt;/code&gt; используется для простой копии файлов:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;copyHtml&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// скопировать все html файлы из source/ в public/&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;source/*.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;public&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;В gulp встроена система реагирования на изменения файлов (&lt;code&gt;gulp.watch&lt;/code&gt;). Вы можете использовать эту задачу для запуска других необходимых вам задач при изменении файлов.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;source/**/*.html&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;copyHtml&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Этот пример будет выполнять задачу &lt;code&gt;copyHtml&lt;/code&gt; когда любой html файл в папке source изменится.&lt;/p&gt;
-
-&lt;p&gt;В следующей статье мы разберемся подробнее о задачах, синхронность и асинхронностью и напишем что-нибудь полезное.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 17 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/see_into_gulp</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/see_into_gulp</guid>
-        
-        <category>gulp</category>
-        
-        <category>frontend</category>
-        
-        <category>сборка</category>
         
         
         <category>blog</category>

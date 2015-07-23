@@ -809,16 +809,39 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
 
 }
 
-summary {
-    background: #333;
-    color: #fff;
+details {
     border-radius: 5px;
-    padding: 5px 10px;
-    outline: none;
+    background: #34495e;
+    color: #fff;
     margin-bottom: 20px;
-    user-select: none;
-}
 
-details[open] summary {
-    background: #16A085;
+    code {
+        color: $color-text;
+    }
+
+    summary {
+        background: #34495e;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        outline: none;
+        margin-bottom: 20px;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        cursor: pointer;
+    }
+
+    &[open] {
+        padding: 20px 20px 0;
+        overflow: hidden;
+
+        summary {
+           background: #16A085;
+           margin-top: -20px;
+           margin-left: -20px;
+           margin-right: -20px;
+       }
+    }
 }
