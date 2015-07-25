@@ -9,7 +9,7 @@
 
 	{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {{ site.title }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
 
-	{% capture page_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+	{% capture page_url %}{{ page.url | replace:'index.html','' | replace: 'page2/', '' | replace: 'page3/', '' | replace: 'page4/', '' | replace: 'page5/', '' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
 
 	{% capture page_date %}{% if page.date %}{{ page.date | date: "%Y-%m-%d"}}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}{% endcapture %}
 
