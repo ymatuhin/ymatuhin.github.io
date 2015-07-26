@@ -1,0 +1,15 @@
+.post-nav {
+    margin-top: 60px;
+    clear: both;
+    position: relative;
+}
+
+.post-nav a {
+    position: relative;
+    max-width: 48%;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+}

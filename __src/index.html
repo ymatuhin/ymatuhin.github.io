@@ -15,15 +15,21 @@ s_description: >
 ---
 
 
-<ul id="posts-list" class="hfeed">
+<ul class="posts-list hfeed">
     {% for post in paginator.posts %}
         {% assign m = post.date | date: "%-m" %}
 
-        <li class="clearfix">
+        <li>
             <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
-                <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+                <a class="entry-title" rel="bookmark" href="{{ post.url }}/">
+                    <h3 itemprop="headline">
+                        {{ post.title }}
+                        &nbsp; <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }}&nbsp;{% include month.html %}&nbsp;{{ post.date | date: "%-Y"}}</abbr>
+                    </h3>
+                </a>
+
                 <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
-                <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h3 itemprop="headline">{{ post.title }}</h3></a>
+
                 <address itemprop="author" class="vcard author visuallyhidden"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
             </article>
         </li>
@@ -33,11 +39,11 @@ s_description: >
 <div role="navigation" class="post-nav clearfix">
 
       {% if paginator.previous_page %}
-        <a rel="next" href="{{ paginator.previous_page_path | replace: 'index.html', '' }}" class="button to-right">Позже</a>
+        <a rel="next" href="{{ paginator.previous_page_path | replace: 'index.html', '' }}" class="btn to-right">Позже</a>
       {% endif %}
 
       {% if paginator.next_page %}
-        <a rel="prev" href="{{ paginator.next_page_path }}" class="button to-left">Раньше</a>
+        <a rel="prev" href="{{ paginator.next_page_path }}" class="btn to-left">Раньше</a>
       {% endif %}
 
 </div>

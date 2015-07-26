@@ -10,10 +10,10 @@ is_post: true
 	<div class="main-content hfeed">
 		<article class="wrapper hentry" itemscope itemtype="http://schema.org/BlogPosting">
 
-			<header class="section-header">
-				<h1 class="section-title entry-title">{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
+			<header class="page-header">
+				<h1 class="page-header__title entry-title"><a id="title" href="#title" class="short-link">#</a>&nbsp;{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
 
-				<span class="section-subtitle">
+				<span class="page-header__sub-title">
 					{% assign m = page.date | date: "%-m" %}
 
 					<abbr class="published updated" title='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</abbr>
@@ -30,14 +30,16 @@ is_post: true
 			</section>
 
 			<aside role="complementary">
-				<blockquote>
+				<blockquote class="subscribe">
 					<p>Понравилась статья? Подпишись на <a href="//eepurl.com/bkY7hb" rel="nofollow">еженедельную рассылку</a> новых записей (или <a rel="nofollow"  href="//feeds.feedburner.com/ymatuhin/SHDd">RSS</a>), чтобы не пропустить новые заметки в блоге.</p>
+					<p>{% include share.html %}</p>
 				</blockquote>
 
 				{% include prev_next.html %}
 				<br>
 				{% include featured.html %}
 				<br>
+				<h4 class="featured">Комментарии</h4>
 				{% include comments.html %}
 			</aside>
 

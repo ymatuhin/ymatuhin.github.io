@@ -1,0 +1,147 @@
+.page-content {
+    margin-top: 45px;
+
+    h1, h2 {
+        font-weight: normal;
+    }
+
+    h2, h3, h4 {
+        line-height: 30px;
+        margin: 45px 0 15px;
+    }
+}
+
+
+
+.featured {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ---------------------
+-----   Figures   -----
+-------------------------*/
+
+img {
+    display: block;
+    margin: 0 auto;
+
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+iframe {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+figure {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px 0;
+    color: $cl-cloud;
+    text-shadow: 1px 1px 0px $cl-dark-green;
+
+    & > a {
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+    }
+
+    img,
+    iframe {
+        border: 2px solid $cl-green;
+    }
+
+    &.inline {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &.noborder img {
+        border: 0;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.gallery_half figure {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+
+    &:nth-child(2n) img,
+    &:nth-child(2n) iframe {
+        margin-left: -2px;
+    }
+}
+
+figcaption {
+    max-width: 100%;
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 15px 0;
+    background: $cl-green;
+    line-height: 1.4;
+
+    a {
+        font-style: italic;
+        color: $cl-cloud !important;
+    }
+}
+
+blockquote {
+    border-left: 3px solid $cl-green;
+    padding-left: 30px;
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+.subscribe {
+    font-size: 1.125em;
+}
+
+blockquote > p {
+   font-weight: 400;
+   margin: 0;
+   padding: 15px 0;
+}
+
+// code
+var, code, mark {
+    background: $cl-cloud;
+    padding: .1em .2em;
+    border-radius: 3px;
+    font-family: $font-code;
+}
+
+pre {
+    background: $cl-cloud;
+    border: 3px solid $cl-green;
+    font-family: $font-code;
+    font-size: 12px;
+    line-height: 19px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+// half part
+
+.one-half {
+    width: 45%;
+}
+.one-half.first {
+    float: left;
+}
+.one-half.last {
+    float: right;
+}
+
+// top margin
+.mt0 {
+    margin-top: 0 !important;
+}

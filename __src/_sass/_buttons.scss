@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 13px 20px 14px;
+    margin: 5px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    border: 2px solid $cl-green;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &,
+    &[href],
+    &[href]:hover,
+    &[href]:active {
+        color: $cl-green;
+    }
+}

@@ -2,16 +2,22 @@
 layout: page
 ---
 
-<ul id="posts-list">
+<ul class="posts-list">
   {% for post in site.posts %}
   {% for tag in post.tags %}
   {% if tag == page.tag %}
-  <li class="clearfix">
+  <li>
       {% assign m = post.date | date: "%-m" %}
       <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
-          <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+          <a class="entry-title" rel="bookmark" href="{{ post.url }}/">
+              <h3 itemprop="headline">
+                  {{ post.title }}
+                  <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}</abbr>
+              </h3>
+          </a>
+
           <meta itemprop="datePublished" content='{{ post.date | date: "%Y-%m-%d" }}'>
-          <a class="entry-title" rel="bookmark" href="{{ post.url }}/"><h6 itemprop="headline">{{ post.title }}</h6></a>
+
           <address itemprop="author" class="vcard author visuallyhidden"><a class="url fn" href="/about/">Юрий Матюхин</a></address>
       </article>
   </li>

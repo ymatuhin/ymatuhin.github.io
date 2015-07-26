@@ -8,17 +8,17 @@ layout: default
 	<div class="main-content">
 		<div class="wrapper">
 
-			<header class="section-header">
-				<h1 class="section-title">{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
+			<header class="page-header">
+				<h1 class="page-header__title">{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
 
 				{% if page.is_post %}
-					<span class="section-subtitle">
+					<span class="page-header__sub-title">
 						{% assign m = page.date | date: "%-m" %}
 
 						<time datetime="{{ page.date }}" pubdate="">{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</time>{% for tag in page.tags %}, <a class="tag_list_link" href="/tag/{{ tag | downcase | replace: ' ', '_' }}/">{{tag}}</a>{% endfor %}
 					</span>
 				{% else %}
-					<h2 class="section-subtitle">
+					<h2 class="page-header__sub-title">
 						{% if page.s_description %}
 							{{ page.s_description }}
 						{% else %}

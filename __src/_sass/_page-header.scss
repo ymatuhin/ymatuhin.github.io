@@ -1,0 +1,26 @@
+.page-header {
+    &__title {
+        margin: 0;
+        line-height: 45px;
+        text-transform: uppercase;
+        font-weight: normal;
+
+        @media (max-width: $md-footer) {
+            font-size: 30px;
+        }
+    }
+
+    &__sub-title {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 18px;
+        color: $cl-asbestos;
+        padding: 6px 0;
+        margin: 0;
+
+        abbr {
+            border: 0;
+            font-weight: bold;
+        }
+    }
+}

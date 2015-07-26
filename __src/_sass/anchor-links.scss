@@ -1,9 +1,17 @@
 /* Anchor links */
 .short-link {
-    opacity: 1;
     border: 0;
-    /* margin-left: -0.83em; */
+    font-weight: normal;
+    margin-left: -0.83em;
 
-    -webkit-transition: opacity .3s 1s;
-    transition: opacity .3s 1s;
+    @media (max-width: $md-footer) {
+        margin-left: 0;
+    }
+}
+
+.page-header__title .short-link {
+    @media (max-width: $md-footer) {
+        margin-left: -0.83em;
+        visibility: hidden;
+    }
 }

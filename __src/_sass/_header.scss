@@ -1,0 +1,70 @@
+.header-box {
+    position: relative;
+    min-height: 117px;
+    box-shadow: 0 0 0 3px $cl-green;
+    background: $cl-midnight;
+    color: $cl-white;
+    padding: 20px 0;
+
+    @media (max-width: $md-header) {
+        text-align: center;
+    }
+}
+
+.header {
+    float: left;
+
+    &__link[href] {
+        color: $cl-white;
+        display: inline-block;
+        vertical-align: top;
+        border: 0;
+        background: transparent;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: -webkit-gradient(linear,  left top,  right bottom,
+                color-stop(0%, rgba(255, 0, 0, 1)),
+                color-stop(15%, rgba(255, 255, 0, 1)),
+                color-stop(30%, rgba(0, 255, 0, 1)),
+                color-stop(50%, rgba(0, 255, 255, 1)),
+                color-stop(65%, rgba(0, 0, 255, 1)),
+                color-stop(80%, rgba(255, 0, 255, 1)),
+                color-stop(100%, rgba(255, 0, 0, 1)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__title,
+    &__sub-title {
+        margin: 0;
+    }
+
+    &__title {
+        margin-left: -.04em;
+        margin-top: 1px;
+        font-size: 48px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    &__sub-title {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    @media (max-width: $md-header) {
+        float: none;
+
+        .header__title {
+            margin: 0;
+            font-size: 35px;
+            line-height: 30px;
+        }
+
+        .header__sub-title { font-size: 20px; }
+    }
+}

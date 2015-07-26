@@ -1,0 +1,30 @@
+.main-nav {
+    float: right;
+    margin-top: 11px;
+
+    .btn,
+    .btn[href] {
+        color: $cl-white;
+        border-color: $cl-white;
+        margin-left: 0;
+
+        &.active {
+            background: $cl-white;
+            color: $cl-asphalt;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: $md-header) {
+        float: none;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .btn {
+            padding: 11px;
+        }
+    }
+}

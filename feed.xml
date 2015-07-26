@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Jul 2015 13:23:24 +0300</pubDate>
-    <lastBuildDate>Sat, 25 Jul 2015 13:23:24 +0300</lastBuildDate>
+    <pubDate>Sun, 26 Jul 2015 23:53:16 +0300</pubDate>
+    <lastBuildDate>Sun, 26 Jul 2015 23:53:16 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -61,7 +61,7 @@
 
 &lt;p&gt;Вот такие интересные вопросы, встречаются на собеседованиях у front end разработчиков. А какие интересные вопросы знаете вы? 😉&lt;/p&gt;
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
     &lt;h3&gt;вопросы задаваемые +на собеседовании&lt;/h3&gt;
     &lt;h4&gt;ответы +при собеседовании +на работу&lt;/h4&gt;
     &lt;h4&gt;вопросы +для собеседования +на работу&lt;/h4&gt;
@@ -127,7 +127,7 @@
 
 &lt;p&gt;Подсмотрено у &lt;a href=&quot;http://furbo.org/2015/07/09/i-left-my-system-fonts-in-san-francisco/&quot;&gt;Craig Hockenberry&lt;/a&gt;.&lt;/p&gt;
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
     &lt;h3&gt;установить шрифт san francisco&lt;/h3&gt;
     &lt;h4&gt;новый шрифт san francisco&lt;/h4&gt;
     &lt;h4&gt;системный шрифт san francisco&lt;/h4&gt;
@@ -184,7 +184,7 @@
 
 &lt;p&gt;А какие у вас хорошие привычки, связанные с программированием? 😏&lt;/p&gt;
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
     &lt;h3&gt;Полезные привычки&lt;/h3&gt;
     &lt;h3&gt;привычки разработчика&lt;/h3&gt;
     &lt;h4&gt;хорошие привычки разработчика&lt;/h4&gt;
@@ -255,7 +255,7 @@
 
 &lt;p&gt;Вот и все, о проблемах пишите в комментариях, я буду дополнять эту статью.&lt;/p&gt;
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
 	&lt;h3&gt;ios 9 отзывы&lt;/h3&gt;
 	&lt;h3&gt;el capitan beta&lt;/h3&gt;
 	&lt;h4&gt;os x el capitan beta&lt;/h4&gt;
@@ -1700,7 +1700,7 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
 &lt;p&gt;Теперь мы умеем анимировать высоту через CSS. И теперь можем делать без javascript такие штуки, как: спойлеры, выпадающие меню, раскрывающиеся попапы и т.д.&lt;/p&gt;
 
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
 	&lt;h3&gt;transition height&lt;/h3&gt;
 	&lt;h3&gt;animate height&lt;/h3&gt;
 	&lt;h4&gt;css transition height&lt;/h4&gt;
@@ -1876,7 +1876,7 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
 &lt;p&gt;Осталось только оставить &lt;a href=&quot;//www.eidac.de/smcfancontrol/smcfancontrol_2_4.zip&quot;&gt;ссылку для скачивания&lt;/a&gt;.&lt;/p&gt;
 
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
 	&lt;h3&gt;macbook греется&lt;/h3&gt;
 	&lt;h4&gt;греется macbook pro&lt;/h4&gt;
 	&lt;h4&gt;греется macbook air&lt;/h4&gt;
@@ -1965,7 +1965,7 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
 &lt;p&gt;Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)&lt;/p&gt;
 
 
-&lt;footer class=&quot;keywords section-subtitle&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
 	&lt;h3&gt;ретина изображения&lt;/h3&gt;
 	&lt;h3&gt;верстка retina&lt;/h3&gt;
 	&lt;h3&gt;картинка ретина&lt;/h3&gt;

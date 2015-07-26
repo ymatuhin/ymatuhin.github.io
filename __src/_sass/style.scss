@@ -42,13 +42,11 @@ a.button:hover {
 body,
 #posts-list h3,
 #posts-list h6 {
-    font-family: -apple-system,
-      ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans","Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #posts-list abbr, .main-footer, .projects-list span {
-    font-family: -apple-system,
-      ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
 
@@ -57,7 +55,7 @@ h1, h2, h3, h4, h5, h6, .section-subtitle, #main-nav a, .button, figcaption, #po
 }
  */
 #main-title, #main-subtitle {
-    font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+    font-family: "PT Serif", TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
     font-weight: 400;
 }
 
@@ -666,8 +664,7 @@ a, #posts-list li, #posts-list abbr, .projects-list .caption {
         border: 0;
         padding: 0;
         margin: 0;
-        font-family: -apple-system,
-      ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
+        font-family: "Helvetica Neue", Helvetica Neue, "Lucida Grande", Helvetica, Arial, sans-serif;
         font-weight: 300;
         cursor: default;
         visibility: hidden;
