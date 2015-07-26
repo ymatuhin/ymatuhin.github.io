@@ -43,7 +43,7 @@
         }
 
         a {
-            color: $cl-white;
+            color: $cl-white !important;
         }
 
         @media (max-width: $md-footer) {
