@@ -133,6 +133,10 @@ pre {
 
 .one-half {
     width: 45%;
+
+    @media (max-width: $md-header) {
+        width: 100%;
+    }
 }
 .one-half.first {
     float: left;
@@ -144,4 +148,34 @@ pre {
 // top margin
 .mt0 {
     margin-top: 0 !important;
+}
+
+// summary
+details {
+    border-radius: 5px;
+    background: #34495e;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 8px 15px 0;
+    overflow: hidden;
+
+    code {
+        color: $color-text;
+    }
+
+    summary {
+        background: #16A085;
+        padding: 8px 15px 7px;
+        margin: -8px -15px 0;
+
+        // background: #34495e;
+        color: #fff;
+        border-radius: 5px;
+        outline: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        cursor: pointer;
+    }
 }

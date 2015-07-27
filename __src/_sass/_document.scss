@@ -38,9 +38,10 @@ a:visited { color: #9B59B6 }
 a:visited:hover { color: #C0392B }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1080px;
     margin: auto;
-    padding: 0 30px;
+    padding: 0 45px;
+    overflow: hidden;
 
     @media (max-width: $md-footer) {
         padding: 0 15px;
