@@ -78,6 +78,10 @@ figure {
     &:nth-child(2n) iframe {
         margin-left: -2px;
     }
+
+    @media (max-width: $md-header) {
+        width: 100%;
+    }
 }
 
 figcaption {
@@ -152,7 +156,6 @@ pre {
 
 // summary
 details {
-    border-radius: 5px;
     background: #34495e;
     color: #fff;
     margin-bottom: 20px;
@@ -170,7 +173,6 @@ details {
 
         // background: #34495e;
         color: #fff;
-        border-radius: 5px;
         outline: none;
         -webkit-user-select: none;
            -moz-user-select: none;

@@ -38,8 +38,12 @@
         list-style-type: none;
 
         li {
-            display: inline;
+            display: inline-block;
             margin-left: 1em;
+
+            &:first-child {
+                margin-left: 0;
+            }
         }
 
         a {

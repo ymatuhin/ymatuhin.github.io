@@ -11,7 +11,7 @@ is_post: true
 		<article class="wrapper hentry" itemscope itemtype="http://schema.org/BlogPosting">
 
 			<header class="page-header">
-				<h1 class="page-header__title entry-title"><a id="title" href="#title" class="short-link">#</a>&nbsp;{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
+				<h1 class="page-header__title entry-title"><a id="title" href="#title"aria-hidden="true" class="short-link">#</a>&nbsp;{% if page.s_title %}{{ page.s_title }}{% else %}{{ page.title }}{% endif %}</h1>
 
 				<span class="page-header__sub-title">
 					{% assign m = page.date | date: "%-m" %}
