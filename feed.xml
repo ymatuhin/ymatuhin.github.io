@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jul 2015 23:25:00 +0300</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2015 23:25:00 +0300</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2015 23:26:40 +0300</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2015 23:26:40 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -49,7 +49,7 @@
 &lt;p&gt;Я редко пользуюсь этим классом, ведь установив у контейнера значение &lt;code&gt;overflow&lt;/code&gt; в &lt;code&gt;hidden&lt;/code&gt; или &lt;code&gt;auto&lt;/code&gt; мы добиваемся тех-же результатов.&lt;/p&gt;
 &lt;p&gt;А вы используете clearfix css в своих проектах? 😉&lt;/p&gt;
 
-&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
 &lt;p&gt;&lt;b&gt;UPD #1:&lt;/b&gt; Хорошая статья про виды clearfix и их работе можно прочитать в &lt;a href=&quot;http://css-live.ru/tricks/novaya-alternativa-clearfix-u-i-overflowhidden.html&quot;&gt;этой статье&lt;/a&gt;.&lt;/p&gt;
 
 &lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
