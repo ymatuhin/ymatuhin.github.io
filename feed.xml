@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jul 2015 19:42:07 +0300</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2015 19:42:07 +0300</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2015 23:25:00 +0300</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2015 23:25:00 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -19,7 +19,7 @@
 	&lt;figcaption itemprop=&quot;description&quot;&gt;Clearfix css в действии&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h2&gt;&lt;a id=&quot;before&quot; href=&quot;#before&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Clearfix раньше&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;before&quot; href=&quot;#before&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Clearfix раньше&lt;/h2&gt;
 &lt;p&gt;Если вы знаете что такое clearfix, то вероятно вы читали о нем в старых статьях и книгах. В которых встречали следующий код или его разновидности:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -36,7 +36,7 @@
 
 &lt;p&gt;Он рабочий, но проблема в том, что он поддерживает устаревшие &lt;code&gt;IE 6/7&lt;/code&gt;. Вы еще поддерживаете эти браузеры?&lt;/p&gt;
 
-&lt;h2&gt;&lt;a id=&quot;now&quot; href=&quot;#now&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Clearfix сейчас&lt;/h2&gt;
+&lt;h2&gt;&lt;a id=&quot;now&quot; href=&quot;#now&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Clearfix сейчас&lt;/h2&gt;
 &lt;p&gt;Если у вас поддержка браузеров начиная с &lt;code&gt;IE 8&lt;/code&gt;, то воспользуйтесь сокращенной версией:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -48,6 +48,9 @@
 &lt;p&gt;Немножко экономии и эстетической красоты 😊&lt;/p&gt;
 &lt;p&gt;Я редко пользуюсь этим классом, ведь установив у контейнера значение &lt;code&gt;overflow&lt;/code&gt; в &lt;code&gt;hidden&lt;/code&gt; или &lt;code&gt;auto&lt;/code&gt; мы добиваемся тех-же результатов.&lt;/p&gt;
 &lt;p&gt;А вы используете clearfix css в своих проектах? 😉&lt;/p&gt;
+
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;UPD #1:&lt;/b&gt; Хорошая статья про виды clearfix и их работе можно прочитать в &lt;a href=&quot;http://css-live.ru/tricks/novaya-alternativa-clearfix-u-i-overflowhidden.html&quot;&gt;этой статье&lt;/a&gt;.&lt;/p&gt;
 
 &lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
     &lt;h3&gt;class clearfix&lt;/h3&gt;
