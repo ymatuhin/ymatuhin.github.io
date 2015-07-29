@@ -22,12 +22,15 @@
 	<link rel="canonical" href="{{ page_url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
+
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@ymatuhin">
 	<meta name="twitter:creator" content="@ymatuhin">
 
 	{% if page.image %}
+		<!-- VK -->
+		<link rel="image_src" href="{{ site.url }}{{ page.image }}" />
 		<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
 	{% endif %}
 
