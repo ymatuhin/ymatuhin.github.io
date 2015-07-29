@@ -6,9 +6,71 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2015 15:15:58 +0300</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2015 15:15:58 +0300</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2015 11:47:23 +0300</pubDate>
+    <lastBuildDate>Wed, 29 Jul 2015 11:47:23 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Время обновить clearfix</title>
+        <description>&lt;p&gt;Clearfix — вспомогательный класс в css, с помощью которого мы исправляем схлопывающиеся размеры контейнера у плавающих элементов.&lt;/p&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Clearfix css в действии&quot; src=&quot;/img/clearfix/clearfix.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Clearfix css в действии&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;&lt;a id=&quot;before&quot; href=&quot;#before&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Clearfix раньше&lt;/h2&gt;
+&lt;p&gt;Если вы знаете что такое clearfix, то вероятно вы читали о нем в старых статьях и книгах. В которых встречали следующий код или его разновидности:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;zoom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;both&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Он рабочий, но проблема в том, что он поддерживает устаревшие &lt;code&gt;IE 6/7&lt;/code&gt;. Вы еще поддерживаете эти браузеры?&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;now&quot; href=&quot;#now&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Clearfix сейчас&lt;/h2&gt;
+&lt;p&gt;Если у вас поддержка браузеров начиная с &lt;code&gt;IE 8&lt;/code&gt;, то воспользуйтесь сокращенной версией:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;both&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Немножко экономии и эстетической красоты 😊&lt;/p&gt;
+&lt;p&gt;Я редко пользуюсь этим классом, ведь установив у контейнера значение &lt;code&gt;overflow&lt;/code&gt; в &lt;code&gt;hidden&lt;/code&gt; или &lt;code&gt;auto&lt;/code&gt; мы добиваемся тех-же результатов.&lt;/p&gt;
+&lt;p&gt;А вы используете clearfix css в своих проектах? 😉&lt;/p&gt;
+
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+    &lt;h3&gt;class clearfix&lt;/h3&gt;
+    &lt;h4&gt;div clearfix&lt;/h4&gt;
+    &lt;h4&gt;clearfix css&lt;/h4&gt;
+    &lt;h5&gt;clearfix after&lt;/h5&gt;
+    &lt;h5&gt;как использовать clearfix&lt;/h5&gt;
+&lt;/footer&gt;
+</description>
+        <pubDate>Wed, 29 Jul 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/float_and_clearfix</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/float_and_clearfix</guid>
+        
+        <category>css</category>
+        
+        <category>clearfix</category>
+        
+        <category>float</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Вопросы и ответы на собеседовании разработчика интерфейсов&amp;nbsp;#1</title>
@@ -1902,97 +1964,6 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
         <category>MacBook</category>
         
         <category>утилиты</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Оптимизация верстки под retina дисплеи</title>
-        <description>&lt;p&gt;Сейчас, с большой популярностью MacBook-ов, айфонов и других устройств с большим DPI, изображения на сайте нужно оптимизировать, чтобы они не были смазанными. Для этого у нас есть несколько решений. Самые популярные это сделать иконочный шрифт или использовать SVG. Но что если нет возможности или не хочется с этим иметь дело, или вы очень любите PNG. Решение конечно же есть. В виде плагина для Photoshop, js-библиотеки и sass/less/stylus примеси.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;theory&quot; href=&quot;#theory&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Теория подготовки сайта к Retina дисплеям&lt;/h2&gt;
-&lt;p&gt;Я буду объяснять своими словами. Из-за того что плотность точек на retina экранах больше, изображение оказывается размытым (поскольку растягивается). Чтобы это побороть, нужно использовать изображение в 2 или 3 раза больше оригинального и масштабировать средствами html и css до размеров x1. Тогда на retina экранах изображение будет выглядеть отлично. Но для этого нужно сначала нарезать 2 или 3 размера изображений, а потом использовать js библиотеку и примесь в препроцессоре (для удобства). Обо всем по порядку...&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;retinize_it&quot; href=&quot;#retinize_it&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Photoshop плагин Retinize It&lt;/h2&gt;
-
-&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;520&quot; alt=&quot;Retinize It — плагин для фотошопа для оптимизации графики под ретина&quot; src=&quot;/img/retina/retinizeit.png&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Retinize It — плагин для фотошопа для оптимизации графики под ретина&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Как написано на официальном сайте: «Лучший плагин к Photoshop для оптимизации графики на сайте для iOS и Retina-дисплеев». Скачать его можно на &lt;a href=&quot;http://retinize.it/&quot;&gt;странице проекта&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Плагин представляет собой записанные действия, которые можно будет воспроизводить через горячие клавиши или пункты меню. Плагин выделяет слои, создает новый файл с ними, делает трим (обрезку краев) и сохраняет изображение в 1-м, 2-х или 3-х размерах.&lt;/p&gt;
-
-&lt;p&gt;Работать с ним очень просто:&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;Выберите слои или или группу слоев&lt;/li&gt;
-    &lt;li&gt;Запустите Retinize It (можно добавить сочетание клавиш)&lt;/li&gt;
-    &lt;li&gt;Назовите ваши файлы&lt;/li&gt;
-    &lt;li&gt;Получите ваши нарезанные изображения&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;940&quot; alt=&quot;Как работает плагин Retinize It&quot; src=&quot;/img/retina/install.png&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Как работает плагин Retinize It&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Для дальнейшего использования рекомендую сохранять файлы с постфиксами @2x, @3x. К примеру: &lt;code&gt;file.png&lt;/code&gt;, &lt;code&gt;file@2x.png&lt;/code&gt;, &lt;code&gt;file@3x.png&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;retina_js&quot; href=&quot;#retina_js&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем retina.js для тегов img&lt;/h2&gt;
-&lt;p&gt;Тут все просто, подключаем js библиотеку, и она определит нужно ли загружать изображение для retina экранов. Если нужно, то ссылка на исходный файл заменяется на &lt;code&gt;***@2x.***&lt;/code&gt; или &lt;code&gt;***@3x.***&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;less_mixin&quot; href=&quot;#less_mixin&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примесь для LESS&lt;/h2&gt;
-&lt;p&gt;Скачать примесь можно &lt;a href=&quot;http://imulus.github.io/retinajs/&quot; rel=&quot;nofollow&quot;&gt;на сайте&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;После подключения она будет доступна для использования. Написав следующее: &lt;code&gt;.at2x(@path, @width, @height);&lt;/code&gt; (вместо @path, @width и @height нужно написать ваш путь к изображению и его размеры).&lt;/p&gt;
-
-&lt;p&gt;Пример:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nn&quot;&gt;#logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.at2x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/images/my_image.png&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Эта примесь раскроется как:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nn&quot;&gt;#logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&amp;#39;/images/my_image.png&amp;#39;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-webkit-min-device-pixel-ratio&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nn&quot;&gt;#logo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;background-image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(&amp;#39;/images/my_image@2x.png&amp;#39;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Подробнее о retina.js и примесях можно прочитать &lt;a href=&quot;http://imulus.github.io/retinajs/&quot; rel=&quot;nofollow&quot;&gt;на сайте&lt;/a&gt;, скачать можно там-же.&lt;/p&gt;
-
-&lt;p&gt;Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)&lt;/p&gt;
-
-
-&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;h3&gt;ретина изображения&lt;/h3&gt;
-	&lt;h3&gt;верстка retina&lt;/h3&gt;
-	&lt;h3&gt;картинка ретина&lt;/h3&gt;
-	&lt;h4&gt;верстка ретина&lt;/h4&gt;
-	&lt;h4&gt;верстка под retina&lt;/h4&gt;
-	&lt;h5&gt;верстка под ретину&lt;/h5&gt;
-	&lt;h5&gt;ретина оптимизация&lt;/h5&gt;
-	&lt;h5&gt;оптимизация верстки под retina&lt;/h5&gt;
-&lt;/footer&gt;
-</description>
-        <pubDate>Thu, 21 May 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/prepare_graphics_for_retina_screens</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/prepare_graphics_for_retina_screens</guid>
-        
-        <category>retina</category>
-        
-        <category>photoshop</category>
-        
-        <category>графика</category>
         
         
         <category>blog</category>
