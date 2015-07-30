@@ -131,6 +131,10 @@ pre {
     line-height: 19px;
     overflow-x: auto;
     padding: 20px;
+
+    code {
+        background-color: transparent;
+    }
 }
 
 // half part
@@ -180,4 +184,16 @@ details {
                 user-select: none;
         cursor: pointer;
     }
+}
+
+.listn {
+    list-style-type: none;
+}
+
+img.emoji {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 20px;
+    position: relative;
+    top: -2px;
 }

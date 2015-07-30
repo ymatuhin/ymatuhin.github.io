@@ -1,0 +1,95 @@
+Общие требования:
+9   Английский
+5   Более трех лет опыта
+3   Опыт разработки SPA
+4   документация / комментарии
+3   Github аккаунт
+1   IT образование
+
+Обязательно:
+31  Отличное знание JavaScript (тонкости, vanilla js, прототипы, наследование, контексты, замыкание)
+22  Git / SVN
+20  AJAX (REST API) + Понимание принципов функционирования сети Интернет и протокола HTTP
+10  Понимание принципов OOP, MVC, MVVM в JavaScript
+6   Оптимизация на клиенте
+4   XML, JSON/JSONP, xslt, xpath
+4   WebSocket
+4   CoffeeScript
+4   Unix/Linux
+3   Sketch, Photoshop
+2   Знание DOM-модели
+2   es6
+1   опыт дебага в браузере
+1   Graceful Degradation
+1   usability
+1   Comet
+1   алгоритмов и структур данных
+1   Паттерны
+
+CSS препроцессоры / постпроцессоры:
+6   Любой
+4   LESS
+3   SASS/SCSS
+2   PostCSS
+1   Stylus
+
+JS библиотеки / фреймворки:
+5   Любой >= 1
+19  angularjs
+15  Backbone
+7   React.js
+7   Ember.js
+4   Knockout
+2   cordova
+1   extJS
+
+JS либы:
+20  JQuery
+3   underscore.js
+1   Lo-Dash
+1   MooTools
+1   Prototype
+1   JQuery плагины опыт
+
+HTML-шаблонизаторы:
+1   Jade / HAML
+3   Handlebars
+
+CSS фреймворки:
+7   Bootstrap
+1   Foundation
+
+Системы сборки:
+8   Grunt/Gulp
+2   Grunt
+2   Gulp
+
+Модульность:
+7   RequireJS
+3   AMD
+2   Common JS
+
+CSS методологии:
+3   БЭМ
+1   SMACSS, OOCSS
+
+Дополнительно:
+10  Node.js (ExpressJS/MongoDB)
+1   владение каким-либо скриптовым языком (php, perl, python, ruby)
+1   Perl
+1   Ruby on Rails
+
+3   svg
+
+1   CanJS
+1   Webpack
+2   Bower
+1   canvas
+1   Titanium
+1   Polymer, Shadow DOM
+1   Autoprefixer
+1   D3.js
+1   Phonegap
+1   Django
+1   XSS, CSRF/XSRF
+1   WebGL

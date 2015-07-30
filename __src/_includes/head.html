@@ -13,10 +13,13 @@
 	{% capture page_date %}{% if page.date %}{{ page.date | date: "%Y-%m-%d"}}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}{% endcapture %}
 
 	{% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
+	{% capture page_keywords %}{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}{% endcapture %}
 
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}">
-	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}">
+	{% if page_keywords %}
+		<meta name="keywords" content="{{ page_keywords }}">
+	{% endif %}
 
 	<!-- Feed and canonical -->
 	<link rel="canonical" href="{{ page_url }}">
