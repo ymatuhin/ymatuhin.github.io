@@ -21,59 +21,16 @@
         // "style",
         // "typeplate",
         // "syntax-highlighting";
-//
-// h1, h2, h3, h4, h5, h6 {
-//     * + & {
-//         margin-top: 45px;
-//     }
-//
-//     & + * {
-//         margin-top: 15px;
-//     }
-// }
-//
+
 p + ul,
 p + ol {
-    margin-top: -15px;
+    margin-bottom: 30px;
 }
 //
 .page-wrap {
     min-height: 100%;
 }
 
-// .clear { clear: both; }
-//
-// @media all and (max-width: 840px) {
-//     .gallery figure,
-//     .gallery_half figure {
-//         float: none;
-//         width: auto !important;
-//     }
-// }
-//
-// @media all and (max-width: 480px) {
-//     .fl-left,
-//     .fl-right {
-//         float: none;
-//         margin: 0 auto;
-//     }
-// }
-//
-// .notop { margin-top: 0; }
-//
-// // .grid {
-// //     display: none;
-// //     position: absolute;
-// //     left: 0;
-// //     right: 0;
-// //     top: 0;
-// //     bottom: 0;
-// //     height: 100%;
-// //     background: url('/img/grid_vertical.png') 0 0;
-// //     z-index: 999999;
-// //     pointer-events: none;
-// // }
-//
 // // javascript_styleguide
 // a[aria-hidden] {
 //     border: 0;
