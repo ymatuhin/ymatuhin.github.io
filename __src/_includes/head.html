@@ -35,6 +35,9 @@
 		<!-- VK -->
 		<link rel="image_src" href="{{ site.url }}{{ page.image }}" />
 		<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+	{% else %}
+		<link rel="image_src" href="{{ site.url }}/apple-touch-icon.png" />
+		<meta name="twitter:image" content="{{ site.url }}/apple-touch-icon.png">
 	{% endif %}
 
 	<!-- Open Graph data -->
