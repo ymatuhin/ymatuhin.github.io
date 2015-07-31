@@ -6,9 +6,14 @@
     .btn[href] {
         color: $cl-white;
         border-color: $cl-white;
+        background-color: transparent;
         margin-left: 0;
 
-        &.active {
+        -webkit-transition: background .3s, color .3s;
+        transition: background .3s, color .3s;
+
+        &.active,
+        &:hover {
             background: $cl-white;
             color: $cl-asphalt;
         }

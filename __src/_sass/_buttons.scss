@@ -2,7 +2,7 @@
     display: inline-block;
     font-size: 14px;
     line-height: 14px;
-    padding: 13px 20px 14px;
+    padding: 14px 20px 13px;
     margin: 5px 15px;
     text-transform: uppercase;
     font-weight: bold;
@@ -14,10 +14,18 @@
     -ms-user-select: none;
     user-select: none;
 
+    -webkit-transition: background .3s, color .3s;
+    transition: background .3s, color .3s;
+
     &,
     &[href],
     &[href]:hover,
     &[href]:active {
         color: $cl-green;
+    }
+
+    &[href]:hover {
+        color: $cl-white;
+        background: $cl-green;
     }
 }
