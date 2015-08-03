@@ -1,12 +1,15 @@
 @charset "utf-8";
 
-@import "variables",
-        "document",
-        "anchor-links",
-        "typo",
-        "post-list",
-        "tag-list",
-        "media";
-
-/* Footer thanks block */
-.thanks { margin: 2em 0 0; line-height: 1.8 }
+@import "_variables",
+        "_normalize",
+        "_helpers",
+        "_document",
+        "_buttons",
+        "_header",
+        "_main-nav",
+        "_search",
+        "_page-header",
+        "_page-content",
+        "_post-nav",
+        "_post-list",
+        "anchor-links";

@@ -76,7 +76,8 @@
 	<meta name="geo.region" content="RU-Брянская область">
 	<meta name="ICBM" content="53.2350000, 34.3465000">
 
-	<link rel="stylesheet" type="text/css" href="/css/secondary.css">
+	<!-- critical.css -->
+	<style>{% capture include_to_scssify %}i{top:0}{% include critical.scss %}{% endcapture %}{{include_to_scssify | scssify}}</style>
 
 	<script>
 		function loadFont(k,e){function l(){if(!window.FontFace)return!1;var a=new FontFace("t",'url("data:application/font-woff2,") format("woff2")',{});a.load();return"loading"===a.status}var a=navigator.userAgent;if(window.addEventListener&&(!a.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)||a.match(/Chrome/))){var c={};try{c=localStorage||{}}catch(m){}var a=k,f=a+" url",g=a+" css",a=c[f],h=c[g],d=document.createElement("style");d.rel="stylesheet";document.head.appendChild(d);if(h&& a===e)d.textContent=h;else{var a=e+".woff"+(l()?"2":"")+".css",b=new XMLHttpRequest;b.open("GET",a);b.onload=function(){200<=b.status&&400>b.status&&(c[f]=e,c[g]=d.textContent=b.responseText)};b.send()}}};
