@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ymatuhin.ru/blog/what_i_will_learn</loc>
+    <lastmod>2015-08-04T00:00:00+03:00</lastmod>
+  </url>
+  <url>
     <loc>http://ymatuhin.ru/blog/what_front_end_developer_need_to_know_in_2015-2016</loc>
     <lastmod>2015-07-30T00:00:00+03:00</lastmod>
   </url>
@@ -434,6 +438,12 @@
   </url>
   <url>
     <loc>http://ymatuhin.ru/tag/float/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/page2/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/page3/</loc>
   </url>
   <url>
     <loc>http://ymatuhin.ru/demo/animate_auto/index.html</loc>
