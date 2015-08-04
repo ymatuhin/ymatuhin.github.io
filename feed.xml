@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2015 12:48:48 +0300</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2015 12:48:48 +0300</lastBuildDate>
+    <pubDate>Tue, 04 Aug 2015 16:22:59 +0300</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2015 16:22:59 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;Я думал что список сильно изменится, но он почти такой-же как и в предыдущей статье, если отсортировать по упоминаниям. Но есть изменения:&lt;/p&gt;
 
-&lt;ol&gt;
+&lt;ol start=&quot;0&quot;&gt;
     &lt;li&gt;&lt;b&gt;Английский&lt;/b&gt;, для меня, важен для профессионально и личного роста (не только для чтения тех. документации). Поэтому он однозначно вырывается в топ 1.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Тонкости JavaScript&lt;/b&gt; я знаю на достаточном уровне, да и пригождаются они в только на собеседованиях (а первая задача подвинуть блок на 1px 😀). С общим пониманием у меня хорошо, недавно осилил книгу с носорогом.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Gulp&lt;/b&gt; так-же поднимается в рейтинге, поскольку без него сложно собирать нормальный front end и пользоваться всякими &lt;s&gt;ES6&lt;/s&gt; ES2015.&lt;/li&gt;
@@ -32,8 +32,8 @@
 
 &lt;h2&gt;&lt;a id=&quot;list&quot; href=&quot;#list&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Итоговый список вместе с ресурсами для изучения&lt;/h2&gt;
 
-&lt;ol&gt;
-    &lt;li&gt;&lt;strong&gt;Английский язык&lt;/strong&gt; — спросив совет у разработчиков в твитере, я выбрал — &lt;em&gt;&lt;a href=&quot;//effortlessenglish.com&quot;&gt;Efаortless English&lt;/a&gt;&lt;/em&gt; (A.J. Hoge) в этот момент, мой друг запускает недельную &lt;a href=&quot;//vk.com/m_khaletsky?w=wall3870082_7542&quot;&gt;серию вебинаров по английскому&lt;/a&gt; 🇬🇧, я записался)&lt;/li&gt;
+&lt;ol start=&quot;0&quot;&gt;
+    &lt;li&gt;&lt;strong&gt;Английский язык&lt;/strong&gt; — спросив совет у разработчиков в &lt;a href=&quot;https://twitter.com/ymatuhin/status/627069468506779648&quot;&gt;твитере&lt;/a&gt;, я выбрал — &lt;em&gt;&lt;a href=&quot;//effortlessenglish.com&quot;&gt;Efаortless English&lt;/a&gt;&lt;/em&gt; (A.J. Hoge) в этот момент, мой друг запускает недельную &lt;a href=&quot;//vk.com/m_khaletsky?w=wall3870082_7542&quot;&gt;серию вебинаров по английскому&lt;/a&gt; 🇬🇧, я записался)&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;REST API, HTTP&lt;/strong&gt; — &lt;a href=&quot;//restapitutorial.com&quot;&gt;restapitutorial.com&lt;/a&gt;, перевести ответ с &lt;a href=&quot;//stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot;&gt;so&lt;/a&gt; и поискать статьи на хабре&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;OOP, MVC, MVVM в JavaScript&lt;/strong&gt; — пока нет идей, буду искать в гугле&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;Gulp&lt;/strong&gt; — начну с курса &lt;a href=&quot;//www.youtube.com/watch?v=9zwwmjGz1Vs&amp;list=PLY4rE9dstrJwXCz1utct9b6Vub9VWQoKo&quot;&gt;loft blog&lt;/a&gt;, дальше читать и тренироваться&lt;/li&gt;
