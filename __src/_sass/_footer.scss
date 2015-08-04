@@ -1,6 +1,7 @@
 .footer {
     position: relative;
     min-height: 87px;
+    margin-top: -87px;
     box-shadow: 0 0 0 3px $cl-green;
     background: $cl-midnight;
     color: $cl-white;
@@ -13,6 +14,7 @@
 
     @media (max-width: $md-footer) {
         text-align: center;
+        margin-top: 0;
     }
 
     &__copy {
