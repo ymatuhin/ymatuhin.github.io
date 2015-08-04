@@ -24,7 +24,13 @@ compress_html:
     envs: []
 source: ./
 destination: ../dist
-
+compress_html:
+  clippings: []
+  comments: ["<!-- ", " -->"]
+  endings: all
+  profile: false
+  ignore:
+    envs: []
 # Build settings
 markdown: kramdown
 
