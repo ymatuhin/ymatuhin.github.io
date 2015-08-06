@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 18:19:03 +0300</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 18:19:03 +0300</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2015 18:24:29 +0300</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 18:24:29 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -59,6 +59,14 @@
 &lt;h2&gt;&lt;a id=&quot;example&quot; href=&quot;#example&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Зачем это фронтенд разработчику&lt;/h2&gt;
 
 &lt;p&gt;В работе это умение делать AJAX запросы и обрабатывать полученную информацию. Понимание принципов — дополнительный бонус, который позволяет догадаться какой метод использовать. Ну или подсказать серверному разработчику 😀&lt;/p&gt;
+
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+    &lt;h3&gt;rest api&lt;/h3&gt;
+    &lt;h4&gt;rest api примеры&lt;/h4&gt;
+    &lt;h4&gt;restful api&lt;/h4&gt;
+    &lt;h5&gt;принцип restful api&lt;/h5&gt;
+    &lt;h5&gt;front rest&lt;/h5&gt;
+&lt;/footer&gt;
 </description>
         <pubDate>Fri, 07 Aug 2015 00:00:00 +0300</pubDate>
         <link>http://ymatuhin.ru/blog/restful_api_for_frontender</link>
