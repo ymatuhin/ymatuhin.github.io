@@ -127,6 +127,11 @@ var, code, mark {
     white-space: nowrap;
 }
 
+mark {
+    background: #F1C40F;
+    color: $cl-cloud;
+}
+
 pre {
     background: $cl-cloud;
     border: 3px solid $cl-green;

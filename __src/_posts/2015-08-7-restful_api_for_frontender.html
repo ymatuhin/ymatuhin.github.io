@@ -10,7 +10,7 @@ tags: [rest, api, http]
 image: /img/rest_api/restful.png
 ---
 
-<p>В <a href="/blog/what_front_end_developer_need_to_know_in_2015-2016/">двух из трех</a> вакансиях для фронтеда требуют знания <mark>REST / RESTful API</mark>. Разберемся что это и в чем разница.</p>
+<p>В <a href="/blog/plan_for_frontend_developer/">двух из трех</a> вакансиях для фронтеда требуют знания <strong>REST / RESTful API</strong>. Разберемся что это и в чем разница.</p>
 
 <figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
 	<img itemprop="contentUrl" alt="RESTful API для фронтенд разработчика" src="/img/rest_api/restful.png">
@@ -19,10 +19,10 @@ image: /img/rest_api/restful.png
 
 <h2><a id="what" href="#what" aria-hidden="true" class="short-link">#</a> Что такое REST</h2>
 
-<p><strong>REST (Representational state transfer)</strong> — общие принципы организации взаимодействия приложения/сайта с сервером по <mark>HTTP</mark>. Сервер не запоминает состояние пользователя между запросами. В запросах передаётся информация, идентифицирующая пользователя (например <em>токен</em>) и параметры для выполнения операции.</p>
+<p><strong>REST (Representational state transfer)</strong> — общие принципы организации взаимодействия приложения/сайта с сервером по <code>HTTP</code>. Сервер не запоминает состояние пользователя между запросами. В запросах передаётся информация, идентифицирующая пользователя (например <em>токен</em>) и параметры для выполнения операции.</p>
 
 <h2><a id="difference" href="#difference" aria-hidden="true" class="short-link">#</a> Разница между REST и RESTful</h2>
-<p><mark>REST</mark> — архитектурный стиль, а <mark>RESTful</mark> это сервис который следует этому стилю. Т.е если у вас на сервере <mark>REST API</mark>, а на клиенте вы делаете запросы к этому API, то у вас <mark>RESTful</mark> приложение/сайт.</p>
+<p><strong>REST</strong> — архитектурный стиль, а <em>RESTful</em> это сервис который следует этому стилю. Т.е если у вас на сервере <em>REST API</em>, а на клиенте вы делаете запросы к этому <em>API</em>, то у вас <em>RESTful</em> приложение/сайт.</p>
 
 <h2><a id="how" href="#how" aria-hidden="true" class="short-link">#</a> Как это работает</h2>
 
@@ -44,7 +44,7 @@ image: /img/rest_api/restful.png
 </ol>
 
 <h2><a id="example" href="#example" aria-hidden="true" class="short-link">#</a> Пример REST API</h2>
-<p>В качества примера возьмем стандартное API для списка пользователей. Мы запрашиваем список пользователей, получаем информацию о пользователе, добавляем нового пользователя, изменяем информацию и удаляем пользователя. Если у нас на серверe REST API, то нам понадобятся следующие запросы:</p>
+<p>В качества примера возьмем стандартное API для списка пользователей. Мы запрашиваем список пользователей, получаем информацию о пользователе, добавляем нового пользователя, изменяем информацию и удаляем пользователя. Если у нас на сервере REST API, то нам понадобятся следующие запросы:</p>
 
 <ol>
     <li><b>GET</b> <code>/api/users</code> — получить список пользователей
