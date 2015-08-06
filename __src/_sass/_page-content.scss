@@ -124,6 +124,7 @@ var, code, mark {
     padding: .1em .2em;
     border-radius: 3px;
     font-family: $font-code;
+    white-space: nowrap;
 }
 
 pre {

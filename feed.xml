@@ -6,9 +6,74 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 10:41:33 +0300</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 10:41:33 +0300</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2015 18:00:27 +0300</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 18:00:27 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>RESTful API для фронтенд разработчика</title>
+        <description>&lt;p&gt;В &lt;a href=&quot;/blog/what_front_end_developer_need_to_know_in_2015-2016/&quot;&gt;двух из трех&lt;/a&gt; вакансиях для фронтеда требуют знания &lt;mark&gt;REST / RESTful API&lt;/mark&gt;. Разберемся что это и в чем разница.&lt;/p&gt;
+
+&lt;figure class=&quot;noborder&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;RESTful API для фронтенд разработчика&quot; src=&quot;/img/rest_api/restful.png&quot;&gt;
+&lt;figcaption itemprop=&quot;description&quot; hidden&gt;RESTful API для фронтенд разработчика&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;&lt;a id=&quot;what&quot; href=&quot;#what&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что такое REST&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;REST (Representational state transfer)&lt;/strong&gt; — общие принципы организации взаимодействия приложения/сайта с сервером по &lt;mark&gt;HTTP&lt;/mark&gt;. Сервер не запоминает состояние пользователя между запросами. В запросах передаётся информация, идентифицирующая пользователя (например &lt;em&gt;токен&lt;/em&gt;) и параметры для выполнения операции.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;difference&quot; href=&quot;#difference&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Разница между REST и RESTful&lt;/h2&gt;
+&lt;p&gt;&lt;mark&gt;REST&lt;/mark&gt; — архитектурный стиль, а &lt;mark&gt;RESTful&lt;/mark&gt; это сервис который следует этому стилю. Т.е если у вас на сервере &lt;mark&gt;REST API&lt;/mark&gt;, а на клиенте вы делаете запросы к этому API, то у вас &lt;mark&gt;RESTful&lt;/mark&gt; приложение/сайт.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a id=&quot;how&quot; href=&quot;#how&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Как это работает&lt;/h2&gt;
+
+&lt;p&gt;Взаимодействие с сервером сводится к 4 операциям (4 — необходимый и достаточный минимум):&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Получение данных (&lt;code&gt;JSON&lt;/code&gt; или &lt;code&gt;XML&lt;/code&gt;)
+    &lt;li&gt;Добавление новых данных
+    &lt;li&gt;Модификация данных
+    &lt;li&gt;Удаление данных
+&lt;/ol&gt;
+
+&lt;p&gt;Получение данных не меняет состояния сервера. Каждый тип операции пользуется своим &lt;a rel=&quot;nofollow&quot; href=&quot;https://ru.wikipedia.org/wiki/HTTP#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4.D1.8B&quot;&gt;HTTP методом&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;&lt;b&gt;GET&lt;/b&gt; — Получение
+    &lt;li&gt;&lt;b&gt;POST&lt;/b&gt; — Добавление
+    &lt;li&gt;&lt;b&gt;PUT&lt;/b&gt; — Модификация
+    &lt;li&gt;&lt;b&gt;DELETE&lt;/b&gt; — Удаление
+&lt;/ol&gt;
+
+&lt;h2&gt;&lt;a id=&quot;example&quot; href=&quot;#example&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Пример REST API&lt;/h2&gt;
+&lt;p&gt;В качества примера возьмем стандартное API для списка пользователей. Мы запрашиваем список пользователей, получаем информацию о пользователе, добавляем нового пользователя, изменяем информацию и удаляем пользователя. Если у нас на серверe REST API, то нам понадобятся следующие запросы:&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;&lt;b&gt;GET&lt;/b&gt; &lt;code&gt;/api/users&lt;/code&gt; — получить список пользователей
+    &lt;li&gt;&lt;b&gt;GET&lt;/b&gt; &lt;code&gt;/api/users/7&lt;/code&gt; — получить информацию о пользователе с &lt;code&gt;ID=7&lt;/code&gt;
+    &lt;li&gt;&lt;b&gt;POST&lt;/b&gt; &lt;code&gt;/api/users&lt;/code&gt; — добавить нового пользователя
+    &lt;li&gt;&lt;b&gt;PUT&lt;/b&gt; &lt;code&gt;/api/users/7&lt;/code&gt; — изменить информацию о пользователе с &lt;code&gt;ID=7&lt;/code&gt;
+    &lt;li&gt;&lt;b&gt;DELETE&lt;/b&gt; &lt;code&gt;/api/users/7&lt;/code&gt; — удалить пользователя с &lt;code&gt;ID=7&lt;/code&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;&lt;a id=&quot;example&quot; href=&quot;#example&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Зачем это фронтенд разработчику&lt;/h2&gt;
+
+&lt;p&gt;В работе это умение делать AJAX запросы и обрабатывать полученную информацию. Понимание принципов — дополнительный бонус, который позволяет догадаться какой метод использовать. Ну или подсказать серверному разработчику 😀&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/restful_api_for_frontender</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/restful_api_for_frontender</guid>
+        
+        <category>rest</category>
+        
+        <category>api</category>
+        
+        <category>http</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>План для развития фронтенд разработчика</title>
@@ -2006,88 +2071,6 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
         <category>css</category>
         
         <category>анимация</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Сглаживание шрифтов для разработчика и пользователя на Mac OS</title>
-        <description>&lt;p&gt;Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как &lt;code&gt;-webkit-font-smoothing&lt;/code&gt;, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;examples&quot; href=&quot;#examples&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Примеры сглаживания шрифтов&lt;/h2&gt;
-
-&lt;p&gt;В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.&lt;/p&gt;
-
-&lt;figure class=&quot;noborder&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/compare.png&quot;&gt;
-	&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;div class=&quot;gallery_half clearfix&quot;&gt;
-	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/yandex.png&quot;&gt;
-		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
-	&lt;/figure&gt;
-	&lt;!-- &lt;img class=&quot;bordered&quot; src=&quot;/img/font-smooth/yandex.png&quot; atl=&quot;yandex.ru со сглаживанием по умолчанию на Mac OS&quot;&gt; --&gt;
-	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/yandex_with.png&quot;&gt;
-		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
-	&lt;/figure&gt;
-	&lt;!-- &lt;img class=&quot;bordered&quot; src=&quot;/img/font-smooth/yandex_with.png&quot; atl=&quot;yandex.ru со сглаживанием antialiased на Mac OS&quot;&gt; --&gt;
-
-	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/google_search.png&quot;&gt;
-		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
-	&lt;/figure&gt;
-
-	&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-		&lt;img class=&quot;bordered&quot; itemprop=&quot;contentUrl&quot; alt=&quot;Сравнение сглаживаний шрифтов в Mac OS&quot; src=&quot;/img/font-smooth/google_search_with.png&quot;&gt;
-		&lt;figcaption&gt;&lt;span itemprop=&quot;description&quot;&gt;Сравнение сглаживаний шрифтов в Mac OS&lt;/span&gt;&lt;/figcaption&gt;
-	&lt;/figure&gt;
-&lt;/div&gt;
-
-
-&lt;!-- &lt;p&gt;
-    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search.png&quot; atl=&quot;google.ru со сглаживанием по умолчанию на Mac OS&quot;&gt;&lt;/a&gt;
-    &lt;a target=&quot;_blank&quot; href=&quot;/img/font-smooth/google_search_with.png&quot;&gt;&lt;img class=&quot;inline bordered rounded&quot; width=&quot;49%&quot; src=&quot;/img/font-smooth/google_search_with.png&quot; atl=&quot;google.ru со сглаживанием antialiased на Mac OS&quot;&gt;&lt;/a&gt;
-&lt;/p&gt; --&gt;
-
-&lt;h2&gt;&lt;a id=&quot;use-in-work&quot; href=&quot;#use-in-work&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем в работе&lt;/h2&gt;
-&lt;p&gt;Очень хорошо этим свойством обрабатываются подгружаемые шрифты.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Вот и все, больше ничего не нужно. Теперь ваш сайт стал чуточку красивее и элегантней, хоть это и не так заметно с первого взгляда.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;use-in-browser&quot; href=&quot;#use-in-browser&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Используем в браузере как пользователи&lt;/h2&gt;
-&lt;p&gt;Для этого вам нужно установить расширение для Chrome / Firefox — &lt;a href=&quot;//userstyles.org&quot;&gt;Stylish&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;p&gt;В настройках создать новый стиль (write new style), назвать его (у меня Font render), поставить галочку &lt;code&gt;Enable&lt;/code&gt;, и в поле &lt;code&gt;code&lt;/code&gt; вставить следующий текст:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;antialiased&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;osx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smoothing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grayscale&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;И нажать на кнопку сохранить (save). Теперь можно закрыть это окно и сглаживание будет по умолчанию включено на всех сайтах. Я именно так и сделал :-)&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Jun 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/font_smoothing_for_the_developer_and_user_on_mac_os</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/font_smoothing_for_the_developer_and_user_on_mac_os</guid>
-        
-        <category>css</category>
-        
-        <category>сглаживание шрифта</category>
-        
-        <category>mac os</category>
-        
-        <category>расширение</category>
         
         
         <category>blog</category>
