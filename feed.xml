@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 03:22:42 +0300</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 03:22:42 +0300</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2015 10:39:45 +0300</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 10:39:45 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -34,7 +34,7 @@
 
 &lt;ol start=&quot;0&quot;&gt;
     &lt;li&gt;&lt;strong&gt;Английский язык&lt;/strong&gt; — спросив совет у разработчиков в &lt;a href=&quot;https://twitter.com/ymatuhin/status/627069468506779648&quot;&gt;твитере&lt;/a&gt;, я выбрал — &lt;em&gt;&lt;a href=&quot;//effortlessenglish.com&quot;&gt;Efаortless English&lt;/a&gt;&lt;/em&gt; (A.J. Hoge) в этот момент, мой друг запускает недельную &lt;a href=&quot;//vk.com/m_khaletsky?w=wall3870082_7542&quot;&gt;серию вебинаров по английскому&lt;/a&gt; 🇬🇧, я записался)&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;REST API, HTTP&lt;/strong&gt; — &lt;a href=&quot;//restapitutorial.com&quot;&gt;restapitutorial.com&lt;/a&gt;, почитать ответ с &lt;a href=&quot;//stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot;&gt;so&lt;/a&gt; и поискать статьи на хабре&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;REST API, HTTP&lt;/strong&gt; — &lt;a href=&quot;//restapitutorial.ru&quot;&gt;restapitutorial.ru&lt;/a&gt;, почитать ответ с &lt;a href=&quot;//stackoverflow.com/questions/671118/what-exactly-is-restful-programming&quot;&gt;so&lt;/a&gt;, &lt;a href=&quot;//habrahabr.ru/post/38730/&quot;&gt;статья&lt;/a&gt; с хабра , обсуждение на &lt;a href=&quot;https://toster.ru/q/136265&quot;&gt;тостере&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;OOP, MVC, MVVM в JavaScript&lt;/strong&gt; — пока нет идей, буду искать и дополнять статью&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;Gulp&lt;/strong&gt; —  курс &lt;a href=&quot;//www.youtube.com/watch?v=9zwwmjGz1Vs&amp;list=PLY4rE9dstrJwXCz1utct9b6Vub9VWQoKo&quot;&gt;loft blog&lt;/a&gt;, дальше читать и тренироваться&lt;/li&gt;
     &lt;li&gt;&lt;strong&gt;CommonJS&lt;/strong&gt; — прочитать &lt;a href=&quot;//browserify.org&quot;&gt;доку&lt;/a&gt; и применять в проекте&lt;/li&gt;
