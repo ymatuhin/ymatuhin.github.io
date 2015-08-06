@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 18:16:34 +0300</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 18:16:34 +0300</lastBuildDate>
+    <pubDate>Thu, 06 Aug 2015 18:19:03 +0300</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2015 18:19:03 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -21,10 +21,10 @@
 
 &lt;h2&gt;&lt;a id=&quot;what&quot; href=&quot;#what&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Что такое REST&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;REST (Representational state transfer)&lt;/strong&gt; — общие принципы организации взаимодействия приложения/сайта с сервером по &lt;code&gt;HTTP&lt;/code&gt;. Сервер не запоминает состояние пользователя между запросами. В запросах передаётся информация, идентифицирующая пользователя (например &lt;em&gt;токен&lt;/em&gt;) и параметры для выполнения операции.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;REST (Representational state transfer)&lt;/strong&gt; — общие принципы организации взаимодействия приложения/сайта с сервером по &lt;code&gt;HTTP&lt;/code&gt;. Сервер не запоминает состояние пользователя между запросами. В запросах передаётся информация, идентифицирующая пользователя (например &lt;i&gt;токен&lt;/i&gt;) и параметры для выполнения операции.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;difference&quot; href=&quot;#difference&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Разница между REST и RESTful&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;REST&lt;/strong&gt; — архитектурный стиль, а &lt;em&gt;RESTful&lt;/em&gt; это сервис который следует этому стилю. Т.е если у вас на сервере &lt;em&gt;REST API&lt;/em&gt;, а на клиенте вы делаете запросы к этому &lt;em&gt;API&lt;/em&gt;, то у вас &lt;em&gt;RESTful&lt;/em&gt; приложение/сайт.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;REST&lt;/strong&gt; — архитектурный стиль, а &lt;strong&gt;RESTful&lt;/strong&gt; это сервис который следует этому стилю. Т.е если у вас на сервере &lt;em&gt;REST API&lt;/em&gt;, а на клиенте вы делаете запросы к этому &lt;i&gt;API&lt;/i&gt;, то у вас &lt;b&gt;RESTful&lt;/b&gt; приложение/сайт.&lt;/p&gt;
 
 &lt;h2&gt;&lt;a id=&quot;how&quot; href=&quot;#how&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Как это работает&lt;/h2&gt;
 
