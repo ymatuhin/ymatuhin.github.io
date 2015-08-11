@@ -6,9 +6,78 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 18:24:29 +0300</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 18:24:29 +0300</lastBuildDate>
+    <pubDate>Tue, 11 Aug 2015 13:14:42 +0300</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2015 13:14:42 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Фронтенд дайджест #1 — Awesome lists, bower, regexp, RSS, Git</title>
+        <description>&lt;p&gt;Когда я нахожу интересные ссыки, то хочу ими поделиться. Поэтому я собираю эти ссылки в Wunderlist, а когда их набирается 15, публикую их на сайте в дайджесте. Поехали… &lt;/p&gt;
+
+&lt;figure itemscope itemtype=&quot;//schema.org/VideoObject&quot;&gt;
+    &lt;br&gt;
+    &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;//codepen.io/Yakudoo/full/YXxmYR/&quot; width=&quot;100%&quot; height=&quot;480&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;figcaption itemprop=&quot;description&quot;&gt;Демка с милейшим львом на svg.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Испытывали ли вы чувство, когда непонятно как назвать переменную для цвета? Если да, то сервис &lt;a href=&quot;//chir.ag/projects/name-that-color/&quot;&gt;Name that Color&lt;/a&gt; вам пригодится. Вставляете hex код цвета, и получаете название для него 👍&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;//cssdb.co&quot;&gt;Рейтинг CSS библиотек&lt;/a&gt; по популярности.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//cubic-bezier.com&quot;&gt;GUI&lt;/a&gt; для кривых безье.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//devinhunt.github.io/typebase.css/&quot;&gt;typebase.css&lt;/a&gt; — таблица стилей для типографики. Пробовал на сайте, мне не понравилось. Стартовая точка для типографики в веб.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;//getawesomeness.com/&quot;&gt;Get awesomeness&lt;/a&gt; — список всего по всему. Лучше один раз увидеть 😊&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://glvrd.ru&quot;&gt;Главред&lt;/a&gt; помогает писать текст в информационном стиле. Пользуюсь перед каждой публикацией. И подписался на рассылку.&lt;/p&gt;
+&lt;p&gt;Приходилось ли вам делать поле для ввода, которое тянется вместе с текстом? &lt;a href=&quot;//leaverou.github.io/stretchy/&quot;&gt;Stretchy&lt;/a&gt; сделает это за вас.&lt;/p&gt;
+&lt;p&gt;Дополнительный &lt;a href=&quot;//lifehacker.ru/2015/07/28/sliden-joy/&quot;&gt;переносной экран&lt;/a&gt; для ноутбука. Сама идея хороша, но дома я и обычным не пользуюсь. Только на работе.&lt;/p&gt;
+&lt;p&gt;Хотел написать статью о &lt;code&gt;Bower&lt;/code&gt;, но наткнулся на пост Артема — «&lt;a href=&quot;//nano.sapegin.ru/all/bower&quot;&gt;Bower: зачем фронтенду нужен менеджер пакетов&lt;/a&gt;», к которой нечего добавить.&lt;/p&gt;
+&lt;p&gt;Пишите регулярки в консоли браузера? Как на счет попробовать онлайн сервис &lt;a href=&quot;//regexr.com&quot;&gt;regexr&lt;/a&gt;? В нем это делать куда удобнее и есть шпаргалка по регуляркам, которую я каждый раз гуглю 😀&lt;/p&gt;
+&lt;p&gt;Делаете микроразметку для сайта? &lt;a href=&quot;//schema-creator.org/&quot;&gt;Schema Creator&lt;/a&gt; поможет вам. Есть генераторы и примеры для многих типов. Жаль для блога нет.&lt;/p&gt;
+&lt;p&gt;Читаете о фронтенде по RSS и незнаете что еще почитать? Тогда этот &lt;a href=&quot;//shustov.su/blog/other/rss-list-for-frontend-developer&quot;&gt;список RSS-фидов&lt;/a&gt; для вас.&lt;/p&gt;
+&lt;p&gt;Избегаете гит через консоль? Пользуетесь только GUI? Не бояться консоли поможет &lt;a href=&quot;//www.git-legit.org&quot;&gt;legit&lt;/a&gt;, который делает понятные алиасы над гитом.&lt;/p&gt;
+&lt;p&gt;У вас есть сайт? Или вы продвигаете свой проекта? &lt;a href=&quot;//www.seochecklist.ru&quot;&gt;SEO чеклист&lt;/a&gt; поможет вам ничего не забыть.&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;i&gt;У тебя есть пара крутых ссылок? Поделитесь ими в комментариях&lt;/i&gt; 😏&lt;/p&gt;
+
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+    &lt;h3&gt;дайджест для front end разработчиков&lt;/h3&gt;
+    &lt;h4&gt;front end дайджест&lt;/h4&gt;
+    &lt;h5&gt;разработка интерфейсов&lt;/h5&gt;
+&lt;/footer&gt;
+</description>
+        <pubDate>Sat, 08 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/frontend_diegest_1</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/frontend_diegest_1</guid>
+        
+        <category>дайджест</category>
+        
+        <category>css</category>
+        
+        <category>javascrip</category>
+        
+        <category>cubic-bezier</category>
+        
+        <category>типографика</category>
+        
+        <category>текст</category>
+        
+        <category>bower</category>
+        
+        <category>регулярные выражения</category>
+        
+        <category>микроразметка</category>
+        
+        <category>rss</category>
+        
+        <category>git</category>
+        
+        <category>seo</category>
+        
+        <category>чеклист</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>RESTful API для фронтенд разработчика</title>
@@ -84,7 +153,7 @@
       </item>
     
       <item>
-        <title>План для развития фронтенд разработчика</title>
+        <title>План развития для фронтенд разработчика</title>
         <description>&lt;p&gt;После анализа &lt;a href=&quot;/blog/what_front_end_developer_need_to_know_in_2015-2016/&quot;&gt;требований&lt;/a&gt; к front end разработчикам в топовых компаниях, расставим приоритеты, накидаем &lt;b&gt;план&lt;/b&gt; действий, добавим полезные ссылки и советы.&lt;/p&gt;
 
 &lt;figure class=&quot;noborder&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
@@ -2028,57 +2097,6 @@ $sidebar.&lt;span class=&quot;c1&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot
         <category>javascript</category>
         
         <category>лучшие практики</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Анимируем высоту c auto в CSS через transition</title>
-        <description>&lt;figure class=&quot;&quot; itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; width=&quot;1040&quot; height=&quot;380&quot; alt=&quot;Transition height animate CSS&quot; src=&quot;/img/animate_height/transition_sign.jpg&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Анимация высоты в CSS через &lt;em&gt;transition&lt;/em&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Пытались ли вы анимировать высоту (&lt;code&gt;height&lt;/code&gt;) через &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt;? Если пытались, то скорее всего вы знаете, что через &lt;code&gt;transition&lt;/code&gt; можно задать анимацию от одного значения, до другого. И в этом есть небольшая проблема, что делать если нам нужно заанимировать высоту со значения &lt;code&gt;auto&lt;/code&gt; до &lt;code&gt;0&lt;/code&gt;? К сожалению просто указать свойство &lt;code&gt;transition&lt;/code&gt; не даст нам никакого эффекта. Но не спешите расстраиваться, это можно сделать не прибегая к помощи &lt;abbr title=&quot;JavaScript is the programming language of HTML and the Web.&quot;&gt;JavaScript&lt;/abbr&gt;.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;how&quot; href=&quot;#how&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Так как же это сделать?&lt;/h2&gt;
-&lt;p&gt;Казалось бы, безвыходная ситуация, но это не так. Мы забыли про еще одно свойство, которое может нам в этом помочь. И это свойство &lt;code&gt;max-height&lt;/code&gt;. Если вы уже догадались что делать дальше, отложите чтение этой стати и попробуйте реализовать анимацию сами. А потом возвращайтесь и сравните ваше решение с моим.&lt;/p&gt;
-
-&lt;p&gt;Чтобы все получилось, нужно сделать несколько шагов:&lt;/p&gt;
-&lt;ol&gt;
-	&lt;li&gt;Задать достаточно большую максимальную высоту, чтобы в дальнейшем анимировать её до нужных нам размеров;&lt;/li&gt;
-	&lt;li&gt;Установить &lt;code&gt;overflow: hidden&lt;/code&gt;, чтобы содержимое скрывалось при анимации;&lt;/li&gt;
-	&lt;li&gt;Помнить про &lt;code&gt;padding&lt;/code&gt;, а именно про то, что если он есть, то его тоже нужно будет анимировать до 0, чтобы наш блок полностью исчез;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;&lt;a id=&quot;code&quot; href=&quot;#code&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Анимация высоты с 0 до auto&lt;/h3&gt;
-
-&lt;figure&gt;
-&lt;iframe src=&quot;/demo/animate_auto/index.html&quot; width=&quot;100%&quot; height=&quot;300&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-&lt;figcaption&gt;Анимируем высоту c 0 до auto через CSS (&lt;a href=&quot;/demo/animate_auto/&quot;&gt;открыть в новом окне&lt;/a&gt;)&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Посмотреть исходный код можно на &lt;a href=&quot;//github.com/ymatuhin/ymatuhin.github.io/blob/master/demo/animate_auto/index.html&quot; rel=&quot;nofollow&quot;&gt;гитхабе&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Теперь мы умеем анимировать высоту через CSS. И теперь можем делать без javascript такие штуки, как: спойлеры, выпадающие меню, раскрывающиеся попапы и т.д.&lt;/p&gt;
-
-
-&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;h3&gt;transition height&lt;/h3&gt;
-	&lt;h3&gt;animate height&lt;/h3&gt;
-	&lt;h4&gt;css transition height&lt;/h4&gt;
-	&lt;h5&gt;transition height auto&lt;/h5&gt;
-&lt;/footer&gt;
-</description>
-        <pubDate>Mon, 29 Jun 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/height_transition_css</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/height_transition_css</guid>
-        
-        <category>css</category>
-        
-        <category>анимация</category>
         
         
         <category>blog</category>

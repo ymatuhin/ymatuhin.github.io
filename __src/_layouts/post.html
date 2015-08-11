@@ -16,8 +16,7 @@ is_post: true
 				<span class="page-header__sub-title">
 					{% assign m = page.date | date: "%-m" %}
 
-					<abbr class="published updated" title='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</abbr>
-					<meta itemprop="datePublished" content='{{ page.date | date: "%Y-%m-%d" }}'><!--
+					<abbr class="published updated" title='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</abbr><meta itemprop="datePublished" content='{{ page.date | date: "%Y-%m-%d" }}'><!--
 
 					-->{% for tag in page.tags %}, <a class="tag_list_link" href="/tag/{{ tag | downcase | replace: ' ', '_' }}/"><span itemprop="keywords">{{tag}}</span></a>{% endfor %}
 
