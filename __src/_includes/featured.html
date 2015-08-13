@@ -15,6 +15,7 @@
            <li>
                <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
                    <a class="entry-title" rel="bookmark" href="{{ post.url }}/">
+                       {% assign m = post.date | date: "%-m" %}
                        <h3 itemprop="headline">
                            {{ post.title }}
                            &nbsp; <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }}&nbsp;{% include month.html %}&nbsp;{{ post.date | date: "%-Y"}}</abbr>
@@ -36,6 +37,7 @@
                 <li>
                     <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
                         <a class="entry-title" rel="bookmark" href="{{ post.url }}/">
+                            {% assign m = post.date | date: "%-m" %}
                             <h3 itemprop="headline">
                                 {{ post.title }}
                                 &nbsp; <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }}&nbsp;{% include month.html %}&nbsp;{{ post.date | date: "%-Y"}}</abbr>
@@ -69,6 +71,7 @@
                 <li>
                     <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting">
                         <a class="entry-title" rel="bookmark" href="{{ post.url }}/">
+                            {% assign m = post.date | date: "%-m" %}
                             <h3 itemprop="headline">
                                 {{ post.title }}
                                 &nbsp; <abbr class="published updated" title='{{ post.date | date: "%Y-%m-%d" }}'>{{ post.date | date: "%-d"  }}&nbsp;{% include month.html %}&nbsp;{{ post.date | date: "%-Y"}}</abbr>
