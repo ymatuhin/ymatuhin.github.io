@@ -137,13 +137,14 @@ pre {
     border: 3px solid $cl-green;
     font-family: $font-code;
     font-size: 12px;
-    line-height: 19px;
+    line-height: 25px;
     overflow-x: auto;
     padding: 20px;
 
     code {
         background-color: transparent;
         white-space: pre-wrap;
+        padding: 0;
     }
 }
 
