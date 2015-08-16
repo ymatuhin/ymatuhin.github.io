@@ -11,7 +11,7 @@ image: /img/styleguide/styleguide.jpg
 ---
 
 <blockquote>
-    <p>Перевод AirBnB Style Guide — <a rel="nofollow" href="//github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> (en) на русский язык от команды Uprock. За что им огромное спасибо! Подробнее о переводе на <a rel="nofollow" href="//habrahabr.ru/company/uprock/blog/204848/">хабре</a>.</p>
+    <p>Перевод AirBnB Style Guide — <a rel="nofollow" href="http://github.com/airbnb/javascript">Airbnb JavaScript Style Guide</a> (en) на русский язык от команды Uprock. За что им огромное спасибо! Подробнее о переводе на <a rel="nofollow" href="http://habrahabr.ru/company/uprock/blog/204848/">хабре</a>.</p>
 </blockquote>
 
 <figure itemscope itemtype="//schema.org/ImageObject">
@@ -99,7 +99,7 @@ bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> item <span class="k">=</span> {};</pre></div></li>
-<li><p>Не используйте <a rel="nofollow" href="//es5.github.io/#x7.6.1">зарезервированные слова</a> в качестве ключей объектов. Они не будут работать в IE8. <a rel="nofollow" href="//github.com/airbnb/javascript/issues/61">Подробнее</a></p>
+<li><p>Не используйте <a rel="nofollow" href="http://es5.github.io/#x7.6.1">зарезервированные слова</a> в качестве ключей объектов. Они не будут работать в IE8. <a rel="nofollow" href="http://github.com/airbnb/javascript/issues/61">Подробнее</a></p>
 
 <div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
 <span class="k">var</span> superman <span class="k">=</span> {
@@ -152,7 +152,7 @@ someStack[someStack.<span class="c1">length</span>] <span class="k">=</span> <sp
 
 <span class="c">// хорошо</span>
 someStack.<span class="c1">push</span>(<span class="s"><span class="pds">'</span>abracadabra<span class="pds">'</span></span>);</pre></div></li>
-<li><p>Если вам необходимо скопировать массив, используйте Array::slice. <a rel="nofollow" href="//jsperf.com/converting-arguments-to-an-array/7">jsPerf</a></p>
+<li><p>Если вам необходимо скопировать массив, используйте Array::slice. <a rel="nofollow" href="http://jsperf.com/converting-arguments-to-an-array/7">jsPerf</a></p>
 
 <div class="highlight highlight-javascript"><pre><span class="k">var</span> len <span class="k">=</span> items.<span class="c1">length</span>,
     itemsCopy <span class="k">=</span> [],
@@ -192,7 +192,7 @@ itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre><
 <span class="c">// хорошо</span>
 <span class="k">var</span> fullName <span class="k">=</span> <span class="s"><span class="pds">'</span>Дилан <span class="pds">'</span></span> <span class="k">+</span> <span class="v">this</span>.lastName;</pre></div></li>
 <li><p>Строки длиннее 80 символов нужно разделять, выполняя перенос через конкатенацию строк.</p></li>
-<li><p>Осторожно: строки с большим количеством конкатенаций могут отрицательно влиять на быстродействие. <a rel="nofollow" href="//jsperf.com/ya-string-concat">jsPerf</a> и <a rel="nofollow" href="//github.com/airbnb/javascript/issues/40">Обсуждение</a></p>
+<li><p>Осторожно: строки с большим количеством конкатенаций могут отрицательно влиять на быстродействие. <a rel="nofollow" href="http://jsperf.com/ya-string-concat">jsPerf</a> и <a rel="nofollow" href="http://github.com/airbnb/javascript/issues/40">Обсуждение</a></p>
 
 <div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
 <span class="k">var</span> errorMessage <span class="k">=</span> <span class="s"><span class="pds">'</span>Эта сверхдлинная ошибка возникла из-за белой обезъяны. Не говори про обезъяну! Не слушай об обезьяне! Не думай об обезъяне!<span class="pds">'</span></span>;
@@ -206,7 +206,7 @@ itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre><
 <span class="k">var</span> errorMessage <span class="k">=</span> <span class="s"><span class="pds">'</span>Эта сверхдлинная ошибка возникла из-за белой обезъяны. <span class="pds">'</span></span> <span class="k">+</span>
   <span class="s"><span class="pds">'</span>Не говори про обезъяну! Не слушай об обезьяне! <span class="pds">'</span></span> <span class="k">+</span>
   <span class="s"><span class="pds">'</span>Не думай об обезъяне!<span class="pds">'</span></span>;</pre></div></li>
-<li><p>Когда строка создается программным путем, используйте Array::join вместо объединения строк. В основном для IE: <a rel="nofollow" href="//jsperf.com/string-vs-array-concat/2">jsPerf</a>.</p>
+<li><p>Когда строка создается программным путем, используйте Array::join вместо объединения строк. В основном для IE: <a rel="nofollow" href="http://jsperf.com/string-vs-array-concat/2">jsPerf</a>.</p>
 
 <div class="highlight highlight-javascript"><pre><span class="k">var</span> items,
     messages,
@@ -271,7 +271,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
   <span class="en">console</span><span class="c1">.log</span>(<span class="s"><span class="pds">'</span>Если вы читаете это, вы открыли консоль.<span class="pds">'</span></span>);
 })();</pre></div></li>
 <li>Никогда не объявляйте функцию внутри блока кода — например в if, while, else и так далее. Единственное исключение — блок функции. Вместо этого присваивайте функцию уже объявленной через <code>var</code> переменной. Условное объявление функций работает, но в различных браузерах работает по-разному.</li>
-<li><p><strong>Примечание</strong> ECMA-262 устанавливает понятие <code>блока</code> как списка операторов. Объявление функции (не путайте с присвоением функции переменной) не является оператором. <a rel="nofollow" href="//www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97">Комментарий по этому вопросу в ECMA-262</a>.</p>
+<li><p><strong>Примечание</strong> ECMA-262 устанавливает понятие <code>блока</code> как списка операторов. Объявление функции (не путайте с присвоением функции переменной) не является оператором. <a rel="nofollow" href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97">Комментарий по этому вопросу в ECMA-262</a>.</p>
 
 <div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
 <span class="k">if</span> (currentUser) {
@@ -508,7 +508,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
     <span class="en">console</span><span class="c1">.log</span>(<span class="s"><span class="pds">'</span>Я лечууууу<span class="pds">'</span></span>);
   }
 }</pre></div></li>
-<li><p>Более подробно можно прочитать в статье <a rel="nofollow" href="//www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting">JavaScript Scoping &amp; Hoisting</a> от <a rel="nofollow" href="//www.adequatelygood.com/">Ben Cherry</a></p>
+<li><p>Более подробно можно прочитать в статье <a rel="nofollow" href="http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting">JavaScript Scoping &amp; Hoisting</a> от <a rel="nofollow" href="http://www.adequatelygood.com/">Ben Cherry</a></p>
 
 <p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
@@ -553,7 +553,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <span class="k">if</span> (collection.<span class="c1">length</span>) {
   <span class="c">// ...код...</span>
 }</pre></div></li>
-<li><p>Более подробно можно прочитать в статье <a rel="nofollow" href="//javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108">Truth Equality and JavaScript</a> от Angus Croll</p>
+<li><p>Более подробно можно прочитать в статье <a rel="nofollow" href="http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108">Truth Equality and JavaScript</a> от Angus Croll</p>
 
 <p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
@@ -784,7 +784,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
   heroName<span class="k">:</span> <span class="s"><span class="pds">'</span>Mr. Incredible<span class="pds">'</span></span>,
   superPower<span class="k">:</span> <span class="s"><span class="pds">'</span>strength<span class="pds">'</span></span>
 };</pre></div></li>
-<li><p>Дополнительная запятая в конце объектов: <strong>Нет</strong>. Она способна вызвать проблемы с IE6/7 и IE9 в режиме совместимости. В некоторых реализациях ES3 запятая в конце массива увеличивает его длину на 1, что может вызвать проблемы. Этот вопрос был прояснен только в ES5 (<a rel="nofollow" href="//es5.github.io/#D">оригинал</a>):</p>
+<li><p>Дополнительная запятая в конце объектов: <strong>Нет</strong>. Она способна вызвать проблемы с IE6/7 и IE9 в режиме совместимости. В некоторых реализациях ES3 запятая в конце массива увеличивает его длину на 1, что может вызвать проблемы. Этот вопрос был прояснен только в ES5 (<a rel="nofollow" href="http://es5.github.io/#D">оригинал</a>):</p>
 
 <blockquote>
 <p>Редакция ECMAScript 5 однозначно устанавливает факт, что запятая в конце ArrayInitialiser не должна увеличивать длину массива. Это несемантическое изменение от Редакции ECMAScript 3, но некоторые реализации до этого некорректно разрешали этот вопрос.</p>
@@ -881,7 +881,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> val <span class="k">=</span> <span class="c1">parseInt</span>(inputValue, <span class="c1">10</span>);</pre></div></li>
-<li><p>Если по какой-либо причине вы делаете что-то дикое, и именно на <code>parseInt</code> тратится больше всего ресурсов, используйте побитовый сдвиг <a rel="nofollow" href="//jsperf.com/coercion-vs-casting/3">из соображений быстродействия</a>, но обязательно оставьте комментарий с объяснением причин.</p>
+<li><p>Если по какой-либо причине вы делаете что-то дикое, и именно на <code>parseInt</code> тратится больше всего ресурсов, используйте побитовый сдвиг <a rel="nofollow" href="http://jsperf.com/coercion-vs-casting/3">из соображений быстродействия</a>, но обязательно оставьте комментарий с объяснением причин.</p>
 
 <div class="highlight highlight-javascript"><pre><span class="c">// хорошо</span>
 <span class="c">/**</span>
@@ -890,7 +890,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <span class="c"> * работает значительно быстрее.</span>
 <span class="c"> */</span>
 <span class="k">var</span> val <span class="k">=</span> inputValue <span class="k">&gt;&gt;</span> <span class="c1">0</span>;</pre></div></li>
-<li><p><strong>Примечание:</strong> Будьте осторожны с побитовыми операциями. Числа в JavaScript являются <a rel="nofollow" href="//es5.github.io/#x4.3.19">64-битными значениями</a>, но побитовые операции всегда возвращают 32-битные значенения. <a rel="nofollow" href="//es5.github.io/#x11.7">Источник</a>. Побитовые операции над числами, значение которых выходит за 32 бита (верхний предел: 2,147,483,647).</p>
+<li><p><strong>Примечание:</strong> Будьте осторожны с побитовыми операциями. Числа в JavaScript являются <a rel="nofollow" href="http://es5.github.io/#x4.3.19">64-битными значениями</a>, но побитовые операции всегда возвращают 32-битные значенения. <a rel="nofollow" href="http://es5.github.io/#x11.7">Источник</a>. Побитовые операции над числами, значение которых выходит за 32 бита (верхний предел: 2,147,483,647).</p>
 
 <pre><code>2147483647 &gt;&gt; 0 //=&gt; 2147483647
 2147483648 &gt;&gt; 0 //=&gt; -2147483648
@@ -1165,7 +1165,7 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
 <h2><a id="Модули" class="anchor" href="#Модули" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="modules">Модули</a></h2>
 
 <ul>
-<li>Модуль должен начинаться с <code>!</code>. За счет этого даже некорректно сформированный модуль, в конце которого отсутствует точка с запятой, не вызовет ошибок при автоматической сборке скриптов. <a rel="nofollow" href="//github.com/airbnb/javascript/issues/44#issuecomment-13063933">Объяснение</a></li>
+<li>Модуль должен начинаться с <code>!</code>. За счет этого даже некорректно сформированный модуль, в конце которого отсутствует точка с запятой, не вызовет ошибок при автоматической сборке скриптов. <a rel="nofollow" href="http://github.com/airbnb/javascript/issues/44#issuecomment-13063933">Объяснение</a></li>
 <li>Файл должен быть именован с camelCase, находиться в папке с тем же именем, и совпадать с именем экспортируемой переменной.</li>
 <li>Добавьте метод noConflict(), устанавливающий экспортируемый модуль в состояние предыдущей версии.</li>
 <li><p>Всегда объявляйте <code>'use strict';</code> в начале модуля.</p>
@@ -1226,7 +1226,7 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
     <span class="s"><span class="pds">'</span>background-color<span class="pds">'</span></span><span class="k">:</span> <span class="s"><span class="pds">'</span>pink<span class="pds">'</span></span>
   });
 }</pre></div></li>
-<li><p>Для DOM-запросов используйте классический каскадный CSS-синтаксис <code>$('.sidebar ul')</code> или родитель &gt; потомок <code>$('.sidebar &gt; ul')</code>. <a rel="nofollow" href="//jsperf.com/jquery-find-vs-context-sel/16">jsPerf</a></p></li>
+<li><p>Для DOM-запросов используйте классический каскадный CSS-синтаксис <code>$('.sidebar ul')</code> или родитель &gt; потомок <code>$('.sidebar &gt; ul')</code>. <a rel="nofollow" href="http://jsperf.com/jquery-find-vs-context-sel/16">jsPerf</a></p></li>
 <li><p>Используйте <code>find</code> для поиска внутри DOM-объекта.</p>
 
 <div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
@@ -1250,7 +1250,7 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <h2><a id="Совместимость-ecmascript-5" class="anchor" href="#Совместимость-ecmascript-5" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="es5">Совместимость ECMAScript 5</a></h2>
 
 <ul>
-<li><p>Опирайтесь на <a rel="nofollow" href="//kangax.github.com/es5-compat-table/">таблицу совместимости</a> с ES5 от <a rel="nofollow" href="//twitter.com/kangax/">Kangax</a></p>
+<li><p>Опирайтесь на <a rel="nofollow" href="http://kangax.github.com/es5-compat-table/">таблицу совместимости</a> с ES5 от <a rel="nofollow" href="http://twitter.com/kangax/">Kangax</a></p>
 
 <p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
@@ -1270,13 +1270,13 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <h2><a id="Быстродействие" class="anchor" href="#Быстродействие" aria-hidden="true"><span class="octicon octicon-link"></span></a><a id="performance">Быстродействие</a></h2>
 
 <ul>
-<li><a rel="nofollow" href="//kellegous.com/j/2013/01/26/layout-performance/">On Layout &amp; Web Performance</a></li>
-<li><a rel="nofollow" href="//jsperf.com/string-vs-array-concat/2">String vs Array Concat</a></li>
-<li><a rel="nofollow" href="//jsperf.com/try-catch-in-loop-cost">Try/Catch Cost In a Loop</a></li>
-<li><a rel="nofollow" href="//jsperf.com/bang-function">Bang Function</a></li>
-<li><a rel="nofollow" href="//jsperf.com/jquery-find-vs-context-sel/13">jQuery Find vs Context, Selector</a></li>
-<li><a rel="nofollow" href="//jsperf.com/innerhtml-vs-textcontent-for-script-text">innerHTML vs textContent for script text</a></li>
-<li><a rel="nofollow" href="//jsperf.com/ya-string-concat">Long String Concatenation</a></li>
+<li><a rel="nofollow" href="http://kellegous.com/j/2013/01/26/layout-performance/">On Layout &amp; Web Performance</a></li>
+<li><a rel="nofollow" href="http://jsperf.com/string-vs-array-concat/2">String vs Array Concat</a></li>
+<li><a rel="nofollow" href="http://jsperf.com/try-catch-in-loop-cost">Try/Catch Cost In a Loop</a></li>
+<li><a rel="nofollow" href="http://jsperf.com/bang-function">Bang Function</a></li>
+<li><a rel="nofollow" href="http://jsperf.com/jquery-find-vs-context-sel/13">jQuery Find vs Context, Selector</a></li>
+<li><a rel="nofollow" href="http://jsperf.com/innerhtml-vs-textcontent-for-script-text">innerHTML vs textContent for script text</a></li>
+<li><a rel="nofollow" href="http://jsperf.com/ya-string-concat">Long String Concatenation</a></li>
 <li><p>В процессе наполнения...</p>
 
 <p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
@@ -1287,63 +1287,63 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <p><strong>Прочитайте это</strong></p>
 
 <ul>
-<li><a rel="nofollow" href="//es5.github.com/">Annotated ECMAScript 5.1</a></li>
+<li><a rel="nofollow" href="http://es5.github.com/">Annotated ECMAScript 5.1</a></li>
 </ul>
 
 <p><strong>Другие руководства по стилю</strong></p>
 
 <ul>
-<li><a rel="nofollow" href="//google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">Google JavaScript Style Guide</a></li>
-<li><a rel="nofollow" href="//docs.jquery.com/JQuery_Core_Style_Guidelines">jQuery Core Style Guidelines</a></li>
-<li><a rel="nofollow" href="//github.com/rwldrn/idiomatic.js/">Principles of Writing Consistent, Idiomatic JavaScript</a></li>
+<li><a rel="nofollow" href="http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml">Google JavaScript Style Guide</a></li>
+<li><a rel="nofollow" href="http://docs.jquery.com/JQuery_Core_Style_Guidelines">jQuery Core Style Guidelines</a></li>
+<li><a rel="nofollow" href="http://github.com/rwldrn/idiomatic.js/">Principles of Writing Consistent, Idiomatic JavaScript</a></li>
 </ul>
 
 <p><strong>Другие стили</strong></p>
 
 <ul>
-<li><a rel="nofollow" href="//gist.github.com/4135065">Naming this in nested functions</a> - Christian Johansen</li>
-<li><a rel="nofollow" href="//github.com/airbnb/javascript/issues/52">Conditional Callbacks</a></li>
-<li><a rel="nofollow" href="//sideeffect.kr/popularconvention/#javascript">Popular JavaScript Coding Conventions on Github</a></li>
+<li><a rel="nofollow" href="http://gist.github.com/4135065">Naming this in nested functions</a> - Christian Johansen</li>
+<li><a rel="nofollow" href="http://github.com/airbnb/javascript/issues/52">Conditional Callbacks</a></li>
+<li><a rel="nofollow" href="http://sideeffect.kr/popularconvention/#javascript">Popular JavaScript Coding Conventions on Github</a></li>
 </ul>
 
 <p><strong>Дальнейшее прочтение</strong></p>
 
 <ul>
-<li><a rel="nofollow" href="//javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/">Understanding JavaScript Closures</a> - Angus Croll</li>
-<li><a rel="nofollow" href="//www.2ality.com/2013/06/basic-javascript.html">Basic JavaScript for the impatient programmer</a> - Dr. Axel Rauschmayer</li>
+<li><a rel="nofollow" href="http://javascriptweblog.wordpress.com/2010/10/25/understanding-javascript-closures/">Understanding JavaScript Closures</a> - Angus Croll</li>
+<li><a rel="nofollow" href="http://www.2ality.com/2013/06/basic-javascript.html">Basic JavaScript for the impatient programmer</a> - Dr. Axel Rauschmayer</li>
 </ul>
 
 <p><strong>Книги</strong></p>
 
 <ul>
-<li><a rel="nofollow" href="//www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">JavaScript: The Good Parts</a> - Douglas Crockford</li>
-<li><a rel="nofollow" href="//www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752">JavaScript Patterns</a> - Stoyan Stefanov</li>
-<li><a rel="nofollow" href="//www.amazon.com/JavaScript-Design-Patterns-Recipes-Problem-Solution/dp/159059908X">Pro JavaScript Design Patterns</a>  - Ross Harmes and Dustin Diaz</li>
-<li><a rel="nofollow" href="//www.amazon.com/High-Performance-Web-Sites-Essential/dp/0596529309">High Performance Web Sites: Essential Knowledge for Front-End Engineers</a> - Steve Souders</li>
-<li><a rel="nofollow" href="//www.amazon.com/Maintainable-JavaScript-Nicholas-C-Zakas/dp/1449327680">Maintainable JavaScript</a> - Nicholas C. Zakas</li>
-<li><a rel="nofollow" href="//www.amazon.com/JavaScript-Web-Applications-Alex-MacCaw/dp/144930351X">JavaScript Web Applications</a> - Alex MacCaw</li>
-<li><a rel="nofollow" href="//www.amazon.com/Pro-JavaScript-Techniques-John-Resig/dp/1590597273">Pro JavaScript Techniques</a> - John Resig</li>
-<li><a rel="nofollow" href="//www.amazon.com/Smashing-Node-js-JavaScript-Everywhere-Magazine/dp/1119962595">Smashing Node.js: JavaScript Everywhere</a> - Guillermo Rauch</li>
-<li><a rel="nofollow" href="//www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X">Secrets of the JavaScript Ninja</a> - John Resig and Bear Bibeault</li>
-<li><a rel="nofollow" href="//humanjavascript.com/">Human JavaScript</a> - Henrik Joreteg</li>
-<li><a rel="nofollow" href="//superherojs.com/">Superhero.js</a> - Kim Joar Bekkelund, Mads Mobæk, &amp; Olav Bjorkoy</li>
-<li><a rel="nofollow" href="//jsbooks.revolunet.com/">JSBooks</a></li>
+<li><a rel="nofollow" href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">JavaScript: The Good Parts</a> - Douglas Crockford</li>
+<li><a rel="nofollow" href="http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752">JavaScript Patterns</a> - Stoyan Stefanov</li>
+<li><a rel="nofollow" href="http://www.amazon.com/JavaScript-Design-Patterns-Recipes-Problem-Solution/dp/159059908X">Pro JavaScript Design Patterns</a>  - Ross Harmes and Dustin Diaz</li>
+<li><a rel="nofollow" href="http://www.amazon.com/High-Performance-Web-Sites-Essential/dp/0596529309">High Performance Web Sites: Essential Knowledge for Front-End Engineers</a> - Steve Souders</li>
+<li><a rel="nofollow" href="http://www.amazon.com/Maintainable-JavaScript-Nicholas-C-Zakas/dp/1449327680">Maintainable JavaScript</a> - Nicholas C. Zakas</li>
+<li><a rel="nofollow" href="http://www.amazon.com/JavaScript-Web-Applications-Alex-MacCaw/dp/144930351X">JavaScript Web Applications</a> - Alex MacCaw</li>
+<li><a rel="nofollow" href="http://www.amazon.com/Pro-JavaScript-Techniques-John-Resig/dp/1590597273">Pro JavaScript Techniques</a> - John Resig</li>
+<li><a rel="nofollow" href="http://www.amazon.com/Smashing-Node-js-JavaScript-Everywhere-Magazine/dp/1119962595">Smashing Node.js: JavaScript Everywhere</a> - Guillermo Rauch</li>
+<li><a rel="nofollow" href="http://www.amazon.com/Secrets-JavaScript-Ninja-John-Resig/dp/193398869X">Secrets of the JavaScript Ninja</a> - John Resig and Bear Bibeault</li>
+<li><a rel="nofollow" href="http://humanjavascript.com/">Human JavaScript</a> - Henrik Joreteg</li>
+<li><a rel="nofollow" href="http://superherojs.com/">Superhero.js</a> - Kim Joar Bekkelund, Mads Mobæk, &amp; Olav Bjorkoy</li>
+<li><a rel="nofollow" href="http://jsbooks.revolunet.com/">JSBooks</a></li>
 </ul>
 
 <p><strong>Блоги</strong></p>
 
 <ul>
-<li><a rel="nofollow" href="//dailyjs.com/">DailyJS</a></li>
-<li><a rel="nofollow" href="//javascriptweekly.com/">JavaScript Weekly</a></li>
-<li><a rel="nofollow" href="//javascriptweblog.wordpress.com/">JavaScript, JavaScript...</a></li>
-<li><a rel="nofollow" href="//weblog.bocoup.com/">Bocoup Weblog</a></li>
-<li><a rel="nofollow" href="//www.adequatelygood.com/">Adequately Good</a></li>
-<li><a rel="nofollow" href="//www.nczonline.net/">NCZOnline</a></li>
-<li><a rel="nofollow" href="//perfectionkills.com/">Perfection Kills</a></li>
-<li><a rel="nofollow" href="//benalman.com/">Ben Alman</a></li>
-<li><a rel="nofollow" href="//dmitry.baranovskiy.com/">Dmitry Baranovskiy</a></li>
-<li><a rel="nofollow" href="//dustindiaz.com/">Dustin Diaz</a></li>
-<li><p><a rel="nofollow" href="//net.tutsplus.com/?s=javascript">nettuts</a></p>
+<li><a rel="nofollow" href="http://dailyjs.com/">DailyJS</a></li>
+<li><a rel="nofollow" href="http://javascriptweekly.com/">JavaScript Weekly</a></li>
+<li><a rel="nofollow" href="http://javascriptweblog.wordpress.com/">JavaScript, JavaScript...</a></li>
+<li><a rel="nofollow" href="http://weblog.bocoup.com/">Bocoup Weblog</a></li>
+<li><a rel="nofollow" href="http://www.adequatelygood.com/">Adequately Good</a></li>
+<li><a rel="nofollow" href="http://www.nczonline.net/">NCZOnline</a></li>
+<li><a rel="nofollow" href="http://perfectionkills.com/">Perfection Kills</a></li>
+<li><a rel="nofollow" href="http://benalman.com/">Ben Alman</a></li>
+<li><a rel="nofollow" href="http://dmitry.baranovskiy.com/">Dmitry Baranovskiy</a></li>
+<li><a rel="nofollow" href="http://dustindiaz.com/">Dustin Diaz</a></li>
+<li><p><a rel="nofollow" href="http://net.tutsplus.com/?s=javascript">nettuts</a></p>
 
 <p><strong><a href="#Оглавление">[⬆]</a></strong></p></li>
 </ul>
@@ -1353,26 +1353,26 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <p>Вот неполный список организаций, которые опираются на оригинальное руководство от AirBnB. Если вы собираетесь использовать это переведенное руководство, сделайте pull request, и мы сможем начать отдельный список компаний, использующих данный перевод.</p>
 
 <ul>
-<li><strong>Aan Zee</strong>: <a rel="nofollow" href="//github.com/AanZee/javascript">AanZee/javascript</a></li>
-<li><strong>Airbnb</strong>: <a rel="nofollow" href="//github.com/airbnb/javascript">airbnb/javascript</a></li>
-<li><strong>American Insitutes for Research</strong>: <a rel="nofollow" href="//github.com/AIRAST/javascript">AIRAST/javascript</a></li>
-<li><strong>Compass Learning</strong>: <a rel="nofollow" href="//github.com/compasslearning/javascript-style-guide">compasslearning/javascript-style-guide</a></li>
-<li><strong>ExactTarget</strong>: <a rel="nofollow" href="//github.com/ExactTarget/javascript">ExactTarget/javascript</a></li>
-<li><strong>Gawker Media</strong>: <a rel="nofollow" href="//github.com/gawkermedia/javascript">gawkermedia/javascript</a></li>
-<li><strong>GeneralElectric</strong>: <a rel="nofollow" href="//github.com/GeneralElectric/javascript">GeneralElectric/javascript</a></li>
-<li><strong>GoodData</strong>: <a rel="nofollow" href="//github.com/gooddata/gdc-js-style">gooddata/gdc-js-style</a></li>
-<li><strong>Grooveshark</strong>: <a rel="nofollow" href="//github.com/grooveshark/javascript">grooveshark/javascript</a></li>
-<li><strong>How About We</strong>: <a rel="nofollow" href="//github.com/howaboutwe/javascript">howaboutwe/javascript</a></li>
-<li><strong>Mighty Spring</strong>: <a rel="nofollow" href="//github.com/mightyspring/javascript">mightyspring/javascript</a></li>
-<li><strong>MinnPost</strong>: <a rel="nofollow" href="//github.com/MinnPost/javascript">MinnPost/javascript</a></li>
-<li><strong>ModCloth</strong>: <a rel="nofollow" href="//github.com/modcloth/javascript">modcloth/javascript</a></li>
-<li><strong>National Geographic</strong>: <a rel="nofollow" href="//github.com/natgeo/javascript">natgeo/javascript</a></li>
-<li><strong>National Park Service</strong>: <a rel="nofollow" href="//github.com/nationalparkservice/javascript">nationalparkservice/javascript</a></li>
-<li><strong>Razorfish</strong>: <a rel="nofollow" href="//github.com/razorfish/javascript-style-guide">razorfish/javascript-style-guide</a></li>
-<li><strong>Shutterfly</strong>: <a rel="nofollow" href="//github.com/shutterfly/javascript">shutterfly/javascript</a></li>
-<li><strong>Userify</strong>: <a rel="nofollow" href="//github.com/userify/javascript">userify/javascript</a></li>
-<li><strong>Zillow</strong>: <a rel="nofollow" href="//github.com/zillow/javascript">zillow/javascript</a></li>
-<li><strong>ZocDoc</strong>: <a rel="nofollow" href="//github.com/ZocDoc/javascript">ZocDoc/javascript</a></li>
+<li><strong>Aan Zee</strong>: <a rel="nofollow" href="http://github.com/AanZee/javascript">AanZee/javascript</a></li>
+<li><strong>Airbnb</strong>: <a rel="nofollow" href="http://github.com/airbnb/javascript">airbnb/javascript</a></li>
+<li><strong>American Insitutes for Research</strong>: <a rel="nofollow" href="http://github.com/AIRAST/javascript">AIRAST/javascript</a></li>
+<li><strong>Compass Learning</strong>: <a rel="nofollow" href="http://github.com/compasslearning/javascript-style-guide">compasslearning/javascript-style-guide</a></li>
+<li><strong>ExactTarget</strong>: <a rel="nofollow" href="http://github.com/ExactTarget/javascript">ExactTarget/javascript</a></li>
+<li><strong>Gawker Media</strong>: <a rel="nofollow" href="http://github.com/gawkermedia/javascript">gawkermedia/javascript</a></li>
+<li><strong>GeneralElectric</strong>: <a rel="nofollow" href="http://github.com/GeneralElectric/javascript">GeneralElectric/javascript</a></li>
+<li><strong>GoodData</strong>: <a rel="nofollow" href="http://github.com/gooddata/gdc-js-style">gooddata/gdc-js-style</a></li>
+<li><strong>Grooveshark</strong>: <a rel="nofollow" href="http://github.com/grooveshark/javascript">grooveshark/javascript</a></li>
+<li><strong>How About We</strong>: <a rel="nofollow" href="http://github.com/howaboutwe/javascript">howaboutwe/javascript</a></li>
+<li><strong>Mighty Spring</strong>: <a rel="nofollow" href="http://github.com/mightyspring/javascript">mightyspring/javascript</a></li>
+<li><strong>MinnPost</strong>: <a rel="nofollow" href="http://github.com/MinnPost/javascript">MinnPost/javascript</a></li>
+<li><strong>ModCloth</strong>: <a rel="nofollow" href="http://github.com/modcloth/javascript">modcloth/javascript</a></li>
+<li><strong>National Geographic</strong>: <a rel="nofollow" href="http://github.com/natgeo/javascript">natgeo/javascript</a></li>
+<li><strong>National Park Service</strong>: <a rel="nofollow" href="http://github.com/nationalparkservice/javascript">nationalparkservice/javascript</a></li>
+<li><strong>Razorfish</strong>: <a rel="nofollow" href="http://github.com/razorfish/javascript-style-guide">razorfish/javascript-style-guide</a></li>
+<li><strong>Shutterfly</strong>: <a rel="nofollow" href="http://github.com/shutterfly/javascript">shutterfly/javascript</a></li>
+<li><strong>Userify</strong>: <a rel="nofollow" href="http://github.com/userify/javascript">userify/javascript</a></li>
+<li><strong>Zillow</strong>: <a rel="nofollow" href="http://github.com/zillow/javascript">zillow/javascript</a></li>
+<li><strong>ZocDoc</strong>: <a rel="nofollow" href="http://github.com/ZocDoc/javascript">ZocDoc/javascript</a></li>
 </ul>
 
 <p><strong><a href="#Оглавление">[⬆]</a></strong></p>
