@@ -6,9 +6,56 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2015 13:39:53 +0300</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2015 13:39:53 +0300</lastBuildDate>
+    <pubDate>Wed, 19 Aug 2015 10:56:06 +0300</pubDate>
+    <lastBuildDate>Wed, 19 Aug 2015 10:56:06 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Динозавр T-Rex — пасхалочка в Google Chrome</title>
+        <description>&lt;p&gt;Бегущий динозавр перепрыгивающий через кактусы — пасхалка в хроме 2014 года, о которой я узнал только вчера 😔&lt;/p&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Динозавр в Google Chrome&quot; src=&quot;/img/eastern_eggs/t-rex-runner.png&quot;&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Динозавр в Google Chrome&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;&lt;a id=&quot;why&quot; href=&quot;#why&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Как играть в динозавра&lt;/h2&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Отключите интернет
+	&lt;li&gt;Попробуйте открыть любую страницу (вы увидите сообщение о неподключенном интернете)
+	&lt;li&gt;Нажмите &lt;mark&gt;пробел&lt;/mark&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;&lt;a id=&quot;why&quot; href=&quot;#why&quot; aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt; Геймплей T-Rex runner&lt;/h2&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
+	&lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;https://www.youtube.com/embed/buPl0vnusls&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+	&lt;figcaption itemprop=&quot;description&quot;&gt;Пасхалка в гугл хроме — динозавр T-Rex&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Если вам интересно посмотреть, как написана эта игра, то вы откройте дебагер на странице и найдите в одном из &lt;code&gt;script&lt;/code&gt; исходники. Или скачайте &lt;a href=&quot;/demo/t-rex-runner/runner.js&quot;&gt;js файл&lt;/a&gt; и поковыряйте его 😉&lt;/p&gt;
+
+&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
+    &lt;h3&gt;пасхалки google&lt;/h3&gt;
+    &lt;h4&gt;динозавр гугл хром&lt;/h4&gt;
+    &lt;h4&gt;динозавр в хроме&lt;/h4&gt;
+    &lt;h5&gt;как играть в динозавра в хроме&lt;/h5&gt;
+    &lt;h6&gt;пасхалки chrome&lt;/h6&gt;
+&lt;/footer&gt;
+</description>
+        <pubDate>Wed, 19 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/t_rex_runner_google_chrome</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/t_rex_runner_google_chrome</guid>
+        
+        <category>Google</category>
+        
+        <category>пасхалка</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Правильный сниппет медиа выражений для retina</title>
@@ -67,7 +114,7 @@
 &lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
     &lt;h3&gt;ретина css&lt;/h3&gt;
     &lt;h4&gt;retina media quires&lt;/h4&gt;
-    &lt;h6&gt;ретина медиа выражения&lt;/h5&gt;
+    &lt;h5&gt;ретина медиа выражения&lt;/h5&gt;
 &lt;/footer&gt;
 </description>
         <pubDate>Tue, 18 Aug 2015 00:00:00 +0300</pubDate>
@@ -709,85 +756,6 @@
         <category>привычки</category>
         
         <category>привычки разработчика</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Отзыв и мини обзор iOS 9 и OS X El Capitan (public beta)</title>
-        <description>&lt;p&gt;Уже три для пытаюсь написать эту заметку/отзыв/обзор, все какие-то обстоятельства мешали мне. Но это не может длиться бесконечно. Три для назад я установил себе публичные беты &lt;em&gt;iOS 9&lt;/em&gt; и &lt;em&gt;OSX El Capitan&lt;/em&gt; и сразу же хотел написать эту заметку. Но, наверное к лучшему, что я не написал её, потому что моё мнение полностью изменилось. Но обо все по порядку 😉&lt;/p&gt;
-
-&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Отзыв на публичные беты iOS 9 и El Capitan&quot; src=&quot;/img/ios9_osx_el_capitan/el_capitan_and_ios_9.png&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Отзыв на публичные беты iOS 9 и El Capitan&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h2&gt;&lt;a id=&quot;news&quot; href=&quot;#news&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Что нового в iOS 9 и El Capitan?&lt;/h2&gt;
-
-&lt;p&gt;Я прочитал кучу статей, хотел оставить здесь ссылки на них. Но потом нашел эти крутые короткие видосы с обзором новых OS. Приятного просмотра 👍&lt;/p&gt;
-
-&lt;div class=&quot;gallery_half clearfix&quot;&gt;
-    &lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
-        &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;https://www.youtube.com/embed/dVupItayMmM&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-        &lt;figcaption itemprop=&quot;description&quot;&gt;Что нового в iOS 9 public beta?&lt;/figcaption&gt;
-    &lt;/figure&gt;
-
-    &lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
-        &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;https://www.youtube.com/embed/qwWnfZu6YjM&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-        &lt;figcaption itemprop=&quot;description&quot;&gt;Что нового в OSX El Capitan public beta?&lt;/figcaption&gt;
-    &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;h2&gt;&lt;a id=&quot;release&quot; href=&quot;#release&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Когда выйдет финальная версия&lt;/h2&gt;
-&lt;p&gt;Официальный релиз будет как всегда осенью, в сентябре. А до этого будет обновляться бета по мере фикса багов.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;review&quot; href=&quot;#review&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Стоит ли устанавливать?&lt;/h2&gt;
-&lt;p&gt;В работе iOS 9 не было замечено никаких критических багов, небольшие наезжания интерфейса, но в целом — все ок. Новые функции уже есть, но особо я их не тестировал. Я бы рекомендовал уже сейчас обновиться и быть «в теме» 😀&lt;/p&gt;
-
-&lt;p&gt;А что касается OS X El Capitan, тот тут не все так однозначно. Помимо плюсов, есть и некоторые минусы:&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;В скайпе на работает звук (но микрофон работает);
-    &lt;li&gt;Превью (на пробел) работает медленнее чем раньше;
-    &lt;li&gt;Спотлайт теперь можно перемещать, из-за этого он все время непонятно где (не сохраняет толком позицию);
-    &lt;li&gt;Плохо работает калькулятор в спотлайт;
-    &lt;li&gt;Bartender перестал работать для стандартных иконок;
-    &lt;li&gt;Gestimer так-же не работает;
-    &lt;li&gt;Duet display вылетает очень часто;
-    &lt;li&gt;Noizio тоже не работает толком;
-    &lt;li&gt;Tower иногда падает при пуле (но не всегда);
-&lt;/ol&gt;
-
-&lt;p&gt;В остальном вроде бы все более менее стабильно. Система по крайней мере ни разу не упала 👍&lt;/p&gt;
-
-&lt;h2&gt;&lt;a id=&quot;install&quot; href=&quot;#install&quot;aria-hidden=&quot;true&quot; class=&quot;short-link&quot;&gt;#&lt;/a&gt;&amp;nbsp;Как установить public beta?&lt;/h2&gt;
-&lt;p&gt;Вы все таки решили установить себе одну из операционок? Это делается достаточно просто. Зарегистрируйтесь на программе &lt;a href=&quot;https://beta.apple.com/sp/ru/betaprogram/welcome?locale=ru&quot;&gt;бета тестирования&lt;/a&gt; (если устанавливаете iOS то заходите сразу с телефона). Далее просто следуйте инструкциям. Если у вас какие-то проблемы, то вот пару статей про установку &lt;a rel=&quot;nofollow&quot; href=&quot;http://www.macdigger.ru/macall/kak-ustanovit-publichnuyu-beta-versiyu-os-x-el-capitan-na-mac.html&quot;&gt;El Capitan&lt;/a&gt; и &lt;a rel=&quot;nofollow&quot; href=&quot;http://www.macdigger.ru/iphone-ipod/kak-ustanovit-ios-9-beta-bez-uchetnoj-zapisi-razrabotchika.html&quot;&gt;iOS 9&lt;/a&gt;.
-
-&lt;p&gt;Вот и все, о проблемах пишите в комментариях, я буду дополнять эту статью.&lt;/p&gt;
-
-&lt;footer class=&quot;keywords section-subtitle visuallyhidden&quot; aria-hidden=&quot;true&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;h3&gt;ios 9 отзывы&lt;/h3&gt;
-	&lt;h3&gt;el capitan beta&lt;/h3&gt;
-	&lt;h4&gt;os x el capitan beta&lt;/h4&gt;
-	&lt;h4&gt;ios 9 beta отзывы&lt;/h4&gt;
-	&lt;h4&gt;ios 9 beta обзор&lt;/h4&gt;
-	&lt;h5&gt;ios 9 beta +что нового&lt;/h5&gt;
-	&lt;h5&gt;ios 9 public beta&lt;/h5&gt;
-	&lt;h5&gt;os x el capitan обзор&lt;/h5&gt;
-	&lt;h5&gt;установка os x el capitan&lt;/h5&gt;
-	&lt;h6&gt;el capitan отзывы&lt;/h6&gt;
-	&lt;h6&gt;os x el capitan отзывы&lt;/h6&gt;
-	&lt;h6&gt;стоит ли устанавливать ios 9 beta&lt;/h6&gt;
-&lt;/footer&gt;
-</description>
-        <pubDate>Wed, 15 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/review_ios9_and_osx_el_capitan</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/review_ios9_and_osx_el_capitan</guid>
-        
-        <category>ios</category>
-        
-        <category>osx</category>
         
         
         <category>blog</category>
