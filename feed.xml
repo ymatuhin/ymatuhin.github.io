@@ -6,9 +6,54 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Aug 2015 15:08:04 +0300</pubDate>
-    <lastBuildDate>Wed, 19 Aug 2015 15:08:04 +0300</lastBuildDate>
+    <pubDate>Thu, 20 Aug 2015 17:47:05 +0300</pubDate>
+    <lastBuildDate>Thu, 20 Aug 2015 17:47:05 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Фронтенд дайджест #2 — БЭМ, CSS матрицы, SVG логотипы, Vivaldi, Bootstrap, Canvas</title>
+        
+            <description>&lt;p&gt;Когда я нахожу интересные ссыки, то хочу ими поделиться. Поэтому я собираю эти ссылки в Wunderlist, а когда набирается 15, публикую в дайджесте. Поехали... &lt;/p&gt;
+
+&lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
+    &lt;br&gt;
+    &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;http://codepen.io/rgg/full/QbRyOq/&quot; width=&quot;100%&quot; height=&quot;480&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;figcaption itemprop=&quot;description&quot;&gt;3D прогресс бар на CSS&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/frontend_diegest_2&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Fri, 21 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/frontend_diegest_2</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/frontend_diegest_2</guid>
+        
+        <category>дайджест</category>
+        
+        <category>CSS</category>
+        
+        <category>БЭМ</category>
+        
+        <category>SVG</category>
+        
+        <category>Emoji</category>
+        
+        <category>Vivaldi</category>
+        
+        <category>Bootsrap</category>
+        
+        <category>вектора</category>
+        
+        <category>canvas</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Динозавр T-Rex — пасхалочка в Google Chrome</title>
@@ -81,15 +126,13 @@
       <item>
         <title>Фронтенд дайджест #1 — Awesome lists, bower, regexp, RSS, Git</title>
         
-            <description>&lt;p&gt;Когда я нахожу интересные ссыки, то хочу ими поделиться. Поэтому я собираю эти ссылки в Wunderlist, а когда их набирается 15, публикую их на сайте в дайджесте. Поехали… &lt;/p&gt;
+            <description>&lt;p&gt;Когда я нахожу интересные ссыки, то хочу ими поделиться. Поэтому я собираю эти ссылки в Wunderlist, а когда набирается 15, публикую в дайджесте. Поехали… &lt;/p&gt;
 
-&lt;figure itemscope itemtype=&quot;//schema.org/VideoObject&quot;&gt;
+&lt;figure itemscope itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
     &lt;br&gt;
     &lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;//codepen.io/Yakudoo/full/YXxmYR/&quot; width=&quot;100%&quot; height=&quot;480&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
     &lt;figcaption itemprop=&quot;description&quot;&gt;Демка с милейшим львом на svg.&lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;p&gt;Испытывали ли вы чувство, когда непонятно как назвать переменную для цвета? Если да, то сервис &lt;a href=&quot;http://chir.ag/projects/name-that-color/&quot;&gt;Name that Color&lt;/a&gt; вам пригодится. Вставляете hex код цвета, и получаете название для него 👍&lt;/p&gt;
 
 
 
@@ -320,36 +363,6 @@
         <category>сниппет</category>
         
         <category>шрифт</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Полезная привычка разработчика #1: «Проверяй код перед комитом»</title>
-        
-            <description>&lt;p&gt;Пару дней назад, в &lt;a href=&quot;/books/&quot;&gt;список прочитанных книг&lt;/a&gt; попала книга «Цельная жизнь». В ней огромное внимание уделялось привычкам, в особенности полезным. И читая эту книгу, я решил внедрить привычку, которая поможет мне в работе. Эта привычка очень простая — «&lt;strong&gt;Проверяй свой код перед комитом&lt;/strong&gt;».&lt;/p&gt;
-
-&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Полезные привычки разработчика&quot; src=&quot;/img/habbits/good_habbits.png&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Полезные привычки разработчика&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/good_dev_habbits&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Mon, 20 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/good_dev_habbits</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/good_dev_habbits</guid>
-        
-        <category>привычки</category>
-        
-        <category>привычки разработчика</category>
         
         
         <category>blog</category>
