@@ -6,9 +6,34 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Aug 2015 13:33:32 +0300</pubDate>
-    <lastBuildDate>Fri, 21 Aug 2015 13:33:32 +0300</lastBuildDate>
+    <pubDate>Sun, 23 Aug 2015 22:40:04 +0300</pubDate>
+    <lastBuildDate>Sun, 23 Aug 2015 22:40:04 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Апгрейдим «быстрый просмотр» (Quick Look) в Max OS</title>
+        
+            <description>&lt;p&gt;Quick Look незаменимая вещь для маководов, жаль что она не работает с некоторыми файлами, которые относятся к веб разработке. Было бы неплохо просматривать markdown, JSON, файлы без расширений, подсветка синтаксиса, показ webp изображений...&lt;/p&gt;
+
+&lt;p&gt;В этой статье я расскажу о плагинах к «быстрому просмотру» и их установке.&lt;/p&gt;
+
+
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/upgrade_quicklook&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Mon, 24 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/upgrade_quicklook</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/upgrade_quicklook</guid>
+        
+        <category>mac os</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Фронтенд дайджест #2 — БЭМ, CSS матрицы, SVG логотипы, Vivaldi, Bootstrap, Canvas</title>
@@ -329,40 +354,6 @@
         <category>собеседование</category>
         
         <category>вопросы</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Используем новый системный шрифт San Franciso от Apple</title>
-        
-            <description>&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Используем новый системный шрифт San Franciso от Apple&quot; src=&quot;/img/san_francisco/san_francisco.jpg&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Используем новый системный шрифт San Franciso от Apple&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Вместе с выпуском Apple Watch, компания представила новый шрифт &lt;em&gt;San Francisco&lt;/em&gt;, который теперь будет использоваться во всей экосистеме Apple. Уже сейчас можно посмотреть на этот шрифт в публичных бетах &lt;a href=&quot;/blog/review_ios9_and_osx_el_capitan/&quot;&gt;OSX и El Capitan&lt;/a&gt;.&lt;/p&gt;
-
-
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/using_san_francisco_font&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Tue, 21 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/using_san_francisco_font</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/using_san_francisco_font</guid>
-        
-        <category>osx</category>
-        
-        <category>ios</category>
-        
-        <category>сниппет</category>
-        
-        <category>шрифт</category>
         
         
         <category>blog</category>

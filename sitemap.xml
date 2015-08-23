@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ymatuhin.ru/blog/upgrade_quicklook</loc>
+    <lastmod>2015-08-24T00:00:00+03:00</lastmod>
+  </url>
+  <url>
     <loc>http://ymatuhin.ru/blog/frontend_diegest_2</loc>
     <lastmod>2015-08-21T00:00:00+03:00</lastmod>
   </url>
@@ -442,9 +446,6 @@
     <loc>http://ymatuhin.ru/tag/ios/</loc>
   </url>
   <url>
-    <loc>http://ymatuhin.ru/tag/osx/</loc>
-  </url>
-  <url>
     <loc>http://ymatuhin.ru/tag/%D0%BF%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B8_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0/</loc>
   </url>
   <url>
@@ -524,6 +525,18 @@
   </url>
   <url>
     <loc>http://ymatuhin.ru/tag/canvas/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/tag/mac%C2%A0os/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/page2/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/page3/</loc>
+  </url>
+  <url>
+    <loc>http://ymatuhin.ru/page4/</loc>
   </url>
   <url>
     <loc>http://ymatuhin.ru/demo/animate_auto/index.html</loc>
