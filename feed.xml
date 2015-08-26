@@ -6,9 +6,40 @@
     <author>Юрий Матюхин</author>
     <link>http://ymatuhin.ru/</link>
     <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Aug 2015 12:34:52 +0300</pubDate>
-    <lastBuildDate>Wed, 26 Aug 2015 12:34:52 +0300</lastBuildDate>
+    <pubDate>Thu, 27 Aug 2015 00:05:52 +0300</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2015 00:05:52 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Контрольные точки медиа выражений Bootstrap</title>
+        
+            <description>&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
+    &lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Апгрейдим «быстрый просмотр» (Quick Look) в Max OS&quot; src=&quot;/img/media_queries/bootstrap.png&quot;&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Twitter Bootstrap&amp;nbsp;&amp;mdash; самый популярный CSS фреймворк. У&amp;nbsp;него более 85&amp;nbsp;495 звезд и&amp;nbsp;35&amp;nbsp;055 форков на&amp;nbsp;&lt;a href=&quot;https://github.com/twbs/bootstrap&quot; rel=&quot;nofollow&quot;&gt;GitHub&lt;/a&gt;. А&amp;nbsp;19&amp;nbsp;августа вышла &lt;a href=&quot;http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/&quot; rel=&quot;nofollow&quot;&gt;4&amp;nbsp;альфа версия&lt;/a&gt;, в&amp;nbsp;которой разработчики используют &lt;code&gt;rem&lt;/code&gt; для адаптивной верстки. Но&amp;nbsp;не&amp;nbsp;в&amp;nbsp;медиа выражениях, которые остаются такими-же как и&amp;nbsp;были.&lt;/p&gt;
+
+
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/media_quires_breakpoins&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Thu, 27 Aug 2015 00:00:00 +0300</pubDate>
+        <link>http://ymatuhin.ru/blog/media_quires_breakpoins</link>
+        <guid isPermaLink="true">http://ymatuhin.ru/blog/media_quires_breakpoins</guid>
+        
+        <category>bootstrap</category>
+        
+        <category>media quires</category>
+        
+        <category>медиа выражения</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Апгрейдим «быстрый просмотр» (Quick Look) в Max OS</title>
@@ -146,6 +177,8 @@
         <category>лучшие практики</category>
         
         <category>media quires</category>
+        
+        <category>медиа выражения</category>
         
         
         <category>blog</category>
@@ -326,38 +359,6 @@
         <category>clearfix</category>
         
         <category>float</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Вопросы и ответы на собеседовании разработчика интерфейсов&amp;nbsp;#1</title>
-        
-            <description>&lt;figure itemscope itemtype=&quot;http://schema.org/ImageObject&quot;&gt;
-	&lt;img itemprop=&quot;contentUrl&quot; alt=&quot;Разбор вопросов на собеседовании разработчика интерфейсов #1&quot; src=&quot;/img/front_end_interview/head.jpg&quot;&gt;
-	&lt;figcaption itemprop=&quot;description&quot;&gt;Разбор вопросов на собеседовании разработчика интерфейсов #1&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Это первый пост из серии ответов на вопросы, которые спрашивают у разработчиков интерфейсов на собеседованиях. Я разберу интересную задачку, которая мне встретилась только один раз и сильно меня впечатлила. Если вы собеседуете разработчиков, можете так-же задавать этот вопрос во время собеседований.&lt;/p&gt;
-
-
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/frontend_interview_answers&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Thu, 23 Jul 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/frontend_interview_answers</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/frontend_interview_answers</guid>
-        
-        <category>работа</category>
-        
-        <category>собеседование</category>
-        
-        <category>вопросы</category>
         
         
         <category>blog</category>
