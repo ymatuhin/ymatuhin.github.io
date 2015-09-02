@@ -2,9 +2,11 @@
 
 <script>
     function searchRedirect () {
-        var search = location.search.slice(1).split('=')
-        if (search[0] != 's') return;
-        location.href = 'http://www.google.com/search?=' + search[1]
+        var search = location.search.slice(1).split('=');
+
+        if (search[0] == 's') {
+            location.href = 'https://www.google.ru/#q=123' + search[1];
+        }
     }
 
     searchRedirect();
