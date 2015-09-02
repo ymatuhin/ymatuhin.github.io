@@ -1,6 +1,14 @@
 <link rel="stylesheet" type="text/css" href="/css/secondary.css">
 
 <script>
+    function searchRedirect () {
+        var search = location.search.slice(1).split('=')
+        if (search[0] != 's') return;
+        location.href = 'http://www.google.com/search?=' + search[1]
+    }
+
+    searchRedirect();
+
     function importScript (sSrc, fOnload) {
         var oScript = document.createElement("script");
         oScript.type = "text\/javascript";
