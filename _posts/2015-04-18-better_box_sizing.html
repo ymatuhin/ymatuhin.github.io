@@ -1,0 +1,56 @@
+---
+layout: post
+title: Международный день box-sizing и лучшие практики
+categories: front-end
+redirect_from:
+  - /blog/better_box_sizing/
+tags: [лучшие практики, праздники разработчиков, css]
+description: >
+  Лучшие практики использования CSS свойства box-sizing и праздник посвященный этому свойству.
+---
+
+<p>Недавно я использовал в проекте css свойство <code>box-sizing: border-box</code>. В процессе этого я узнал про «Международный день box-sizing» (International box-sizing Awareness Day). И хочу рассказать вам что это за праздник, лучшие практики и поддержку свойства box-sizing.</p>
+
+<h2>Международный день box-sizing</h2>
+<p>Этот мини праздник отмечается 1 февраля каждого года. Первого февраля 2012 года Пол Айриш (Paul Irish) опубликовал свою статью <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">* { Box-sizing: Border-box } FTW</a>. Спустя два года Крис Койер (Chris Coyier) объявил на сайте <a href="https://css-tricks.com/international-box-sizing-awareness-day/">css-tricks.com</a>, что первое февраля будет считаться «Международным днем box-sizing», в честь даты написания статьи Полом.</p>
+
+<h2>Лучшая практика</h2>
+<p>Раньше для применения модели border-box для всех элементов я часто видел следующий код:</p>
+
+{% highlight css %}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+{% endhighlight %}
+
+<p>Но он уже устарел и не совсем отвечает современным требованиям. Во первых нам уже не нужны вендорные префиксы для этого свойства (<a href="http://caniuse.com/#feat=css3-boxsizing">пруф</a>). А во вторых, если мы где-то меняем <code>box-sizing</code> на <code>content-box</code>, то мы ожидаем, что у всех его родителей <code>box-sizing</code> будет тоже <code>content-box</code>, но с предыдущем кодом так не получается.</p>
+
+<p>Поэтому в 2014 году Крис Койер (Chris Coyier) улучшил этот код, и теперь это считается лучшей практикой для <code>box-sizing</code>.</p>
+
+{% highlight css %}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+{% endhighlight %}
+
+<p>Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме <code>html</code> наследуют <code>box-sizing</code> от родителя.</p>
+
+<h2>Поддержка браузерами</h2>
+<p>Я рекомендую использование этого свойства для всех проектов IE8 и выше. Firefox до 28 все еще требует префикс <code>-moz-</code>, iOS до 4 версии, Android до версии 2.3 требуют <code>-webkit-</code>, но все остальные браузеры используют без префиксов.</p>
+
+
+<h2>Производительность</h2>
+<p>Вы можете сказать, что использование универсального селектора <code>*</code> очень плохо влияет на производительности. На самом деле <code>*</code> настолько же быстрый как <code>h1</code>. Он может быть медленный если вы используете что-то на подобии <code>.foo > *</code>, поэтому не делайте так.</p>
+<p>Приведу пример, опубликованный Полом, в котором он сравнивает производительность сайта New York Times со стандартной моделью W3C и с моделью <code>border-box</code>:</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="607" height="291" src="/img/box_sizing/w3c_vs_borderbox.png" alt="Производительность сайта New York Times со стандартной моделью W3C и с моделью border-box">
+	<figcaption itemprop="description">Производительность сайта New York Times со стандартной моделью W3C и с моделью border-box</figcaption>
+</figure>
+
+<p>Как вы видите, разница составила не больше 5%. <br>Всем rock, peace and box-sizing !)</p>

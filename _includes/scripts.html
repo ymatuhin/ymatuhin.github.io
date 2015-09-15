@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/syntax.css">
+
+<script>
+	var scriptsSrcs = '';
+
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+
+	window.onload = function () {
+		importScript('https://mc.yandex.ru/metrika/watch.js', function () {
+			new Ya.Metrika({id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true });
+		});
+	}
+</script>
+
+<!-- Yandex.Metrika counter -->
+<noscript><div><img src="https://mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->

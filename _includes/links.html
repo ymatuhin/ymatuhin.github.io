@@ -1,0 +1,23 @@
+<h5>Ссылки</h5>
+
+
+<ul class="l">
+	<li>
+		{% if page.url == '/blog/' %}
+			<em>Блог</em>
+		{% else %}
+			<a href="/blog/">Блог</a>
+		{% endif %}
+	<li>
+		{% if page.url == '/books/' %}
+			<em>Книги</em>
+		{% else %}
+			<a href="/books/">Книги</a>
+		{% endif %}
+	<li>
+		{% if page.url == '/projects/' %}
+			<em>Проекты</em>
+		{% else %}
+			<a href="/projects/">Проекты</a>
+		{% endif %}
+</ul>

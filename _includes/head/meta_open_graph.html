@@ -1,0 +1,8 @@
+<meta prefix="og: http://ogp.me/ns#" property="og:title" content="{{ page_title }}">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="{{ page_url }}">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="{{ page_description }}">
+
+{% if page.image %}
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{{ site.url }}{{ page.image }}">
+{% endif %}

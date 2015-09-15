@@ -1,0 +1,13 @@
+<!-- Title -->
+{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' }} — {% if page.categories[0] == 'front-end' %}Фронтэнд разработка{% elsif page.categories[0] == 'tools' %}Инструменты разработчика{% else %}{{ site.title }}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+
+
+<!-- Description -->
+{% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
+{% capture page_keywords %}{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+
+<!-- Url -->
+{% capture page_url %}{{ page.url | replace:'index.html','' | replace: 'page2/', '' | replace: 'page3/', '' | replace: 'page4/', '' | replace: 'page5/', '' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+
+<!-- Date -->
+{% capture page_date %}{% if page.date %}{{ page.date | date: "%Y-%m-%d"}}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}{% endcapture %}

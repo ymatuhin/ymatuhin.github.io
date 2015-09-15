@@ -1,2 +1,10 @@
+CACHE MANIFEST
+# version 0.01
+
+# offline.html будет показан в автономном режиме
+FALLBACK:
+/ /offline.html
+
+# Все другие ресурсы (включая сайты) требуют подключение к сети
 NETWORK:
 *

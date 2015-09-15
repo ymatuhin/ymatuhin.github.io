@@ -1,0 +1,27 @@
+---
+layout: page
+title: Облако тегов
+permalink: /tags/
+redirect_to:
+  - /
+description: >
+  Объединенная лента всех записей с этого сайта. Тут можно почитать и про front-end и про мою жизнь.
+---
+
+<style>
+	.cloud { margin-bottom: 5em; }
+	.cloud .medium { font-size: 1.3em; }
+	.cloud .large { font-size: 1.7em; }
+	.cloud .huge { font-size: 2em; }
+</style>
+
+
+{% capture tagString %}{% for tag in site.tags %}{{ tag[0] }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags = tagString | split: '|' | sort %}
+<div class="cloud">
+  {% for tag in tags %}
+  {% assign number = site.tags[tag].size %}
+  {% assign slug = tag | replace: ' ', '_' %}
+    <a class="{% if number <= 1 %}small{% elsif number <= 5 %}medium{% elsif number <= 10 %}large{% elsif number <= 100000 %}huge{% else %}small{% endif %}" href="/tag/{{ tag | downcase | replace: ' ', '_' }}/">{{ tag }}</a>
+  {% endfor %}
+</div>

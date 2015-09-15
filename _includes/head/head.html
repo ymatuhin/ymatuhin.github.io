@@ -1,0 +1,22 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% include head/variables.html %}
+
+	<title>{{ page_title }}</title>
+	<meta name="description" content="{{ page_description }}">
+
+	<style>{% include inline.css %}</style>
+
+	<!-- Empty favicon -->
+	<link href="about:blank" rel="icon" type="image/x-icon">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+	{% include head/meta_rss.html %}
+	{% include head/meta_twitter.html %}
+	{% include head/meta_open_graph.html %}
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+</head>

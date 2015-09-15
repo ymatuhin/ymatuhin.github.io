@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>
+    {% if page.s_title %}
+        {{ page.s_title }}
+    {% else %}
+        {{ page.title }}
+    {% endif %}
+</h1>
+
+
+{{ content }}
