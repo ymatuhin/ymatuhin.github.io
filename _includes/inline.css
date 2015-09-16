@@ -1,5 +1,6 @@
 body {
     -moz-osx-font-smoothing: grayscale; /* Firefox better font */
+    -webkit-font-smoothing: antialiased;
     width: 35em;
     margin: 0 0 120px 120px;
     font: 15px/1.6em Georgia, serif;
