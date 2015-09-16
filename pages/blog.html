@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Блог фронтенд разработчика
+title: Блог фронтенд (frontend) разработчика
 permalink: /blog/
+description: >
+  Статьи и заметки о разработке веб интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках, браузерах, инструментарии frontend разработчика.
 ---
 
-<p>Статьи и заметки о разработке интерфейсов, верстке, html, css, javascript, фреймворках и трендах front end разработки.</p>
+<p>Статьи и заметки о разработке веб интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках, браузерах, инструментарии frontend разработчика.</p>
 
 {% for post in site.posts  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}

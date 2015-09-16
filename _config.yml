@@ -29,6 +29,3 @@ compress_html:
     envs: []
 # Build settings
 markdown: kramdown
-
-# For build make
-# rm -rf ../[^__]* && jekyll build && mv -f ../dist/* ../. && rm -rf ../dist
