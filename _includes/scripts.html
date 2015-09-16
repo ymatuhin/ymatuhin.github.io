@@ -2,6 +2,7 @@
 
 <script>
 	var scriptsSrcs = '';
+	var disqus = document.getElementById("disqus_thread");
 
 	function importScript (sSrc, fOnload) {
 		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
@@ -14,6 +15,13 @@
 		oScript.src = sSrc;
 	}
 
+	if (disqus) {
+		window.onscroll = function(e) {
+			var scrollSize = window.innerHeight + window.scrollY;
+			if (scrollSize >= disqus.offsetTop)
+				importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
 
 	window.onload = function () {
 		importScript('https://mc.yandex.ru/metrika/watch.js', function () {
