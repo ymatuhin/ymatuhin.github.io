@@ -1,19 +1,14 @@
-<h4 id="comments" style="margin-top:0;display: none">
-	<i style="font-weight: normal;"><a style="border-bottom: 1px dotted;" href='javascript:showHide();void(0);'>Начать обсуждение</a></i>
-</h4>
-<div id="disqus_thread" style="display:none">Загружаю комментарии…</div>
+<div style="margin-top: 48px" id="disqus_thread"></div>
 
 <noscript>Пожалуйста влючите JavaScript чтобы увидеть <a href="https://disqus.com/?ref_noscript" rel="nofollow">комментарии.</a></noscript>
 
 <script>
 	var disqus = document.getElementById("disqus_thread");
-	var cm = document.getElementById("comments");
 
-	cm.style.display = "block";
-
-	function showHide () {
-		importScript("http://ymatuhin.disqus.com/embed.js");
-		disqus.style.display = "block";
-		cm.innerHTML = '';
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
 	}
 </script>

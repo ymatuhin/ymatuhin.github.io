@@ -7,13 +7,5 @@ is_post: true
 
 {{ content }}
 
-<p style="text-align: right">
-	<small>
-		{% assign m = page.date | date: "%-m" %}
-
-		<abbr title='{{ page.date | date: "%Y-%m-%d" }}'>{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</abbr>
-	</small>
-</p>
-
 {% include comments.html %}
 {% include features.html %}
