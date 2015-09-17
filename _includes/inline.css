@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 h2, h3,
 p, img, figure, details { margin: 0 0 1.4em 0; }
 a {
-    color: #f00;
+    color: #C00;
     border-bottom: 1px solid;
     text-decoration: none;
     -webkit-transition: color .15s;
