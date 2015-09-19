@@ -82,8 +82,6 @@ npm install -g http-server   # устанавливаем зависимость
 http-server -p 8000
 {% endhighlight %}
 
-*Note: This server does funky things with relative paths. For example, if you have a file `/tests/index.html`, it will load `index.html` if you go to `/test`, but will treat relative paths as if they were coming from `/`.*
-
 ## node-static (Node.js)
 
 {% highlight bash %}
