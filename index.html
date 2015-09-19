@@ -31,7 +31,9 @@ description: >
 <h2>Последние записи из блога</h3>
 <ul>
     {% for post in site.posts limit:5 %}
-        <li><a href="{{ post.url }}/">{{ post.title }}</a>
+        <li><p><a href="{{ post.url }}/">{{ post.title }}</a><br>
+            {{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}
+        </p>
     {% endfor %}
 </ul>
 
