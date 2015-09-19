@@ -30,7 +30,7 @@ description: >
 
 <h2>Последние записи из блога</h3>
 <ul>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:3 %}
         <li><p><a href="{{ post.url }}/">{{ post.title }}</a><br>
             {{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}
         </p>

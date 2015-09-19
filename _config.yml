@@ -19,7 +19,7 @@ compress_html:
     envs: []
 source: ./
 destination: ../dist
-excerpt_separator: <!--more-->
+excerpt_separator: <!-- more -->
 compress_html:
   clippings: []
   comments: ["<!-- ", " -->"]
