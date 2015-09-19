@@ -63,23 +63,23 @@ perl -MHTTP::Server::Brick -e '$s=HTTP::Server::Brick->new(port=>8000); $s->moun
 ### Plack (Perl)
 
 {% highlight bash %}
-$ cpan Plack   # устанавливаем зависимость
-$ plackup -MPlack::App::Directory -e 'Plack::App::Directory->new(root=>".");' -p 8000
+cpan Plack   # устанавливаем зависимость
+plackup -MPlack::App::Directory -e 'Plack::App::Directory->new(root=>".");' -p 8000
 {% endhighlight %}
 
 
 ### Mojolicious (Perl)
 
 {% highlight bash %}
-$ cpan Mojolicious::Lite   # устанавливаем зависимость
-$ perl -MMojolicious::Lite -MCwd -e 'app->static->paths->[0]=getcwd; app->start' daemon -l http://*:8000
+cpan Mojolicious::Lite   # устанавливаем зависимость
+perl -MMojolicious::Lite -MCwd -e 'app->static->paths->[0]=getcwd; app->start' daemon -l http://*:8000
 {% endhighlight %}
 
 ### http-server (Node.js)
 
 {% highlight bash %}
-$ npm install -g http-server   # устанавливаем зависимость
-$ http-server -p 8000
+npm install -g http-server   # устанавливаем зависимость
+http-server -p 8000
 {% endhighlight %}
 
 *Note: This server does funky things with relative paths. For example, if you have a file `/tests/index.html`, it will load `index.html` if you go to `/test`, but will treat relative paths as if they were coming from `/`.*
@@ -87,35 +87,35 @@ $ http-server -p 8000
 ## node-static (Node.js)
 
 {% highlight bash %}
-$ npm install -g node-static   # устанавливаем зависимость
-$ static -p 8000
+npm install -g node-static   # устанавливаем зависимость
+static -p 8000
 {% endhighlight %}
 
 ## PHP (>= 5.4)
 
 {% highlight bash %}
-$ php -S 127.0.0.1:8000
+php -S 127.0.0.1:8000
 {% endhighlight %}
 
 
 ## Erlang
 
 {% highlight bash %}
-$ erl -s inets -eval 'inets:start(httpd,[{server_name,"NAME"},{document_root, "."},{server_root, "."},{port, 8000},{mime_types,[{"html","text/html"},{"htm","text/html"},{"js","text/javascript"},{"css","text/css"},{"gif","image/gif"},{"jpg","image/jpeg"},{"jpeg","image/jpeg"},{"png","image/png"}]}]).'
+erl -s inets -eval 'inets:start(httpd,[{server_name,"NAME"},{document_root, "."},{server_root, "."},{port, 8000},{mime_types,[{"html","text/html"},{"htm","text/html"},{"js","text/javascript"},{"css","text/css"},{"gif","image/gif"},{"jpg","image/jpeg"},{"jpeg","image/jpeg"},{"png","image/png"}]}]).'
 {% endhighlight %}
 
 
 ## busybox httpd
 
 {% highlight bash %}
-$ busybox httpd -f -p 8000
+busybox httpd -f -p 8000
 {% endhighlight %}
 
 
 ## webfs
 
 {% highlight bash %}
-$ webfsd -F -p 8000
+webfsd -F -p 8000
 {% endhighlight %}
 
 Зависит от [webfs](http://linux.bytesex.org/misc/webfs.html).
