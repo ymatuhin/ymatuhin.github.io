@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2, h3,
 p, img, figure, details { margin: 0 0 1.4em 0 }
+p > img { margin: 0 }
 a {
     color: #C00;
     border-bottom: 1px solid;
