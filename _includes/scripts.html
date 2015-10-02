@@ -4,6 +4,27 @@
 	var scriptsSrcs = '';
 	var disqus = document.getElementById("disqus_thread");
 
+	function typo () {
+		var ct = document.querySelector('.content');
+		var sel = 'p, li';
+
+		if (ct.querySelector('.elka, .lapka, .skobka') !== null) return;
+
+		function forEachElement(selector, fn) {
+			var elements = ct.querySelectorAll(selector);
+			for (var i = 0; i < elements.length; i++) fn(elements[i], i);
+		}
+
+		forEachElement(sel, function(el, i){
+			var text = ('innerText' in el) ? 'innerText' : 'textContent';
+			if (el[text] == '') return;
+
+			el.innerHTML = el.innerHTML.replace(/«/g, '<span class="elka"> </span><span>«</span>')
+			el.innerHTML = el.innerHTML.replace(/“/g, '<span class="lapka"> </span><span>“</span>')
+			el.innerHTML = el.innerHTML.replace(/\(/g, '<span class="skobka"> </span><span>(</span>')
+		});
+	}
+
 	function importScript (sSrc, fOnload) {
 		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
 		scriptsSrcs += sSrc;
@@ -28,6 +49,8 @@
 			new Ya.Metrika({id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true });
 		});
 	}
+
+	typo()
 </script>
 
 <!-- Yandex.Metrika counter -->
