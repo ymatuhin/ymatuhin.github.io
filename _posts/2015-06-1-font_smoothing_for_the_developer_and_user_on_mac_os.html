@@ -19,22 +19,26 @@ image: /img/font-smooth/compare.png
 	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
 </figure>
 
+<p>До ↓</p>
 <figure itemscope itemtype="http://schema.org/ImageObject">
 	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/img/font-smooth/yandex.png">
 	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
 </figure>
 <!-- <img class="bordered" src="/img/font-smooth/yandex.png" atl="yandex.ru со сглаживанием по умолчанию на Mac OS"> -->
+<p>После ↓</p>
 <figure itemscope itemtype="http://schema.org/ImageObject">
 	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/img/font-smooth/yandex_with.png">
 	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
 </figure>
 <!-- <img class="bordered" src="/img/font-smooth/yandex_with.png" atl="yandex.ru со сглаживанием antialiased на Mac OS"> -->
 
+<p>До ↓</p>
 <figure itemscope itemtype="http://schema.org/ImageObject">
 	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/img/font-smooth/google_search.png">
 	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
 </figure>
 
+<p>После ↓</p>
 <figure itemscope itemtype="http://schema.org/ImageObject">
 	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/img/font-smooth/google_search_with.png">
 	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
@@ -65,7 +69,7 @@ html {
 <p>В настройках создать новый стиль (write new style), назвать его (у меня Font render), поставить галочку <code>Enable</code>, и в поле <code>code</code> вставить следующий текст:</p>
 
 {% highlight css %}
-html, body, body * {
+html {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
 }
