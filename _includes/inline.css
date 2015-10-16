@@ -136,6 +136,8 @@ figcaption { display: none }
 /* code box */
 pre,
 code {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 	white-space: pre-wrap;
 	font-family: Consolas, monaco, monospace;
 	font-size: 14px;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<title>Одиннадцатиклассница и переносы слов в CSS</title>
+<meta charset="utf-8">
+
+<style>
+    body {
+        margin: 0;
+        padding: 30px;
+        font-size: 20px;
+        line-height: 1.4;
+        font-family: monospace;
+    }
+
+    .hyphens {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .box {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 200px;
+        box-shadow: 0 0 10px -2px rgba(0,0,0, .4);
+        padding: 20px;
+        border-radius: 5px;
+        margin: 0 30px 30px 0;
+    }
+
+
+    .text {
+        margin-top: 0;
+    }
+
+    .text_fix {
+        max-height: 140px;
+        overflow: auto;
+    }
+
+    .button {
+        font: inherit;
+        padding: 10px;
+        width: 100%;
+        cursor: default;
+        max-width: 100%;
+    }
+</style>
+
+<p>Это демо пример из статьи «<a href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a>».</p>
+
+Букмарклет — <a href="javascript:(function () {var a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT); while (a = w.nextNode()) { if (a.textContent.trim().length && a.parentNode.tagName != 'STYLE' && a.parentNode.tagName !== 'TITLE' && a.parentNode.tagName !== 'SCRIPT') a.textContent = 'Одиннадцатиклассница пошла посмотреть на достопримечательность, а Константин Константинопольский рассказал о клиентоориентированности.' }})()">11классница</a>.
+
+<br>
+<br>
+<br>
+
+<div class="box">
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="button">Lorem ipsum</button>
+</div>
+
+<div class="box">
+    <p class="text hyphens">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="button hyphens">Lorem ipsum</button>
+</div>
+
+<div class="box">
+    <p class="text hyphens">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="button ellipsis">Lorem ipsum</button>
+</div>
+
+<div class="box">
+    <p class="text text_fix hyphens">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <button class="button ellipsis">Lorem ipsum</button>
+</div>
