@@ -5,6 +5,9 @@ body {
 	width: 35em;
 	margin: 0 0 6.4em 6.4em;
 	font: .9375em/1.6 Georgia, serif;
+
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 h1,
@@ -136,8 +139,6 @@ figcaption { display: none }
 /* code box */
 pre,
 code {
-	word-wrap: break-word;
-	overflow-wrap: break-word;
 	white-space: pre-wrap;
 	font-family: Consolas, monaco, monospace;
 	font-size: 14px;
