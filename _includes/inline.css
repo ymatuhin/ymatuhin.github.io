@@ -162,3 +162,16 @@ pre {
 
 .skobka { margin-right: .38em }
 .skobka + span { margin-left: -.38em }
+
+
+.banner {
+	position: absolute;
+	right: 6.4em;
+	top: 6.4em;
+	width: 160px;
+	height: 600px;
+}
+
+@media (max-width: 56em) {
+	.banner { display: none; }
+}
