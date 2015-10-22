@@ -44,8 +44,8 @@ img {
 	height: auto !important;
 }
 
-p > img,
-p > iframe {
+p img,
+p iframe {
 	margin-bottom: -1px
 }
 
