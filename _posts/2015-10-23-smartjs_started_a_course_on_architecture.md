@@ -49,4 +49,4 @@ tags: [css, smartjs, архитектура]
 
 Из стека технологий на курсе будет использоваться webpack и babel (вместе с синтаксисом ES6-7), а для рендеринга — React.
 
-Почитать подробнее о SmartJS в группе [вконтакте](#). В ней же вы найдете [план занятий](#) для этого курса.
+Почитать подробнее о SmartJS в группе [вконтакте](https://vk.com/smartjs). В ней же вы найдете [план занятий](https://docs.google.com/document/d/1IAjmiU2auIerKraeRMjrm6pDrstFgPkPU4zTsJ_0YoY/edit) для этого курса.
