@@ -17,9 +17,9 @@
 			var text = ('innerText' in el) ? 'innerText' : 'textContent';
 			if (el[text] == '') return;
 
-			el.innerHTML = el.innerHTML.replace(/«/g, '<span class="elka"> </span><span>«</span>')
-			el.innerHTML = el.innerHTML.replace(/“/g, '<span class="lapka"> </span><span>“</span>')
-			el.innerHTML = el.innerHTML.replace(/\(/g, '<span class="skobka"> </span><span>(</span>')
+			el.innerHTML = el.innerHTML.replace(/ «/g, '<span class="elka"> </span><span class="l_elka">«</span>')
+			el.innerHTML = el.innerHTML.replace(/ “/g, '<span class="lapka"> </span><span class="l_lapka">“</span>')
+			el.innerHTML = el.innerHTML.replace(/ \(/g, '<span class="skobka"> </span><span class="l_skobka">(</span>')
 		});
 	}
 
