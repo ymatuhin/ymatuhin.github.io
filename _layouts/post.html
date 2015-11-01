@@ -8,7 +8,7 @@ is_post: true
 <p>
 	{% assign m = page.date | date: "%-m" %}
 
-	<abbr title='{{ page.date | date: "%Y-%m-%d" }}'><em>{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}</em></abbr>
+	<abbr title='{{ page.date | date: "%Y-%m-%d" }}'><em>{{ page.date | date: "%-d"  }} {% include month.html %}, {{ page.date | date: "%-Y"}}</em></abbr>
 </p>
 
 

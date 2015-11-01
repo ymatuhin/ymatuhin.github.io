@@ -1,6 +1,5 @@
 <script>
 	var scriptsSrcs = '';
-	var disqus = document.getElementById("disqus_thread");
 
 	function typo () {
 		var ct = document.querySelector('.content');
@@ -23,6 +22,7 @@
 		});
 	}
 
+	/* To disqus */
 	function importScript (sSrc, fOnload) {
 		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
 		scriptsSrcs += sSrc;
@@ -34,25 +34,13 @@
 		oScript.src = sSrc;
 	}
 
-	if (disqus) {
-		window.onscroll = function(e) {
-			var scrollSize = window.innerHeight + window.scrollY;
-			if (scrollSize >= disqus.offsetTop)
-				importScript("http://ymatuhin.disqus.com/embed.js");
-		}
-	}
-
-	window.onload = function () {
-		importScript('https://mc.yandex.ru/metrika/watch.js', function () {
-			new Ya.Metrika({id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true });
-		});
-	}
-
 	typo();
 </script>
 
 <link rel="stylesheet" href="/css/syntax.css">
 
 <!-- Yandex.Metrika counter -->
+<script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<script type="text/javascript">try { var yaCounter28017147 = new Ya.Metrika({ id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true });} catch(e) { }</script>
 <noscript><div><img src="https://mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
