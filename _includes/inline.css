@@ -5,7 +5,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	width: 35em;
-	margin: 0 0 6.4em 6.4em;
+	margin: 6.4em;
 	font: .9375em/1.6 Georgia, serif;
 
 	word-wrap: break-word;
@@ -125,24 +125,20 @@ blockquote:before {
 /* media queries */
 @media (max-width: 40em) {
 	body {
-		width: 75%;
-		margin: 0 0 15% 15%
+		width: 72%;
+		margin: 15%
 	}
-	h1 {
-		margin-top: 15%
-	}
+	h1 { margin-top: 15% }
 }
 
 @media (max-width: 30em) {
 	body {
 		width: 80%;
-		margin: 0 0 10% 10%;
+		margin: 10% 10%;
 		font-size: 14px;
 		line-height: 1.71;
 	}
-	h1 {
-		margin-top: 10%
-	}
+	h1 { margin-top: 10% }
 }
 
 figure img { margin: 0 }
