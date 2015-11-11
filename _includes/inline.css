@@ -42,6 +42,7 @@ img,
 iframe {
 	max-width: 100%;
 	border: 1px solid #ccc;
+	background: #fff;
 	vertical-align: top;
 	margin-top: -1px;
 }
