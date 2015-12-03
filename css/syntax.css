@@ -1,3 +1,26 @@
+.highlight { position: relative; }
+.highlight pre {
+	border-top: 1px solid #eee5e5;
+	border-bottom: 1px solid #eee5e5;
+	background: #fff7f7;
+ }
+
+.highlight:before,
+.highlight:after {
+    z-index: -1;
+    background-color: #fff7f7;
+    border-top: 1px solid #eee5e5;
+    border-bottom: 1px solid #eee5e5;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1000%;
+}
+
+.highlight:after { left: 100%; }
+.highlight:before { right: 100%; }
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

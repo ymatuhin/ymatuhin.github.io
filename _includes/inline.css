@@ -1,5 +1,7 @@
 * { box-sizing: border-box; }
 
+html { overflow-x: hidden; }
+
 /* default */
 body {
 	-moz-osx-font-smoothing: grayscale;
@@ -18,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 6.4em 0 1.4em 0;
+	margin: 6.4em 0 1.6em 0;
 	font-size: 1em;
 	font-weight: bold;
 }
@@ -84,7 +86,7 @@ ol {
 }
 
 ul {
-	margin: 0 0 1.4em 1em
+	margin: 0 0 1.6em 1em
 }
 
 ul li {
@@ -155,10 +157,9 @@ code {
 }
 
 pre {
-	border: 1px solid #ccc;
-	background: #f8f8f8;
-	padding: 1.4em;
-	margin: 0 -1.4em 1.4em;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	padding: 1.6em 0;
 }
 
 

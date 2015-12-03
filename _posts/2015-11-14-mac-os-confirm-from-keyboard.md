@@ -25,4 +25,4 @@ tags: [mac, osx]
 
 ### Дополнение №1 от 17.11.2015
 
-В OS X доступно сочетание клавиш `CMD + D` для нажатия на кнопку «Don't Save». Спасибо [zencoder](https://disqus.com/home/discussion/ymatuhin/mac_os_95/#comment-2364464096) за комментарий.
+В OS X доступно сочетание клавиш `CMD + D` для нажатия на кнопку «Don't Save». Спасибо zencoder за [комментарий](https://disqus.com/home/discussion/ymatuhin/mac_os_95/#comment-2364464096).
