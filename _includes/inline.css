@@ -123,14 +123,14 @@ blockquote:before {
 
 @media (max-width: 30em) {
 	.container {
-		width: 80%;
-		margin: 10% 10%;
+		width: 84%;
+		margin: 8% 8%;
 	}
 	body {
-		width: 80%;
-		margin: 10% 10%;
+		font-size: 14px;
+		line-height: 1.71;
 	}
-	h1 { margin-top: 10% }
+	h1 { margin-top: 8% }
 }
 
 figure img { margin: 0 }
