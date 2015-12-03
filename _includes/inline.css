@@ -1,18 +1,17 @@
 * { box-sizing: border-box; }
+html, body { overflow-x: hidden; }
 
-html { overflow-x: hidden; }
-
-/* default */
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	width: 35em;
-	margin: 6.4em;
+	margin: 0;
 	font: .9375em/1.6 Georgia, serif;
 
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 }
+
+.container { width: 35em; margin: 6.4em; }
 
 h1,
 h2,
@@ -29,15 +28,11 @@ p,
 img,
 iframe,
 figure,
-details {
-	margin: 0 0 1.6em 0
-}
+details { margin: 0 0 1.6em 0 }
 
 
 h2,
-h3 {
-	margin: 2.4em 0 .8em;
-}
+h3 { margin: 2.4em 0 .8em; }
 
 /* media */
 img,
@@ -49,9 +44,7 @@ iframe {
 	margin-top: -1px;
 }
 
-img {
-	height: auto !important;
-}
+img { height: auto !important; }
 
 p img,
 p iframe {
@@ -85,13 +78,9 @@ ol {
 	padding: 0;
 }
 
-ul {
-	margin: 0 0 1.6em 1em
-}
+ul { margin: 0 0 1.6em 1em }
 
-ul li {
-	margin: 0
-}
+ul li { margin: 0 }
 
 ol li {
 	list-style: decimal;
@@ -99,9 +88,7 @@ ol li {
 	list-style-position: inside;
 }
 
-ul.l {
-	margin-left: 0
-}
+ul.l { margin-left: 0 }
 
 ul.l li {
 	list-style: none;
@@ -127,7 +114,7 @@ blockquote:before {
 
 /* media queries */
 @media (max-width: 40em) {
-	body {
+	.container {
 		width: 72%;
 		margin: 15%
 	}
@@ -135,11 +122,13 @@ blockquote:before {
 }
 
 @media (max-width: 30em) {
+	.container {
+		width: 80%;
+		margin: 10% 10%;
+	}
 	body {
 		width: 80%;
 		margin: 10% 10%;
-		font-size: 14px;
-		line-height: 1.71;
 	}
 	h1 { margin-top: 10% }
 }

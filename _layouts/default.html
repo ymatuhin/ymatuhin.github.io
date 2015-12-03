@@ -3,15 +3,16 @@
 
 	{% include head/head.html %}
 
-	<div class="content">
-		{{ content }}
-	</div>
+	<div class="container">
+		<div class="content">
+			{{ content }}
+		</div>
 
-	{% include links.html %}
-	{% include about.html %}
-	{% include search.html %}
+		{% include links.html %}
+		{% include about.html %}
+		{% include search.html %}
+	</div>
 
 	{% include scripts.html %}
 	{% include banner.html %}
-
 </html>
