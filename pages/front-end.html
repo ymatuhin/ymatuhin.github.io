@@ -10,9 +10,12 @@ description: >
 
 
 <ul>
-    {% for post in site.posts %}
-        {% if post.categories[0] == 'front-end' %}
-            <li><a href="{{ post.url }}/">{{ post.title }}</a>
-        {% endif %}
-    {% endfor %}
+	{% for post in site.posts %}
+		{% if post.categories[0] == 'front-end' %}
+			<li>
+				<article itemscope itemtype="http://schema.org/Article">
+					<nav itemprop="name"><a itemprop="url" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
+				</article>
+		{% endif %}
+	{% endfor %}
 </ul>

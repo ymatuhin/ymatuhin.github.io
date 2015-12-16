@@ -9,9 +9,7 @@ tags: [cdn, preconnect, prefetch, prerender, preloading, оптимизация]
 
 Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработающий preload. HTML5 Link Prefetch уменьшит время загрузки для ресурсов, которые нам понадобятся позже.
 
-[![html5 link prefetch](/img/link_prefetch/html5_link_prefetch.png)](/img/link_prefetch/html5_link_prefetch.png){:rel='nofollow'}
-
-Для наглядности я позаимствовал слайд [@igrigorik](https://twitter.com/igrigorik){:rel='nofollow'}, в котором наглядно видно что к чему относится.
+{% include media-image.html file="link_prefetch/html5_link_prefetch.png" title="HTML5 Link Prefetch" caption="Слайд @igrigorik, в котором наглядно видно что к чему относится." %}
 
 <!-- more -->
 

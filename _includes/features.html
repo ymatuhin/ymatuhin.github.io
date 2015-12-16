@@ -12,7 +12,10 @@
    {% if count <= max_count %}
      {% if tags_list == post_tags %}
        {% if post.title != page.title %}
-           <li><a class="entry-title" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></li>
+           <li>
+               <article itemscope itemtype="http://schema.org/Article">
+                   <nav itemprop="name"><a itemprop="url" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
+               </article>
        {% assign count = count | plus:'1' %}
        {% endif %}
      {% else %}
@@ -20,8 +23,11 @@
       {% for cat in post_tags %}
       {% for dog in tags_list %}
         {% if cat == dog %}
-			{% unless cached contains post.url %}
-                <li><a class="entry-title" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></li>
+                {% unless cached contains post.url %}
+                    <li>
+                        <article itemscope itemtype="http://schema.org/Article">
+                            <nav itemprop="name"><a itemprop="url" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
+                        </article>
 				{% assign count = count | plus:'1' %}
 			{% endunless %}
 
@@ -37,11 +43,11 @@
 {% endfor %}
 {% endcapture %}
 
-<div>
+<aside>
     {% if count > 1 %}
         <h4>Похожие записи</h4>
         <ul>
             {{ related_posts }}
         </ul>
     {% endif %}
-</div>
+</aside>

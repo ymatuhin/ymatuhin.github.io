@@ -1,39 +1,41 @@
-<h5>Меню</h5>
+<nav>
+	<h5>Меню</h5>
 
-<ul class="l">
-	{% if page.url != '/index.html' %}
-		<li>
-			{% if page.is_post %}
-				<a rel="nofollow" href="/">Главная</a>
-			{% else %}
-				<a href="/">Главная</a>
-			{% endif %}
-	{% endif %}
+	<ul class="l">
+		{% if page.url != '/index.html' %}
+			<li>
+				{% if page.is_post %}
+					<a rel="nofollow" href="/">Главная</a>
+				{% else %}
+					<a href="/">Главная</a>
+				{% endif %}
+		{% endif %}
 
-	{% if page.url != '/blog/' %}
-		<li>
-			{% if page.is_post %}
-				<a rel="nofollow" href="/blog/">Блог</a>
-			{% else %}
-				<a href="/blog/">Блог</a>
-			{% endif %}
-	{% endif %}
+		{% if page.url != '/blog/' %}
+			<li>
+				{% if page.is_post %}
+					<a rel="nofollow" href="/blog/">Блог</a>
+				{% else %}
+					<a href="/blog/">Блог</a>
+				{% endif %}
+		{% endif %}
 
-	{% if page.url != '/books/' %}
-		<li>
-			{% if page.is_post %}
-				<a rel="nofollow" href="/books/">Книги</a>
-			{% else %}
-				<a href="/books/">Книги</a>
-			{% endif %}
-	{% endif %}
+		{% if page.url != '/books/' %}
+			<li>
+				{% if page.is_post %}
+					<a rel="nofollow" href="/books/">Книги</a>
+				{% else %}
+					<a href="/books/">Книги</a>
+				{% endif %}
+		{% endif %}
 
-	{% if page.url != '/projects/' %}
-		<li>
-			{% if page.is_post %}
-				<a rel="nofollow" href="/projects/">Проекты</a>
-			{% else %}
-				<a href="/projects/">Проекты</a>
-			{% endif %}
-	{% endif %}
-</ul>
+		{% if page.url != '/projects/' %}
+			<li>
+				{% if page.is_post %}
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				{% else %}
+					<a href="/projects/">Проекты</a>
+				{% endif %}
+		{% endif %}
+	</ul>
+</nav>

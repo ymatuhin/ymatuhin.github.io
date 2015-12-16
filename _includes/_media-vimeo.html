@@ -1,0 +1,25 @@
+<div class="media vimeo" data-animation="fadeInUp">
+
+	{% if include.file %}
+		<iframe src="http://player.vimeo.com/video/{{ include.file | replace: 'http://vimeo.com/', '' }}?title=0&amp;byline=0&amp;portrait=0&amp;color=eb2344" allowfullscreen></iframe>
+	{% endif %}
+
+	{% if include.title or include.caption or include.link %}
+		<div class="caption" data-animation="fadeInRightBig">
+		  
+		  {% if include.title %}
+		  	<h4>{{ include.title }}</h4>
+		  {% endif %}
+
+		  {% if include.caption %}
+		  	<p>{{ include.caption }}</p>
+		  {% endif %}
+
+		  {% if include.link %}
+		  	<a href="{{ include.link }}" title="Visit Website" class="icon video">Visit Website</a>
+		  {% endif %}
+
+		</div>
+	{% endif %}
+
+</div>

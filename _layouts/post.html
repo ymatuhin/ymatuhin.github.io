@@ -3,15 +3,25 @@ layout: default
 is_post: true
 ---
 
-<h1 style="margin-bottom:0">{{ page.title }}</h1>
+<article itemscope itemtype="http://schema.org/Article">
 
+<h1 style="margin-bottom:0" itemprop="name">{{ page.title }}</h1>
 <p>
 	{% assign m = page.date | date: "%-m" %}
-
-	<abbr title='{{ page.date | date: "%Y-%m-%d" }}'><em>{{ page.date | date: "%-d"  }} {% include month.html %}, {{ page.date | date: "%-Y"}}</em></abbr>
+	<time itemprop="datePublished" datetime="{{ page.date }}">
+		<em>{{ page.date | date: "%-d"  }} {% include month.html %}, {{ page.date | date: "%-Y"}}</em>
+	</time>
+	<a rel="author" href="http://plus.google.com/104557932122476785260/" hidden>{{ site.title }}</a>
 </p>
-
 
 {{ content }}
 
 {% include features.html %}
+
+<!-- <div itemscope itemtype="http://schema.org/Product" hidden>
+  <span itemprop="name">{{ page.title }}</span>
+  <span itemprop="description">{{ page.excerpt }}</span>
+  <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+    <span itemprop="ratingValue">4.4</span>/<span itemprop="reviewCount">89</span>
+  </span>
+</div> -->

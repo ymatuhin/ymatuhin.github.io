@@ -13,7 +13,7 @@ description: >
 ---
 
 <style>
-    .lang {float: right;}
+	.lang {float: right;}
 </style>
 
 <em class="lang"><a href="/en/">in english</a></em>
@@ -25,25 +25,22 @@ description: >
 <br>
 <h2>Последние записи из блога</h3>
 <ul>
-    {% for post in site.posts limit:5 %}
-        <li><p><a href="{{ post.url }}/">{{ post.title }}</a><br>
-            {{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}
-        </p>
-    {% endfor %}
+	{% for post in site.posts limit:5 %}
+		<li>
+			<article itemscope itemtype="http://schema.org/Article">
+				<nav itemprop="name"><a itemprop="url" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
+				<p itemprop="description">
+					{{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}
+				</p>
+			</article>
+		</p>
+	{% endfor %}
 </ul>
 <p><a href="/blog/">Все заметки →</a></p>
 
 <br>
 <h3>Контактные данные</h3>
-<p>Читаю почту — <a href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>, скайп — <a href="skype:ymatuhin?chat" class="dotted">ymatuhin</a> и твиттер — <a href="http://twitter.com/ymatuhin">@ymatuhin</a>.</p>
-
-<!--
-<div class="keywords section-subtitle visuallyhidden" role="contentinfo">
-	<h6>заметки разработчика</h6>
-	<h6>блог разработчика</h6>
-	<h6>верстка статьи</h6>
-	<h6>статьи разработчика</h6>
-	<h6>frontend разработка</h6>
-	<h6>html css javascript</h6>
-	<h6>блог web разработчика</h6>
-</div> -->
+<address itemscope itemtype="http://schema.org/Person">
+	<span itemprop="name" hidden>Юрий Матюхин</span>
+	<p>Читаю почту — <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>, скайп — <a itemprop="telephone" href="skype:ymatuhin?chat" class="dotted">ymatuhin</a> и твиттер — <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.</p>
+</address>
