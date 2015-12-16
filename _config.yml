@@ -25,7 +25,6 @@ excerpt_separator: <!-- more -->
 # Build Settings
 permalinks: pretty
 markdown: kramdown
-highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
