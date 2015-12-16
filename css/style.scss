@@ -42,14 +42,15 @@ img { height: auto !important; }
 
 /* links */
 a {
-	-webkit-transition: color .15s;
-	transition: color .15s;
+	-webkit-transition: color .15s, border-color .15s;
+	transition: color .15s, border-color .15s;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #000
+	color: #000;
+	border-color: #ccc;
 }
 
 /* for email and skype */

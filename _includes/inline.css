@@ -4,4 +4,4 @@ html, body { overflow-x: hidden; }
 body { margin: 0; font: .9375em/1.6 Georgia, serif; }
 .container { width: 35em; margin: 6.4em; }
 img, iframe { max-width: 100%; vertical-align: top; }
-a { color: #C00; border-bottom: 1px solid; text-decoration: none; }
+a { color: #C00; border-bottom: 1px solid #c99; text-decoration: none; }
