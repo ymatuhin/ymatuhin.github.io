@@ -1,16 +1,16 @@
 .highlight { position: relative; }
 .highlight pre {
-	border-top: 1px solid #eee5e5;
-	border-bottom: 1px solid #eee5e5;
-	background: #fff7f7;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background: #fafafa;
  }
 
 .highlight:before,
 .highlight:after {
     z-index: -1;
-    background-color: #fff7f7;
-    border-top: 1px solid #eee5e5;
-    border-bottom: 1px solid #eee5e5;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     content: "";
     position: absolute;
     top: 0;

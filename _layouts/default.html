@@ -4,15 +4,23 @@
 	{% include head/head.html %}
 
 	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
 		<div class="content">
 			{{ content }}
 		</div>
 
-		{% include links.html %}
+		{% include menu.html %}
+
+		{% if page.is_post %}
+			{% include comments.html %}
+		{% endif %}
+
 		{% include about.html %}
 		{% include search.html %}
 	</div>
 
 	{% include scripts.html %}
 	{% include banner.html %}
+
 </html>

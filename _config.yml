@@ -1,31 +1,30 @@
 # Site settings
 title: Юрий Матюхин
 email: ymatuhin@yandex.ru
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ymatuhin.ru" # the base hostname & protocol for your site
-twitter_username: ymatuhin
-github_username: ymatuhin
+baseurl: ""
+url: "http://ymatuhin.ru"
+
+twitter: 		ymatuhin
+github:         ymatuhin
+email: 			ymatuhin@yandex.ru
+disqus: 		ymatuhin
+
 permalink: /:categories/:title
+paginate: 5
+paginate_path: "page:num"
+
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+
 sass:
   style: compressed
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: []
-source: ./
-destination: ../dist
+
 excerpt_separator: <!-- more -->
-compress_html:
-  clippings: []
-  comments: ["<!-- ", " -->"]
-  endings: all
-  profile: false
-  ignore:
-    envs: []
-# Build settings
+
+# Build Settings
+permalinks: pretty
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

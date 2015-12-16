@@ -1,8 +1,14 @@
-<a href="javascript: void 0;" class="dotted"
-   onclick="importScript('http://ymatuhin.disqus.com/embed.js'); document.getElementById('disqus_thread').style.display = 'block'; console.log('this', this); this.innerHTML = '';">
-    <br>Показать комментарии
-</a>
-<div style="margin-top: 48px; display: none;" id="disqus_thread">
-    Загружаю, подожди секундочу…
-    <noscript>Пожалуйста, включите JavaScript чтобы увидеть <a href="https://disqus.com/?ref_noscript" rel="nofollow">комментарии.</a></noscript>
-</div>
+<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>

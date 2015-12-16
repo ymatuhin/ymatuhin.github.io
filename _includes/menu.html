@@ -1,7 +1,11 @@
-<h5>Ссылки</h5>
+<h5>Меню</h5>
 
 
 <ul class="l">
+	{% if page.url != '/index.html' %}
+		<li>
+			<a href="/">Главная</a>
+	{% endif %}
 	<li>
 		{% if page.url == '/blog/' %}
 			<em>Блог</em>
