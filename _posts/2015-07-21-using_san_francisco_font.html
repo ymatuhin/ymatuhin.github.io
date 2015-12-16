@@ -24,11 +24,11 @@ published: true
 
 <p>Какзалось бы, что теперь при просмотре стандартной веб странички, на устройствах Apple будет установлен этот шрифт. Но это не так. Более того, нам даже не поможет следующий код:</p>
 
-{% highlight css %}
+~~~css
 body {
   font-family: "San Francisco", "Helvetica Neue", "Lucida Grande";
 }
-{% endhighlight %}
+~~~
 
 <p>К сожалению, в свежих версиях El Capitan шрифт San Francisco не установлен. Однако это же системный шрифт, как такое возможно?</p>
 
@@ -43,12 +43,12 @@ body {
 
 <p>Чтобы добраться до системного шрифта, в некоторых браузерах есть значение шрифта <code>-apple-system</code>. В будущем можно будет пользоваться только им, но не сейчас. Чтобы все работало в хроме и остальных браузерах на нужен следующий код:</p>
 
-{% highlight css %}
+~~~css
 body {
   font-family: system, -apple-system,
       ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
 }
-{% endhighlight %}
+~~~
 
 <p>“.SFNSDisplay-Regular” это приватное имя для San Francisco (regular) в текущих бета релизах (это может поменяться в любое время!).</p>
 

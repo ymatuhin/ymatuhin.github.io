@@ -53,14 +53,14 @@ image: /img/retina/retinizeit.png
 <p>После подключения она будет доступна для использования. Написав следующее: <code>.at2x(@path, @width, @height);</code> (вместо @path, @width и @height нужно написать ваш путь к изображению и его размеры).</p>
 
 <p>Пример:</p>
-{% highlight scss %}
+~~~scss
 #logo {
   .at2x('/images/my_image.png', 200px, 100px);
 }
-{% endhighlight %}
+~~~
 
 <p>Эта примесь раскроется как:</p>
-{% highlight scss %}
+~~~scss
 #logo {
   background-image: url('/images/my_image.png');
 }
@@ -71,7 +71,7 @@ image: /img/retina/retinizeit.png
     background-size: 200px 100px;
   }
 }
-{% endhighlight %}
+~~~
 
 <p>Подробнее о retina.js и примесях можно прочитать <a href="http://imulus.github.io/retinajs/" rel="nofollow">на сайте</a>, скачать можно там-же.</p>
 

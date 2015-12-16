@@ -22,22 +22,22 @@ description: >
 
 <p>В настоящий момент, очень многие используют CDN для загрузки своих скриптов. К примеру, часто можно видеть вот такой код:</p>
 
-{% highlight html %}
+~~~html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-{% endhighlight %}
+~~~
 
 <p>Однако многие забывают о том, что нужно проверить, загрузился ли наш скрипт. И если не загрузился, то загрузить его с нашего сайта.</p>
 
-{% highlight html %}
+~~~html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-{% endhighlight %}
+~~~
 
 <p>Конечно, это самый простой способ, применимый для большинства сайтов. Для больших <abbr title="Single Page Application">SPA</abbr> я рекомендовал бы воспользоваться асинхронной загрузкой скриптов через <a href="http://requirejs.org/">RequireJS</a>.</p>
 
 <p>Пример загрузки jQuery из CDN с безопасной загрузкой с нашего сервера если с CDN возникли какие-то проблемы:</p>
 
-{% highlight javascript %}
+~~~css
 requirejs.config({
   enforceDefine: true,
   paths: {
@@ -51,7 +51,7 @@ requirejs.config({
 });
 
 require(['jquery'], function ($) { /* Ваш код тут */ });
-{% endhighlight %}
+~~~
 
 <p>В примерах использовалась библиотека jQuery, но так-же можно загружать и другие библиотеки.</p>
 

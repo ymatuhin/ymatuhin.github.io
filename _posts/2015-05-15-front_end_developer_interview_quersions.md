@@ -107,12 +107,12 @@ image: /img/front_end_interview/mem.jpg
 * В чем разница между host-объектами и нативными объектами?
 * В чем разница между последними двумя строчками:
 
-{% highlight javascript %}
+~~~css
 function Person(){}
 
 var person = Person()
 var person = new Person()
-{% endhighlight %}
+~~~
 * В чем разница между `.call` и `.apply`?
 * Что делает и для чего нужна функция `Function.prototype.bind`?
 * Когда Вы оптимизируете свой код?
@@ -137,9 +137,9 @@ var person = new Person()
 * Какие Вы знаете паттерны организации наследования в JavaScript?
 * Сделайте так, чтобы этот код работал:
 
-{% highlight javascript %}
+~~~css
 [1,2,3,4,5].duplicator(); // [1,2,3,4,5,1,2,3,4,5]
-{% endhighlight %}
+~~~
 
 * Опишите принцип мемоизации (избежание повторных вычислений) в JavaScript
 * Почему тернарный оператор так называется?
@@ -148,53 +148,53 @@ var person = new Person()
 
 ###<a id="jscode"></a> Примеры кода на JavaScript [[↑]](#toc)
 
-{% highlight javascript %}
+~~~css
 ~~3.14
-{% endhighlight %}
+~~~
 
 Вопрос: Какое значение возвращает данное предложение?
 **Ответ: 3**
 
-{% highlight javascript %}
+~~~css
 "i'm a lasagna hog".split("").reverse().join("");
-{% endhighlight %}
+~~~
 
 Вопрос: Какое значение возвращает данное предложение?
 **Ответ: «goh angasal a m'i»**
 
-{% highlight javascript %}
+~~~css
 ( window.foo || ( window.foo = "bar" ) );
-{% endhighlight %}
+~~~
 
 Вопрос: Чему равно window.foo?
 **Ответ: «bar»**,
 только если выражение window.foo было ложным, иначе переменная сохранит своё изначальное значение
 
-{% highlight javascript %}
+~~~css
 var foo = "Hello";
 (function() {
     var bar = " World";
     alert(foo + bar);
 })();
 alert(foo + bar);
-{% endhighlight %}
+~~~
 
 Вопрос: Что покажут эти два alert?
 **Ответ: «Hello World» и ReferenceError: bar is not defined**
 
-{% highlight javascript %}
+~~~css
 var foo = [];
 foo.push(1);
 foo.push(2);
-{% endhighlight %}
+~~~
 
 Вопрос: Чему равно foo.length?
 **Ответ: `2`**
 
-{% highlight javascript %}
+~~~css
 var foo = {};
 foo.bar = 'hello';
-{% endhighlight %}
+~~~
 
 Вопрос: Чему равно foo.length?
 **Ответ: `undefined`**
@@ -214,9 +214,9 @@ foo.bar = 'hello';
 * В чем разница между `$` и `$.fn`? Что вообще такое `$.fn`?
 * Оптимизируйте данный селектор:
 
-{% highlight javascript %}
+~~~css
 $(".foo div#bar:eq(0)")
-{% endhighlight %}
+~~~
 
 
 ###<a id="css"></a> Вопросы по CSS: [[↑]](#toc)
@@ -248,7 +248,6 @@ $(".foo div#bar:eq(0)")
 
 * Самое крутое, что Вы когда либо делали и чем гордитесь?
 * Вы знаете секретный жест HTML5-банды?
-* ([непереводимый юмор](https://vimeo.com/18848658)) Are you now, or have you ever been, on a boat.
 * Что Вы больше всего любите в Ваших инструментах разработки?
 * У Вас есть какие-нибудь личные проекты?
 * Возьмите листок бумаги и напишите в столбик буквы A B C D E. Теперь отсортируйте столбик в алфавитном порядке по убыванию, не написав ни строчки кода.

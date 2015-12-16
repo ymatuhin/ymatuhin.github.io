@@ -15,7 +15,7 @@ description: >
 
 <p>Сегодня, столкнулся с задачей, в которой нужно было определить есть ли полоса прокрутки (скролл) у элемента (в моем случае у) или нет. Немного погуглив, нашел несколько интересных вариантов, которыми я хочу с вами поделиться.</p>
 
-{% highlight javascript %}
+~~~css
 (function($) {
     $.fn.hasScrollBar = function() {
         var hasScrollBar = {},
@@ -29,11 +29,11 @@ description: >
 // Пример
 $('html').hasScrollBar().vertical
 $('html').hasScrollBar().horizontal
-{% endhighlight %}
+~~~
 
 <p>В дополнение к этому нашел <em>Vanilla JS</em> версию, которая проверяет на наличие вертикальной полосы прокрутки:</p>
 
-{% highlight javascript %}
+~~~css
 function hasVerticalScroll(node) {
   if ( node == undefined ) {
     if ( window.innerHeight )
@@ -48,7 +48,7 @@ function hasVerticalScroll(node) {
 
 // Пример (если не передать параметр node — то проверит у body)
 hasVerticalScroll()
-{% endhighlight %}
+~~~
 
 <p>Оба примеры рабочие, причем на втором отлично видны костыли для <code>html/body</code> и высчитыванием скролла. В то время как для обычных элементов достаточно проверить только <code>node.scrollHeight > node.offsetHeight</code>.</p>
 

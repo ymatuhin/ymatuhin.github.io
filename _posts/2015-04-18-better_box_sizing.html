@@ -17,26 +17,26 @@ description: >
 <h2>Лучшая практика</h2>
 <p>Раньше для применения модели border-box для всех элементов я часто видел следующий код:</p>
 
-{% highlight css %}
+~~~css
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-{% endhighlight %}
+~~~
 
 <p>Но он уже устарел и не совсем отвечает современным требованиям. Во первых нам уже не нужны вендорные префиксы для этого свойства (<a href="http://caniuse.com/#feat=css3-boxsizing">пруф</a>). А во вторых, если мы где-то меняем <code>box-sizing</code> на <code>content-box</code>, то мы ожидаем, что у всех его родителей <code>box-sizing</code> будет тоже <code>content-box</code>, но с предыдущем кодом так не получается.</p>
 
 <p>Поэтому в 2014 году Крис Койер (Chris Coyier) улучшил этот код, и теперь это считается лучшей практикой для <code>box-sizing</code>.</p>
 
-{% highlight css %}
+~~~css
 html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-{% endhighlight %}
+~~~
 
 <p>Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме <code>html</code> наследуют <code>box-sizing</code> от родителя.</p>
 

@@ -14,12 +14,12 @@ image: /img/media_queries/support.png
 
 <h2>Правильное решение для retina (2x)</h2>
 
-{% highlight css %}
+~~~css
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     /* CSS правила для retina */
 }
-{% endhighlight %}
+~~~
 
 <p>Этот сниппет определяет только ретина дисплеи (2х), но есть еще и дисплеи с <code>device-pixel-ratio</code> больше 1 и меньше 2 — мобильные телефоны. Для них лучше тоже показывать оптимизированные под retina изображения.
 
@@ -27,14 +27,14 @@ image: /img/media_queries/support.png
 
 У себя в сниппете я проверяю на <code>120dpi</code>:</p>
 
-{% highlight css %}
+~~~css
 /* 1.25 dpr */
 @media
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi){
     /* CSS правила для retina */
 }
-{% endhighlight %}
+~~~
 
 <p>Какой из них использовать решать вам. Предупрежу, что если <code>dpi</code> больше 1 и меньше 2, то это мобильное устройство. А если загружать для мобильного устройства оптимизированную под ретина дисплеи графику, то сайт будет дольше загружаться. Что важно для пользователей мобильных устройств.</p>
 
@@ -51,18 +51,18 @@ image: /img/media_queries/support.png
 
 <h3>Старые правила (не используйте)</h3>
 
-{% highlight css %}
+~~~css
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1) {
   /* CSS правила для retina */
 }
-{% endhighlight %}
+~~~
 
 <p>Или даже</p>
 
-{% highlight css %}
+~~~css
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -72,7 +72,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   /* CSS правила для retina */
 }
-{% endhighlight %}
+~~~
 
 <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
     <h3>ретина css</h3>

@@ -33,22 +33,22 @@ image: /img/gulp/logo.png
 </ul>
 
 <p>Первый шаг — устанавливаем глобально Gulp. Открываем терминал и пишем:</p>
-{% highlight bash %}
+~~~bash
 npm install --global gulp
-{% endhighlight %}
+~~~
 
 <p>После этого вам нужно установить Gulp как <code>devDependencies</code> для вашего проекта. Убедитесь в том, что у вас есть файл <code>package.json</code>. Если его нет, то создайте его написав в консоль <code>npm init</code>. Теперь можно установить Gulp как <code>devDependencies</code>:</p>
-{% highlight bash %}
+~~~bash
 npm install --save-dev gulp
-{% endhighlight %}
+~~~
 
 <p>И наконец, вам нужно создать <code>gulpfile.js</code> в корне вашего проекта, который будет содержать ваши задачи (tasks). В качестве промежуточного шага, мы установим плагин <code>gulp-util</code>. Чтобы показать как устанавливаются плагины:</p>
-{% highlight bash %}
+~~~bash
 npm install --save-dev gulp-util
-{% endhighlight %}
+~~~
 
 <p>Теперь настало время написать нашу первую задачку. Открываем только что созданный файл <code>gulpfile.js</code> и пишем в него следующее:</p>
-{% highlight javascript %}
+~~~css
 /* File: gulpfile.js */
 
 // собираем все наши плагины
@@ -59,16 +59,16 @@ var gulp  = require('gulp'),
 gulp.task('default', function() {
   return gutil.log('Gulp is running!')
 });
-{% endhighlight %}
+~~~
 
 <p>И теперь нам остается запустить gulp в терминале и мы увидим нечто похожее на это:</p>
-{% highlight bash %}
+~~~bash
 > gulp
 [12:32:08] Using gulpfile ~/Projects/gulp-scotch-io/gulpfile.js
 [12:32:08] Starting 'default'...
 [12:32:08] Gulp is running!
 [12:32:08] Finished 'default' after 1 ms
-{% endhighlight %}
+~~~
 
 <h2>Обзор</h2>
 <p>Сам по себе Gulp очень скуден на возможности. Но все, что вам нужно вынесено в отдельные плагины. Они совместно с Gulp творят чудеса.</p>
@@ -82,7 +82,7 @@ gulp.task('default', function() {
 </ul>
 
 <p><code>gulp.task</code> определяет наши задачи. В качестве аргументов принимает название, зависимости (массив) и функцию (основные действия). Зависимостей может и не быть:</p>
-{% highlight javascript %}
+~~~css
 gulp.task('mytask', function() {
   //сделать что-то
 });
@@ -90,25 +90,25 @@ gulp.task('mytask', function() {
 gulp.task('dependenttask', ['mytask'], function() {
   //сделать что-то после того, как 'mytask' будет выполнен
 });
-{% endhighlight %}
+~~~
 
 <p><code>gulp.src</code> указывает на файлы, которые мы хотим использовать. Он использует <code>.pipe</code> доступа к файлам через плагины.</p>
 
 <p><code>gulp.dest</code> указывает на папку, в которую мы хотим сохранить измененные файлы.</p>
 
 <p><code>gulp.src</code> и <code>gulp.dest</code> используется для простой копии файлов:</p>
-{% highlight javascript %}
+~~~css
 gulp.task('copyHtml', function() {
   // скопировать все html файлы из source/ в public/
   gulp.src('source/*.html').pipe(gulp.dest('public'));
 });
-{% endhighlight %}
+~~~
 
 <p>В gulp встроена система реагирования на изменения файлов (<code>gulp.watch</code>). Вы можете использовать эту задачу для запуска других необходимых вам задач при изменении файлов.</p>
 
-{% highlight javascript %}
+~~~css
 gulp.watch('source/**/*.html', ['copyHtml']);
-{% endhighlight %}
+~~~
 
 <p>Этот пример будет выполнять задачу <code>copyHtml</code> когда любой html файл в папке source изменится.</p>
 
