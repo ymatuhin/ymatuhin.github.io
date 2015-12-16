@@ -7,8 +7,15 @@
 		{% if page.url == '/' or page.url == '/index.html' %}
 			<em>Юрий Матюхин</em>, разработчик интерфейсов.
 		{% else %}
-			<a href="/">Юрий Матюхин</a>, разработчик интерфейсов.
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
 		{% endif %}
 
-	<li>Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a> с темой <a href="/dogma/">Dogma</a>, хостится на <a href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		{% if page.url == '/' or page.url == '/index.html' %}
+			с темой <a href="/dogma/">Dogma</a>,
+		{% else %}
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		{% endif %}
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
 </ul>

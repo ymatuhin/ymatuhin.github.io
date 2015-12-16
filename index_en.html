@@ -1,6 +1,7 @@
 ---
 title: Yury Matuhin — Front end developer
 s_title: Yury Matuhin
+layout: default-eng
 permalink: /en/
 ---
 
@@ -11,15 +12,10 @@ permalink: /en/
 	{% include head/head.html %}
 
     <style>
-        .lang {
-            float: right;
-            font-weight: normal;
-            line-height: 1.4;
-            font-style: italic;
-        }
+        .lang {float: right;}
     </style>
 
-    <div class="lang"><a href="/">Ru</a> / En</div>
+    <em class="lang"><a href="/">по-русски</a></em>
     <h1>Yury Matuhin</h1>
     <p>Hi. I'm front end developer from Bryansk, Russia.
     <br>I love minimalism and optimization. Make web interfaces, have a <a href="/blog/">blog</a> (ru) about web development (coding, frameworks, tools, browsers etc).
@@ -28,15 +24,6 @@ permalink: /en/
 
     <h2>Contact me</h2>
     <p>Write me on — <a href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>, skype — <a href="skype:ymatuhin?chat" class="dotted">ymatuhin</a> or twitter — <a href="http://twitter.com/ymatuhin">@ymatuhin</a>.</p>
-
-
-    <!-- <script>
-        var ln = (localStorage.lng || window.navigator.userLanguage || window.navigator.language).toLowerCase().split('-')[0];
-
-        if (ln == 'ru')
-            document.querySelector('.lang a').focus();
-    </script> -->
-
 </html>
 
 

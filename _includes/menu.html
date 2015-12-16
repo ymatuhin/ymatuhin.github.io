@@ -6,22 +6,19 @@
 		<li>
 			<a href="/">Главная</a>
 	{% endif %}
+
+	{% if page.url != '/blog/' %}
 	<li>
-		{% if page.url == '/blog/' %}
-			<em>Блог</em>
-		{% else %}
-			<a href="/blog/">Блог</a>
-		{% endif %}
+		<a href="/blog/">Блог</a>
+	{% endif %}
+
+	{% if page.url != '/books/' %}
 	<li>
-		{% if page.url == '/books/' %}
-			<em>Книги</em>
-		{% else %}
-			<a href="/books/">Книги</a>
-		{% endif %}
+		<a href="/books/">Книги</a>
+	{% endif %}
+
+	{% if page.url != '/projects/' %}
 	<li>
-		{% if page.url == '/projects/' %}
-			<em>Проекты</em>
-		{% else %}
-			<a href="/projects/">Проекты</a>
-		{% endif %}
+		<a href="/projects/">Проекты</a>
+	{% endif %}
 </ul>

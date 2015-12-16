@@ -119,7 +119,7 @@ document.addEventListener("mousemove", function (e) {
 
 Если браузер не поддерживает HTML5 Link Prefetch, то проигнорирует эти атрибуты, поэтому их можно безопасно использовать.
 
-### Полезные ссылки
+### Cсылки
 * [Slides from a talk by Ilya Grigorik called Preconnect, prerender, prefetch](https://docs.google.com/presentation/d/18zlAdKAxnc51y_kj-6sWLmnjl6TLna)
 * [MDN link prefetching FAQ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
 * [W3C resource-hints](http://www.w3.org/TR/resource-hints/)

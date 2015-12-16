@@ -1,0 +1,6 @@
+<link rel="alternate" href="{{ site.url }}/" hreflang="x-default">
+{% if page.url == '/en/' %}
+	<link rel="alternate" href="{{ site.url }}/" hreflang="ru">
+{% else %}
+	<link rel="alternate" href="{{ site.url }}/en/" hreflang="en">
+{% endif %}
