@@ -151,27 +151,30 @@
 	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
 		
 
-		<a rel="nofollow" href="http://ymatuhin.ru/img/animate_height/transition_sign.jpg">
+		
+			<a rel="nofollow" href="http://ymatuhin.ru/img/animate_height/transition_sign.jpg">
+		
 			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/animate_height/transition_sign.jpg"
-				 alt="" >
+				 alt="CSS анимация высоты через transition" >
 		</a>
 
 		<meta itemprop="url" content="http://ymatuhin.ru/img/animate_height/transition_sign.jpg">
 		
-
+			<meta itemprop="width" content="1040">
 		
 
+		
+			<meta itemprop="height" content="380">
+		
+
+		
+			<figcaption itemprop="caption">«Анимируем высоту в CSS»</figcaption>
 		
 	</figure>
 
 
 
-	<figure class="" itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="1040" height="380" alt="Transition height animate CSS" src="/img/animate_height/transition_sign.jpg">
-	<figcaption itemprop="description">Анимация высоты в CSS через <em>transition</em></figcaption>
-</figure>
-
-<p>Пытались ли вы анимировать высоту (<code>height</code>) через <abbr title="Cascading Style Sheets">CSS</abbr>? Если пытались, то скорее всего вы знаете, что через <code>transition</code> можно задать анимацию от одного значения, до другого. И в этом есть небольшая проблема, что делать если нам нужно заанимировать высоту со значения <code>auto</code> до <code>0</code>? К сожалению просто указать свойство <code>transition</code> не даст нам никакого эффекта. Но не спешите расстраиваться, это можно сделать не прибегая к помощи <abbr title="JavaScript is the programming language of HTML and the Web.">JavaScript</abbr>.</p>
+	<p>Пытались ли вы анимировать высоту (<code>height</code>) через <abbr title="Cascading Style Sheets">CSS</abbr>? Если пытались, то скорее всего вы знаете, что через <code>transition</code> можно задать анимацию от одного значения, до другого. И в этом есть небольшая проблема, что делать если нам нужно заанимировать высоту со значения <code>auto</code> до <code>0</code>? К сожалению просто указать свойство <code>transition</code> не даст нам никакого эффекта. Но не спешите расстраиваться, это можно сделать не прибегая к помощи <abbr title="JavaScript is the programming language of HTML and the Web.">JavaScript</abbr>.</p>
 
 <h2>Так как же это сделать?</h2>
 <p>Казалось бы, безвыходная ситуация, но это не так. Мы забыли про еще одно свойство, которое может нам в этом помочь. И это свойство <code>max-height</code>. Если вы уже догадались что делать дальше, отложите чтение этой стати и попробуйте реализовать анимацию сами. А потом возвращайтесь и сравните ваше решение с моим.</p>

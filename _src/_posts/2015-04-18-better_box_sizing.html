@@ -17,7 +17,7 @@ description: >
 <h2>Лучшая практика</h2>
 <p>Раньше для применения модели border-box для всех элементов я часто видел следующий код:</p>
 
-~~~css
+~~~js
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -29,7 +29,7 @@ description: >
 
 <p>Поэтому в 2014 году Крис Койер (Chris Coyier) улучшил этот код, и теперь это считается лучшей практикой для <code>box-sizing</code>.</p>
 
-~~~css
+~~~js
 html {
     box-sizing: border-box;
 }

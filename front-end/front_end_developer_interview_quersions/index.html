@@ -149,27 +149,30 @@
 	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
 		
 
-		<a rel="nofollow" href="http://ymatuhin.ru/img/front_end_interview/mem.jpg">
+		
+			<a rel="nofollow" href="http://ymatuhin.ru/img/front_end_interview/mem.jpg">
+		
 			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/front_end_interview/mem.jpg"
-				 alt="" >
+				 alt="Типичное собеседование фронтендера…" >
 		</a>
 
 		<meta itemprop="url" content="http://ymatuhin.ru/img/front_end_interview/mem.jpg">
 		
-
+			<meta itemprop="width" content="760">
 		
 
+		
+			<meta itemprop="height" content="365">
+		
+
+		
+			<figcaption itemprop="caption">«Типичное собеседование фронтендера…»</figcaption>
 		
 	</figure>
 
 
 
 	<p><em>Это перевод популярного репозитория от html5bp — <a href="//h5bp.github.io/Front-end-Developer-Interview-Questions/">Front-end Job Interview Questions</a> (en),  который существует с 2009 года. Список вопросов составлялся и дополнятся известными во front-end людьми, поэтому на этот список можно положиться. Перевод делал не я (вернее я хотел, но он оказался уже переведен).</em></p>
-
-<figure itemscope="" itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="760" alt="Типичный диалог на собеседовании front end разработчиков" src="/img/front_end_interview/mem.jpg" />
-	<figcaption itemprop="description">Типичный диалог на собеседовании front end разработчика</figcaption>
-</figure>
 
 <p><strong>Замечание:</strong> Этот репозиторий содержит подборку вопросов, которые могут быть использованы на собеседованиях на должность front-end разработчика. Здесь предлагаются лишь идеи, не нужно задавать все вопросы сразу (иначе в один час точно не уложитесь).</p>
 
@@ -188,7 +191,7 @@
   <li><a href="#contributors">Первоначальные авторы</a></li>
 </ol>
 
-<p>###<a id="general"></a> Общие вопросы: <a href="#toc">[↑]</a></p>
+<h3 id="a-idgenerala---toc"><a id="general"></a> Общие вопросы: <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>Вы пользуетесь Твиттером?
@@ -262,7 +265,7 @@
   <li>Что такое FOUC (Flash Of Unstyled Content)? Как его избежать?</li>
 </ul>
 
-<p>###<a id="html"></a> Вопросы по HTML: <a href="#toc">[↑]</a></p>
+<h3 id="a-idhtmla--html-toc"><a id="html"></a> Вопросы по HTML: <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>Для чего нужен <code class="highlighter-rouge">doctype</code> и сколько разновидностей Вы можете назвать?</li>
@@ -286,7 +289,7 @@
   <li>Какая разница между <code class="highlighter-rouge">GET</code> и <code class="highlighter-rouge">POST</code>?</li>
 </ul>
 
-<p>###<a id="js"></a> Вопросы по JavaScript: <a href="#toc">[↑]</a></p>
+<h3 id="a-idjsa--javascript-toc"><a id="js"></a> Вопросы по JavaScript: <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>Какими js-библиотеками Вы пользовались?</li>
@@ -311,10 +314,10 @@
   <li>В чем разница между последними двумя строчками:</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">function</span> <span class="nt">Person</span><span class="o">()</span><span class="p">{}</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(){}</span>
 
-<span class="nt">var</span> <span class="nt">person</span> <span class="o">=</span> <span class="nt">Person</span><span class="o">()</span>
-<span class="nt">var</span> <span class="nt">person</span> <span class="o">=</span> <span class="nt">new</span> <span class="nt">Person</span><span class="o">()</span>
+<span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="nx">Person</span><span class="p">()</span>
+<span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">()</span>
 </code></pre>
 </div>
 <ul>
@@ -349,7 +352,7 @@
   <li>Сделайте так, чтобы этот код работал:</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">[</span><span class="nt">1</span><span class="o">,</span><span class="nt">2</span><span class="o">,</span><span class="nt">3</span><span class="o">,</span><span class="nt">4</span><span class="o">,</span><span class="nt">5</span><span class="o">]</span><span class="nc">.duplicator</span><span class="o">();</span> <span class="o">//</span> <span class="o">[</span><span class="nt">1</span><span class="o">,</span><span class="nt">2</span><span class="o">,</span><span class="nt">3</span><span class="o">,</span><span class="nt">4</span><span class="o">,</span><span class="nt">5</span><span class="o">,</span><span class="nt">1</span><span class="o">,</span><span class="nt">2</span><span class="o">,</span><span class="nt">3</span><span class="o">,</span><span class="nt">4</span><span class="o">,</span><span class="nt">5</span><span class="o">]</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">].</span><span class="nx">duplicator</span><span class="p">();</span> <span class="c1">// [1,2,3,4,5,1,2,3,4,5]</span>
 </code></pre>
 </div>
 
@@ -360,23 +363,23 @@
   <li>Что делает строчка <code class="highlighter-rouge">"use strict";</code>? Какие достоинства и недостатки от её использования?</li>
 </ul>
 
-<p>###<a id="jscode"></a> Примеры кода на JavaScript <a href="#toc">[↑]</a></p>
+<h3 id="a-idjscodea----javascript-toc"><a id="jscode"></a> Примеры кода на JavaScript <a href="#toc">[↑]</a></h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">~~</span><span class="nt">3</span><span class="nc">.14</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">~~</span><span class="mf">3.14</span>
 </code></pre>
 </div>
 
 <p>Вопрос: Какое значение возвращает данное предложение?<br />
 <strong>Ответ: 3</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="err">"</span><span class="nt">i</span><span class="err">'</span><span class="nt">m</span> <span class="nt">a</span> <span class="nt">lasagna</span> <span class="nt">hog</span><span class="err">"</span><span class="nc">.split</span><span class="o">(</span><span class="err">""</span><span class="o">)</span><span class="nc">.reverse</span><span class="o">()</span><span class="nc">.join</span><span class="o">(</span><span class="err">""</span><span class="o">);</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="s2">"i'm a lasagna hog"</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">""</span><span class="p">).</span><span class="nx">reverse</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
 </code></pre>
 </div>
 
 <p>Вопрос: Какое значение возвращает данное предложение?<br />
 <strong>Ответ: «goh angasal a m’i»</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">(</span> <span class="nt">window</span><span class="nc">.foo</span> <span class="o">||</span> <span class="o">(</span> <span class="nt">window</span><span class="nc">.foo</span> <span class="o">=</span> <span class="err">"</span><span class="nt">bar</span><span class="err">"</span> <span class="o">)</span> <span class="o">);</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">(</span> <span class="nb">window</span><span class="p">.</span><span class="nx">foo</span> <span class="o">||</span> <span class="p">(</span> <span class="nb">window</span><span class="p">.</span><span class="nx">foo</span> <span class="o">=</span> <span class="s2">"bar"</span> <span class="p">)</span> <span class="p">);</span>
 </code></pre>
 </div>
 
@@ -384,36 +387,36 @@
 <strong>Ответ: «bar»</strong>,<br />
 только если выражение window.foo было ложным, иначе переменная сохранит своё изначальное значение</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">var</span> <span class="nt">foo</span> <span class="o">=</span> <span class="err">"</span><span class="nt">Hello</span><span class="err">"</span><span class="o">;</span>
-<span class="o">(</span><span class="nt">function</span><span class="o">()</span> <span class="p">{</span>
-    <span class="err">var</span> <span class="err">bar</span> <span class="err">=</span> <span class="err">"</span> <span class="err">World";</span>
-    <span class="err">alert(foo</span> <span class="err">+</span> <span class="err">bar);</span>
-<span class="p">}</span><span class="o">)();</span>
-<span class="nt">alert</span><span class="o">(</span><span class="nt">foo</span> <span class="o">+</span> <span class="nt">bar</span><span class="o">);</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s2">"Hello"</span><span class="p">;</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="s2">" World"</span><span class="p">;</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">foo</span> <span class="o">+</span> <span class="nx">bar</span><span class="p">);</span>
+<span class="p">})();</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">foo</span> <span class="o">+</span> <span class="nx">bar</span><span class="p">);</span>
 </code></pre>
 </div>
 
 <p>Вопрос: Что покажут эти два alert?<br />
 <strong>Ответ: «Hello World» и ReferenceError: bar is not defined</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">var</span> <span class="nt">foo</span> <span class="o">=</span> <span class="o">[];</span>
-<span class="nt">foo</span><span class="nc">.push</span><span class="o">(</span><span class="nt">1</span><span class="o">);</span>
-<span class="nt">foo</span><span class="nc">.push</span><span class="o">(</span><span class="nt">2</span><span class="o">);</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">foo</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nx">foo</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 </code></pre>
 </div>
 
 <p>Вопрос: Чему равно foo.length?<br />
 <strong>Ответ: <code class="highlighter-rouge">2</code></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">var</span> <span class="nt">foo</span> <span class="o">=</span> <span class="p">{}</span><span class="o">;</span>
-<span class="nt">foo</span><span class="nc">.bar</span> <span class="o">=</span> <span class="err">'</span><span class="nt">hello</span><span class="err">'</span><span class="o">;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span> <span class="o">=</span> <span class="s1">'hello'</span><span class="p">;</span>
 </code></pre>
 </div>
 
 <p>Вопрос: Чему равно foo.length?<br />
 <strong>Ответ: <code class="highlighter-rouge">undefined</code></strong></p>
 
-<p>###<a id="jquery"></a> Вопросы по jQuery: <a href="#toc">[↑]</a></p>
+<h3 id="a-idjquerya--jquery-toc"><a id="jquery"></a> Вопросы по jQuery: <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>Объясните «chaining».</li>
@@ -433,11 +436,11 @@
   <li>Оптимизируйте данный селектор:</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="err">$</span><span class="o">(</span><span class="err">"</span><span class="nc">.foo</span> <span class="nt">div</span><span class="nf">#bar</span><span class="nd">:eq</span><span class="o">(</span><span class="nt">0</span><span class="o">)</span><span class="err">"</span><span class="o">)</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="s2">".foo div#bar:eq(0)"</span><span class="p">)</span>
 </code></pre>
 </div>
 
-<p>###<a id="css"></a> Вопросы по CSS: <a href="#toc">[↑]</a></p>
+<h3 id="a-idcssa--css-toc"><a id="css"></a> Вопросы по CSS: <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>Что такое «reset» CSS и для чего он нужен?</li>
@@ -476,7 +479,7 @@
   </li>
 </ul>
 
-<p>###<a id="fun"></a> «Светская беседа»: <a href="#toc">[↑]</a></p>
+<h3 id="a-idfuna---toc"><a id="fun"></a> «Светская беседа»: <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>Самое крутое, что Вы когда либо делали и чем гордитесь?</li>
@@ -499,7 +502,7 @@
   <li>jQuery: хорошая библиотека или великая библиотека? Тема для дискуссии…</li>
 </ul>
 
-<p>###<a id="contributors"></a> Первоначальные авторы <a href="#toc">[↑]</a></p>
+<h3 id="a-idcontributorsa---toc"><a id="contributors"></a> Первоначальные авторы <a href="#toc">[↑]</a></h3>
 
 <ul>
   <li>@bentruyman (bentruyman.com)</li>

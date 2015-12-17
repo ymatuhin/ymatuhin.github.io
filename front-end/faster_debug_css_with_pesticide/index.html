@@ -122,7 +122,7 @@
 	<time itemprop="datePublished" datetime="2015-05-12 00:00:00 +0300">
 		
 		<em>12 мая, 2015</em></time>, обновлено
-		<time itemprop="dateModified" datetime="2015-12-17 16:17:29 +0300">
+		<time itemprop="dateModified" datetime="2015-12-17 22:35:45 +0300">
 			
 			<em>сегодня</em>.
 			<!-- <em>17 декабря, 2015</em> -->
@@ -151,16 +151,24 @@
 	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
 		
 
-		<a rel="nofollow" href="http://ymatuhin.ru/img/pesticide/logo.png">
+		
+			<a rel="nofollow" href="http://ymatuhin.ru/img/pesticide/logo.png">
+		
 			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/pesticide/logo.png"
-				 alt="" >
+				 alt="Логотип библиотеки для дебага CSS — Pesticide" >
 		</a>
 
 		<meta itemprop="url" content="http://ymatuhin.ru/img/pesticide/logo.png">
 		
-
+			<meta itemprop="width" content="530">
 		
 
+		
+			<meta itemprop="height" content="140">
+		
+
+		
+			<figcaption itemprop="caption">«Pesticide — библиотека для дебага CSS»</figcaption>
 		
 	</figure>
 
@@ -168,32 +176,28 @@
 
 	<p>Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/Sass/LESS библиотека — <strong>Pesticide</strong>.</p>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="530" alt="Логотип библиотеки для дебага CSS — Pesticide" src="/img/pesticide/logo.png">
-	<figcaption itemprop="description">Логотип библиотеки для дебага CSS — Pesticide</figcaption>
-</figure>
-
 <p>Что делает этот ваш Pesticide? На официальном сайте: «Kill your CSS layout bugs. Without 2000 clicks in Chrome Dev Tools». На самом деле принцип её работы очень прост, и я думаю многие разработчики писали у себя в стилях во время разработки нечто вроде этого:</p>
 
-~~~css
-* {
-  outline: red;
-}
-~~~
-<p>Но Адам Морс (Adam Morse) пошел дальше, и добавил свой цвет для каждого элемента. И теперь, если немного привыкнуть, то по цвету можно определять цвет элемента и его область. </p>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">*</span> <span class="p">{</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Но Адам Морс (Adam Morse) пошел дальше, и добавил свой цвет для каждого элемента. И теперь, если немного привыкнуть, то по цвету можно определять цвет элемента и его область.</p>
 
 <p>Сам CSS файл до смешного прост, познакомиться подробнее с Pesticide можно на официальном сайте <a href="http://pesticide.io">pesticide.io</a>. Посмотреть исходники и скачать файл можно с <a href="https://github.com/mrmrs/pesticide" rel="nofollow">github</a>.</p>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Github" src="/img/pesticide/github.png">
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Github" src="/img/pesticide/github.png" />
 	<figcaption itemprop="description">Пример использования Pesticide на Github</figcaption>
 </figure>
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Yandex" src="/img/pesticide/ya.png">
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Yandex" src="/img/pesticide/ya.png" />
 	<figcaption itemprop="description">Пример использования Pesticide на Yandex</figcaption>
 </figure>
 
-<p>Мне кажется, что подключать эту библиотеку как css файл на свой проект не рационально. Особенно когда у неё есть расширения для браузеров (<a href="https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh" rel="nofollow">Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/pesticide/" rel="nofollow">Firefox</a>). </p>
+<p>Мне кажется, что подключать эту библиотеку как css файл на свой проект не рационально. Особенно когда у неё есть расширения для браузеров (<a href="https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh" rel="nofollow">Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/pesticide/" rel="nofollow">Firefox</a>).</p>
 
 <p>Но с расширениями есть одна проблема — они сбрасывается при перезагрузке страницы. В таком случае нам придется обязательно подключать pesticide как css файл чтобы избежать этого.</p>
 

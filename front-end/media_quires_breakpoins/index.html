@@ -151,7 +151,9 @@
 	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
 		
 
-		<a rel="nofollow" href="http://ymatuhin.ru/img/media_queries/bootstrap.png">
+		
+			<a rel="nofollow" href="http://ymatuhin.ru/img/media_queries/bootstrap.png">
+		
 			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/media_queries/bootstrap.png"
 				 alt="Контрольные точки медиа выражений (media quires) Twitter Bootstrap" >
 		</a>
@@ -176,40 +178,40 @@
 
 <p>Bootstrap использует 5 контрольных точек для медиа выражений: <strong>320px</strong>, <strong>544px</strong>, <strong>768px</strong>, <strong>992px</strong>, <strong>1200px</strong>. Этот фреймворк следует методике mobile first, в которой сначала сайта разрабатывается для мобильных устройств, а потом появляется для десктопов.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">/*==========  Mobile First  ==========*/</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/*==========  Mobile First  ==========*/</span>
 
-<span class="c">/* Телефоны —  544px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span> <span class="p">:</span> <span class="m">34em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Телефоны —  544px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mi">34</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Планшеты — 768px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span> <span class="p">:</span> <span class="m">48em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Планшеты — 768px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mi">48</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Десктоп — 992px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span> <span class="p">:</span> <span class="m">62em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Десктоп — 992px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mi">62</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Широкоформатный экран — 1200px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span> <span class="p">:</span> <span class="m">75em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Широкоформатный экран — 1200px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mi">75</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 </code></pre>
 </div>
 
 <p>Но иногда верстку для десктопа нужно адаптировать для мобильных устройств. Для этого используйте следующие медиа выражения:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">/*==========  Non-Mobile First  ==========*/</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/*==========  Non-Mobile First  ==========*/</span>
 
-<span class="c">/* Широкоформатный экран — 1200px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span> <span class="p">:</span> <span class="m">75.063em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Широкоформатный экран — 1200px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mf">75.063</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Десктоп — 992px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span> <span class="p">:</span> <span class="m">62.063em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Десктоп — 992px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mf">62.063</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Планшеты — 768px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span> <span class="p">:</span> <span class="m">48.063em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Планшеты — 768px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mf">48.063</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Телефоны —  544px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span> <span class="p">:</span> <span class="m">34.063em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Телефоны —  544px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mf">34.063</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 
-<span class="c">/* Айфон в портретном режиме — 320px */</span>
-<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span> <span class="p">:</span> <span class="m">20.063em</span><span class="p">)</span> <span class="p">{}</span>
+<span class="cm">/* Айфон в портретном режиме — 320px */</span>
+<span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">width</span> <span class="err">:</span> <span class="mf">20.063</span><span class="nx">em</span><span class="p">)</span> <span class="p">{}</span>
 </code></pre>
 </div>
 

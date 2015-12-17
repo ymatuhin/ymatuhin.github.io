@@ -117,7 +117,7 @@
 	<time itemprop="datePublished" datetime="2015-08-18 00:00:00 +0300">
 		
 		<em>18 августа, 2015</em></time>, обновлено
-		<time itemprop="dateModified" datetime="2015-12-17 21:00:23 +0300">
+		<time itemprop="dateModified" datetime="2015-12-17 22:28:24 +0300">
 			
 			<em>сегодня</em>.
 			<!-- <em>17 декабря, 2015</em> -->
@@ -147,38 +147,38 @@
 
 	<p>Я видел разные способы определения мониторов retina. Одни объемные, другие наоборот. Разберемся какие из media quires изпользовать.</p>
 
-<h2>Правильное решение для retina (2x)</h2>
+<h2 id="retina-2x">Правильное решение для retina (2x)</h2>
 
-~~~css
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-    /* CSS правила для retina */
-}
-~~~
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="err">@</span><span class="nx">media</span> <span class="p">(</span><span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="p">),</span>
+<span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="err">:</span> <span class="mi">192</span><span class="nx">dpi</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/* CSS правила для retina */</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
-<p>Этот сниппет определяет только ретина дисплеи (2х), но есть еще и дисплеи с <code>device-pixel-ratio</code> больше 1 и меньше 2 — мобильные телефоны. Для них лучше тоже показывать оптимизированные под retina изображения.
+<p>Этот сниппет определяет только ретина дисплеи (2х), но есть еще и дисплеи с <code>device-pixel-ratio</code> больше 1 и меньше 2 — мобильные телефоны. Для них лучше тоже показывать оптимизированные под retina изображения.</p>
 
 <!-- more -->
 
-У себя в сниппете я проверяю на <code>120dpi</code>:</p>
+<p>У себя в сниппете я проверяю на <code>120dpi</code>:</p>
 
-~~~css
-/* 1.25 dpr */
-@media
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi){
-    /* CSS правила для retina */
-}
-~~~
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/* 1.25 dpr */</span>
+<span class="err">@</span><span class="nx">media</span>
+<span class="p">(</span><span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mf">1.25</span><span class="p">),</span>
+<span class="p">(</span><span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="err">:</span> <span class="mi">120</span><span class="nx">dpi</span><span class="p">){</span>
+    <span class="cm">/* CSS правила для retina */</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p>Какой из них использовать решать вам. Предупрежу, что если <code>dpi</code> больше 1 и меньше 2, то это мобильное устройство. А если загружать для мобильного устройства оптимизированную под ретина дисплеи графику, то сайт будет дольше загружаться. Что важно для пользователей мобильных устройств.</p>
 
-<h2>Почему эти правила</h2>
+<h2 id="section">Почему эти правила</h2>
 
 <p>Ответ найдем в поддержке браузерами этих свойств. Открываем <a href="http://caniuse.com/#feat=css-media-resolution">caniuse</a> и видим следующее:</p>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" alt="Поддержка Media Queries в браузерах" src="/img/media_queries/support.png">
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" alt="Поддержка Media Queries в браузерах" src="/img/media_queries/support.png" />
 	<figcaption itemprop="description">Поддержка Media Queries в браузерах</figcaption>
 </figure>
 
@@ -186,34 +186,34 @@
 
 <h3>Старые правила (не используйте)</h3>
 
-~~~css
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1) {
-  /* CSS правила для retina */
-}
-~~~
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="err">@</span><span class="nx">media</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span><span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>   <span class="nx">min</span><span class="o">--</span><span class="nx">moz</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>     <span class="o">-</span><span class="nx">o</span><span class="o">-</span><span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* CSS правила для retina */</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
 <p>Или даже</p>
 
-~~~css
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-  /* CSS правила для retina */
-}
-~~~
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="err">@</span><span class="nx">media</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span><span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>   <span class="nx">min</span><span class="o">--</span><span class="nx">moz</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>     <span class="o">-</span><span class="nx">o</span><span class="o">-</span><span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>        <span class="nx">min</span><span class="o">-</span><span class="nx">device</span><span class="o">-</span><span class="nx">pixel</span><span class="o">-</span><span class="nx">ratio</span><span class="err">:</span> <span class="mi">2</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>                <span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="err">:</span> <span class="mi">192</span><span class="nx">dpi</span><span class="p">),</span>
+<span class="nx">only</span> <span class="nx">screen</span> <span class="nx">and</span> <span class="p">(</span>                <span class="nx">min</span><span class="o">-</span><span class="nx">resolution</span><span class="err">:</span> <span class="mi">2</span><span class="nx">dppx</span><span class="p">)</span> <span class="p">{</span>
+  <span class="cm">/* CSS правила для retina */</span>
+<span class="p">}</span>
+</code></pre>
+</div>
 
-<footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
+<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
     <h3>ретина css</h3>
     <h4>retina media quires</h4>
     <h5>ретина медиа выражения</h5>
-</footer>
+</footer> -->
 
 
 	<ul class="tags visuallyhidden">
