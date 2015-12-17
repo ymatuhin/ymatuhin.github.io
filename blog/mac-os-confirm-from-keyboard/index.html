@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Подтверждение диалогов через клавиатуру в Mac OS / Блог фронтенд разработчика</title>
+	<meta name="description" content="Как включить опцию изменения фокуса в диалогах Mac OS и подтверждать их с клавиатуры.">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/blog/mac-os-confirm-from-keyboard">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="mac/dialog.png">
+	<link rel="image_src" href="mac/dialog.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Подтверждение диалогов через клавиатуру в Mac OS / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/blog/mac-os-confirm-from-keyboard">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Как включить опцию изменения фокуса в диалогах Mac OS и подтверждать их с клавиатуры.">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="mac/dialog.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/blog/mac-os-confirm-from-keyboard">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Подтверждение диалогов через клавиатуру в Mac OS</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/mac-os-confirm-from-keyboard">
+			<span itemprop="name">Подтверждение диалогов через клавиатуру в Mac OS</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-11-14 00:00:00 +0300">
+		
+		<em>14 ноября, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:05:50 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/mac/dialog.png">
+			<img itemprop="contentUrl" src="/img/mac/dialog.png"
+				 alt="Диалог смены расширения у файла в Mac OS" >
+		</a>
+
+		<meta itemprop="url" content="/img/mac/dialog.png">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<p>При появлении диалога, по умолчанию у нас нет возможности переключить фокус на другую кнопку с помощью клавиатуры, только мышкой или трекпадом. Но это поведение легко исправить.</p>
+
+<!-- more -->
+
+<p>Нужно только в настройках (System Preferences —&gt; Keyboard &amp; Mouse —&gt; Keyboard Shortcuts) указать внизу пункт «<strong>All controls</strong>».</p>
+
+<p><a href="/img/mac/preferences.png" rel="nofollow"><img src="/img/mac/preferences.png" alt="Mac OS окно настроек клавиатуры" /></a></p>
+
+<p>Теперь, чтобы переключить фокус между кнопками, нажмите <code class="highlighter-rouge">tab</code> или <code class="highlighter-rouge">shift + tab</code>, а чтобы выбрать нужный пункт нажмите пробел.</p>
+
+<p><a href="/img/mac/dialog.gif" rel="nofollow"><img src="/img/mac/dialog.gif" alt="Mac OS — смена расширения файла через клавиатуру" /></a></p>
+
+<p>Я пользуюсь маком уже полтора года, и только сегодня узнал как изменить это поведение. Удивляюсь только почему разработчики не включили эту настройку по умолчанию.</p>
+
+<h3 id="section">Дополнение №1 от 17.11.2015</h3>
+
+<p>В OS X доступно сочетание клавиш <code class="highlighter-rouge">CMD + D</code> для нажатия на кнопку «Don’t Save». Спасибо zencoder за <a href="https://disqus.com/home/discussion/ymatuhin/mac_os_95/#comment-2364464096" rel="nofollow">комментарий</a>.</p>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">mac</li><!--
+	
+	--><li itemprop="keywords">osx</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

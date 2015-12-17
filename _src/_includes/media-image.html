@@ -1,0 +1,8 @@
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	{% if include.file %}
+		<a rel="nofollow" href="{{ include.file | prepend: '/img/' | prepend: site.url }}">
+			<img itemprop="contentUrl" src="{{ include.file | prepend: '/img/' | prepend: site.url }}" alt="{{ include.title }}">
+		</a>
+	{% endif %}
+	<figcaption itemprop="caption">{{ include.caption }}</figcaption>
+</figure>

@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Время обновить clearfix / Блог фронтенд разработчика</title>
+	<meta name="description" content="Исправляем поведение плавающих классов и контейнера с помощью css класса clearfix и его новой, короткой версией.
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/float_and_clearfix">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="clearfix/clearfix.png">
+	<link rel="image_src" href="clearfix/clearfix.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Время обновить clearfix / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/float_and_clearfix">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Исправляем поведение плавающих классов и контейнера с помощью css класса clearfix и его новой, короткой версией.
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="clearfix/clearfix.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/float_and_clearfix">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Время обновить clearfix</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/float_and_clearfix">
+			<span itemprop="name">Время обновить clearfix</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-07-29 00:00:00 +0300">
+		
+		<em>29 июля, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:02:48 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/clearfix/clearfix.png">
+			<img itemprop="contentUrl" src="/img/clearfix/clearfix.png"
+				 alt="" >
+		</a>
+
+		<meta itemprop="url" content="/img/clearfix/clearfix.png">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<p>Clearfix — вспомогательный класс в css, с помощью которого мы исправляем схлопывающиеся размеры контейнера у плавающих элементов.</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" alt="Clearfix css в действии" src="/img/clearfix/clearfix.png">
+	<figcaption itemprop="description">Clearfix css в действии</figcaption>
+</figure>
+
+<!-- more -->
+
+<h2>Clearfix раньше</h2>
+<p>Если вы знаете что такое clearfix, то вероятно вы читали о нем в старых статьях и книгах. В которых встречали следующий код или его разновидности:</p>
+
+~~~css
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+~~~
+
+<p>Он рабочий, но проблема в том, что он поддерживает устаревшие <code>IE 6/7</code>. Вы еще поддерживаете эти браузеры?</p>
+
+<h2>Clearfix сейчас</h2>
+<p>Если у вас поддержка браузеров начиная с <code>IE 8</code>, то воспользуйтесь сокращенной версией:</p>
+
+~~~css
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+~~~
+
+<p>Немножко экономии и эстетической красоты 😊</p>
+<p>Я редко пользуюсь этим классом, ведь установив у контейнера значение <code>overflow</code> в <code>hidden</code> или <code>auto</code> мы добиваемся тех-же результатов.</p>
+<p>А вы используете clearfix css в своих проектах? 😉</p>
+
+<br><br>
+<p><b>UPD #1:</b> Хорошая статья про виды clearfix и их работе можно прочитать в <a href="http://css-live.ru/tricks/novaya-alternativa-clearfix-u-i-overflowhidden.html">этой статье</a>.</p>
+
+<footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
+    <h3>class clearfix</h3>
+    <h4>div clearfix</h4>
+    <h4>clearfix css</h4>
+    <h5>clearfix after</h5>
+    <h5>как использовать clearfix</h5>
+</footer>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">css</li><!--
+	
+	--><li itemprop="keywords">clearfix</li><!--
+	
+	--><li itemprop="keywords">float</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+		<h4>Похожие записи</h4>
+		<ul>
+			
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/smartjs_started_a_course_on_architecture/">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/margin-align-right/">Выравнивание блочного элемента по правому краю в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/convert_photoshop_letter_spacing_to_css/">Переносим межбуквенный интервал из Фотошопа в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+		</ul>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

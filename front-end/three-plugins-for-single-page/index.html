@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Три плагина, которые сделают Single Page Application лучше / Блог фронтенд разработчика</title>
+	<meta name="description" content="Три плагина улучшат приложение для пользователей с нестабильным или медленным интернетом и тех, кто пользуется телефоном для просмотра. Pace.js, Offline.js, FastClick.js.">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/three-plugins-for-single-page">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="spa_plugins/spa_plugins.jpg">
+	<link rel="image_src" href="spa_plugins/spa_plugins.jpg" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Три плагина, которые сделают Single Page Application лучше / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/three-plugins-for-single-page">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Три плагина улучшат приложение для пользователей с нестабильным или медленным интернетом и тех, кто пользуется телефоном для просмотра. Pace.js, Offline.js, FastClick.js.">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="spa_plugins/spa_plugins.jpg">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/three-plugins-for-single-page">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Три плагина, которые сделают Single Page Application лучше</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/three-plugins-for-single-page">
+			<span itemprop="name">Три плагина, которые сделают Single Page Application лучше</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-11-13 00:00:00 +0300">
+		
+		<em>13 ноября, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 15:51:46 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/spa_plugins/spa_plugins.jpg">
+			<img itemprop="contentUrl" src="/img/spa_plugins/spa_plugins.jpg"
+				 alt="HTML5 Link Prefetch" >
+		</a>
+
+		<meta itemprop="url" content="/img/spa_plugins/spa_plugins.jpg">
+		
+			<meta itemprop="width" content="1440">
+		
+
+		
+			<meta itemprop="height" content="800">
+		
+
+		
+	</figure>
+
+
+
+	<p>Ваши пользователи разные. У кого-то быстрый компьютер и интернет, а кто-то пользуется приложением из глуши со слабеньким 2G интернетом. Мы, разработчики, редко задумываемся об этом, ведь у нас сайт «летает».</p>
+
+<p>Следующие три плагина улучшат приложение для пользователей с нестабильным или медленным интернетом и тех, кто пользуется телефоном для просмотра.</p>
+
+<!-- more -->
+
+<h2 id="pacejshttpgithubhubspotcompacedocswelcomerelnofollow"><a href="http://github.hubspot.com/pace/docs/welcome/" rel="nofollow">Pace.js</a></h2>
+<p>Плагин автоматически добавляет полосу загрузки для ресурсов и AJAX запросов. Помимо очевидного профита что пользователь видит процесс загрузки сайта, он так-же видит процесс загрузки AJAX запросов. Это особенно важно для пользователей с медленным интернетом. Так даже если вы забыли поставить свой индикатор загрузки для определенного действия Pace.js сделает это за вас.</p>
+
+<p>Для angular есть модуль <a href="http://chieffancypants.github.io/angular-loading-bar/" rel="nofollow">Angular Loading Bar</a>.</p>
+
+<h2 id="offlinejshttpgithubhubspotcomofflinedocswelcomerelnofollow"><a href="http://github.hubspot.com/offline/docs/welcome/" rel="nofollow">Offline.js</a></h2>
+<p>Добавляет индикатор для пользователя если тот потерял интернет соединение. Считаю это безумно важным для сервисов связанных с финансами и другими важными данными.</p>
+
+<p><a href="/img/spa_plugins/connection.png" rel="nofollow"><img src="/img/spa_plugins/connection.png" alt="" /></a></p>
+
+<p>Как только он увидит такое сообщение, он уже не будет «винить» ваш сервис, который не выполнил то, что он хотел. А просто проверит свой интернет.</p>
+
+<p>К сожалению мой pull request с русификацией еще не приняли, вы можете забрать его из <a href="https://github.com/ymatuhin/offline" rel="nofollow">моего форка</a>.</p>
+
+<h2 id="fastclickjshttpsftlabsgithubiofastclickrelnofollow"><a href="https://ftlabs.github.io/fastclick/" rel="nofollow">FastClick.js</a></h2>
+<p>Известная библиотека, которая уменьшает задержку в 300 мс между физическим тапом и обработкой клика в мобильных браузерах.</p>
+
+<p>Все три библиотеки можно загружать асинхронно и после загрузки основного контента. Если вы хотите чтобы Pace.js показывал индикатор загрузки сайта, то его наоборот следует грузить первым.</p>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">spa</li><!--
+	
+	--><li itemprop="keywords">angular</li><!--
+	
+	--><li itemprop="keywords">plugins</li><!--
+	
+	--><li itemprop="keywords">offline</li><!--
+	
+	--><li itemprop="keywords">loading</li><!--
+	
+	--><li itemprop="keywords">mobile</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

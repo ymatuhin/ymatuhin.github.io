@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Еще одна статья про REM vs EM / Блог фронтенд разработчика</title>
+	<meta name="description" content="В этой статье я расскажу в чем различия между REM и EM, и как начать использовать REM в своих проектах уже сейчас.
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/rem_vs_em">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="rem_vs_em/rem.png">
+	<link rel="image_src" href="rem_vs_em/rem.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Еще одна статья про REM vs EM / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/rem_vs_em">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="В этой статье я расскажу в чем различия между REM и EM, и как начать использовать REM в своих проектах уже сейчас.
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="rem_vs_em/rem.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/rem_vs_em">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Еще одна статья про REM vs EM</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/rem_vs_em">
+			<span itemprop="name">Еще одна статья про REM vs EM</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-04-22 00:00:00 +0300">
+		
+		<em>22 апреля, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:02:48 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/rem_vs_em/rem.png">
+			<img itemprop="contentUrl" src="/img/rem_vs_em/rem.png"
+				 alt="" >
+		</a>
+
+		<meta itemprop="url" content="/img/rem_vs_em/rem.png">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="375" height="112" alt="Rem vs em in CSS" src="/img/rem_vs_em/rem.png">
+</figure>
+
+<p>Навозившись в текущем проекте с подсчетами EM-ов я решил поискать альтернативу этому способу. Конечно я знал что существуют REM-ы и думал что их все-еще нельзя использовать, но я был не прав. </p>
+
+<p>В этой статье я расскажу в чем различия между REM и EM, и как начать использовать REM в своих проектах уже сейчас.</p>
+
+<h2>Как работает EM?</h2>
+
+<p>Em (как и %) работает путем расчета текущего размера шрифта в зависимости от размера шрифта родительского элемента. К примеру:</p>
+
+~~~css
+html {
+  font-size: 100% /* =16px */
+}
+body {
+  font-size: 2em; /* =32px */
+}
+p {
+  font-size: 1em; /* =32px */
+  /* font-size: 0.5em; =16px */
+}
+~~~
+
+<p>Для простоты понимания, я всегда представляю EM в процентах, к примеру у нас <code>html</code> — 100% или 1em, <code>body</code> — 2em или 200% от <code>html</code>, <code>P</code> — 1em или 100% от <code>body</code>.</p>
+
+<h2>Как работает REM?</h2>
+<p>Em (как и %) работает путем расчета текущего размера шрифта в зависимости от размера шрифта <code>html</code>. К примеру:</p>
+
+~~~css
+html {
+  font-size: 100% /* =16px */
+}
+body {
+  font-size: 2rem; /* =32px */
+}
+p {
+  font-size: 1rem; /* =16px */
+}
+~~~
+
+<p>Таким образом контролировать размеры элементов стало гораздо проще.</p>
+
+<h2>Зачем использовать REM или EM?</h2>
+
+<p>Основная идея использования относительных размеров шрифтов в том, что в дальнейшем вы можем изменить размер шрифта у <code>html</code> и все элементы на сайте у которых размеры указаны в em или % изменят свои размеры. Но при использовании em и % нам нужно все время пересчитывать их самостоятельно. </p>
+
+<p>К примеру чтобы добиться у <code>P</code> размера шрифта в 16px нужно задать ему <code>font-size: 0.5em</code> или <code>font-size: 50%</code>, что весьма неудобно.</p>
+
+<p>А в случае с REM достаточно просто указать <code>font-size: 1rem</code> и все будет так, как мы ожидаем.</p>
+
+<h2>Альтернативный (удобный) метод использования REM</h2>
+<p>Этот метод такой-же как и использовался раньше для EM, но он гораздо лучше проявил себя именно в сочетании с REM.</p>
+
+~~~css
+html {
+  /* устанавливаем базовый размер шрифта в 10px для простоты расчетов */
+  font-size: 62.5%;
+}
+
+body {
+  /* устанавливаем размер шрифта для текста по умолчанию */
+  font-size: 1.6rem; /* 16px */
+}
+
+h1 {
+  font-size: 3.2rem; /* 32px */
+}
+~~~
+
+<p>Теперь нам не нужно считать REM от 16px. Мы считаем их от 10px, что гораздо проще.</p>
+
+<h2>Использование в продакшене</h2>
+<p>С поддержкой у REM все не так уж плохо. По данным <a href="http://caniuse.com/#search=rem">caniuse</a> их поддерживают все популярные браузеры. Есть одна поправка, касающаяся Internet Explorer 9-10 — они не поддерживают свойство REM если написать его в свойстве <code>font</code> и проигнорируют все свойство. Но можно написать через <code>font-size</code> (ох уж этот IE).</p>
+
+<p>Что делать тем, кто не поддерживает REM? На этот случай у нас в запасе есть отличное JavaScript решение этой проблемы — <a href="http://chuckcarpenter.github.io/REM-unit-polyfill/">Rem-unit-polyfill</a>. Прочитать подробнее о ней можно на странице проекта, но вкратце подключаем этот файл к нам на страницу, и REM работают везде. Я пока еще не тестировал эту библиотеку, но у неё сейчас 454 звезды и 125 форков, поэтому я склонен доверять ей. Как только я проверю её, я обновлю этот пост.</p>
+
+<p>А уже используете <em>REM</em> в своих проектах?</p>
+
+<footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
+	<h3>rem em</h3>
+	<h4>rem em CSS</h4>
+</footer>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">единицы измерения</li><!--
+	
+	--><li itemprop="keywords">css</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+		<h4>Похожие записи</h4>
+		<ul>
+			
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/smartjs_started_a_course_on_architecture/">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/margin-align-right/">Выравнивание блочного элемента по правому краю в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/convert_photoshop_letter_spacing_to_css/">Переносим межбуквенный интервал из Фотошопа в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+		</ul>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

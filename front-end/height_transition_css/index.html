@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Анимируем высоту c auto в CSS через transition / Блог фронтенд разработчика</title>
+	<meta name="description" content="Как сделать анимацию высоты в CSS со значением auto через transition? Легко и без единой строчки javascript. Подробнее читайте в этой статье.
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/height_transition_css">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="animate_height/transition_sign.jpg">
+	<link rel="image_src" href="animate_height/transition_sign.jpg" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Анимируем высоту c auto в CSS через transition / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/height_transition_css">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Как сделать анимацию высоты в CSS со значением auto через transition? Легко и без единой строчки javascript. Подробнее читайте в этой статье.
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="animate_height/transition_sign.jpg">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/height_transition_css">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Анимируем высоту c auto в CSS через transition</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/height_transition_css">
+			<span itemprop="name">Анимируем высоту c auto в CSS через transition</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-06-29 00:00:00 +0300">
+		
+		<em>29 июня, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:02:48 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/animate_height/transition_sign.jpg">
+			<img itemprop="contentUrl" src="/img/animate_height/transition_sign.jpg"
+				 alt="" >
+		</a>
+
+		<meta itemprop="url" content="/img/animate_height/transition_sign.jpg">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<figure class="" itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="1040" height="380" alt="Transition height animate CSS" src="/img/animate_height/transition_sign.jpg">
+	<figcaption itemprop="description">Анимация высоты в CSS через <em>transition</em></figcaption>
+</figure>
+
+<p>Пытались ли вы анимировать высоту (<code>height</code>) через <abbr title="Cascading Style Sheets">CSS</abbr>? Если пытались, то скорее всего вы знаете, что через <code>transition</code> можно задать анимацию от одного значения, до другого. И в этом есть небольшая проблема, что делать если нам нужно заанимировать высоту со значения <code>auto</code> до <code>0</code>? К сожалению просто указать свойство <code>transition</code> не даст нам никакого эффекта. Но не спешите расстраиваться, это можно сделать не прибегая к помощи <abbr title="JavaScript is the programming language of HTML and the Web.">JavaScript</abbr>.</p>
+
+<h2>Так как же это сделать?</h2>
+<p>Казалось бы, безвыходная ситуация, но это не так. Мы забыли про еще одно свойство, которое может нам в этом помочь. И это свойство <code>max-height</code>. Если вы уже догадались что делать дальше, отложите чтение этой стати и попробуйте реализовать анимацию сами. А потом возвращайтесь и сравните ваше решение с моим.</p>
+
+<p>Чтобы все получилось, нужно сделать несколько шагов:</p>
+<ol>
+	<li>Задать достаточно большую максимальную высоту, чтобы в дальнейшем анимировать её до нужных нам размеров;</li>
+	<li>Установить <code>overflow: hidden</code>, чтобы содержимое скрывалось при анимации;</li>
+	<li>Помнить про <code>padding</code>, а именно про то, что если он есть, то его тоже нужно будет анимировать до 0, чтобы наш блок полностью исчез;</li>
+</ol>
+
+<h3>Анимация высоты с 0 до auto</h3>
+
+<p>Демо можно <a href="/demo/animate_auto/">посмотреть тут</a>.</p>
+<p>Исходный код на <a href="http://github.com/ymatuhin/ymatuhin.github.io/blob/master/demo/animate_auto/index.html" rel="nofollow">гитхабе</a>.</p>
+<p>Теперь мы умеем анимировать высоту через CSS. И теперь можем делать без javascript такие штуки, как: спойлеры, выпадающие меню, раскрывающиеся попапы и т.д.</p>
+
+<footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
+	<h3>transition height</h3>
+	<h3>animate height</h3>
+	<h4>css transition height</h4>
+	<h5>transition height auto</h5>
+</footer>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">css</li><!--
+	
+	--><li itemprop="keywords">анимация</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+		<h4>Похожие записи</h4>
+		<ul>
+			
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/smartjs_started_a_course_on_architecture/">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/margin-align-right/">Выравнивание блочного элемента по правому краю в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/convert_photoshop_letter_spacing_to_css/">Переносим межбуквенный интервал из Фотошопа в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+		</ul>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

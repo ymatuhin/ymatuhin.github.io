@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Быстрый дебаг CSS слоев с Pesticide / Блог фронтенд разработчика</title>
+	<meta name="description" content="Дебажим CSS слои с помощью библиотеки Pesticide и расширений для Chrome и Firefox.
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/faster_debug_css_with_pesticide">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="pesticide/logo.png">
+	<link rel="image_src" href="pesticide/logo.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Быстрый дебаг CSS слоев с Pesticide / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/faster_debug_css_with_pesticide">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Дебажим CSS слои с помощью библиотеки Pesticide и расширений для Chrome и Firefox.
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="pesticide/logo.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/faster_debug_css_with_pesticide">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Быстрый дебаг CSS слоев с Pesticide</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/faster_debug_css_with_pesticide">
+			<span itemprop="name">Быстрый дебаг CSS слоев с Pesticide</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-05-12 00:00:00 +0300">
+		
+		<em>12 мая, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:02:48 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/pesticide/logo.png">
+			<img itemprop="contentUrl" src="/img/pesticide/logo.png"
+				 alt="" >
+		</a>
+
+		<meta itemprop="url" content="/img/pesticide/logo.png">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<p>Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/Sass/LESS библиотека — <strong>Pesticide</strong>.</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="530" alt="Логотип библиотеки для дебага CSS — Pesticide" src="/img/pesticide/logo.png">
+	<figcaption itemprop="description">Логотип библиотеки для дебага CSS — Pesticide</figcaption>
+</figure>
+
+<p>Что делает этот ваш Pesticide? На официальном сайте: «Kill your CSS layout bugs. Without 2000 clicks in Chrome Dev Tools». На самом деле принцип её работы очень прост, и я думаю многие разработчики писали у себя в стилях во время разработки нечто вроде этого:</p>
+
+~~~css
+* {
+  outline: red;
+}
+~~~
+<p>Но Адам Морс (Adam Morse) пошел дальше, и добавил свой цвет для каждого элемента. И теперь, если немного привыкнуть, то по цвету можно определять цвет элемента и его область. </p>
+
+<p>Сам CSS файл до смешного прост, познакомиться подробнее с Pesticide можно на официальном сайте <a href="http://pesticide.io">pesticide.io</a>. Посмотреть исходники и скачать файл можно с <a href="https://github.com/mrmrs/pesticide" rel="nofollow">github</a>.</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Github" src="/img/pesticide/github.png">
+	<figcaption itemprop="description">Пример использования Pesticide на Github</figcaption>
+</figure>
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Yandex" src="/img/pesticide/ya.png">
+	<figcaption itemprop="description">Пример использования Pesticide на Yandex</figcaption>
+</figure>
+
+<p>Мне кажется, что подключать эту библиотеку как css файл на свой проект не рационально. Особенно когда у неё есть расширения для браузеров (<a href="https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh" rel="nofollow">Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/pesticide/" rel="nofollow">Firefox</a>). </p>
+
+<p>Но с расширениями есть одна проблема — они сбрасывается при перезагрузке страницы. В таком случае нам придется обязательно подключать pesticide как css файл чтобы избежать этого.</p>
+
+<p>Я предложил Адаму исправить это положение вещей в расширении для хрома, но он не поддержал меня и решил не включать мои изменения в расширение. Поэтому было решено опубликовать еще одну версию этого расширения для хрома только без необходимости каждый раз нажимать на кнопку, чтобы увидеть библиотеку в действии. Так и появился <a href="https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/eipbgplchlidkojmppclhkechkhmlefi">Pesticide for Chrome with autoupdate</a>.</p>
+
+<p>Какое расширение будете использовать вы — дело исключительно ваше. Но я думаю, не мне одному будет удобна моя модификация.</p>
+
+<p>Красивой CSS разметки вам вместе с Pesticide :)</p>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">css</li><!--
+	
+	--><li itemprop="keywords">pesticide</li><!--
+	
+	--><li itemprop="keywords">debug</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+		<h4>Похожие записи</h4>
+		<ul>
+			
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/smartjs_started_a_course_on_architecture/">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/margin-align-right/">Выравнивание блочного элемента по правому краю в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/convert_photoshop_letter_spacing_to_css/">Переносим межбуквенный интервал из Фотошопа в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+		</ul>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

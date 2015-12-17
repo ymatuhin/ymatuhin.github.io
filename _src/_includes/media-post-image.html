@@ -1,0 +1,23 @@
+{% if page.image %}
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		{% capture url %}{{ page.image | prepend: '/img/' | prepend: site.url }}{% endcapture %}
+
+		<a rel="nofollow" href="{{ url }}">
+			<img itemprop="contentUrl" src="{{ url }}"
+				 alt="{{ page.imageCaption }}" {% if page.imageSpace %}style="padding: 1.6em"{% endif %}>
+		</a>
+
+		<meta itemprop="url" content="{{ url }}">
+		{% if page.imageWidth %}
+			<meta itemprop="width" content="{{ page.imageWidth }}">
+		{% endif %}
+
+		{% if page.imageHeight %}
+			<meta itemprop="height" content="{{ page.imageHeight }}">
+		{% endif %}
+
+		{% if page.imageTitle %}
+			<figcaption itemprop="caption">«{{ page.imageTitle }}»</figcaption>
+		{% endif %}
+	</figure>
+{% endif %}

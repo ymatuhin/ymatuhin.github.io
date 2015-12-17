@@ -1,0 +1,42 @@
+---
+layout: default
+title: Фронтенд разработчик
+s_title: Юрий Матюхин
+redirect_from:
+  - /front-end/how_to_exclude_my_views_from_yandex_metrica/
+  - /privet-mir/
+  - /work/
+  - /folio/
+  - /about/
+description: >
+  Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
+---
+
+<style>
+	.lang {float: right;}
+</style>
+
+<em class="lang"><a href="/en/">in english</a></em>
+<h1>Юрий Матюхин</h1>
+
+<p>Привет, я фронтенд разработчик: пишу приложения и запускаю онлайн-сервисы. Люблю минимализм и оптимизацию. <br>Bеду <a href="/blog/">блог</a> о разработке (архитектура приложений, верстка, фреймворки, инструменты, браузеры…).
+<br>Работаю в <a rel="nofollow" href="http://poloniumarts.com/">Polonium Arts</a>.</p>
+
+<br>
+<h2>Последние записи из блога</h3>
+<ul>
+	{% for post in site.posts limit:5 %}
+		<li>
+			<nav><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
+			<p>{{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}</p>
+		</p>
+	{% endfor %}
+</ul>
+<p><a href="/blog/">Все заметки →</a></p>
+
+<br>
+<h3>Контактные данные</h3>
+<address itemscope itemtype="http://schema.org/Person">
+	<span itemprop="name" class="visuallyhidden">Юрий Матюхин</span>
+	<p>Читаю почту — <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>, скайп — <a itemprop="telephone" href="skype:ymatuhin?chat" class="dotted">ymatuhin</a> и твиттер — <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.</p>
+</address>

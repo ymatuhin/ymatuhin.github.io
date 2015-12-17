@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading… / Блог фронтенд разработчика</title>
+	<meta name="description" content="HTML5 Link Prefetch указывает браузеру какие ресурсы вам понадобятся в будущем на сайте и максимально подготовит их дальнейшую загрузку.">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/html5-link-prefetch">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="link_prefetch/html5_link_prefetch.png">
+	<link rel="image_src" href="link_prefetch/html5_link_prefetch.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading… / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/html5-link-prefetch">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="HTML5 Link Prefetch указывает браузеру какие ресурсы вам понадобятся в будущем на сайте и максимально подготовит их дальнейшую загрузку.">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="link_prefetch/html5_link_prefetch.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/html5-link-prefetch">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading…</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/html5-link-prefetch">
+			<span itemprop="name">Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading…</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-12-02 00:00:00 +0300">
+		
+		<em>2 декабря, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 11:51:53 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/link_prefetch/html5_link_prefetch.png">
+			<img itemprop="contentUrl" src="/img/link_prefetch/html5_link_prefetch.png"
+				 alt="HTML5 Link Prefetch" >
+		</a>
+
+		<meta itemprop="url" content="/img/link_prefetch/html5_link_prefetch.png">
+		
+			<meta itemprop="width" content="796">
+		
+
+		
+			<meta itemprop="height" content="393">
+		
+
+		
+	</figure>
+
+
+
+	<p>Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработающий preload. HTML5 Link Prefetch уменьшит время загрузки для ресурсов, которые нам понадобятся позже.</p>
+
+<!-- more -->
+
+<h2 id="dns-prefetch">Dns-prefetch</h2>
+
+<p>Если у вас на сайте содержимое загружается через DNS, то укажите браузеру в атрибуте адрес DNS. И браузер начнет предварительную загрузку (prepresolve) до момента загрузки ресурсов. <a href="http://caniuse.com/#search=dns-prefetch" rel="nofollow">Поддержка браузерами</a> и пример:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-dns-prefetch-control"</span> <span class="na">content=</span><span class="s">"on"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"dns-prefetch"</span> <span class="na">href=</span><span class="s">"//ajax.googleapis.com"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<p>Пример для Amazon CDN:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">'x-dns-prefetch-control'</span> <span class="na">content=</span><span class="s">'on'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">'dns-prefetch'</span> <span class="na">href=</span><span class="s">'http://g-ecx.images-amazon.com'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">'dns-prefetch'</span> <span class="na">href=</span><span class="s">'http://z-ecx.images-amazon.com'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">'dns-prefetch'</span> <span class="na">href=</span><span class="s">'http://ecx.images-amazon.com'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">'dns-prefetch'</span> <span class="na">href=</span><span class="s">'http://completion.amazon.com'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">'dns-prefetch'</span> <span class="na">href=</span><span class="s">'http://fls-na.amazon.com'</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="preconnect">Preconnect</h2>
+
+<p>Похоже на dns-prefetch, только круче. Помимо DNS устанавливает TCP, TLS связь. Помогает предгрузить соединение для веб сокетов. <a href="http://caniuse.com/#search=preconnect" rel="nofollow">Поддержка браузерами</a> и пример:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"preconnect"</span> <span class="na">href=</span><span class="s">"//www.example.com"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="prefetch">Prefetch</h2>
+
+<p>Указываем браузеру что этот ресурс потребуется нам и браузер загрузит его с низким приоритетом и положит в кэш.</p>
+
+<p>Браузер может не загрузить большие файлы при медленном соединении, а Firefox загружает ресурсы только в режиме простоя. <a href="http://caniuse.com/#search=prefetch" rel="nofollow">Поддержка браузерами</a> и пример:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- всю страницу --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"prefetch"</span> <span class="na">href=</span><span class="s">"http://ymatuhin.ru"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- только изображение --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"prefetch"</span> <span class="na">href=</span><span class="s">http://ymatuhin.ru/img/yury_matuhin.jpg"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="subresource">Subresource</h2>
+
+<p>То-же что и prefetch, только с высоким приоритетом. Поэтому я бы рекомендовал добавлять этот атрибут для критических стилей. <a href="http://caniuse.com/#search=subresource" rel="nofollow">Поддержка браузерами</a> и пример:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"subresource"</span> <span class="na">href=</span><span class="s">"critical/app.js"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"subresource"</span> <span class="na">href=</span><span class="s">"critical/style.css"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="prerender">Prerender</h2>
+
+<p>Этот параметр заранее загружает ресурс или страницу и всё её содержимое в фоне. Это как открытие страницы в фоновой вкладке. Браузер загрузит все ресурсы, построит DOM, применит CSS и JS. А когда пользователь перейдет по ссылке, скрытая страница станет заместо текущей и загрузится моментально.</p>
+
+<p>В Google поиске давно действует такая штука под названием Instant Pages, Microsoft недавно объявили что они будут использовать prerender в Bing на IE11. <a href="http://caniuse.com/#search=prerender" rel="nofollow">Поддержка браузерами</a> и пример:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"prerender"</span> <span class="na">href=</span><span class="s">"http://ymatuhin.ru/index.html"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="preloading">Preloading</h2>
+
+<p>Эта штука еще не работает, но её внесли в <a href="https://w3c.github.io/preload/" rel="nofollow">спецификацию</a>. Работает так-же как и prefetch, но браузер всегда загрузит ресурс. Аналог прелоадеров для картинок, только нативный. Пока он не поддерживается, используйте prefetch. Пример:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"preload"</span> <span class="na">href=</span><span class="s">"image.png"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="javascript">Добавление через JavaScript</h2>
+
+<p>Не обязательно указывать эти теги в HTML, генерируйте по мере необходимости для нужных ресурсов:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add_hint</span><span class="p">(</span><span class="nx">type</span><span class="p">,</span> <span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">type</span> <span class="o">||</span> <span class="o">!</span><span class="nx">url</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+    <span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"link"</span><span class="p">);</span>
+    <span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"rel"</span><span class="p">,</span> <span class="nx">type</span><span class="p">);</span>
+    <span class="nx">el</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">"href"</span><span class="p">,</span> <span class="nx">url</span><span class="p">);</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"head"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">add_hind</span><span class="p">(</span><span class="s1">'prefetch'</span><span class="p">,</span> <span class="s1">'http://ya.ru'</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<h3 id="section">Дополнительная информация</h3>
+<p>На этом сайте я использую prefetch для подготовке к загрузке файла, который подсвечивает код, если такой блок находится на странице. Dns-prefetch для ускорения загрузки яндекс метрики. И скрипт, для ускорения переходов между страницами:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"mousemove"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">href</span> <span class="o">||</span>
+        <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">location</span><span class="p">.</span><span class="nx">host</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="o">||</span>
+        <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">hintAdded</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+    <span class="c1">// функция описана выше</span>
+    <span class="nx">add_hint</span><span class="p">(</span><span class="s1">'prerender'</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">href</span><span class="p">);</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">hintAdded</span> <span class="o">=</span>  <span class="kc">true</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p>Если браузер не поддерживает HTML5 Link Prefetch, то проигнорирует эти атрибуты, поэтому их можно безопасно использовать.</p>
+
+<h3 id="c">Cсылки</h3>
+<ul>
+  <li><a href="https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/" rel="nofollow">Eliminating Roundtrips with Preconnect</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ" rel="nofollow">MDN link prefetching FAQ</a></li>
+  <li><a href="http://www.w3.org/TR/resource-hints/" rel="nofollow">W3C resource-hints</a></li>
+</ul>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">cdn</li><!--
+	
+	--><li itemprop="keywords">preconnect</li><!--
+	
+	--><li itemprop="keywords">prefetch</li><!--
+	
+	--><li itemprop="keywords">prerender</li><!--
+	
+	--><li itemprop="keywords">preloading</li><!--
+	
+	--><li itemprop="keywords">оптимизация</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

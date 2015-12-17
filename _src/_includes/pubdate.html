@@ -1,0 +1,22 @@
+<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="{{ page.date }}">
+		{% assign m = page.date | date: "%-m" %}
+		<em>{{ page.date | date: "%-d"  }} {% include month.html %}, {{ page.date | date: "%-Y"}}</em><!--
+	--></time><!--
+
+	-->{% if page.last_modified_at == page.date %}
+		<meta itemprop="dateModified" content="{{ page.last_modified_at }}">
+	{% else %}, обновлено
+		<time itemprop="dateModified" datetime="{{ page.last_modified_at }}">
+			{% assign m = page.last_modified_at | date: "%-m" %}
+			<em>{{ page.last_modified_at | date: "%-d"  }} {% include month.html %}, {{ page.last_modified_at | date: "%-Y"}}</em>
+		</time>
+	{% endif%}
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="{{ site.title }}"></meta>
+	</a>
+</p>

@@ -1,0 +1,30 @@
+# Site settings
+title: Юрий Матюхин
+email: ymatuhin@yandex.ru
+baseurl: ""
+url: "http://ymatuhin.ru"
+url: ""
+
+twitter: 		ymatuhin
+github:         ymatuhin
+email: 			ymatuhin@yandex.ru
+disqus: 		ymatuhin
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+permalink: /:categories/:title
+destination: ../_site
+sass:
+  style: compressed
+
+excerpt_separator: <!-- more -->
+
+# Build Settings
+permalinks: pretty
+markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

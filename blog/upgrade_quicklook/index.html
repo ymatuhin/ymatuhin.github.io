@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Улучшаем «быстрый просмотр» (Quick Look) в Mac OS / Блог фронтенд разработчика</title>
+	<meta name="description" content="Как установить плагины для просмотра markdown, файлов без расширений, webp изображений, JSON и подсветка синтаксиса к «быстрому просмотру» (Quick Look) в Mac OS
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/blog/upgrade_quicklook">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="quicklook/preview.png">
+	<link rel="image_src" href="quicklook/preview.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Улучшаем «быстрый просмотр» (Quick Look) в Mac OS / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/blog/upgrade_quicklook">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Как установить плагины для просмотра markdown, файлов без расширений, webp изображений, JSON и подсветка синтаксиса к «быстрому просмотру» (Quick Look) в Mac OS
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="quicklook/preview.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/blog/upgrade_quicklook">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Улучшаем «быстрый просмотр» (Quick Look) в Mac OS</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/upgrade_quicklook">
+			<span itemprop="name">Улучшаем «быстрый просмотр» (Quick Look) в Mac OS</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-08-24 00:00:00 +0300">
+		
+		<em>24 августа, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:02:48 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/quicklook/preview.png">
+			<img itemprop="contentUrl" src="/img/quicklook/preview.png"
+				 alt="" >
+		</a>
+
+		<meta itemprop="url" content="/img/quicklook/preview.png">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<figure itemscope itemtype="http://schema.org/ImageObject">
+    <img itemprop="contentUrl" alt="Апгрейдим «быстрый просмотр» (Quick Look) в Mac OS" src="/img/quicklook/preview.png">
+</figure>
+
+<p>Quick Look незаменимая вещь для маководов, жаль что она не работает с некоторыми файлами, которые относятся к веб разработке. Было бы неплохо просматривать markdown, JSON, файлы без расширений, подсветка синтаксиса, показ webp изображений...</p>
+
+<p>В этой статье я расскажу о плагинах к «быстрому просмотру» и их установке.</p>
+
+<!-- more -->
+
+<h2>Теория</h2>
+
+<p>Quick Look поддерживает установку сторонних плагинов, которые расширяют функционал «быстрого просмотра». Чтобы установить плагин, скопируйте файл с расширением <code>.qlgenerator</code> в папку <code>~/Library/QuickLook</code> или <code>/Library/QuickLook</code> и перезапустить Finder.</p>
+
+<p>Чтобы перезапустить Finder — нажмите <code>alt</code> и кликните правой кнопкой мыши по его иконке в Dock. Выберите нижний пункт <code>Relaunch</code>.</p>
+
+<h2>Плагины для Quick Look</h2>
+
+<ol>
+    <li><p><b><a href="https://github.com/toland/qlmarkdown">QLMarkdown</a></b> — добавляет просмотр <code>markdown</code> файлов // <a href="https://github.com/downloads/toland/qlmarkdown/QLMarkdown-1.3.zip">скачать файл</a></p>
+
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+    	<img itemprop="contentUrl" alt="Плагин для Quick Look — QLMarkdown" src="/img/quicklook/markdown.png">
+    	<figcaption itemprop="description">Плагин для Quick Look — QLMarkdown</figcaption>
+    </figure>
+
+    <li><p><b><a href="https://code.google.com/p/qlcolorcode/">QLColorCode</a></b> — добавляет подсветку синтаксиса // <a href="https://qlcolorcode.googlecode.com/files/QLColorCode-2.0.2.tgz">скачать файл</a></p>
+
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+    	<img itemprop="contentUrl" alt="Плагин для Quick Look — QLColorCode" src="/img/quicklook/highlight.png">
+    	<figcaption itemprop="description">Плагин для Quick Look — QLColorCode</figcaption>
+    </figure>
+
+    <li><p><b><a href="https://github.com/whomwah/qlstephen/releases">QLStephen</a></b> — для просмотра файлов без расширения (README, CHANGELOG и т.д.) // <a href="https://github.com/whomwah/qlstephen/releases">скачать файл</a></p>
+
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+    	<img itemprop="contentUrl" alt="Плагин для Quick Look — QLStephen" src="/img/quicklook/changelog.png">
+    	<figcaption itemprop="description">Плагин для Quick Look — QLStephen</figcaption>
+    </figure>
+
+    <li><p><b><a href="http://www.sagtau.com/quicklookjson.html">QuickLookJSON</a></b> — предпросмотр JSON с поддержкой фолдинга // <a href="http://www.sagtau.com/media/QuickLookJSON.qlgenerator.zip">скачать файл</a></p>
+
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+    	<img itemprop="contentUrl" alt="Плагин для Quick Look — QuickLookJSON" src="/img/quicklook/json.png">
+    	<figcaption itemprop="description">Плагин для Quick Look — QuickLookJSON</figcaption>
+    </figure>
+
+    <li><p><b><a href="https://github.com/Nyx0uf/qlImageSize">qlImageSize</a></b> — добавление размера и разрешения в заголовок «быстрого просмотра» // <a href="https://github.com/Nyx0uf/qlImageSize#installation">скачать файл</a></p>
+
+    <figure itemscope itemtype="http://schema.org/ImageObject">
+    	<img itemprop="contentUrl" alt="Плагин для Quick Look — qlImageSize" src="/img/quicklook/images.png">
+    	<figcaption itemprop="description">Плагин для Quick Look — qlImageSize</figcaption>
+    </figure>
+
+    <li><p><b><a href="https://github.com/dchest/webp-quicklook">WebP</a></b> — поддержка формата WebP // <a href="https://github.com/dchest/webp-quicklook/releases">скачать файл</a></p>
+</ol>
+
+<p><br>Плагины работают в OS X El Capitan. Не забудьте перезапустить <code>Finder</code>.</p>
+
+<p><br>P.S. Перейти в директорию <code>/Library/QuickLook</code> можно через <code>Finder</code>. Нажмите в нем <code>CMD + SHIFT + G</code> и введите путь. Или через терминал: введите <code>cd /Library/QuickLook &amp;&amp; open .</code>.</p>
+
+<footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
+    <h3>Быстрый просмотр в Mac OS</h3>
+</footer>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">mac os</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

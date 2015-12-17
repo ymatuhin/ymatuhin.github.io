@@ -1,0 +1,1921 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Разбираемся со сборкой front end на Gulp / Блог фронтенд разработчика</title>
+	<meta name="description" content="Обзор основных возможностей новой системы для сборки проектов — Gulp, а так-же с изучаем как работают его основные функциии.
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-emd/see_into_gulp">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="gulp/logo.png">
+	<link rel="image_src" href="gulp/logo.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Разбираемся со сборкой front end на Gulp / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-emd/see_into_gulp">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Обзор основных возможностей новой системы для сборки проектов — Gulp, а так-же с изучаем как работают его основные функциии.
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="gulp/logo.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-emd/see_into_gulp">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Разбираемся со сборкой front end на Gulp</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-emd/see_into_gulp">
+			<span itemprop="name">Разбираемся со сборкой front end на Gulp</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	<p>
+	Опубликовано:
+	<time itemprop="datePublished" datetime="2015-05-17 00:00:00 +0300">
+		
+		<em>17 мая, 2015</em><!--
+	--></time><!--
+
+	-->, обновлено
+		<time itemprop="dateModified" datetime="2015-12-17 12:02:48 +0300">
+			
+			<em>17 декабря, 2015</em>
+		</time>
+	
+
+
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+	<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</span>
+
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		<a rel="nofollow" href="/img/gulp/logo.png">
+			<img itemprop="contentUrl" src="/img/gulp/logo.png"
+				 alt="" >
+		</a>
+
+		<meta itemprop="url" content="/img/gulp/logo.png">
+		
+
+		
+
+		
+	</figure>
+
+
+
+	<p>В последнее время <strong>Gulp</strong> набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем <strong>Grunt</strong>. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.</p>
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+	<img itemprop="contentUrl" width="400" alt="Собираем front end на gulp" src="/img/gulp/logo.png">
+	<figcaption itemprop="description">Собираем front end на gulp</figcaption>
+</figure>
+
+<h2>Что такое Gulp?</h2>
+
+<p>Gulp — это инструмент сборки front-a. Он позволяет автоматизировать повторяющиеся задачи (сборка и минификация CSS- и JS-файлов, запуск тестов, перезагрузка браузера и другие). Тем самым Gulp ускоряет и оптимизирует процесс веб-разработки.</p>
+
+<h2>Установка Gulp</h2>
+<p>Установить Gulp достаточно легко. Если у вас что-то не получится, пишите в комментариях или загуглите вашу проблему. Итак для установки нужно сделать 3 шага:</p>
+
+<ul>
+<li>Установить Gulp глобально;</li>
+<li>Установить Gulp как <code>devDependencies</code> (зависимости для разработки);</li>
+<li>Создать файл <code>gulpfile.js</code>;</li>
+</ul>
+
+<p>Первый шаг — устанавливаем глобально Gulp. Открываем терминал и пишем:</p>
+~~~bash
+npm install --global gulp
+~~~
+
+<p>После этого вам нужно установить Gulp как <code>devDependencies</code> для вашего проекта. Убедитесь в том, что у вас есть файл <code>package.json</code>. Если его нет, то создайте его написав в консоль <code>npm init</code>. Теперь можно установить Gulp как <code>devDependencies</code>:</p>
+~~~bash
+npm install --save-dev gulp
+~~~
+
+<p>И наконец, вам нужно создать <code>gulpfile.js</code> в корне вашего проекта, который будет содержать ваши задачи (tasks). В качестве промежуточного шага, мы установим плагин <code>gulp-util</code>. Чтобы показать как устанавливаются плагины:</p>
+~~~bash
+npm install --save-dev gulp-util
+~~~
+
+<p>Теперь настало время написать нашу первую задачку. Открываем только что созданный файл <code>gulpfile.js</code> и пишем в него следующее:</p>
+~~~css
+/* File: gulpfile.js */
+
+// собираем все наши плагины
+var gulp  = require('gulp'),
+    gutil = require('gulp-util');
+
+// создаем задачку, которая будет выполняться по умолчанию
+gulp.task('default', function() {
+  return gutil.log('Gulp is running!')
+});
+~~~
+
+<p>И теперь нам остается запустить gulp в терминале и мы увидим нечто похожее на это:</p>
+~~~bash
+> gulp
+[12:32:08] Using gulpfile ~/Projects/gulp-scotch-io/gulpfile.js
+[12:32:08] Starting 'default'...
+[12:32:08] Gulp is running!
+[12:32:08] Finished 'default' after 1 ms
+~~~
+
+<h2>Обзор</h2>
+<p>Сам по себе Gulp очень скуден на возможности. Но все, что вам нужно вынесено в отдельные плагины. Они совместно с Gulp творят чудеса.</p>
+
+<p>Api у gulp очень маленькое, и содержит всего 4 функции высшего порядка:</p>
+<ul>
+    <li><code>gulp.task</code></li>
+    <li><code>gulp.src</code></li>
+    <li><code>gulp.dest</code></li>
+    <li><code>gulp.watch</code></li>
+</ul>
+
+<p><code>gulp.task</code> определяет наши задачи. В качестве аргументов принимает название, зависимости (массив) и функцию (основные действия). Зависимостей может и не быть:</p>
+~~~css
+gulp.task('mytask', function() {
+  //сделать что-то
+});
+
+gulp.task('dependenttask', ['mytask'], function() {
+  //сделать что-то после того, как 'mytask' будет выполнен
+});
+~~~
+
+<p><code>gulp.src</code> указывает на файлы, которые мы хотим использовать. Он использует <code>.pipe</code> доступа к файлам через плагины.</p>
+
+<p><code>gulp.dest</code> указывает на папку, в которую мы хотим сохранить измененные файлы.</p>
+
+<p><code>gulp.src</code> и <code>gulp.dest</code> используется для простой копии файлов:</p>
+~~~css
+gulp.task('copyHtml', function() {
+  // скопировать все html файлы из source/ в public/
+  gulp.src('source/*.html').pipe(gulp.dest('public'));
+});
+~~~
+
+<p>В gulp встроена система реагирования на изменения файлов (<code>gulp.watch</code>). Вы можете использовать эту задачу для запуска других необходимых вам задач при изменении файлов.</p>
+
+~~~css
+gulp.watch('source/**/*.html', ['copyHtml']);
+~~~
+
+<p>Этот пример будет выполнять задачу <code>copyHtml</code> когда любой html файл в папке source изменится.</p>
+
+<p>В следующей статье мы разберемся подробнее о задачах, синхронность и асинхронностью и напишем что-нибудь полезное.</p>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">gulp</li><!--
+	
+	--><li itemprop="keywords">frontend</li><!--
+	
+	--><li itemprop="keywords">сборка</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+		<h4>Похожие записи</h4>
+		<ul>
+			
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/plan_for_frontend_developer/">План развития для фронтенд разработчика</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/what_front_end_developer_need_to_know_in_2015-2016/">Что нужно знать и уметь front end разработчику в 2015/2016</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/javascript_styleguide/">Гайд по стилю кода на JavaScript от AirBnB</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+	   
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/front_end_developer_interview_quersions/">Вопросы для собеседования кандидату на должность Front-end разработчика</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+		</ul>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread"></div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

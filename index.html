@@ -1,18 +1,92 @@
----
-layout: default
-title: Фронтенд разработчик
-s_title: Юрий Матюхин
-redirect_from:
-  - /front-end/how_to_exclude_my_views_from_yandex_metrica/
-  - /privet-mir/
-  - /work/
-  - /folio/
-  - /about/
-description: >
-  Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
----
+<!doctype html>
+<html lang="ru">
 
-<style>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Фронтенд разработчик / Юрий Матюхин</title>
+	<meta name="description" content="Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
+">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Фронтенд разработчик / Юрий Матюхин">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
+">
+
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="//www.google-analytics.com/analytics.js">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<style>
 	.lang {float: right;}
 </style>
 
@@ -25,16 +99,32 @@ description: >
 <br>
 <h2>Последние записи из блога</h3>
 <ul>
-	{% for post in site.posts limit:5 %}
+	
 		<li>
-			<article itemscope itemtype="http://schema.org/Article">
-				<nav itemprop="name"><a itemprop="url" rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
-				<p itemprop="description">
-					{{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}
-				</p>
-			</article>
+			<nav><a rel="bookmark" href="/front-end/html5-link-prefetch/">Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading…</a></nav>
+			<p>Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработа...</p>
 		</p>
-	{% endfor %}
+	
+		<li>
+			<nav><a rel="bookmark" href="/blog/mac-os-confirm-from-keyboard/">Подтверждение диалогов через клавиатуру в Mac OS</a></nav>
+			<p>При появлении диалога, по умолчанию у нас нет возможности переключить фокус на другую кнопку с помощью клавиатуры, только мышко...</p>
+		</p>
+	
+		<li>
+			<nav><a rel="bookmark" href="/front-end/three-plugins-for-single-page/">Три плагина, которые сделают Single Page Application лучше</a></nav>
+			<p>Ваши пользователи разные. У кого-то быстрый компьютер и интернет, а кто-то пользуется приложением из глуши со слабеньким 2G инт...</p>
+		</p>
+	
+		<li>
+			<nav><a rel="bookmark" href="/front-end/favicons/">Продвинутые favicon для сайта</a></nav>
+			<p>Фавиконки, хм… это такая штука, которой всегда нет. За свою карьеру только в 3-4 проектах была иконка. Последний раз она мне по...</p>
+		</p>
+	
+		<li>
+			<nav><a rel="bookmark" href="/tools/atom_packages_2/">Плагины для Atom #2</a></nav>
+			<p>Продолжение стати «Лучшие плагины для текстового редактора Atom». Я расскажу о новых плагинах, которые часто мне помогают. Наде...</p>
+		</p>
+	
 </ul>
 <p><a href="/blog/">Все заметки →</a></p>
 
@@ -44,3 +134,96 @@ description: >
 	<span itemprop="name" class="visuallyhidden">Юрий Матюхин</span>
 	<p>Читаю почту — <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>, скайп — <a itemprop="telephone" href="skype:ymatuhin?chat" class="dotted">ymatuhin</a> и твиттер — <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.</p>
 </address>
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+
+		
+			<li>
+				
+					<a href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<em>Юрий Матюхин</em>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

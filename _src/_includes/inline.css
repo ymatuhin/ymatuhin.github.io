@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+.content > *, h5, h6 { font-size: 1em; }
+html, body { overflow-x: hidden; }
+body { margin: 0; font: .9375em/1.6 Georgia, serif; }
+.container { width: 40em; margin: 6.4em; }
+img, iframe { max-width: 100%; vertical-align: top; }
+a { color: #C00; border-bottom: 1px solid #c99; text-decoration: none; }
+.visuallyhidden {
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}

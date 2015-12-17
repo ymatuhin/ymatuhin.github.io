@@ -1,38 +1,299 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
+    <title>Юрий Матюхин</title>
+    <description></description>
     <author>Юрий Матюхин</author>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Dec 2015 16:17:18 +0300</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 16:17:18 +0300</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        {% if post.excerpt %}
-            <description>{{ post.excerpt | xml_escape }}
-                {% capture read_more %}<br><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">Читать дальше…</a>{% endcapture %}
-                {{ read_more | xml_escape }}
+        <title>Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading…</title>
+        
+            <description>&lt;p&gt;Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработающий preload. HTML5 Link Prefetch уменьшит время загрузки для ресурсов, которые нам понадобятся позже.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/html5-link-prefetch&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
-        {% else %}
-            <description>{{ post.content | xml_escape }}</description>
-        {% endif %}
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        
+        <pubDate>Wed, 02 Dec 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/html5-link-prefetch</link>
+        <guid isPermaLink="true">/front-end/html5-link-prefetch</guid>
+        
+        <category>cdn</category>
+        
+        <category>preconnect</category>
+        
+        <category>prefetch</category>
+        
+        <category>prerender</category>
+        
+        <category>preloading</category>
+        
+        <category>оптимизация</category>
+        
+        
+        <category>front-end</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Подтверждение диалогов через клавиатуру в Mac OS</title>
+        
+            <description>&lt;p&gt;При появлении диалога, по умолчанию у нас нет возможности переключить фокус на другую кнопку с помощью клавиатуры, только мышкой или трекпадом. Но это поведение легко исправить.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/blog/mac-os-confirm-from-keyboard&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Sat, 14 Nov 2015 00:00:00 +0300</pubDate>
+        <link>/blog/mac-os-confirm-from-keyboard</link>
+        <guid isPermaLink="true">/blog/mac-os-confirm-from-keyboard</guid>
+        
+        <category>mac</category>
+        
+        <category>osx</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Три плагина, которые сделают Single Page Application лучше</title>
+        
+            <description>&lt;p&gt;Ваши пользователи разные. У кого-то быстрый компьютер и интернет, а кто-то пользуется приложением из глуши со слабеньким 2G интернетом. Мы, разработчики, редко задумываемся об этом, ведь у нас сайт «летает».&lt;/p&gt;
+
+&lt;p&gt;Следующие три плагина улучшат приложение для пользователей с нестабильным или медленным интернетом и тех, кто пользуется телефоном для просмотра.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/three-plugins-for-single-page&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Fri, 13 Nov 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/three-plugins-for-single-page</link>
+        <guid isPermaLink="true">/front-end/three-plugins-for-single-page</guid>
+        
+        <category>spa</category>
+        
+        <category>angular</category>
+        
+        <category>plugins</category>
+        
+        <category>offline</category>
+        
+        <category>loading</category>
+        
+        <category>mobile</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Продвинутые favicon для сайта</title>
+        
+            <description>&lt;p&gt;Фавиконки, хм… это такая штука, которой всегда нет. За свою карьеру только в 3-4 проектах была иконка. Последний раз она мне потребовалась на этом сайте и я погрузился в поиск информации о том, как правильно подключать иконки и каких размеров они должны быть.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/favicons&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Thu, 12 Nov 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/favicons</link>
+        <guid isPermaLink="true">/front-end/favicons</guid>
+        
+        <category>favicon</category>
+        
+        <category>html</category>
+        
+        <category>safari</category>
+        
+        <category>android</category>
+        
+        <category>ios</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Плагины для Atom #2</title>
+        
+            <description>&lt;p&gt;Продолжение стати «&lt;a href=&quot;/tools/atom_packages_1/&quot;&gt;Лучшие плагины для текстового редактора Atom&lt;/a&gt;». Я расскажу о новых плагинах, которые часто мне помогают. Надеюсь, они помогут и вам.&lt;br /&gt;
+Осторожно, много картинок.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/tools/atom_packages_2&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Mon, 09 Nov 2015 00:00:00 +0300</pubDate>
+        <link>/tools/atom_packages_2</link>
+        <guid isPermaLink="true">/tools/atom_packages_2</guid>
+        
+        <category>Atom</category>
+        
+        <category>плагины</category>
+        
+        <category>текстовый редактор</category>
+        
+        
+        <category>tools</category>
+        
+      </item>
+    
+      <item>
+        <title>Партизанский рефакторинг, или как улучшить проект, чтобы заказчик этого не понял</title>
+        
+            <description>&lt;p&gt;&lt;img src=&quot;/img/refactoring/cat.jpg&quot; alt=&quot;Партизанский рефакторинг, или как улучшить проект, чтобы заказчик этого не понял&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Сегодня мы поговорим о говнокоде. В следующих статьях мы обсудим архитектуру, но знание как построить «хорошую» архитектуру может разбиться о рабочие будни. Дома вы напишите «идеальный проект», но на работе вас поджидает jQuery. Но мы, как профессионалы, будем готовы к этому.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/partisan-refactoring&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Sun, 01 Nov 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/partisan-refactoring</link>
+        <guid isPermaLink="true">/front-end/partisan-refactoring</guid>
+        
+        <category>react</category>
+        
+        <category>smartjs</category>
+        
+        <category>архитектура</category>
+        
+        <category>рефакторинг</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Старт курса по архитектуре JavaScript приложений в SmartJS академии</title>
+        
+            <description>&lt;p&gt;&lt;img src=&quot;/img/smartjs/logo.jpg&quot; alt=&quot;SmartJS — Архитектура JavaScript приложений&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Вчера, 22 октября 2015 года, начался второй курс по архитектуре современных JavaScript приложений в &lt;a href=&quot;http://smartjs.academy&quot;&gt;SmartJS академии&lt;/a&gt;. Его ведет, как и другие курсы, Илья Климов. Я буду вести свой отчет и впечатления об этом курсе, и публиковать выжимку полученной информации в виде статей.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/smartjs_started_a_course_on_architecture&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Fri, 23 Oct 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/smartjs_started_a_course_on_architecture</link>
+        <guid isPermaLink="true">/front-end/smartjs_started_a_course_on_architecture</guid>
+        
+        <category>css</category>
+        
+        <category>smartjs</category>
+        
+        <category>архитектура</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Выравнивание блочного элемента по правому краю в CSS</title>
+        
+            <description>&lt;p&gt;&lt;a href=&quot;/demo/margin-right/&quot;&gt;&lt;img src=&quot;/img/margin/margin_right_alignment.gif&quot; alt=&quot;Выравнивание блочного элемена по правому краю в CSS&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Вчера, на работе, я пытался выровнять блочный элемент по правому краю. Такая задача встречается не часто, но даже когда она встречается, я использую &lt;code class=&quot;highlighter-rouge&quot;&gt;inline-block&lt;/code&gt; или &lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt;, но можно обойтись без них.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/margin-align-right&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Thu, 22 Oct 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/margin-align-right</link>
+        <guid isPermaLink="true">/front-end/margin-align-right</guid>
+        
+        <category>css</category>
+        
+        <category>выравнивание</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Одиннадцатиклассница, или фиксим баги с длинным текстом</title>
+        
+            <description>&lt;p&gt;&lt;img src=&quot;/img/11grade/preview.jpg&quot; alt=&quot;Одиннадцатиклассница, или фиксим баги с длинным текстом&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Эта статья — логическое продолжение статьи «&lt;a href=&quot;http://habrahabr.ru/company/2gis/blog/246831/&quot;&gt;Одиннадцатиклассница, или тестируем баги вёрстки&lt;/a&gt;». В ней говорится о тестировании верстки с использованием длинных слов. Я расскажу о способах борьбы с этими багами и поделюсь букмарклетом для тестирования вашей верстки.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/11grade&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Fri, 16 Oct 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/11grade</link>
+        <guid isPermaLink="true">/front-end/11grade</guid>
+        
+        <category>css</category>
+        
+        <category>одиннадцатиклассница</category>
+        
+        <category>баг</category>
+        
+        <category>фикс</category>
+        
+        <category>переносы</category>
+        
+        <category>многоточие</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
+      <item>
+        <title>Видео и презентации с конференции «FrontTalks» 2015</title>
+        
+            <description>&lt;p&gt;&lt;img src=&quot;/img/fronttalks/fronttalks_2015.jpg&quot; alt=&quot;Видеозапись конференции FrontTalks 2015 года&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Конференция «FrontTalks» в 2015 году проходила в Екатеринбурге. На ней выступало 10 человек. Двое из них — англоговорящие и выступали на английском. Я не побывал на этой конференции, но к моей радости есть &lt;a href=&quot;http://www.youtube.com/watch?v=mXRkFMg4PR0&quot;&gt;запись прямой трансляции&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Я расскажу о выступлениях и добавлю ссылки на презентации и материалы, которые мне удалось найти. Поехали!&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/front-end/front-talks&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Mon, 05 Oct 2015 00:00:00 +0300</pubDate>
+        <link>/front-end/front-talks</link>
+        <guid isPermaLink="true">/front-end/front-talks</guid>
+        
+        <category>видео</category>
+        
+        <category>конференция</category>
+        
+        <category>fronttalks</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
+    
   </channel>
 </rss>
