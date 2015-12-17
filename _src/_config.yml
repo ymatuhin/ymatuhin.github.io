@@ -3,7 +3,7 @@ title: Юрий Матюхин
 email: ymatuhin@yandex.ru
 baseurl: ""
 url: "http://ymatuhin.ru"
-# url: ""
+url: ""
 
 twitter: 		ymatuhin
 github:         ymatuhin
@@ -28,3 +28,22 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+jekyll_timeago:
+  depth: 1
+  today: 'сегодня'
+  yesterday: 'вчера'
+  tomorrow: 'завтра'
+  and: 'и'
+  suffix: 'назад'
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'в'
+  years: 'лет'
+  year: 'год'
+  months: 'месяца'
+  month: 'месяц'
+  weeks: 'недель'
+  week: 'неделя'
+  days: 'дней'
+  day: 'день'

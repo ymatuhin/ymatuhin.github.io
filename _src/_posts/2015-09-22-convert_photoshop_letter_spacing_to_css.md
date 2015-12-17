@@ -5,16 +5,22 @@ categories: front-end
 description: Межбуквенный интервал в Фотошопе регулирует расстояние между символами в тексте. В CSS это свойство letter-spacing.
 excerpt: Межбуквенный интервал в Фотошопе регулирует расстояние между символами в тексте. В CSS это свойство letter-spacing.
 tags: [css, межбуквенный интервал, tools]
+
+image: letter-spacing/table_of_contents.gif
+imageWidth: 490
+imageHeight: 317
+imageCaption: Страница из книги Виллу Тоотса “Современный шрифт”
+imageTitle: Выравнивание пробелов в слове из книги Виллу Тоотса “Современный шрифт”
 ---
 
-Введите значение межбуквенного интервала <img src="/img/letter-spacing/letter-spacing.png" alt="Межбуквенный интервал (letter-spacing) в Фотошопе" style="margin:0"> из Фотошопа в поле ниже.
+Введите значение межбуквенного интервала ![Межбуквенный интервал letter-spacing в Фотошопе](/img/letter-spacing/letter-spacing.png) из Фотошопа в поле ниже.
 
 <!-- more -->
 
 <input id="num" type="number" placeholder="0">
 
-<div class="highlight">
-<pre id="rez">
+<div class="highlighter-rouge">
+<pre class="highlight" id="rez">
 <code class='nc'>.letter-spacing</code> { letter-spacing: <span class="m">0</span> }
 </pre>
 </div>

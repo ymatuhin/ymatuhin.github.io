@@ -4,10 +4,10 @@
     <title>Юрий Матюхин</title>
     <description></description>
     <author>Юрий Матюхин</author>
-    <link>http://ymatuhin.ruhttp://ymatuhin.ru/</link>
-    <atom:link href="http://ymatuhin.ruhttp://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Dec 2015 16:50:21 +0300</pubDate>
-    <lastBuildDate>Thu, 17 Dec 2015 16:50:21 +0300</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 17 Dec 2015 20:59:52 +0300</pubDate>
+    <lastBuildDate>Thu, 17 Dec 2015 20:59:52 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -17,12 +17,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/html5-link-prefetch&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/html5-link-prefetch&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Wed, 02 Dec 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/html5-link-prefetch</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/html5-link-prefetch</guid>
+        <link>/front-end/html5-link-prefetch</link>
+        <guid isPermaLink="true">/front-end/html5-link-prefetch</guid>
         
         <category>cdn</category>
         
@@ -48,12 +48,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/blog/mac-os-confirm-from-keyboard&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/blog/mac-os-confirm-from-keyboard&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Sat, 14 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/blog/mac-os-confirm-from-keyboard</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/blog/mac-os-confirm-from-keyboard</guid>
+        <link>/blog/mac-os-confirm-from-keyboard</link>
+        <guid isPermaLink="true">/blog/mac-os-confirm-from-keyboard</guid>
         
         <category>mac</category>
         
@@ -73,12 +73,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/three-plugins-for-single-page&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/three-plugins-for-single-page&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Fri, 13 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/three-plugins-for-single-page</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/three-plugins-for-single-page</guid>
+        <link>/front-end/three-plugins-for-single-page</link>
+        <guid isPermaLink="true">/front-end/three-plugins-for-single-page</guid>
         
         <category>spa</category>
         
@@ -104,12 +104,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/favicons&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/favicons&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Thu, 12 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/favicons</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/favicons</guid>
+        <link>/front-end/favicons</link>
+        <guid isPermaLink="true">/front-end/favicons</guid>
         
         <category>favicon</category>
         
@@ -134,12 +134,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/tools/atom_packages_2&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/tools/atom_packages_2&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Mon, 09 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/tools/atom_packages_2</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/tools/atom_packages_2</guid>
+        <link>/tools/atom_packages_2</link>
+        <guid isPermaLink="true">/tools/atom_packages_2</guid>
         
         <category>Atom</category>
         
@@ -155,18 +155,16 @@
       <item>
         <title>Партизанский рефакторинг, или как улучшить проект, чтобы заказчик этого не понял</title>
         
-            <description>&lt;p&gt;&lt;img src=&quot;/img/refactoring/cat.jpg&quot; alt=&quot;Партизанский рефакторинг, или как улучшить проект, чтобы заказчик этого не понял&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Сегодня мы поговорим о говнокоде. В следующих статьях мы обсудим архитектуру, но знание как построить «хорошую» архитектуру может разбиться о рабочие будни. Дома вы напишите «идеальный проект», но на работе вас поджидает jQuery. Но мы, как профессионалы, будем готовы к этому.&lt;/p&gt;
+            <description>&lt;p&gt;Сегодня мы поговорим о говнокоде. В следующих статьях мы обсудим архитектуру, но знание как построить «хорошую» архитектуру может разбиться о рабочие будни. Дома вы напишите «идеальный проект», но на работе вас поджидает jQuery. Но мы, как профессионалы, будем готовы к этому.&lt;/p&gt;
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/partisan-refactoring&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/partisan-refactoring&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Sun, 01 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/partisan-refactoring</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/partisan-refactoring</guid>
+        <link>/front-end/partisan-refactoring</link>
+        <guid isPermaLink="true">/front-end/partisan-refactoring</guid>
         
         <category>react</category>
         
@@ -184,18 +182,16 @@
       <item>
         <title>Старт курса по архитектуре JavaScript приложений в SmartJS академии</title>
         
-            <description>&lt;p&gt;&lt;img src=&quot;/img/smartjs/logo.jpg&quot; alt=&quot;SmartJS — Архитектура JavaScript приложений&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Вчера, 22 октября 2015 года, начался второй курс по архитектуре современных JavaScript приложений в &lt;a href=&quot;http://smartjs.academy&quot;&gt;SmartJS академии&lt;/a&gt;. Его ведет, как и другие курсы, Илья Климов. Я буду вести свой отчет и впечатления об этом курсе, и публиковать выжимку полученной информации в виде статей.&lt;/p&gt;
+            <description>&lt;p&gt;Вчера, 22 октября 2015 года, начался второй курс по архитектуре современных JavaScript приложений в &lt;a href=&quot;http://smartjs.academy&quot;&gt;SmartJS академии&lt;/a&gt;. Его ведет, как и другие курсы, Илья Климов. Я буду вести свой отчет и впечатления об этом курсе, и публиковать выжимку полученной информации в виде статей.&lt;/p&gt;
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/smartjs_started_a_course_on_architecture&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Fri, 23 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture</guid>
+        <link>/front-end/smartjs_started_a_course_on_architecture</link>
+        <guid isPermaLink="true">/front-end/smartjs_started_a_course_on_architecture</guid>
         
         <category>css</category>
         
@@ -211,18 +207,16 @@
       <item>
         <title>Выравнивание блочного элемента по правому краю в CSS</title>
         
-            <description>&lt;p&gt;&lt;a href=&quot;/demo/margin-right/&quot;&gt;&lt;img src=&quot;/img/margin/margin_right_alignment.gif&quot; alt=&quot;Выравнивание блочного элемена по правому краю в CSS&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Вчера, на работе, я пытался выровнять блочный элемент по правому краю. Такая задача встречается не часто, но даже когда она встречается, я использую &lt;code class=&quot;highlighter-rouge&quot;&gt;inline-block&lt;/code&gt; или &lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt;, но можно обойтись без них.&lt;/p&gt;
+            <description>&lt;p&gt;Вчера, на работе, я пытался выровнять блочный элемент по правому краю. Такая задача встречается не часто, но даже когда она встречается, я использую &lt;code class=&quot;highlighter-rouge&quot;&gt;inline-block&lt;/code&gt; или &lt;code class=&quot;highlighter-rouge&quot;&gt;float&lt;/code&gt;, но можно обойтись без них.&lt;/p&gt;
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/margin-align-right&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/margin-align-right&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Thu, 22 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/margin-align-right</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/margin-align-right</guid>
+        <link>/front-end/margin-align-right</link>
+        <guid isPermaLink="true">/front-end/margin-align-right</guid>
         
         <category>css</category>
         
@@ -236,18 +230,16 @@
       <item>
         <title>Одиннадцатиклассница, или фиксим баги с длинным текстом</title>
         
-            <description>&lt;p&gt;&lt;img src=&quot;/img/11grade/preview.jpg&quot; alt=&quot;Одиннадцатиклассница, или фиксим баги с длинным текстом&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Эта статья — логическое продолжение статьи «&lt;a href=&quot;http://habrahabr.ru/company/2gis/blog/246831/&quot;&gt;Одиннадцатиклассница, или тестируем баги вёрстки&lt;/a&gt;». В ней говорится о тестировании верстки с использованием длинных слов. Я расскажу о способах борьбы с этими багами и поделюсь букмарклетом для тестирования вашей верстки.&lt;/p&gt;
+            <description>&lt;p&gt;Эта статья — логическое продолжение статьи «&lt;a href=&quot;http://habrahabr.ru/company/2gis/blog/246831/&quot;&gt;Одиннадцатиклассница, или тестируем баги вёрстки&lt;/a&gt;». В ней говорится о тестировании верстки с использованием длинных слов. Я расскажу о способах борьбы с этими багами и поделюсь букмарклетом для тестирования вашей верстки.&lt;/p&gt;
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/11grade&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/11grade&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Fri, 16 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/11grade</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/11grade</guid>
+        <link>/front-end/11grade</link>
+        <guid isPermaLink="true">/front-end/11grade</guid>
         
         <category>css</category>
         
@@ -269,20 +261,18 @@
       <item>
         <title>Видео и презентации с конференции «FrontTalks» 2015</title>
         
-            <description>&lt;p&gt;&lt;img src=&quot;/img/fronttalks/fronttalks_2015.jpg&quot; alt=&quot;Видеозапись конференции FrontTalks 2015 года&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Конференция «FrontTalks» в 2015 году проходила в Екатеринбурге. На ней выступало 10 человек. Двое из них — англоговорящие и выступали на английском. Я не побывал на этой конференции, но к моей радости есть &lt;a href=&quot;http://www.youtube.com/watch?v=mXRkFMg4PR0&quot;&gt;запись прямой трансляции&lt;/a&gt;.&lt;/p&gt;
+            <description>&lt;p&gt;Конференция «FrontTalks» в 2015 году проходила в Екатеринбурге. На ней выступало 10 человек. Двое из них — англоговорящие и выступали на английском. Я не побывал на этой конференции, но к моей радости есть &lt;a href=&quot;http://www.youtube.com/watch?v=mXRkFMg4PR0&quot;&gt;запись прямой трансляции&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Я расскажу о выступлениях и добавлю ссылки на презентации и материалы, которые мне удалось найти. Поехали!&lt;/p&gt;
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ruhttp://ymatuhin.ru/front-end/front-talks&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/front-talks&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Mon, 05 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ruhttp://ymatuhin.ru/front-end/front-talks</link>
-        <guid isPermaLink="true">http://ymatuhin.ruhttp://ymatuhin.ru/front-end/front-talks</guid>
+        <link>/front-end/front-talks</link>
+        <guid isPermaLink="true">/front-end/front-talks</guid>
         
         <category>видео</category>
         
