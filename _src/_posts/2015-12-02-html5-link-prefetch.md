@@ -8,7 +8,7 @@ tags: [cdn, preconnect, prefetch, prerender, preloading, оптимизация]
 image: link_prefetch/html5_link_prefetch.png
 imageWidth: 796
 imageHeight: 393
-imageCaption: HTML5 Link Prefetch
+imageCaption: Стадии загрузки ресурса (HTML5 Link Prefetch)
 imageTitle: Стадии загрузки ресурса
 ---
 
@@ -18,9 +18,9 @@ imageTitle: Стадии загрузки ресурса
 
 ## Dns-prefetch
 
-Перед тем, как начать загружать сожержимое сайта `http://example.com`, браузеру нужно установить его IP адрес. И только после этого он сможет загрузить от туда содержимое. Конечно, на это потребуется какое-то время.
+Перед тем, как начать загружать сожержимое сайта `http://example.com`, браузеру нужно установить его IP адрес. И только после этого он сможет загрузить от туда содержимое. Конечно, на это потребуется какое-то время.
 
-Если вам нужно что-то загрузить с другого домена, укажите `<link rel='dns-prefetch' href='//example.com'>`. Браузер преобразует имя домена в IP адрес в фоне. Теперь, когда очередь дойдет до ресурсов, они загрузятся минуя стадию prepresolve. [Поддержка браузерами](http://caniuse.com/#search=dns-prefetch){:rel='nofollow'} и пример:
+Если вам нужно что-то загрузить с другого домена, укажите `<link rel='dns-prefetch' href='//example.com'>`. Браузер преобразует имя домена в IP адрес в фоне. Теперь, когда очередь дойдет до ресурсов, они загрузятся минуя стадию prepresolve. [Поддержка браузерами](http://caniuse.com/#search=dns-prefetch){:rel='nofollow'} и пример:
 
 ~~~html
 <meta http-equiv="x-dns-prefetch-control" content="on">

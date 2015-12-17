@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/front-end/html5-link-prefetch</loc>
-    <lastmod>2015-12-17T16:17:29+03:00</lastmod>
+    <lastmod>2015-12-17T16:36:35+03:00</lastmod>
   </url>
   <url>
     <loc>/blog/mac-os-confirm-from-keyboard</loc>
@@ -311,9 +311,5 @@
   <url>
     <loc>/projects/</loc>
     <lastmod>2015-12-17T16:17:29+03:00</lastmod>
-  </url>
-  <url>
-    <loc>/yandex_6203b1fbb0259da7.html</loc>
-    <lastmod>2015-07-31T11:05:44+03:00</lastmod>
   </url>
 </urlset>
