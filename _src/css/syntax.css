@@ -5,8 +5,8 @@
 	background: #fafafa;
  }
 
-.highlighter-rouge:before,
-.highlighter-rouge:after {
+div.highlighter-rouge:before,
+div.highlighter-rouge:after {
     z-index: -1;
     background-color: #fafafa;
     border-top: 1px solid #eee;

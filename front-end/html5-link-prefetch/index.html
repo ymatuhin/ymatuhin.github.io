@@ -123,7 +123,7 @@
 	--></time><!--
 
 	-->, обновлено
-		<time itemprop="dateModified" datetime="2015-12-17 11:51:53 +0300">
+		<time itemprop="dateModified" datetime="2015-12-17 16:17:29 +0300">
 			
 			<em>17 декабря, 2015</em>
 		</time>
@@ -168,6 +168,8 @@
 		
 
 		
+			<figcaption itemprop="caption">«Стадии загрузки ресурса»</figcaption>
+		
 	</figure>
 
 
@@ -178,7 +180,9 @@
 
 <h2 id="dns-prefetch">Dns-prefetch</h2>
 
-<p>Если у вас на сайте содержимое загружается через DNS, то укажите браузеру в атрибуте адрес DNS. И браузер начнет предварительную загрузку (prepresolve) до момента загрузки ресурсов. <a href="http://caniuse.com/#search=dns-prefetch" rel="nofollow">Поддержка браузерами</a> и пример:</p>
+<p>Перед тем, как начать загружать сожержимое сайта <code class="highlighter-rouge">http://example.com</code>, браузеру нужно установить его IP адрес. И только после этого он сможет загрузить от туда содержимое. Конечно, на это потребуется какое-то время.</p>
+
+<p>Если вам нужно что-то загрузить с другого домена, укажите <code class="highlighter-rouge">&lt;link rel='dns-prefetch' href='//example.com'&gt;</code>. Браузер преобразует имя домена в IP адрес в фоне. Теперь, когда очередь дойдет до ресурсов, они загрузятся минуя стадию prepresolve. <a href="http://caniuse.com/#search=dns-prefetch" rel="nofollow">Поддержка браузерами</a> и пример:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-dns-prefetch-control"</span> <span class="na">content=</span><span class="s">"on"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"dns-prefetch"</span> <span class="na">href=</span><span class="s">"//ajax.googleapis.com"</span><span class="nt">&gt;</span>

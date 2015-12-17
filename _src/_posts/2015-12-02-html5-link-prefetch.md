@@ -9,6 +9,7 @@ image: link_prefetch/html5_link_prefetch.png
 imageWidth: 796
 imageHeight: 393
 imageCaption: HTML5 Link Prefetch
+imageTitle: Стадии загрузки ресурса
 ---
 
 Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработающий preload. HTML5 Link Prefetch уменьшит время загрузки для ресурсов, которые нам понадобятся позже.
@@ -17,7 +18,9 @@ imageCaption: HTML5 Link Prefetch
 
 ## Dns-prefetch
 
-Если у вас на сайте содержимое загружается через DNS, то укажите браузеру в атрибуте адрес DNS. И браузер начнет предварительную загрузку (prepresolve) до момента загрузки ресурсов. [Поддержка браузерами](http://caniuse.com/#search=dns-prefetch){:rel='nofollow'} и пример:
+Перед тем, как начать загружать сожержимое сайта `http://example.com`, браузеру нужно установить его IP адрес. И только после этого он сможет загрузить от туда содержимое. Конечно, на это потребуется какое-то время.
+
+Если вам нужно что-то загрузить с другого домена, укажите `<link rel='dns-prefetch' href='//example.com'>`. Браузер преобразует имя домена в IP адрес в фоне. Теперь, когда очередь дойдет до ресурсов, они загрузятся минуя стадию prepresolve. [Поддержка браузерами](http://caniuse.com/#search=dns-prefetch){:rel='nofollow'} и пример:
 
 ~~~html
 <meta http-equiv="x-dns-prefetch-control" content="on">
