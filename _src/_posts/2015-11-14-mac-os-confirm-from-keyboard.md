@@ -6,8 +6,8 @@ description: Как включить опцию изменения фокуса 
 tags: [mac, osx]
 
 image: mac/dialog.png
-imageWidth:
-imageHeight:
+imageWidth: 420
+imageHeight: 159
 imageCaption: Диалог смены расширения у файла в Mac OS
 ---
 
