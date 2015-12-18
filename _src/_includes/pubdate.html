@@ -1,8 +1,15 @@
 <p>
-	Опубликовано:
+
+	{% capture last_mod %}{{page.last_modified_at | date: '%Y-%m-%d'}}{% endcapture %}
+	{% capture pub_date %}{{page.date | date: '%Y-%m-%d'}}{% endcapture %}
+
+	{% if last_mod != pub_date %}
+		Опубликовано:
+	{% endif %}
+
 	<time itemprop="datePublished" datetime="{{ page.date }}">
 		{% assign m = page.date | date: "%-m" %}
-		<em>{{ page.date | date: "%-d"  }} {% include month.html %}, {{ page.date | date: "%-Y"}}</em></time>{% if page.last_modified_at == page.date %}<meta itemprop="dateModified" content="{{ page.last_modified_at }}">{% else %}, обновлено
+		<em>{{ page.date | date: "%-d"  }} {% include month.html %}, {{ page.date | date: "%-Y"}}</em></time>{% if last_mod == pub_date %}<meta itemprop="dateModified" content="{{ page.last_modified_at }}">{% else %}, обновлено
 		<time itemprop="dateModified" datetime="{{ page.last_modified_at }}">
 			{% assign m = page.last_modified_at | date: "%-m" %}
 			<em>{{ page.last_modified_at | timeago }}</em>.
