@@ -15,6 +15,7 @@ published: false
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/CciEEVHZRgw" frameborder="0" allowfullscreen></iframe>
 
+google+ — https://plus.google.com/+IlyaGrigorik/posts/a3Yn3jB4wjA
 demo — http://output.jsbin.com/nigahi/latest/quiet
 spec — https://tabatkins.github.io/specs/css-font-display/
 

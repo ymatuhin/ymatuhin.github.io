@@ -111,29 +111,64 @@
 </ol>
 
 
-	<p>
-
-	
 	
 
-	
-		Опубликовано:
-	
 
-	<time itemprop="datePublished" datetime="2015-02-05 00:00:00 +0300">
+<p>
+
+	<span class="js-updated-show" style="display: none;">Опубликовано: </span>
+	<meta itemprop="dateModified" content="2015-12-17">
+	<time itemprop="datePublished" datetime="2015-02-05">
 		
-		<em>5 февраля, 2015</em></time>, обновлено
-		<time itemprop="dateModified" datetime="2015-12-17 16:17:29 +0300">
-			
-			<em>вчера</em>.
-			<!-- <em>17 декабря, 2015</em> -->
-		</time>
-	
+		<em>5 февраля, 2015</em
+		><em class="js-updated" style="display: none;">, обновлено</em>
+	</time>
 
 	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
 		<meta itemprop="name" content="Юрий Матюхин"></meta>
 	</a>
 </p>
+
+
+<script>
+	var mod = document.querySelector('meta[itemprop="dateModified"]').getAttribute('content');
+	var today = new Date();
+	var pubText = document.querySelector('.js-updated-show');
+	var updText = document.querySelector('.js-updated');
+
+	function declOfNum(number, titles) {
+		cases = [2, 0, 1, 1, 1, 2];
+		return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+	}
+
+	if (mod != today) {
+		var _txt = updText.innerText;
+		var _mod = new Date(mod);
+		var days = Math.round((today - _mod)/(1000*60*60*24));
+		var shownText = '';
+
+		console.log('_mod', _mod)
+		console.log('days', days)
+
+		if (days == 0) {
+			shownText = 'сегодня';
+		} else if (days == 1) {
+			shownText = 'вчера';
+		} else if (days > 0 && days < 30) {
+			shownText = days + ' ' + declOfNum(days, ['день', 'дня', 'дней']) + ' назад';
+		} else if (days > 30 && days < 365) {
+			shownText = Math.floor(days/30) + ' ' + declOfNum(Math.floor(days/30), ['месяц', 'месяца', 'месяцев']) + ' назад';
+		} else if (days > 365) {
+			shownText = Math.floor(days/365) + ' ' + declOfNum(Math.floor(days/365), ['год', 'года', 'лет']) + ' назад';
+		}
+
+		if (days >= 0) {
+			pubText.style.display = '';
+			updText.style.display = '';
+			updText.innerText = _txt + ' ' + shownText + '.';
+		}
+	}
+</script>
 
 	<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
