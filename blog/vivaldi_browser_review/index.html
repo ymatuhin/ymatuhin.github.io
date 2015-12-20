@@ -34,21 +34,26 @@
 
 
 	<!-- Feed and canonical -->
-<link rel="canonical" href="http://ymatuhin.ruhttp://ymatuhin.ru/blog/vivaldi_browser_review">
-<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="http://ymatuhin.ruhttp://ymatuhin.ru/feed.xml">
+<link rel="canonical" href="http://ymatuhin.ru/blog/vivaldi_browser_review">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="http://ymatuhin.ru/feed.xml">
 
 	<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@ymatuhin">
 <meta name="twitter:creator" content="@ymatuhin">
 
 
+	<meta name="twitter:image" content="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view.png">
+	<link rel="image_src" href="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view.png" />
+
 
 	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Обзор нового интернет браузера Vivaldi / Блог фронтенд разработчика">
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://ymatuhin.ruhttp://ymatuhin.ru/blog/vivaldi_browser_review">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://ymatuhin.ru/blog/vivaldi_browser_review">
 <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Старая Опера вернулась в виде нового интернет браузера Vivaldi. Обзор нового браузера и отзывы к нему.
 ">
 
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view.png">
 
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
@@ -73,7 +78,7 @@
 
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//www.google-analytics.com/">
-<link rel="prefetch" href="/css/syntax.css">
+<link rel="prefetch" href="http://ymatuhin.ru/css/syntax.css">
 
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
@@ -117,7 +122,7 @@
 <p>
 
 	<span class="js-updated-show" style="display: none;">Опубликовано: </span>
-	<meta itemprop="dateModified" content="2015-12-17">
+	<meta itemprop="dateModified" content="2015-12-20">
 	<time itemprop="datePublished" datetime="2015-01-28">
 		
 		<em>28 января, 2015</em
@@ -180,144 +185,222 @@
 </div>
 
 	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		
+			<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view.png">
+		
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view.png"
+				 alt="Веб браузер Vivaldi" >
+		</a>
+
+		<meta itemprop="url" content="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view.png">
+		
+			<meta itemprop="width" content="1392">
+		
+
+		
+			<meta itemprop="height" content="885">
+		
+
+		
+			<figcaption itemprop="caption">«Веб браузер Vivaldi»</figcaption>
+		
+	</figure>
+
 
 
 	<p>Мои поздравления всем, но в особенности поклонникам браузера Opera, которые возможно все еще сидят на ней, или уже перешли на другой новомодный браузер, но все еще грезят воспоминаниями, у есть меня для вас великолепная новость — старая Opera возвращается! (<em>осторожно много графики</em>)</p>
 
-<p>Да да, именно так, крутые ребята (25 человек), в числе которых Йон фон Течнер (соавтор старой Оперы), выпускают новый интернет браузер на основе Chromium — <strong>Vivaldi</strong>. Подробную информацию о нем можно почитать на <a href="http://vivaldi.com" title="Vivaldi" rel="nofollow">официальном сайте</a>(en) или в обзорах на хабре <a href="http://habrahabr.ru/post/248941/"  rel="nofollow">тут</a> и <a href="http://habrahabr.ru/post/248961/"  rel="nofollow">тут</a>. А я опишу новые (или старые) фишки, которые есть в этом браузере.</p>
+<p>Да да, именно так, крутые ребята (25 человек), в числе которых Йон фон Течнер (соавтор старой Оперы), выпускают новый интернет браузер на основе Chromium — <strong>Vivaldi</strong>. Подробную информацию о нем можно почитать на <a href="http://vivaldi.com" rel="nofollow">официальном сайте</a>(en) или в обзорах на хабре <a href="http://habrahabr.ru/post/248941/" rel="nofollow">тут</a> и <a href="http://habrahabr.ru/post/248961/" rel="nofollow">тут</a>. А я опишу новые (или старые) фишки, которые есть в этом браузере.</p>
 
-<p>Вот так выглядит браузер сразу после установки (mac os)</p>
+<p>Вот так выглядит браузер при потере фокуса (mac os):</p>
 
-<figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" alt="Новый интернет браузер Vivaldi (вид по умолчанию)" src="/img/vivaldi/vivaldi_default_view.png">
-	<figcaption itemprop="description">Vivaldi – вид по умолчанию</figcaption>
-</figure>
-
-<p>А так если браузер не в фокусе:</p>
-
-<figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" alt="Новый интернет браузер Vivaldi (вид по умолчанию без фокуса)" src="/img/vivaldi/vivaldi_default_view_inactive.png">
-	<figcaption itemprop="description">Vivaldi – вид по умолчанию без фокуса</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view_inactive.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_default_view_inactive.png" alt="Новый интернет браузер Vivaldi (вид по умолчанию без фокуса)" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – вид по умолчанию без фокуса»</figcaption>
 </figure>
 
 <p>Мне кажется это очень удачным решением, чтобы браузер не отвлекал лишними цветами, когда человек находится в другом приложении. Надеюсь эта фишка перейдет и в другие приложения.</p>
 
-<h2>Быстрые команды</h2>
+<h2 id="section">Быстрые команды</h2>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" alt="Быстрые команды в браузере Vivaldi" src="/img/vivaldi/vivaldi_fast_commands.png">
-	<figcaption itemprop="description">Vivaldi – быстрые команды</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_fast_commands.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_fast_commands.png" alt="Быстрые команды в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – быстрые команды»</figcaption>
 </figure>
 
 <p>Тенденция к такого рода вещам уже привычна для текстовых редакторов, но вот для браузеров это в новинку. Диалоговое окно открывается по нажатии на F2 и предлагает вам быстрый способ работать с браузером. Можно искать среди открытых вкладок, перемещаться по ним, переходить к настройкам браузера и многое другое.</p>
 
-<h2>Большие вкладки (табы) с превью, группировкой и возможностью поменять расположение.</h2>
+<h2 id="section-1">Большие вкладки (табы) с превью, группировкой и возможностью поменять расположение.</h2>
 
-<div class="gallery clearfix">
-    <figure itemscope itemtype="http://schema.org/ImageObject">
-    	<img itemprop="contentUrl" alt="Раскрытые табы сверху в браузере Vivaldi" src="/img/vivaldi/vivaldi_tabs_top.png">
-    	<figcaption itemprop="description">Vivaldi – раскрытые табы сверху</figcaption>
-    </figure>
-    <figure itemscope itemtype="http://schema.org/ImageObject">
-    	<img itemprop="contentUrl" alt="Раскрытые табы слева в браузере Vivaldi" src="/img/vivaldi/vivaldi_tabs_left.png">
-    	<figcaption itemprop="description">Vivaldi – раскрытые табы слева</figcaption>
-    </figure>
-</div>
-
-<figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="contentUrl" alt="Окно настроек в браузере Vivaldi" src="/img/vivaldi/vivaldi_settings.png">
-    <figcaption itemprop="description">Vivaldi – Окно настроек</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_tabs_top.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_tabs_top.png" alt="Раскрытые табы сверху в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – раскрытые табы сверху»</figcaption>
 </figure>
 
-<h2>Цвет панели табов меняется в зависимости от сайта</h2>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_tabs_left.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_tabs_left.png" alt="Раскрытые табы слева в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – раскрытые табы слева»</figcaption>
+</figure>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="contentUrl" alt="Цвета панели табов в браузере Vivaldi" src="/img/vivaldi/vivaldi_tabs_colorful.png">
-    <figcaption itemprop="description">Vivaldi – изменение цвета панели табов в зависимости от открытого сайта</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_settings.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_settings.png" alt="Окно настроек в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – Окно настроек»</figcaption>
+</figure>
+
+<h2 id="section-2">Цвет панели табов меняется в зависимости от сайта</h2>
+
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_tabs_colorful.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_tabs_colorful.png" alt="Цвета панели табов в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – изменение цвета панели табов в зависимости от открытого сайта»</figcaption>
 </figure>
 
 <p>Берется основной цвет у favicon (можно отключить в настройках).</p>
 
-<h2>Speed Dial + закладки + история на одном окне, в очень удобном виде</h2>
+<h2 id="speed-dial---------">Speed Dial + закладки + история на одном окне, в очень удобном виде</h2>
 
-<figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="contentUrl" alt="Speed Dial в браузере Vivaldi" src="/img/vivaldi/vivaldi_speed_dial.png">
-    <figcaption itemprop="description">Vivaldi – Speed Dial</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_speed_dial.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_speed_dial.png" alt="Speed Dial в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – Speed Dial»</figcaption>
 </figure>
 
-<p>Так-же можно перенести закладки в Speed Dial, правда у меня почему-то не прогрузились картинки сайтов с закладок, но я думаю это пофиксят или я что-то сделал не так.</p>
-<p>Импорт из сафари работает на ура, плюс ко всему он импортирует страницы которые отложены для чтения!</p>
+<p>Так-же можно перенести закладки в Speed Dial, правда у меня почему-то не прогрузились картинки сайтов с закладок, но я думаю это пофиксят или я что-то сделал не так.<br />
+Импорт из сафари работает на ура, плюс ко всему он импортирует страницы которые отложены для чтения!</p>
 
-<h2>Боковая панель</h2>
+<h2 id="section-3">Боковая панель</h2>
 
-<figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="contentUrl" alt="Боковая панель в браузере Vivaldi" src="/img/vivaldi/vivaldi_speed_dial.png">
-    <figcaption itemprop="description">Vivaldi – боковая панель</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_left_panel.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_left_panel.png" alt="Боковая панель в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – боковая панель»</figcaption>
 </figure>
 
 <p>Боковая панель выполнена в традициях старой оперы. В ней располагаются закладки, почта (еще не работает, но скоро будет), менеджер загрузок, и заметки!</p>
 
-<h2>Менеджер загрузок и старый диалог</h2>
+<h2 id="section-4">Менеджер загрузок и старый диалог</h2>
+
 <p>Менеджер загрузок такой же как и в старой Опере. Даже диалог спрашивает, что делать со скачиваемым файлом.</p>
 
-<div class="gallery clearfix">
-    <figure itemscope itemtype="http://schema.org/ImageObject">
-        <img itemprop="contentUrl" alt="Боковая панель в браузере Vivaldi" src="/img/vivaldi/vivaldi_download_1.png">
-        <figcaption itemprop="description">Vivaldi – окно загрузки #1</figcaption>
-    </figure>
-    <figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-        <img itemprop="contentUrl" alt="Боковая панель в браузере Vivaldi" src="/img/vivaldi/vivaldi_download_2.png">
-        <figcaption itemprop="description">Vivaldi – окно загрузки #2</figcaption>
-    </figure>
-    <figure itemscope itemtype="http://schema.org/ImageObject">
-        <img itemprop="contentUrl" alt="Боковая панель в браузере Vivaldi" src="/img/vivaldi/vivaldi_download_3.png">
-        <figcaption itemprop="description">Vivaldi – окно загрузки #3</figcaption>
-    </figure>
-</div>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_download_1.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_download_1.png" alt="Vivaldi – окно загрузки #1" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – окно загрузки #1»</figcaption>
+</figure>
 
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_download_2.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_download_2.png" alt="Vivaldi – окно загрузки #2" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – окно загрузки #2»</figcaption>
+</figure>
 
-<h2>Заметки прямо в браузере</h2>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_download_3.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_download_3.png" alt="Vivaldi – окно загрузки #3" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – окно загрузки #3»</figcaption>
+</figure>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="contentUrl" alt="Заметки в браузере Vivaldi" src="/img/vivaldi/vivaldi_notes.png">
-    <figcaption itemprop="description">Vivaldi – заметки в браузере</figcaption>
+<h2 id="section-5">Заметки прямо в браузере</h2>
+
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_notes.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_notes.png" alt="Заметки в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – заметки в браузере»</figcaption>
 </figure>
 
 <p>Так же есть возможность добавить ссылку к заметке и сгенерировать превью.</p>
 
-<h2> Page actions, или действия со страницей</h2>
+<h2 id="page-actions---">Page actions, или действия со страницей</h2>
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="contentUrl" alt="Page actions в браузере Vivaldi" src="/img/vivaldi/vivaldi_page_actions.png">
-    <figcaption itemprop="description">Vivaldi – page actions</figcaption>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_page_actions.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_page_actions.png" alt="Page actions в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – page actions»</figcaption>
 </figure>
 
 <p>Одним кликом мышки можно поиграться фильтрами для сайта. Добавилась важная для разработчиков штука как подсветка всех блоков или подсветка по ховеру. Один минус, страница перезагружается :-)</p>
 
-<div class="gallery clearfix">
-    <figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-        <img itemprop="contentUrl" alt="Page actions hover в браузере Vivaldi" src="/img/vivaldi/vivaldi_page_actions_hover.png">
-        <figcaption itemprop="description">Vivaldi – page actions hover</figcaption>
-    </figure>
-    <figure class="noborder" itemscope itemtype="http://schema.org/ImageObject">
-        <img itemprop="contentUrl" alt="Page actions outline в браузере Vivaldi" src="/img/vivaldi/vivaldi_page_actions_outline.png">
-        <figcaption itemprop="description">Vivaldi – page actions outline</figcaption>
-    </figure>
-</div>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_page_actions_hover.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_page_actions_hover.png" alt="Page actions hover в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – page actions hover»</figcaption>
+</figure>
 
-<h2>Над чем сейчас работают в Vivaldi</h2>
+<figure itemscope="" itemtype="http://schema.org/ImageObject">
+	
+		<a rel="nofollow" href="http://ymatuhin.ru/img/vivaldi/vivaldi_page_actions_outline.png">
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/vivaldi/vivaldi_page_actions_outline.png" alt="Page actions hover в браузере Vivaldi" />
+		</a>
+	
+	<figcaption itemprop="caption">«Vivaldi – page actions hover»</figcaption>
+</figure>
+
+<h2 id="vivaldi">Над чем сейчас работают в Vivaldi</h2>
+
 <ul>
-	<li>почта как в старой опере;</li>
-	<li>синхронизация;</li>
-	<li>навигация на клавиатуре</li>
-	<li>быстродействие</li>
-	<li>расширения Они так-же принимают предложения по функциям и пожеланиям, которые можно оставить у них на <a href="https://vivaldi.com/#Feedback" title="Vivaldi оставить отзыв">сайте</a>.</li>
+  <li>почта как в старой опере;</li>
+  <li>синхронизация;</li>
+  <li>навигация на клавиатуре</li>
+  <li>быстродействие</li>
+  <li>расширения</li>
 </ul>
 
-<p>p.s. текущая версия у меня сильно нестабильна, поскольку браузер в стадии «технического показа», но думаю в скором времени все наладится.</p>
-<p>Как вы думаете составит ли новый браузер Vivaldi конкуренцию хотя бы тому-же Яндекс Браузеру, не говоря уже о хроме? Жду ваши ответы в комментариях :-)</p>
+<p>Они так-же принимают предложения по функциям и пожеланиям, которые можно оставить у них на <a href="https://vivaldi.com/#Feedback" rel="nofollow">сайте</a>.</p>
 
-<footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
+<p>p.s. текущая версия у меня сильно нестабильна, поскольку браузер в стадии «технического показа», но думаю в скором времени все наладится.<br />
+Как вы думаете составит ли новый браузер Vivaldi конкуренцию хотя бы тому-же Яндекс Браузеру, не говоря уже о хроме? Жду ваши ответы в комментариях :-)</p>
+
+<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
 	<h3>vivaldi</h3>
 	<h3>браузер</h3>
 	<h4>обзор браузера вивальди</h4>
@@ -325,6 +408,7 @@
 	<h5>vivaldi браузер opera</h5>
 	<h5>отзывы о новом браузере vivaldi</h5>
 </footer>
+ -->
 
 
 	<ul class="tags visuallyhidden">
@@ -355,6 +439,48 @@
 		<h4>Похожие записи</h4>
 		<ul>
 			
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
 
 
 

@@ -1,0 +1,1339 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Управляем поведением font-face в CSS / Блог фронтенд разработчика</title>
+	<meta name="description" content="Поведением текста, отображаемого во время загрузки font-face, можно управлять с помощью свойства font-display. Как работает и какие значения поддерживет свойсто font-display читайте в статье.">
+
+	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+</style>
+
+	<link rel="alternate" href="http://ymatuhin.ru/" hreflang="x-default">
+
+	<link rel="alternate" href="http://ymatuhin.ru/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="http://ymatuhin.ru/front-end/loading-font-face-css">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="http://ymatuhin.ru/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="http://ymatuhin.ru/img/font-display/font-display.png">
+	<link rel="image_src" href="http://ymatuhin.ru/img/font-display/font-display.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Управляем поведением font-face в CSS / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://ymatuhin.ru/front-end/loading-font-face-css">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Поведением текста, отображаемого во время загрузки font-face, можно управлять с помощью свойства font-display. Как работает и какие значения поддерживет свойсто font-display читайте в статье.">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://ymatuhin.ru/img/font-display/font-display.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="http://ymatuhin.ru/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<div class="container">
+		<link rel="stylesheet" href="/css/style.css">
+
+		<div role="main" class="content">
+			<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/loading-font-face-css">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Управляем поведением font-face в CSS</h1>
+	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/">
+			<span itemprop="name">Главная</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/blog/">
+			<span itemprop="name">Блог</span>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" href="/front-end/loading-font-face-css">
+			<span itemprop="name">Управляем поведением font-face в CSS</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+
+	
+
+
+<p>
+
+	<span class="js-updated-show" style="display: none;">Опубликовано: </span>
+	<meta itemprop="dateModified" content="2015-12-20">
+	<time itemprop="datePublished" datetime="2015-12-20">
+		
+		<em>20 декабря, 2015</em
+		><em class="js-updated" style="display: none;">, обновлено</em>
+	</time>
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+
+<script>
+	var mod = document.querySelector('meta[itemprop="dateModified"]').getAttribute('content');
+	var today = new Date();
+	var pubText = document.querySelector('.js-updated-show');
+	var updText = document.querySelector('.js-updated');
+
+	function declOfNum(number, titles) {
+		cases = [2, 0, 1, 1, 1, 2];
+		return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+	}
+
+	if (mod != today) {
+		var _txt = updText.innerText;
+		var _mod = new Date(mod);
+		var days = Math.round((today - _mod)/(1000*60*60*24));
+		var shownText = '';
+
+		console.log('_mod', _mod)
+		console.log('days', days)
+
+		if (days == 0) {
+			shownText = 'сегодня';
+		} else if (days == 1) {
+			shownText = 'вчера';
+		} else if (days > 0 && days < 30) {
+			shownText = days + ' ' + declOfNum(days, ['день', 'дня', 'дней']) + ' назад';
+		} else if (days > 30 && days < 365) {
+			shownText = Math.floor(days/30) + ' ' + declOfNum(Math.floor(days/30), ['месяц', 'месяца', 'месяцев']) + ' назад';
+		} else if (days > 365) {
+			shownText = Math.floor(days/365) + ' ' + declOfNum(Math.floor(days/365), ['год', 'года', 'лет']) + ' назад';
+		}
+
+		if (days >= 0) {
+			pubText.style.display = '';
+			updText.style.display = '';
+			updText.innerText = _txt + ' ' + shownText + '.';
+		}
+	}
+</script>
+
+	<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="http://ymatuhin.ru/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		
+			<a rel="nofollow" href="http://ymatuhin.ru/img/font-display/font-display.png">
+		
+			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/font-display/font-display.png"
+				 alt="Стадии загрузки ресурса (HTML5 Link Prefetch)" >
+		</a>
+
+		<meta itemprop="url" content="http://ymatuhin.ru/img/font-display/font-display.png">
+		
+			<meta itemprop="width" content="762">
+		
+
+		
+			<meta itemprop="height" content="658">
+		
+
+		
+			<figcaption itemprop="caption">«Стадии загрузки ресурса»</figcaption>
+		
+	</figure>
+
+
+
+	<p>Когда вы загружаете шрифт через <code class="highlighter-rouge">font-face</code>, браузер решает что отобразить пока шрифт загружается. Браузеры ждут некоторое время, перед тем как решить что делать дальше.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Браузер</th>
+      <th>Время ожидания</th>
+      <th>Запасной шрифт</th>
+      <th>Замена шрифта</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chrome 35+</td>
+      <td>3 seconds</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Opera</td>
+      <td>3 seconds</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Firefox 3 seconds</td>
+      <td>+</td>
+      <td>+</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Internet Explorer</td>
+      <td>0 seconds</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Safari</td>
+      <td>no timeout</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- more -->
+
+<ul>
+  <li>Chrome и Firefox ждут 3 секунды перед тем, как отобразить текст запасным шрифтом. В дальнейшем, когда шрифт загрузится элементы использующие этот шрифт перерисуются с новым шрифтом. Возможно вы замечали как некоторые страницы “мерцали” при смене шрифта.</li>
+  <li>Internet Explorer не ждет трех секунд, а сразу отрисовывает текст: если браузер еще не загрузил шрифт, то используется запасной. После загрузки шрифта элементы перерисуются.</li>
+  <li>В Safari нет времени ожидания</li>
+</ul>
+
+<p>Это поведения по умолчанию полезны, но отличаются от браузера к браузеру. Это не подаются никакому контролю со стороны разработчика. К тому-же эти способы не идеальны, поэтому разработчики городят решения этих проблем на JavaScript.</p>
+
+<h2 id="section">Временная шкала отображения шрифта</h2>
+
+<p>В момент когда браузер находит элемент на странице, в котором используется загружаемый шрифт, стартует таймер загрузки. Таймер проходит через три периода: период блокировки, период замены и период отказа. Они определяют как отобразится элемент, использующий загружаемый шрифт:</p>
+
+<ul>
+  <li>Первый период - блокировка шрифта. Если браузер во время этого периода не загрузил шрифт, то он отрисует <strong>невидимый запасной шрифт</strong> для элементов использующих загружаемый шрифт. Если браузер загрузил шрифт во время этого периода, то он перерисует элементы с загруженным шрифтом.</li>
+  <li>
+    <p>Второй период - замена шрифта. Если браузер во время этого периода не загрузил шрифт, то он отрисует <strong>запасной шрифт</strong>. Если браузер загрузил шрифт во время этого периода, то он перерисует элементы с загруженным шрифтом.</p>
+  </li>
+  <li>Третий период - период отказа. Если браузер не загрузил шрифт до этого момента, то шрифт помечается <strong>неудачно загруженным</strong>, в результате чего используется запасной шрифт.</li>
+</ul>
+
+<p>При перерисовке <strong>запасным шрифтом</strong> браузер находит первый шрифт, объявленный в <code class="highlighter-rouge">font-family</code>, который уже готов к использованию, и отрисовать текст им.</p>
+
+<p>При перерисовке <strong>невидимым запасным шрифтом</strong> для элемента, браузер ищет шрифт так же как и при “перерисовке запасным шрифтом”. Создает анонимный шрифт с похожими метриками как у выбранного шрифта, но с невидимыми символами, и отрисовывает текст им.</p>
+
+<h2 id="section-1">Контролируем отображение шрифта</h2>
+
+<p>Свойство <code class="highlighter-rouge">font-display</code> определяет как шрифт отобразится, в зависимости от того, когда шрифт загрузят.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Имя</td>
+      <td><code class="highlighter-rouge">font-dispay</code></td>
+    </tr>
+    <tr>
+      <td>Для</td>
+      <td><code class="highlighter-rouge">@font-face</code></td>
+    </tr>
+    <tr>
+      <td>Значения</td>
+      <td>auto, block, swap, fallback, optional</td>
+    </tr>
+    <tr>
+      <td>По умолчанию</td>
+      <td>auto</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt><strong>‘auto’</strong></dt>
+  <dd>Использует поведение браузера по умолчанию. Обычно это поведение ‘block’.</dd>
+  <dt><strong>‘block’</strong></dt>
+  <dd>Устанавливает короткий период блокировки (3 секунды) и бесконечный период замены.
+
+    <blockquote>
+      <p>Если шрифт не загрузился, то браузер отрисовывает невидимый текст, но после загрузки заменяет его как можно раньше. Это поведение не подходит для иконочных шрифтов, ведь если шрифт не загрузится и пройдет 3 секунды, то пользователь увидит квадраты вместо иконок.</p>
+    </blockquote>
+  </dd>
+  <dt><strong>‘swap’</strong></dt>
+  <dd>Устанавливает период блокировки в 0 секунд и бесконечный период замены.
+
+    <blockquote>
+      <p>Браузер сразу отрисовывает текст безопасным шрифтом и пользователь не видит пустого экрана дожидаясь загрузки шрифта. Но когда шрифт загрузится, он сразу заменится.</p>
+    </blockquote>
+  </dd>
+  <dt><strong>‘fallback’</strong></dt>
+  <dd>Устанавливает очень короткий период блокировки (100 мс или меньше) и короткий период замены (3 секунды).
+
+    <blockquote>
+      <p>Работает так-же как и swap, но если шрифт не загрузился в течении 3-х секунд, то браузер отрисует текст запасным шрифтом. Подходит для текста предназначенного для вдумчивого чтения. В таком случае шрифт играет второстепенную роль. Если он быстро не загрузился, то не стоит отвлекать пользователя мерцанием от замены шрифта.</p>
+    </blockquote>
+  </dd>
+  <dt><strong>‘optional’</strong></dt>
+  <dd>Устанавливает очень короткий период блокировки (100 мс или меньше) и период замены в 0 секунды.
+
+    <blockquote>
+      <p>Похоже на ‘fallback’, но по истечению 3-х секунд, браузер может или прервать загрузку (при медленном интернете) или понизить приоритет загрузки. Когда браузер загрузит шрифт, он все равно продолжит отображать текст запасным шрифтом, но если вы обновите текущую или перейдете на другую страницу, для которой установлено значение ‘optional’ и используется тот-же шрифт, то браузер отрисует текст загруженным шрифтом.</p>
+    </blockquote>
+  </dd>
+</dl>
+
+<h2 id="font-display">Видео пример работы свойства font-display</h2>
+
+<figure itemscope="" itemtype="http://schema.org/VideoObject">
+	
+		<iframe itemprop="contentUrl" src="http://www.youtube.com/embed/CciEEVHZRgw" width="421" height="315" frameborder="0" allowfullscreen=""></iframe>
+	
+	<figcaption itemprop="name">«Пример работы CSS свойства font-display»</figcaption>
+</figure>
+
+<h2 id="section-2">Как протестировать</h2>
+
+<p>Свойство пока работает только в Chrome Canary. Чтобы посмотреть на его работу нужно:</p>
+
+<ul>
+  <li>Запустить Chrome Canary</li>
+  <li>Открыть флаги <code class="highlighter-rouge">chrome://flags</code></li>
+  <li>Включить “enable-experimental-web-platform-features”</li>
+  <li>Перезапустить Canary</li>
+</ul>
+
+<h2 id="section-3">Когда использовать</h2>
+
+<p>В Canary это свойство появилось 1 декабря 2015 года, поэтому думаю что в течении 3-6 месяцев оно заработает в стабильной версии. Но уже можно добавить одну строчку CSS кода, чтобы в будущем сайт отображал шрифты выбранным вами способом. Я бы ставил по умолчанию <code class="highlighter-rouge">font-dispay: swap</code>.</p>
+
+<h3 id="section-4">Дополнительно</h3>
+
+<p>Это свойство позволит визуально ускорить отображение сайтов использующих <code class="highlighter-rouge">font-face</code>, поэтому я жду когда поддержка этого свойства появится в стабильной версии хрома. Если вы заинтересовались этой темой, то вот ссылоки для дополнительного чтения:</p>
+
+<ul>
+  <li><a href="https://tabatkins.github.io/specs/css-font-display/" rel="nofollow">Спецификация</a></li>
+  <li><a href="http://www.webpagetest.org/video/compare.php?tests=151201_PQ_VA6" rel="nofollow">WebPageText</a></li>
+  <li><a href="http://output.jsbin.com/nigahi/latest/quiet" rel="nofollow">Демо</a></li>
+</ul>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">web fonts</li><!--
+	
+	--><li itemprop="keywords">font</li><!--
+	
+	--><li itemprop="keywords">font-display</li><!--
+	
+	--><li itemprop="keywords">css</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<aside>
+	
+		<h4>Похожие записи</h4>
+		<ul>
+			
+
+
+
+   
+	 
+	   
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/smartjs_started_a_course_on_architecture/">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/margin-align-right/">Выравнивание блочного элемента по правому краю в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+	 
+
+	  
+	  
+		
+				
+					<li><nav><a rel="bookmark" href="/front-end/convert_photoshop_letter_spacing_to_css/">Переносим межбуквенный интервал из Фотошопа в CSS</a></nav>
+				
+			
+
+			
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+	  
+		
+	  
+		
+	  
+		
+	  
+		
+	  
+	  
+
+	 
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+
+   
+
+
+		</ul>
+	
+</aside>
+
+
+		</div>
+
+		<nav>
+	<h5>Меню</h5>
+
+	<ul class="l">
+		
+			<li>
+				
+					<a rel="nofollow" href="/">Главная</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/blog/">Блог</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/books/">Книги</a>
+				
+		
+
+		
+			<li>
+				
+					<a rel="nofollow" href="/projects/">Проекты</a>
+				
+		
+	</ul>
+</nav>
+
+
+		<footer>
+			
+				<h5>Комментарии</h5>
+
+<div id="disqus_thread">Загрузка…</div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+			
+
+			<h6>Дополнительно</h6>
+
+<ul class="l">
+	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
+
+	<li>
+		
+			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
+		
+
+	<li>
+		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
+		
+			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
+		
+		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
+</ul>
+
+			<form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value="http://ymatuhin.ru ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+		</footer>
+	</div>
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

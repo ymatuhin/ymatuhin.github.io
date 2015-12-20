@@ -24,11 +24,13 @@ h6 {
 p,
 iframe,
 figure,
+table,
 .highlight,
 details { margin: 0 0 1.6em 0 }
 
 figure { display: inline-block; vertical-align: top; text-align: center; margin-top: -1px }
-figure img { margin: 0; }
+figure img,
+figure iframe { margin: 0; }
 figure figcaption { margin-top: .8em }
 
 h2,
@@ -138,4 +140,28 @@ pre {
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
 	padding: 1.6em 0;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+	padding: .4em;
+}
+td, th {
+	border: 1px solid;
+}
+
+tr:nth-child(2n) td,
+th {
+	background: rgba(0, 0, 0, .02);
+}
+
+figure, iframe {
+	width: 100%;
+}
+
+p + ul {
+	margin-top: -.8em;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Оптимальная загрузка веб шрифтов
+title: Как работает font-face подключение шрифтов в CSS 
 categories: front-end
 description:
 tags: [web fonts, font, font-display, css]
@@ -13,8 +13,9 @@ imageTitle: Стадии загрузки ресурса
 published: false
 ---
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/CciEEVHZRgw" frameborder="0" allowfullscreen></iframe>
+{% include media-youtube.html url="CciEEVHZRgw" caption="Пример работы CSS свойства font-display" %}
 
+http://subtlepatterns.com/
 google+ — https://plus.google.com/+IlyaGrigorik/posts/a3Yn3jB4wjA
 demo — http://output.jsbin.com/nigahi/latest/quiet
 spec — https://tabatkins.github.io/specs/css-font-display/

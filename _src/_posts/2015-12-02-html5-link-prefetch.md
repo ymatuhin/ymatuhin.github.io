@@ -57,7 +57,7 @@ imageTitle: Стадии загрузки ресурса
 <link rel="prefetch" href="http://ymatuhin.ru">
 
 <!-- только изображение -->
-<link rel="prefetch" href=http://ymatuhin.ru/img/yury_matuhin.jpg">
+<link rel="prefetch" href="http://ymatuhin.ru/img/yury_matuhin.jpg">
 ~~~
 
 

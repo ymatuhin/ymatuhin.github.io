@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://ymatuhin.ru/front-end/loading-font-face-css</loc>
+    <lastmod>2015-12-20T12:03:53+03:00</lastmod>
+  </url>
+  <url>
     <loc>http://ymatuhin.ru/front-end/html5-link-prefetch</loc>
     <lastmod>2015-12-17T16:39:27+03:00</lastmod>
   </url>
@@ -246,15 +250,15 @@
   </url>
   <url>
     <loc>http://ymatuhin.ru/blog/english_as_the_notes</loc>
-    <lastmod>2015-12-17T16:17:29+03:00</lastmod>
+    <lastmod>2015-12-20T11:29:31+03:00</lastmod>
   </url>
   <url>
     <loc>http://ymatuhin.ru/front-end/vadim_makishvili_36</loc>
-    <lastmod>2015-12-17T16:17:29+03:00</lastmod>
+    <lastmod>2015-12-20T11:31:35+03:00</lastmod>
   </url>
   <url>
     <loc>http://ymatuhin.ru/blog/vivaldi_browser_review</loc>
-    <lastmod>2015-12-17T16:17:29+03:00</lastmod>
+    <lastmod>2015-12-20T11:26:33+03:00</lastmod>
   </url>
   <url>
     <loc>http://ymatuhin.ru/404.html</loc>

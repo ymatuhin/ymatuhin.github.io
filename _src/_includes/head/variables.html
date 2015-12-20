@@ -7,7 +7,7 @@
 {% capture page_keywords %}{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}{% endcapture %}
 
 <!-- Url -->
-{% capture page_url %}{{ page.url | replace:'index.html','' | replace: 'page2/', '' | replace: 'page3/', '' | replace: 'page4/', '' | replace: 'page5/', '' | prepend: site.url | prepend: site.url }}{% endcapture %}
+{% capture page_url %}{{ page.url | replace:'index.html','' | replace: 'page2/', '' | replace: 'page3/', '' | replace: 'page4/', '' | replace: 'page5/', '' | prepend: site.url }}{% endcapture %}
 
 <!-- Date -->
 {% capture page_date %}{% if page.date %}{{ page.date | date: "%Y-%m-%d"}}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}{% endcapture %}
