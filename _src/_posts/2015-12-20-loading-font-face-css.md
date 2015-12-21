@@ -8,19 +8,18 @@ tags: [web fonts, font, font-display, css]
 image: font-display/font-display.png
 imageWidth: 762
 imageHeight: 658
-imageCaption: Стадии загрузки ресурса (HTML5 Link Prefetch)
-imageTitle: Стадии загрузки ресурса
+imageCaption: Font display
 ---
 
 Когда вы загружаете шрифт через `font-face`, браузер решает что отобразить пока шрифт загружается. Браузеры ждут некоторое время, перед тем как решить что делать дальше.
 
 Браузер | Время ожидания | Запасной шрифт | Замена шрифта
 |----+----|
-Chrome 35+ | 3 seconds | + | +
-Opera | 3 seconds | + | +
-Firefox 3 seconds | + | +
-Internet Explorer | 0 seconds | + | +
-Safari | no timeout | - | -
+Chrome 35+ | 3 секунды | + | +
+Opera | 3 секунды | + | +
+Firefox 3 секунды | + | +
+Internet Explorer | 0 секунд | + | +
+Safari | нет ожидания | - | -
 
 <!-- more -->
 
