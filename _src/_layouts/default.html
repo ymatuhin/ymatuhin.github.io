@@ -3,24 +3,9 @@
 
 	{% include head/head.html %}
 
-	<div class="container">
-		<link rel="stylesheet" href="/css/style.css?v=0.003">
-
-		<div role="main" class="content">
-			{{ content }}
-		</div>
-
-		{% include menu.html %}
-
-		<footer>
-			{% if page.is_post %}
-				{% include comments.html %}
-			{% endif %}
-
-			{% include about.html %}
-			{% include search.html %}
-		</footer>
-	</div>
+	<!-- <div class="container"> -->
+		{{ content }}
+	<!-- </div> -->
 
 	{% include scripts.html %}
 

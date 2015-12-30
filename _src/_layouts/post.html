@@ -7,9 +7,9 @@ is_post: true
 	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ page.url }}">
 
 	<h1 style="margin-bottom:0" itemprop="headline">{{ page.title }}</h1>
+	{% include pubdate.html %}
 	{% include breadcrumbs.html %}
 
-	{% include pubdate.html %}
 	{% include publisher.html %}
 	{% include media-post-image.html %}
 

@@ -3,9 +3,10 @@ layout: post
 title: Разбираемся со сборкой front end на Gulp
 description: >
   Обзор основных возможностей новой системы для сборки проектов — Gulp, а так-же с изучаем как работают его основные функциии.
-categories: front-emd
+categories: front-end
 redirect_from:
   - /blog/see_into_gulp/
+  - /front-emd/see_into_gulp/
 tags: [gulp, frontend, сборка]
 keywords: >
   gulp watch task src dist сборка front end клиент pipe

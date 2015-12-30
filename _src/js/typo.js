@@ -2,7 +2,7 @@ function typo () {
 	var ct = document.querySelector('.content');
 	var sel = 'p';
 
-	if (ct.querySelector('.elka, .lapka, .skobka') !== null) return;
+	if (!ct || ct.querySelector('.elka, .lapka, .skobka') !== null) return;
 
 	function forEachElement(selector, fn) {
 		var elements = ct.querySelectorAll(selector);
