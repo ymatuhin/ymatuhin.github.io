@@ -1,47 +1,37 @@
 {% assign count = 1 %}
-
-{% assign tags_list = page.tags | sort %}
-{% assign max_count = 4 %}
-
-{% assign cached = "" %}
-
 {% capture related_posts %}
-{% for post in site.posts %}
-{% assign index_post = forloop.index %}
-{% assign post_tags = post.tags | sort %}
-   {% if count <= max_count %}
-	 {% if tags_list == post_tags %}
-	   {% if post.title != page.title %}
-		   <li><nav><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
-	   {% assign count = count | plus:'1' %}
-	   {% endif %}
-	 {% else %}
-
-	  {% for cat in post_tags %}
-	  {% for dog in tags_list %}
-		{% if cat == dog %}
-				{% unless cached contains post.url %}
-					<li><nav><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
-				{% assign count = count | plus:'1' %}
-			{% endunless %}
-
-			{% capture cached %}
-				{{ cached | append: post.url }}
-			{% endcapture %}
-		{% endif %}
-	  {% endfor %}
-	  {% endfor %}
-
-	 {% endif %}
-   {% endif %}
-{% endfor %}
+    {% for post in site.posts %}
+      {% if post.url != page.url %}
+        {% for tag in page.tags %}
+          {% if post.tags contains tag %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+            {% assign count = count | plus:'1' %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
 {% endcapture %}
 
+{% capture latest_posts %}
+    {% for post in site.posts %}
+        {% if count <= 12 %}
+            {% if post.url != page.url %}
+                {% unless related_posts contains post.title %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+                    {% assign count = count | plus:'1' %}
+                {% endunless %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+
+<br>
+<br>
 <aside>
-	{% if count > 1 %}
-		<h4>Похожие записи</h4>
-		<ul>
-			{{ related_posts }}
-		</ul>
-	{% endif %}
+    <h4>Похожие записи</h4>
+    <ul class="related">
+      {{ related_posts }}
+      {{ latest_posts }}
+    </ul>
 </aside>

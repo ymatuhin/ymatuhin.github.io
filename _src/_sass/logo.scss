@@ -1,0 +1,28 @@
+.logo {
+	position: absolute;
+	top: -9px;
+	right: 6%;
+	margin-right: -16px;
+	border: 0;
+
+	svg {
+		fill: #c00;
+	}
+
+	span {
+		font-family: Georgia;
+		font-style: italic;
+		margin: -8px -3px 0 0;
+		position: absolute;
+		top: 100%;
+		white-space: nowrap;
+		right: 50%;
+		border-bottom-width: 1px;
+	}
+
+	i {
+		position: relative;
+		top: -4px;
+		font-style: normal;
+	}
+}

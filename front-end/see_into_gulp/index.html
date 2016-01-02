@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="ru">
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+
+
+
+<!-- Description -->
+
+
+
+<!-- Url -->
+
+
+<!-- Date -->
+
+
+
+	<title>Разбираемся со сборкой front end на Gulp / Блог фронтенд разработчика</title>
+	<meta name="description" content="Обзор основных возможностей новой системы для сборки проектов — Gulp, а так-же с изучаем как работают его основные функциии.
+">
+
+	<link rel="alternate" href="/" hreflang="x-default">
+
+	<link rel="alternate" href="/en/" hreflang="en">
+
+
+	<!-- Feed and canonical -->
+<link rel="canonical" href="/front-end/see_into_gulp">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
+
+	<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+
+
+	<meta name="twitter:image" content="/img/gulp/logo.png">
+	<link rel="image_src" href="/img/gulp/logo.png" />
+
+
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Разбираемся со сборкой front end на Gulp / Блог фронтенд разработчика">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/see_into_gulp">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Обзор основных возможностей новой системы для сборки проектов — Gulp, а так-же с изучаем как работают его основные функциии.
+">
+
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/img/gulp/logo.png">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=XBBvdbz88w">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=XBBvdbz88w">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v=XBBvdbz88w" sizes="32x32">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=XBBvdbz88w" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v=XBBvdbz88w" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v=XBBvdbz88w" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v=XBBvdbz88w">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=XBBvdbz88w" color="#cc0000">
+<link rel="shortcut icon" href="/favicon.ico?v=XBBvdbz88w">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v=XBBvdbz88w">
+<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//www.google-analytics.com/">
+<link rel="prefetch" href="/css/syntax.css">
+
+
+	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+	<style></style>
+<link rel="stylesheet" href='/css/style.css?v=1451764105695387000'>
+
+<a href="/" rel="nofollow" class="logo">
+    <svg height="64px" version="1" viewBox="0 0 512.000000 512.000000" width="64px" xmlns="http://www.w3.org/2000/svg"><path d="M128 256v192h32v-32h32v-32h32v-32h64v32h32v32h32v32h32v-384h-256v192zm224-16v144h-32v-32h-32v-32h-64v32h-32v32h-32v-288h192v144z"/></svg>
+    <span class="js-to-home" style="display:none">На главную <i>⤴</i></span>
+    <script>
+        var toHome = document.querySelector('.js-to-home');
+
+        if (!localStorage.hideHome) toHome.style.display = '';
+        toHome.addEventListener('click', function () { localStorage.hideHome = true }, false);
+    </script>
+</a>
+
+<div role="main" class="content">
+    
+
+
+    
+
+<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" rel="nofollow" href="/all/">
+			<span itemprop="name">Все записи</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	
+	<li><small>→</small></li>
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" rel="nofollow" href="/front-end/">
+			<small itemprop="name">
+				
+					Фронтенд
+				
+			</small>
+		</a>
+		<meta itemprop="position" content="2" />
+	</li>
+	
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="visuallyhidden">
+		<a itemprop="item" rel="nofollow" href="/front-end/see_into_gulp">
+			<span itemprop="name">Разбираемся со сборкой front end на Gulp</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+<br>
+<br>
+
+
+
+<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/see_into_gulp">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Разбираемся со сборкой front end на Gulp</h1>
+	
+
+
+<p>
+	<meta itemprop="dateModified" content="2015-12-30">
+	<time itemprop="datePublished" datetime="2015-05-17">
+		
+		17 мая 2015<small class="js-updated" style="display: none;">, обновлено</small>
+	</time>
+
+	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+		<meta itemprop="name" content="Юрий Матюхин"></meta>
+	</a>
+</p>
+
+<script async src="/js/pub-date.js"></script>
+
+
+	<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="/favicon-96x96.png">
+		<meta itemprop="width" content="96">
+		<meta itemprop="height" content="96">
+	</div>
+	<meta itemprop="name" content="Юрий Матюхин"></meta>
+</div>
+
+	
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		
+
+		
+			<a rel="nofollow" href="//gulpjs.com/">
+		
+			<img itemprop="contentUrl" src="/img/gulp/logo.png"
+				 alt="Gulp, логотип системы сборки фронтенда" >
+		</a>
+
+		<meta itemprop="url" content="/img/gulp/logo.png">
+		
+			<meta itemprop="width" content="400">
+		
+
+		
+			<meta itemprop="height" content="200">
+		
+
+		
+			<figcaption itemprop="caption">Gulp — системы сборки фронтенда</figcaption>
+		
+	</figure>
+
+
+
+	<p>В последнее время <strong>Gulp</strong> набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем <strong>Grunt</strong>. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.</p>
+
+<h2 id="gulp">Что такое Gulp?</h2>
+
+<p>Gulp — это инструмент сборки front-a. Он позволяет автоматизировать повторяющиеся задачи (сборка и минификация CSS- и JS-файлов, запуск тестов, перезагрузка браузера и другие). Тем самым Gulp ускоряет и оптимизирует процесс веб-разработки.</p>
+
+<h2 id="gulp-1">Установка Gulp</h2>
+<p>Установить Gulp достаточно легко. Если у вас что-то не получится, пишите в комментариях или загуглите вашу проблему. Итак для установки нужно сделать 3 шага:</p>
+
+<ul>
+<li>Установить Gulp глобально;</li>
+<li>Установить Gulp как `devDependencies` (зависимости для разработки);</li>
+<li>Создать файл `gulpfile.js`;</li>
+</ul>
+
+<p>Первый шаг — устанавливаем глобально Gulp. Открываем терминал и пишем:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install --global gulp
+</code></pre>
+</div>
+
+<p>После этого вам нужно установить Gulp как <code class="highlighter-rouge">devDependencies</code> для вашего проекта. Убедитесь в том, что у вас есть файл <code class="highlighter-rouge">package.json</code>. Если его нет, то создайте его написав в консоль <code class="highlighter-rouge">npm init</code>. Теперь можно установить Gulp как <code class="highlighter-rouge">devDependencies</code>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install --save-dev gulp
+</code></pre>
+</div>
+
+<p>И наконец, вам нужно создать <code class="highlighter-rouge">gulpfile.js</code> в корне вашего проекта, который будет содержать ваши задачи (tasks). В качестве промежуточного шага, мы установим плагин <code class="highlighter-rouge">gulp-util</code>. Чтобы показать как устанавливаются плагины:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install --save-dev gulp-util
+</code></pre>
+</div>
+
+<p>Теперь настало время написать нашу первую задачку. Открываем только что созданный файл <code class="highlighter-rouge">gulpfile.js</code> и пишем в него следующее:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/* File: gulpfile.js */</span>
+
+<span class="c1">// собираем все наши плагины</span>
+<span class="kd">var</span> <span class="nx">gulp</span>  <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp'</span><span class="p">),</span>
+    <span class="nx">gutil</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-util'</span><span class="p">);</span>
+
+<span class="c1">// создаем задачку, которая будет выполняться по умолчанию</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">gutil</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Gulp is running!'</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p>И теперь нам остается запустить gulp в терминале и мы увидим нечто похожее на это:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>gulp
+<span class="o">[</span>12:32:08] Using gulpfile ~/Projects/gulp-scotch-io/gulpfile.js
+<span class="o">[</span>12:32:08] Starting <span class="s1">'default'</span>...
+<span class="o">[</span>12:32:08] Gulp is running!
+<span class="o">[</span>12:32:08] Finished <span class="s1">'default'</span> after 1 ms
+</code></pre>
+</div>
+
+<h2 id="section">Обзор</h2>
+<p>Сам по себе Gulp очень скуден на возможности. Но все, что вам нужно вынесено в отдельные плагины. Они совместно с Gulp творят чудеса.</p>
+
+<p>Api у gulp очень маленькое, и содержит всего 4 функции высшего порядка:</p>
+<ul>
+    <li>`gulp.task`</li>
+    <li>`gulp.src`</li>
+    <li>`gulp.dest`</li>
+    <li>`gulp.watch`</li>
+</ul>
+
+<p><code class="highlighter-rouge">gulp.task</code> определяет наши задачи. В качестве аргументов принимает название, зависимости (массив) и функцию (основные действия). Зависимостей может и не быть:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'mytask'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">//сделать что-то</span>
+<span class="p">});</span>
+
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'dependenttask'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'mytask'</span><span class="p">],</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">//сделать что-то после того, как 'mytask' будет выполнен</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">gulp.src</code> указывает на файлы, которые мы хотим использовать. Он использует <code class="highlighter-rouge">.pipe</code> доступа к файлам через плагины.</p>
+
+<p><code class="highlighter-rouge">gulp.dest</code> указывает на папку, в которую мы хотим сохранить измененные файлы.</p>
+
+<p><code class="highlighter-rouge">gulp.src</code> и <code class="highlighter-rouge">gulp.dest</code> используется для простой копии файлов:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'copyHtml'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// скопировать все html файлы из source/ в public/</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'source/*.html'</span><span class="p">).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'public'</span><span class="p">));</span>
+<span class="p">});</span>
+</code></pre>
+</div>
+
+<p>В gulp встроена система реагирования на изменения файлов (<code class="highlighter-rouge">gulp.watch</code>). Вы можете использовать эту задачу для запуска других необходимых вам задач при изменении файлов.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s1">'source/**/*.html'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'copyHtml'</span><span class="p">]);</span>
+</code></pre>
+</div>
+
+<p>Этот пример будет выполнять задачу <code class="highlighter-rouge">copyHtml</code> когда любой html файл в папке source изменится.</p>
+
+<p>В следующей статье мы разберемся подробнее о задачах, синхронность и асинхронностью и напишем что-нибудь полезное.</p>
+
+
+	<ul class="tags visuallyhidden">
+	<!--
+	
+	--><li itemprop="keywords">gulp</li><!--
+	
+	--><li itemprop="keywords">frontend</li><!--
+	
+	--><li itemprop="keywords">сборка</li><!--
+	
+	-->
+</ul>
+
+</article>
+
+
+
+
+
+
+
+<br>
+<br>
+<aside>
+    <h4>Похожие записи</h4>
+    <ul class="related">
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+            <li><a href="/front-end/plan_for_frontend_developer">План развития для фронтенд разработчика</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+            <li><a href="/front-end/what_front_end_developer_need_to_know_in_2015-2016">Что нужно знать и уметь front end разработчику в 2015/2016</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+            <li><a href="/front-end/javascript_styleguide">Гайд по стилю кода на JavaScript от AirBnB</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+    
+      
+        
+          
+        
+          
+            <li><a href="/front-end/front_end_developer_interview_quersions">Вопросы для собеседования кандидату на должность Front-end разработчика</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+
+      
+    
+        
+            
+                
+                    <li><a href="/front-end/loading-font-face-css">Управляем поведением font-face в CSS</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/front-end/html5-link-prefetch">Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading…</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/blog/mac-os-confirm-from-keyboard">Подтверждение диалогов через клавиатуру в Mac OS</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/front-end/three-plugins-for-single-page">Три плагина, которые сделают Single Page Application лучше</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/front-end/favicons">Продвинутые favicon для сайта</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/tools/atom_packages_2">Плагины для Atom #2</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/front-end/partisan-refactoring">Партизанский рефакторинг, или как улучшить проект, чтобы заказчик этого не понял</a><br /></li>
+                    
+                
+            
+        
+    
+        
+            
+                
+                    <li><a href="/front-end/smartjs_started_a_course_on_architecture">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a><br /></li>
+                    
+                
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </ul>
+</aside>
+
+
+
+
+    <footer>
+        
+            <br>
+<br>
+<div id="disqus_thread">Загрузка…</div>
+<noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
+<script>
+	var disqus = document.getElementById("disqus_thread");
+
+	window.onscroll = function(e) {
+		var scrollSize = window.innerHeight + window.scrollY;
+		if (scrollSize >= disqus.offsetTop - (window.innerHeight / 3)) {
+			importScript("http://ymatuhin.disqus.com/embed.js");
+		}
+	}
+</script>
+
+        
+
+        <address itemscope itemtype="http://schema.org/Person" class="copy">
+    <form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
+	<input type="search" class="search__field" name="q" value="" placeholder="...">
+    <button class="search__find">Найти</button>
+</form>
+
+    <br>
+    <span class="copy__gray">© Юрий Матюхин, 2013 — 2015</span>
+    <br>
+    <span>
+        Эл. почта: <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>,
+        твиттер: <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.
+    </span>
+</address>
+
+    </footer>
+</div>
+
+
+	<script async defer src="/js/typo.js"></script>
+<script async defer src="/js/hints.js"></script>
+
+<script>
+	var scriptsSrcs = '';
+	function importScript (sSrc, fOnload) {
+		if (scriptsSrcs.indexOf(sSrc) >= 0) {return;}
+		scriptsSrcs += sSrc;
+
+		var oScript = document.createElement("script");
+		oScript.type = "text\/javascript";
+		oScript.async = true;
+		if (fOnload) { oScript.onload = fOnload; }
+		document.getElementsByTagName("head")[0].appendChild(oScript);
+		oScript.src = sSrc;
+	}
+
+	if (document.querySelector('.highlight')) {
+		document.write('<link rel=\"stylesheet\" href=\"\/css\/syntax.css\">');
+	}
+
+	importScript('//www.google-analytics.com/analytics.js', function () {
+		ga('create', 'UA-20899801-7', 'auto');
+	    ga('send', 'pageview');
+	});
+</script>
+<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+
+
+</html>

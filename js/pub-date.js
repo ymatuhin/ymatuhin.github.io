@@ -1,7 +1,6 @@
 var mod = document.querySelector('meta[itemprop="dateModified"]').getAttribute('content');
 var pub = document.querySelector('time[itemprop="datePublished"]').getAttribute('datetime');
 var today = new Date();
-var pubText = document.querySelector('.js-updated-show');
 var updText = document.querySelector('.js-updated');
 
 function declOfNum(number, titles) {
@@ -28,8 +27,7 @@ if (mod != pub) {
 	}
 
 	if (days >= 0) {
-		pubText.style.display = '';
 		updText.style.display = '';
-		updText.innerText = _txt + ' ' + shownText + '.';
+		updText.innerHTML = _txt + ' <em>' + shownText + '</em>.';
 	}
 }

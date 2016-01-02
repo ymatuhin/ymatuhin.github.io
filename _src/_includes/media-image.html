@@ -4,5 +4,5 @@
 			<img itemprop="contentUrl" src="{{ include.url | prepend: '/img/' | prepend: site.url }}" alt="{{ include.alt }}">
 		</a>
 	{% endif %}
-	<figcaption itemprop="caption">«{{ include.caption }}»</figcaption>
+	<figcaption itemprop="caption">{{ include.caption }}</figcaption>
 </figure>

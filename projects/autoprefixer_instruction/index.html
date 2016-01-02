@@ -25,17 +25,14 @@
 	<meta name="description" content="Инструкция по использованию сервиса Autoprefixer online и настройка фильтра браузеров.
 ">
 
-	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
-</style>
+	<link rel="alternate" href="/" hreflang="x-default">
 
-	<link rel="alternate" href="http://ymatuhin.ru/" hreflang="x-default">
-
-	<link rel="alternate" href="http://ymatuhin.ru/en/" hreflang="en">
+	<link rel="alternate" href="/en/" hreflang="en">
 
 
 	<!-- Feed and canonical -->
-<link rel="canonical" href="http://ymatuhin.ru/projects/autoprefixer_instruction/">
-<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="http://ymatuhin.ru/feed.xml">
+<link rel="canonical" href="/projects/autoprefixer_instruction/">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
 
 	<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@ymatuhin">
@@ -45,7 +42,7 @@
 
 	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Как пользоваться автопрефиксером онлайн / Юрий Матюхин">
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://ymatuhin.ru/projects/autoprefixer_instruction/">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/projects/autoprefixer_instruction/">
 <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Инструкция по использованию сервиса Autoprefixer online и настройка фильтра браузеров.
 ">
 
@@ -73,7 +70,7 @@
 
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//www.google-analytics.com/">
-<link rel="prefetch" href="http://ymatuhin.ru/css/syntax.css">
+<link rel="prefetch" href="/css/syntax.css">
 
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
@@ -81,17 +78,51 @@
 </head>
 
 
-	<div class="container">
-		<link rel="stylesheet" href="/css/style.css?v=0.003">
+	<style></style>
+<link rel="stylesheet" href='/css/style.css?v=1451764105695387000'>
 
-		<div role="main" class="content">
-			<h1>
-    
-        Инструкция к автопрефиксеру онлайн
-    
-</h1>
+<a href="/" rel="nofollow" class="logo">
+    <svg height="64px" version="1" viewBox="0 0 512.000000 512.000000" width="64px" xmlns="http://www.w3.org/2000/svg"><path d="M128 256v192h32v-32h32v-32h32v-32h64v32h32v32h32v32h32v-384h-256v192zm224-16v144h-32v-32h-32v-32h-64v32h-32v32h-32v-288h192v144z"/></svg>
+    <span class="js-to-home" style="display:none">На главную <i>⤴</i></span>
+    <script>
+        var toHome = document.querySelector('.js-to-home');
 
-<p>В процессе разработки веб сайтов и приложений, разработчик сталкивается с проблемой поддержки всех, нужных для него, браузеров. Но некоторые свойства работают только с вендорными префиксами (в некоторых браузерах). Для это был создан проект <strong>Autoprefixer</strong>.</p>
+        if (!localStorage.hideHome) toHome.style.display = '';
+        toHome.addEventListener('click', function () { localStorage.hideHome = true }, false);
+    </script>
+</a>
+
+<div role="main" class="content">
+    
+        
+
+<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+		<a itemprop="item" rel="nofollow" href="/all/">
+			<span itemprop="name">Все записи</span>
+		</a>
+		<meta itemprop="position" content="1" />
+	</li>
+	
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="visuallyhidden">
+		<a itemprop="item" rel="nofollow" href="/projects/autoprefixer_instruction/">
+			<span itemprop="name">Как пользоваться автопрефиксером онлайн</span>
+		</a>
+		<meta itemprop="position" content="3" />
+	</li>
+</ol>
+
+<br>
+<br>
+
+
+
+        <h1>Как пользоваться автопрефиксером онлайн</h1>
+        <br>
+    
+
+
+    <p>В процессе разработки веб сайтов и приложений, разработчик сталкивается с проблемой поддержки всех, нужных для него, браузеров. Но некоторые свойства работают только с вендорными префиксами (в некоторых браузерах). Для это был создан проект <strong>Autoprefixer</strong>.</p>
 
 <p>В идеальном варианте, его нужно встроить в систему сборки проекта (<i>gulp</i> или <i>grunt</i>). Но это не всегда возможно. Иногда нам нужно просто проверить нужны ли префиксы для определенного свойства или просто расставить нужные и убрать ненужные. И для этого, а может и для чего-то еще был написан <a href="http://autoprefixer.github.io">Autoprefixer online</a>.</p>
 
@@ -137,72 +168,29 @@
 <p>Теперь вы знаете как работает фильтр и зачем он нужен. Правильных префиксов вам вместе с <a href="http://autoprefixer.github.io">Autoprefixer online</a>! </p>
 
 
-		</div>
 
-		<nav>
-	<h5>Меню</h5>
+    <footer>
+        
 
-	<ul class="l">
-		
-			<li>
-				
-					<a href="/">Главная</a>
-				
-		
-
-		
-			<li>
-				
-					<a href="/blog/">Блог</a>
-				
-		
-
-		
-			<li>
-				
-					<a href="/books/">Книги</a>
-				
-		
-
-		
-			<li>
-				
-					<a href="/projects/">Проекты</a>
-				
-		
-	</ul>
-</nav>
-
-
-		<footer>
-			
-
-			<h6>Дополнительно</h6>
-
-<ul class="l">
-	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
-
-	<li>
-		
-			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
-		
-
-	<li>
-		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
-		
-			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
-		
-		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
-</ul>
-
-			<form action="http://www.google.com/search" class="search">
-	<input type="hidden" name="as_sitesearch" value="http://ymatuhin.ru ">
+        <address itemscope itemtype="http://schema.org/Person" class="copy">
+    <form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
 	<input type="search" class="search__field" name="q" value="" placeholder="...">
     <button class="search__find">Найти</button>
 </form>
 
-		</footer>
-	</div>
+    <br>
+    <span class="copy__gray">© Юрий Матюхин, 2013 — 2015</span>
+    <br>
+    <span>
+        Эл. почта: <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>,
+        твиттер: <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.
+    </span>
+</address>
+
+    </footer>
+</div>
+
 
 	<script async defer src="/js/typo.js"></script>
 <script async defer src="/js/hints.js"></script>

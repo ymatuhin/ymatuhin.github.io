@@ -28,6 +28,6 @@ if (mod != pub) {
 
 	if (days >= 0) {
 		updText.style.display = '';
-		updText.innerHTML = _txt + ' <em>' + shownText + '</em>';
+		updText.innerHTML = _txt + ' <em>' + shownText + '</em>.';
 	}
 }

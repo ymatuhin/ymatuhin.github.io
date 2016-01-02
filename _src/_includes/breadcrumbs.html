@@ -1,20 +1,39 @@
-<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+{% if page.url != '/all/' %}
+
+<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
 	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" href="/">
-			<span itemprop="name">Главная</span>
+		<a itemprop="item" rel="nofollow" href="/all/">
+			<span itemprop="name">Все записи</span>
 		</a>
 		<meta itemprop="position" content="1" />
 	</li>
+	{% if page.categories %}
+	<li><small>→</small></li>
 	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" href="/blog/">
-			<span itemprop="name">Блог</span>
+		<a itemprop="item" rel="nofollow" href="/{{ page.categories[0] }}/">
+			<small itemprop="name">
+				{% if page.categories[0] == 'front-end' %}
+					Фронтенд
+				{% elsif page.categories[0] == 'blog' %}
+					Разное
+				{% elsif page.categories[0] == 'tools' %}
+					Инструментарий
+				{% else %}
+					Книги
+				{% endif %}
+			</small>
 		</a>
 		<meta itemprop="position" content="2" />
 	</li>
-	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" href="{{ page.url }}">
+	{% endif %}
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="visuallyhidden">
+		<a itemprop="item" rel="nofollow" href="{{ page.url }}">
 			<span itemprop="name">{{ page.title }}</span>
 		</a>
 		<meta itemprop="position" content="3" />
 	</li>
 </ol>
+
+<br>
+<br>
+{% endif %}

@@ -4,10 +4,10 @@
     <title>Юрий Матюхин</title>
     <description></description>
     <author>Юрий Матюхин</author>
-    <link>http://ymatuhin.ru/</link>
-    <atom:link href="http://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Dec 2015 18:48:20 +0300</pubDate>
-    <lastBuildDate>Mon, 21 Dec 2015 18:48:20 +0300</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 02 Jan 2016 22:48:25 +0300</pubDate>
+    <lastBuildDate>Sat, 02 Jan 2016 22:48:25 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -60,12 +60,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/loading-font-face-css&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/loading-font-face-css&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Sun, 20 Dec 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/loading-font-face-css</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/loading-font-face-css</guid>
+        <link>/front-end/loading-font-face-css</link>
+        <guid isPermaLink="true">/front-end/loading-font-face-css</guid>
         
         <category>web fonts</category>
         
@@ -87,12 +87,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/html5-link-prefetch&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/html5-link-prefetch&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Wed, 02 Dec 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/html5-link-prefetch</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/html5-link-prefetch</guid>
+        <link>/front-end/html5-link-prefetch</link>
+        <guid isPermaLink="true">/front-end/html5-link-prefetch</guid>
         
         <category>cdn</category>
         
@@ -118,12 +118,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/blog/mac-os-confirm-from-keyboard&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/blog/mac-os-confirm-from-keyboard&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Sat, 14 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/blog/mac-os-confirm-from-keyboard</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/blog/mac-os-confirm-from-keyboard</guid>
+        <link>/blog/mac-os-confirm-from-keyboard</link>
+        <guid isPermaLink="true">/blog/mac-os-confirm-from-keyboard</guid>
         
         <category>mac</category>
         
@@ -143,12 +143,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/three-plugins-for-single-page&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/three-plugins-for-single-page&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Fri, 13 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/three-plugins-for-single-page</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/three-plugins-for-single-page</guid>
+        <link>/front-end/three-plugins-for-single-page</link>
+        <guid isPermaLink="true">/front-end/three-plugins-for-single-page</guid>
         
         <category>spa</category>
         
@@ -174,12 +174,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/favicons&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/favicons&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Thu, 12 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/favicons</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/favicons</guid>
+        <link>/front-end/favicons</link>
+        <guid isPermaLink="true">/front-end/favicons</guid>
         
         <category>favicon</category>
         
@@ -204,12 +204,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/tools/atom_packages_2&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/tools/atom_packages_2&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Mon, 09 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/tools/atom_packages_2</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/tools/atom_packages_2</guid>
+        <link>/tools/atom_packages_2</link>
+        <guid isPermaLink="true">/tools/atom_packages_2</guid>
         
         <category>Atom</category>
         
@@ -229,12 +229,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/partisan-refactoring&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/partisan-refactoring&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Sun, 01 Nov 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/partisan-refactoring</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/partisan-refactoring</guid>
+        <link>/front-end/partisan-refactoring</link>
+        <guid isPermaLink="true">/front-end/partisan-refactoring</guid>
         
         <category>react</category>
         
@@ -256,12 +256,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/smartjs_started_a_course_on_architecture&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Fri, 23 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture</guid>
+        <link>/front-end/smartjs_started_a_course_on_architecture</link>
+        <guid isPermaLink="true">/front-end/smartjs_started_a_course_on_architecture</guid>
         
         <category>css</category>
         
@@ -281,12 +281,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/margin-align-right&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/margin-align-right&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Thu, 22 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/margin-align-right</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/margin-align-right</guid>
+        <link>/front-end/margin-align-right</link>
+        <guid isPermaLink="true">/front-end/margin-align-right</guid>
         
         <category>css</category>
         
@@ -304,12 +304,12 @@
 
 
                 
-                &lt;br&gt;&lt;a href=&quot;http://ymatuhin.ru/front-end/11grade&quot;&gt;Читать дальше…&lt;/a&gt;
+                &lt;br&gt;&lt;a href=&quot;/front-end/11grade&quot;&gt;Читать дальше…&lt;/a&gt;
             </description>
         
         <pubDate>Fri, 16 Oct 2015 00:00:00 +0300</pubDate>
-        <link>http://ymatuhin.ru/front-end/11grade</link>
-        <guid isPermaLink="true">http://ymatuhin.ru/front-end/11grade</guid>
+        <link>/front-end/11grade</link>
+        <guid isPermaLink="true">/front-end/11grade</guid>
         
         <category>css</category>
         

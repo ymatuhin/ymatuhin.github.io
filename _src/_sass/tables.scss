@@ -1,0 +1,20 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	// border-style: hidden;
+}
+th, td {
+	padding: .6em;
+
+	-ms-word-break: break-all;
+	word-break: break-all;
+
+	word-break: break-word;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+td, th {
+	border: 1px solid rgba(0, 0, 0, .1);
+}

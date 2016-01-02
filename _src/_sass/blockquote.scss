@@ -1,0 +1,15 @@
+blockquote {
+	margin: 1.61em -1.61em;
+	padding: 1.61em;
+	// font-style: italic;
+	background: #fcf9f2;
+	background: #f9f5e4;
+}
+
+blockquote p {
+	margin-bottom: 0;
+
+	& + & {
+		margin-top: 1.61;
+	}
+}

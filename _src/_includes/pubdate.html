@@ -5,7 +5,7 @@
 	<meta itemprop="dateModified" content="{{ last_mod }}">
 	<time itemprop="datePublished" datetime="{{ pub_date }}">
 		{% assign m = page.date | date: "%-m" %}
-		{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}<span class="js-updated" style="display: none;">, обновлено</span>
+		{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}<small class="js-updated" style="display: none;">, обновлено</small>
 	</time>
 
 	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">

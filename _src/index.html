@@ -19,10 +19,10 @@ description: >
 <div class="columns-box">
     <div class="column-3-4">
 
-        <h2><a href="/blog/">Статьи и заметки ✭</a></h2>
+        <h2><a href="/all/">Статьи и заметки <span class="red">✭</span></a></h2>
 
         <div class="column-1-3">
-            <h3>Фронтенд</h3>
+            <h3><a href="/front-end/">Фронтенд</a></h3>
             <nav>
                 <ul>
                     {% for post in site.categories.front-end limit:6 %}
@@ -32,7 +32,7 @@ description: >
             </nav>
         </div>
         <div class="column-1-3">
-            <h3>Инструменты</h3>
+            <h3><a href="/tools/">Инструменты</a></h3>
             <nav>
                 <ul>
                     {% for post in site.categories.tools limit:7 %}
@@ -42,7 +42,7 @@ description: >
             </nav>
         </div>
         <div class="column-1-3">
-            <h3>Разное</h3>
+            <h3><a href="/blog/">Разное</a></h3>
             <nav>
                 <ul>
                     {% for post in site.categories.blog limit:4 %}
@@ -51,9 +51,10 @@ description: >
                 </ul>
             </nav>
 
-            <h4>Книги</h4>
+            <br>
+            <h4><a href="/books/">Книги</a></h4>
             <ul>
-                {% for post in site.categories.book limit:3 %}
+                {% for post in site.categories.books limit:3 %}
                     <li><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
                 {% endfor %}
             </ul>
@@ -64,19 +65,12 @@ description: >
             <img src="/img/yury_matuhin.jpg" width="90" height="120" alt="">
         </div>
         <h1>Обо мне</h1>
-        <p>Привет, я фронтенд разработчик: пишу приложения и запускаю онлайн-сервисы. Люблю минимализм и оптимизацию. <br>Bеду <a href="/blog/">блог</a> о разработке (архитектура приложений, верстка, фреймворки, инструменты, браузеры…).
-        <br>Работаю в <a rel="nofollow" href="http://poloniumarts.com/">Polonium Arts</a>.</p>
+        <p>Привет, я фронтенд разработчик: пишу приложения и запускаю онлайн-сервисы. Люблю минимализм и оптимизацию.
+        </p><p>Bеду <a href="/blog/">блог</a> о разработке (архитектура приложений, верстка, фреймворки, инструменты, браузеры…).
+        </p><p>Работаю в <a rel="nofollow" href="http://poloniumarts.com/">Polonium Arts</a>.</p>
 
         <!-- <h2>Советы</h2> -->
     </div>
 </div>
 
-<address itemscope itemtype="http://schema.org/Person" class="copy">
-    {% include search.html %}
-    <br>
-    <p class="copy__gray">© 2013…2015</p>
-    <p>
-        Эл. почта: <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>,
-        твиттер: <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.
-    </p>
-</address>
+{% include footer.html %}

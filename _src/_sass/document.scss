@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+html { border-top: 3px solid #c00; }
+body {
+	padding: 6%;
+	margin: 0;
+	font: 13px/1.618 Verdana, Georgia, serif;
+
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+html, body { overflow-x: hidden; }

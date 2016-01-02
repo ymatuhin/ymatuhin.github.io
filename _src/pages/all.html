@@ -1,0 +1,13 @@
+---
+layout: page
+title: Записи из всех категорий
+permalink: /all/
+description: >
+  Все что есть, все тут.
+---
+
+<p>Все что есть, все тут.</p>
+
+{% for post in site.posts %}
+    {% include posts.html %}
+{% endfor %}

@@ -1,13 +1,39 @@
 ---
 ---
 
-* { box-sizing: border-box; }
-/*.content > *, h5, h6 { font-size: 1em; }*/
-html, body { overflow-x: hidden; }
-body { margin: 0; font: 14px/1.618 Verdana, Georgia, serif; }
-.container {margin: 0 6% 6%; }
-img, iframe { max-width: 100%; vertical-align: top; }
-a { color: #C00; border-bottom: 1px solid #c99; text-decoration: none; }
+@import 'document.scss';
+@import 'logo.scss';
+@import 'links.scss';
+@import 'breadcrumbs.scss';
+@import 'media.scss';
+@import 'heading.scss';
+@import 'lists.scss';
+@import 'tables.scss';
+@import 'lettering.scss';
+@import 'code.scss';
+@import 'blockquote.scss';
+
+.content {
+	h1, h2, h3, h4, h5, h6,
+	li, p, dl,
+	blockquote {
+		max-width: 572px;
+	}
+}
+
+p,
+iframe,
+figure,
+table,
+.highlight,
+details { margin: 0 0 22px 0 }
+dd { margin-bottom: 22px; }
+
+.copy {
+	margin-top: 66px;
+	font-style: normal;
+}
+
 .visuallyhidden {
 	overflow: hidden;
 	position: absolute;
@@ -17,256 +43,4 @@ a { color: #C00; border-bottom: 1px solid #c99; text-decoration: none; }
 	margin: -1px;
 	padding: 0;
 	border: 0;
-}
-
-@import 'lettering.scss';
-
-.content article > * {
-	max-width: 41em;
-}
-
-figure, img, iframe {
-	max-width: none;
-}
-
-body {
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size: 18px;
-	font-family: Verdana;
-	margin: 1.6em 0 1.6em 0;
-}
-h2 { font-size: 16px }
-
-h3, h4, h5, h6 {
-	font-size: 14px;
-}
-
-p,
-iframe,
-figure,
-table,
-.highlight,
-details { margin: 0 0 1.6em 0 }
-dd { margin-bottom: 1.6em; }
-
-figure { display: inline-block; vertical-align: top; text-align: center; margin-top: -1px }
-figure img,
-figure iframe { margin: 0; }
-figure figcaption { margin-top: .8em }
-
-h2,
-h3 { margin: 2.4em 0 .8em; }
-
-/* media */
-img,
-iframe {
-	border: 1px solid #ccc;
-	background: #fff;
-}
-
-img { height: auto !important; }
-
-/* lists */
-ul,
-ol {
-	margin: 0 0 1.6em 0;
-	padding: 0;
-}
-
-ul { margin: 0 0 1.6em 1em }
-
-// ul li { margin: 0 }
-
-ol li {
-	list-style: decimal;
-	margin: 0;
-	list-style-position: inside;
-}
-
-ul.l,
-ul.tags { margin-left: 0 }
-ul.tags li { display: inline }
-ul.tags li + li:before { content: ', ' }
-
-ul.l li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-/* blockquotes */
-blockquote {
-	margin: 1.61em -1.61em;
-	padding: 1.61em;
-	// font-style: italic;
-	background: #fcf9f2;
-	background: #f9f5e4;
-}
-
-blockquote p {
-	margin-bottom: 0;
-
-	& + & {
-		margin-top: 1.61;
-	}
-}
-// blockquote:before {
-// 	content: "“";
-// 	position: absolute;
-// 	margin-left: -0.6em;
-// 	font-size: 3em;
-// 	line-height: .8;
-// 	padding: 0;
-// }
-
-
-/* media queries */
-// @media (max-width: 49.5em) {
-// 	.container {
-// 		width: 75.75757576%;
-// 		margin: 12.12121212% auto;
-// 	}
-// 	h1 { margin-top: 15% }
-// }
-//
-// @media (max-width: 30em) {
-// 	.container {
-// 		width: 80%;
-// 		margin: 10% auto;
-// 	}
-// 	body {
-// 		font-size: 14px;
-// 		line-height: 1.71;
-// 	}
-// 	h1 { margin-top: 10% }
-// }
-
-/* code box */
-pre,
-code {
-	white-space: pre-wrap;
-	font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier;
-	font-variant-ligatures: contextual;
-	text-rendering: optimizeLegibility;
-}
-
-pre {
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
-	padding: 1.6em 0;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	// border-style: hidden;
-}
-th, td {
-	padding: .6em;
-
-	-ms-word-break: break-all;
-	word-break: break-all;
-
-	word-break: break-word;
-
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-}
-td, th {
-	border: 1px solid rgba(0, 0, 0, .1);
-}
-
-figure, iframe {
-	width: 100%;
-}
-
-
-/* links */
-
-a {
-	color:#008ACE;
-	text-decoration: none;
-	border-bottom: 1px solid;
-}
-
-a:link { border-color: #b2ccf0 }
-
-a:visited {
-	color:#B40EB4;
-	border-color: #e0b2e0;
-}
-
-a:hover {
-	color:#c00;
-	border-color: #f0b2b2 !important;
-}
-a:visited:hover{ color:#c00 }
-.dotted { border-bottom-style: dotted }
-
-
-
-// header
-
-.header {
-	height: 48px;
-	// line-height: 48px;
-	font-size: 12px;
-	font-family: Verdana;
-	margin-bottom: 48px;
-	overflow: hidden;
-
-	line-height: 1.2;
-
-	a {
-		margin: 0 12px;
-	}
-
-	.logo {
-		float: left;
-		border: 0;
-		// margin: -12px 12px -12px -16px;
-		margin: 0 12px 0 0;
-		color: #000;
-
-		&-text,
-		svg {
-			float: left;
-		}
-
-		&-text {
-			padding-top: 6px;
-			line-height: 1.4;
-
-			span {
-				// border-bottom: 1px solid rgba(0, 0, 0, .25);
-				display: inline;
-			}
-		}
-
-		svg {
-			fill: #c00;
-			margin-top: -12px;
-			margin-left: -16px;
-			margin-right: -8px;
-		}
-	}
-
-	nav {
-		padding-top: 13px;
-
-		a {
-			float: left;
-		}
-	}
 }

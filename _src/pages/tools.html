@@ -1,15 +1,19 @@
 ---
 layout: page
-title: Инструментарий разработчика
+title: Инструменты разработчика
 permalink: /tools/
-redirect_to:
-  - /blog/
 ---
 
-<ul>
-    {% for post in site.posts %}
-        {% if post.categories[0] == 'tools' %}
-            <li><a href="{{ post.url }}/">{{ post.title }}</a>
-        {% endif %}
-    {% endfor %}
-</ul>
+<p>
+    Пишу о инструментах, которые использую во время работы:
+    сторонние сервисы, программы, текстовые редакторы, плагины.
+</p>
+
+{% for post in site.categories.tools %}
+    {% include posts.html %}
+{% endfor %}
+
+<br>
+<p>
+    Следить за новыми статьями можно по <a href="#">РСС</a> или <a href="#">почтовой рассыке</a>.
+</p>

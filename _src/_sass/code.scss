@@ -1,0 +1,14 @@
+/* code box */
+pre,
+code {
+	white-space: pre-wrap;
+	font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+	font-variant-ligatures: contextual;
+	text-rendering: optimizeLegibility;
+}
+
+pre {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	padding: 1.6em 0;
+}

@@ -24,34 +24,31 @@
 	<title>Выравнивание блочного элемента по правому краю в CSS / Блог фронтенд разработчика</title>
 	<meta name="description" content="Способ горизонтального выравнивания по центру и правому краю для блочных элементов через CSS">
 
-	<style>*{box-sizing:border-box}.content>*,h5,h6{font-size:1em}body,html{overflow-x:hidden}body{margin:0;font:.9375em/1.6 Georgia,serif}.container{width:40em;margin:6.4em}iframe,img{max-width:100%;vertical-align:top}a{color:#c00;border-bottom:1px solid #c99;text-decoration:none}.visuallyhidden{overflow:hidden;position:absolute;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
-</style>
+	<link rel="alternate" href="/" hreflang="x-default">
 
-	<link rel="alternate" href="http://ymatuhin.ru/" hreflang="x-default">
-
-	<link rel="alternate" href="http://ymatuhin.ru/en/" hreflang="en">
+	<link rel="alternate" href="/en/" hreflang="en">
 
 
 	<!-- Feed and canonical -->
-<link rel="canonical" href="http://ymatuhin.ru/front-end/margin-align-right">
-<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="http://ymatuhin.ru/feed.xml">
+<link rel="canonical" href="/front-end/margin-align-right">
+<link rel="alternate" type="application/rss+xml" title="Юрий Матюхин" href="/feed.xml">
 
 	<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@ymatuhin">
 <meta name="twitter:creator" content="@ymatuhin">
 
 
-	<meta name="twitter:image" content="http://ymatuhin.ru/img/margin/margin_right_alignment.gif">
-	<link rel="image_src" href="http://ymatuhin.ru/img/margin/margin_right_alignment.gif" />
+	<meta name="twitter:image" content="/img/margin/margin_right_alignment.gif">
+	<link rel="image_src" href="/img/margin/margin_right_alignment.gif" />
 
 
 	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Выравнивание блочного элемента по правому краю в CSS / Блог фронтенд разработчика">
 <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article">
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://ymatuhin.ru/front-end/margin-align-right">
+<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/front-end/margin-align-right">
 <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Способ горизонтального выравнивания по центру и правому краю для блочных элементов через CSS">
 
 
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://ymatuhin.ru/img/margin/margin_right_alignment.gif">
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/img/margin/margin_right_alignment.gif">
 
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=XBBvdbz88w">
@@ -76,7 +73,7 @@
 
 	<meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//www.google-analytics.com/">
-<link rel="prefetch" href="http://ymatuhin.ru/css/syntax.css">
+<link rel="prefetch" href="/css/syntax.css">
 
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
@@ -84,47 +81,71 @@
 </head>
 
 
-	<div class="container">
-		<link rel="stylesheet" href="/css/style.css?v=0.003">
+	<style></style>
+<link rel="stylesheet" href='/css/style.css?v=1451764105695387000'>
 
-		<div role="main" class="content">
-			<article itemscope itemtype="http://schema.org/Article">
-	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/margin-align-right">
+<a href="/" rel="nofollow" class="logo">
+    <svg height="64px" version="1" viewBox="0 0 512.000000 512.000000" width="64px" xmlns="http://www.w3.org/2000/svg"><path d="M128 256v192h32v-32h32v-32h32v-32h64v32h32v32h32v32h32v-384h-256v192zm224-16v144h-32v-32h-32v-32h-64v32h-32v32h-32v-288h192v144z"/></svg>
+    <span class="js-to-home" style="display:none">На главную <i>⤴</i></span>
+    <script>
+        var toHome = document.querySelector('.js-to-home');
 
-	<h1 style="margin-bottom:0" itemprop="headline">Выравнивание блочного элемента по правому краю в CSS</h1>
-	<ol class="visuallyhidden" itemscope itemtype="http://schema.org/BreadcrumbList">
+        if (!localStorage.hideHome) toHome.style.display = '';
+        toHome.addEventListener('click', function () { localStorage.hideHome = true }, false);
+    </script>
+</a>
+
+<div role="main" class="content">
+    
+
+
+    
+
+<ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
 	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" href="/">
-			<span itemprop="name">Главная</span>
+		<a itemprop="item" rel="nofollow" href="/all/">
+			<span itemprop="name">Все записи</span>
 		</a>
 		<meta itemprop="position" content="1" />
 	</li>
+	
+	<li><small>→</small></li>
 	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" href="/blog/">
-			<span itemprop="name">Блог</span>
+		<a itemprop="item" rel="nofollow" href="/front-end/">
+			<small itemprop="name">
+				
+					Фронтенд
+				
+			</small>
 		</a>
 		<meta itemprop="position" content="2" />
 	</li>
-	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" href="/front-end/margin-align-right">
+	
+	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="visuallyhidden">
+		<a itemprop="item" rel="nofollow" href="/front-end/margin-align-right">
 			<span itemprop="name">Выравнивание блочного элемента по правому краю в CSS</span>
 		</a>
 		<meta itemprop="position" content="3" />
 	</li>
 </ol>
 
+<br>
+<br>
 
+
+
+<article itemscope itemtype="http://schema.org/Article">
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="/front-end/margin-align-right">
+
+	<h1 style="margin-bottom:0" itemprop="headline">Выравнивание блочного элемента по правому краю в CSS</h1>
 	
 
 
 <p>
-
-	<span class="js-updated-show" style="display: none;">Опубликовано: </span>
 	<meta itemprop="dateModified" content="2015-12-20">
 	<time itemprop="datePublished" datetime="2015-10-22">
 		
-		<em>22 октября, 2015</em
-		><em class="js-updated" style="display: none;">, обновлено</em>
+		22 октября 2015<small class="js-updated" style="display: none;">, обновлено</small>
 	</time>
 
 	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
@@ -134,9 +155,10 @@
 
 <script async src="/js/pub-date.js"></script>
 
+
 	<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-		<meta itemprop="url" content="http://ymatuhin.ru/favicon-96x96.png">
+		<meta itemprop="url" content="/favicon-96x96.png">
 		<meta itemprop="width" content="96">
 		<meta itemprop="height" content="96">
 	</div>
@@ -148,13 +170,13 @@
 		
 
 		
-			<a rel="nofollow" href="http://ymatuhin.ru/img/margin/margin_right_alignment.gif">
+			<a rel="nofollow" href="/img/margin/margin_right_alignment.gif">
 		
-			<img itemprop="contentUrl" src="http://ymatuhin.ru/img/margin/margin_right_alignment.gif"
+			<img itemprop="contentUrl" src="/img/margin/margin_right_alignment.gif"
 				 alt="Горизонтальное выравнивание в CSS" >
 		</a>
 
-		<meta itemprop="url" content="http://ymatuhin.ru/img/margin/margin_right_alignment.gif">
+		<meta itemprop="url" content="/img/margin/margin_right_alignment.gif">
 		
 			<meta itemprop="width" content="419">
 		
@@ -164,7 +186,7 @@
 		
 
 		
-			<figcaption itemprop="caption">«Горизонтальное выравнивание в CSS»</figcaption>
+			<figcaption itemprop="caption">Горизонтальное выравнивание в CSS</figcaption>
 		
 	</figure>
 
@@ -180,12 +202,12 @@
 
 <p>Для выравнивания блочных элементов по центру, используется метод через <code class="highlighter-rouge">margin</code> <code class="highlighter-rouge">auto</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">.</span><span class="nx">center</span> <span class="p">{</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="nx">auto</span><span class="p">;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nc">.center</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
 
-    <span class="cm">/* или */</span>
-    <span class="nx">margin</span><span class="o">-</span><span class="nx">left</span><span class="err">:</span> <span class="nx">auto</span><span class="p">;</span>
-    <span class="nx">margin</span><span class="o">-</span><span class="nx">right</span><span class="err">:</span> <span class="nx">auto</span><span class="p">;</span>
+    <span class="c">/* или */</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 </div>
@@ -194,11 +216,11 @@
 
 <p>Для выравнивания по правому краю, используйте значение <code class="highlighter-rouge">auto</code>, но только для левого отступа.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">.</span><span class="nx">right</span> <span class="p">{</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nx">auto</span><span class="p">;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nc">.right</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
 
-    <span class="cm">/* или */</span>
-    <span class="nx">margin</span><span class="o">-</span><span class="nx">left</span><span class="err">:</span> <span class="nx">auto</span><span class="p">;</span>
+    <span class="c">/* или */</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 </div>
@@ -224,708 +246,713 @@
 
 
 
-
-
-
+<br>
+<br>
 <aside>
-	
-		<h4>Похожие записи</h4>
-		<ul>
-			
-
-
-
-   
-	 
-
-	  
-	  
-		
-				
-					<li><nav><a rel="bookmark" href="/front-end/loading-font-face-css/">Управляем поведением font-face в CSS</a></nav>
-				
-			
-
-			
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-				
-					<li><nav><a rel="bookmark" href="/front-end/smartjs_started_a_course_on_architecture/">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a></nav>
-				
-			
-
-			
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-	   
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-				
-					<li><nav><a rel="bookmark" href="/front-end/11grade/">Одиннадцатиклассница, или фиксим баги с длинным текстом</a></nav>
-				
-			
-
-			
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-	 
-
-	  
-	  
-		
-				
-					<li><nav><a rel="bookmark" href="/front-end/convert_photoshop_letter_spacing_to_css/">Переносим межбуквенный интервал из Фотошопа в CSS</a></nav>
-				
-			
-
-			
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-	  
-		
-	  
-		
-	  
-	  
-
-	 
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-
-   
-
-
-		</ul>
-	
+    <h4>Похожие записи</h4>
+    <ul class="related">
+      
+    
+      
+        
+          
+            <li><a href="/front-end/loading-font-face-css">Управляем поведением font-face в CSS</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/smartjs_started_a_course_on_architecture">Старт курса по архитектуре JavaScript приложений в SmartJS академии</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+    
+      
+        
+          
+            <li><a href="/front-end/11grade">Одиннадцатиклассница, или фиксим баги с длинным текстом</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/convert_photoshop_letter_spacing_to_css">Переносим межбуквенный интервал из Фотошопа в CSS</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/retina_media_quires">Правильный сниппет медиа выражений для retina</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/frontend_diegest_1">Фронтенд дайджест #1 — Awesome lists, bower, regexp, RSS, Git</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/float_and_clearfix">Время обновить clearfix</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/height_transition_css">Анимируем высоту c auto в CSS через transition</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/font_smoothing_for_the_developer_and_user_on_mac_os">Сглаживание шрифтов для разработчика и пользователя на Mac OS</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/problems_of_the_extensions">Проблема верстки под современные браузеры или борьба с расширениями</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/faster_debug_css_with_pesticide">Быстрый дебаг CSS слоев с Pesticide</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/rem_vs_em">Еще одна статья про REM vs EM</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/tricks_with_svg_and_safe_use">Трюки с SVG и поддержка старыми браузерами</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+            <li><a href="/front-end/better_box_sizing">Международный день box-sizing и лучшие практики</a><br /></li>
+            
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+      
+        
+          
+        
+          
+        
+      
+    
+
+      
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </ul>
 </aside>
 
 
-		</div>
-
-		<nav>
-	<h5>Меню</h5>
-
-	<ul class="l">
-		
-			<li>
-				
-					<a rel="nofollow" href="/">Главная</a>
-				
-		
-
-		
-			<li>
-				
-					<a rel="nofollow" href="/blog/">Блог</a>
-				
-		
-
-		
-			<li>
-				
-					<a rel="nofollow" href="/books/">Книги</a>
-				
-		
-
-		
-			<li>
-				
-					<a rel="nofollow" href="/projects/">Проекты</a>
-				
-		
-	</ul>
-</nav>
 
 
-		<footer>
-			
-				<h5>Комментарии</h5>
-
+    <footer>
+        
+            <br>
+<br>
 <div id="disqus_thread">Загрузка…</div>
 <noscript>Пожалуйста влючите JavaScript чтобы увидеть &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;комментарии.&lt;/a&gt;</noscript>
 <script>
@@ -939,34 +966,27 @@
 	}
 </script>
 
-			
+        
 
-			<h6>Дополнительно</h6>
-
-<ul class="l">
-	<li>Новые записи по <a rel="nofollow" href="http://feeds.feedburner.com/ymatuhin/SHDd">RSS</a> или <a href="http://eepurl.com/bkY7hb" rel="nofollow">email</a>.
-
-	<li>
-		
-			<a href="/" rel="nofollow">Юрий Матюхин</a>, разработчик интерфейсов.
-		
-
-	<li>
-		Сайт работает на <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>
-		
-			с темой <a rel="nofollow" href="/dogma/">Dogma</a>,
-		
-		хостится на <a rel="nofollow" href="https://github.com/ymatuhin/ymatuhin.github.io">Github</a>.
-</ul>
-
-			<form action="http://www.google.com/search" class="search">
-	<input type="hidden" name="as_sitesearch" value="http://ymatuhin.ru ">
+        <address itemscope itemtype="http://schema.org/Person" class="copy">
+    <form action="http://www.google.com/search" class="search">
+	<input type="hidden" name="as_sitesearch" value=" ">
 	<input type="search" class="search__field" name="q" value="" placeholder="...">
     <button class="search__find">Найти</button>
 </form>
 
-		</footer>
-	</div>
+    <br>
+    <span class="copy__gray">© Юрий Матюхин, 2013 — 2015</span>
+    <br>
+    <span>
+        Эл. почта: <a itemprop="email" href="mailto:ymatuhin@yandex.ru" class="dotted">ymatuhin@yandex.ru</a>,
+        твиттер: <a itemprop="url" href="http://twitter.com/ymatuhin">@ymatuhin</a>.
+    </span>
+</address>
+
+    </footer>
+</div>
+
 
 	<script async defer src="/js/typo.js"></script>
 <script async defer src="/js/hints.js"></script>
