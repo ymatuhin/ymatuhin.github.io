@@ -4,8 +4,11 @@
       {% if post.url != page.url %}
         {% for tag in page.tags %}
           {% if post.tags contains tag %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
-            {% assign count = count | plus:'1' %}
+            {% unless temp_posts contains post.title %}
+              {% capture temp_posts %}{{ post.title }}{% endcapture %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+              {% assign count = count | plus:'1' %}
+            {% endunless %}
           {% endif %}
         {% endfor %}
       {% endif %}
