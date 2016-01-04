@@ -22,12 +22,10 @@
     if (isMac) separate[text] = '⌥';
 
     document.addEventListener('keydown', function(e) {
-        var _key = e.keyIdentifier.toLowerCase();
-        console.log('_key', _key);
-
+        var _key = (e.keyIdentifier || e.key).toLowerCase();
         if (!e.altKey) return;
 
-        if (_key == 'left' && prev) location.href = prev.href;
-        if (_key == 'right' && next) location.href = next.href;
+        if (_key.indexOf('left') >= 0 && prev) location.href = prev.href;
+        if (_key.indexOf('right') >= 0 && next) location.href = next.href;
     }, false);
 </script>
