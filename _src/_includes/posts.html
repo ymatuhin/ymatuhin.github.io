@@ -6,9 +6,13 @@
 {% assign thisMonth = post.date | date: "%-m" %}
 {% assign nextMonth = post.previous.date | date: "%-m" %}
 
-
 {% if forloop.first %}
-	<h3>{% assign m = thisMonth %}{% include month_full.html %}</h3>
+	<h3>
+		{% assign m = thisMonth %}{% include month_full.html %}
+		{% if this_year == next_year %}
+			{{ next_year }}
+		{% endif %}
+	</h3>
 	<ul>
 {% endif %}
 
@@ -21,13 +25,12 @@
 {% else %}
 	{% if this_year != next_year %}
 	</ul>
-	<h4>{{ next_year }}</h4>
-	<h3>{% assign m = nextMonth %}{% include month_full.html %}</h3>
+	<h3>{% assign m = nextMonth %}{% include month_full.html %} {{ next_year }}</h3>
 	<ul>
 	{% else %}
 		{% if this_month != next_month %}
 		</ul>
-		<h3>{% assign m = nextMonth %}{% include month_full.html %}</h3>
+		<h3>{% assign m = nextMonth %}{% include month_full.html %} {{ next_year }}</h3>
 		<ul>
 		{% endif %}
 	{% endif %}

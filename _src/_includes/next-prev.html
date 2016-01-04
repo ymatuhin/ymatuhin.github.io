@@ -1,0 +1,33 @@
+<div class="js-next-prev">
+    {% if page.previous.url %}
+        <a class="js-prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
+        ←
+    {% endif %}
+    <mark class="js-separate">alt</mark>
+
+    {% if page.next.url %}
+        →
+        <a class="js-next" href="{{page.next.url}}">{{page.next.title}}</a>
+    {% endif %}
+</div>
+
+<script>
+    var text = ('innerText' in document)? 'innerText' : 'textContent';
+    var box = document.querySelector('.js-next-prev');
+    var next = box.querySelector('.js-next');
+    var prev = box.querySelector('.js-prev');
+    var separate = box.querySelector('.js-separate');
+
+    var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+    if (isMac) separate[text] = '⌥';
+
+    document.addEventListener('keydown', function(e) {
+        var _key = e.keyIdentifier.toLowerCase();
+        console.log('_key', _key);
+
+        if (!e.altKey) return;
+
+        if (_key == 'left' && prev) location.href = prev.href;
+        if (_key == 'right' && next) location.href = next.href;
+    }, false);
+</script>

@@ -2,6 +2,8 @@
 {% capture related_posts %}
     {% for post in site.posts %}
       {% if post.url != page.url %}
+      {% if post.url != page.previous.url %}
+      {% if post.url != page.next.url %}
         {% for tag in page.tags %}
           {% if post.tags contains tag %}
             {% unless temp_posts contains post.title %}
@@ -12,6 +14,8 @@
           {% endif %}
         {% endfor %}
       {% endif %}
+      {% endif %}
+      {% endif %}
     {% endfor %}
 {% endcapture %}
 
@@ -19,10 +23,14 @@
     {% for post in site.posts %}
         {% if count <= 12 %}
             {% if post.url != page.url %}
+            {% if post.url != page.previous.url %}
+            {% if post.url != page.next.url %}
                 {% unless related_posts contains post.title %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
                     {% assign count = count | plus:'1' %}
                 {% endunless %}
+            {% endif %}
+            {% endif %}
             {% endif %}
         {% endif %}
     {% endfor %}
@@ -32,7 +40,7 @@
 <br>
 <br>
 <aside>
-    <h4>Похожие записи</h4>
+    <h4>Популярное</h4>
     <ul class="related">
       {{ related_posts }}
       {{ latest_posts }}

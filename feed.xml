@@ -6,9 +6,36 @@
     <author>Юрий Матюхин</author>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 Jan 2016 22:49:50 +0300</pubDate>
-    <lastBuildDate>Sun, 03 Jan 2016 22:49:50 +0300</lastBuildDate>
+    <pubDate>Mon, 04 Jan 2016 22:45:19 +0300</pubDate>
+    <lastBuildDate>Mon, 04 Jan 2016 22:45:19 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Fira Code: шрифт с лигатурами для кода</title>
+        
+            <description>&lt;p&gt;В языках программирования много составных операторов, таких как &lt;code class=&quot;highlighter-rouge&quot;&gt;:=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;===&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;!==&lt;/code&gt;. Это одна логическая единица, но она занимает 2 или 3 символа. Это затрудняет чтение и анализ кода, хоть мы и привыкли к этому.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tonsky/FiraCode&quot;&gt;Fira code&lt;/a&gt; - моноширинный шрифт, в котором используются лигатуры (объединяет несколько символов в один) для общих комбинаций символов в программировании. Это только визуальная надстройка, с которой читать и понимать код быстрее. Символы остаются такими-же, как и были до этого, только выглядят по другому.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;/tools/font-display&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Tue, 05 Jan 2016 00:00:00 +0300</pubDate>
+        <link>/tools/font-display</link>
+        <guid isPermaLink="true">/tools/font-display</guid>
+        
+        <category>font</category>
+        
+        <category>text editor</category>
+        
+        <category>settings</category>
+        
+        
+        <category>tools</category>
+        
+      </item>
     
       <item>
         <title>Управляем поведением font-face в CSS</title>
@@ -291,37 +318,6 @@
         <category>css</category>
         
         <category>выравнивание</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Одиннадцатиклассница, или фиксим баги с длинным текстом</title>
-        
-            <description>&lt;p&gt;Эта статья — логическое продолжение статьи «&lt;a href=&quot;http://habrahabr.ru/company/2gis/blog/246831/&quot;&gt;Одиннадцатиклассница, или тестируем баги вёрстки&lt;/a&gt;». В ней говорится о тестировании верстки с использованием длинных слов. Я расскажу о способах борьбы с этими багами и поделюсь букмарклетом для тестирования вашей верстки.&lt;/p&gt;
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;/front-end/11grade&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Fri, 16 Oct 2015 00:00:00 +0300</pubDate>
-        <link>/front-end/11grade</link>
-        <guid isPermaLink="true">/front-end/11grade</guid>
-        
-        <category>css</category>
-        
-        <category>одиннадцатиклассница</category>
-        
-        <category>баг</category>
-        
-        <category>фикс</category>
-        
-        <category>переносы</category>
-        
-        <category>многоточие</category>
         
         
         <category>front-end</category>

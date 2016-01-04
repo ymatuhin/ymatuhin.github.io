@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/tools/font-display</loc>
+    <lastmod>2016-01-04T22:45:08+03:00</lastmod>
+  </url>
+  <url>
     <loc>/front-end/loading-font-face-css</loc>
     <lastmod>2015-12-30T22:53:05+03:00</lastmod>
   </url>
@@ -293,15 +297,15 @@
     <lastmod>2016-01-02T22:48:33+03:00</lastmod>
   </url>
   <url>
-    <loc>/demo/11/</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
-  </url>
-  <url>
-    <loc>/demo/san_francisco/</loc>
+    <loc>/demo/animate_auto/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
     <loc>/demo/margin-right/</loc>
+    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+  </url>
+  <url>
+    <loc>/demo/san_francisco/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
@@ -313,7 +317,7 @@
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
-    <loc>/demo/animate_auto/</loc>
+    <loc>/demo/11/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
