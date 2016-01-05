@@ -1,12 +1,8 @@
-{% if page.url != '/all/' %}
-
 <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-		<a itemprop="item" rel="nofollow" href="/all/">
-			<span itemprop="name">Все записи</span>
-		</a>
-		<meta itemprop="position" content="1" />
-	</li>
+	{% if page.url != '/all/' %}
+		<li><a rel="nofollow" href="/all/">Все записи</a></li>
+	{% endif %}
+
 	{% if page.categories %}
 	<li><small>→</small></li>
 	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -23,17 +19,16 @@
 				{% endif %}
 			</small>
 		</a>
-		<meta itemprop="position" content="2" />
+		<meta itemprop="position" content="1" />
 	</li>
 	{% endif %}
 	<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="visuallyhidden">
 		<a itemprop="item" rel="nofollow" href="{{ page.url }}">
 			<span itemprop="name">{{ page.title }}</span>
 		</a>
-		<meta itemprop="position" content="3" />
+		<meta itemprop="position" content="2" />
 	</li>
 </ol>
 
 <br>
 <br>
-{% endif %}
