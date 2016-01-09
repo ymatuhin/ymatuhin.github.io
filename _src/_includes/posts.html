@@ -9,7 +9,7 @@
 {% if forloop.first %}
 	<h3>
 		{% assign m = thisMonth %}{% include month_full.html %}
-		{% if this_year == next_year %}
+		{% if this_year != next_year %}
 			{{ next_year }}
 		{% endif %}
 	</h3>
