@@ -65,7 +65,7 @@ imageTitle: Джордж Оруэлл — 1984
 ## Сервисы
 1. [Это кеш. Определенно, кеш][21]{:rel='nofollow'} — куда посылать клиентов, которые не видят правок.
 1. ![](/img/en.gif) [Inline-css][4]{:rel='nofollow'} — сервис для заинлайнивания CSS свойств. Нужен для email рассылок.
-1. ![](/img/en.gif) [Instacode][16]{:rel='nofollow'} — генератор изображений с кодом, пример шапке статьи «[Что нужно знать и уметь front end разработчику в 2015/2016](http://ymatuhin.ru/front-end/what_front_end_developer_need_to_know_in_2015-2016/)».
+1. ![](/img/en.gif) [Instacode][42]{:rel='nofollow'} — генератор изображений с кодом, пример шапке статьи «[Что нужно знать и уметь front end разработчику в 2015/2016](http://ymatuhin.ru/front-end/what_front_end_developer_need_to_know_in_2015-2016/)».
 1. ![](/img/en.gif) [Баг репортинг для интернета][20]{:rel='nofollow'}
 1. ![](/img/en.gif) [Анимированные визуализации структур данных][25]{:rel='nofollow'}
 1. ![](/img/en.gif) Букмарклет для [тестирование сайта по медиа выражениям][27]{:rel='nofollow'}
@@ -115,3 +115,4 @@ imageTitle: Джордж Оруэлл — 1984
 [39]: https://reactforbeginners.com/
 [40]: https://twitter.com/moox/status/672429852163706880
 [41]: https://github.com/roman01la/anybar-webpack/blob/master/README.md
+[42]: http://instacod.es/
