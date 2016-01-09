@@ -1,11 +1,15 @@
+{% if include.url %}
 <figure itemscope itemtype="http://schema.org/VideoObject">
-	{% if include.url %}
 		<iframe itemprop="contentUrl"
 				src="http://www.youtube.com/embed/{{ include.url | replace: 'https://www.youtube.com/watch?v=', '' }}"
 				width="{{ include.width }}"
 				height="{{ include.height }}"
+				scrolling="no"
 				frameborder="0"
-				allowfullscreen></iframe>
-	{% endif %}
+				allowtransparency
+				allowfullscreen>
+			Загружаю…
+		</iframe>
 	<figcaption itemprop="name">{{ include.caption }}</figcaption>
 </figure>
+{% endif %}

@@ -1,0 +1,18 @@
+{% if include.url %}
+<figure>
+		<iframe src="{{ include.url }}"
+				{% if include.width %}
+					width="{{ include.width }}"
+				{% else %}
+					width="100%"
+				{% endif %}
+				{% if include.height %}
+					height="{{ include.height }}"
+				{% endif %}
+				frameborder="0"
+				allowfullscreen>
+			Загружаю…
+		</iframe>
+	<figcaption>{{ include.caption }}</figcaption>
+</figure>
+{% endif %}

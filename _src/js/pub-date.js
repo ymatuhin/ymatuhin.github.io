@@ -1,5 +1,5 @@
-var mod = document.querySelector('meta[itemprop="dateModified"]').getAttribute('content');
-var pub = document.querySelector('time[itemprop="datePublished"]').getAttribute('datetime');
+var mod  = document.querySelector('meta[itemprop="dateModified"]').getAttribute('content');
+var pub  = document.querySelector('time[itemprop="datePublished"]').getAttribute('datetime');
 var _mod = new Date(mod);
 var _pub = new Date(pub);
 

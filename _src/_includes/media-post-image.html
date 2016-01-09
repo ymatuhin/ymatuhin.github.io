@@ -1,6 +1,6 @@
 {% if page.image %}
 	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-		{% capture url %}{{ page.image | prepend: '/img/' | prepend: site.url }}{% endcapture %}
+		{% capture url %}{{ page.image | prepend: '/img/' }}{% endcapture %}
 
 		{% if page.imageLink %}
 			<a rel="nofollow" href="{{ page.imageLink }}">
@@ -8,7 +8,8 @@
 			<a rel="nofollow" href="{{ url }}">
 		{% endif %}
 			<img itemprop="contentUrl" src="{{ url }}"
-				 alt="{{ page.imageCaption }}" {% if page.imageSpace %}style="padding: 1.6em"{% endif %}>
+				 alt="{{ page.imageCaption }}"
+				 style="{% if page.imageSpace %}padding: 1.6em;{% endif %}">
 		</a>
 
 		<meta itemprop="url" content="{{ url }}">
