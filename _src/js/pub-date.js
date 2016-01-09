@@ -1,9 +1,7 @@
-var mod  = document.querySelector('meta[itemprop="dateModified"]').getAttribute('content');
-var pub  = document.querySelector('time[itemprop="datePublished"]').getAttribute('datetime');
-var _mod = new Date(mod);
-var _pub = new Date(pub);
+var mod  = new Date(document.querySelector('meta[itemprop="dateModified"]').getAttribute('content'));
+var pub  = new Date(document.querySelector('time[itemprop="datePublished"]').getAttribute('datetime'));
 
-var today = new Date();
+var days = Math.floor((new Date() - mod)/(1000*60*60*24));
 var updText = document.querySelector('.js-updated');
 
 function declOfNum(number, titles) {
@@ -11,9 +9,8 @@ function declOfNum(number, titles) {
 	return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
 }
 
-if (_mod >= _pub) {
+if (mod > pub) {
 	var _txt = updText.innerText;
-	var days = Math.round((today - _mod)/(1000*60*60*24));
 	var shownText = '';
 
 	if (days == 0) {
