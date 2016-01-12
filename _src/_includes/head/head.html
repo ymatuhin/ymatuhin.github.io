@@ -8,6 +8,11 @@
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}">
 
+	<script>
+		if (window.location.protocol != "https:")
+			window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+	</script>
+
 	{% include head/meta_lang.html %}
 	{% include head/meta_rss.html %}
 	{% include head/meta_twitter.html %}
