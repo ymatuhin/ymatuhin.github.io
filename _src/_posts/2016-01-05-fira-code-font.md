@@ -5,6 +5,9 @@ categories: tools
 description: Моноширинный шрифт Fira Code объединяет конструкции языков программирования из нескольких символов в один, визуально понятный и приятный.
 tags: [font, text editor, settings]
 
+redirect_from:
+  - /tools/font-display/
+
 image: fira-code/fira-code.png
 imageWidth: 600
 imageHeight: 340
