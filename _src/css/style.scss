@@ -65,3 +65,9 @@ img[src="/img/en.gif"] {
 	border: 0;
 	vertical-align: middle;
 }
+
+@media (max-width: 600px) {
+	.content {
+		padding-top: 60px;
+	}
+}

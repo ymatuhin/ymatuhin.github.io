@@ -4,7 +4,7 @@ html, body { overflow-x: hidden; }
 body { margin: 0; font: .9375em/1.6 "PT Serif", Georgia, serif; }
 .container { width: 40em; margin: 6.4em; }
 img, iframe { max-width: 100%; vertical-align: top; }
-a { color: #C00; border-bottom: 1px solid #c99; text-decoration: none; }
+a { color: #FD6C6C; border-bottom: 1px solid #c99; text-decoration: none; }
 .visuallyhidden {
 	overflow: hidden;
 	position: absolute;

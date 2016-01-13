@@ -2,7 +2,7 @@
 ---
 
 * { box-sizing: border-box; }
-html { border-top: 3px solid #c00; }
+html { border-top: 3px solid #FD6C6C; }
 body {
 	padding: 6%;
 	margin: 0;
@@ -21,10 +21,10 @@ a:visited {
 	border-color: #e0b2e0;
 }
 a:hover {
-	color:#c00;
+	color:#FD6C6C;
 	border-color: #f0b2b2;
 }
-a:visited:hover{ color:#c00 }
+a:visited:hover{ color:#FD6C6C }
 .dotted { border-bottom-style: dotted }
 
 // Content
@@ -124,7 +124,7 @@ p {
 }
 
 .red {
-	color: #c00;
+	color: #FD6C6C;
 }
 
 .gridlover-grid {
