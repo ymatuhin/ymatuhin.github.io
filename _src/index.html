@@ -25,7 +25,7 @@ description: >
             <h3><a href="/front-end/">Фронтенд</a></h3>
             <nav>
                 <ul>
-                    {% for post in site.categories.front-end limit:6 %}
+                    {% for post in site.categories.front-end limit:10 %}
                         <li><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
                     {% endfor %}
                 </ul>
@@ -35,7 +35,7 @@ description: >
             <h3><a href="/tools/">Инструменты</a></h3>
             <nav>
                 <ul>
-                    {% for post in site.categories.tools limit:7 %}
+                    {% for post in site.categories.tools limit:10 %}
                         <li><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
                     {% endfor %}
                 </ul>
@@ -45,7 +45,7 @@ description: >
             <h3><a href="/blog/">Разное</a></h3>
             <nav>
                 <ul>
-                    {% for post in site.categories.blog limit:4 %}
+                    {% for post in site.categories.blog limit:8 %}
                         <li><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
                     {% endfor %}
                 </ul>
@@ -54,7 +54,7 @@ description: >
             <br>
             <h4><a href="/books/">Книги</a></h4>
             <ul>
-                {% for post in site.categories.books limit:3 %}
+                {% for post in site.categories.books limit:2 %}
                     <li><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
                 {% endfor %}
             </ul>
