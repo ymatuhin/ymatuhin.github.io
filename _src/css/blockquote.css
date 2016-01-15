@@ -1,0 +1,8 @@
+blockquote {
+	margin: 1.61em -1.61em;
+	padding: 1.61em;
+	background: #f9f5e4;
+}
+
+blockquote p { margin-bottom: 0; }
+blockquote p + p { margin-top: 1.61em; }

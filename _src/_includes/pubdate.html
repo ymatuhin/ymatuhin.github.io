@@ -1,16 +1,14 @@
 {% capture last_mod %}{{page.last_modified_at | date: '%Y-%m-%d'}}{% endcapture %}
 {% capture pub_date %}{{page.date | date: '%Y-%m-%d'}}{% endcapture %}
 
-<p>
-	<meta itemprop="dateModified" content="{{ last_mod }}">
-	<time itemprop="datePublished" datetime="{{ pub_date }}">
-		{% assign m = page.date | date: "%-m" %}
-		{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}<small class="js-updated" style="display: none;">, обновлено</small>
-	</time>
+<meta itemprop="dateModified" content="{{ last_mod }}">
+<time itemprop="datePublished" datetime="{{ pub_date }}">
+	{% assign m = page.date | date: "%-m" %}
+	{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}<small class="js-updated" style="display: none;">, обновлено</small>
+</time>
 
-	<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
-		<meta itemprop="name" content="{{ site.title }}"></meta>
-	</a>
-</p>
+<a rel="author" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+	<meta itemprop="name" content="{{ site.title }}"></meta>
+</a>
 
 <script async src="/js/pub-date.js"></script>

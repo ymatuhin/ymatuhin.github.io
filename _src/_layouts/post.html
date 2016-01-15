@@ -3,13 +3,11 @@ layout: page
 is_post: true
 ---
 
-{% include breadcrumbs.html %}
-
 <article itemscope itemtype="http://schema.org/Article">
 	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ page.url }}">
 
-	<h1 style="margin-bottom:0" itemprop="headline">{{ page.title }}</h1>
-	{% include pubdate.html %}
+	<!-- <h1 style="margin-bottom:0" itemprop="headline">{{ page.title }}</h1>
+	{% include pubdate.html %} -->
 
 	{% include publisher.html %}
 	{% include media-post-image.html %}

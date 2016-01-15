@@ -1,6 +1,8 @@
 <address itemscope itemtype="http://schema.org/Person" class="copy">
-    {% include search.html %}
+    {% if page.is_post %}
+        {% include search.html %}
     <br>
+    {% endif %}
     <span class="copy__gray">© Юрий Матюхин, 2013 — 2015</span>
     <br>
     <span>

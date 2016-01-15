@@ -1,0 +1,4 @@
+figure { display: block; text-align: left; margin-top: -1px }
+figure img,
+figure iframe { margin: 0; display: block; }
+figure figcaption { margin-top: .8em; color: #AAA; }

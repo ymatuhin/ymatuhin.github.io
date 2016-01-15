@@ -1,4 +1,4 @@
-function typo () {
+function typo() {
 	var ct = document.querySelector('.content');
 	var sel = 'p';
 
@@ -9,7 +9,7 @@ function typo () {
 		for (var i = 0; i < elements.length; i++) fn(elements[i], i);
 	}
 
-	forEachElement(sel, function(el, i){
+	forEachElement(sel, function(el, i) {
 		var text = ('innerText' in el) ? 'innerText' : 'textContent';
 		if (el[text] == '') return;
 

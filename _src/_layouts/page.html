@@ -1,38 +1,19 @@
 ---
 layout: default
+is_page: true
 ---
 
-<style>{% include inline.min.css %}</style>
-<link rel="stylesheet" href='/css/style.css?v={{site.time | date: "%s%N"}}'>
+<div class="content">
+	<h1>{{ page.title }}</h1>
+    {% include pubdate.html %}
+</div>
 
-<a href="/" rel="nofollow" class="logo">
-    <svg height="64px" version="1" viewBox="0 0 512.000000 512.000000" width="64px" xmlns="http://www.w3.org/2000/svg"><path d="M128 256v192h32v-32h32v-32h32v-32h64v32h32v32h32v32h32v-384h-256v192zm224-16v144h-32v-32h-32v-32h-64v32h-32v32h-32v-288h192v144z"/></svg>
-    <!-- <span class="js-to-home" style="display:none">На главную <i>⤴</i></span>
-    <script>
-        var toHome = document.querySelector('.js-to-home');
-
-        if (!localStorage.hideHome) toHome.style.display = '';
-        toHome.addEventListener('click', function () { localStorage.hideHome = true }, false);
-    </script> -->
-</a>
+{% include menu.html %}
 
 <div role="main" class="content">
     {% unless page.is_post %}
-        {% include breadcrumbs.html %}
-
         <h1>{{ page.title }}</h1>
-        <br>
     {% endunless %}
 
-
     {{ content }}
-
-
-    <footer>
-        {% if page.is_post %}
-            {% include comments.html %}
-        {% endif %}
-
-        {% include footer.html %}
-    </footer>
 </div>
