@@ -1,5 +1,7 @@
 <!-- Title -->
-{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' }} / {% if page.categories %}Блог фронтенд разработчика{% else %}{{ site.title }}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+{% capture page_title %}
+{% if page.title %}{{ page.title | replace: ' ', ' ' }} / {% if page.categories %}Блог фронтенд разработчика{% else %}{% if page.url == '/index.html' or page.url == '/' %}{% else %}{{ site.title }}{% endif %}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}
+{% endcapture %}
 
 
 <!-- Description -->
