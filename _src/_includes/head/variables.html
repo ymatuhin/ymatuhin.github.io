@@ -1,6 +1,6 @@
 <!-- Title -->
 {% capture page_title %}
-{% if page.title %}{{ page.title | replace: ' ', ' ' }} / {% if page.categories %}Блог фронтенд разработчика{% else %}{% if page.url == '/index.html' or page.url == '/' %}{% else %}{{ site.title }}{% endif %}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}
+{% if page.title %}{{ page.title | replace: ' ', ' ' }} / {% if page.categories %}Блог фронтенд разработчика{% else %}{% if page.url == '/index.html' or page.url == '/' %}Фронтенд разработчик{% else %}{{ site.title }}{% endif %}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}
 {% endcapture %}
 
 
