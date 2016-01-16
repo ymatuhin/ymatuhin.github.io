@@ -16,7 +16,7 @@ body {
 	overflow-wrap: break-word;
 
 	transition: opacity .3s ease-in-out;
-	opacity: 1;
+	opacity: 1 !important;
 }
 
 @media screen and (max-width:990px) {
