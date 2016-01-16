@@ -1,8 +1,6 @@
 window.loadFile=function(){var a=document.getElementsByTagName("link"),e=document.getElementsByTagName("script"),k=document.getElementsByTagName("head")[0],b={b:!0,c:!0};return function(l,n){var d=l.slice(l.lastIndexOf(".")+1),c;if(c=d){b[d]=!0;c="js"==d?e:a;for(var m=0;m<c.length;m++)c[m].href==l&&(b[d]=!1);c=b[d]}c&&(c=document.createElement("css"==d?"link":"script"),n&&(c.onload=n),"css"==d&&(c.rel="stylesheet"),"css"==d&&(c.href=l),"js"==d&&(c.src=l),"js"==d&&(c.async=!0),k.appendChild(c))}}();
 window.preloadUrl=function(){var a=document.getElementsByTagName("link");return function(e,k){var b;if(b=k){a:{for(b=0;b<a.length;b++)if(arr[b].href==k&&"prerender"==arr[b].rel){b=!1;break a}b=!0}b=!b}b&&(b=document.createElement("link"),b.setAttribute("rel","prerender"),b.setAttribute("href",k),document.getElementsByTagName("head")[0].appendChild(b))}};
 
-k()}a[g](e+"DOMContentLoaded",d,!1);a[g](e+"readystatechange",d,!1);b[g](e+"load",d,!1)}};
-
 var resources = {
 	'html, body'            : '/css/document.css',
 	'a'                     : '/css/links.css',
@@ -52,7 +50,12 @@ function startLoading () {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+function ready(fn) {
+	if ( document.readyState === "complete" ) fn();
+	else setTimeout(function () { ready(fn) }, 10 );
+}
+
+ready(function () {
 	startLoading();
 
 	document.addEventListener("mousemove", function (e) {
