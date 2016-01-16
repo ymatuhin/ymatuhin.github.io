@@ -91,7 +91,6 @@
 
 	<!-- animate show and hide -->
 	<style>body { opacity: 0}</style>
-	<script src="/js/script.min.js?v=0.01" async></script>
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -1489,6 +1488,13 @@
 
 </div>
 
+
+	<script>window.loadFile=function(){var a=document.getElementsByTagName("link"),e=document.getElementsByTagName("script"),f=document.getElementsByTagName("head")[0],b={b:!0,c:!0};return function(g,k){var d=g.slice(g.lastIndexOf(".")+1),c;if(c=d){b[d]=!0;c="js"==d?e:a;for(var h=0;h<c.length;h++)c[h].href==g&&(b[d]=!1);c=b[d]}c&&(c=document.createElement("css"==d?"link":"script"),k&&(c.onload=k),"css"==d&&(c.rel="stylesheet"),"css"==d&&(c.href=g),"js"==d&&(c.src=g),"js"==d&&(c.async=!0),f.appendChild(c))}}();
+window.preloadUrl=function(){var a=document.getElementsByTagName("link");return function(e,f){var b;if(b=f){a:{for(b=0;b<a.length;b++)if(arr[b].href==f&&"prerender"==arr[b].rel){b=!1;break a}b=!0}b=!b}b&&(b=document.createElement("link"),b.setAttribute("rel","prerender"),b.setAttribute("href",f),document.getElementsByTagName("head")[0].appendChild(b))}};
+var l={"html, body":"/css/document.css",a:"/css/links.css",".menu, .menu_page":"/css/menu.css","h1, h2, h3, h4, h5, h6":"/css/heading.css",".content":"/css/content.css",".content_index":"/css/content_index.css","img, iframe":"/css/media.css",time:"/css/time.css",figure:"/css/figure.css","ol,ul":"/css/lists.css","code, pre":"/css/code.css",blockquote:"/css/blockquote.css",mark:"/css/mark.css",hr:"/css/hr.css",table:"/css/tables.css",".profile":"/css/profile.css",".projects":"/css/projects.css",".highlighter-rouge":"/css/syntax.css",
+".related":"/css/related.css",".footer":"/css/footer.css",".search":"/css/search.css",".visuallyhidden":"/css/visuallyhidden.css",".comments":"https://ymatuhin.disqus.com/embed.js",html:["/js/hints.js","/js/typo.js","/css/lettering.css"],".likely":["/css/likely.css","/js/likely.js"]};function m(){for(res in l){var a=l[res];if(!document.querySelector(res))preloadUrl(a);else if("string"==typeof a)loadFile(a);else if(a&&1<=a.length)for(var e=0;e<a.length;e++)loadFile(a[e])}}
+function n(a){"complete"===document.readyState?a():setTimeout(function(){n(a)},10)}n(function(){m();document.addEventListener("mousemove",function(a){a.target.href&&-1!=a.target.href.indexOf(location.host)&&preloadUrl(a.target.href)});document.addEventListener("mousedown",function(a){a.target.href&&!a.metaKey&&(document.getElementsByTagName("body")[0].style.opacity=0)});loadFile("//www.google-analytics.com/analytics.js",function(){ga("create","UA-20899801-7","auto");ga("send","pageview")})});
+</script>
 
 	<!-- Fall back to all css -->
 	<script>if (!document.querySelector || !document.readyState) document.write('<link rel="stylesheet" href="/css/all.css">')</script>
