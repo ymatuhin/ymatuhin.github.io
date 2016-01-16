@@ -1,0 +1,7 @@
+img, iframe { max-width: 100%; vertical-align: top; }
+img,
+iframe {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+img { height: auto !important; }

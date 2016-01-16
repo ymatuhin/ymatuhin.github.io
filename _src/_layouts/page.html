@@ -3,17 +3,22 @@ layout: default
 is_page: true
 ---
 
-<div class="content">
-	<h1>{{ page.title }}</h1>
-    {% include pubdate.html %}
-</div>
-
-{% include menu.html %}
-
 <div role="main" class="content">
-    {% unless page.is_post %}
-        <h1>{{ page.title }}</h1>
-    {% endunless %}
+	<h1>{{ page.title }}</h1>
 
-    {{ content }}
+	{% if page.is_post %}
+		{% include pubdate.html %}
+	{% endif %}
+
+	{% include menu.html %}
+
+	<div class="text-content">
+		{{ content }}
+	</div>
+
+	{% if page.is_post %}
+		{% include comments.html %}
+	{% endif %}
+
+	{% include footer.html %}
 </div>

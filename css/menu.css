@@ -1,0 +1,21 @@
+/* menu */
+.menu{background:#ecf2f8;padding:5px 13px 7px;border-radius:4px;margin:24px 0 12px -13px;font-size:0;line-height:14px}
+.menu,.menu li{display:inline-block}
+.menu li{font-size:14px;line-height:24px;margin: 0;}
+.menu li:after{content: '\2022';font-size:14px;line-height:2px;vertical-align:middle;padding:0 10px;}
+.menu li:last-child:after{padding:0;content:'';font-size:0}
+@media screen and (max-width:990px){
+	.menu{margin:24px 0 12px 97px}
+	.menu_page{ margin-left: -13px}
+}
+@media screen and (max-width:700px){
+	.menu{margin:24px 0 12px -13px}
+}
+@media screen and (max-width:550px){
+	.menu{display:block;padding:13px 12px 9px 24px;margin:24px -24px 0 -24px;border-radius:0}
+	.menu li{padding-bottom:7px}
+	.menu li:after{color:#ecf2f8}
+}
+
+.menu_page { margin-top: 24px; margin-bottom: 36px; }
+h1 + .menu_page { margin-top: 12px}

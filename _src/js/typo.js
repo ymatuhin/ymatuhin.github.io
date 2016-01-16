@@ -1,5 +1,5 @@
 function typo() {
-	var ct = document.querySelector('.content');
+	var ct = document.querySelector('.text-content');
 	var sel = 'p';
 
 	if (!ct || ct.querySelector('.elka, .lapka, .skobka') !== null) return;

@@ -8,7 +8,7 @@
           {% if post.tags contains tag %}
             {% unless temp_posts contains post.title %}
               {% capture temp_posts %}{{ post.title }}{% endcapture %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+              <li><a rel="nofollow" href="{{ post.url }}">{{ post.title }}</a><br /></li>
               {% assign count = count | plus:'1' %}
             {% endunless %}
           {% endif %}
@@ -26,7 +26,7 @@
             {% if post.url != page.previous.url %}
             {% if post.url != page.next.url %}
                 {% unless related_posts contains post.title %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+                    <li><a rel="nofollow" href="{{ post.url }}">{{ post.title }}</a><br /></li>
                     {% assign count = count | plus:'1' %}
                 {% endunless %}
             {% endif %}
@@ -37,7 +37,6 @@
 {% endcapture %}
 
 
-<br>
 <br>
 <aside>
     <h4>Популярное</h4>

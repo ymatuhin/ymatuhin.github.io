@@ -66,7 +66,7 @@ imageCaption: Гайд по стилю кода на JavaScript от AirBnB
 <li><code>undefined</code></li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> foo <span class="k">=</span> <span class="c1">1</span>,
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> foo <span class="k">=</span> <span class="c1">1</span>,
     bar <span class="k">=</span> foo;
 
 bar <span class="k">=</span> <span class="c1">9</span>;
@@ -80,7 +80,7 @@ bar <span class="k">=</span> <span class="c1">9</span>;
 <li><code>function</code></li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> foo <span class="k">=</span> [<span class="c1">1</span>, <span class="c1">2</span>],
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> foo <span class="k">=</span> [<span class="c1">1</span>, <span class="c1">2</span>],
     bar <span class="k">=</span> foo;
 
 bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span>;
@@ -95,14 +95,14 @@ bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span
 <ul>
 <li><p>Для создания объекта используйте фигурные скобки. Не создавайте объекты через конструктор <code>new Object</code>.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> item <span class="k">=</span> <span class="k">new</span> <span class="en">Object</span>();
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> item <span class="k">=</span> {};</pre></div></li>
 <li><p>Не используйте <a rel="nofollow" href="http://es5.github.io/#x7.6.1">зарезервированные слова</a> в качестве ключей объектов. Они не будут работать в IE8. <a rel="nofollow" href="http://github.com/airbnb/javascript/issues/61">Подробнее</a></p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> superman <span class="k">=</span> {
   <span class="k">default</span><span class="k">:</span> { clark<span class="k">:</span> <span class="s"><span class="pds">'</span>kent<span class="pds">'</span></span> },
   private<span class="k">:</span> <span class="c1">true</span>
@@ -115,7 +115,7 @@ bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span
 };</pre></div></li>
 <li><p>Не используйте ключевые слова (в том числе измененные). Вместо них используйте синонимы.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> superman <span class="k">=</span> {
   class<span class="k">:</span> <span class="s"><span class="pds">'</span>alien<span class="pds">'</span></span>
 };
@@ -138,14 +138,14 @@ bar[<span class="c1">0</span>] <span class="k">=</span> <span class="c1">9</span
 <ul>
 <li><p>Для создания массива используйте квадратные скобки. Не создавайте массивы через конструктор <code>new Array</code>.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> items <span class="k">=</span> <span class="k">new</span> <span class="en">Array</span>();
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> items <span class="k">=</span> [];</pre></div></li>
 <li><p>Если вы не знаете длину массива, используйте Array::push.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> someStack <span class="k">=</span> [];
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> someStack <span class="k">=</span> [];
 
 
 <span class="c">// плохо</span>
@@ -155,7 +155,7 @@ someStack[someStack.<span class="c1">length</span>] <span class="k">=</span> <sp
 someStack.<span class="c1">push</span>(<span class="s"><span class="pds">'</span>abracadabra<span class="pds">'</span></span>);</pre></div></li>
 <li><p>Если вам необходимо скопировать массив, используйте Array::slice. <a rel="nofollow" href="http://jsperf.com/converting-arguments-to-an-array/7">jsPerf</a></p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> len <span class="k">=</span> items.<span class="c1">length</span>,
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> len <span class="k">=</span> items.<span class="c1">length</span>,
     itemsCopy <span class="k">=</span> [],
     i;
 
@@ -168,7 +168,7 @@ someStack.<span class="c1">push</span>(<span class="s"><span class="pds">'</span
 itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre></div></li>
 <li><p>Чтобы скопировать похожий по свойствам на массив объект (например, NodeList или Arguments), используйте Array::slice.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">trigger</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">trigger</span>() {
   <span class="k">var</span> args <span class="k">=</span> <span class="c1">Array</span>.<span class="c1">prototype</span>.slice.<span class="c1">call</span>(arguments);
   ...
 }</pre></div>
@@ -181,7 +181,7 @@ itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre><
 <ul>
 <li><p>Используйте одинарные кавычки <code>''</code> для строк.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> name <span class="k">=</span> <span class="s"><span class="pds">"</span>Боб Дилан<span class="pds">"</span></span>;
 
 <span class="c">// хорошо</span>
@@ -195,7 +195,7 @@ itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre><
 <li><p>Строки длиннее 80 символов нужно разделять, выполняя перенос через конкатенацию строк.</p></li>
 <li><p>Осторожно: строки с большим количеством конкатенаций могут отрицательно влиять на быстродействие. <a rel="nofollow" href="http://jsperf.com/ya-string-concat">jsPerf</a> и <a rel="nofollow" href="http://github.com/airbnb/javascript/issues/40">Обсуждение</a></p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> errorMessage <span class="k">=</span> <span class="s"><span class="pds">'</span>Эта сверхдлинная ошибка возникла из-за белой обезъяны. Не говори про обезъяну! Не слушай об обезьяне! Не думай об обезъяне!<span class="pds">'</span></span>;
 
 <span class="c">// плохо</span>
@@ -209,7 +209,7 @@ itemsCopy <span class="k">=</span> items.<span class="c1">slice</span>();</pre><
   <span class="s"><span class="pds">'</span>Не думай об обезъяне!<span class="pds">'</span></span>;</pre></div></li>
 <li><p>Когда строка создается программным путем, используйте Array::join вместо объединения строк. В основном для IE: <a rel="nofollow" href="http://jsperf.com/string-vs-array-concat/2">jsPerf</a>.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> items,
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> items,
     messages,
     length,
     i;
@@ -257,7 +257,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 <ul>
 <li><p>Объявление функций:</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// объявление анонимной функции</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// объявление анонимной функции</span>
 <span class="k">var</span> <span class="en">anonymous</span> <span class="k">=</span> <span class="k">function</span>() {
   <span class="k">return</span> <span class="c1">true</span>;
 };
@@ -274,7 +274,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 <li>Никогда не объявляйте функцию внутри блока кода — например в if, while, else и так далее. Единственное исключение — блок функции. Вместо этого присваивайте функцию уже объявленной через <code>var</code> переменной. Условное объявление функций работает, но в различных браузерах работает по-разному.</li>
 <li><p><strong>Примечание</strong> ECMA-262 устанавливает понятие <code>блока</code> как списка операторов. Объявление функции (не путайте с присвоением функции переменной) не является оператором. <a rel="nofollow" href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97">Комментарий по этому вопросу в ECMA-262</a>.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">if</span> (currentUser) {
   <span class="k">function</span> <span class="en">test</span>() {
     <span class="en">console</span><span class="c1">.log</span>(<span class="s"><span class="pds">'</span>Плохой мальчик.<span class="pds">'</span></span>);
@@ -290,7 +290,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 }</pre></div></li>
 <li><p>Никогда не используйте аргумент функции <code>arguments</code>, он будет более приоритетным над объектом <code>arguments</code>, который доступен без объявления для каждой функции.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span> <span class="en">nope</span>(<span class="smi">name</span>, <span class="smi">options</span>, <span class="smi">arguments</span>) {
   <span class="c">// ...код...</span>
 }
@@ -308,7 +308,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 <ul>
 <li><p>Используйте точечную нотацию для доступа к свойствам и методам.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> luke <span class="k">=</span> {
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> luke <span class="k">=</span> {
   jedi<span class="k">:</span> <span class="c1">true</span>,
   age<span class="k">:</span> <span class="c1">28</span>
 };
@@ -320,7 +320,7 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 <span class="k">var</span> isJedi <span class="k">=</span> luke.jedi;</pre></div></li>
 <li><p>Используйте нотацию с <code>[]</code>, когда вы получаете свойство, имя для которого хранится в переменной.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> luke <span class="k">=</span> {
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> luke <span class="k">=</span> {
   jedi<span class="k">:</span> <span class="c1">true</span>,
   age<span class="k">:</span> <span class="c1">28</span>
 };
@@ -339,14 +339,14 @@ length <span class="k">=</span> messages.<span class="c1">length</span>;
 <ul>
 <li><p>Всегда используйте <code>var</code> для объявления переменных. В противном случае переменная будет объявлена глобальной. Загрязнение глобального пространства имен — всегда плохо.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 superPower <span class="k">=</span> <span class="k">new</span> <span class="en">SuperPower</span>();
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> superPower <span class="k">=</span> <span class="k">new</span> <span class="en">SuperPower</span>();</pre></div></li>
 <li><p>Используйте одно <code>var</code> объявление переменных для всех переменных, и объявляйте каждую переменную на новой строке.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> items <span class="k">=</span> getItems();
 <span class="k">var</span> goSportsTeam <span class="k">=</span> <span class="c1">true</span>;
 <span class="k">var</span> dragonball <span class="k">=</span> <span class="s"><span class="pds">'</span>z<span class="pds">'</span></span>;
@@ -357,7 +357,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
     dragonball <span class="k">=</span> <span class="s"><span class="pds">'</span>z<span class="pds">'</span></span>;</pre></div></li>
 <li><p>Объявляйте переменные, которым не присваивается значение, в конце. Это удобно, когда вам необходимо задать значение одной из этих переменных на базе уже присвоенных значений.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> i, len, dragonball,
     items <span class="k">=</span> getItems(),
     goSportsTeam <span class="k">=</span> <span class="c1">true</span>;
@@ -376,7 +376,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
     i;</pre></div></li>
 <li><p>Присваивайте переменные в начале области видимости. Это помогает избегать проблем с объявлением переменных и областями видимости.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span>() {
   <span class="c1">test</span>();
   <span class="en">console</span><span class="c1">.log</span>(<span class="s"><span class="pds">'</span>делаю что-нибудь..<span class="pds">'</span></span>);
@@ -438,7 +438,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <ul>
 <li><p>Объявление переменных ограничивается областью видимости, а присвоение — нет.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// Мы знаем, что это не будет работать</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// Мы знаем, что это не будет работать</span>
 <span class="c">// если нет глобальной переменной notDefined</span>
 <span class="k">function</span> <span class="en">example</span>() {
   <span class="en">console</span><span class="c1">.log</span>(notDefined); <span class="c">// =&gt; выбрасывает код с ошибкой ReferenceError</span>
@@ -462,7 +462,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Объявление анонимной функции поднимает наверх области видимости саму переменную, но не ее значение.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">example</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">example</span>() {
   <span class="en">console</span><span class="c1">.log</span>(anonymous); <span class="c">// =&gt; undefined</span>
 
   anonymous(); <span class="c">// =&gt; TypeError anonymous is not a function</span>
@@ -474,7 +474,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Именованные функции поднимают наверх области видимости переменную, не ее значение. Имя функции при этом недоступно в области видимости переменной и доступно только изнутри.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">example</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">example</span>() {
   <span class="en">console</span><span class="c1">.log</span>(named); <span class="c">// =&gt; undefined</span>
 
   named(); <span class="c">// =&gt; TypeError named is not a function</span>
@@ -502,7 +502,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Объявления функции поднимают на верх текущей области видимости и имя, и свое значение.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">example</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">example</span>() {
   superPower(); <span class="c">// =&gt; Я лечууууу</span>
 
   <span class="k">function</span> <span class="en">superPower</span>() {
@@ -529,13 +529,13 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <li><strong>String</strong> означает <strong>false</strong>, если является пустой строкой <code>''</code>, в противном случае <strong>true</strong>. Условно говоря, для строки происходит сравнение не ее самой, а ее длины – в соответствии с типом number.</li>
 </ul>
 
-<div class="highlight highlight-javascript"><pre><span class="k">if</span> ([<span class="c1">0</span>]) {
+<div class="highlight highlighter-rouge"><pre><span class="k">if</span> ([<span class="c1">0</span>]) {
   <span class="c">// true</span>
   <span class="c">// Массив(Array) является объектом, объекты преобразуются в true</span>
 }</pre></div></li>
 <li><p>Используйте короткий синтаксис.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">if</span> (name <span class="k">!==</span> <span class="s"><span class="pds">'</span><span class="pds">'</span></span>) {
   <span class="c">// ...код...</span>
 }
@@ -564,7 +564,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <ul>
 <li><p>Используйте фигурные скобки для всех многострочных блоков.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">if</span> (test)
   <span class="k">return</span> <span class="c1">false</span>;
 
@@ -592,7 +592,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <ul>
 <li><p>Используйте <code>/** ... */</code> для многострочных комментариев. Включите описание, опишите типы и значения для всех параметров и возвращаемых значений в формате jsdoc.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="c">// make() возвращает новый элемент</span>
 <span class="c">// основываясь на получаемом имени тэга</span>
 <span class="c">//</span>
@@ -621,7 +621,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Используйте <code>//</code> для комментариев в одну строку. Размещайте комментарии на новой строке над темой комментария. Добавляйте пустую строку над комментарием.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> active <span class="k">=</span> <span class="c1">true</span>;  <span class="c">// устанавливаем активным элементом</span>
 
 <span class="c">// хорошо</span>
@@ -649,7 +649,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <li><p>Префикс <code>TODO</code> помогает другим разработчикам быстро понять, что вы указываете на проблему, к которой нужно вернуться в дальнейшем, или если вы предлагете решение проблемы, которое должно быть реализовано. Эти комментарии отличаются от обычных комментариев, так как не описывают текущее поведение, а призывают к действию, например <code>TODO -- нужно реализовать интерфейс</code>. Такие комментарии также автоматически обнаруживаются многими IDE и редакторами кода, что позволяет быстро перемещаться между ними.</p></li>
 <li><p>Используйте <code>// TODO FIXME:</code> для аннотирования проблем</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">Calculator</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">Calculator</span>() {
 
   <span class="c">// TODO FIXME: тут не нужно использовать глобальную переменную</span>
   total <span class="k">=</span> <span class="c1">0</span>;
@@ -658,7 +658,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Используйте <code>// TODO:</code> для указания решений проблем</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">Calculator</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">Calculator</span>() {
 
   <span class="c">// TODO: должна быть возможность изменять значение через параметр функции</span>
   <span class="v">this</span>.total <span class="k">=</span> <span class="c1">0</span>;
@@ -674,7 +674,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 <ul>
 <li><p>Используйте программную табуляцию (ее поддерживают все современные редакторы кода и IDE) из двух пробелов.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span>() {
 ∙∙∙∙<span class="k">var</span> name;
 }
@@ -690,7 +690,7 @@ superPower <span class="k">=</span> <span class="k">new</span> <span class="en">
 }</pre></div></li>
 <li><p>Устанавливайте один пробел перед открывающей скобкой.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span> <span class="en">test</span>(){
   <span class="en">console</span><span class="c1">.log</span>(<span class="s"><span class="pds">'</span>test<span class="pds">'</span></span>);
 }
@@ -713,19 +713,19 @@ dog.set(<span class="s"><span class="pds">'</span>attr<span class="pds">'</span>
 });</pre></div></li>
 <li><p>Оставляйте новую строку в конце файла.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 (<span class="k">function</span>(<span class="smi">global</span>) {
   <span class="c">// ...код...</span>
 })(<span class="v">this</span>);</pre></div>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// хорошо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// хорошо</span>
 (<span class="k">function</span>(<span class="smi">global</span>) {
   <span class="c">// ...код...</span>
 })(<span class="v">this</span>);
 </pre></div></li>
 <li><p>Используйте отступы, когда делаете цепочки вызовов.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></span>).<span class="c1">find</span>(<span class="s"><span class="pds">'</span>.selected<span class="pds">'</span></span>).highlight().end().<span class="c1">find</span>(<span class="s"><span class="pds">'</span>.open<span class="pds">'</span></span>).updateCount();
 
 <span class="c">// хорошо</span>
@@ -760,7 +760,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <ul>
 <li><p>Запятые в начале строки: <strong>Нет.</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> once
   , upon
   , aTime;
@@ -791,7 +791,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <p>Редакция ECMAScript 5 однозначно устанавливает факт, что запятая в конце ArrayInitialiser не должна увеличивать длину массива. Это несемантическое изменение от Редакции ECMAScript 3, но некоторые реализации до этого некорректно разрешали этот вопрос.</p>
 </blockquote>
 
-<div class="highlight highlight-javascript"><pre>  <span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre>  <span class="c">// плохо</span>
   <span class="k">var</span> hero <span class="k">=</span> {
     firstName<span class="k">:</span> <span class="s"><span class="pds">'</span>Kevin<span class="pds">'</span></span>,
     lastName<span class="k">:</span> <span class="s"><span class="pds">'</span>Flynn<span class="pds">'</span></span>,
@@ -821,7 +821,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <ul>
 <li><p><strong>Да.</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 (<span class="k">function</span>() {
   <span class="k">var</span> name <span class="k">=</span> <span class="s"><span class="pds">'</span>Skywalker<span class="pds">'</span></span>
   <span class="k">return</span> name
@@ -848,7 +848,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <li>Выполняйте приведение типов в начале операции, но не делайте его избыточным.</li>
 <li><p>Строки:</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">//  =&gt; this.reviewScore = 9;</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">//  =&gt; this.reviewScore = 9;</span>
 
 <span class="c">// плохо</span>
 <span class="k">var</span> totalScore <span class="k">=</span> <span class="v">this</span>.reviewScore <span class="k">+</span> <span class="s"><span class="pds">'</span><span class="pds">'</span></span>;
@@ -863,7 +863,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <span class="k">var</span> totalScore <span class="k">=</span> <span class="v">this</span>.reviewScore <span class="k">+</span> <span class="s"><span class="pds">'</span> итого<span class="pds">'</span></span>;</pre></div></li>
 <li><p>Используйте <code>parseInt</code> для чисел и всегда указывайте основание для приведения типов.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> inputValue <span class="k">=</span> <span class="s"><span class="pds">'</span>4<span class="pds">'</span></span>;
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> inputValue <span class="k">=</span> <span class="s"><span class="pds">'</span>4<span class="pds">'</span></span>;
 
 <span class="c">// плохо</span>
 <span class="k">var</span> val <span class="k">=</span> <span class="k">new</span> <span class="en">Number</span>(inputValue);
@@ -884,7 +884,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <span class="k">var</span> val <span class="k">=</span> <span class="c1">parseInt</span>(inputValue, <span class="c1">10</span>);</pre></div></li>
 <li><p>Если по какой-либо причине вы делаете что-то дикое, и именно на <code>parseInt</code> тратится больше всего ресурсов, используйте побитовый сдвиг <a rel="nofollow" href="http://jsperf.com/coercion-vs-casting/3">из соображений быстродействия</a>, но обязательно оставьте комментарий с объяснением причин.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// хорошо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// хорошо</span>
 <span class="c">/**</span>
 <span class="c"> * этот код медленно работал из-за parseInt</span>
 <span class="c"> * побитовый сдвиг строки для приведения ее к числу</span>
@@ -899,7 +899,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 </code></pre></li>
 <li><p>логические типы(Boolean):</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">var</span> age <span class="k">=</span> <span class="c1">0</span>;
+<div class="highlight highlighter-rouge"><pre><span class="k">var</span> age <span class="k">=</span> <span class="c1">0</span>;
 
 <span class="c">// плохо</span>
 <span class="k">var</span> hasAge <span class="k">=</span> <span class="k">new</span> <span class="en">Boolean</span>(age);
@@ -918,7 +918,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <ul>
 <li><p>Избегайте однобуквенных имен функций. Имена должны давать представление о том, что делает эта функция.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span> <span class="en">q</span>() {
   <span class="c">// ...код...</span>
 }
@@ -929,7 +929,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 }</pre></div></li>
 <li><p>Используйте camelCase для именования объектов, функций и переменных.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> OBJEcttsssss <span class="k">=</span> {};
 <span class="k">var</span> this_is_my_object <span class="k">=</span> {};
 <span class="k">function</span> <span class="en">c</span>() {};
@@ -945,7 +945,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 });</pre></div></li>
 <li><p>Используйте PascalCase для именования конструкторов классов</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span> <span class="en">user</span>(<span class="smi">options</span>) {
   <span class="v">this</span>.<span class="c1">name</span> <span class="k">=</span> options.<span class="c1">name</span>;
 }
@@ -964,7 +964,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 });</pre></div></li>
 <li><p>Используйте подчеркивание <code>_</code> в качестве префикса для именования внутренних методов и переменных объекта.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="v">this</span>.__firstName__ <span class="k">=</span> <span class="s"><span class="pds">'</span>Panda<span class="pds">'</span></span>;
 <span class="v">this</span>.firstName_ <span class="k">=</span> <span class="s"><span class="pds">'</span>Panda<span class="pds">'</span></span>;
 
@@ -972,7 +972,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <span class="v">this</span>._firstName <span class="k">=</span> <span class="s"><span class="pds">'</span>Panda<span class="pds">'</span></span>;</pre></div></li>
 <li><p>Создавая ссылку на <code>this</code>, используйте <code>_this</code>.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span>() {
   <span class="k">var</span> self <span class="k">=</span> <span class="v">this</span>;
   <span class="k">return</span> <span class="k">function</span>() {
@@ -997,7 +997,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 }</pre></div></li>
 <li><p>Задавайте имена для функций. Это повышает читаемость сообщений об ошибках кода.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> <span class="en">log</span> <span class="k">=</span> <span class="k">function</span>(<span class="smi">msg</span>) {
   <span class="en">console</span><span class="c1">.log</span>(msg);
 };
@@ -1016,7 +1016,7 @@ $(<span class="s"><span class="pds">'</span>#items<span class="pds">'</span></sp
 <li>Функции универсального доступа к свойствам не требуются</li>
 <li><p>Если вам необходимо создать функцию для доступа к переменной, используйте раздельные функции getVal() и setVal('hello')</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 dragon.age();
 
 <span class="c">// хорошо</span>
@@ -1029,7 +1029,7 @@ dragon.age(<span class="c1">25</span>);
 dragon.setAge(<span class="c1">25</span>);</pre></div></li>
 <li><p>Если свойство является логическим(boolean), используйте isVal() или hasVal()</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">if</span> (<span class="k">!</span>dragon.age()) {
   <span class="k">return</span> <span class="c1">false</span>;
 }
@@ -1040,7 +1040,7 @@ dragon.setAge(<span class="c1">25</span>);</pre></div></li>
 }</pre></div></li>
 <li><p>Вы можете создавать функции get() и set(), но будьте логичны и последовательны – то есть не добавляйте свойства, которые не могут быть изменены через эти функции.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">Jedi</span>(<span class="smi">options</span>) {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">Jedi</span>(<span class="smi">options</span>) {
   options <span class="k">||</span> (options <span class="k">=</span> {});
   <span class="k">var</span> lightsaber <span class="k">=</span> options.lightsaber <span class="k">||</span> <span class="s"><span class="pds">'</span>blue<span class="pds">'</span></span>;
   <span class="v">this</span>.set(<span class="s"><span class="pds">'</span>lightsaber<span class="pds">'</span></span>, lightsaber);
@@ -1062,7 +1062,7 @@ dragon.setAge(<span class="c1">25</span>);</pre></div></li>
 <ul>
 <li><p>Присваивайте метод прототипу вместо замены прототипа на другой объект. Замена прототипа на другой объект делает наследование невозможным.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">Jedi</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">Jedi</span>() {
   <span class="en">console</span><span class="c1">.log</span>(<span class="s"><span class="pds">'</span>new jedi<span class="pds">'</span></span>);
 }
 
@@ -1087,7 +1087,7 @@ dragon.setAge(<span class="c1">25</span>);</pre></div></li>
 };</pre></div></li>
 <li><p>Методы могут возвращать <code>this</code> для создания цепочек вызовов. Но стоит оставаться последовательным и обеспечить одинаковое поведение для всех методов, кроме геттеров.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="c1">Jedi</span>.<span class="c1">prototype</span>.<span class="en">jump</span> <span class="k">=</span> <span class="k">function</span>() {
   <span class="v">this</span>.jumping <span class="k">=</span> <span class="c1">true</span>;
   <span class="k">return</span> <span class="c1">true</span>;
@@ -1118,7 +1118,7 @@ luke.jump()
   .setHeight(<span class="c1">20</span>);</pre></div></li>
 <li><p>Вы можете заменить стандартный метод toString(), но убедитесь, что он работает и не вызывает побочных эффектов.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span> <span class="en">Jedi</span>(<span class="smi">options</span>) {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span> <span class="en">Jedi</span>(<span class="smi">options</span>) {
   options <span class="k">||</span> (options <span class="k">=</span> {});
   <span class="v">this</span>.<span class="c1">name</span> <span class="k">=</span> options.<span class="c1">name</span> <span class="k">||</span> <span class="s"><span class="pds">'</span>no name<span class="pds">'</span></span>;
 }
@@ -1171,7 +1171,7 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
 <li>Добавьте метод noConflict(), устанавливающий экспортируемый модуль в состояние предыдущей версии.</li>
 <li><p>Всегда объявляйте <code>'use strict';</code> в начале модуля.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// fancyInput/fancyInput.js</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// fancyInput/fancyInput.js</span>
 
 <span class="k">!</span><span class="k">function</span>(<span class="smi">global</span>) {
   <span class="s"><span class="pds">'</span>use strict<span class="pds">'</span></span>;
@@ -1198,14 +1198,14 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
 <ul>
 <li><p>Для jQuery-переменных используйте префикс <code>$</code>.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">var</span> sidebar <span class="k">=</span> $(<span class="s"><span class="pds">'</span>.sidebar<span class="pds">'</span></span>);
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> $sidebar <span class="k">=</span> $(<span class="s"><span class="pds">'</span>.sidebar<span class="pds">'</span></span>);</pre></div></li>
 <li><p>Кэшируйте jQuery-запросы. Каждый новый jQuery-запрос делает повторный поиск по DOM-дереву, и приложение начинает работать медленнее.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 <span class="k">function</span> <span class="en">setSidebar</span>() {
   $(<span class="s"><span class="pds">'</span>.sidebar<span class="pds">'</span></span>).hide();
 
@@ -1230,7 +1230,7 @@ $(<span class="v">this</span>).on(<span class="s"><span class="pds">'</span>list
 <li><p>Для DOM-запросов используйте классический каскадный CSS-синтаксис <code>$('.sidebar ul')</code> или родитель &gt; потомок <code>$('.sidebar &gt; ul')</code>. <a rel="nofollow" href="http://jsperf.com/jquery-find-vs-context-sel/16">jsPerf</a></p></li>
 <li><p>Используйте <code>find</code> для поиска внутри DOM-объекта.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="c">// плохо</span>
+<div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 $(<span class="s"><span class="pds">'</span>ul<span class="pds">'</span></span>, <span class="s"><span class="pds">'</span>.sidebar<span class="pds">'</span></span>).hide();
 
 <span class="c">// плохо</span>
@@ -1261,7 +1261,7 @@ $sidebar.<span class="c1">find</span>(<span class="s"><span class="pds">'</span>
 <ul>
 <li><p><strong>Да.</strong></p>
 
-<div class="highlight highlight-javascript"><pre><span class="k">function</span>() {
+<div class="highlight highlighter-rouge"><pre><span class="k">function</span>() {
   <span class="k">return</span> <span class="c1">true</span>;
 }</pre></div>
 

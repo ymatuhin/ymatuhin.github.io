@@ -4,101 +4,38 @@ title: Юрий Матюхин
 s_title: Юрий Матюхин
 redirect_from:
   - /front-end/how_to_exclude_my_views_from_yandex_metrica/
-  - /privet-mir/
-  - /work/
-  - /folio/
-  - /about/
+  - /dogma/
+  - /all/
 description: >
   Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
 ---
 
-{% include page-header.html %}
-{% include menu.html %}
+<div role="main" class="content_index">
+	<header class="profile">
+		<img src="img/yury_matuhin_square.jpg">
+		<div>
+			<h1>{{ page.title }}</h1>
+			<p>Фронтенд разработчик, основатель «Социального дуршлагa» (в разработке) и <a href="//autoprefixer.github.io">Автопрефиксера онлайн</a>. <br>Живу в Брянске, работаю в Polonium Arts.</p>
+			{% include menu.html %}
+		</div>
+	</header>
 
-<link rel="stylesheet" href="">
-<script src="" async></script>
 
-<div class="projects content">
+	<div class="projects">
+		<h2>Последние записи</h2>
+		<div class="history">
+			{% for post in site.posts limit:15 %}
+				<div class="landmark">
+					<div class="date">
+						{% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d"  }} {% include month.html %} {{ post.date | date: "%-Y"}}
+					</div>
+					<div class="description">
+						<a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 
-    <h2>Последние записи</h2>
-    <ul class="list flat">
-        {% for post in site.posts limit:16 %}
-            <li><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
-        {% endfor %}
-    </ul>
-
-    <h2>Места работы</h2>
-    <div class="history">
-        <div class="landmark">
-            <div class="date">С мая 2015</div>
-            <div class="description">Управляющий технолог
-                <a href="http://code.straykov.ru">в&nbsp;Кодельной</a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Май —&nbsp;июнь 2015</div>
-            <div class="description">Дизайнер и&nbsp;разработчик интерфейсa
-                <a href="http://www.proactivity.ru">в&nbsp;Проактивити</a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Январь&nbsp;— апрель 2015</div>
-            <div class="description">Техдир и&nbsp;дизайнер
-                <a href="http://molokodaily.ru">в&nbsp;Молоке</a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Ноябрь 2014 — апрель 2015</div>
-            <div class="description">Технолог
-                <a href="http://netcat.ru">в&nbsp;Неткэте</a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Август —&nbsp;октябрь 2014</div>
-            <div class="description">Разработчик в&nbsp;
-                <abbr>УЗ</abbr>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Июнь 2014 —&nbsp;август 2015</div>
-            <div class="description">Дизайнер и&nbsp;технолог
-                <a href="http://www.lisenko.ru">в&nbsp;
-                    <abbr>ПВК</abbr>
-                </a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Июнь —&nbsp;август 2014</div>
-            <div class="description">Разработчик
-                <a href="http://www.applicatura.com">в&nbsp;Аппликатуре</a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">С ноября 2013 по май 2014</div>
-            <div class="description">Верстальщик
-                <a href="http://www.mediapronet.ru">в&nbsp;Медиапронете</a>
-            </div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">Август — ноябрь 2013</div>
-            <div class="description">Верстальщик-фрилансер</div>
-        </div>
-
-        <div class="landmark">
-            <div class="date">С июля 2012 по июль 2013</div>
-            <div class="description">Редактор
-                <a href="http://vgtrk.com">в&nbsp;
-                    <abbr>ВГТРК</abbr>
-                </a>
-            </div>
-        </div>
-    </div>
+	{% include footer.html %}
 </div>

@@ -1,8 +1,8 @@
 ---
 ---
 
-{% include_relative document.css %}
 {% include_relative hr.css %}
+{% include_relative search.css %}
 {% include_relative visuallyhidden.css %}
 {% include_relative media.css %}
 {% include_relative figure.css %}
@@ -11,15 +11,11 @@
 {% include_relative mark.css %}
 {% include_relative lettering.css %}
 {% include_relative blockquote.css %}
-{% include_relative heading.css %}
 {% include_relative code.css %}
-
-{% include_relative _related.css %}
-
-p,
-iframe,
-figure,
-table,
-.highlight,
-details { margin: 0 0 20px 0 }
-dd { margin-bottom: 20px; }
+{% include_relative profile.css %}
+{% include_relative projects.css %}
+{% include_relative footer.css %}
+{% include_relative syntax.css %}
+{% include_relative content.css %}
+{% include_relative content_index.css %}
+{% include_relative related.css %}

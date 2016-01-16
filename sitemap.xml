@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ymatuhin.ru/front-end/reed-on-week-end</loc>
-    <lastmod>2016-01-09T23:49:32+03:00</lastmod>
+    <lastmod>2016-01-15T10:23:43+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/tools/fira-code-font</loc>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://ymatuhin.ru/front-end/prepare_graphics_for_retina_displays</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <lastmod>2016-01-16T16:27:56+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/front-end/see_into_gulp</loc>
@@ -178,11 +178,11 @@
   </url>
   <url>
     <loc>https://ymatuhin.ru/tools/atom_exclude_foilder</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <lastmod>2016-01-16T16:37:18+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/tools/atom_emmet_with_stylus</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <lastmod>2016-01-16T16:36:21+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/tools/atom_packages_1</loc>
@@ -206,7 +206,7 @@
   </url>
   <url>
     <loc>https://ymatuhin.ru/front-end/better_box_sizing</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <lastmod>2016-01-16T16:34:18+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/front-end/clear_facebook_cache_on_sharing</loc>
@@ -214,7 +214,7 @@
   </url>
   <url>
     <loc>https://ymatuhin.ru/front-end/jquery-has-scroll</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <lastmod>2016-01-16T16:31:46+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/blog/review_about_chrome_data_saver_extension</loc>
@@ -222,7 +222,7 @@
   </url>
   <url>
     <loc>https://ymatuhin.ru/front-end/safe_use_of_cdn_and_jquery</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <lastmod>2016-01-16T16:33:30+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/tools/punto_switcher_to_developers</loc>
@@ -277,8 +277,8 @@
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
-    <loc>https://ymatuhin.ru/all/</loc>
-    <lastmod>2016-01-02T22:48:33+03:00</lastmod>
+    <loc>https://ymatuhin.ru/about/</loc>
+    <lastmod>2016-01-16T16:13:27+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/projects/autoprefixer_instruction/</loc>
@@ -293,19 +293,11 @@
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
-    <loc>https://ymatuhin.ru/dogma/</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
-  </url>
-  <url>
     <loc>https://ymatuhin.ru/front-end/</loc>
     <lastmod>2016-01-02T22:48:33+03:00</lastmod>
   </url>
   <url>
-    <loc>https://ymatuhin.ru/demo/11/</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ymatuhin.ru/demo/san_francisco/</loc>
+    <loc>https://ymatuhin.ru/demo/interview/tree/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
@@ -313,11 +305,7 @@
     <lastmod>2016-01-13T10:20:16+03:00</lastmod>
   </url>
   <url>
-    <loc>https://ymatuhin.ru/</loc>
-    <lastmod>2016-01-13T10:36:04+03:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ymatuhin.ru/demo/interview/tree/</loc>
+    <loc>https://ymatuhin.ru/demo/san_francisco/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
@@ -325,8 +313,20 @@
     <lastmod>2016-01-13T10:20:16+03:00</lastmod>
   </url>
   <url>
+    <loc>https://ymatuhin.ru/</loc>
+    <lastmod>2016-01-15T10:23:43+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ymatuhin.ru/demo/11/</loc>
+    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+  </url>
+  <url>
     <loc>https://ymatuhin.ru/en/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ymatuhin.ru/old_index.html</loc>
+    <lastmod>2016-01-15T10:23:43+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/projects/</loc>
