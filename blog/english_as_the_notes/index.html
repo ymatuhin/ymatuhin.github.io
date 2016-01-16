@@ -91,7 +91,7 @@
 
 	<!-- animate show and hide -->
 	<style>body { opacity: 0}</style>
-	<script src="/js/script.js" async></script>
+	<script src="/js/script.min.js" async></script>
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -1353,6 +1353,6 @@
 
 
 	<!-- Fall back to all css -->
-	<script>if (!document.querySelector) document.write('<link rel="stylesheet" href="/css/all.css">')</script>
+	<script>if (!document.querySelector || !document.addEventListener) document.write('<link rel="stylesheet" href="/css/all.css">')</script>
 	<noscript><link rel="stylesheet" href="/css/all.css"></noscript>
 </html>
