@@ -14,4 +14,9 @@ ol li {
 	margin: 0;
 }
 
+p + ol,
+p + ul {
+	margin-top: -12px;
+}
+
 /*li + li { margin-top: 6px; }*/
