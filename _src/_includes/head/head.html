@@ -20,8 +20,10 @@
 	{% include head/meta_icon.html %}
 	{% include head/meta_prefetch.html %}
 
-	<!-- animate show and hide -->
-	<style>body { opacity: 0}</style>
+	<style>
+		{% capture include_to_scssify %}{% include all.scss %}{% endcapture %}
+		{{ include_to_scssify | scssify }}
+	</style>
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

@@ -9,9 +9,8 @@
 
 	{{ content }}
 
-	<script>{% include script.min.js %}</script>
-
-	<!-- Fall back to all css -->
-	<script>if (!document.querySelector || !document.readyState) document.write('<link rel="stylesheet" href="/css/all.css">')</script>
-	<noscript><link rel="stylesheet" href="/css/all.css"></noscript>
+	<script>if (document.querySelector('.highlight')) document.write('<link rel="stylesheet" href="/css/syntax.css">')</script>
+	<noscript><link rel="stylesheet" href="/css/syntax.css"></noscript>
+	<script src="/js/hints.js" async></script>
+	<script src="/js/typo.js" async></script>
 </html>

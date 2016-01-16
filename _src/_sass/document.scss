@@ -14,9 +14,7 @@ body {
 	padding: 72px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-
-	transition: opacity .3s ease-in-out;
-	opacity: 1 !important;
+	transition: padding .3s ease-out;
 }
 
 @media screen and (max-width:990px) {

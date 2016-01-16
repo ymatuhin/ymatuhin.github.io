@@ -19,3 +19,20 @@ code {
 	line-height: 23px;
 }
 pre code { padding: 0; }
+
+
+.highlighter-rouge { position: relative; }
+.highlighter-rouge pre { background: #ecf2f8 }
+div.highlighter-rouge:before,
+div.highlighter-rouge:after {
+	z-index: -1;
+	background-color: #ecf2f8;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1000%;
+}
+
+.highlighter-rouge:after { left: 100%; }
+.highlighter-rouge:before { right: 100%; }
