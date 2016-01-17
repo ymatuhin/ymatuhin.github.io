@@ -8,6 +8,7 @@
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}">
 
+	<!-- Switch to HTTPS -->
 	<script>
 		if (window.location.protocol != "https:" && location.hostname != 'localhost')
 			window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
@@ -18,8 +19,8 @@
 	{% include head/meta_twitter.html %}
 	{% include head/meta_open_graph.html %}
 	{% include head/meta_icon.html %}
-	{% include head/meta_prefetch.html %}
 
+	<!-- Inlined styles -->
 	<style>
 		{% capture include_to_scssify %}{% include all.scss %}{% endcapture %}
 		{{ include_to_scssify | scssify }}
