@@ -26,6 +26,14 @@
 		{{ include_to_scssify | scssify }}
 	</style>
 
+	<!-- Special index page styles -->
+	{% if page.url == '/index.html' or page.url == '/' %}
+		<style>
+			{% capture include_to_scssify %}{% include index.scss %}{% endcapture %}
+			{{ include_to_scssify | scssify }}
+		</style>
+	{% endif %}
+
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
