@@ -9,18 +9,18 @@ description: >
 tags: [yota, мобильный интернет]
 ---
 
-<p>Сейчас, в Брянске стал доступен для подключения новый мобильный оператор — Yota. Что привлекательного в нем? А то, что за 240 рублей в месяц вы получаете <strong>безлимитный мобильный интернет</strong> c 4G (если телефон поддерживает).</p>
+В моем городе стал доступен для подключения мобильный оператор — Yota. Что привлекательного в нем? Цена 240 рублей в месяц и <strong>безлимитный мобильный интернет</strong> c поддержкой 4G.</p>
 
 <figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="Как снять ограничения Yota на раздачу интернета" src="/img/yota/yota.png">
-	<figcaption><span itemprop="description">Yota — снимаем ограничение скорости</span></figcaption>
+	<img itemprop="contentUrl" alt="Как снять ограничения Yota на раздачу интернета" src="/img/yota/yota.png">
+	<figcaption>Yota — снимаем ограничение скорости</figcaption>
 </figure>
 
 <p>Но есть одна проблема, этим интернетом нельзя поделиться на ваш компьютер (через wifi к примеру). Точнее говоря можно, но у вас ограничится скорость и только на пол часа. О том как обойти это ограничение скорости я расскажу далее.</p>
 
 <figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="раздать yota без ограничения" src="/img/yota/yota_sharing.png">
-	<figcaption><span itemprop="description">Ограничение на раздачу интернета — Yota</span></figcaption>
+	<img itemprop="contentUrl" alt="раздать yota без ограничения" src="/img/yota/yota_sharing.png">
+	<figcaption>Ограничение на раздачу интернета — Yota</figcaption>
 </figure>
 
 <h2>Обход ограничения скорости Yota</h2>
@@ -30,8 +30,8 @@ tags: [yota, мобильный интернет]
 <p>Если у вас операционная система <strong>Windows</strong>, тогда вам нужно открыть командную строку (<mark>Выполнить</mark>), ввести в ней <code>regedit.exe</code> и следовать по следующему пути: <code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters</code>. Затем нужно нажать правой кнопкой на пустом пространстве (в правом окне) и выбрать <code>NEW > QWORD (64-bit) Value</code>. Назовите её <code>DefaultTTL</code>, после двойным щелчком мыши по ней в правой части переключите радиокнопку на <code>Decimal (Десятичное)</code> и введите значение <code>65</code>.</p>
 
 <figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="Командная строка — yota без ограничения скорости" src="/img/yota/regedit.png">
-	<figcaption><span itemprop="description">Командная строка в Windows — yota без ограничения скорости</span></figcaption>
+	<img itemprop="contentUrl" alt="Командная строка — yota без ограничения скорости" src="/img/yota/regedit.png">
+	<figcaption>Командная строка в Windows — yota без ограничения скорости</figcaption>
 </figure>
 
 <p>Для <strong>Mac OS</strong> все куда проще :-) Нужно открыть <mark>Терминал</mark> и вставить туда следующую команду: <code>sudo sysctl -w net.inet.ip.ttl=65</code></p>
@@ -43,6 +43,8 @@ tags: [yota, мобильный интернет]
 </blockquote>
 
 <p>Ваши вопросы, рекомендации и советы пишите в комментариях.</p>
+
+<p><b>UPD</b>. Yota обновляет свои фильтры, и теперь раздавать интеренет с телефона сложнее. Подробнее об этом читайте на форуме <a href="4pda.ru/forum/index.php?showtopic=596728" rel="nofollow">4pda</a></p>.
 
 
 <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
