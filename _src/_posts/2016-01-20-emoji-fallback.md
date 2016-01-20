@@ -2,7 +2,7 @@
 layout: post
 title: Фоллбэчим Emoji
 categories: front-end
-description: 123
+description: Проверяем поддержку эмодзи у пользователя и какая у него операционная система. После этого подключаем любые эмодзи для корректного отображения смайликов.
 tags: [emoji, twitter, fallback]
 
 image: emoji/emoji.jpg
@@ -43,7 +43,7 @@ var emojiSupported = (function() {
 var isMacLike = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)?true:false;
 ```
 
-После того, как мы определили на чем сидит пользователь и поддерживаются у него эмодзи мы можем сможем решить эту проблему с помощью Twemoji.
+После того, как мы определили на чем сидит пользователь и поддерживаются у него эмодзи мы сможем решить эту проблему с помощью Twemoji.
 
 ```js
 if (!emojiSupported || !isMacLike) {
