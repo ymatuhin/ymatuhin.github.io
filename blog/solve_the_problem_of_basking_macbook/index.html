@@ -684,6 +684,18 @@
       
       
       
+        
+          
+        
+          
+        
+      
+      
+      
+    
+      
+      
+      
       
       
     
@@ -1061,6 +1073,19 @@
             
             
                 
+                    <li><a rel="nofollow" href="/front-end/emoji-fallback">Фоллбэчим Emoji</a><br /></li>
+                    
+                
+            
+            
+            
+        
+    
+        
+            
+            
+            
+                
                     <li><a rel="nofollow" href="/front-end/reed-on-week-end">Что почитать фронтендеру на выходных — 1</a><br /></li>
                     
                 
@@ -1199,17 +1224,6 @@
             
         
     
-        
-            
-            
-            
-                
-                    <li><a rel="nofollow" href="/front-end/11grade">Одиннадцатиклассница, или фиксим баги с длинным текстом</a><br /></li>
-                    
-                
-            
-            
-            
         
     
         
@@ -1365,7 +1379,8 @@
 	<!-- Replace emoji if needed -->
 	<script>
 		window.doesSupportEmoji=function(){var a;if(document.createElement("canvas").getContext&&(a=document.createElement("canvas").getContext("2d"),"function"==typeof a.fillText))return smile=String.fromCodePoint(128516),a.textBaseline="top",a.font="32px Arial",a.fillText(smile,0,0),0!==a.getImageData(16,16,1,1).data[0]};
-		if (!doesSupportEmoji()) document.write('<script onload="twemoji.parse(document.querySelector(\'.text-content\'))" src=\"\/\/cdnjs.cloudflare.com\/ajax\/libs\/twemoji\/1.3.2\/twemoji.min.js\"><\/script>');
+		var isMacLike = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)?true:false;
+		if (!doesSupportEmoji() || !isMacLike) document.write('<script onload="twemoji.parse(document.querySelector(\'.text-content\'))" src=\"\/\/cdnjs.cloudflare.com\/ajax\/libs\/twemoji\/1.3.2\/twemoji.min.js\"><\/script>');
 	</script>
 
 	<!-- Yandex.Metrika counter -->

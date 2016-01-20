@@ -311,6 +311,9 @@ img[src="/img/en.gif"] {
     <mark class="js-separate">alt</mark>
 
     
+        →
+        <a class="js-next" href="/front-end/emoji-fallback">Фоллбэчим Emoji</a>
+    
 </div>
 
 <script>
@@ -342,6 +345,12 @@ img[src="/img/en.gif"] {
 <aside>
     <h4>Популярное</h4>
     <ul class="related">
+      
+    
+      
+      
+      
+      
       
     
       
@@ -1277,6 +1286,14 @@ img[src="/img/en.gif"] {
     
         
             
+            
+            
+            
+            
+        
+    
+        
+            
         
     
         
@@ -1568,7 +1585,8 @@ img[src="/img/en.gif"] {
 	<!-- Replace emoji if needed -->
 	<script>
 		window.doesSupportEmoji=function(){var a;if(document.createElement("canvas").getContext&&(a=document.createElement("canvas").getContext("2d"),"function"==typeof a.fillText))return smile=String.fromCodePoint(128516),a.textBaseline="top",a.font="32px Arial",a.fillText(smile,0,0),0!==a.getImageData(16,16,1,1).data[0]};
-		if (!doesSupportEmoji()) document.write('<script onload="twemoji.parse(document.querySelector(\'.text-content\'))" src=\"\/\/cdnjs.cloudflare.com\/ajax\/libs\/twemoji\/1.3.2\/twemoji.min.js\"><\/script>');
+		var isMacLike = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)?true:false;
+		if (!doesSupportEmoji() || !isMacLike) document.write('<script onload="twemoji.parse(document.querySelector(\'.text-content\'))" src=\"\/\/cdnjs.cloudflare.com\/ajax\/libs\/twemoji\/1.3.2\/twemoji.min.js\"><\/script>');
 	</script>
 
 	<!-- Yandex.Metrika counter -->

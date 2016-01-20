@@ -6,9 +6,34 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Jan 2016 13:56:34 +0300</pubDate>
-    <lastBuildDate>Mon, 18 Jan 2016 13:56:34 +0300</lastBuildDate>
+    <pubDate>Wed, 20 Jan 2016 18:44:21 +0300</pubDate>
+    <lastBuildDate>Wed, 20 Jan 2016 18:44:21 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Фоллбэчим Emoji</title>
+        
+            <description>&lt;p&gt;Emoji набирают популярность. В блоге я тоже использовал их несколько раз, но получил отзыв о том, что они не везде показываются. На тот момент я прикрутил к сайту &lt;a href=&quot;https://github.com/twitter/twemoji&quot; rel=&quot;nofollow&quot;&gt;Twemoji&lt;/a&gt;, но мне не нравилось что они заменяют стандартные на iOS и OS X.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/emoji-fallback&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Wed, 20 Jan 2016 00:00:00 +0300</pubDate>
+        <link>https://ymatuhin.ru/front-end/emoji-fallback</link>
+        <guid isPermaLink="true">https://ymatuhin.ru/front-end/emoji-fallback</guid>
+        
+        <category>emoji</category>
+        
+        <category>twitter</category>
+        
+        <category>fallback</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Что почитать фронтендеру на выходных — 1</title>
@@ -304,31 +329,6 @@ img[src=&quot;/img/en.gif&quot;] {
         <category>архитектура</category>
         
         <category>рефакторинг</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Старт курса по архитектуре JavaScript приложений в SmartJS академии</title>
-        
-            <description>&lt;p&gt;Вчера, 22 октября 2015 года, начался второй курс по архитектуре современных JavaScript приложений в &lt;a href=&quot;http://smartjs.academy&quot;&gt;SmartJS академии&lt;/a&gt;. Его ведет, как и другие курсы, Илья Климов. Я буду вести свой отчет и впечатления об этом курсе, и публиковать выжимку полученной информации в виде статей.&lt;/p&gt;
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Fri, 23 Oct 2015 00:00:00 +0300</pubDate>
-        <link>https://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture</link>
-        <guid isPermaLink="true">https://ymatuhin.ru/front-end/smartjs_started_a_course_on_architecture</guid>
-        
-        <category>css</category>
-        
-        <category>smartjs</category>
-        
-        <category>архитектура</category>
         
         
         <category>front-end</category>
