@@ -1,7 +1,7 @@
 {% if include.url %}
 <figure itemscope itemtype="http://schema.org/VideoObject">
 		<iframe itemprop="contentUrl"
-				src="http://www.youtube.com/embed/{{ include.url | replace: 'https://www.youtube.com/watch?v=', '' }}"
+				src="https://www.youtube.com/embed/{{ include.url | replace: 'https://www.youtube.com/watch?v=', '' }}"
 				width="{{ include.width }}"
 				height="{{ include.height }}"
 				scrolling="no"
