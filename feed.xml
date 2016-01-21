@@ -6,9 +6,32 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jan 2016 18:47:19 +0300</pubDate>
-    <lastBuildDate>Wed, 20 Jan 2016 18:47:19 +0300</lastBuildDate>
+    <pubDate>Thu, 21 Jan 2016 12:36:36 +0300</pubDate>
+    <lastBuildDate>Thu, 21 Jan 2016 12:36:36 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Масштабируемый пиксель арт</title>
+        
+            <description>&lt;p&gt;Мне нравится пиксель арт. Только взгляните на этот предмет искусства выше. Восьмибитная ностальгия, красота и простота. Но с пиксель артом в вебе одна проблема — &lt;strong&gt;сглаживание&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Сложно передать красоту иллюстрации, когда её портит стандартное сглаживание. Это актуально для ретины и телефонов, когда исходное изображение масштабируется. Чего не хватает? Возможности управлять сглаживанием, чтобы как в фотошопе Nearest Neighbor. Этим мы и займемся.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/scalable-pixel-art&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Thu, 21 Jan 2016 00:00:00 +0300</pubDate>
+        <link>https://ymatuhin.ru/front-end/scalable-pixel-art</link>
+        <guid isPermaLink="true">https://ymatuhin.ru/front-end/scalable-pixel-art</guid>
+        
+        <category>pixel art</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Фоллбэчим Emoji</title>
@@ -305,33 +328,6 @@ img[src=&quot;/img/en.gif&quot;] {
         
         
         <category>tools</category>
-        
-      </item>
-    
-      <item>
-        <title>Партизанский рефакторинг, или как улучшить проект, чтобы заказчик этого не понял</title>
-        
-            <description>&lt;p&gt;Сегодня мы поговорим о говнокоде. В следующих статьях мы обсудим архитектуру, но знание как построить «хорошую» архитектуру может разбиться о рабочие будни. Дома вы напишите «идеальный проект», но на работе вас поджидает jQuery. Но мы, как профессионалы, будем готовы к этому.&lt;/p&gt;
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/partisan-refactoring&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Sun, 01 Nov 2015 00:00:00 +0300</pubDate>
-        <link>https://ymatuhin.ru/front-end/partisan-refactoring</link>
-        <guid isPermaLink="true">https://ymatuhin.ru/front-end/partisan-refactoring</guid>
-        
-        <category>react</category>
-        
-        <category>smartjs</category>
-        
-        <category>архитектура</category>
-        
-        <category>рефакторинг</category>
-        
-        
-        <category>front-end</category>
         
       </item>
     
