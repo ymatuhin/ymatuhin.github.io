@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Jan 2016 18:50:12 +0300</pubDate>
-    <lastBuildDate>Fri, 22 Jan 2016 18:50:12 +0300</lastBuildDate>
+    <pubDate>Sun, 24 Jan 2016 14:20:57 +0300</pubDate>
+    <lastBuildDate>Sun, 24 Jan 2016 14:20:57 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -15,13 +15,14 @@
         
             <description>
                 
-	<figure>
-		<img src="/img/week-ends/social-previews.png" alt="Размеры изображений при шаринге в социальных сетях"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/week-ends/social-previews.png&quot; alt=&quot;Размеры изображений при шаринге в социальных сетях&quot;/&gt;
 
 		
-			<figcaption>Размеры изображений при шаринге в социальных сетях</figcaption>
+			&lt;figcaption&gt;Размеры изображений при шаринге в социальных сетях&lt;/figcaption&gt;
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;h2 id=&quot;section&quot;&gt;Статьи и видео&lt;/h2&gt;
@@ -57,13 +58,14 @@
         
             <description>
                 
-	<figure>
-		<img src="/img/pixel-art/pixel-art.gif" alt="Пиратский сюжет, автор: bugpixel"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/pixel-art/pixel-art.gif&quot; alt=&quot;Пиратский сюжет, автор: bugpixel&quot;/&gt;
 
 		
-			<figcaption>Пиратский сюжет, автор: <a href="http://bugpixel.com/" rel="nofollow">bugpixel</a>.</figcaption>
+			&lt;figcaption&gt;Пиратский сюжет, автор: &lt;a href=&quot;http://bugpixel.com/&quot; rel=&quot;nofollow&quot;&gt;bugpixel&lt;/a&gt;.&lt;/figcaption&gt;
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;Мне нравится пиксель арт. Только взгляните на этот предмет искусства выше. Восьмибитная ностальгия, красота и простота. Но с пиксель артом в вебе одна проблема — &lt;strong&gt;сглаживание&lt;/strong&gt;.&lt;/p&gt;
@@ -91,11 +93,12 @@
         
             <description>
                 
-	<figure>
-		<img src="/img/emoji/emoji.jpg" alt="Emoji"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/emoji/emoji.jpg&quot; alt=&quot;Emoji&quot;/&gt;
 
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;Emoji набирают популярность. В блоге я тоже использовал их несколько раз, но получил отзыв о том, что они не везде показываются. На тот момент я прикрутил к сайту &lt;a href=&quot;https://github.com/twitter/twemoji&quot; rel=&quot;nofollow&quot;&gt;Twemoji&lt;/a&gt;, но мне не нравилось что они заменяют стандартные на iOS и OS X.&lt;/p&gt;
@@ -125,13 +128,14 @@
         
             <description>
                 
-	<figure>
-		<img src="/img/week-ends/1984.jpg" alt="Джордж Оруэлл — 1984"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/week-ends/1984.jpg&quot; alt=&quot;Джордж Оруэлл — 1984&quot;/&gt;
 
 		
-			<figcaption>Джордж Оруэлл — 1984</figcaption>
+			&lt;figcaption&gt;Джордж Оруэлл — 1984&lt;/figcaption&gt;
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;style&gt;
@@ -170,13 +174,14 @@ img[src=&quot;/img/en.gif&quot;] {
         
             <description>
                 
-	<figure>
-		<img src="/img/fira-code/fira-code.png" alt="Fira Code: шрифт с лигатурами для кода"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/fira-code/fira-code.png&quot; alt=&quot;Fira Code: шрифт с лигатурами для кода&quot;/&gt;
 
 		
-			<figcaption>Шрифт с лигатурами Fira Code</figcaption>
+			&lt;figcaption&gt;Шрифт с лигатурами Fira Code&lt;/figcaption&gt;
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;В языках программирования много составных операторов, таких как &lt;code class=&quot;highlighter-rouge&quot;&gt;:=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;=&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;===&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;!==&lt;/code&gt;. Это одна логическая единица, но она занимает 2 или 3 символа. Это затрудняет чтение и анализ кода, хоть мы и привыкли к этому.&lt;/p&gt;
@@ -208,11 +213,12 @@ img[src=&quot;/img/en.gif&quot;] {
         
             <description>
                 
-	<figure>
-		<img src="/img/font-display/font-display.png" alt="Font display"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/font-display/font-display.png&quot; alt=&quot;Font display&quot;/&gt;
 
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;Когда вы загружаете шрифт через &lt;code class=&quot;highlighter-rouge&quot;&gt;font-face&lt;/code&gt;, браузер решает что отобразить пока шрифт загружается. Браузеры ждут некоторое время, перед тем как решить что делать дальше.&lt;/p&gt;
@@ -287,13 +293,14 @@ img[src=&quot;/img/en.gif&quot;] {
         
             <description>
                 
-	<figure>
-		<img src="/img/link_prefetch/html5_link_prefetch.png" alt="Стадии загрузки ресурса (HTML5 Link Prefetch)"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/link_prefetch/html5_link_prefetch.png&quot; alt=&quot;Стадии загрузки ресурса (HTML5 Link Prefetch)&quot;/&gt;
 
 		
-			<figcaption>Стадии загрузки ресурса</figcaption>
+			&lt;figcaption&gt;Стадии загрузки ресурса&lt;/figcaption&gt;
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработающий preload. HTML5 Link Prefetch уменьшит время загрузки для ресурсов, которые нам понадобятся позже.&lt;/p&gt;
@@ -329,11 +336,12 @@ img[src=&quot;/img/en.gif&quot;] {
         
             <description>
                 
-	<figure>
-		<img src="/img/mac/dialog.png" alt="Диалог смены расширения у файла в Mac OS"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/mac/dialog.png&quot; alt=&quot;Диалог смены расширения у файла в Mac OS&quot;/&gt;
 
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;При появлении диалога, по умолчанию у нас нет возможности переключить фокус на другую кнопку с помощью клавиатуры, только мышкой или трекпадом. Но это поведение легко исправить.&lt;/p&gt;
@@ -361,11 +369,12 @@ img[src=&quot;/img/en.gif&quot;] {
         
             <description>
                 
-	<figure>
-		<img src="/img/spa_plugins/spa_plugins.jpg" alt="HTML5 Link Prefetch"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/spa_plugins/spa_plugins.jpg&quot; alt=&quot;HTML5 Link Prefetch&quot;/&gt;
 
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;Ваши пользователи разные. У кого-то быстрый компьютер и интернет, а кто-то пользуется приложением из глуши со слабеньким 2G интернетом. Мы, разработчики, редко задумываемся об этом, ведь у нас сайт «летает».&lt;/p&gt;
@@ -403,13 +412,14 @@ img[src=&quot;/img/en.gif&quot;] {
         
             <description>
                 
-	<figure>
-		<img src="/img/mems/standarts.png" alt="Как появилось так много favicons"/>
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;/img/mems/standarts.png&quot; alt=&quot;Как появилось так много favicons&quot;/&gt;
 
 		
-			<figcaption>Почему так много иконок…</figcaption>
+			&lt;figcaption&gt;Почему так много иконок…&lt;/figcaption&gt;
 		
-	</figure>
+	&lt;/figure&gt;
 
 
                 &lt;p&gt;Фавиконки, хм… это такая штука, которой всегда нет. За свою карьеру только в 3-4 проектах была иконка. Последний раз она мне потребовалась на этом сайте и я погрузился в поиск информации о том, как правильно подключать иконки и каких размеров они должны быть.&lt;/p&gt;

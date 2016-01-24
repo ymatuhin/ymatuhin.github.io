@@ -17,7 +17,8 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         {% if post.excerpt %}
             <description>
-                {% include media-post-image-feed.html %}
+                {% capture image %}{% include media-post-image-feed.html %}{% endcapture %}
+                {{ image | xml_escape }}
                 {{ post.excerpt | xml_escape }}
                 {% capture read_more %}<br><a href="{{ post.url | prepend: site.url }}">Читать дальше…</a>{% endcapture %}
                 {{ read_more | xml_escape }}
