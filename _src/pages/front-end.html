@@ -11,6 +11,10 @@ description: >
 
 <p>Последнее время меня очень интересует архитектура приложений, функциональный стиль и новые инструменты для разработчика. Но я часто не пишу о них, поскольку «сам еще толком не разобрался».</p>
 
-{% for post in site.categories.front-end %}
-    {% include posts.html %}
-{% endfor %}
+<div class="projects no-top">
+    <div class="history">
+        {% for post in site.categories.front-end %}
+            {% include posts.html %}
+        {% endfor %}
+    </div>
+</div>

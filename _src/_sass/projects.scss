@@ -35,3 +35,7 @@
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased
 }
+
+.projects.no-top { padding-top: 0; }
+.projects.no-top .history { padding-top: 0; }
+.projects.no-top h3 { margin-top: 0; }

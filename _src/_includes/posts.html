@@ -6,6 +6,7 @@
 {% assign thisMonth = post.date | date: "%-m" %}
 {% assign nextMonth = post.previous.date | date: "%-m" %}
 
+
 {% if forloop.first %}
 	<h3>
 		{% assign m = thisMonth %}{% include month_full.html %}
@@ -13,25 +14,24 @@
 			{{ next_year }}
 		{% endif %}
 	</h3>
-	<ul>
 {% endif %}
 
-<li>
-	<nav><a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a></nav>
-	<p>{{ post.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 130 }}</p>
+<div class="landmark">
+	<div class="date">
+		{% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d" }} {% include month.html %} {{ post.date  | date: "%-Y" }}
+	</div>
+	<div class="description">
+		<a rel="bookmark" href="{{ post.url }}/">{{ post.title }}</a>
+	</div>
+</div>
 
 {% if forloop.last %}
-</ul>
 {% else %}
 	{% if this_year != next_year %}
-	</ul>
 	<h3>{% assign m = nextMonth %}{% include month_full.html %} {{ next_year }}</h3>
-	<ul>
 	{% else %}
 		{% if this_month != next_month %}
-		</ul>
 		<h3>{% assign m = nextMonth %}{% include month_full.html %} {{ next_year }}</h3>
-		<ul>
 		{% endif %}
 	{% endif %}
 {% endif %}

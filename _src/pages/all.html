@@ -9,6 +9,10 @@ published: false
 
 <p>Все что есть, все тут.</p>
 
-{% for post in site.posts %}
-    {% include posts.html %}
-{% endfor %}
+<div class="projects no-top">
+    <div class="history">
+        {% for post in site.posts %}
+            {% include posts.html %}
+        {% endfor %}
+    </div>
+</div>
