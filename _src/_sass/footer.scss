@@ -2,7 +2,7 @@
     font-size: 12px;
     line-height: 20px;
     color: rgba(0, 0, 0, .3);
-    padding: 72px 24px 0 0;
+    padding: 48px 24px 0 0;
     font-style: normal;
 }
 
@@ -16,12 +16,6 @@
 
 
 @media screen and (max-width:860px) {
-    .footer {
-        padding-top: 48px;
-    }
-}
-
-@media screen and (max-width:700px) {
     .footer {
         padding-top: 24px;
     }

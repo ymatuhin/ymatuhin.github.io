@@ -11,5 +11,6 @@ img { height: auto !important; }
 	vertical-align: -3px;
 }
 
-.adsbygoogle { max-width: 728px; margin: 24px 0; height: auto !important; }
+.adsbygoogle { max-width: 728px; margin: 24px 0; height: auto !important; opacity: 0; transition: opaacity .3s; }
 .adsbygoogle iframe { outline: none; }
+.adsbygoogle[data-adsbygoogle-status="done"] { opacity: 1; }
