@@ -10,7 +10,7 @@ function declOfNum(number, titles) {
 }
 
 if (mod > pub) {
-	var _txt = updText.innerText;
+	var _txt = updText.innerText || updText.textContent;
 	var shownText = '';
 
 	if (days == 0) {
