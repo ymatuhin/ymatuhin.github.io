@@ -79,7 +79,7 @@ imageLink: http://tilda.education/articles-images-for-social
 <style>
 img[src="/img/en.gif"],
 img[src="/img/habr.png"] {
-	border: 0;
+	outline: none;
 	vertical-align: middle;
 }
 </style>

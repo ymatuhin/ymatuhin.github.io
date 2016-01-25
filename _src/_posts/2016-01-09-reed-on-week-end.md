@@ -14,7 +14,7 @@ imageTitle: Джордж Оруэлл — 1984
 
 <style>
 img[src="/img/en.gif"] {
-	border: 0;
+	outline: none;
 	vertical-align: middle;
 }
 </style>
