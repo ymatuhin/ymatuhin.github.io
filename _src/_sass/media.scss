@@ -11,6 +11,16 @@ img { height: auto !important; }
 	vertical-align: -3px;
 }
 
-.adsbygoogle { max-width: 728px; margin: 24px 0; height: auto !important; opacity: 0; transition: opaacity .3s; }
+.adsbygoogle.horizontal { max-width: 728px; margin: 24px 0; height: auto !important; opacity: 0; transition: opaacity .3s; }
+.adsbygoogle.right300xauto,
+.adsbygoogle.right300x600 {
+	position: absolute;
+	max-width: 300px;
+	left: 100%;
+	margin-left: 24px;
+	top: 0;
+}
+.adsbygoogle.right300xauto { top: 624px; }
 .adsbygoogle iframe { outline: none; }
+.adsbygoogle { opacity: 0; transition: opacity .3s ease-in-out}
 .adsbygoogle[data-adsbygoogle-status="done"] { opacity: 1; }
