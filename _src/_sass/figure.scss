@@ -1,4 +1,6 @@
 figure { display: block; text-align: left; margin: 0 0 24px; }
+figure * { max-width: 100% }
+
 figure img,
 figure iframe { display: block; }
 figure figcaption { margin: 12px 0; color: #AAA; }

@@ -12,7 +12,9 @@ img { height: auto !important; }
 }
 
 .adsbygoogle.horizontal { max-width: 728px; margin: 24px 0; height: auto !important; opacity: 0; transition: opaacity .3s; }
-.adsbygoogle.right300xauto,
+
+.adsbygoogle.right300x250x1,
+.adsbygoogle.right300x250x2,
 .adsbygoogle.right300x600 {
 	position: absolute;
 	max-width: 300px;
@@ -20,7 +22,9 @@ img { height: auto !important; }
 	margin-left: 24px;
 	top: 0;
 }
-.adsbygoogle.right300xauto { top: 624px; }
+.adsbygoogle.right300x250x1 { top: 624px; }
+.adsbygoogle.right300x250x2 { top: 898px; }
+
 .adsbygoogle iframe { outline: none; }
 .adsbygoogle { opacity: 0; transition: opacity .3s ease-in-out}
 .adsbygoogle[data-adsbygoogle-status="done"] { opacity: 1; }
