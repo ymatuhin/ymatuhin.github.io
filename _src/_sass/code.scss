@@ -8,8 +8,8 @@ code {
 }
 
 pre {
-	padding: 24px 0;
-	margin: 0 0 24px 0;
+	padding: 24px;
+	margin: 0 -24px 24px -24px;
 }
 
 code {
@@ -23,16 +23,16 @@ pre code { padding: 0; }
 
 .highlighter-rouge { position: relative; }
 .highlighter-rouge pre { background: #ecf2f8 }
-div.highlighter-rouge:before,
-div.highlighter-rouge:after {
-	z-index: -1;
-	background-color: #ecf2f8;
-	content: "";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 1000%;
-}
-
-.highlighter-rouge:after { left: 100%; }
-.highlighter-rouge:before { right: 100%; }
+// div.highlighter-rouge:before,
+// div.highlighter-rouge:after {
+// 	z-index: -1;
+// 	background-color: #ecf2f8;
+// 	content: "";
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	width: 1000%;
+// }
+//
+// .highlighter-rouge:after { left: 100%; }
+// .highlighter-rouge:before { right: 100%; }
