@@ -6,8 +6,8 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Jan 2016 12:13:30 +0300</pubDate>
-    <lastBuildDate>Sat, 30 Jan 2016 12:13:30 +0300</lastBuildDate>
+    <pubDate>Sat, 30 Jan 2016 16:40:30 +0300</pubDate>
+    <lastBuildDate>Sat, 30 Jan 2016 16:40:30 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -25,6 +25,10 @@
 		&lt;/iframe&gt;
 	&lt;figcaption itemprop=&quot;name&quot;&gt;Wat by Gary Bernhardt&lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;UPD&lt;/strong&gt;. Совсем забыл о классном видео Андрея Листочкина с Харьков JS — &lt;a href=&quot;https://www.youtube.com/watch?v=xPFRUM_oDKA&quot;&gt;Как не гнаться за технологиями и начать жить&lt;/a&gt;. Рекомендую 👍&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;Статьи и видео&lt;/h2&gt;
 &lt;ol&gt;
