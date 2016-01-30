@@ -6,9 +6,57 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Jan 2016 19:06:54 +0300</pubDate>
-    <lastBuildDate>Thu, 28 Jan 2016 19:06:54 +0300</lastBuildDate>
+    <pubDate>Sat, 30 Jan 2016 12:13:30 +0300</pubDate>
+    <lastBuildDate>Sat, 30 Jan 2016 12:13:30 +0300</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Что почитать фронтендеру на выходных — 3</title>
+        
+            <description>
+                
+                
+
+                &lt;p&gt;Горячие новости 🔥 — Sublime Text &lt;a href=&quot;https://sublimetext.com/3dev&quot; rel=&quot;nofollow&quot;&gt;жив&lt;/a&gt;! Сборка 3099 вышла 29 января 2016.&lt;/p&gt;
+
+&lt;figure itemscope=&quot;&quot; itemtype=&quot;http://schema.org/VideoObject&quot;&gt;
+		&lt;iframe itemprop=&quot;contentUrl&quot; src=&quot;https://www.youtube.com/embed/20BySC_6HyY?rel=0&amp;amp;showinfo=0&quot; width=&quot;960&quot; height=&quot;720&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; allowtransparency=&quot;&quot; allowfullscreen=&quot;&quot;&gt;
+			Загружаю…
+		&lt;/iframe&gt;
+	&lt;figcaption itemprop=&quot;name&quot;&gt;Wat by Gary Bernhardt&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;Статьи и видео&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://vc.ru/p/yandex-accessibility&quot; rel=&quot;nofollow&quot;&gt;Как «Яндекс» создает доступные интерфейсы&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://css-live.ru/articles/minimalno-neobxodimye-shrifty.html&quot; rel=&quot;nofollow&quot;&gt;Минимально необходимые шрифты&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🎥 &lt;a href=&quot;https://events.yandex.ru/lib/talks/1436/&quot; rel=&quot;nofollow&quot;&gt;Как дебажить&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;🇺🇸  &lt;a href=&quot;https://github.com/roman01la/roman01la-devtools&quot; rel=&quot;nofollow&quot;&gt;Как использовать FiraCode в инструментах разработчика Chrome&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/img/week-ends/dev-tools-fira-code.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/reed-on-week-end-3&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Sat, 30 Jan 2016 00:00:00 +0300</pubDate>
+        <link>https://ymatuhin.ru/front-end/reed-on-week-end-3</link>
+        <guid isPermaLink="true">https://ymatuhin.ru/front-end/reed-on-week-end-3</guid>
+        
+        <category>почитать</category>
+        
+        <category>список</category>
+        
+        <category>дайджест</category>
+        
+        
+        <category>front-end</category>
+        
+      </item>
     
       <item>
         <title>Что почитать фронтендеру на выходных — 2</title>
@@ -138,14 +186,7 @@
 	&lt;/figure&gt;
 
 
-                &lt;style&gt;
-img[src=&quot;/img/en.gif&quot;] {
-	outline: none;
-	vertical-align: middle;
-}
-&lt;/style&gt;
-
-&lt;p&gt;Я читал на этой неделе Оруэлла — 1984. Давно собирался и вот, к новому году, приобрел себе книженцию и прочитал. До сих пор не выходит из головы, сильный финал. Рекомендую.&lt;/p&gt;
+                &lt;p&gt;Я читал на этой неделе Оруэлла — 1984. Давно собирался и вот, к новому году, приобрел себе книженцию и прочитал. До сих пор не выходит из головы, сильный финал. Рекомендую.&lt;/p&gt;
 
 &lt;p&gt;А теперь что касается фронтенда…&lt;/p&gt;
 
@@ -401,47 +442,6 @@ img[src=&quot;/img/en.gif&quot;] {
         <category>loading</category>
         
         <category>mobile</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Продвинутые favicon для сайта</title>
-        
-            <description>
-                
-                
-	&lt;figure&gt;
-		&lt;img src=&quot;/img/mems/standarts.png&quot; alt=&quot;Как появилось так много favicons&quot;/&gt;
-
-		
-			&lt;figcaption&gt;Почему так много иконок…&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;
-
-
-                &lt;p&gt;Фавиконки, хм… это такая штука, которой всегда нет. За свою карьеру только в 3-4 проектах была иконка. Последний раз она мне потребовалась на этом сайте и я погрузился в поиск информации о том, как правильно подключать иконки и каких размеров они должны быть.&lt;/p&gt;
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/favicons&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Thu, 12 Nov 2015 00:00:00 +0300</pubDate>
-        <link>https://ymatuhin.ru/front-end/favicons</link>
-        <guid isPermaLink="true">https://ymatuhin.ru/front-end/favicons</guid>
-        
-        <category>favicon</category>
-        
-        <category>html</category>
-        
-        <category>safari</category>
-        
-        <category>android</category>
-        
-        <category>ios</category>
         
         
         <category>front-end</category>

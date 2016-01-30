@@ -1,8 +1,10 @@
+{% if include.url %}
 <figure itemscope itemtype="http://schema.org/ImageObject">
-	{% if include.url %}
-		<a rel="nofollow" href="{{ include.url | prepend: '/img/' }}">
-			<img itemprop="contentUrl" src="{{ include.url | prepend: '/img/' }}" width="{{ include.width }}" alt="{{ include.alt }}">
-		</a>
+	<a rel="nofollow" href="{{ include.url | prepend: '/img/' }}">
+		<img itemprop="contentUrl" src="{{ include.url | prepend: '/img/' }}" width="{{ include.width }}" alt="{{ include.alt }}">
+	</a>
+	{% if include.include.caption %}
+		<figcaption itemprop="caption">{{ include.caption }}</figcaption>
 	{% endif %}
-	<figcaption itemprop="caption">{{ include.caption }}</figcaption>
 </figure>
+{% endif %}
