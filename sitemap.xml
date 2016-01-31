@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ymatuhin.ru/front-end/detect-adblock</loc>
+    <lastmod>2016-01-31T21:13:38+03:00</lastmod>
+  </url>
+  <url>
     <loc>https://ymatuhin.ru/front-end/reed-on-week-end-3</loc>
     <lastmod>2016-01-30T16:40:49+03:00</lastmod>
   </url>
@@ -325,16 +329,16 @@
     <lastmod>2016-01-28T18:07:05+03:00</lastmod>
   </url>
   <url>
-    <loc>https://ymatuhin.ru/demo/11/</loc>
-    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
+    <loc>https://ymatuhin.ru/demo/animate_auto/</loc>
+    <lastmod>2016-01-13T10:20:16+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/demo/san_francisco/</loc>
     <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
-    <loc>https://ymatuhin.ru/demo/animate_auto/</loc>
-    <lastmod>2016-01-13T10:20:16+03:00</lastmod>
+    <loc>https://ymatuhin.ru/demo/11/</loc>
+    <lastmod>2015-12-20T12:24:09+03:00</lastmod>
   </url>
   <url>
     <loc>https://ymatuhin.ru/en/</loc>
