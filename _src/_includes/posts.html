@@ -1,10 +1,10 @@
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+{% capture next_year %}{{ post.next_in_category.date | date: "%Y" }}{% endcapture %}
+{% capture next_month %}{{ post.next_in_category.date | date: "%B" }}{% endcapture %}
 
 {% assign thisMonth = post.date | date: "%-m" %}
-{% assign nextMonth = post.previous.date | date: "%-m" %}
+{% assign nextMonth = post.next_in_category.date | date: "%-m" %}
 
 
 {% if forloop.first %}
