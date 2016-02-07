@@ -44,8 +44,7 @@ Apple сделал свой новый шрифт приватным в сист
 
 ~~~css
 body {
-  font-family: system, -apple-system,
-      ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
+  font-family: system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", "Lucida Grande";
 }
 ~~~
 
@@ -59,9 +58,5 @@ body {
 
 Подсмотрено у <a href="http://furbo.org/2015/07/09/i-left-my-system-fonts-in-san-francisco/">Craig Hockenberry</a>.
 
-<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
-    <h3>установить шрифт san francisco</h3>
-    <h4>новый шрифт san francisco</h4>
-    <h4>системный шрифт san francisco</h4>
-    <h5>новый шрифт apple san francisco</h5>
-</footer> -->
+> Обновление от **6 февраля, 2016**.
+> Хром теперь поддерживает свое значение `BlinkMacSystemFont`, аналогичное `-apple-system`.

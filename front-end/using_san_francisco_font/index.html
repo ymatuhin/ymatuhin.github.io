@@ -230,8 +230,7 @@
 <p>Чтобы добраться до системного шрифта, в некоторых браузерах есть значение шрифта <code>-apple-system</code>. В будущем можно будет пользоваться только им, но не сейчас. Чтобы все работало в хроме и остальных браузерах на нужен следующий код:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
-  <span class="nl">font-family</span><span class="p">:</span> <span class="n">system</span><span class="p">,</span> <span class="n">-apple-system</span><span class="p">,</span>
-      <span class="s1">".SFNSDisplay-Regular"</span><span class="p">,</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="s1">"Lucida Grande"</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">system</span><span class="p">,</span> <span class="n">-apple-system</span><span class="p">,</span> <span class="n">BlinkMacSystemFont</span><span class="p">,</span> <span class="s1">".SFNSDisplay-Regular"</span><span class="p">,</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="s1">"Lucida Grande"</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 </div>
@@ -246,12 +245,10 @@
 
 <p>Подсмотрено у <a href="http://furbo.org/2015/07/09/i-left-my-system-fonts-in-san-francisco/">Craig Hockenberry</a>.</p>
 
-<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
-    <h3>установить шрифт san francisco</h3>
-    <h4>новый шрифт san francisco</h4>
-    <h4>системный шрифт san francisco</h4>
-    <h5>новый шрифт apple san francisco</h5>
-</footer> -->
+<blockquote>
+  <p>Обновление от <strong>6 февраля, 2016</strong>.<br />
+Хром теперь поддерживает свое значение <code class="highlighter-rouge">BlinkMacSystemFont</code>, аналогичное <code class="highlighter-rouge">-apple-system</code>.</p>
+</blockquote>
 
 
 	<ul class="tags visuallyhidden">
@@ -326,6 +323,22 @@
 <aside>
     <h4>Популярное</h4>
     <ul class="related">
+      
+    
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
       
     
       
@@ -1472,6 +1485,19 @@
             
             
                 
+                    <li><a rel="nofollow" href="/front-end/flux-challenge">На чем тестировать JavaScript фреймворки</a><br /></li>
+                    
+                
+            
+            
+            
+        
+    
+        
+            
+            
+            
+                
                     <li><a rel="nofollow" href="/front-end/detect-adblock">Проверка на блокировку рекламы, или «Пожалуйста, отключите AdBlock»</a><br /></li>
                     
                 
@@ -1571,17 +1597,6 @@
             
         
     
-        
-            
-            
-            
-                
-                    <li><a rel="nofollow" href="/front-end/html5-link-prefetch">Ускоряем загрузку ресурсов для сайта: preconnect, prefetch, prerender, preloading…</a><br /></li>
-                    
-                
-            
-            
-            
         
     
         

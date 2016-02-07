@@ -27,7 +27,7 @@ imageTitle: Логотип блокировшик рекламы — AdBlock
 
 ## Способ 1
 
-Использовать популярный скрипт [FuckAdBlock](https://github.com/sitexw/FuckAdBlock).
+Использовать популярный скрипт [FuckAdBlock](https://github.com/sitexw/FuckAdBlock){:rel='nofollow'}.
 
 ```js
 function adBlockNotDetected() {
