@@ -1,7 +1,7 @@
 .menu{background:#f9f5e4;padding:5px 13px 7px;border-radius:4px;margin:24px 0 12px -13px;font-size:0;line-height:14px}
 .menu,.menu li{display:inline-block}
 .menu li{font-size:14px;line-height:24px;margin: 0;}
-.menu a{color: #333;border-bottom: 1px dotted rgba(0,0,0,.3)}
+.menu a{color: #000;border-bottom: 1px dotted rgba(0,0,0,.5)}
 .menu li:after{content: '\2022';font-size:10px;line-height:2px;vertical-align:middle;padding:0 10px;}
 .menu li:last-child:after{padding:0;content:'';font-size:0}
 .menu_page { margin-top: 24px; margin-bottom: 36px; }
