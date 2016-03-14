@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://ymatuhin.ru"
 
 # Build settings
-permalink: /:categories/:title
+permalink: /:categories/:title.html
 excerpt_separator: <!-- more -->
 
 sass:
