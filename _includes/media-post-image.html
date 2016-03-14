@@ -1,0 +1,42 @@
+{% if page.image %}
+	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		{% capture url %}{{ page.image | prepend: '/assets/img/' }}{% endcapture %}
+
+		{% if page.imageLink %}
+			<a rel="nofollow" href="{{ page.imageLink }}">
+		{% else %}
+			<a rel="nofollow" href="{{ url }}">
+		{% endif %}
+			<img itemprop="contentUrl" src="{{ url }}"
+				 alt="{{ page.imageCaption }}"
+				 style="{% if page.imageSpace %}padding: 24px;{% endif %}"
+				 class="{% if page.pixelArt %}pixel-art{% endif %}">
+		</a>
+
+		<meta itemprop="url" content="{{ url }}">
+		{% if page.imageWidth %}
+			<meta itemprop="width" content="{{ page.imageWidth }}">
+		{% endif %}
+
+		{% if page.imageHeight %}
+			<meta itemprop="height" content="{{ page.imageHeight }}">
+		{% endif %}
+
+		{% if page.imageTitle %}
+			<figcaption itemprop="caption">{{ page.imageTitle }}</figcaption>
+		{% endif %}
+	</figure>
+{% endif %}
+
+{% if page.pixelArt %}
+<style>
+.pixel-art {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+}
+</style>
+{% endif %}

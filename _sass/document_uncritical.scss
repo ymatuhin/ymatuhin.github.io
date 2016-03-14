@@ -1,0 +1,15 @@
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-variant-ligatures: contextual;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}

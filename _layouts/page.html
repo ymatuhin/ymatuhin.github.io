@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div role="main" class="content">
+	<blockquote class="no-ads" style="display: none">
+		Вижу вы пользуетесь <i>блокировщиком рекламы</i>, я тоже так делаю. <br>
+		Буду признателен, если вы <b>отключите его на моем сайте</b>. <br>
+		Это поможет мне оплатить хостинг, а может и на ☕️ &nbsp;кофе останется.
+	</blockquote>
+
+	<h1>{{ page.title }}</h1>
+
+	{% if page.categories %}
+		{% include pubdate.html %}
+	{% endif %}
+
+	{% include menu.html %}
+
+	<div class="text-content">
+		{{ content }}
+	</div>
+
+	{% if page.categories %}
+		{% include comments.html %}
+	{% endif %}
+
+	{% include footer.html %}
+</div>

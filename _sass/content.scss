@@ -1,0 +1,31 @@
+.content { padding: 0; max-width: 770px }
+
+p { margin: 0 0 24px 0 }
+
+pre,
+blockquote {
+	margin: 24px 0 24px -24px;
+	padding: 24px;
+	background: #f9f5e4;
+}
+
+pre,
+code {
+	white-space: pre-wrap;
+	font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
+
+code {
+	background: #f9f5e4;
+	border-radius: 3px;
+	padding: 4px 4px 2px;
+	line-height: 23px;
+}
+pre code { padding: 0 }
+
+time {
+	display: block;
+	height: 24px;
+}
+
+figure { display: block; text-align: left; margin: 0 0 24px }

@@ -1,0 +1,14 @@
+{% if page.updated %}
+	<meta itemprop="dateModified" content="{{page.updated | date: '%Y-%m-%d'}}">
+{% endif %}
+
+<time itemprop="datePublished" datetime="{{page.date | date: '%Y-%m-%d'}}">
+	{% assign m = page.date | date: "%-m" %}
+	{{ page.date | date: "%-d"  }} {% include month.html %} {{ page.date | date: "%-Y"}}{% if page.updated %}<small class="js-updated">, обновлено</small>{% endif %}
+</time>
+
+<a rel="nofollow" itemscope itemtype="https://schema.org/Person" itemprop="author" href="http://plus.google.com/104557932122476785260/">
+	<meta itemprop="name" content="{{ site.title }}"></meta>
+</a>
+
+<script async src="/assets/js/pub-date.js"></script>

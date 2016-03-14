@@ -2,7 +2,4 @@
 User-agent: *
 Allow: *
 Disallow: 2ad9ee136246.html
-Disallow: /ads.html
-Disallow: /about.md
-Disallow: /seo/
-Sitemap: http://ymatuhin.ru/sitemap.xml
+Sitemap: https://ymatuhin.ru/sitemap.xml

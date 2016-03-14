@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	font: 14px/24px system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", ".SFNSDisplay-Regular", Verdana, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	padding: 72px;
+	color: #333;
+	background: #fff;
+	-webkit-transition: padding .3s ease-out, opacity .25s ease-in-out;
+	transition: padding .3s ease-out, opacity .25s ease-in-out;
+	opacity: 0;
+}
+
+body.is_page { padding-right: 396px }
+@media screen and (max-width: 990px) {
+	body.is_page { padding-right: 372px }
+}
+
+@media screen and (max-width: 960px) {
+	body { padding: 48px }
+	body.is_page { padding-right: 48px }
+}
+
+@media screen and (max-width: 700px) {
+	body.is_page { padding-right: 24px }
+	body { padding: 24px }
+}
+
+.visuallyhidden { display: none }

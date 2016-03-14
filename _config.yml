@@ -1,0 +1,18 @@
+title: Юрий Матюхин
+email: ym@ymatuhin.ru
+baseurl: ""
+url: "https://ymatuhin.ru"
+
+# Build settings
+permalink: /:categories/:title
+excerpt_separator: <!-- more -->
+
+sass:
+  style: compressed
+
+permalinks: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+  syntax_highlighter: rouge
