@@ -3,15 +3,15 @@
   var body = document.getElementsByTagName('body')[0];
   var thisHref = location.href;
 
-  document.addEventListener("touchstart", clickAndTouch, false);
-  document.addEventListener("click", clickAndTouch, false);
-
-  window.addEventListener('popstate', function(event) {
-    if (thisHref == location.href) return;
-    render(location.href);
-  }, false);
-
-  window.onbeforeunload = function () { body.style.opacity = 0 }
+  // document.addEventListener("touchstart", clickAndTouch, false);
+  // document.addEventListener("click", clickAndTouch, false);
+  //
+  // window.addEventListener('popstate', function(event) {
+  //   if (thisHref == location.href) return;
+  //   render(location.href);
+  // }, false);
+  //
+  // window.onbeforeunload = function () { body.style.opacity = 0 }
 
   function clickAndTouch (e) {
       var href = e.target.href;
