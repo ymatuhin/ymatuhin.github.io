@@ -46,26 +46,7 @@
 		<!-- /Yandex.Metrika counter -->
 
 		<script src="/assets/js/github.js" async></script>
-		
-		<!-- Animate body hide -->
-		<script>
-			document.addEventListener("touchstart", clickAndTouch, false);
-			document.addEventListener("click", clickAndTouch, false);
-
-			function clickAndTouch (e) {
-				console.log('e.target.href', e.target.href)
-				if (!e.target.href || e.metaKey) return;
-				e.preventDefault();
-
-				document.getElementsByTagName('body')[0].style.opacity = 0;
-				setTimeout(function() {
-					location.href = e.target.href;
-				}, 100);
-			}
-		</script>
-
-		<!-- Animate body show -->
+		<script src="/assets/js/pjax.js" async></script>
 		<noscript><style>body {opacity: 1}</style></noscript>
-		<script>setTimeout(function() { document.getElementsByTagName('body')[0].style.opacity = 1 }, 10)</script>
 	</body>
 </html>
