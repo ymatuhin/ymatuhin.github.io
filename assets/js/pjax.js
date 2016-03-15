@@ -3,13 +3,13 @@
 
   document.addEventListener("touchstart", clickAndTouch, false);
   document.addEventListener("click", clickAndTouch, false);
-
   window.onbeforeunload = function () { body.style.opacity = 0 };
 
   function clickAndTouch (e) {
       var href = e.target.href;
       if (!href || e.metaKey) return true;
 
+      body.style.opacity = 0;
       e.preventDefault();
       setTimeout(function () { location.href = href }, 150);
   }
