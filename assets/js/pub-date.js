@@ -1,5 +1,9 @@
-var mod  = new Date(document.querySelector('meta[itemprop="dateModified"]').getAttribute('content'));
-var pub  = new Date(document.querySelector('time[itemprop="datePublished"]').getAttribute('datetime'));
+var dateMod = document.querySelector('meta[itemprop="dateModified"]');
+var datePub = document.querySelector('meta[itemprop="datePublished"]');
+
+if (!dateMod || !datePub) return;
+var mod  = new Date(dateMod.getAttribute('content'));
+var pub  = new Date(datePub.getAttribute('datetime'));
 
 var days = Math.floor((new Date() - mod)/(1000*60*60*24));
 var updText = document.querySelector('.js-updated');
