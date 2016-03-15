@@ -8,9 +8,10 @@
 
   window.addEventListener('popstate', function(event) {
     if (thisHref == location.href) return;
-    // console.log('popstate');
     render(location.href);
   }, false);
+
+  window.onbeforeunload = function () { body.style.opacity = 0 }
 
   function clickAndTouch (e) {
       var href = e.target.href;
