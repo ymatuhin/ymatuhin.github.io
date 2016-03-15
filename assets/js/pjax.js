@@ -1,16 +1,22 @@
 (function () {
   var body = document.getElementsByTagName('body')[0];
+  var thisHref = location.href;
 
   document.addEventListener("touchstart", clickAndTouch, false);
   document.addEventListener("click", clickAndTouch, false);
 
   window.addEventListener('popstate', function(event) {
-      if (!event.state) return;
-      clickAndTouch.call(null, event, document.location.href);
+    if (!event.state && thisHref != location.href) {
+      body.style.opacity = 0;
+      location.replace(location.href);
+    }
+    if (event.state) clickAndTouch.call(null, event, location.href);
   }, false);
 
   function clickAndTouch (e, loc) {
       var href = e.target.href || loc;
+      console.log('loc', loc);
+      console.log('href', href);
       if (!href || e.metaKey) return true;
       body.style.opacity = 0;
       if (href.indexOf(location.host) == -1) return true;
