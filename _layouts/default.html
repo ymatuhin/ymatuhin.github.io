@@ -18,7 +18,6 @@
 
 		<script src="/assets/js/hints.js" async></script>
 		<script src="/assets/js/typo.js" async></script>
-		<script src="/assets/js/github.js" async></script>
 
 		{% if page.categories %}
 			<!-- Sharing -->
@@ -46,14 +45,27 @@
 		<noscript><div><img src="https://mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
 
-		<!-- Animate body shown -->
+		<script src="/assets/js/github.js" async></script>
+		
+		<!-- Animate body hide -->
 		<script>
-			document.addEventListener("mousedown", function (e) {
+			document.addEventListener("touchstart", clickAndTouch, false);
+			document.addEventListener("click", clickAndTouch, false);
+
+			function clickAndTouch (e) {
+				console.log('e.target.href', e.target.href)
 				if (!e.target.href || e.metaKey) return;
+				e.preventDefault();
+
 				document.getElementsByTagName('body')[0].style.opacity = 0;
-			});
+				setTimeout(function() {
+					location.href = e.target.href;
+				}, 100);
+			}
 		</script>
-		<script>setTimeout(function() { document.getElementsByTagName('body')[0].style.opacity = 1 }, 10)</script>
+
+		<!-- Animate body show -->
 		<noscript><style>body {opacity: 1}</style></noscript>
+		<script>setTimeout(function() { document.getElementsByTagName('body')[0].style.opacity = 1 }, 10)</script>
 	</body>
 </html>
