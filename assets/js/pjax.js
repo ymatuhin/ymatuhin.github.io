@@ -1,4 +1,5 @@
 (function () {
+  var pageId = +localStorage.pageId || 1;
   var body = document.getElementsByTagName('body')[0];
   var thisHref = location.href;
 
@@ -6,39 +7,40 @@
   document.addEventListener("click", clickAndTouch, false);
 
   window.addEventListener('popstate', function(event) {
-    if (!event.state && thisHref != location.href) {
-      body.style.opacity = 0;
-      location.replace(location.href);
-    }
-    if (event.state) clickAndTouch.call(null, event, location.href);
+    if (thisHref == location.href) return;
+    // console.log('popstate');
+    render(location.href);
   }, false);
 
-  function clickAndTouch (e, loc) {
-      var href = e.target.href || loc;
-      console.log('loc', loc);
-      console.log('href', href);
+  function clickAndTouch (e) {
+      var href = e.target.href;
       if (!href || e.metaKey) return true;
       body.style.opacity = 0;
       if (href.indexOf(location.host) == -1) return true;
       if (!history.pushState) return errorCb();
 
-      var time = new Date().getTime();
       e.preventDefault();
-      history[loc ? 'replaceState' : 'pushState']({}, time, href);
-      requestGET(href, function (data) {
-        if (data) {
-          var diff = new Date().getTime() - time;
-          if (diff > 150) successCb(data);
-          else setTimeout(function() { successCb(data); console.log('timer'); }, 150 - diff);
-        }
-        else errorCb();
-      }, errorCb);
+      localStorage.pageId = ++pageId;
+      history.pushState({ pageId: pageId }, document.title, href);
+      render(href);
+  }
 
-      function successCb(data) {
-        document.write(data);
-        document.close();
+  function render(href) {
+    var time = new Date().getTime();
+    requestGET(href, function (data) {
+      if (data) {
+        var diff = new Date().getTime() - time;
+        if (diff > 150) successCb(data);
+        else setTimeout(function() { successCb(data) }, 150 - diff);
       }
-      function errorCb() { location.href = href }
+      else errorCb();
+    }, errorCb);
+
+    function successCb(data) {
+      document.write(data);
+      document.close();
+    }
+    function errorCb() { location.href = href }
   }
 
   function requestGET(url, success, error) {
