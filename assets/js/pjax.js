@@ -10,9 +10,11 @@
       if (!href || e.metaKey) return true;
       body.style.opacity = 0;
       if (href.indexOf(location.host) == -1) return true;
+      if (!history.pushState) return errorCb();
 
       var time = new Date().getTime();
       e.preventDefault();
+      history.pushState({}, '', href);
       requestGET(href, function (data) {
         if (data) {
           var diff = new Date().getTime() - time;
@@ -23,8 +25,6 @@
       }, errorCb);
 
       function successCb(data) {
-        if (!history.pushState) return errorCb();
-        history.pushState({}, '', href);
         document.write(data);
         document.close();
       }
