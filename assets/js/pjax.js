@@ -11,8 +11,6 @@
 
   function clickAndTouch (e, loc) {
       var href = e.target.href || loc;
-      console.log('loc', loc);
-      console.log('href', href);
       if (!href || e.metaKey) return true;
       body.style.opacity = 0;
       if (href.indexOf(location.host) == -1) return true;
@@ -24,9 +22,8 @@
       requestGET(href, function (data) {
         if (data) {
           var diff = new Date().getTime() - time;
-          console.log('diff', diff);
-          if (diff <= 150) successCb(data);
-          else setTimeout(function() { successCb(data) }, 150 - diff);
+          if (diff > 150) successCb(data);
+          else setTimeout(function() { successCb(data); console.log('timer'); }, 150 - diff);
         }
         else errorCb();
       }, errorCb);
