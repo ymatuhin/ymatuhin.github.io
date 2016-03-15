@@ -1,6 +1,5 @@
 (function () {
   var body = document.getElementsByTagName('body')[0];
-  setTimeout(function() { body.style.opacity = 1 }, 10);
 
   document.addEventListener("touchstart", clickAndTouch, false);
   document.addEventListener("click", clickAndTouch, false);
