@@ -4,8 +4,15 @@
   document.addEventListener("touchstart", clickAndTouch, false);
   document.addEventListener("click", clickAndTouch, false);
 
-  function clickAndTouch (e) {
-      var href = e.target.href;
+  window.addEventListener('popstate', function(event) {
+      if (!event.state) return;
+      clickAndTouch.call(null, event, document.location.href);
+  }, false);
+
+  function clickAndTouch (e, loc) {
+      var href = e.target.href || loc;
+      console.log('loc', loc);
+      console.log('href', href);
       if (!href || e.metaKey) return true;
       body.style.opacity = 0;
       if (href.indexOf(location.host) == -1) return true;
@@ -13,11 +20,12 @@
 
       var time = new Date().getTime();
       e.preventDefault();
-      history.pushState({}, '', href);
+      history[loc ? 'replaceState' : 'pushState']({}, time, href);
       requestGET(href, function (data) {
         if (data) {
           var diff = new Date().getTime() - time;
-          if (diff < 150) successCb(data);
+          console.log('diff', diff);
+          if (diff <= 150) successCb(data);
           else setTimeout(function() { successCb(data) }, 150 - diff);
         }
         else errorCb();
