@@ -10,6 +10,9 @@ excerpt_separator: <!-- more -->
 sass:
   style: compressed
 
+gems:
+  - jekyll-redirect-from
+
 permalinks: pretty
 markdown: kramdown
 kramdown:
