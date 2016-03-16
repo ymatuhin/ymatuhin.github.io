@@ -4,6 +4,11 @@
   document.addEventListener("touchstart", clickAndTouch, false);
   document.addEventListener("click", clickAndTouch, false);
   window.onbeforeunload = function () { body.style.opacity = 0 };
+  window.onpageshow = function(event) {
+    body.style.opacity = 1;
+    // if (event.persisted) window.location.reload();
+  };
+
 
   function clickAndTouch (e) {
       var href = e.target.href;
