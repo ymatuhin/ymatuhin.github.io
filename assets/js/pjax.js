@@ -13,6 +13,7 @@
   function clickAndTouch (e) {
       var href = e.target.href;
       if (!href || e.metaKey) return true;
+      if (href.indexOf('mailto') >= 0) return true;
 
       body.style.opacity = 0;
       e.preventDefault();
