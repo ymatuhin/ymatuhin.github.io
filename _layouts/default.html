@@ -48,9 +48,15 @@
 		<!-- /Yandex.Metrika counter -->
 
 		<script src="/assets/js/github.js" async></script>
-		<script src="/assets/js/pjax.js?{{ site.time | date_to_xmlschema }}" async></script>
+		<!-- ?{{ site.time | date_to_xmlschema }} -->
 
-		<script>setTimeout(function() { document.getElementsByTagName('body')[0].style.opacity = 1 }, 10);</script>
+		<!-- animated show and hide -->
+		<script>
+			var body = document.getElementsByTagName('body')[0];
+			window.onbeforeunload = function () { body.style.opacity = 0 };
+			window.onpageshow = function(event) { body.style.opacity = 1 };
+			setTimeout(function() { body.style.opacity = 1 }, 10);
+		</script>
 		<noscript><style>body {opacity: 1}</style></noscript>
 	</body>
 </html>
