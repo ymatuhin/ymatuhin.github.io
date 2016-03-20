@@ -6,7 +6,7 @@ tags: [jekyll, блог]
 
 image: jekyll/jekyll-logo.png
 imageWidth: 960
-imageHeight: 489
+imageHeight: 480
 imageCaption: Логотип Jekyll
 imageTitle: Логотип Jekyll
 ---

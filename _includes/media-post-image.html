@@ -1,13 +1,14 @@
 {% if page.image %}
-	<figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+	<figure class="post-image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
 		{% capture url %}{{ page.image | prepend: '/assets/img/' }}{% endcapture %}
 
-		{% if page.imageLink %}
-			<a rel="nofollow" href="{{ page.imageLink }}">
-		{% else %}
-			<a rel="nofollow" href="{{ url }}">
-		{% endif %}
+		<a rel="nofollow"
+		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
+		   href="{% if page.imageLink %}{{ page.imageLink }}{% else %}{{ url }}{% endif %}">
+
 			<img itemprop="contentUrl" src="{{ url }}"
+				 width="{{ page.imageWidth }}"
+				 height="{{ page.imageHeight }}"
 				 alt="{{ page.imageCaption }}"
 				 style="{% if page.imageSpace %}padding: 24px;{% endif %}"
 				 class="{% if page.pixelArt %}pixel-art{% endif %}">

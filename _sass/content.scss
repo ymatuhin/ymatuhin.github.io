@@ -28,4 +28,9 @@ time {
 	height: 24px;
 }
 
-figure { display: block; text-align: left; margin: 0 0 24px }
+figure {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin: 0 0 24px;
+}

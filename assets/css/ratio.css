@@ -1,0 +1,31 @@
+.ratio {
+	display: block;
+	position: relative;
+}
+.ratio2\/1 { padding-top: 50% }
+.ratio img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100% !important;
+	text-align: center;
+
+	font-size: 16px;
+	color: #999;
+}
+.ratio img:before,
+.ratio img:after {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: '';
+}
+.ratio img:before { background: #f6f6f6 }
+.ratio img:after {
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+	content: 'К сожалению, изображение «' attr(alt) '» не загрузилось.';
+}
