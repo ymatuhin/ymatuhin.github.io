@@ -7,6 +7,15 @@
 
 		{{ content }}
 
+		<!-- animated show and hide -->
+		<script>
+			var body = document.getElementsByTagName('body')[0];
+			window.onbeforeunload = function () { body.style.opacity = 0 };
+			window.onpageshow = function(event) { body.style.opacity = 1 };
+			setTimeout(function() { body.style.opacity = 1 }, 10);
+		</script>
+		<noscript><style>body {opacity: 1}</style></noscript>
+
 		<link rel="stylesheet" href="/assets/css/uncritical.css">
 
 		<script src="/assets/js/emoji.js" async></script>
@@ -54,14 +63,5 @@
 
 		<script src="/assets/js/github.js" async></script>
 		<!-- ?{{ site.time | date_to_xmlschema }} -->
-
-		<!-- animated show and hide -->
-		<script>
-			var body = document.getElementsByTagName('body')[0];
-			window.onbeforeunload = function () { body.style.opacity = 0 };
-			window.onpageshow = function(event) { body.style.opacity = 1 };
-			setTimeout(function() { body.style.opacity = 1 }, 10);
-		</script>
-		<noscript><style>body {opacity: 1}</style></noscript>
 	</body>
 </html>
