@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Обновляемся до Jekyll v3.x
+title: Обновляемся до Jekyll v3.x
 categories: front-end
 description: Как обовиться до новой версии Jekyll избежав багов при переходе.
 tags: [jekyll, генератор статических сайтов, github, обновление, миграция, markdown, kramdown, rouge, pigments]
