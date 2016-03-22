@@ -3,13 +3,17 @@
 		{% capture url %}{{ page.image | prepend: '/assets/img/' }}{% endcapture %}
 
 		<a rel="nofollow"
+		   {% if page.imageWidth %}style="width: {{ page.imageWidth }}px"{% endif %}
 		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
 		   href="{% if page.imageLink %}{{ page.imageLink }}{% else %}{{ url }}{% endif %}">
+
+			<span>Изображение не загрузилось :'(</span>
 
 			<img itemprop="contentUrl" src="{{ url }}"
 				 width="{{ page.imageWidth }}"
 				 height="{{ page.imageHeight }}"
 				 alt="{{ page.imageCaption }}"
+				 onerror="remove()"
 				 style="{% if page.imageSpace %}padding: 24px;{% endif %}"
 				 class="{% if page.pixelArt %}pixel-art{% endif %}">
 		</a>

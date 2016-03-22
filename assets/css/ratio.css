@@ -1,31 +1,27 @@
 .ratio {
-	display: block;
-	position: relative;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background: #f6f6f6;
 }
-.ratio2\/1 { padding-top: 50% }
-.ratio img {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100% !important;
-	text-align: center;
+.ratio span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 24px;
+    transform: translate(-50%, -50%);
+    color: #999;
+}
 
-	font-size: 16px;
-	color: #999;
+.ratio2\/1 { padding-top: 50% }
+.ratio3\/1 { padding-top: 33.3333333% }
+.ratio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
 }
-.ratio img:before,
-.ratio img:after {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	content: '';
-}
-.ratio img:before { background: #f6f6f6 }
-.ratio img:after {
-	top: 50%;
-	bottom: auto;
-	transform: translateY(-50%);
-	content: 'К сожалению, изображение «' attr(alt) '» не загрузилось.';
-}
+
+:-moz-broken { outline: solid red }
+:-moz-broken:after { content: " (broken image)" }
