@@ -1,8 +1,6 @@
 .ratio {
+    display: block;
     position: relative;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
     background: #f6f6f6;
 }
 .ratio span {
@@ -22,6 +20,3 @@
     left: 0;
     background: #fff;
 }
-
-:-moz-broken { outline: solid red }
-:-moz-broken:after { content: " (broken image)" }
