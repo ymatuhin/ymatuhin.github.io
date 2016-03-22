@@ -4,6 +4,7 @@
     background: #f6f6f6;
 }
 .ratio span {
+    display: block !important;
     position: absolute;
     left: 50%;
     top: 50%;
