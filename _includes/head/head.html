@@ -12,6 +12,7 @@
 	<style>
 		{% capture include_to_scssify %}{% include critical.scss %}{% endcapture %}
 		{{ include_to_scssify | scssify }}
+
 		{% if page.categories %}
 			{% include ratio.css %}
 		{% endif %}

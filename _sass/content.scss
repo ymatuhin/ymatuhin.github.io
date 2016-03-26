@@ -11,10 +11,9 @@ blockquote {
 
 pre,
 code {
-	white-space: pre-wrap;
+	overflow: auto;
 	font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier;
 }
-
 code {
 	background: #f9f5e4;
 	border-radius: 3px;
@@ -38,3 +37,4 @@ figure {
 	& > a { border: 0 }
 }
 figure span { display: none }
+figure figcaption { margin: 6px 0 0; color: #999; font-size: 12px; line-height: 16px; }

@@ -15,13 +15,8 @@
 
 		{{ content }}
 
-		<!-- Image spacer -->
-		<script>if (document.querySelector('.ratio')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/ratio.css?v2\">')</script>
-		<noscript><link rel="stylesheet" href="/assets/css/ratio.css"></noscript>
-		<!-- /Image spacer -->
-
 		<!-- unctirical -->
-		<link rel="stylesheet" href="/assets/css/uncritical.css" media="none" onload="media='all'">
+		<link rel="stylesheet" href="/assets/css/uncritical.css">
 
 		<!-- Syntax css -->
 		<script>if (document.querySelector('.highlight')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/syntax.css\">')</script>
@@ -45,7 +40,7 @@
 			<!-- Show ads message -->
 			<link rel="stylesheet" href="/assets/css/ads.css" media="none" onload="media='all'">
 			<noscript><link rel="stylesheet" href="/assets/css/ads.css"></noscript>
-			<script async src="/assets/js/ads.js" onerror="document.querySelector('.no-ads').style.display='inline-block'"></script>
+			<script async src="/assets/js/ads.js" onerror="document.querySelector('.no-ads').className += ' show'"></script>
 			<!-- /Show ads message -->
 
 			<!-- Google ads -->

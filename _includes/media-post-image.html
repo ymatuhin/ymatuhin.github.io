@@ -10,14 +10,18 @@
 		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
 		   href="{% if page.imageLink %}{{ page.imageLink }}{% else %}{{ url }}{% endif %}">
 
-			<span>Изображение не загрузилось<br>:'(</span>
+			<span>Изображение не загрузилось&nbsp;😔</span>
 
 			<img itemprop="contentUrl" src="{{ url }}"
 				 width="{{ page.imageWidth }}"
 				 height="{{ page.imageHeight }}"
-				 alt="{{ page.imageCaption }}"
-				 onerror="remove()"
-				 style="{% if page.imageSpace %}padding: 24px;{% endif %}"
+				 {% if page.imageCaption %}
+					alt="{{ page.imageCaption }}"
+				 {% else %}
+					alt="{{ page.title }}"
+				 {% endif %}
+				 onerror="style.display='none';parentNode.children[0].style.opacity = 1;"
+				 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1"
 				 class="{% if page.pixelArt %}pixel-art{% endif %}">
 		</a>
 

@@ -1,0 +1,38 @@
+.no-ads {
+	background: #f9e4e4;
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+
+	position: absolute;
+	width: 300px;
+	max-width: 100%;
+	left: 100%;
+	top: 0;
+	margin: 0 0 0 24px;
+
+	&.show { opacity: 1 }
+
+	img {
+		background-color: transparent;
+		border: 0;
+		outline: 0;
+		float: left;
+		margin-right: 12px;
+		width: 64px;
+		height: 64px !important;
+
+		position: relative;
+		top: 4px;
+	}
+
+	@media screen and (max-width: 960px) {
+		position: static;
+		width: auto;
+		margin-left: 0;
+		margin-bottom: 24px;
+
+		img {
+			margin-right: 23px;
+		}
+	}
+}
