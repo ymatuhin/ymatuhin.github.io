@@ -5,13 +5,6 @@
 
 	{% if page.categories %}<body class="is_page">{% else %}<body>{% endif %}
 
-		{{ content }}
-
-		<!-- Image spacer -->
-		<script>if (document.querySelector('.ratio')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/ratio.css?v2\">')</script>
-		<noscript><link rel="stylesheet" href="/assets/css/ratio.css"></noscript>
-		<!-- /Image spacer -->
-
 		<!-- animated show and hide -->
 		<script>
 			var body = document.getElementsByTagName('body')[0];
@@ -19,10 +12,16 @@
 			window.onpageshow = function(event) { body.style.opacity = 1 };
 			setTimeout(function() { body.style.opacity = 1 }, 10);
 		</script>
-		<noscript><style>body {opacity: 1}</style></noscript>
+
+		{{ content }}
+
+		<!-- Image spacer -->
+		<script>if (document.querySelector('.ratio')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/ratio.css?v2\">')</script>
+		<noscript><link rel="stylesheet" href="/assets/css/ratio.css"></noscript>
+		<!-- /Image spacer -->
 
 		<!-- unctirical -->
-		<link rel="stylesheet" href="/assets/css/uncritical.css">
+		<link rel="stylesheet" href="/assets/css/uncritical.css" media="none" onload="media='all'">
 
 		<!-- Syntax css -->
 		<script>if (document.querySelector('.highlight')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/syntax.css\">')</script>
@@ -43,16 +42,16 @@
 			<script src="/assets/js/disqus.js" async></script>
 			<!-- /Comments -->
 
-			<!-- Google ads -->
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script>(adsbygoogle = window.adsbygoogle || []).push({}, {}, {}, {});</script>
-			<!-- /Google ads -->
-
 			<!-- Show ads message -->
 			<link rel="stylesheet" href="/assets/css/ads.css" media="none" onload="media='all'">
 			<noscript><link rel="stylesheet" href="/assets/css/ads.css"></noscript>
 			<script async src="/assets/js/ads.js" onerror="document.querySelector('.no-ads').style.display='inline-block'"></script>
 			<!-- /Show ads message -->
+
+			<!-- Google ads -->
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({}, {}, {}, {});</script>
+			<!-- /Google ads -->
 		{% endif %}
 
 		<!-- Yandex.Metrika counter -->

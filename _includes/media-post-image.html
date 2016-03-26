@@ -1,7 +1,7 @@
 {% if page.image %}
 	<figure class="post-image"
 			{% if page.imageWidth %}style="width: {{ page.imageWidth }}px"{% endif %}
-			itemscope 
+			itemscope
 			itemprop="image"
 			itemtype="http://schema.org/ImageObject">
 		{% capture url %}{{ page.image | prepend: '/assets/img/' }}{% endcapture %}
@@ -10,7 +10,7 @@
 		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
 		   href="{% if page.imageLink %}{{ page.imageLink }}{% else %}{{ url }}{% endif %}">
 
-			<span>Изображение не загрузилось :'(</span>
+			<span>Изображение не загрузилось<br>:'(</span>
 
 			<img itemprop="contentUrl" src="{{ url }}"
 				 width="{{ page.imageWidth }}"

@@ -1,9 +1,19 @@
 /* висячая пунктуация */
-.elka { margin-right: .58em }
-.l_elka { margin-left: -.58em }
+.l_elka,
+.l_skobka {
+    -webkit-transition: margin-left .2s;
+    transition: margin-left .2s;
+}
+.elka,
+.skobka {
+    -webkit-transition: margin-right .2s;
+    transition: margin-right .2s;
+}
 
-.lapka { margin-right: .4em }
-.l_lapka { margin-left: -.4em }
+.typed {
+    .l_elka { margin-left: -.66em }
+    .elka { margin-right: .66em }
 
-.skobka { margin-right: .38em }
-.l_skobka { margin-left: -.38em }
+    .l_skobka { margin-left: -.35em }
+    .skobka { margin-right: .35em }
+}
