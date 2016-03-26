@@ -36,7 +36,9 @@
 			<!-- Comments -->
 			<script src="/assets/js/disqus.js" async></script>
 			<!-- /Comments -->
+		{% endif %}
 
+		{% if page.url == '/index.html' or page.url == '/' %}{% else %}
 			<!-- Show ads message -->
 			<link rel="stylesheet" href="/assets/css/ads.css" media="none" onload="media='all'">
 			<noscript><link rel="stylesheet" href="/assets/css/ads.css"></noscript>
