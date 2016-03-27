@@ -8,6 +8,9 @@
 
 		<a rel="nofollow"
 		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
+		   {% if page.color %}
+				style="background: #{{ page.color }}"
+		   {% endif %}
 		   href="{% if page.imageLink %}{{ page.imageLink }}{% else %}{{ url }}{% endif %}">
 
 			<span>Изображение не загрузилось&nbsp;😔</span>

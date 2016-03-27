@@ -12,7 +12,8 @@
     padding: 24px;
     text-align: center;
     transform: translate(-50%, -50%);
-    color: #999;
+    background: #fff;
+    color: #333;
     opacity: 0;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
