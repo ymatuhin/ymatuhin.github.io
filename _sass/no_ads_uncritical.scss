@@ -4,13 +4,19 @@
 	transition: opacity .5s ease-in-out;
 
 	position: absolute;
-	width: 300px;
+	width: 0;
+	height: 0;
 	max-width: 100%;
 	left: 100%;
 	top: 0;
 	margin: 0 0 0 24px;
+	overflow: hidden;
 
-	&.show { opacity: 1 }
+	&.show {
+		width: 300px;
+		height: auto;
+		opacity: 1;
+	}
 
 	img {
 		background-color: transparent;
