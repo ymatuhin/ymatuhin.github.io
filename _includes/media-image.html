@@ -1,11 +1,29 @@
 {% if include.url %}
 <figure itemscope itemtype="http://schema.org/ImageObject">
-	{% if include.link %}
-		<a rel="nofollow" href="{{ include.link }}">
-	{% else %}
-		<a rel="nofollow" href="{{ include.url }}">
-	{% endif %}
-		<img itemprop="contentUrl" src="{{ include.url | prepend: '/assets/img/' }}" width="{{ include.width }}" alt="{{ include.alt }}">
+
+	<a rel="nofollow"
+	   class="{% if include.ratio %}ratio ratio{{ include.ratio }}{% endif %}"
+	   {% if include.color %}
+			style="background: #{{ include.color }}"
+	   {% endif %}
+	   href="{% if include.link %}{{ include.link }}{% else %}{{ include.url }}{% endif %}">
+
+		{% if include.ratio %}
+			<span>Изображение не загрузилось&nbsp;😔</span>
+		{% endif %}
+
+		<img itemprop="contentUrl"
+			 src="{{ include.url | prepend: '/assets/img/' }}"
+			 width="{{ include.width }}"
+			 height="{{ include.height }}"
+			 {% if page.alt %}
+				alt="{{ include.alt }}"
+			 {% else %}
+				alt="{{ include.caption }}"
+			 {% endif %}
+			 onerror="style.opacity=0;parentNode.children[0].style.opacity = 1;"
+			 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1;"
+			 class="{% if page.pixelArt %}pixel-art{% endif %}">
 	</a>
 	{% if include.caption %}
 		<figcaption itemprop="caption">{{ include.caption }}</figcaption>

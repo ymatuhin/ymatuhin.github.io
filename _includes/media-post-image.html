@@ -23,8 +23,8 @@
 				 {% else %}
 					alt="{{ page.title }}"
 				 {% endif %}
-				 onerror="style.display='none';parentNode.children[0].style.opacity = 1;"
-				 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1"
+				 onerror="style.opacity=0;parentNode.children[0].style.opacity = 1;"
+				 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1;"
 				 class="{% if page.pixelArt %}pixel-art{% endif %}">
 		</a>
 

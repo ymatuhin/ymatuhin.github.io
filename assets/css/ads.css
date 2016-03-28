@@ -34,6 +34,6 @@
 	}
 }
 
-.adsbygoogle iframe { outline: none; }
+.adsbygoogle iframe { outline: none; min-width: 100%; }
 .adsbygoogle { opacity: 0; transition: opacity .3s ease-in-out}
 .adsbygoogle[data-adsbygoogle-status="done"] { opacity: 1; }
