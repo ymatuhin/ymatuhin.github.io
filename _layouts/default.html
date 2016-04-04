@@ -9,8 +9,8 @@
 		<script>
 			var body = document.getElementsByTagName('body')[0];
 			window.onbeforeunload = function () { body.style.opacity = 0 };
-			window.onpageshow = function(event) { body.style.opacity = 1 };
-			setTimeout(function() { body.style.opacity = 1 }, 10);
+			window.onpageshow     = function () { body.style.opacity = 1 };
+			setTimeout(function() { body.style.opacity = 1 }, 25);
 		</script>
 
 		{{ content }}
