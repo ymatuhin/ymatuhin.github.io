@@ -29,7 +29,8 @@
 	transition: opacity .3s;
 }
 
-.ratio2\/1 { padding-top: 50% }
+.ratio4\/1 { padding-top: 25% }
 .ratio3\/1 { padding-top: 33.3333333% }
+.ratio2\/1 { padding-top: 50% }
 .ratio3\/2 { padding-top: 66.6666666% }
 .ratio4\/3 { padding-top: 75% }
