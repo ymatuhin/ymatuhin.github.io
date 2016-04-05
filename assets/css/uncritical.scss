@@ -15,6 +15,7 @@
 @import 'document_uncritical';
 @import 'content_uncritical';
 @import 'no_ads_uncritical';
+
 .special {
     text-align: center;
     border: 5px solid #FC7D49;
@@ -23,4 +24,5 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: 500;
+    background: transparent;
 }
