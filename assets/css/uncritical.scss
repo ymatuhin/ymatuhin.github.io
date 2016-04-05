@@ -17,12 +17,24 @@
 @import 'no_ads_uncritical';
 
 .special {
-    text-align: center;
     border: 5px solid #FC7D49;
-    margin: 32px -24px;
+    margin: 32px 0;
     padding: 32px 48px;
     font-size: 24px;
     line-height: 32px;
     font-weight: 500;
     background: transparent;
+}
+
+.special.center {
+    text-align: center;
+}
+
+.special ol,
+.special ul {
+    margin: 0;
+}
+
+.special li + li {
+    margin-top: 16px;
 }
