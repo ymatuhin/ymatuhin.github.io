@@ -1,3 +1,5 @@
+.z { zoom:1 }
+
 @import 'document';
 @import 'links';
 @import 'links_uncritical';
@@ -163,4 +165,7 @@ html .wrap-large { max-width: 100.8rem }
 }
 .pagination .prev {
 	float: left;
+}
+.adsbygoogle {
+	margin-bottom: 4.8rem;
 }
