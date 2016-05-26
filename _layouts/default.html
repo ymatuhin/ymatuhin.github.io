@@ -32,31 +32,20 @@
 			<link rel="stylesheet" href="/assets/css/likely.css" media="none" onload="media='all'">
 			<script src="/assets/js/likely.js" async></script>
 			<!-- /Sharing -->
-
-			<!-- Comments -->
-			<script src="/assets/js/disqus.js" async></script>
-			<!-- /Comments -->
 		{% endif %}
 
 		{% if page.url == '/index.html' or page.url == '/' %}{% else %}
-			<!-- Show ads message -->
-			<!-- <link rel="stylesheet" href="/assets/css/ads.css" media="none" onload="media='all'">
-			<noscript><link rel="stylesheet" href="/assets/css/ads.css"></noscript>
-			<script async src="/assets/js/ads.js" onerror="document.querySelector('.no-ads').className += ' show'"></script> -->
-			<!-- /Show ads message -->
-
 			<!-- Google ads -->
-			<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script>(adsbygoogle = window.adsbygoogle || []).push({}, {}, {}, {});</script> -->
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({}, {}, {}, {});</script>
 			<!-- /Google ads -->
 		{% endif %}
 
 		<!-- Yandex.Metrika counter -->
-		<!-- <script async src="https://mc.yandex.ru/metrika/watch.js" onload="yaCounter28017147 = new Ya.Metrika({ id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true })"></script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+		<script async src="https://mc.yandex.ru/metrika/watch.js" onload="yaCounter28017147 = new Ya.Metrika({ id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true })"></script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
 
-		<!-- <script src="/assets/js/github.js" async></script> -->
 		<!-- ?{{ site.time | date_to_xmlschema }} -->
 	</body>
 </html>
