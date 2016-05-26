@@ -2,11 +2,7 @@
 layout: post
 title: Исключаем папки из обычного и Fuzzy поиска в Atom
 categories: tools
-redirect_from:
-  - /front-end/atom_exclude_foilder/
-  - /blog/atom_exclude_foilder/
-tags: [Atom, fuzzy]
-keywords: >
+tags: >
   atom github текстовый редактор кода поиск fuzzy node modules bower components
 description: >
   Как исключить некоторые папки (к примеру node_modules, bower_components) из поиска в текстовом редакторе Atom.

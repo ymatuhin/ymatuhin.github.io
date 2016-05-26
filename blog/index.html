@@ -1,0 +1,33 @@
+---
+layout: page
+title: Блог фронтенд разработчика
+redirect_from:
+  - /front-end/
+  - /tools/
+  - /all/
+---
+
+<div class="wrap-medium wrap-center">
+	<ul class="posts columns">
+	{% for post in paginator.posts %}
+		<li class="clearfix">
+			{% if post.social_image %}
+			<a href="{{ post.url }}">
+				<img class="" src="/assets/img/{{ post.social_image }}" alt="">
+			</a>
+			{% endif %}
+			<h2 class="h3" style="display: inline"><a href="{{ post.url }}">{{ post.title | strip_html }}</a></h2>
+			<small> {% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d" }}&nbsp;{% include month.html %}&nbsp;{{ post.date  | date: "%-Y" }}</small>
+	{% endfor %}
+	</ul>
+
+	<!-- Pagination links -->
+	<p class="pagination clearfix">
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path }}" class="prev">← Предыдущая страница</a>
+		{% endif %}
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path }}" class="next">Следующая страница →</a>
+		{% endif %}
+	</p>
+</div>

@@ -1,8 +1,10 @@
 (function () {
-	var dateMod = document.querySelector('meta[itemprop="dateModified"]');
-	var datePub = document.querySelector('meta[itemprop="datePublished"]');
+	var dateMod = document.querySelector('[itemprop="dateModified"]');
+	var datePub = document.querySelector('[itemprop="datePublished"]');
 
+	console.log('1', dateMod, datePub);
 	if (!dateMod || !datePub) return;
+	console.log('2');
 
 	var mod  = new Date(dateMod.getAttribute('content'));
 	var pub  = new Date(datePub.getAttribute('datetime'));
@@ -31,9 +33,10 @@
 			shownText = Math.floor(days/365) + ' ' + declOfNum(Math.floor(days/365), ['год', 'года', 'лет']) + ' назад';
 		}
 
+		console.log('shownText', shownText);
 		if (days >= 0) {
 			updText.style.display = '';
-			updText.innerHTML = _txt + ' <em>' + shownText + '</em>.';
+			updText.innerHTML = _txt + ' <em>' + shownText + '</em>';
 		}
 	}
 })();

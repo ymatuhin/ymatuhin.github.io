@@ -18,14 +18,6 @@
 		{% endif %}
 	</style>
 
-	<!-- Special index page styles -->
-	{% if page.url == '/index.html' or page.url == '/' %}
-		<style>
-			{% capture include_to_scssify %}{% include critical_index.scss %}{% endcapture %}
-			{{ include_to_scssify | scssify }}
-		</style>
-	{% endif %}
-
 	{% include head/meta_lang.html %}
 	{% include head/meta_rss.html %}
 	{% include head/meta_twitter.html %}

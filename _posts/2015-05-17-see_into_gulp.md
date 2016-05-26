@@ -4,20 +4,17 @@ title: Разбираемся со сборкой front end на Gulp
 description: >
   Обзор основных возможностей новой системы для сборки проектов — Gulp, а так-же с изучаем как работают его основные функциии.
 categories: front-end
-redirect_from:
-  - /blog/see_into_gulp/
-  - /front-emd/see_into_gulp/
-tags: [gulp, frontend, сборка]
-keywords: >
+tags: >
   gulp watch task src dist сборка front end клиент pipe
-
-image: gulp/logo.png
-imageLink: //gulpjs.com/
-imageWidth: 400
-imageHeight: 200
-imageCaption: Gulp, логотип системы сборки фронтенда
-imageTitle: Gulp — системы сборки фронтенда
+social_image: gulp/logo.png
 ---
+
+{%
+	include media-image.html
+	url="gulp/logo.png"
+    link="//gulpjs.com/"
+	caption="Gulp — системы сборки фронтенда"
+%}
 
 В последнее время <strong>Gulp</strong> набирает большую популярность, и понятно почему. Он быстрее, красивее и проще чем <strong>Grunt</strong>. Мне приходилось часто с ним работать, но я всегда брал готовые решения и не до конца понимал как же он все это делает. На этих выходных я решил разобрать и закрыть эту небольшую проблему. Об этом и поговорим сегодня.
 

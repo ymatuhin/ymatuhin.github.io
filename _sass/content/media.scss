@@ -1,0 +1,57 @@
+img {
+	vertical-align: middle;
+}
+
+[role="main"] {
+	iframe,
+	img {
+		max-width: 100%;
+		box-shadow: 0 22px 70px 0 rgba(0,0,0,0.3);
+		&.noborder { box-shadow: none }
+	}
+	img {
+		height: auto;
+		background: #fff;
+	}
+}
+figure {
+	margin: 0 auto;
+	text-align: center;
+	
+	& > a {
+		border: 0;
+	}
+	* + & {
+		margin-top: 6.4rem;
+	}
+	iframe,
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	figcaption {
+		color: #666;
+
+		font-size: 1.44rem;
+		line-height: 3.2rem;
+		font-family: 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+	span {
+		display: none;
+	}
+}
+
+* + figure,
+figure + * {
+	margin-top: 2.4rem;
+	/* 0.75 baselines  */
+}
+
+.pixel-art {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+}

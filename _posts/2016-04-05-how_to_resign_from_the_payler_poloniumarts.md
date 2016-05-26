@@ -3,13 +3,18 @@ layout: post
 title: Как увольняться из «Payler» и «Polonium Arts», чтобы вас не кинули
 categories: blog
 tags: [payler, polonium art, увольнение, константин копыльцов, кидалово, обман, Брянск]
-
-image: payler/payler.jpg
-color: 78959a
-imageWidth: 736
-imageHeight: 184
-ratio: 4/1
+social_image: payler/payler.jpg
 ---
+
+{%
+	include media-image.html
+	url="payler/payler.jpg"
+	width="736"
+	ratio="4/1"
+	caption="Payler"
+
+	preload="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAECAIAAADec/LeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALBJREFUeNpMjjsKwkAUANd9L9lN1nz8FfZi4TGsPYDorSwEEez0Eh7BUotoKgmYwkLwB0b3PVOJwxRTToWZxR/96Wp3Oje0S+AaW1yXkyxJHOMRURiGeHsVmyw3DkohmlXTjoJuq6YBHOVtD+kFYDwafgAQMUn2SMzP4i2YQQjLBFL6SmmUqFXZTGyMb9EFkKUYaTXodX4n+f2xTo91rQjdgCwyzeYLx9fW2jiOvwIMAK66QG8Bfi8OAAAAAElFTkSuQmCC"
+%}
 
 Еще одна статья о том как разработчика кинули. Надеюсь в будущем, программисты найдут эту информацию, прежде чем устроятся в эти компании.
 

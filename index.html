@@ -1,40 +1,71 @@
 ---
 layout: default
 title: Юрий Матюхин
-redirect_from:
-  - /front-end/how_to_exclude_my_views_from_yandex_metrica/
-  - /dogma/
-  - /all/
-keywords: front end developer разработчик фронтенд статьи заметки разработка интерфейсов html css javascript фреймворки программист
+tags: front end developer разработчик фронтенд статьи заметки разработка интерфейсов html css javascript фреймворки программист
 description: >
   Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
 ---
 
-<div role="main" class="content_index">
-	<header class="profile">
-		<img src="/assets/img/yury_matuhin_square.jpg" onload="style.opacity=1">
-		<div>
-			<h1>{{ page.title }}</h1>
-			<p>Фронтенд разработчик, разрабатываю «Социальный&nbsp;дуршлаг» (в&nbsp;бете), «<a rel="nofollow" href="//autoprefixer.github.io">Автопрефиксер&nbsp;онлайн</a>» для себя и «<a rel="nofollow" href="//ridewithlocal.com">Ride With Local</a>» по работе.</p>
-			{% include menu.html %}
-		</div>
-	</header>
+{% include menu.html %}
 
-	<div class="projects">
-		<h2>Последние заметки</h2>
+<h1>Юрий Матюхин</h1>
+
+<div class="wrap-medium wrap-center clearfix">
+	<div class="hello ta-l">
+		<img src="/assets/img/yury_matuhin_square.jpg" onload="style.opacity=1" style="opacity: 1;">
+		<p>
+			Привет. Я форнтенд разработчик.
+			Пилю «Социальный дуршлаг» (в бете), «<a href="//autoprefixer.github.io">Автопрефиксер онлайн</a>» для себя и «<a href="//ridewithlocal.com">Ride With Local</a>» по работе.
+			<br>
+			Веду блог, читаю <a href="//twitter.com/@ymatuhin">твиттер</a> и почту <a href="mailto:ym@ymatuhin.ru">ym@ymatuhin.ru</a>
+		</p>
+	</div>
+
+	<div class="column-50 fl-l ta-l">
+		<h2>Фронтенд</h2>
+		<ul class="posts">
+		{% for post in site.categories.front-end limit: 6 %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title | strip_html }}</a>
+				<small>{% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d" }}&nbsp;{% include month.html %}&nbsp;{{ post.date  | date: "%-Y" }}</small>
+		{% endfor %}
+		</ul>
+	</div>
+	<div class="column-50 fl-r ta-l">
+		<h2>Жизнь</h2>
+		<ul class="posts">
+		{% for post in site.categories.blog limit: 6 %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<small>{% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d" }}&nbsp;{% include month.html %}&nbsp;{{ post.date  | date: "%-Y" }}</small>
+		{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<!-- <div role="main" class="text-content"> -->
+	<!-- <div class="projects">
 		<div class="history">
-			{% for post in site.posts limit:15 %}
+			{% for post in paginator.posts %}
 				<div class="landmark">
-					<div class="date">
-						{% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d" }} {% include month.html %} {{ post.date  | date: "%-Y" }}
-					</div>
 					<div class="description">
-						<a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a>
+						<a rel="bookmark" href="{{ post.url }}">
+							{% if post.image %}
+								<img src="{{ post.image | prepend: '/assets/img/' }}" alt="{{ post.imageCaption }}">
+							{% endif %}
+							<p>
+								<b>{{ post.title | strip_html }}</b>
+							</p>
+							{% unless post.image %}
+							<p>
+								{{ post.description }}
+							</p>
+							{% endunless %}
+						</a>
 					</div>
 				</div>
 			{% endfor %}
 		</div>
-	</div>
+	</div> -->
 
-	{% include footer.html %}
-</div>
+{% include footer.html %}

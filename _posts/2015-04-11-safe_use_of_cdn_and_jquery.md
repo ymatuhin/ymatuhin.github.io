@@ -2,8 +2,6 @@
 layout: post
 title: Безопасное использование CDN для jQuery, Angular, Bootstrap и других библиотек
 categories: front-end
-redirect_from:
-  - /blog/safe_use_of_cdn_and_jquery/
 tags: [CDN, jQuery, fallback]
 keywords: >
   jquery cdn google bootstrap бесплатные free yandex сервисы для сайта angular Modernizr

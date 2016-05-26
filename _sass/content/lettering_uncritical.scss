@@ -1,0 +1,19 @@
+/* висячая пунктуация */
+.l_elka,
+.l_skobka {
+    -webkit-transition: margin-left .2s;
+    transition: margin-left .2s;
+}
+.elka,
+.skobka {
+    -webkit-transition: margin-right .2s;
+    transition: margin-right .2s;
+}
+
+.typed {
+    .l_elka { margin-left: -.48em }
+    .elka { margin-right: .48em }
+
+    .l_skobka { margin-left: -.28em }
+    .skobka { margin-right: .28em }
+}

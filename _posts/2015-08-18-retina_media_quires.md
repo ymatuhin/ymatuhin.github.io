@@ -4,8 +4,6 @@ title: Правильный сниппет медиа выражений для 
 description: >
   Которкий сниппет media quires для определения retina дисплеев и старые сниппеты от которых нужно давно избавиться.
 categories: front-end
-redirect_from:
-  - /blog/retina_media_quires/
 tags: [css, retina, лучшие практики, media quires, медиа выражения]
 ---
 
@@ -13,7 +11,7 @@ tags: [css, retina, лучшие практики, media quires, медиа вы
 
 ## Правильное решение для retina (2x)
 
-~~~js
+~~~css
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     /* CSS правила для retina */
@@ -26,7 +24,7 @@ tags: [css, retina, лучшие практики, media quires, медиа вы
 
 У себя в сниппете я проверяю на <code>120dpi</code>:
 
-~~~js
+~~~css
 /* 1.25 dpr */
 @media
 (-webkit-min-device-pixel-ratio: 1.25),
@@ -50,7 +48,7 @@ tags: [css, retina, лучшие практики, media quires, медиа вы
 
 <h3>Старые правила (не используйте)</h3>
 
-~~~js
+~~~css
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -61,7 +59,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 Или даже
 
-~~~js
+~~~css
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -72,9 +70,3 @@ only screen and (                min-resolution: 2dppx) {
   /* CSS правила для retina */
 }
 ~~~
-
-<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
-    <h3>ретина css</h3>
-    <h4>retina media quires</h4>
-    <h5>ретина медиа выражения</h5>
-</footer> -->

@@ -18,7 +18,7 @@
 		{% assign m = post.date | date: "%-m" %}{{ post.date | date: "%-d" }} {% include month.html %} {{ post.date  | date: "%-Y" }}
 	</div>
 	<div class="description">
-		<a rel="bookmark" href="{{ post.url }}">{{ post.title }}</a>
+		<a rel="bookmark" href="{{ post.url }}">{{ post.title | strip_html }}</a>
 	</div>
 </div>
 

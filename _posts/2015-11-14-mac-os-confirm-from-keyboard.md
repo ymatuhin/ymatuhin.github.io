@@ -4,12 +4,14 @@ title: Подтверждение диалогов через клавиатур
 categories: blog
 description: Как включить опцию изменения фокуса в диалогах Mac OS и подтверждать их с клавиатуры.
 tags: [mac, osx]
-
-image: mac/dialog.png
-imageWidth: 420
-imageHeight: 159
-imageCaption: Диалог смены расширения у файла в Mac OS
+social_image: mac/dialog.png
 ---
+
+{%
+	include media-image.html
+	url="mac/dialog.png"
+	caption="Диалог смены расширения у файла в Mac OS"
+%}
 
 При появлении диалога, по умолчанию у нас нет возможности переключить фокус на другую кнопку с помощью клавиатуры, только мышкой или трекпадом. Но это поведение легко исправить.
 

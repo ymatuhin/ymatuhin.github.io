@@ -4,18 +4,16 @@ title: Используем системный шрифт San Franciso на Mac 
 description: >
   Сниппет для использования нового системного шрифта San Franciso из El Capitan и IOS 9.
 categories: front-end
-redirect_from:
-  - /blog/using_san_francisco_font/
-keywords: >
+tags: >
   привычка разработчика разработчик front end проверяй код перед комитом программиста
-tags: [mac os, ios, сниппет, шрифт]
-
-image: san_francisco/san_francisco.jpg
-imageWidth: 1040
-imageHeight: 600
-imageCaption: Используем системный шрифт San Franciso на Mac OS
-imageTitle: San Franciso
+social_image: san_francisco/san_francisco.jpg
 ---
+
+{%
+	include media-image.html
+	url="san_francisco/san_francisco.jpg"
+	caption="San Francisco"
+%}
 
 Вместе с выпуском Apple Watch, компания представила новый шрифт <em>San Francisco</em>, который теперь будет использоваться во всей экосистеме Apple. Уже сейчас можно посмотреть на этот шрифт в публичных бетах <a href="/blog/review_ios9_and_osx_el_capitan/">OSX и El Capitan</a>.
 

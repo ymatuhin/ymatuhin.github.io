@@ -1,15 +1,10 @@
-<div class="js-next-prev">
+<p class="js-next-prev">
     {% if page.previous.url %}
-        <a class="js-prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
-        ←
+        <a class="js-prev ta-r" href="{{page.previous.url}}"><small>{{ page.previous.title | strip_html }}</small></a>
+        <span class="arrow">←{% endif %}&nbsp;<mark class="js-separate">alt</mark>&nbsp;{% if page.next.url %}→</span>
+        <a class="js-next ta-l" href="{{page.next.url}}"><small>{{ page.next.title | strip_html }}</small></a>
     {% endif %}
-    <mark class="js-separate">alt</mark>
-
-    {% if page.next.url %}
-        →
-        <a class="js-next" href="{{page.next.url}}">{{page.next.title}}</a>
-    {% endif %}
-</div>
+</p>
 
 <script>
     var text = ('innerText' in document)? 'innerText' : 'textContent';

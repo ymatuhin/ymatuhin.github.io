@@ -2,13 +2,10 @@
 layout: post
 title: Международный день box-sizing и лучшие практики
 categories: front-end
-redirect_from:
-  - /blog/better_box_sizing/
 tags: [лучшие практики, праздники разработчиков, css]
 description: >
   Лучшие практики использования CSS свойства box-sizing и праздник посвященный этому свойству.
 ---
-
 
 Недавно я использовал в проекте css свойство `box-sizing: border-box`. В процессе этого я узнал про «Международный день box-sizing» (International box-sizing Awareness Day). И хочу рассказать вам что это за праздник, лучшие практики и поддержку свойства box-sizing.
 
@@ -20,13 +17,13 @@ description: >
 
 Раньше для применения модели border-box для всех элементов я часто видел следующий код:
 
-~~~css
+```css
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-~~~
+```
 
 
 Но он уже устарел и не совсем отвечает современным требованиям. Во первых нам уже не нужны вендорные префиксы для этого свойства (<a href="http://caniuse.com/#feat=css3-boxsizing">пруф</a>). А во вторых, если мы где-то меняем `box-sizing` на `content-box`, то мы ожидаем, что у всех его родителей `box-sizing` будет тоже `content-box`, но с предыдущем кодом так не получается.
@@ -34,14 +31,14 @@ description: >
 
 Поэтому в 2014 году Крис Койер (Chris Coyier) улучшил этот код, и теперь это считается лучшей практикой для `box-sizing`.
 
-~~~css
+```css
 html {
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-~~~
+```
 
 
 Теперь все элементы ведут себя так, как мы и ожидаем. Все элементы кроме `html` наследуют `box-sizing` от родителя.

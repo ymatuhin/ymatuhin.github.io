@@ -4,14 +4,16 @@ title: Обновляемся до Jekyll v3.x
 categories: front-end
 description: Как обовиться до новой версии Jekyll избежав багов при переходе.
 tags: [jekyll, генератор статических сайтов, github, обновление, миграция, markdown, kramdown, rouge, pigments]
-
-image: jekyll/jekyll-logo.png
-imageWidth: 960
-imageHeight: 480
-ratio: 2/1
-imageCaption: Jekyll 3
-imageTitle: Jekyll 3
+social_image: jekyll/jekyll-logo.png
 ---
+
+{%
+	include media-image.html
+	url="jekyll/jekyll-logo.png"
+	caption="Jekyll"
+	width="960"
+	ratio="2/1"
+%}
 
 Релиз третьей версии генератора статических сайтов Jekyll прошел 27 октября 2015 года. А 1 февраля 2016 года GitHub Pages [официально поддерживают][1]{:rel='nofollow'} Jekyll 3 я не пропустил. В тот момент я захотел перевести блог на новую версию и прикрутить к нему Gulp.
 

@@ -2,56 +2,43 @@
 layout: default
 ---
 
-<div role="main" class="content">
-	<h1>{{ page.title }}</h1>
+{% include menu.html %}
 
-	{% if page.categories %}
-		{% include pubdate.html %}
-	{% endif %}
+<!-- Auto Size -->
+<ins class="adsbygoogle horizontal"
+	 style="display:block"
+	 data-ad-client="ca-pub-6430039911615607"
+	 data-ad-slot="4852376176"
+	 data-ad-format="auto"></ins>
 
-	{% include menu.html %}
+<div role="main" class="ta-l ff-serif wrap-medium-box wrap-center-box box-center">
+	<header>
+		<h1 class="wrap-small ta-c">{{ page.title }}</h1>
 
-	<div class="text-content">
+		{% if page.categories %}
+			{% include pubdate.html %}
+		{% endif %}
+	</header>
 
-		<blockquote class="no-ads">
-			<img class="adblock" src="/assets/logo_adblock.png" alt="ad block">
-			Здесь могла бы быть реклама.
-			<br>
-			Но она по каким-то причинам не загрузилась. Возможно ваш <i>блокировщик рекламы</i> заблокировал её 😔
-			<br>
-			Буду признателен вам, если вы <b>отключите</b> его. Это поможет мне оплатить хостинг, а может и на ☕️&nbsp;&nbsp;кофе хватит.
-		</blockquote>
+	{{ content }}
 
-		{{ content }}
+	<!-- Right 300x250 #1 -->
+	<!-- <ins class="adsbygoogle right300x250x1"
+		 style="display:inline-block;width:300px;height:250px"
+		 data-ad-client="ca-pub-6430039911615607"
+		 data-ad-slot="1193585777"></ins> -->
 
-		<!-- Right 300x250 #1 -->
-		<ins class="adsbygoogle right300x250x1"
-			 style="display:inline-block;width:300px;height:250px"
-			 data-ad-client="ca-pub-6430039911615607"
-			 data-ad-slot="1193585777"></ins>
-
-		<!-- Right 300x250 #2 -->
-		<ins class="adsbygoogle right300x250x2"
-			 style="display:inline-block;width:300px;height:250px"
-			 data-ad-client="ca-pub-6430039911615607"
-			 data-ad-slot="5623785374"></ins>
-
-		<!-- Auto Size -->
-		<ins class="adsbygoogle horizontal"
-			 style="display:block"
-			 data-ad-client="ca-pub-6430039911615607"
-			 data-ad-slot="4852376176"
-			 data-ad-format="auto"></ins>
-		<br>
-
-		<div style="clear:both"></div>
-	</div>
-
-	{% if page.categories %}
-		{% unless page.no_comments %}
-			{% include comments.html %}
-		{% endunless %}
-	{% endif %}
-
-	{% include footer.html %}
+	<!-- Right 300x250 #2 -->
+	<!-- <ins class="adsbygoogle right300x250x2"
+		 style="display:inline-block;width:300px;height:250px"
+		 data-ad-client="ca-pub-6430039911615607"
+		 data-ad-slot="5623785374"></ins> -->
 </div>
+
+{% if page.categories %}
+	{% unless page.no_comments %}
+		{% include comments.html %}
+	{% endunless %}
+{% endif %}
+
+{% include footer.html %}

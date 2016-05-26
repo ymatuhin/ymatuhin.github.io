@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6, .h3 {
+	margin: auto;
+	font-weight: 600;
+	position: relative;
+	line-height: 1.44;
+	font-family: 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 4.3938rem;
+	line-height: 6.4rem;
+	max-width: 80%;
+	font-weight: 400;
+	font-family: 'PT Serif', Georgia, Times, "Times New Roman", serif;
+	// margin-bottom: 4.4rem;
+
+	@media (max-width: 480px) {
+		font-size: 3.2432rem;
+		line-height: 1.44;
+	}
+}
+
+h2 {
+	font-size: 3.5154rem;
+
+	@media (max-width: 480px) {
+		font-size: 2.8832rem;
+	}
+}
+h3, .h3 {
+	font-size: 2.5rem;
+
+	@media (max-width: 480px) {
+		font-style: 2.2784rem;
+	}
+}
+h4 {
+	font-size: 2.25rem;
+
+	@media (max-width: 480px) {
+		font-size: 2.0256rem;
+	}
+}
+h5 { font-size: 1.8rem }
+h6 { font-size: 1.44rem }
+
+
+* + h1,
+* + h2,
+* + h3,
+* + .h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 4.8rem; /* 1.5 baselines */
+}
+
+h1 + *,
+h2 + *,
+h3 + *,
+.h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+  margin-top: 1.6rem; /* 0.5 baselines */
+}

@@ -2,16 +2,16 @@
 layout: post
 title: Сглаживание шрифтов для разработчика и пользователя на Mac OS
 categories: front-end
-redirect_from:
-  - /blog/font_smoothing_for_the_developer_and_user_on_mac_os/
 tags: [css, сглаживание шрифта, mac os, расширение]
-image: font-smooth/compare.png
-imageWidth: 1040
-imageHeight: 380
-imageSpace: 1em
-imageCaption: Сглаживание шрифтов CSS
-imageTitle: Сглаживание шрифтов
+social_image: font-smooth/compare.png
 ---
+
+{%
+	include media-image.html
+	url="font-smooth/compare.png"
+	caption="Сглаживание шрифтов CSS"
+    noborder=""
+%}
 
 Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как `-webkit-font-smoothing`, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.
 
@@ -19,41 +19,45 @@ imageTitle: Сглаживание шрифтов
 
 В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.
 
-До ↓
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/yandex.png">
-	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-</figure>
-<!-- <img class="bordered" src="/assets/img/font-smooth/yandex.png" atl="yandex.ru со сглаживанием по умолчанию на Mac OS"> -->
-После ↓
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/yandex_with.png">
-	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-</figure>
-<!-- <img class="bordered" src="/assets/img/font-smooth/yandex_with.png" atl="yandex.ru со сглаживанием antialiased на Mac OS"> -->
-
-До ↓
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/google_search.png">
-	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-</figure>
-
-После ↓
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/google_search_with.png">
-	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-</figure>
+<div class="clearfix">
+    <div class="column-50 fl-l">
+        Было ↓
+        <figure itemscope itemtype="http://schema.org/ImageObject">
+        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/yandex.png">
+        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
+        </figure>
+    </div>
+    <div class="column-50 fl-l">
+        Стало ↓
+        <figure itemscope itemtype="http://schema.org/ImageObject">
+        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/yandex_with.png">
+        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
+        </figure>
+    </div>
+</div>
 
 
-<!--
-    <a target="_blank" href="/img/font-smooth/google_search.png"><img class="inline bordered rounded" width="49%" src="/assets/img/font-smooth/google_search.png" atl="google.ru со сглаживанием по умолчанию на Mac OS"></a>
-    <a target="_blank" href="/img/font-smooth/google_search_with.png"><img class="inline bordered rounded" width="49%" src="/assets/img/font-smooth/google_search_with.png" atl="google.ru со сглаживанием antialiased на Mac OS"></a>
- -->
+<div class="clearfix">
+    <div class="column-50 fl-l">
+        Было ↓
+        <figure itemscope itemtype="http://schema.org/ImageObject">
+        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/google_search.png">
+        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
+        </figure>
+    </div>
+    <div class="column-50 fl-l">
+        Стало ↓
+        <figure itemscope itemtype="http://schema.org/ImageObject">
+        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/google_search_with.png">
+        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
+        </figure>
+    </div>
+</div>
 
 ## Используем в работе
 Очень хорошо этим свойством обрабатываются подгружаемые шрифты.
 
-~~~js
+~~~css
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -68,7 +72,7 @@ html {
 
 В настройках создать новый стиль (write new style), назвать его (у меня Font render), поставить галочку `Enable`, и в поле `code` вставить следующий текст:
 
-~~~js
+~~~css
 html {
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;

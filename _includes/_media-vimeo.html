@@ -6,9 +6,9 @@
 
 	{% if include.title or include.caption or include.link %}
 		<div class="caption" data-animation="fadeInRightBig">
-		  
+
 		  {% if include.title %}
-		  	<h4>{{ include.title }}</h4>
+		  	<h4>{{ include.title | strip_html }}</h4>
 		  {% endif %}
 
 		  {% if include.caption %}

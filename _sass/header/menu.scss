@@ -1,0 +1,22 @@
+.menu {
+    margin: 4.2rem 0;
+    font-size: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.44rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+}
+
+.menu a {
+
+    color: #000;
+    border-bottom-color: transparent;
+    opacity: .5;
+
+    &[href] { opacity: 1; border-bottom: 1px solid rgba(0, 0, 0, .25); }
+}

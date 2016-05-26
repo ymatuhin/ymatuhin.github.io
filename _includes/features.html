@@ -7,8 +7,8 @@
         {% for tag in page.tags %}
           {% if post.tags contains tag %}
             {% unless temp_posts contains post.title %}
-              {% capture temp_posts %}{{ post.title }}{% endcapture %}
-              <li><a rel="nofollow" href="{{ post.url }}">{{ post.title }}</a><br /></li>
+              {% capture temp_posts %}{{ post.title | strip_html }}{% endcapture %}
+              <li><a rel="nofollow" href="{{ post.url }}">{{ post.title | strip_html }}</a><br /></li>
               {% assign count = count | plus:'1' %}
             {% endunless %}
           {% endif %}
@@ -21,12 +21,17 @@
 
 {% capture latest_posts %}
     {% for post in site.posts %}
-        {% if count <= 12 %}
+        {% if count <= 3 %}
             {% if post.url != page.url %}
             {% if post.url != page.previous.url %}
             {% if post.url != page.next.url %}
                 {% unless related_posts contains post.title %}
-                    <li><a rel="nofollow" href="{{ post.url }}">{{ post.title }}</a><br /></li>
+                    <li>
+                        <a rel="nofollow" href="{{ post.url }}">
+                            <img src="/assets/img/{{ post.image }}" alt="{{ post.imageCaption }}">
+                            {{ post.title | strip_html }}
+                        </a>
+                    </li>
                     {% assign count = count | plus:'1' %}
                 {% endunless %}
             {% endif %}

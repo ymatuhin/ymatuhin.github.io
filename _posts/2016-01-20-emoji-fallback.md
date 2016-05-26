@@ -4,12 +4,14 @@ title: Фоллбэчим Emoji
 categories: front-end
 description: Проверяем поддержку эмодзи у пользователя и какая у него операционная система. После этого подключаем любые эмодзи для корректного отображения смайликов.
 tags: [emoji, twitter, fallback]
-
-image: emoji/emoji.jpg
-imageWidth: 1860
-imageHeight: 830
-imageCaption: Emoji
+social_image: emoji/emoji.jpg
 ---
+
+{%
+	include media-image.html
+	url="emoji/emoji.jpg"
+	space_after=""
+%}
 
 Emoji набирают популярность. В блоге я тоже использовал их несколько раз, но получил отзыв о том, что они не везде показываются. На тот момент я прикрутил к сайту [Twemoji](https://github.com/twitter/twemoji){:rel='nofollow'}, но мне не нравилось что они заменяют стандартные на iOS и OS X.
 
@@ -51,8 +53,3 @@ if (!emojiSupported || !isMacLike) {
 	// twemoji.parse(document.body)
 }
 ```
-
-Этим способом emoji работают в этом блоге 👍
-Если у вас не отображается блок с emoji, напишите об этом мне на [почту](mailto:ymatuhin@yandex.ru) и укажите ваш браузер и операционную систему.
-
-> 😀 😬 😁 😂 😃 😄 😅 😆 😇 😉 😊 😋 😌 😍 😘 😗 😙 😚 😜 😝 😛 😎 😏 😶 😐 😑 😒 😳 😞 😟 😠 😡 😔 😕 😣 😖 😫 😩 😤 😮 😱 😨 😰 😯 😦 😧 😢 😥 😪 😓 😭 😵 😲 😷 😴 💤 💩 😈 👿 👹 👺 💀 👻 👽 😺 😸 😹 😻 😼 😽 🙀 😿 😾 🙌 👏 👋

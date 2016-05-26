@@ -4,15 +4,18 @@ title: Контрольные точки медиа выражений Bootstrap
 description: >
   Какие контрольные точки для media queries используются в css фреймворке Bootstrap для мобильных устройств? Почему медиа выражения с EM лучше чем с PX?
 categories: front-end
-redirect_from:
-  - /blog/media_quires_breakpoins/
 tags: [bootstrap, media quires, медиа выражения]
 
 image: media_queries/bootstrap.png
-imageWidth: 960
-imageHeight: 489
 imageCaption: Контрольные точки медиа выражений (media quires) Twitter Bootstrap
 ---
+
+
+{%
+	include media-image.html
+	url="media_queries/bootstrap.png"
+	caption="Контрольные точки медиа выражений (media quires) Twitter Bootstrap"
+%}
 
 Twitter Bootstrap&nbsp;&mdash; самый популярный CSS фреймворк. У&nbsp;него более 85&nbsp;495 звезд и&nbsp;35&nbsp;055 форков на&nbsp;<a href="https://github.com/twbs/bootstrap" rel="nofollow">GitHub</a>. А&nbsp;19&nbsp;августа вышла <a href="http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/" rel="nofollow">4&nbsp;альфа версия</a>, в&nbsp;которой разработчики используют `rem` для адаптивной верстки. Но&nbsp;не&nbsp;в&nbsp;медиа выражениях, которые остаются такими-же как и&nbsp;были.
 
@@ -67,11 +70,3 @@ Bootstrap использует 5&nbsp;контрольных точек для �
 1. Значение `em` в медиа выражениях эквавалентно 16 пикселям, и не зависит от размера шрифта у `html` или `body`.
 
 Если вам нужно больше контрольных точек, то&nbsp;отталкивайтесь от&nbsp;этих размеров экранов&nbsp;&mdash; 120, 160, 240, 320, 360, 480, 540, 576, 600, 640, 720, 768, 800, 864, 900, 960, 1024, 1050, 1080, 1152, 1200, 1440, 1536, 1600, 1620, 1800, 2048, 2160, 2400, 3072, 3200, 3240, 4096, 4320, 4800.
-
-<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
-    <h3>media queries</h3>
-    <h3>css media queries</h3>
-    <h4>bootstrap media queries</h4>
-    <h4>media queries в css3</h4>
-    <h5>media query width</h5>
-</footer> -->

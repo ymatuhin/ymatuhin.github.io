@@ -5,12 +5,14 @@ categories: front-end
 description: Способ горизонтального выравнивания по центру и правому краю для блочных элементов через CSS
 tags: [css, выравнивание]
 
-image: margin/margin_right_alignment.gif
-imageWidth: 419
-imageHeight: 278
-imageCaption: Горизонтальное выравнивание в CSS
-imageTitle: Горизонтальное выравнивание в CSS
+social_image: margin/margin_right_alignment.gif
 ---
+
+{%
+	include media-image.html
+	url="margin/margin_right_alignment.gif"
+	caption="Горизонтальное выравнивание в CSS"
+%}
 
 Вчера, на работе, я пытался выровнять блочный элемент по правому краю. Такая задача встречается не часто, но даже когда она встречается, я использую `inline-block` или `float`, но можно обойтись без них.
 

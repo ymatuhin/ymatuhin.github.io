@@ -2,21 +2,18 @@
 layout: post
 title: Быстрый дебаг CSS слоев с Pesticide
 categories: front-end
-redirect_from:
-  - /front-end/faster_debug_css_layout_with_pesticide/
-  - /blog/faster_debug_css_with_pesticide/
-tags: [css, pesticide, debug]
-keywords: >
+tags: >
   css debug дебаг
 description: >
   Дебажим CSS слои с помощью библиотеки Pesticide и расширений для Chrome и Firefox.
-
-image: pesticide/logo.png
-imageWidth: 530
-imageHeight: 140
-imageCaption: Логотип библиотеки для дебага CSS — Pesticide
-imageTitle: Pesticide — библиотека для дебага CSS
+social_image: pesticide/logo.png
 ---
+
+{%
+	include media-image.html
+	url="pesticide/logo.png"
+	caption="Pesticide — библиотека для дебага CSS"
+%}
 
 Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/Sass/LESS библиотека — <strong>Pesticide</strong>.
 

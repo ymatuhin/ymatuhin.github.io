@@ -3,15 +3,16 @@ layout: post
 title: Список статичных HTTP серверов для терминала
 categories: front-end
 tags: [http, server]
-
-image: server/http-server.png
-imageWidth: 420
-imageHeight: 200
-imageCaption: Статичный HTTP-server в терминале
-imageTitle: Статичный HTTP-server в терминале
+social_image: server/http-server.png
 ---
 
-Каждая из нижеприведенных команд запускает статичный http сервер в текущей директории. Сервер будет доступен по адресу [http://localhost:8000](http://localhost:8000){:rel="nofollow"}.
+{%
+	include media-image.html
+	url="server/http-server.png"
+	caption="HTTP-server статики в терминале"
+%}
+
+Каждая из нижеприведенных команд запускает статичный http сервер в текущей директории. Сервер будет доступен по адресу [http://localhost:8000](http://localhost:8000){:rel="nofollow"}
 
 <!-- more -->
 
@@ -133,4 +134,4 @@ C:\> "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:C:\MyWeb /port:80
 Зависит от [IIS Express](http://www.iis.net/learn/extensions/introduction-to-iis-express/iis-express-overview). Путь `/path` должен быть абсолютным.
 
 ### Благодарность
-На основании списка Вильяма Боверса (William Bowers) — [web-servers](https://gist.github.com/willurd/5720255).
+На основании списка [web-servers](https://gist.github.com/willurd/5720255) Вильяма Боверса (William Bowers).

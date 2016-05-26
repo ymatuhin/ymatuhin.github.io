@@ -1,10 +1,11 @@
 {% if page.image %}
-	<figure class="post-image"
+	<figure class="post-image wrap-large"
 			{% if page.imageWidth %}style="width: {{ page.imageWidth }}px"{% endif %}
 			itemscope
 			itemprop="image"
 			itemtype="http://schema.org/ImageObject">
 		{% capture url %}{{ page.image | prepend: '/assets/img/' }}{% endcapture %}
+
 
 		<a rel="nofollow"
 		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
@@ -21,7 +22,7 @@
 				 {% if page.imageCaption %}
 					alt="{{ page.imageCaption }}"
 				 {% else %}
-					alt="{{ page.title }}"
+					alt="{{ page.title | strip_html }}"
 				 {% endif %}
 				 onerror="style.opacity=0;parentNode.children[0].style.opacity = 1;"
 				 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1;"
@@ -41,17 +42,4 @@
 			<figcaption itemprop="caption">{{ page.imageTitle }}</figcaption>
 		{% endif %}
 	</figure>
-{% endif %}
-
-{% if page.pixelArt %}
-<style>
-.pixel-art {
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: pixelated;
-}
-</style>
 {% endif %}

@@ -1,28 +1,11 @@
-{% if page.url == '/index.html' or page.url == '/' %}
-<ul class="menu">
-{% else %}
-<ul class="menu menu_page">
-{% endif %}
+<a class="logo" href="/">
+    <img width="32" src="/assets/icons/favicon-96x96.png" alt="">
+</a>
 
-    {% if page.url == '/index.html' or page.url == '/' %}
-    {% else %}
-    <li><a {% if page.categories %}rel="nofollow"{% endif%} href="/">Главная</a></li>
-    {% endif %}
-
-    <li>
-        {% if page.url == '/front-end/' %}Фронтенд{% else %}
-            <a {% if page.categories %}rel="nofollow"{% endif%} href="/front-end/">Фронтенд</a></li>
-        {% endif %}
-    <li>
-        {% if page.url == '/tools/' %}Инструменты{% else %}
-            <a {% if page.categories %}rel="nofollow"{% endif%} href="/tools/">Инструменты</a></li>
-        {% endif %}
-    <li>
-        {% if page.url == '/blog/' %}Заметки{% else %}
-            <a {% if page.categories %}rel="nofollow"{% endif%} href="/blog/">Заметки</a></li>
-        {% endif %}
-    <li>
-        {% if page.url == '/about/' %}Обо мне{% else %}
-            <a {% if page.categories %}rel="nofollow"{% endif%} href="/about/">Обо мне</a></li>
-        {% endif %}
-</ul>
+<nav>
+    <ul class="menu">
+        <li><a {% unless page.url == "/blog/" %} href="/blog/"{% endunless %}>Блог</a></li>
+        <li><a {% unless page.url == '/projects/' %} href="/projects/"{% endunless %}>Проекты</a></li>
+        <li><a {% unless page.url contains "/about/" %} href="/about/"{% endunless %}>Обо мне</a></li>
+    </ul>
+</nav>

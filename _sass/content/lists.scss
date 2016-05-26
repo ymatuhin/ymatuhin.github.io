@@ -1,0 +1,20 @@
+ul, ol {
+	padding: 0;
+	list-style-position: inside;
+	margin: 0 0 0 2.6rem;
+
+	* + blockquote,
+	* + .highlighter-rouge,
+	* + pre {
+	  margin-top: 0.8rem; /* 0.25 baselines  */
+	}
+}
+
+* + ul,
+* + ol {
+	margin-top: 2.4rem;
+}
+
+li + li {
+	margin-top: 0.8rem; /* 0.25 baseline */
+}

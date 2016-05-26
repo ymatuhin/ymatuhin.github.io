@@ -20,15 +20,5 @@ tags: [английский язык, krutopridumal]
 ## Английский как по нотам смотреть онлайн
 
 {% include media-youtube.html url="7JSggwopqoE" width="560" height="315" caption="Английский как по нотам — Диалоги из Бойцовского клуба" %}
-{% include media-youtube.html url="cgpr2XazMnI" width="560" height="315" caption="Английский как по нотам — Диалоги из Матрицы" %}
 
-<!-- <footer class="keywords section-subtitle visuallyhidden" aria-hidden="true" role="contentinfo">
-	<h3>Английский как по нотам</h3>
-	<h3>youtube</h3>
-	<h3>krutopridumal</h3>
-	<h3>смотреть онлайн</h3>
-	<h4>видео</h4>
-	<h4>видеокурс</h4>
-	<h5>ютуб</h5>
-	<h5>Яндекс</h5>
-</footer> -->
+{% include media-youtube.html url="cgpr2XazMnI" width="560" height="315" caption="Английский как по нотам — Диалоги из Матрицы" %}

@@ -1,0 +1,16 @@
+.related {
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 1.44rem;
+}
+
+.related li {
+	width: 32%;
+	padding-bottom: 24px;
+	margin: 0;
+	float: left;
+}
+.related li + li {
+	margin-left: 1%;
+}

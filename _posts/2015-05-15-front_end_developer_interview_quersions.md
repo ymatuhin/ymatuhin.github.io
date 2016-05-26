@@ -2,18 +2,16 @@
 layout: post
 title: Вопросы для собеседования кандидату на должность Front-end разработчика
 categories: front-end
-redirect_from:
-  - /blog/front_end_developer_interview_quersions/
-keywords: >
+tags: >
   front end собеседование работа вопросы перевод должность кандидат
-tags: [frontend, работа, вопросы]
-
-image: front_end_interview/mem.jpg
-imageWidth: 760
-imageHeight: 365
-imageCaption: Типичное собеседование фронтендера…
-imageTitle: Типичное собеседование фронтендера…
+social_image: front_end_interview/mem.jpg
 ---
+
+{%
+	include media-image.html
+	url="front_end_interview/mem.jpg"
+	caption="На собеседовании фронтенд разработчика"
+%}
 
 *Это перевод популярного репозитория от html5bp — [Front-end Job Interview Questions](//h5bp.github.io/Front-end-Developer-Interview-Questions/) (en),  который существует с 2009 года. Список вопросов составлялся и дополнятся известными во front-end людьми, поэтому на этот список можно положиться. Перевод делал не я (вернее я хотел, но он оказался уже переведен).*
 

@@ -1,0 +1,21 @@
+blockquote {
+	position: relative;
+	padding: 4.2rem;
+	font-style: italic;
+
+	&:before {
+		position: absolute;
+		content: '“';
+		font-size: 6.4rem;
+		line-height: 1;
+		transform: translate(-125%, -25%);
+		opacity: .25;
+	}
+
+	i:first-child {}
+}
+
+* + blockquote
+blockquote + * {
+  margin-top: 2.4rem;
+}

@@ -1,18 +1,19 @@
 ---
 layout: post
-title: Масштабируемый пиксель арт
+title: Масштабируемый пиксель&nbsp;арт
 categories: front-end
 description: Управляем сглаживаем для pixel art иллюстраций в браузере через CSS свойство image-rendering.
 tags: [pixel art]
-
-image: pixel-art/pixel-art.gif
-imageWidth: 543
-imageHeight: 405
-imageCaption: 'Пиратский сюжет, автор: bugpixel'
-imageTitle: 'Пиратский сюжет, автор: <a href="http://bugpixel.com/" rel="nofollow">bugpixel</a>.'
-imageSpace: true
-pixelArt: true
+social_image: pixel-art/pixel-art.gif
 ---
+
+{%
+	include media-image.html
+	url="pixel-art/pixel-art.gif"
+	caption="Пиратский сюжет, автор: <a href='http://bugpixel.com/' rel='nofollow'>bugpixel</a>."
+	pixelart=""
+	noborder=""
+%}
 
 Мне нравится пиксель арт. Только взгляните на этот предмет искусства выше. Восьмибитная ностальгия, красота и простота. Но с пиксель артом в вебе одна проблема — **сглаживание**.
 
@@ -22,18 +23,37 @@ pixelArt: true
 
 Как пример, я возьму анимацию бегущего война. Оригинальный размер 32×32 пикселя. С таким размером нельзя демонстрировать анимацию людям, её нужно растянуть хотя бы до 256×256. И тут начинается проблема. Посмотрите как это выглядит.
 
-{% include media-image.html url="pixel-art/walking_man.gif" alt="Бегущий воин, pixel Art, сглаживание в браузере" caption="Автор: <a href='http://www.manningkrull.com/' rel='nofollow'>Leonard Krull</a>" width="256" %}
+{%
+	include media-image.html
+	url="pixel-art/walking_man.gif"
+	alt="Бегущий воин, pixel Art, стандартное сглаживание в браузере"
+	caption="Автор: <a href='http://www.manningkrull.com/' rel='nofollow'>Leonard Krull</a>"
+	width="256"
+%}
 
 Ужасно, не правда ли? Конечно можно сделать саму анимацию в размере 256×256, но это не поможет если рисунок должен масштабироваться или на него посмотрят на экранах с большой плотностью пикселей. Монитор размоет анимацию.
 
 Но что если мы можем на это повлиять? Посмотрите на следующую анимацию.
 
-![Бегущий воин, pixel Art, сглаживание в браузере](/assets/img/pixel-art/walking_man.gif){:width="256" class="pixel-art"}
+{%
+	include media-image.html
+	url="pixel-art/walking_man.gif"
+	alt="Бегущий воин, pixel Art, улучшеное сглаживание в браузере"
+	caption="Автор: <a href='http://www.manningkrull.com/' rel='nofollow'>Leonard Krull</a>"
+	width="256"
+    pixelart=""
+%}
 
 Другое дело, и работает в IE 7+, Safari 6+, Firefox 3.6+, Opera 12, 26+, Chrome 41+.
 Впечатляет? Вот наглядная разница в масштабировании между стандартным методом и пиксельным в формате «было — стало».
 
-![Pixel Art, сглаживание в браузере](/assets/img/pixel-art/difference.png)
+
+{%
+	include media-image.html
+	url="pixel-art/difference.png"
+	caption="Разница между двумя методами"
+	pixelart=""
+%}
 
 ## Как сделать
 

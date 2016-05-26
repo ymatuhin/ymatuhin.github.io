@@ -1,32 +1,42 @@
 {% if include.url %}
-<figure itemscope itemtype="http://schema.org/ImageObject">
+<figure itemscope
+	class="wrap-large"
+	itemtype="http://schema.org/ImageObject"
+	{% if include.width and include.ratio %}
+		style="max-width: {{ include.width }}px"
+	{% endif %}
+	>
 
 	<a rel="nofollow"
-	   class="{% if include.ratio %}ratio ratio{{ include.ratio }}{% endif %}"
-	   {% if include.color %}
-			style="background: #{{ include.color }}"
+	   class="{% if include.width and include.ratio %}ratio ratio{{ include.ratio }}{% endif %}"
+	   {% if include.preload %}
+			style="background: url({{ include.preload }}) 50% 50% no-repeat"
 	   {% endif %}
-	   href="{% if include.link %}{{ include.link }}{% else %}{{ include.url }}{% endif %}">
+	   href="{% if include.link %}{{ include.link }}{% else %}{{ include.url | prepend: '/assets/img/' }}{% endif %}">
 
-		{% if include.ratio %}
-			<span>Изображение не загрузилось&nbsp;😔</span>
+		{% if include.width and include.ratio %}
+			<script class="js-unload" type="text/template">
+				<span class="js-unload">
+					<object type="hello/ymatuhin">
+					Изображение не загрузилось.
+					<a href="javascript:location.reload()">Перезагрузите</a> страницу, если проблема повторится,
+					то напишите мне об этом на <a href="mailto:ym@ymatuhin.ru?subject=Изображение не загрузилось ({{ include.url }})">ym@ymatuhin.ru</a>
+					</object>
+				</span>
+			</script>
 		{% endif %}
 
 		<img itemprop="contentUrl"
+			 {% if include.width %}width="{{ include.width }}"{% endif %}
 			 src="{{ include.url | prepend: '/assets/img/' }}"
-			 width="{{ include.width }}"
-			 height="{{ include.height }}"
-			 {% if page.alt %}
-				alt="{{ include.alt }}"
-			 {% else %}
-				alt="{{ include.caption }}"
-			 {% endif %}
+			 alt="{% if include.alt %}{{ include.alt }}{% else %}{{ include.caption }}{% endif %}"
 			 onerror="style.opacity=0;parentNode.children[0].style.opacity = 1;"
-			 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1;"
-			 class="{% if page.pixelArt %}pixel-art{% endif %}">
+			 style="opacity:1"
+			 class="{% if include.pixelart %}pixel-art{% endif %} {% if include.noborder %}noborder{% endif %}">
 	</a>
 	{% if include.caption %}
 		<figcaption itemprop="caption">{{ include.caption }}</figcaption>
 	{% endif %}
+	{% if include.space_after %}<br>{% endif %}
 </figure>
 {% endif %}

@@ -1,14 +1,17 @@
-a,
-a:visited {
-    color: #0072ba;
+a {
+    color: #008ACE;
     text-decoration: none;
-    border-bottom: 1px solid rgba(0,114,186,.5);
+    // border-bottom: 1px solid rgba(0, 138, 206, .5);
+}
+a:visited {
+    color: #B40EB4;
+    border-bottom-color: rgba(180, 14, 180, .5);
 }
 
 a:hover,
 a:visited:hover {
-    color: #d04000;
-    border-color: rgba(208,64,0,.5);
+    color: #CC0000;
+    border-color: rgba(204, 0, 0, .5);
     -webkit-transition: 0s ease;
     transition: 0s ease;
 }

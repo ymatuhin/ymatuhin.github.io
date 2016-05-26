@@ -1,12 +1,12 @@
 <!-- Title -->
 {% capture page_title %}
-{% if page.title %}{{ page.title | replace: ' ', ' ' }} / {% if page.categories %}Блог фронтенд разработчика{% else %}{% if page.url == '/index.html' or page.url == '/' %}Фронтенд разработчик{% else %}{{ site.title }}{% endif %}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}
+{% if page.title %}{{ page.title | replace: ' ', ' ' | strip_html }} / {% if page.categories %}Блог фронтенд разработчика{% else %}{% if page.url == '/index.html' or page.url == '/' %}Фронтенд разработчик{% else %}{{ site.title | strip_html }}{% endif %}{% endif %}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}
 {% endcapture %}
 
 
 <!-- Description -->
-{% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' }}{% else %}{{ page.excerpt |  strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
-{% capture page_keywords %}{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+{% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
+{% capture page_keywords %}{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' | strip_html }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}{% endcapture %}
 
 <!-- Url -->
 {% capture page_url %}{{ page.url | replace:'index.html','' | replace: 'page2/', '' | replace: 'page3/', '' | replace: 'page4/', '' | replace: 'page5/', '' | prepend: site.url }}{% endcapture %}

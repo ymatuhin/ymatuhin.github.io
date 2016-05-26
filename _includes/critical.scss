@@ -1,13 +1,166 @@
-.no-ads {
-    position: absolute;
-    opacity: 0;
-}
-
 @import 'document';
 @import 'links';
-@import 'heading';
-@import 'media';
+@import 'links_uncritical';
 
-@import 'menu';
-@import 'content';
-@import 'lists';
+@import 'header/index';
+@import 'content/index';
+
+.ff-serif { font-family: 'PT Serif', Georgia, Times, "Times New Roman", serif }
+.ff-sans { font-family: 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif }
+.ff-mono { font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier }
+
+.wrap-center-box > * { margin-left: auto; margin-right: auto; }
+.wrap-center.wrap-center { margin-left: auto; margin-right: auto; }
+
+.wrap-small-box > *,
+html .wrap-small { max-width: 64.8rem }
+
+.wrap-medium-box > * ,
+html .wrap-medium { max-width: 79.2rem }
+
+.wrap-large-box > *,
+html .wrap-large { max-width: 100.8rem }
+
+.text-default {
+	font-size: 1.44rem;
+	line-height: 3.2rem;
+}
+
+.db { display: block }
+.mt0 { margin-top: 0 }
+.ml0 { margin-left: 0 }
+.fl-r { float: right }
+.fl-l { float: left }
+.ta-c { text-align: center }
+.ta-l { text-align: left }
+.ta-r { text-align: right }
+
+.ttu { text-transform: uppercase }
+
+#hypercomments_widget {
+	margin-top: 4.2rem;
+}
+
+.js-next-prev {
+	text-align: center;
+}
+
+.likely {
+	width: 100%;
+	max-width: initial;
+	overflow: hidden;
+	display: none;
+}
+.likely.likely .likely__icon + .likely__button { padding: 1px 4px 1px 0 }
+.likely.likely .likely__button { padding: 1px 4px }
+
+.js-next-prev {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.arrow {
+		font-family: 'PT Sans';
+		padding: 0 2.4rem;
+	}
+	a {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 45%;
+	}
+}
+
+.column-50 {
+	margin: 2.4rem 0;
+	width: 50%;
+	padding-right: 12px;
+	float: left;
+}
+.column-50 + .column-50 {
+	padding-left: 12px;
+	padding-right: 0;
+	float: right;
+}
+
+.hello {
+	margin: 4.2rem 0;
+}
+
+.hello img {
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	width: 90px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 24px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.post + .post{
+	margin-top: 4.2rem;
+}
+
+.post img {
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	height: 90px;
+	width: 90px;
+	float: left;
+	margin-right: 24px;
+}
+
+.posts {
+	list-style-type: none;
+	margin-left: 0;
+
+	&.columns {
+		-webkit-columns: 240px 2;
+		-moz-columns: 240px 2;
+		columns: 240px 2;
+
+		-webkit-column-gap: 2.4rem;
+		-moz-columns-gap: 2.4rem;
+		columns-gap: 2.4rem;
+	}
+
+	li + li {
+		margin-top: 2.4rem; /* 0.25 baseline */
+	}
+
+	&.columns li {
+		margin: 0 0 2.4rem;
+		padding: 2.4rem;
+		-webkit-column-break-inside: avoid; /* Chrome, Safari */
+		page-break-inside: avoid;           /* Theoretically FF 20+ */
+		break-inside: avoid-column;         /* IE 11 */
+		display: table;                      /* Actually FF 20+ */
+	}
+
+	img {
+		margin-bottom: 2.4rem;
+	}
+
+	small {
+		font-size: 1.2rem;
+		opacity: .5;
+		position: relative;
+		top: -.8em;
+	}
+}
+
+.pagination .next {
+	float: right;
+}
+.pagination .prev {
+	float: left;
+}

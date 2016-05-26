@@ -4,12 +4,14 @@ title: Три плагина, которые сделают Single Page Applicat
 categories: front-end
 description: Три плагина улучшат приложение для пользователей с нестабильным или медленным интернетом и тех, кто пользуется телефоном для просмотра. Pace.js, Offline.js, FastClick.js.
 tags: [spa, angular, plugins, offline, loading, mobile]
-
-image: spa_plugins/spa_plugins.jpg
-imageWidth: 1440
-imageHeight: 800
-imageCaption: HTML5 Link Prefetch
+social_image: spa_plugins/spa_plugins.jpg
 ---
+
+{%
+	include media-image.html
+	url="spa_plugins/spa_plugins.jpg"
+	space_after=""
+%}
 
 Ваши пользователи разные. У кого-то быстрый компьютер и интернет, а кто-то пользуется приложением из глуши со слабеньким 2G интернетом. Мы, разработчики, редко задумываемся об этом, ведь у нас сайт «летает».
 

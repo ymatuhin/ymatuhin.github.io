@@ -1,0 +1,27 @@
+pre {
+	margin: 0;
+	padding: 2.4rem;
+	background: #fff7dc;
+}
+
+pre,
+code {
+	overflow: auto;
+	font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
+code {
+	background: #fff7dc;
+	border-radius: 3px;
+	padding: 4px 4px 2px;
+}
+pre code { padding: 0 }
+
+* + .highlighter-rouge, .highlighter-rouge + *,
+* + pre, pre + * {
+  margin-top: 2.4rem; /* 0.75 baselines  */
+}
+
+.highlighter-rouge.highlighter-rouge,
+[role="main"] pre {
+	max-width: 100.8rem;
+}

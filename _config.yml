@@ -7,11 +7,15 @@ url: "https://ymatuhin.ru"
 permalink: /:categories/:title/
 excerpt_separator: <!-- more -->
 
+paginate: 10
+paginate_path: "/blog/page:num/"
+
 sass:
   style: compressed
 
 gems:
   - jekyll-redirect-from
+  - jekyll-paginate
 
 permalinks: pretty
 markdown: kramdown
