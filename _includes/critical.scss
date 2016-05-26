@@ -89,6 +89,15 @@ html .wrap-large { max-width: 100.8rem }
 	float: right;
 }
 
+@media (max-width: 480px) {
+	.column-50,
+	.column-50 + .column-50 {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
+
 .hello {
 	margin: 4.2rem 0;
 }
