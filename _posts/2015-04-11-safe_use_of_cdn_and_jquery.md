@@ -3,7 +3,7 @@ layout: post
 title: Безопасное использование CDN для jQuery, Angular, Bootstrap и других библиотек
 categories: front-end
 tags: [CDN, jQuery, fallback]
-keywords: >
+tags: >
   jquery cdn google bootstrap бесплатные free yandex сервисы для сайта angular Modernizr
 description: >
   Безопасно загружаем JavaScript библиотеки из публичных CDN с fallback-ом на локальную библиотеку. Jquery, Angular JS, Bootstrap и другие.

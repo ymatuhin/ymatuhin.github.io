@@ -1,0 +1,21 @@
+{% if include.text %}
+<div class="wrap-medium pos-r">
+	<div class="factoid">
+	   {% if include.count %}
+	   <span class="big">{{ include.count }}</span>
+	   {% endif %}
+	   <p>
+		   {{ include.text }}
+		   {% if include.prove %}
+		   <sup class="red">*</sup>
+		   {% endif %}
+	   </p>
+	   {% if include.prove %}
+	   <p class="small">
+		   <sup class="red">*</sup>
+		   {{ include.prove }}
+	   </p>
+	   {% endif %}
+	</div>
+</div>
+{% endif %}

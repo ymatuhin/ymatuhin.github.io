@@ -8,6 +8,10 @@
 	<title>{{ page_title }}</title>
 	<meta name="description" content="{{ page_description }}">
 
+	{% if page_keywords %}
+		<meta name="keywords" content="{{ page_keywords }}">
+	{% endif %}
+
 	<!-- Inlined styles -->
 	<style>
 		{% capture include_to_scssify %}{% include critical.scss %}{% endcapture %}

@@ -6,7 +6,7 @@
 
 <!-- Description -->
 {% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}
-{% capture page_keywords %}{% if page.keywords %}{{ page.keywords | replace: ' ', ' ' | strip_html }}{% else %}{{ post.keywords | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+{% capture page_keywords %}{% if page.tags %}{% for tag in page.tags %} {{ tag }}{% endfor %}{% else %}{% for tag in post.tags %} {{ tag }}{% endfor %}{% endif %}{% endcapture %}
 
 <!-- Url -->
 {% capture page_url %}{{ page.url | replace:'index.html','' | replace: 'page2/', '' | replace: 'page3/', '' | replace: 'page4/', '' | replace: 'page5/', '' | prepend: site.url }}{% endcapture %}

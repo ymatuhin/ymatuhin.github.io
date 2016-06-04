@@ -6,6 +6,7 @@
 
 @import 'header/index';
 @import 'content/index';
+@import 'footer/index';
 
 .ff-serif { font-family: 'PT Serif', Georgia, Times, "Times New Roman", serif }
 .ff-sans { font-family: 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif }
@@ -36,6 +37,7 @@ html .wrap-large { max-width: 100.8rem }
 .ta-c { text-align: center }
 .ta-l { text-align: left }
 .ta-r { text-align: right }
+.pos-r { position: relative }
 
 .ttu { text-transform: uppercase }
 
@@ -64,6 +66,7 @@ html .wrap-large { max-width: 100.8rem }
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 1.8rem;
 
 	.arrow {
 		font-family: 'PT Sans';

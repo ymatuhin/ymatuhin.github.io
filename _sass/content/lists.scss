@@ -7,6 +7,10 @@ ul, ol {
 	* + .highlighter-rouge,
 	* + pre {
 	  margin-top: 0.8rem; /* 0.25 baselines  */
+
+	  &:last-child {
+		  margin-bottom: 2.4rem;
+	  }
 	}
 }
 

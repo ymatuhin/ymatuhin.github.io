@@ -1,5 +1,8 @@
 <address itemscope itemtype="http://schema.org/Person" class="footer ">
+    {% unless page.categories %}
     <hr class="wrap-medium wrap-center">
+    {% endunless %}
+
     {% include search.html %}
     <br>
 

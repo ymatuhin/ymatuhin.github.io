@@ -1,0 +1,42 @@
+article {
+	position: relative;
+}
+
+.factoid {
+	float: right;
+	width: 160px;
+	padding: 0 0 2.4rem 2.4rem;
+	margin-right: 2.4rem;
+	font-size: 14px;
+	margin-right: -160px;
+	color: rgba(49, 49, 49, .5);
+
+	@media (max-width: 1114px) {
+		margin-right: -80px;
+	}
+	@media (max-width: 952px) {
+		margin-right: -40px;
+	}
+	@media (max-width: 872px) {
+		margin-right: 0;
+	}
+
+	.big {
+		font-size: 4.3938rem;
+		line-height: 1;
+		white-space: nowrap;
+	}
+
+	p {
+		margin-top: .8rem;
+	}
+
+	.red {
+		color: red;
+	}
+
+	.small {
+		margin-top: 1.6rem;
+		font-size: 12px;
+	}
+}
