@@ -10,9 +10,6 @@ const  critical = require('critical').stream;
 
 const criticalConfig = {
 	base: '_site/',
-	// minify: true,
-	// inline: true,
-	extract: true,
 	dimensions: [{
 		width: 1300,
 		height: 900
@@ -87,7 +84,7 @@ gulp.task('css:main', () => {
 		.pipe(gulp.dest('assets/css'));
 });
 
-gulp.task('css:critical', gulp.parallel([
+gulp.task('css:critical', gulp.series([
 	'сss:critical:home',
 	'сss:critical:blog',
 	'сss:critical:post'
