@@ -16,8 +16,7 @@
 
 		{{ content }}
 
-		<!-- unctirical -->
-		<link rel="stylesheet" href="/assets/css/uncritical.css" media="none" onload="media='all'">
+		<link rel="stylesheet" href="/assets/css/main.min.css">
 
 		<!-- Syntax css -->
 		<script>if (document.querySelector('.highlight')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/syntax.css\">')</script>
@@ -34,7 +33,8 @@
 			<!-- /Sharing -->
 		{% endif %}
 
-		{% if page.url == '/index.html' or page.url == '/' %}{% else %}
+		{% if page.url == '/index.html' or page.url == '/' %}
+		{% else %}
 			<!-- Google ads -->
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<script>(adsbygoogle = window.adsbygoogle || []).push({}, {}, {}, {});</script>

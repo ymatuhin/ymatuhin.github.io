@@ -1,0 +1,20 @@
+.column-50 {
+	margin: 2.4rem 0;
+	width: 50%;
+	padding-right: 12px;
+	float: left;
+}
+.column-50 + .column-50 {
+	padding-left: 12px;
+	padding-right: 0;
+	float: right;
+}
+
+@media (max-width: 480px) {
+	.column-50,
+	.column-50 + .column-50 {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}

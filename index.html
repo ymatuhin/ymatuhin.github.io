@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Юрий Матюхин
+is_index: true
 tags: front end developer разработчик фронтенд статьи заметки разработка интерфейсов html css javascript фреймворки программист
 description: >
   Статьи и заметки о архитектуре веб приложений, разработке интерфейсов, верстке, HTML, CSS, JavaScript, фреймворках и трендах front end разработки.
@@ -42,30 +43,5 @@ description: >
 		</ul>
 	</div>
 </div>
-
-<!-- <div role="main" class="text-content"> -->
-	<!-- <div class="projects">
-		<div class="history">
-			{% for post in paginator.posts %}
-				<div class="landmark">
-					<div class="description">
-						<a rel="bookmark" href="{{ post.url }}">
-							{% if post.image %}
-								<img src="{{ post.image | prepend: '/assets/img/' }}" alt="{{ post.imageCaption }}">
-							{% endif %}
-							<p>
-								<b>{{ post.title | strip_html }}</b>
-							</p>
-							{% unless post.image %}
-							<p>
-								{{ post.description }}
-							</p>
-							{% endunless %}
-						</a>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
-	</div> -->
 
 {% include footer.html %}

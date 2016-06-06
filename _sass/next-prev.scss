@@ -1,0 +1,29 @@
+.js-next-prev {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.8rem;
+	text-align: center;
+
+	.arrow {
+		font-family: 'PT Sans';
+		padding: 0 2.4rem;
+	}
+	a {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: 45%;
+	}
+}
+
+.pagination .next {
+	float: right;
+}
+.pagination .prev {
+	float: left;
+}

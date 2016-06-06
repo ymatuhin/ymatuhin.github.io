@@ -1,0 +1,22 @@
+---
+---
+
+@import 'document';
+@import 'helpers';
+@import 'links';
+@import 'next-prev';
+@import 'column';
+@import 'hello';
+@import 'posts';
+
+@import 'header/index';
+@import 'content/index';
+@import 'footer/index';
+
+#hypercomments_widget {
+	margin-top: 4.2rem;
+}
+
+.adsbygoogle {
+	margin-bottom: 4.8rem;
+}

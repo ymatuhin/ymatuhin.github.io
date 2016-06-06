@@ -12,25 +12,20 @@
 		<meta name="keywords" content="{{ page_keywords }}">
 	{% endif %}
 
-	<!-- Inlined styles -->
-	<style>
-		{% capture include_to_scssify %}{% include critical.scss %}{% endcapture %}
-		{{ include_to_scssify | scssify }}
-
-		{% if page.categories %}
-			{% include ratio.css %}
-		{% endif %}
-	</style>
+	<!-- critical css -->
+	{% if page.is_index %}
+		<style>{% include critical-home.css %}</style>
+	{% elsif page.is_blog %}
+		<style>{% include critical-blog.css %}</style>
+	{% else %}
+		<style>{% include critical-post.css %}</style>
+	{% endif %}
 
 	{% include head/meta_lang.html %}
 	{% include head/meta_rss.html %}
 	{% include head/meta_twitter.html %}
 	{% include head/meta_open_graph.html %}
 	{% include head/meta_icon.html %}
-
-	{% if page.categories %}
-		<!-- <link rel="stylesheet" href="/assets/css/ratio.css" media="none" onload="media='all'"> -->
-	{% endif %}
 
 	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

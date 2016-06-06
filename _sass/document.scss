@@ -30,9 +30,6 @@ body {
 
 	// media
 	@media (max-width: 800px) { padding: 6.4rem 3.2rem; }
-	@media (max-width: 640px) { padding: 6.4rem 3.2rem; }
+	// @media (max-width: 640px) { padding: 6.4rem 3.2rem; }
 	@media (max-width: 480px) { padding: 3.2rem 1.8rem; }
-
-	// debug
-	&.vert { background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 31px, rgba(255,100,0,.5) 31px, rgba(255,100,0,.5) 32px); }
 }

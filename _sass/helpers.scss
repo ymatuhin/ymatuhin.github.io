@@ -1,0 +1,38 @@
+.ff-serif { font-family: 'PT Serif', Georgia, Times, "Times New Roman", serif }
+.ff-sans { font-family: 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif }
+.ff-mono { font-family: Fira Code, Inconsolata, Monaco, Consolas, 'Courier New', Courier }
+
+.wrap-center-box > * { margin-left: auto; margin-right: auto; }
+.wrap-center.wrap-center { margin-left: auto; margin-right: auto; }
+
+.wrap-small-box > *,
+html .wrap-small { max-width: 64.8rem }
+
+.wrap-medium-box > * ,
+html .wrap-medium { max-width: 79.2rem }
+
+.wrap-large-box > *,
+html .wrap-large { max-width: 100.8rem }
+
+.text-default {
+	font-size: 1.44rem;
+	line-height: 3.2rem;
+}
+
+.db { display: block }
+.mt0 { margin-top: 0 }
+.ml0 { margin-left: 0 }
+.fl-r { float: right }
+.fl-l { float: left }
+.ta-c { text-align: center }
+.ta-l { text-align: left }
+.ta-r { text-align: right }
+.pos-r { position: relative }
+
+.ttu { text-transform: uppercase }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

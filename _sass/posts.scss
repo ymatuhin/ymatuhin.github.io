@@ -1,0 +1,51 @@
+.post + .post {
+	margin-top: 4.2rem;
+}
+
+.post img {
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	height: 90px;
+	width: 90px;
+	float: left;
+	margin-right: 24px;
+}
+
+.posts {
+	list-style-type: none;
+	margin-left: 0;
+
+	&.columns {
+		-webkit-columns: 240px 2;
+		-moz-columns: 240px 2;
+		columns: 240px 2;
+
+		-webkit-column-gap: 2.4rem;
+		-moz-columns-gap: 2.4rem;
+		columns-gap: 2.4rem;
+	}
+
+	li + li {
+		margin-top: 2.4rem; /* 0.25 baseline */
+	}
+
+	&.columns li {
+		margin: 0 0 2.4rem;
+		padding: 2.4rem;
+		-webkit-column-break-inside: avoid; /* Chrome, Safari */
+		page-break-inside: avoid;           /* Theoretically FF 20+ */
+		break-inside: avoid-column;         /* IE 11 */
+		display: table;                      /* Actually FF 20+ */
+	}
+
+	img {
+		margin-bottom: 2.4rem;
+	}
+
+	small {
+		font-size: 1.2rem;
+		opacity: .5;
+		position: relative;
+		top: -.8em;
+	}
+}

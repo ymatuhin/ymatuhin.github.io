@@ -23,3 +23,8 @@ kramdown:
   input: GFM
   hard_wrap: true
   syntax_highlighter: rouge
+
+exclude:
+  - 'node_modules/**/*'
+  - '*.json'
+  - 'gulpfile.babel.js'

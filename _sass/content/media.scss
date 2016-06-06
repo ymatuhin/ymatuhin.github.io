@@ -6,7 +6,8 @@ img {
 	iframe,
 	img {
 		max-width: 100%;
-		box-shadow: 0 22px 70px 0 rgba(0,0,0,0.3);
+		// box-shadow: 0 22px 70px 0 rgba(0,0,0,0.3);
+		box-shadow: 0 22px 70px 0 rgba(0, 0, 0, 0.1);
 		&.noborder { box-shadow: none }
 	}
 	img {
@@ -17,7 +18,7 @@ img {
 figure {
 	margin: 0 auto;
 	text-align: center;
-	
+
 	& > a {
 		border: 0;
 	}
