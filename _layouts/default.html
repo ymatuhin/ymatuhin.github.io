@@ -16,7 +16,8 @@
 
 		{{ content }}
 
-		<link rel="stylesheet" href="/assets/css/main.min.css">
+		<link rel="preload" href="/assets/css/main.min.css" as="style" onload="this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="/assets/css/main.min.css"></noscript>
 
 		<!-- Syntax css -->
 		<script>if (document.querySelector('.highlight')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/syntax.css\">')</script>
