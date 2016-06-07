@@ -436,7 +436,6 @@
 	width: 100%;
 	max-width: initial;
 	overflow: hidden;
-	display: none;
 }
 .likely.likely .likely__icon + .likely__button { padding: 1px 4px 1px 0 }
 .likely.likely .likely__button { padding: 1px 4px }
