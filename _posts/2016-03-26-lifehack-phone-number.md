@@ -17,7 +17,7 @@ social_image: phones/phones.jpeg
 	preload="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAKCAIAAADkeZOuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbxJREFUeNoU0Dtv00AAwPG78935Ecd5t0maxK4bQtUFOlZiAYmvgsSAxJfgOzAgNmBkYikfgHaBhZaoooRUSdMkOj/iRxrb5yNs/+W//ODbN68VWVXKTahVOEC5EIKnyeY+CoLNOo7i0A//B+eZ63m4bj/m4TLnoUgwpAaSMEBIVymAcHuiLKVKSghKNlmcZFgrN4yula4Dl7FVHAEs1+q7gedAhDgAhGBDLzBnIySJUBUrVPK88PTLV8Zunz5/1mjuXvy8/Pzpo93vnTw54Tk9O/9+NRw+PLSbrQ4q1Vtn386pRNhytljMFb3298940LOmN9dx5M/dIPbCY9sej0Zx6CJFq+xZ+7PF8j7JqawVi0a72/s9voFYJnKhWi4RRRlN56pMCcYo5elgcHT06FhIkDFW22n0OubkajSb3hJKBwcPiKYPJ3dpmlJCpBcvXwkB9JLebu90zX1ZKWwNDw77dt9stS0uMAFZ32pWDLmgqfDHr2vfc3Oet9p7nueu17HjuF3TzDM+m05ch0X+XcPQAt9Z+Su0lRIAJkkShoEAQNWKlNAP798NLy9K5QqR1TwDnMOaUe1Uq/8EGABVhtf7tUIlxQAAAABJRU5ErkJggg=="
 %}
 
-Если у вас небольшой бизнес, магазин или рабочий номер телефона, который отображается на сайте. И нет средств на круглосуточную поддержку по телефону, то лучше, чтобы вам звонили только в рабочее время.
+Если у вас небольшой бизнес, магазин или рабочий номер телефона, который отображается на сайте, и нет средств на круглосуточную поддержку по телефону, то лучше, чтобы вам звонили только в рабочее время.
 
 Решение — написать время работы на сайте. В идеале, показать номер если время рабочее. А если нет, то написать время работы и сделать номер телефон полупрозрачным или скрыть.
 
