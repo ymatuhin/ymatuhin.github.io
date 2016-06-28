@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Демонстрация
 description: Демонстрационный пример из статьи «Анимируем высоту c auto в CSS через transition».
 ---
@@ -13,7 +13,7 @@ description: Демонстрационный пример из статьи «�
 
 <style>
     /* Visual styles */
-    .dropdown {
+    .demo-dropdown {
         margin-top: 2px;
         padding: 0 15px;
         overflow: auto;
@@ -23,10 +23,10 @@ description: Демонстрационный пример из статьи «�
         box-shadow: inset 0 0 5px -1px #000;
     }
 
-    .menu {
+    .demo-menu {
         display: inline-block;
         vertical-align: top;
-        padding: 10px;
+        padding: 5px 10px;
         box-shadow: inset 0 0 5px -1px #000;
         border-radius: 6px;
         border: 0;
@@ -37,18 +37,18 @@ description: Демонстрационный пример из статьи «�
         color: #ECF0F1;
         font-weight: bold;
     }
-    .menu:hover {
+    .demo-menu:hover {
         color: #fff !important;
     }
 
     /* Animate */
-    .menu:hover + .dropdown,
-    .dropdown:hover {
+    .demo-menu:hover + .demo-dropdown,
+    .demo-dropdown:hover {
         max-height: 700px;
         padding: 15px;
     }
 
-    .dropdown {
+    .demo-dropdown {
         -webkit-transition: max-height .5s, padding .5s;
         transition: max-height .5s, padding .5s;
         max-height: 0;
@@ -58,6 +58,6 @@ description: Демонстрационный пример из статьи «�
 <p>Это демо пример из статьи «<a href="/front-end/height_transition_css/">Анимируем высоту c auto в CSS через transition</a>».</p>
 
 <div class="container">
-    <a href="#" class="menu">Наведи на меня</a>
-    <div class="dropdown">Блок в котором невероятно много текста. Мы даже не можем узнать какая у этого блока высота, поскольку она зависит от размеров экрана. Но мы все равно можем сделать анимацию как в jQuery. Так то! <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <a href="#" class="demo-menu">Наведи на меня</a>
+    <div class="demo-dropdown">Блок в котором невероятно много текста. Мы даже не можем узнать какая у этого блока высота, поскольку она зависит от размеров экрана. Но мы все равно можем сделать анимацию как в jQuery. Так то! <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 </div>
