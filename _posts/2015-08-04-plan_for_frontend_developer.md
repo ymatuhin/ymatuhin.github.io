@@ -50,10 +50,10 @@ social_image: need_to_frontend/i-have-a-plan.jpg
 [3]: /front-end/plan_for_frontend_developer
 [4]: http://plus.google.com/104557932122476785260/
 [5]: http://ymatuhin.ru/img/need_to_frontend/i-have-a-plan.jpg
-[6]: /blog/what_front_end_developer_need_to_know_in_2015-2016/
+[6]: /front-end/what_front_end_developer_need_to_know_in_2015-2016/
 [7]: https://twitter.com/ymatuhin/status/627069468506779648
 [8]: http://effortlessenglish.com
-[9]: /blog/restful_api_for_frontender/
+[9]: /front-end/restful_api_for_frontender/
 [10]: http://restapitutorial.ru
 [11]: http://stackoverflow.com/questions/671118/what-exactly-is-restful-programming
 [12]: http://habrahabr.ru/post/38730/
