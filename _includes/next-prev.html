@@ -17,10 +17,11 @@
     if (isMac) separate[text] = '⌥';
 
     document.addEventListener('keydown', function(e) {
-        var _key = (e.keyIdentifier || e.key).toLowerCase();
-        if (!e.altKey) return;
+        if (document.activeElement.tagName == 'TEXTAREA') return
+        var _key = (e.keyIdentifier || e.key).toLowerCase()
+        if (!e.altKey) return
 
-        if (_key.indexOf('left') >= 0 && prev) location.href = prev.href;
-        if (_key.indexOf('right') >= 0 && next) location.href = next.href;
+        if (_key.indexOf('left') >= 0 && prev) location.href = prev.href
+        if (_key.indexOf('right') >= 0 && next) location.href = next.href
     }, false);
 </script>
