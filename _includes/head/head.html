@@ -29,7 +29,6 @@
 	"headline": "{{ page_title }}",
 	{% if page.date %}
 	"datePublished": "{{ page.date|date_to_xmlschema }}",
-	"dateModified": "{{ page.last_modified_at|date_to_xmlschema }}",
 	{% else %}
 	"datePublished": "{{ site.time|date_to_xmlschema }}",
 	{% endif %}
