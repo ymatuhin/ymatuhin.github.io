@@ -8,6 +8,7 @@ social_image: week-ends/1984.jpg
 social_caption: Джордж Оруэлл — 1984
 social_width: 808
 social_height: 474
+has_iframe: true
 ---
 
 {% include media-post-image.html %}
