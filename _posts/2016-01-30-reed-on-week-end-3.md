@@ -5,12 +5,13 @@ categories: front-end
 description: Список статей, библиотек, фреймворков и сервисов для ковыряния на выходных или в свободное время для фронтенд разработчика.
 tags: [почитать, список, дайджест]
 updated: 14-03-2016
+has_youtube: true
 ---
 
 Горячие новости 🔥 — Sublime Text [жив](https://sublimetext.com/3dev){:rel='nofollow'}! Сборка 3099 вышла 29 января 2016.
 
 {% include media-youtube.html
-	url="20BySC_6HyY?rel=0&amp;showinfo=0"
+	url="20BySC_6HyY"
 	width="960"
 	height="720"
 	caption="Wat by Gary Bernhardt" %}

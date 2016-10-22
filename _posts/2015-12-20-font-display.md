@@ -4,10 +4,12 @@ title: Управляем поведением font-face в CSS
 categories: front-end
 description: Поведением текста, отображаемого во время загрузки font-face, можно управлять с помощью свойства font-display. Как работает и какие значения поддерживет свойсто font-display читайте в статье.
 tags: [web fonts, font, font-display, css]
+
 social_image: font-display/font-display.png
 social_alt: Font display
 social_width: 762
 social_height: 658
+has_youtube: true
 ---
 
 {% include media-post-image.html %}
@@ -76,7 +78,11 @@ Safari | нет ожидания | - | -
 
 ## Видео пример работы свойства font-display
 
-{% include media-youtube.html url="CciEEVHZRgw" width="421" height="315" caption="Пример работы CSS свойства font-display" %}
+{% include media-youtube.html
+    url="CciEEVHZRgw"
+    width="421"
+    height="315"
+    caption="Пример работы CSS свойства font-display" %}
 
 ## Как протестировать
 

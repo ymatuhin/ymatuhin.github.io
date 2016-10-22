@@ -20,7 +20,11 @@ social_height: 474
 
 Я перешел на Pocket для сохранения статей. До этого складывал их в Wunderlist и Notes, а теперь выбрал годное из них и составил списочки ниже. Чтива хватит на пару выходных.
 
-{% include media-iframe.html url="//codepen.io/joshnh/embed/JCGoF/?height=320&theme-id=0&default-tab=result" height="320" caption='<a href="http://codepen.io/joshnh/pen/JCGoF/" rel="nofollow">Single Element Pure CSS MacBook Pro</a> by Joshua Hibbert (<a href="http://codepen.io/joshnh" rel="nofollow">@joshnh</a>) on CodePen' %}
+{% include media-iframe.html    
+    url="//codepen.io/joshnh/embed/JCGoF/?height=320&theme-id=0&default-tab=result"
+    width="960"
+    height="320"
+    caption='<a href="http://codepen.io/joshnh/pen/JCGoF/" rel="nofollow">Single Element Pure CSS MacBook Pro</a> by Joshua Hibbert (<a href="http://codepen.io/joshnh" rel="nofollow">@joshnh</a>) on CodePen' %}
 
 ## Статьи и видео
 1. [Воркшоп React.js и архитектура Flux][38]{:rel='nofollow'} — крутой старт по реакту и флюксу.
