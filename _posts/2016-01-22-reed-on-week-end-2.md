@@ -57,7 +57,7 @@ social_caption: Размеры изображений при шаринге в �
 [8]: https://github.com/rajdee/redux-in-russian
 [9]: https://github.com/xgrommx/awesome-redux
 [10]: https://github.com/premailer/premailer
-[11]: http://habrahabr.ru/post/275227/
+[11]: https://habrahabr.ru/post/275227/
 [12]: https://egghead.io/lessons/javascript-redux-the-single-immutable-state-tree
 [13]: https://blog.whiteboard.is/answering-front-end-developer-interview-questions-what-does-a-doctype-do-21bc97c7e873
 [15]: https://github.com/richardgorman/DOM.js

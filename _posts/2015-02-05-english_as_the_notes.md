@@ -9,7 +9,7 @@ description: >
 has_youtube: true
 ---
 
-Если вы изучаете английский язык, и еще не видели этот видеокурс, то я рекомендую посмотреть его. Представляю вам _youtube_ канал — «[Английский как по нотам](http://www.youtube.com/user/krutopridumal/featured){:rel='nofollow'}»  (**krutopridumal**). У этого проекта так-же есть группа [Вконтакте](http://vk.com/krutopridumal){:rel='nofollow'}.
+Если вы изучаете английский язык, и еще не видели этот видеокурс, то я рекомендую посмотреть его. Представляю вам _youtube_ канал — «[Английский как по нотам](https://www.youtube.com/user/krutopridumal/featured){:rel='nofollow'}»  (**krutopridumal**). У этого проекта так-же есть группа [Вконтакте](http://vk.com/krutopridumal){:rel='nofollow'}.
 
 В скором будущем у них появится сайт, который сейчас находится «в разработке» — [krutopridumal](http://krutopridumal.ru/){:rel='nofollow'}. Там уже есть крутое пианино. Угадаете что за мелодию предлагают сыграть на нем?)
 

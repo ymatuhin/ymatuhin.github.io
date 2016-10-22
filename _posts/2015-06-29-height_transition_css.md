@@ -31,4 +31,4 @@ social_alt: CSS анимация высоты через transition
 Исходный код на [гитхабе][1].
 Теперь мы умеем анимировать высоту через CSS. И теперь можем делать без javascript такие штуки, как: спойлеры, выпадающие меню, раскрывающиеся попапы и т.д.
 
-[1]: http://github.com/ymatuhin/ymatuhin.github.io/blob/master/demo/animate_auto/index.html
+[1]: https://github.com/ymatuhin/ymatuhin.github.io/blob/master/demo/animate_auto/index.html

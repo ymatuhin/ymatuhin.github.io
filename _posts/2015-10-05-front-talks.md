@@ -12,7 +12,7 @@ social_caption: FrontTalks 2015
 
 {% include media-post-image.html %}
 
-Конференция «FrontTalks» в 2015 году проходила в Екатеринбурге. На ней выступало 10 человек. Двое из них — англоговорящие и выступали на английском. Я не побывал на этой конференции, но к моей радости есть [запись прямой трансляции](http://www.youtube.com/watch?v=mXRkFMg4PR0).
+Конференция «FrontTalks» в 2015 году проходила в Екатеринбурге. На ней выступало 10 человек. Двое из них — англоговорящие и выступали на английском. Я не побывал на этой конференции, но к моей радости есть [запись прямой трансляции](https://www.youtube.com/watch?v=mXRkFMg4PR0).
 
 Я расскажу о выступлениях и добавлю ссылки на презентации и материалы, которые мне удалось найти. Поехали!
 
@@ -32,7 +32,7 @@ social_caption: FrontTalks 2015
 
 4. «[Different Characters][4]{:rel='nofollow'}» — Мартин Клеппе, Ubilabs.
 
-	Мартин рассказывал о креативном кодинге и ASCII-арт. Он автор знаменитого арта с [глобусом](http://aem1k.com/world/), посмотреть подробнее о том, как он его создавал в [этом видео](http://www.youtube.com/watch?t=1542&v=RTxtiLp1C8Y), а так-же [ссылка на презентацию][4_1] и сервис [jsfuck][fuck].
+	Мартин рассказывал о креативном кодинге и ASCII-арт. Он автор знаменитого арта с [глобусом](http://aem1k.com/world/), посмотреть подробнее о том, как он его создавал в [этом видео](https://www.youtube.com/watch?t=1542&v=RTxtiLp1C8Y), а так-же [ссылка на презентацию][4_1] и сервис [jsfuck][fuck].
 
 5. «[Глубокое погружение в webpack][5]{:rel='nofollow'}» — Владимир Кузнецов, Graph.
 
@@ -64,18 +64,18 @@ social_caption: FrontTalks 2015
 
 P.S. Немного [фотографий][photos] с FrontTalks.
 
-P.S.S. Похожая статья о FrontTalks 2014 есть на [хабре](http://habrahabr.ru/post/239353/), там выступал Вадим Макишвили с [докладом-интригой](http://ymatuhin.ru/front-end/vadim_makishvili_36/).
+P.S.S. Похожая статья о FrontTalks 2014 есть на [хабре](https://habrahabr.ru/post/239353/), там выступал Вадим Макишвили с [докладом-интригой](http://ymatuhin.ru/front-end/vadim_makishvili_36/).
 
-[1]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=7m44s
-[2]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=56m02s
-[3]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=1h45m22s
-[4]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=3h34m54s
-[5]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=4h28m43s
-[6]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=5h14m23s
-[7]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=6h16m15s
-[8]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=7h05m01s
-[9]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=8h05m27s
-[10]: http://www.youtube.com/watch?v=mXRkFMg4PR0&t=8h55m48s
+[1]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=7m44s
+[2]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=56m02s
+[3]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=1h45m22s
+[4]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=3h34m54s
+[5]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=4h28m43s
+[6]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=5h14m23s
+[7]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=6h16m15s
+[8]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=7h05m01s
+[9]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=8h05m27s
+[10]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=8h55m48s
 
 [1_1]: http://www.slideshare.net/LeonieWatson/introduction-to-accessibility-mechanics-2015
 [2_1]: http://mrsamo.github.io/web-animations/

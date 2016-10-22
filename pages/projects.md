@@ -10,17 +10,17 @@ description: >
 
 ## Автопрефиксер онлайн
 
-Для автоматической расстановки вендорных префиксов в <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> есть специальная штука, которая называется autoprefixer (<a rel="nofollow" href="http://github.com/postcss/autoprefixer">сайт</a>). Она доступна во многих системах сборки (grunt, gulp). Интегрирована в текстовые редакторы и имеет множество готовых решений. Но порой нужно просто проверить, нужно ли дописывать префиксы какому-то свойству без установки лишних программ (с которыми не все знакомы). Для этого я сделал <a href="https://autoprefixer.github.io">автопрефиксер онлайн</a>, который использует javascript версию autoprefixer-а.
+Для автоматической расстановки вендорных префиксов в <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> есть специальная штука, которая называется autoprefixer (<a rel="nofollow" href="https://github.com/postcss/autoprefixer">сайт</a>). Она доступна во многих системах сборки (grunt, gulp). Интегрирована в текстовые редакторы и имеет множество готовых решений. Но порой нужно просто проверить, нужно ли дописывать префиксы какому-то свойству без установки лишних программ (с которыми не все знакомы). Для этого я сделал <a href="https://autoprefixer.github.io">автопрефиксер онлайн</a>, который использует javascript версию autoprefixer-а.
 
 ## Интерактивная демонстрация закона Фиттса
 
 Моя дипломная работа в университете, демонстрирующая один из основных принципов в дизайне. Если передать своими словами, то чем ближе и больше элемент с которым нужно взаимодействовать, тем меньше времени потребуется для этого.
 
-Казалось бы все логично и просто, но многие дизайнеры часто забывают об этом. <a href="http://ymatuhin.github.io/fitts-law/">Посмотреть</a> интерактивную демонстрацию закона Фиттса.
+Казалось бы все логично и просто, но многие дизайнеры часто забывают об этом. <a href="/fitts-law/">Посмотреть</a> интерактивную демонстрацию закона Фиттса.
 
 ## Pesticide for Chrome with autoupdate
 
-Google Chrome расширение для CSS библиотеки Pesticide. Подробнее об этом можно прочитать в моем посте — «<a href="/front-end/faster_debug_css_layout_with_pesticide/">Быстрый дебаг CSS слоев с Pesticide</a>».
+Google Chrome расширение для CSS библиотеки Pesticide. Подробнее об этом можно прочитать в моем посте — «<a href="/front-end/faster_debug_css_with_pesticide/">Быстрый дебаг CSS слоев с Pesticide</a>».
 
 ## Пиксель к пикселю (Pix to pix)
 
@@ -28,7 +28,7 @@ Google Chrome расширение для CSS библиотеки Pesticide. П
 
 <em>Pix to pix</em> — расширение для браузеров на движке <b>webkit</b> (Google Chrome, Yandex Browser, Opera, Рамблер Нихром и другие). Сейчас я вижу еще несколько путей улучшения этого расширения, но пока я занят другими проектами и сам редко верстаю (не мозолит глаза).
 
-Посмотреть и попробовать это расширение можно в <a href="http://chrome.google.com/webstore/detail/pix-to-pix-pixel-perfect/binboaimbgchaamickjnhgjdccohndin">интернет-магазине Chrome</a>.
+Посмотреть и попробовать это расширение можно в <a href="https://chrome.google.com/webstore/detail/pix-to-pix-pixel-perfect/binboaimbgchaamickjnhgjdccohndin">интернет-магазине Chrome</a>.
 
 ## Какая сейчас неделя? (what-a-week)
 

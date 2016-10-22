@@ -102,7 +102,7 @@ has_iframe: true
 [21]: http://clearyourcache.info/
 [22]: http://dotdotdot.frebsite.nl/
 [23]: https://gist.github.com/pepelsbey/3fb8c9fd54598ffe5ecd
-[24]: http://habrahabr.ru/post/247893/
+[24]: https://habrahabr.ru/post/247893/
 [25]: http://ru.visualgo.net/
 [26]: http://www.careercup.com/resume
 [27]: http://breakpointtester.com/

@@ -19,7 +19,7 @@ description: >
 
 ## Резюме
 
-Всем нужно резюме. Без бумажки ты какашка, вот [моя бумажка](http://bryansk.hh.ru/resume/d6644a6fff02080e290039ed1f517854583433){:rel='nofollow'}.
+Всем нужно резюме. Без бумажки ты какашка, вот [моя бумажка](https://bryansk.hh.ru/resume/d6644a6fff02080e290039ed1f517854583433){:rel='nofollow'}.
 
 ## Примеры работ
 
@@ -42,7 +42,7 @@ description: >
 
 ## Github аккаунт
 
-Тут все просто, он у меня есть. Я стараюсь поддерживать его в порядке — [мой профиль](http://github.com/ymatuhin){:rel='nofollow'}. Там же есть несколько проектов. Если интересен мой js код, то загляните в репозиторий [codewars](https://github.com/ymatuhin/codewars){:rel='nofollow'}.
+Тут все просто, он у меня есть. Я стараюсь поддерживать его в порядке — [мой профиль](https://github.com/ymatuhin){:rel='nofollow'}. Там же есть несколько проектов. Если интересен мой js код, то загляните в репозиторий [codewars](https://github.com/ymatuhin/codewars){:rel='nofollow'}.
 
 ## Краткий рассказ об опыте и навыках
 
