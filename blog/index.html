@@ -15,11 +15,17 @@ redirect_from:
 </ul>
 
 <!-- Pagination links -->
-<p class="pagination clearfix">
+{% if paginator.previous_page or paginator.next_page %}
+<p class="next-prev">
 	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path }}" class="prev">← Предыдущая страница</a>
+		<a class="next-prev__link next-prev__link_prev" href="{{ paginator.previous_page_path }}">
+			↤ Предыдущая страница
+		</a>
 	{% endif %}
 	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path }}" class="next">Следующая страница →</a>
+		<a class="next-prev__link next-prev__link_next" href="{{ paginator.next_page_path }}">
+			Следующая страница ↦
+		</a>
 	{% endif %}
 </p>
+{% endif %}
