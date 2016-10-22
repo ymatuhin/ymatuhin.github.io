@@ -56,10 +56,10 @@ noborder: true
 
 ~~~html
 <!-- всю страницу -->
-<link rel="prefetch" href="http://ymatuhin.ru">
+<link rel="prefetch" href="https://ymatuhin.ru">
 
 <!-- только изображение -->
-<link rel="prefetch" href="http://ymatuhin.ru/img/yury_matuhin.jpg">
+<link rel="prefetch" href="https://ymatuhin.ru/img/yury_matuhin.jpg">
 ~~~
 
 
@@ -79,7 +79,7 @@ noborder: true
 В Google поиске давно действует такая штука под названием Instant Pages, Microsoft недавно объявили что они будут использовать prerender в Bing на IE11. [Поддержка браузерами](http://caniuse.com/#search=prerender){:rel='nofollow'} и пример:
 
 ~~~html
-<link rel="prerender" href="http://ymatuhin.ru/index.html">
+<link rel="prerender" href="https://ymatuhin.ru/index.html">
 ~~~
 
 ## Preloading

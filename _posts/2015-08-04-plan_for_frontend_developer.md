@@ -49,7 +49,7 @@ noborder: true
 [2]: /blog/
 [3]: /front-end/plan_for_frontend_developer
 [4]: http://plus.google.com/104557932122476785260/
-[5]: http://ymatuhin.ru/img/need_to_frontend/i-have-a-plan.jpg
+[5]: https://ymatuhin.ru/img/need_to_frontend/i-have-a-plan.jpg
 [6]: /front-end/what_front_end_developer_need_to_know_in_2015-2016/
 [7]: https://twitter.com/ymatuhin/status/627069468506779648
 [8]: http://effortlessenglish.com
@@ -65,7 +65,7 @@ noborder: true
 [18]: https://learn.javascript.ru/prototypes
 [19]: https://habrahabr.ru/post/215605/
 [20]: http://rsdn.ru/article/patterns/ModelViewPresenter.xml
-[21]: http://outcoldman.com/ru/archive/2010/02/22/%D0%BF%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD%D1%8B-mvc-mvp-%D0%B8-mvvm/
+[21]: https://outcoldman.com/ru/archive/2010/02/22/%D0%BF%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD%D1%8B-mvc-mvp-%D0%B8-mvvm/
 [22]: https://www.youtube.com/watch?v=9zwwmjGz1Vs&list=PLY4rE9dstrJwXCz1utct9b6Vub9VWQoKo
 [23]: http://browserify.org
 [24]: https://www.youtube.com/playlist?list=PLY4rE9dstrJxWEX3fCPjFpmcnoU_3GRWW

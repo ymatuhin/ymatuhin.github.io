@@ -64,7 +64,7 @@ social_caption: FrontTalks 2015
 
 P.S. Немного [фотографий][photos] с FrontTalks.
 
-P.S.S. Похожая статья о FrontTalks 2014 есть на [хабре](https://habrahabr.ru/post/239353/), там выступал Вадим Макишвили с [докладом-интригой](http://ymatuhin.ru/front-end/vadim_makishvili_36/).
+P.S.S. Похожая статья о FrontTalks 2014 есть на [хабре](https://habrahabr.ru/post/239353/), там выступал Вадим Макишвили с [докладом-интригой](https://ymatuhin.ru/front-end/vadim_makishvili_36/).
 
 [1]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=7m44s
 [2]: https://www.youtube.com/watch?v=mXRkFMg4PR0&t=56m02s

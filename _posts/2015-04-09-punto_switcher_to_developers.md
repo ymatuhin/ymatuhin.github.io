@@ -50,6 +50,6 @@ Punto Switcher следит за вашей раскладкой клавиат
 
 Сейчас, я настолько привык к этой программе, что очень расстраиваюсь работая за чужим компьютером невозможностью быстро исправить неправильную раскладку для текста. Приходится все удалять, менять раскладку и писать заново.
 
-В качестве заключения, привожу ссылку на <a href="http://punto.yandex.ru/">Punto Switcher</a> и справку для <a rel="nofollow" href="http://help.yandex.ru/punto-mac/">Mac OS</a> и <a rel="nofollow" href="http://help.yandex.ru/punto-win/">Windows</a>.
+В качестве заключения, привожу ссылку на <a href="https://punto.yandex.ru/">Punto Switcher</a> и справку для <a rel="nofollow" href="http://help.yandex.ru/punto-mac/">Mac OS</a> и <a rel="nofollow" href="http://help.yandex.ru/punto-win/">Windows</a>.
 
 P.S. будьте осторожны при установке. Не поставьте случайно вместе с ним Яндекс Браузер и другой, ненужный вам софт.

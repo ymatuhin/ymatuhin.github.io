@@ -52,15 +52,15 @@ require(['jquery'], function ($) { /* Ваш код тут */ });
 В примерах использовалась библиотека jQuery, но так-же можно загружать и другие библиотеки.
 
 ### Список бесплатных CDN сервисов
-1. <a href="http://developers.google.com/speed/libraries/">Google CDN</a> поддерживает Angular JS, Angular Material, Dojo, Ext JS, jQuery, jQuery Mobile, MooTools, Prototype, SWFObject, three.js, SPF и Web Font Loader;
-1. <a href="http://tech.yandex.ru/jslibs/">Yandex CDN</a> (RU), из доступных библиотек AngularJS, Backbone.js, Bootstrap, D3.js, Dojo, Highlight.js,jQuery, jQuery UI, Lo-Dash, Modernizr, Raphaёl, SWFObject, Underscore.js;
+1. <a href="https://developers.google.com/speed/libraries/">Google CDN</a> поддерживает Angular JS, Angular Material, Dojo, Ext JS, jQuery, jQuery Mobile, MooTools, Prototype, SWFObject, three.js, SPF и Web Font Loader;
+1. <a href="https://tech.yandex.ru/jslibs/">Yandex CDN</a> (RU), из доступных библиотек AngularJS, Backbone.js, Bootstrap, D3.js, Dojo, Highlight.js,jQuery, jQuery UI, Lo-Dash, Modernizr, Raphaёl, SWFObject, Underscore.js;
 1. <a href="http://code.jquery.com/">jQuery CDN</a> (только для jQuery);
-1. <a href="http://www.asp.net/ajax/cdn">Microsoft CDN</a> поддерживает jQuery/UI/Mobile, Modernizr, JSHint, Bootstrap, ASP.NET Web Forms and Ajax и другие;
-1. <a href="http://cdnjs.com/">Cdnjs</a> — тут есть наверное все js библиотеки, поскольку их можно захостить туда любому желающему;
+1. <a href="https://www.asp.net/ajax/cdn">Microsoft CDN</a> поддерживает jQuery/UI/Mobile, Modernizr, JSHint, Bootstrap, ASP.NET Web Forms and Ajax и другие;
+1. <a href="https://cdnjs.com/">Cdnjs</a> — тут есть наверное все js библиотеки, поскольку их можно захостить туда любому желающему;
 1. <a href="http://www.jsdelivr.com/">jsDelivr</a> — так-же куча библиотек, можно заливать свои;
-1. <a href="http://osscdn.com/">OssCDN</a> — тоже много библиотек с возможностью загружать свои;
+1. <a href="https://osscdn.com/">OssCDN</a> — тоже много библиотек с возможностью загружать свои;
 
-Из всех, вышеперечисленных сервисов, только Яндекс на русском языке. Поэтому если вы не сильны в английском, я бы рекомендовал именно его. К тому-же, там действительно одни из самых популярных javascript библиотек, в том числе очень популярный бутстрап. Для которого можно так-же воспользоваться <a href="http://www.bootstrapcdn.com/">Bootstrap CDN</a>.
+Из всех, вышеперечисленных сервисов, только Яндекс на русском языке. Поэтому если вы не сильны в английском, я бы рекомендовал именно его. К тому-же, там действительно одни из самых популярных javascript библиотек, в том числе очень популярный бутстрап. Для которого можно так-же воспользоваться <a href="https://www.bootstrapcdn.com/">Bootstrap CDN</a>.
 
 Если вы пишите свой, публичный скрипт, то его можно загрузить в jsDelivr/CDNjs/osscdn и пользоваться им через CDN.
 
