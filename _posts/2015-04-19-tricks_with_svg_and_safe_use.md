@@ -5,14 +5,14 @@ categories: front-end
 tags: [SVG, изображения, css]
 description: >
   Как безопасно использовать SVG, поддержка браузерами, несколько fallback-ов для старых браузеров.
+
 social_image: svg/svg_logo.png
+social_width: 400
+social_height: 200
+social_alt: Логотип SVG
 ---
 
-{%
-	include media-image.html
-	url="svg/svg_logo.png"
-	caption="Логотип SVG"
-%}
+{% include media-post-image.html %}
 
 Раньше я не использовал SVG, поскольку рабочие проекты были с поддержкой Internet Explorer 6/7. Да и не требовалось поддержки ретины. Но сейчас, спустя время, настало время использовать SVG на полную.
 
@@ -23,7 +23,7 @@ social_image: svg/svg_logo.png
 ## Fallback
 У нас есть несколько вариантов использования SVG изображений в HTML странице:
 
-1. В теге `img` — `&lt;img src=&quot;test.svg&quot; alt=&quot;&quot;&gt;`
+1. В теге `img` — `<img src="test.svg" alt="">`
 1. Через CSS свойство `background-image` — `background-image: url(test.svg)`
 1. Вставить svg инлайн (не рассматривается в статье)</li>
 
@@ -59,7 +59,7 @@ social_image: svg/svg_logo.png
 
 Тут есть несколько решений. Одно из них использовать библиотеку Modernizr и если в браузере не будет поддержки SVG, то можно будет задать фоновое изображение другого формата через класс у html `no-svg`.
 
-Этот путь требует библиотеку Modernizr и наличие включенного JavaScript. Но этого можно избежать, весь есть более <em>элегантное</em> решение:
+Этот путь требует библиотеку Modernizr и наличие включенного JavaScript. Но этого можно избежать, весь есть более _элегантное_ решение:
 
 ```css
 .my-element {

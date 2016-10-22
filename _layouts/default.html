@@ -1,51 +1,28 @@
 <!doctype html>
-<html lang="ru">
+<html ⚡ lang="ru">
+	<head>
+		{% include head/head.html %}
+	</head>
+	<body>
+		{{ content | replace:'«','<span class="elka"></span><span class="l_elka">«</span>' | replace:'(','<span class="skobka"> </span><span class="l_skobka">(</span>' }}
 
-	{% include head/head.html %}
 
-	{% if page.categories %}<body class="is_page">{% else %}<body>{% endif %}
+		<amp-font
+			 layout="nodisplay"
+			 font-family="PT Sans"
+			 timeout="3000"
+			 on-load-add-class="sans-ready"></amp-font>
 
-		<!-- animated show and hide -->
-		<script>
-			var body = document.getElementsByTagName('body')[0];
-			window.onbeforeunload = function () { body.style.opacity = 0 };
-			window.onpageshow     = function () { body.style.opacity = 1 };
-			setTimeout(function() { body.style.opacity = 1 }, 25);
-		</script>
-		<noscript><style>body { opacity: 1 }</style></noscript>
+		<amp-font
+			 layout="nodisplay"
+			 font-family="PT Serif"
+			 on-load-add-class="serif-ready"></amp-font>
 
-		{{ content }}
+		<amp-font
+			  layout="nodisplay"
+			  font-family="Fira Code"
+			  on-load-add-class="mono-ready"></amp-font>
 
-		<link rel="preload" href="/assets/css/main.min.css?{{ site.time | date_to_xmlschema }}" as="style" onload="this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="/assets/css/main.min.css"></noscript>
-
-		<!-- Syntax css -->
-		<script>if (document.querySelector('.highlight')) document.write('<link rel=\"stylesheet\" href=\"\/assets\/css\/syntax.css\">')</script>
-		<noscript><link rel="stylesheet" href="/assets/css/syntax.css"></noscript>
-		<!-- /Syntax css -->
-
-		<script src="/assets/js/hints.js" async></script>
-		<script src="/assets/js/typo.js" async></script>
-		<script src="/assets/js/loadCSS.js" async></script>
-
-		{% if page.categories %}
-			<!-- Sharing -->
-			<link href="/assets/css/likely.css?v=2" rel="preload" as="style" onload="this.rel='stylesheet'">
-			<script src="/assets/js/likely.js" async></script>
-			<!-- /Sharing -->
-		{% endif %}
-
-		{% if page.url == '/index.html' or page.url == '/' %}
-		{% else %}
-			<!-- Google ads -->
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-			<!-- /Google ads -->
-		{% endif %}
-
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter28017147 = new Ya.Metrika({ id:28017147, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/28017147" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
+		<amp-pixel src="https://mc.yandex.ru/watch/28017147"></amp-pixel>
 	</body>
 </html>

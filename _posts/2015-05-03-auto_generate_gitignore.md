@@ -6,14 +6,15 @@ tags: >
   git gitignore файл примеры настройка create создать
 description: >
   Обзор сервиса для автоматического создания файла gitignore — Gitignore.io. Автоматическая настройка и примеры использования.
+
+social_image: git/gitignore.png
+social_width: 800
+social_height: 300
+social_caption: Сервис для автоматической генерации файла .gitignore для git — gitignore.io
+social_link: https://www.gitignore.io/
 ---
 
-{%
-	include media-image.html
-	url="git/gitignore.png"
-    link="//gitignore.io/"
-	caption="Сервис для автоматической генерации файла .gitignore для git — gitignore.io"
-%}
+{% include media-post-image.html %}
 
 Каждый раз создавать новый файл gitignore немного непрофессионально. Особенно когда ты что-то забываешь и ненужные файлы вываливаются в общий репозиторий. Но уже все придумано за нас, нам остается только вписать наши технологии и редакторы в нужное поле и скачать получившийся файл. Хватит самому настривать и создавать файлы gitignore!
 
@@ -21,6 +22,6 @@ description: >
 
 Не забывайте вписать ваш редактор в поле (особенно если это IDE), т.к. он часто создает скрытые папки для сохранения своих настроек.
 
-В последнем проекте на nodejs у меня было написано <code>osx, webstorm, node, sublime</code>.
+В последнем проекте на nodejs у меня было написано `osx, webstorm, node, sublime`.
 
 Так-же есть возможность использовать через командную строку. Подробнее об этом можно почитать в <a href="https://www.gitignore.io/docs">документации</a>.

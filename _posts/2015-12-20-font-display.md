@@ -5,13 +5,12 @@ categories: front-end
 description: Поведением текста, отображаемого во время загрузки font-face, можно управлять с помощью свойства font-display. Как работает и какие значения поддерживет свойсто font-display читайте в статье.
 tags: [web fonts, font, font-display, css]
 social_image: font-display/font-display.png
+social_alt: Font display
+social_width: 762
+social_height: 658
 ---
 
-{%
-	include media-image.html
-	url="font-display/font-display.png"
-	caption="Font display"
-%}
+{% include media-post-image.html %}
 
 Когда вы загружаете шрифт через `font-face`, браузер решает что отобразить пока шрифт загружается. Браузеры ждут некоторое время, перед тем как решить что делать дальше.
 

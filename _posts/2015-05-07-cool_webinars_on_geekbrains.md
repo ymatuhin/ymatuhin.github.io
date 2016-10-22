@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Крутые вебинары от Geekbrains (Школа Программирования)
+title: Вебинары от Geekbrains (ранее Школа Программирования)
 categories: front-end
-tags: >
-  geekbrains школа программирования вебинары крутые программирование
+tags: geekbrains школа программирования вебинары крутые программирование
 description: >
   Вебинары по программированию, карьере, личностному росту и не только от Geekbrains (Школа Программирования).
 social_image: geekbrains/logo.png
+social_width: 256
+social_height: 256
+social_alt: Geekbrains
+has_youtube: true
 ---
 
-{%
-	include media-image.html
-	url="geekbrains/logo.png"
-	caption="Geekbrains"
-%}
+{% include media-post-image.html %}
 
 Хочу поделиться вебинарами от Geekbrains (Школа Программирования). Я недавно нашел эти вебинары, поэтому успел посмотреть только несколько записей. Но общее впечатление очень хорошее. Хотя тут все зависит от того, кто ведет эти вебинары.
 
@@ -21,12 +20,18 @@ social_image: geekbrains/logo.png
 
 Приведу несколько вебинаров которые мне понравились:
 
-<figure itemscope itemtype="http://schema.org/VideoObject">
-    <iframe itemprop="contentUrl" src="https://www.youtube.com/embed/GGmbRM0Khvo" width="560" height="315" frameborder="0"></iframe>
-    <figcaption itemprop="description">Вопросы личностного развития. Часть 1. Эффективная постановка личных целей</figcaption>
-</figure>
+{%
+	include media-youtube.html
+	url="GGmbRM0Khvo"
+	width="560"
+	height="315"
+	caption="Вопросы личностного развития. Часть 1. Эффективная постановка личных целей"
+%}
 
-<figure itemscope itemtype="http://schema.org/VideoObject">
-    <iframe itemprop="contentUrl" src="https://www.youtube.com/embed/MufNlCv8o5Y" width="560" height="315" frameborder="0"></iframe>
-    <figcaption itemprop="description">Карьера в ИТ: Путь джедая</figcaption>
-</figure>
+{%
+	include media-youtube.html
+	url="MufNlCv8o5Y"
+	width="560"
+	height="315"
+	caption="Карьера в ИТ: Путь джедая"
+%}

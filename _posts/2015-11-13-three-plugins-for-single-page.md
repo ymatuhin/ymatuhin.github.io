@@ -5,13 +5,11 @@ categories: front-end
 description: Три плагина улучшат приложение для пользователей с нестабильным или медленным интернетом и тех, кто пользуется телефоном для просмотра. Pace.js, Offline.js, FastClick.js.
 tags: [spa, angular, plugins, offline, loading, mobile]
 social_image: spa_plugins/spa_plugins.jpg
+social_width: 1400
+social_height: 800
 ---
 
-{%
-	include media-image.html
-	url="spa_plugins/spa_plugins.jpg"
-	space_after=""
-%}
+{% include media-post-image.html %}
 
 Ваши пользователи разные. У кого-то быстрый компьютер и интернет, а кто-то пользуется приложением из глуши со слабеньким 2G интернетом. Мы, разработчики, редко задумываемся об этом, ведь у нас сайт «летает».
 
@@ -27,7 +25,13 @@ social_image: spa_plugins/spa_plugins.jpg
 ## [Offline.js](http://github.hubspot.com/offline/docs/welcome/){:rel='nofollow'}
 Добавляет индикатор для пользователя если тот потерял интернет соединение. Считаю это безумно важным для сервисов связанных с финансами и другими важными данными.
 
-[![](/assets/img/spa_plugins/connection.png)](/assets/img/spa_plugins/connection.png){:rel='nofollow'}
+
+{%
+	include media-image.html
+	url="spa_plugins/connection.png"
+	width="962"
+	height="211"
+%}
 
 Как только он увидит такое сообщение, он уже не будет «винить» ваш сервис, который не выполнил то, что он хотел. А просто проверит свой интернет.
 

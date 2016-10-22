@@ -1,15 +1,9 @@
 ---
 layout: page
+is_post: true
 ---
 
-<article class="wrap-large wrap-medium-box wrap-center-box" itemscope itemtype="http://schema.org/Article">
-	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ page.url }}">
-	{% include publisher.html %}
+{{ content }}
 
-	{{ content }}
-</article>
-
-<hr>
-
-{% include sharing.html %}
-{% include next-prev.html %}
+<div class="vspace"></div>
+{% include features.html %}

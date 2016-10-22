@@ -26,7 +26,7 @@ $('html').hasScrollBar().vertical
 $('html').hasScrollBar().horizontal
 ~~~
 
-В дополнение к этому нашел <em>Vanilla JS</em> версию, которая проверяет на наличие вертикальной полосы прокрутки:
+В дополнение к этому нашел _Vanilla JS_ версию, которая проверяет на наличие вертикальной полосы прокрутки:
 
 ~~~js
 function hasVerticalScroll(node) {

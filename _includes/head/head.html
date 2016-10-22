@@ -1,32 +1,63 @@
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include head/variables.html %}
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+<script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
-	{% include head/variables.html %}
+{% if page.has_youtube %}
+	<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+{% endif %}
+{% if page.has_iframe %}
+	<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+{% endif %}
 
-	<title>{{ page_title }}</title>
-	<meta name="description" content="{{ page_description }}">
+<meta charset="utf-8">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}">
+<link rel="canonical" href="{{ page_url }}">
 
-	{% if page_keywords %}
-		<meta name="keywords" content="{{ page_keywords }}">
-	{% endif %}
-
-	<!-- critical css -->
-	{% if page.is_index %}
-		<style>{% include critical-home.css %}</style>
-	{% elsif page.is_blog %}
-		<style>{% include critical-blog.css %}</style>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<script type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	{% if layout.is_post %}
+	"@type": "BlogPosting",
 	{% else %}
-		<style>{% include critical-post.css %}</style>
+	"@type": "WebPage",
 	{% endif %}
+	"mainEntityOfPage": "{{ page_url }}",
+	"headline": "{{ page_title }}",
+	{% if page.date %}
+	"datePublished": "{{ page.date|date_to_xmlschema }}",
+	"dateModified": "{{ page.last_modified_at|date_to_xmlschema }}",
+	{% else %}
+	"datePublished": "{{ site.time|date_to_xmlschema }}",
+	{% endif %}
+	"description": "{{ page_description }}",
+	"author": {
+	  "@type": "Person",
+	  "name": "Yury Matuhin"
+	},
+	{% if page.social_image %}
+	"image": {
+	  "@type": "ImageObject",
+	  "url": "{{ page.social_image }}",
+	  "height": {{ page.social_width }},
+	  "width": {{ page.social_height }}
+	}
+	{% endif %}
+  }
+</script>
 
-	{% include head/meta_lang.html %}
-	{% include head/meta_rss.html %}
-	{% include head/meta_twitter.html %}
-	{% include head/meta_open_graph.html %}
-	{% include head/meta_icon.html %}
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+	{% capture include_to_scssify %}
+	  {% include main.scss %}
+	{% endcapture %}
+	{{ include_to_scssify | scssify }}
+</style>
 
-	<meta name="google-site-verification" content="HxrscLt9ojX9QB8Aotk9kn7os4j0SDGulJ7U4z4aYwQ">
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-</head>
+{% include head/meta_lang.html %}
+{% include head/meta_rss.html %}
+{% include head/meta_twitter.html %}
+{% include head/meta_icon.html %}

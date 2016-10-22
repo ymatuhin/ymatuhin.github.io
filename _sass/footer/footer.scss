@@ -1,0 +1,25 @@
+@import 'variables';
+
+input, button {
+	font-family: inherit;
+	vertical-align: middle;
+}
+
+.footer {
+	position: relative;
+	font-size: (15rem/28);
+	font-family: $sans;
+	font-style: normal;
+}
+
+.footer p { margin: 0 }
+
+.tags {
+	font-size: (12rem/28);
+	opacity: .2;
+	position: absolute;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}

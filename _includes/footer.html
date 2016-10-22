@@ -1,7 +1,5 @@
-<address itemscope itemtype="http://schema.org/Person" class="footer ">
-    {% unless page.categories %}
-    <hr class="wrap-medium wrap-center">
-    {% endunless %}
+<address itemscope itemtype="http://schema.org/Person" class="footer">
+	{% include next-prev.html %}
 
     {% include search.html %}
     <br>
@@ -13,7 +11,6 @@
     </p>
 
     {% if page.tags %}
-        <br>
         <p class="tags wrap-medium-box">{% for tag in page.tags %} {{ tag }}{% endfor %}</p>
     {% endif %}
 </address>

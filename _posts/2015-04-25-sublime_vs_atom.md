@@ -7,17 +7,18 @@ tags: >
   atom github текстовый редактор кода sublime vs обзор редактора
 description: >
   Обзор нового текстового редактора Atom от команды Github в сравнении c Sublime Text 3. Atom vs Sublime.
+
+social_image: atom/atom_vs_sublime.jpg
+social_width: 1000
+social_height: 700
+social_alt: Atom
 ---
 
-{%
-	include media-image.html
-	url="atom/atom_vs_sublime.jpg"
-	caption="Atom"
-%}
+{% include media-post-image.html %}
 
-В пятницу я пробовал в работе разные текстовые редакторы. Большинство из них очень плохи. Тот-же <em>Brackets</em> от Adobe — вообще не изменился, те-же проблемы, в том числе со шрифтами и не очень приятный внешний вид. Но один из редакторов оказался наоборот очень крутым.
+В пятницу я пробовал в работе разные текстовые редакторы. Большинство из них очень плохи. Тот-же _Brackets_ от Adobe — вообще не изменился, те-же проблемы, в том числе со шрифтами и не очень приятный внешний вид. Но один из редакторов оказался наоборот очень крутым.
 
-И этот редактор — <strong>Atom</strong> от Github. В честь которого его небольшой обзор в стравнении с Sublime Text 3.
+И этот редактор — **Atom** от Github. В честь которого его небольшой обзор в стравнении с Sublime Text 3.
 
 Он превзошел все мои ожидания! Я пробовал его наверное пол года или больше назад и мне он показался сыроватым, но теперь — совсем другое дело. Более того, я перешел на него со своего Sublime Text 3 и сейчас расскажу почему.
 
@@ -28,19 +29,23 @@ description: >
 
 <div class="wrap-large clearfix">
 	<div class="column-50">
-        {%
-        	include media-image.html
-        	url="atom/atom_post.jpg"
-        	caption="Пример поста в текстовом редакторе Atom"
-        %}
-    </div>
+		{%
+			include media-image.html
+			url="atom/atom_post.jpg"
+			width="1280"
+			height="773"
+			caption="Пример поста в текстовом редакторе Atom"
+		%}
+	</div>
 	<div class="column-50">
-        {%
-            include media-image.html
-            url="atom/sublime_post.jpg"
-            caption="Пример поста в текстовом редакторе Sublime Text 3"
-        %}
-    </div>
+		{%
+			include media-image.html
+			url="atom/sublime_post.jpg"
+			width="1280"
+			height="773"
+			caption="Пример поста в текстовом редакторе Sublime Text 3"
+		%}
+	</div>
 </div>
 
 Сразу видна классная функция подсветки добавленных и измененных файлов от git в боковой панели и в файлах, это очень удобно.
@@ -49,19 +54,23 @@ description: >
 
 <div class="wrap-large clearfix">
 	<div class="column-50">
-        {%
-        	include media-image.html
-        	url="atom/atom_settings.jpg"
-        	caption="Окно настроек в текстовом редакторе Atom"
-        %}
-    </div>
+		{%
+			include media-image.html
+			url="atom/atom_settings.jpg"
+			width="1280"
+			height="773"
+			caption="Окно настроек в текстовом редакторе Atom"
+		%}
+	</div>
 	<div class="column-50">
-        {%
-            include media-image.html
-            url="atom/sublime_settings.jpg"
-            caption="Окно настроек в текстовом редакторе Sublime Text 3"
-        %}
-    </div>
+		{%
+			include media-image.html
+			url="atom/sublime_settings.jpg"
+			width="1280"
+			height="773"
+			caption="Окно настроек в текстовом редакторе Sublime Text 3"
+		%}
+	</div>
 </div>
 
 ## Установка дополнений
@@ -69,9 +78,11 @@ description: >
 В Atom есть визуальный интерфейс для настроек и установки плагинов, в котором можно почитать описание дополнения и количество установок прямо в редакторе.
 
 {%
-    include media-image.html
-    url="atom/atom_install_package.jpg"
-    caption="Установка дополнений в текстовом редакторе Atom от Github"
+	include media-image.html
+	url="atom/atom_install_package.jpg"
+	width="1280"
+	height="773"
+	caption="Установка дополнений в текстовом редакторе Atom от Github"
 %}
 
 ## Переход на Atom c Sublime Text

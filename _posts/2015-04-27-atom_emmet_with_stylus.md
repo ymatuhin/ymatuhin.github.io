@@ -6,14 +6,14 @@ tags: >
   atom github текстовый редактор кода плагины дополнения emmet stylus фикс
 description: >
   Фиксим работоспособность плагина Emmet под Atom для препроцессора Stylus.
+
 social_image: atom/atom_stylus_emmet.jpg
+social_width: 800
+social_height: 450
+social_alt: Atom + Emmet + Stylus
 ---
 
-{%
-	include media-image.html
-	url="atom/atom_stylus_emmet.jpg"
-	caption="Atom + Emmet + Stylus"
-%}
+{% include media-post-image.html %}
 
 Расширение **Emmet** отлично работает с html, css, sass, scss, less. Но есть одна проблема — *Stylus*. Видимо из-за того, что этот препроцессор не так распространен то в Emmet официально нет его поддержки. То есть наши правила на подобии `bd+` не раскрываются.
 

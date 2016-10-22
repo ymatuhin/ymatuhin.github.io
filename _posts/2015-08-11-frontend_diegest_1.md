@@ -5,14 +5,18 @@ description: >
   Дайджест интересных материалов для front end разработчиков. Awesome lists, bower, regexp, RSS, Git…
 categories: front-end
 tags: [дайджест, css, javascrip, cubic-bezier, типографика, текст, bower, регулярные выражения, микроразметка, rss, git, seo, чеклист]
+has_iframe: true
 ---
 
 Когда я нахожу интересные ссыки, то хочу ими поделиться. Поэтому я собираю эти ссылки в Wunderlist, а когда набирается 15, публикую в дайджесте. Поехали…
 
-<figure itemscope itemtype="http://schema.org/VideoObject">
-    <iframe itemprop="contentUrl" src="//codepen.io/Yakudoo/full/YXxmYR/" width="100%" height="480" frameborder="0"></iframe>
-    <figcaption itemprop="description">Демка с милейшим львом на svg.</figcaption>
-</figure>
+{%
+	include media-iframe.html
+	url="https://codepen.io/Yakudoo/full/YXxmYR/"
+	width="960"
+	height="480"
+	caption="Демка с милейшим львом на svg"
+%}
 
 <!-- more -->
 

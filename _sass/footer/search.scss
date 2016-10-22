@@ -1,0 +1,16 @@
+.search__field,
+.search__find {
+	-webkit-appearance: initial;
+	height: 24px;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,.2);
+	background: #fff;
+}
+.search__field {
+	width: 140px;
+	padding: 5px 4px 3px;
+}
+.search__find {
+	padding: 5px 10px;
+	margin-left: 2px;
+}

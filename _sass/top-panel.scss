@@ -1,0 +1,52 @@
+@import 'variables';
+
+.top-panel {
+	&__home-text {
+		font-family: $sans;
+	}
+
+	& &__home-link {
+		display: inline;
+		color: $text-color;
+	}
+
+	&__lead {
+		margin: 0 0 .5rem 0;
+	}
+}
+
+.top-panel_size_small {
+	font-size: .571428571rem; // 16px
+	line-height: .857142857rem; // 24px
+
+	.top-panel {
+		&__home-text {
+			font-size: .642857143rem; // 18px
+			line-height: 1rem;
+		}
+		&__lead {
+			margin-bottom: .321428571rem // 9px
+		}
+	}
+
+	.top-menu {
+		line-height: 1rem;
+	}
+}
+
+.top-menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline;
+		vertical-align: top;
+		margin: 0;
+		line-height: 1em;
+	}
+
+	li + li {
+		margin-left: .5em;
+	}
+}

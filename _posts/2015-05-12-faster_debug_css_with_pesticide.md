@@ -2,20 +2,18 @@
 layout: post
 title: Быстрый дебаг CSS слоев с Pesticide
 categories: front-end
-tags: >
-  css debug дебаг
-description: >
-  Дебажим CSS слои с помощью библиотеки Pesticide и расширений для Chrome и Firefox.
+tags: css debug дебаг
+description: Дебажим CSS слои с помощью библиотеки Pesticide и расширений для Chrome и Firefox.
+
 social_image: pesticide/logo.png
+social_width: 530
+social_height: 140
+social_alt: Pesticide — библиотека для дебага CSS
 ---
 
-{%
-	include media-image.html
-	url="pesticide/logo.png"
-	caption="Pesticide — библиотека для дебага CSS"
-%}
+{% include media-post-image.html %}
 
-Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/Sass/LESS библиотека — <strong>Pesticide</strong>.
+Как часто у вас бывали проблемы со схлопыванием плавающих элементов? Или элемент уезжал непонятно куда? Эти и другое проблемы, связанные с позиционированием элементов на странице решает маленькая CSS/Sass/LESS библиотека — **Pesticide**.
 
 Что делает этот ваш Pesticide? На официальном сайте: «Kill your CSS layout bugs. Without 2000 clicks in Chrome Dev Tools». На самом деле принцип её работы очень прост, и я думаю многие разработчики писали у себя в стилях во время разработки нечто вроде этого:
 
@@ -29,14 +27,22 @@ social_image: pesticide/logo.png
 
 Сам CSS файл до смешного прост, познакомиться подробнее с Pesticide можно на официальном сайте <a href="http://pesticide.io">pesticide.io</a>. Посмотреть исходники и скачать файл можно с <a href="https://github.com/mrmrs/pesticide" rel="nofollow">github</a>.
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Github" src="/assets/img/pesticide/github.png">
-	<figcaption itemprop="description">Пример использования Pesticide на Github</figcaption>
-</figure>
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="640" alt="Пример использования Pesticide на Yandex" src="/assets/img/pesticide/ya.png">
-	<figcaption itemprop="description">Пример использования Pesticide на Yandex</figcaption>
-</figure>
+
+{%
+	include media-image.html
+	url="pesticide/github.png"
+	width="640"
+	height="400"
+	caption="Пример использования Pesticide на Github"
+%}
+
+{%
+	include media-image.html
+	url="pesticide/ya.png"
+	width="640"
+	height="400"
+	caption="Пример использования Pesticide на Yandex"
+%}
 
 Мне кажется, что подключать эту библиотеку как css файл на свой проект не рационально. Особенно когда у неё есть расширения для браузеров (<a href="https://chrome.google.com/webstore/detail/bblbgcheenepgnnajgfpiicnbbdmmooh" rel="nofollow">Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/pesticide/" rel="nofollow">Firefox</a>).
 

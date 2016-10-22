@@ -3,14 +3,14 @@ layout: post
 title: Список статичных HTTP серверов для терминала
 categories: front-end
 tags: [http, server]
+
 social_image: server/http-server.png
+social_width: 420
+social_height: 200
+social_caption: Http-server статики в терминале
 ---
 
-{%
-	include media-image.html
-	url="server/http-server.png"
-	caption="HTTP-server статики в терминале"
-%}
+{% include media-post-image.html %}
 
 Каждая из нижеприведенных команд запускает статичный http сервер в текущей директории. Сервер будет доступен по адресу [http://localhost:8000](http://localhost:8000){:rel="nofollow"}
 

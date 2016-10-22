@@ -9,7 +9,11 @@ updated: 14-03-2016
 
 Горячие новости 🔥 — Sublime Text [жив](https://sublimetext.com/3dev){:rel='nofollow'}! Сборка 3099 вышла 29 января 2016.
 
-{% include media-youtube.html url="20BySC_6HyY?rel=0&amp;showinfo=0" width="960" height="720" caption="Wat by Gary Bernhardt" %}
+{% include media-youtube.html
+	url="20BySC_6HyY?rel=0&amp;showinfo=0"
+	width="960"
+	height="720"
+	caption="Wat by Gary Bernhardt" %}
 
 > **UPD**. Совсем забыл о классном видео Андрея Листочкина с Харьков JS — [Как не гнаться за технологиями и начать жить](https://www.youtube.com/watch?v=xPFRUM_oDKA). Рекомендую 👍
 
@@ -18,10 +22,6 @@ updated: 14-03-2016
 1. [Минимально необходимые шрифты][12]{:rel='nofollow'}
 1. 🎥 [Как дебажить][15]{:rel='nofollow'}
 1. 🇺🇸&nbsp;&nbsp;[Как использовать FiraCode в инструментах разработчика Chrome][20]{:rel='nofollow'}
-
-	![](/assets/img/week-ends/dev-tools-fira-code.png)
-	<!-- more -->
-
 1. 🇺🇸&nbsp;&nbsp;[О трансдьюсерах в JS][14]{:rel='nofollow'}
 1. 🇺🇸&nbsp;&nbsp;[LoDash и JS оптимизация производительности][6]{:rel='nofollow'} — John-David Dalton.
 1. 🎥 🇺🇸&nbsp;&nbsp;[Функциональное программирование в JS][8]{:rel='nofollow'}
@@ -50,8 +50,13 @@ updated: 14-03-2016
 1. 🇺🇸&nbsp;&nbsp;[JS совет каждый день][24]{:rel='nofollow'} 🔥
 1. 🇺🇸&nbsp;&nbsp;[The Fuck][3]{:rel='nofollow'} — терминальный сервис, который исправляет ошибки в предыдущем запросе.
 
-	![The Fuck](/assets/img/week-ends/the-fuck.gif)
-
+{%
+	include media-image.html
+	url="week-ends/the-fuck.gif"
+	width="686"
+	height="379"
+	noborder="true"
+%}
 
 
 

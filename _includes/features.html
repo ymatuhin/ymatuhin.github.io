@@ -1,6 +1,7 @@
 {% assign count = 1 %}
 {% capture related_posts %}
     {% for post in site.posts %}
+	  {% if count <= 3 %}
       {% if post.url != page.url %}
       {% if post.url != page.previous.url %}
       {% if post.url != page.next.url %}
@@ -8,7 +9,7 @@
           {% if post.tags contains tag %}
             {% unless temp_posts contains post.title %}
               {% capture temp_posts %}{{ post.title | strip_html }}{% endcapture %}
-              <li><a rel="nofollow" href="{{ post.url }}">{{ post.title | strip_html }}</a><br /></li>
+				  {% include post.html %}
               {% assign count = count | plus:'1' %}
             {% endunless %}
           {% endif %}
@@ -16,6 +17,7 @@
       {% endif %}
       {% endif %}
       {% endif %}
+	  {% endif %}
     {% endfor %}
 {% endcapture %}
 
@@ -26,12 +28,7 @@
             {% if post.url != page.previous.url %}
             {% if post.url != page.next.url %}
                 {% unless related_posts contains post.title %}
-                    <li>
-                        <a rel="nofollow" href="{{ post.url }}">
-                            <img src="/assets/img/{{ post.image }}" alt="{{ post.imageCaption }}">
-                            {{ post.title | strip_html }}
-                        </a>
-                    </li>
+                	{% include post.html %}
                     {% assign count = count | plus:'1' %}
                 {% endunless %}
             {% endif %}
@@ -42,10 +39,9 @@
 {% endcapture %}
 
 
-<br>
 <aside>
-    <h4>Популярное</h4>
-    <ul class="related">
+	<h3>Ещё</h3>
+    <ul class="posts">
       {{ related_posts }}
       {{ latest_posts }}
     </ul>

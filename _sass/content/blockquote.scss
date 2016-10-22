@@ -1,21 +1,16 @@
+@import 'variables';
+
 blockquote {
 	position: relative;
-	padding: 4.2rem;
+	padding: 0 1rem;
 	font-style: italic;
-
-	&:before {
-		position: absolute;
-		content: '“';
-		font-size: 6.4rem;
-		line-height: 1;
-		transform: translate(-125%, -25%);
-		opacity: .25;
-	}
-
-	i:first-child {}
+	margin: 1rem 0;
+	border-left: 4px solid #999;
+	color: #777;
+	max-width: $text-max-width;
 }
 
 * + blockquote
 blockquote + * {
-  margin-top: 2.4rem;
+  margin-top: .75rem;
 }

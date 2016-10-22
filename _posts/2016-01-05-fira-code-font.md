@@ -4,14 +4,14 @@ title: 'Fira Code: шрифт с лигатурами для кода'
 categories: tools
 description: Моноширинный шрифт Fira Code объединяет конструкции языков программирования из нескольких символов в один, визуально понятный и приятный.
 tags: [font, text editor, settings]
-image: fira-code/fira-code.png
+
+social_image: fira-code/fira-code.png
+social_caption: 'Fira Code: шрифт с лигатурами для кода'
+social_width: 600
+social_height: 340
 ---
 
-{%
-	include media-image.html
-	url="fira-code/fira-code.png"
-	caption="Fira Code: шрифт с лигатурами для кода"
-%}
+{% include media-post-image.html %}
 
 В языках программирования много составных операторов, таких как `:=`, `>=`, `<=`, `===`, `!==`. Это одна логическая единица, но она занимает 2 или 3 символа. Это затрудняет чтение и анализ кода, хоть мы и привыкли к этому.
 
@@ -21,9 +21,12 @@ image: fira-code/fira-code.png
 
 ## Возможности шрифта
 
-{% include media-image.html url="fira-code/all_ligatures.png" alt="Символы заменяемые лигатурами шрифта Fira Code" caption="Символы заменяемые лигатурами шрифта Fira Code" %}
-
-
+{% include media-image.html
+	url="fira-code/all_ligatures.png"
+	caption="Символы заменяемые лигатурами шрифта Fira Code"
+	width="1836"
+	height="1726"
+	%}
 
 ## Поддержка терминалами
 
@@ -72,25 +75,53 @@ image: fira-code/fira-code.png
 ## Примеры шрифта
 
 #### Ruby
-{% include media-image.html url="fira-code/ruby.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/ruby.png"
+	width="1836"
+	height="417"
+	%}
 
 #### JavaScript
-{% include media-image.html url="fira-code/javascript.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/javascript.png"
+	width="1836"
+	height="745"
+	%}
 
 #### Erlang
-{% include media-image.html url="fira-code/erlang.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/erlang.png"
+	width="1836"
+	height="803"
+	%}
 
 #### Go
-{% include media-image.html url="fira-code/go.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/go.png"
+	width="1836"
+	height="502"
+	%}
 
 #### Haskell
-{% include media-image.html url="fira-code/haskell.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/haskell.png"
+	width="1836"
+	height="360"
+	%}
 
 #### В браузере
-{% include media-image.html url="fira-code/in-browser.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/in-browser.png"
+	width="576"
+	height="96"
+	%}
 
 #### В редакторе
-{% include media-image.html url="fira-code/in-editor.png" alt="" caption="" %}
+{% include media-image.html
+	url="fira-code/in-editor.png"
+	width="756"
+	height="106"
+	%}
 
 ### Альтернативы
 

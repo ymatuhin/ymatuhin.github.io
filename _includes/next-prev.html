@@ -1,27 +1,14 @@
-<p class="js-next-prev">
-    {% if page.previous.url %}
-        <a class="js-prev ta-r" href="{{page.previous.url}}"><small>{{ page.previous.title | strip_html }}</small></a>
-        <span class="arrow">←{% endif %}&nbsp;<mark class="js-separate">alt</mark>&nbsp;{% if page.next.url %}→</span>
-        <a class="js-next ta-l" href="{{page.next.url}}"><small>{{ page.next.title | strip_html }}</small></a>
-    {% endif %}
+{% if page.previous.url or page.next.url %}
+<p class="next-prev">
+	{% if page.previous.url %}
+		<a class="next-prev__link next-prev__link_prev" href="{{page.previous.url}}">
+			↤ {{ page.previous.title | strip_html }}
+		</a>
+	{% endif %}
+	{% if page.next.url %}
+		<a class="next-prev__link next-prev__link_next" href="{{page.next.url}}">
+			{{ page.next.title | strip_html }} ↦
+		</a>
+	{% endif %}
 </p>
-
-<script>
-    var text = ('innerText' in document)? 'innerText' : 'textContent';
-    var box = document.querySelector('.js-next-prev');
-    var next = box.querySelector('.js-next');
-    var prev = box.querySelector('.js-prev');
-    var separate = box.querySelector('.js-separate');
-
-    var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
-    if (isMac) separate[text] = '⌥';
-
-    document.addEventListener('keydown', function(e) {
-        if (document.activeElement.tagName == 'TEXTAREA') return
-        var _key = (e.keyIdentifier || e.key).toLowerCase()
-        if (!e.altKey) return
-
-        if (_key.indexOf('left') >= 0 && prev) location.href = prev.href
-        if (_key.indexOf('right') >= 0 && next) location.href = next.href
-    }, false);
-</script>
+{% endif %}

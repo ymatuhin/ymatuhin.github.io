@@ -6,16 +6,13 @@ description: >
 categories: front-end
 tags: [bootstrap, media quires, медиа выражения]
 
-image: media_queries/bootstrap.png
-imageCaption: Контрольные точки медиа выражений (media quires) Twitter Bootstrap
+social_image: media_queries/bootstrap.png
+social_width: 640
+social_height: 400
+social_alt: Контрольные точки медиа выражений Twitter Bootstrap
 ---
 
-
-{%
-	include media-image.html
-	url="media_queries/bootstrap.png"
-	caption="Контрольные точки медиа выражений (media quires) Twitter Bootstrap"
-%}
+{% include media-post-image.html %}
 
 Twitter Bootstrap&nbsp;&mdash; самый популярный CSS фреймворк. У&nbsp;него более 85&nbsp;495 звезд и&nbsp;35&nbsp;055 форков на&nbsp;<a href="https://github.com/twbs/bootstrap" rel="nofollow">GitHub</a>. А&nbsp;19&nbsp;августа вышла <a href="http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/" rel="nofollow">4&nbsp;альфа версия</a>, в&nbsp;которой разработчики используют `rem` для адаптивной верстки. Но&nbsp;не&nbsp;в&nbsp;медиа выражениях, которые остаются такими-же как и&nbsp;были.
 

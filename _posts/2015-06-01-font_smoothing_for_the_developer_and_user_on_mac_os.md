@@ -3,56 +3,17 @@ layout: post
 title: Сглаживание шрифтов для разработчика и пользователя на Mac OS
 categories: front-end
 tags: [css, сглаживание шрифта, mac os, расширение]
+
 social_image: font-smooth/compare.png
+social_width: 720
+social_height: 540
+social_alt: Сглаживание шрифтов CSS
+noborder: true
 ---
 
-{%
-	include media-image.html
-	url="font-smooth/compare.png"
-	caption="Сглаживание шрифтов CSS"
-    noborder=""
-%}
+{% include media-post-image.html %}
 
 Я давно интересовался сглаживанием шрифта для веб страниц на CSS. Но «волшебные» свойства, такие как `-webkit-font-smoothing`, не работали на моем Win 7. Поэтому никакого смысла в этих css свойствах я не видел. Но сейчас у меня Mac OS и они работают! Сразу скажу я проверял только Win 7, может в более поздних версиях эти свойства тоже хоть как-то работают.
-
-## Примеры сглаживания шрифтов
-
-В качестве примера будут использоваться популярные и не совсем сайты. Если вам понравится результат «после», то в конце статьи вы узнаете как сделать так, чтобы так было на всех сайтах, которые вы посещаете.
-
-<div class="clearfix">
-    <div class="column-50 fl-l">
-        Было ↓
-        <figure itemscope itemtype="http://schema.org/ImageObject">
-        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/yandex.png">
-        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-        </figure>
-    </div>
-    <div class="column-50 fl-l">
-        Стало ↓
-        <figure itemscope itemtype="http://schema.org/ImageObject">
-        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/yandex_with.png">
-        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-        </figure>
-    </div>
-</div>
-
-
-<div class="clearfix">
-    <div class="column-50 fl-l">
-        Было ↓
-        <figure itemscope itemtype="http://schema.org/ImageObject">
-        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/google_search.png">
-        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-        </figure>
-    </div>
-    <div class="column-50 fl-l">
-        Стало ↓
-        <figure itemscope itemtype="http://schema.org/ImageObject">
-        	<img class="bordered" itemprop="contentUrl" alt="Сравнение сглаживаний шрифтов в Mac OS" src="/assets/img/font-smooth/google_search_with.png">
-        	<figcaption itemprop="description">Сравнение сглаживаний шрифтов в Mac OS</figcaption>
-        </figure>
-    </div>
-</div>
 
 ## Используем в работе
 Очень хорошо этим свойством обрабатываются подгружаемые шрифты.

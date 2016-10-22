@@ -1,29 +1,18 @@
-.js-next-prev {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 1.8rem;
-	text-align: center;
+@import 'variables';
 
-	.arrow {
-		font-family: 'PT Sans';
-		padding: 0 2.4rem;
-	}
-	a {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		width: 45%;
+.next-prev {
+	margin: 1.5rem 0 0;
+	font-family: $sans;
+	max-width: 100%;
+	overflow: hidden;
+
+	&__link {
+		width: 50%;
+
+		&_prev { float: left; text-align: left; padding-right: .5em; }
+		&_next { float: right; text-align: right; padding-left: .5em; }
 	}
 }
 
-.pagination .next {
-	float: right;
-}
-.pagination .prev {
-	float: left;
-}
+.pagination .next { float: right; }
+.pagination .prev { float: left; }

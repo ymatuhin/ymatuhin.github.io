@@ -4,16 +4,14 @@ title: Старт курса по архитектуре JavaScript прилож
 categories: front-end
 description: Краткое содержание вводной лекции курса по архитектуре современных JavaScript приложений в SmartJS академии
 tags: [css, smartjs, архитектура]
-social_image: smartjs/logo.jpg
 updated: 24-05-2016
+social_image: smartjs/logo.jpg
+social_width: 600
+social_height: 757
+social_caption: "Логотип SmartJS академии"
 ---
 
-{%
-	include media-image.html
-	url="smartjs/logo.jpg"
-	caption="Логотип SmartJS академии"
-	noborder=""
-%}
+{% include media-post-image.html %}
 
 Вчера, 22 октября 2015 года, начался второй курс по архитектуре современных JavaScript приложений в [SmartJS академии](http://smartjs.academy). Его ведет, как и другие курсы, Илья Климов. Я буду вести свой отчет и впечатления об этом курсе, и публиковать выжимку полученной информации в виде статей.
 

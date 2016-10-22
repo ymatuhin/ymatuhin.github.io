@@ -6,30 +6,35 @@ description: >
 categories: blog
 tags: >
   как установить обзор когда выйдет отзывы ios 9 дата выхода el capitan установка os x стоит ли beta что нового os x el capitan split view
+
 social_image: ios9_osx_el_capitan/el_capitan_and_ios_9.png
+social_width: 600
+social_height: 436
+social_alt: Отзыв на публичные беты iOS 9 и El Capitan
+has_youtube: true
 ---
 
-{%
-	include media-image.html
-	url="ios9_osx_el_capitan/el_capitan_and_ios_9.png"
-	caption="Отзыв на публичные беты iOS 9 и El Capitan"
-%}
+{% include media-post-image.html %}
 
 ## Что нового в iOS 9 и El Capitan?
 
 Я прочитал кучу статей, хотел оставить здесь ссылки на них. Но потом нашел эти крутые короткие видосы с обзором новых OS. Приятного просмотра 👍
 
-<div class="gallery_half clearfix">
-    <figure itemscope itemtype="http://schema.org/VideoObject">
-        <iframe itemprop="contentUrl" src="https://www.youtube.com/embed/dVupItayMmM" width="560" height="315" frameborder="0"></iframe>
-        <figcaption itemprop="description">Что нового в iOS 9 public beta?</figcaption>
-    </figure>
+{%
+	include media-youtube.html
+	url="dVupItayMmM"
+	width="560"
+	height="315"
+	caption="Что нового в iOS 9 public beta?"
+%}
 
-    <figure itemscope itemtype="http://schema.org/VideoObject">
-        <iframe itemprop="contentUrl" src="https://www.youtube.com/embed/qwWnfZu6YjM" width="560" height="315" frameborder="0"></iframe>
-        <figcaption itemprop="description">Что нового в OSX El Capitan public beta?</figcaption>
-    </figure>
-</div>
+{%
+	include media-youtube.html
+	url="qwWnfZu6YjM"
+	width="560"
+	height="315"
+	caption="Что нового в OSX El Capitan public beta?"
+%}
 
 ## Когда выйдет финальная версия
 Официальный релиз будет как всегда осенью, в сентябре. А до этого будет обновляться бета по мере фикса багов.

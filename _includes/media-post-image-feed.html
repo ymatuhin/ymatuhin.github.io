@@ -1,9 +1,9 @@
 {% if post.image %}
 	<figure>
-		<img src="{{ site.url }}{{ post.image | prepend: '/assets/img/' }}" alt="{{ post.imageCaption }}"/>
+		<img src="{{ site.url }}{{ post.social_image | prepend: '/assets/img/' }}" alt="{{ post.social_alt }}"/>
 
-		{% if post.imageTitle %}
-			<figcaption>{{ post.imageTitle }}</figcaption>
+		{% if post.social_caption %}
+			<figcaption>{{ post.social_caption }}</figcaption>
 		{% endif %}
 	</figure>
 {% endif %}

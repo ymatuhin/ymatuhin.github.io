@@ -4,20 +4,17 @@ title: Логирование в JavaScript
 description: Логирование — незаменимый инструмент в отладке JS кода. Расставьте логи в критические места и при возникновении ошибки вы сможете посмотреть что произошло в консоли.
 categories: front-end
 tags: [FrontTalks, логирование, console.log, debug, JavaScript]
+
 social_image: logs/bear.jpg
+social_width: 1008
+social_height: 504
+social_caption: Вася следит за логами
+has_youtube: true
 ---
 
 Логирование — незаменимый инструмент в отладке JS кода. Расставьте логи в критические места и при возникновении ошибки вы сможете посмотреть что произошло в консоли. По логам вы увидите последовательность действий и поймете где произошла ошибка. Но обычно происходит по другому.
 
-{%
-    include media-image.html
-    url="logs/bear.jpg"
-    width="1008"
-    ratio="2/1"
-    caption="Вася следит за логами"
-
-	preload="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAICAMAAAARDVXAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABJQTFRF////MzMzqqqqVVVVREREIiIi2xIcSQAAAERJREFUeNpUi0EKAEEMwmo1///yOnMYWEFKgp3d2fYFEOyPK9yNZQ+Kkjhe15ePsCEVKjvnIUIbjSov9DiMbo5o4RNgAEMHASjV14r4AAAAAElFTkSuQmCC"
-%}
+{% include media-post-image.html %}
 
 > Разработчик Вася, использует `console.log` только когда код не работает. Он думает где это сломалось, и расставляет логи. Потом он перезагружает браузер, смотрит что сломалось не там и идет расставлять еще пачку `console.log`, а может даже и `console.info`.
 
@@ -30,8 +27,7 @@ social_image: logs/bear.jpg
 {%
 	include factoid.html
 	count="69.1%"
-	text="программистов научились программировать сами"
-	prove="по данным отчета <a href='#'>Developer Survey Results 2016</a>"
+	text="программистов научились программировать сами, по данным отчета <a href='#'>Developer Survey Results 2016</a>"
 %}
 
 1. Этому не учат в школе/университете/на курсах. Там дают только базовые знания, да и преподаватели не всегда обладают нужной квалификацией.
@@ -60,42 +56,40 @@ social_image: logs/bear.jpg
 
 ```js
 {
-    'use strict'
-    debug = window.debug('service:googlemaps')
+  'use strict'
+  debug = window.debug('service:googlemaps')
 
-    class GoogleMaps {
-        constructor() {
-            debug('constructor', this)
-            this.load()
-        }
-
-        load() {
-            return new Promise((resolve, reject) => {
-                debug('loading:start')
-                $.getScript("//maps.googleapis.com/maps/api/js", (data, textStatus) => {
-                    debug('loading:end', textStatus)
-
-                    if (textStatus != 'success') reject(textStatus)
-                    else resolve()
-                })
-            })
-        }
+  class GoogleMaps {
+    constructor() {
+      debug('constructor', this)
+      this.load()
     }
 
-    new GoogleMaps()
+    load() {
+      return new Promise((resolve, reject) => {
+        debug('loading:start')
+        $.getScript("//maps.googleapis.com/maps/api/js", (data, textStatus) => {
+          debug('loading:end', textStatus)
+
+          if (textStatus != 'success') reject(textStatus)
+          else resolve()
+        })
+      })
+    }
+  }
+
+  GoogleMaps()
 }
 ```
 
 Чтобы сообщение появились в консоли — укажите какие логи показать. Установив `localStorage.debug = '*'` мы увидим все сообщения.
 
 {%
-    include media-image.html
-    url="logs/googlemap.png"
-    width="420"
-    ratio="3/1"
-    caption="Логи модуля GoogleMaps"
-
-    preload="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAKCAYAAACjd+4vAAABi0lEQVR4AbyRBXIjQRAE/f/HmUnMy4zDeavRBZgd5BrGrOi+Ak5A88ftdAbjhMTkFbbuMGWDKWpMVl7GtICqRQpJWTfUTUPX9eRFST+O0I3+Xd33VHVDMe0HYUTbdgzDgJSSz3TlnGtM1SBWe1SQIPcBYrljfJz7Ucw2mM2RpqrZnU6EUUyW56w2W/Kywk4GdZRxSBLmy7Xfv7l74HAMiOLEm5kY71vjwfQjpCU0PZQtRDlmscPsLib0BBaT+93xxPEUcApCkjRjs9tTiRGTFJjnFTg+09fgLEpYPr1yWO+YPzyzuH8m3R4owxjT9riux1pLP4yMQpxD7cdxnKCAUxpXd+9xP4OLvGD2+MJ2uWa9WLGYLTibqbMCO8GsVGit/8ME2hiEkAilcP2AnfYkjmEcvSml9DvQJ2BwDW0Px/gS7iCFbYC6e0XNNgz3M9TLmq5peV2tWa425zz6fO6jCLUPUNsTcV740M8n41VV/wzuhGvSosVi+aX84x/0M1gZGITC4fhL/duAFSAAUz6MyVJBtdcAAAAASUVORK5CYII="
+	include media-image.html
+	url="logs/googlemap.png"
+	width="420"
+	height="140"
+	caption="Логи модуля GoogleMaps"
 %}
 
 Помимо того, что логи сервиса выделены красным и по ним легко отфильтровать, библиотека так-же показывает разницу во времени между вызовами. Поэтому мы видим что между вызовами конструктора и метода `init` прошло 2 миллисекунды, а загрузка гуглкарт прошла **успешно** и заняла **2 секунды**.
@@ -139,11 +133,11 @@ social_image: logs/bear.jpg
 О логировании и `console.log` рассказал Антон Шувалов выступая на конференции DUMB 2016 в секции FrontTalks.
 
 {%
-    include media-youtube.html
-    url="nPYmp586EE0"
-    width="560"
-    height="315"
-    caption="Антон Шувалов — «Отладка кода в браузере»"
+	include media-youtube.html
+	url="nPYmp586EE0"
+	width="560"
+	height="315"
+	caption="Антон Шувалов — «Отладка кода в браузере»"
 %}
 
 Ссылки на записи выступлений с FrontTalks 2016 на [хабре](https://habrahabr.ru/company/it_people/blog/302286/), а за прошлый год у меня в статье «[Видео и презентации с конференции “FrontTalks” 2015](/front-end/front-talks/)».

@@ -1,20 +1,46 @@
-<!-- Auto Size -->
-<ins class="adsbygoogle horizontal"
-	 style="display:block"
-	 data-ad-client="ca-pub-6430039911615607"
-	 data-ad-slot="4852376176"
-	 data-ad-format="auto"></ins>
+<div class="top-panel {% if include.small %}top-panel_size_small{% endif %}">
+	{% if include.small %}
+		<a href="/" class="top-panel__home-link">
+			<strong class="top-panel__home-text">Юрий Матюхин</strong>
+		</a>
+	{% else %}
+		<h1 class="top-panel__home-text">Юрий Матюхин</h1>
+	{% endif %}
 
-<a class="logo" href="/">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEX///+zRDt7FzKgKjX7fEjnbEWJIjSEGzLBOzrPRDz8fUmqPDmZJjXPQjyAGjJ9GDF6FjH3eUjMQDz8fUnLVkCvMjjPQjznbEWPJzWIHTPBOzqqPDqaJjV/GjJ9GDGrPTqZSlxgAAAAEHRSTlMArPesQP7w8P5AwP39wP7+T7J/tgAAAKxJREFUeNp9zVkOwjAQBNEhhH1NDGYn978llgarIptmfmv02ibN8c81U2tnc90Xy5XZutuovu13ZtaGcNr/yodzjAlIRAiXa91v9xgT4EToHmV/9tEBJ9LMa5zfiXcgE3kG3gGINDOMeAAIn3EeAMJnMg8A4TPOA0B8L2cACB4AaqIAakIAEACCABAEgCAABAEgCABBAAgCQBAAggAQBIAgAAQBIAgAQQAIogQ+ZlclnX/PFkUAAAAASUVORK5CYII="
-		 alt="ymatuhin"
-		 class="pixel-art">
-</a>
+	<p class="top-panel__lead">
+		Разрабатываю и поддерживаю фронтенд платформы <a href="#">RideWithLocal</a>. <br>
+		Проектирую, дизайю, пишу тексты и верстаю в
+		{% if page.url == "/projects/" %}
+			<em>своих проектах</em>.
+		{% else %}
+			<a href="/projects">своих проектах</a>.
+		{% endif %}
+	</p>
 
-<nav>
-    <ul class="menu">
-        <li><a {% unless page.url == "/blog/" %} href="/blog/"{% endunless %}>Блог</a></li>
-        <li><a {% unless page.url == '/projects/' %} href="/projects/"{% endunless %}>Проекты</a></li>
-        <li><a {% unless page.url contains "/about/" %} href="/about/"{% endunless %}>Обо мне</a></li>
-    </ul>
-</nav>
+	<ul class="top-menu">
+		{% if page.url == "/blog/" %}
+			<li><strong>Заметки</strong>
+		{% else page.url == "/blog/" %}
+			<li><a href="/blog">Заметки</a>
+		{% endif %}
+
+		{% if page.url == "/resume/" %}
+			<li><strong>Резюме</strong>
+		{% else page.url == "/resume/" %}
+			<li><a href="/resume">Резюме</a>
+		{% endif %}
+
+		{% if page.url == "/about/" %}
+			<li><strong>Обо мне</strong>
+		{% else page.url == "/about/" %}
+			<li><a href="/about">Обо мне</a>
+		{% endif %}
+
+		{% if page.url == "/hello/" %}
+			<li><strong>Сказать «Привет!»</strong>
+		{% else page.url == "/hello/" %}
+			<li><a href="/hello">Сказать «Привет!»</a>
+		{% endif %}
+	</ul>
+</div>
+<div class="vspace"></div>

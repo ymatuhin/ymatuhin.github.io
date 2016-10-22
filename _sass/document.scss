@@ -1,35 +1,40 @@
+@import 'variables';
+
 * { box-sizing: border-box; }
 
 html {
-	font-size: 62.5%;
 	-webkit-text-size-adjust: 100%;
+	font-size: 28px;
 
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	@media (max-width: 480px) {
+		font-size: 24px;
+	}
+
 	font-variant-ligatures: contextual;
 	text-rendering: optimizeLegibility;
 }
 
 body {
-	text-align: center;
-	padding: 6.4rem 3.2rem 5.7rem;
+	text-align: left;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	margin: 0;
+	font: .642857143rem/1.555555556 $serif;
 
-	// 1.777 — 3.2rem
-	font: 1.8rem/1.7777777 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif;
+	padding: 10%;
+	padding: 10vh 10vw;
+
 	font-weight: 400;
-	color: #313131;
+	color: $text-color;
 	background: #fff;
 
-	// animations
-	-webkit-transition: padding .3s ease-out, opacity .15s ease-in-out;
-	transition: padding .3s ease-out, opacity .15s ease-in-out;
-	opacity: 0;
+	&.grid {
+		background-image: linear-gradient(#eee 1px, transparent 1px);
+		background-size: 100% 1rem;
+		background-position: 0 10vh;
+	}
+}
 
-	// media
-	@media (max-width: 800px) { padding: 6.4rem 3.2rem; }
-	// @media (max-width: 640px) { padding: 6.4rem 3.2rem; }
-	@media (max-width: 480px) { padding: 3.2rem 1.8rem; }
+.content {
+	position: relative;
 }

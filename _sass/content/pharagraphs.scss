@@ -1,6 +1,11 @@
-p { margin: 0 }
+@import 'variables';
 
-*+p,
-p+* {
-  margin-top: 2.4rem; /* 0.75 baselines  */
+p {
+	margin: 0;
+	max-width: $text-max-width;
+}
+
+* + p,
+p + * {
+	margin-top: .75rem; /* 0.75 baselines  */
 }

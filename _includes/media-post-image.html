@@ -1,45 +1,22 @@
-{% if page.image %}
-	<figure class="post-image wrap-large"
-			{% if page.imageWidth %}style="width: {{ page.imageWidth }}px"{% endif %}
-			itemscope
-			itemprop="image"
-			itemtype="http://schema.org/ImageObject">
-		{% capture url %}{{ page.image | prepend: '/assets/img/' }}{% endcapture %}
+{% if page.social_image %}
+<table class="media-table" width="100%">
+	<tr><td width="{{ page.social_width }}">
+		<figure>
+			<a rel="nofollow" href="{% if page.social_link %}{{ page.social_link }}{% else %}{{ page.social_image | prepend: '/assets/img/' }}{% endif %}">
+				<amp-img
+					src="{{ page.social_image | prepend: '/assets/img/' }}"
+					alt="{% if page.social_alt %}{{ page.social_alt }}{% else %}{{ page.social_caption }}{% endif %}"
+					{% if page.social_width %}width="{{ page.social_width }}"{% endif %}
+					{% if page.social_height %}height="{{ page.social_height }}"{% endif %}
+					layout="responsive"
+					class="{% if page.pixelart %}pixel-art{% endif %} {% if page.noborder %}noborder{% endif %}">
+				</amp-img>
+			</a>
 
-
-		<a rel="nofollow"
-		   class="{% if page.ratio %}ratio ratio{{ page.ratio }}{% endif %}"
-		   {% if page.color %}
-				style="background: #{{ page.color }}"
-		   {% endif %}
-		   href="{% if page.imageLink %}{{ page.imageLink }}{% else %}{{ url }}{% endif %}">
-
-			<span>Изображение не загрузилось&nbsp;😔</span>
-
-			<img itemprop="contentUrl" src="{{ url }}"
-				 width="{{ page.imageWidth }}"
-				 height="{{ page.imageHeight }}"
-				 {% if page.imageCaption %}
-					alt="{{ page.imageCaption }}"
-				 {% else %}
-					alt="{{ page.title | strip_html }}"
-				 {% endif %}
-				 onerror="style.opacity=0;parentNode.children[0].style.opacity = 1;"
-				 style="{% if page.imageSpace %}padding: 24px;{% endif %}opacity:1;"
-				 class="{% if page.pixelArt %}pixel-art{% endif %}">
-		</a>
-
-		<meta itemprop="url" content="{{ url }}">
-		{% if page.imageWidth %}
-			<meta itemprop="width" content="{{ page.imageWidth }}">
-		{% endif %}
-
-		{% if page.imageHeight %}
-			<meta itemprop="height" content="{{ page.imageHeight }}">
-		{% endif %}
-
-		{% if page.imageTitle %}
-			<figcaption itemprop="caption">{{ page.imageTitle }}</figcaption>
-		{% endif %}
-	</figure>
+			{% if page.social_caption %}
+				<figcaption>{{ page.social_caption }}</figcaption>
+			{% endif %}
+		</figure>
+	</td><td></td></tr>
+</table>
 {% endif %}

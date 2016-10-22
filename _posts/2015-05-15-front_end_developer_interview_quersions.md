@@ -5,13 +5,12 @@ categories: front-end
 tags: >
   front end собеседование работа вопросы перевод должность кандидат
 social_image: front_end_interview/mem.jpg
+social_width: 760
+social_height: 365
+social_alt: На собеседовании фронтенд разработчика
 ---
 
-{%
-	include media-image.html
-	url="front_end_interview/mem.jpg"
-	caption="На собеседовании фронтенд разработчика"
-%}
+{% include media-post-image.html %}
 
 *Это перевод популярного репозитория от html5bp — [Front-end Job Interview Questions](//h5bp.github.io/Front-end-Developer-Interview-Questions/) (en),  который существует с 2009 года. Список вопросов составлялся и дополнятся известными во front-end людьми, поэтому на этот список можно положиться. Перевод делал не я (вернее я хотел, но он оказался уже переведен).*
 

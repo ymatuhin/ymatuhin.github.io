@@ -6,17 +6,16 @@ description: >
 categories: blog
 tags: >
   vivaldi интернет браузер обзор вивальди отзыв
-social_image: vivaldi/vivaldi_default_view.png
+social_image: vivaldi/default_view.png
+social_width: 1392
+social_height: 885
+social_alt: Интернет браузер Vivaldi
+noborder: true
 ---
 
 Мои поздравления всем, но в особенности поклонникам браузера Opera, которые возможно все еще сидят на ней, или уже перешли на другой новомодный браузер, но все еще грезят воспоминаниями, у есть меня для вас великолепная новость — старая Opera возвращается! (_осторожно много графики_)
 
-{%
-	include media-image.html
-	url="vivaldi/vivaldi_default_view.png"
-	caption="Интернет браузер Vivaldi"
-	noborder=""
-%}
+{% include media-post-image.html %}
 
 Да да, именно так, крутые ребята (25 человек), в числе которых Йон фон Течнер (соавтор старой Оперы), выпускают новый интернет браузер на основе Chromium — **Vivaldi**. Подробную информацию о нем можно почитать на [официальном сайте](http://vivaldi.com){:rel='nofollow'}(en) или в обзорах на хабре [тут](http://habrahabr.ru/post/248941/){:rel='nofollow'} и [тут](http://habrahabr.ru/post/248961/){:rel='nofollow'}. А я опишу новые (или старые) фишки, которые есть в этом браузере.
 
@@ -24,8 +23,10 @@ social_image: vivaldi/vivaldi_default_view.png
 
 {%
 	include media-image.html
-	url="vivaldi/vivaldi_default_view_inactive.png"
+	url="vivaldi/default_view_inactive.png"
 	caption="Vivaldi – вид по умолчанию без фокуса"
+	width="1364"
+	height="857"
 	noborder=""
 %}
 
@@ -35,40 +36,70 @@ social_image: vivaldi/vivaldi_default_view.png
 
 {%
 	include media-image.html
-	url="vivaldi/vivaldi_fast_commands.png"
+	url="vivaldi/fast_commands.png"
 	caption="Vivaldi – быстрые команды"
+	width="563"
+	height="396"
 %}
 
 Тенденция к такого рода вещам уже привычна для текстовых редакторов, но вот для браузеров это в новинку. Диалоговое окно открывается по нажатии на F2 и предлагает вам быстрый способ работать с браузером. Можно искать среди открытых вкладок, перемещаться по ним, переходить к настройкам браузера и многое другое.
 
 ## Большие вкладки (табы) с превью, группировкой и возможностью поменять расположение.
 
-{% include media-image.html url="vivaldi/vivaldi_tabs_top.png" caption="Vivaldi – раскрытые табы сверху" alt="Раскрытые табы сверху в браузере Vivaldi" %}
-{% include media-image.html url="vivaldi/vivaldi_tabs_left.png" caption="Vivaldi – раскрытые табы слева" alt="Раскрытые табы слева в браузере Vivaldi" %}
+{% include media-image.html
+	url="vivaldi/tabs_top.png"
+	caption="Vivaldi – раскрытые табы сверху"
+	width="476"
+	height="367"
+	alt="Раскрытые табы сверху в браузере Vivaldi" %}
+
+{% include media-image.html
+	url="vivaldi/tabs_left.png"
+	caption="Vivaldi – раскрытые табы слева"
+	width="256"
+	height="399"
+	alt="Раскрытые табы слева в браузере Vivaldi" %}
 
 {%
 	include media-image.html
-	url="vivaldi/vivaldi_settings.png"
+	url="vivaldi/settings.png"
 	caption="Vivaldi – Окно настроек"
-	noborder=""
-%}
+	width="852"
+	height="672"
+	noborder="" %}
 
 ## Цвет панели табов меняется в зависимости от сайта
 
-{% include media-image.html url="vivaldi/vivaldi_tabs_colorful.png" caption="Vivaldi – изменение цвета панели табов в зависимости от открытого сайта" alt="Цвета панели табов в браузере Vivaldi" %}
+{% include media-image.html
+	url="vivaldi/tabs_colorful.png"
+	caption="Vivaldi – изменение цвета панели табов в зависимости от открытого сайта"
+	width="750"
+	height="270"
+	alt="Цвета панели табов в браузере Vivaldi" %}
 
 Берется основной цвет у favicon (можно отключить в настройках).
 
 ## Speed Dial + закладки + история на одном окне, в очень удобном виде
 
-{% include media-image.html url="vivaldi/vivaldi_speed_dial.png" caption="Vivaldi – Speed Dial" alt="Speed Dial в браузере Vivaldi" noborder="" %}
+{% include media-image.html
+	url="vivaldi/speed_dial.png"
+	caption="Vivaldi – Speed Dial"
+	alt="Speed Dial в браузере Vivaldi"
+	width="1364"
+	height="885"
+	noborder="" %}
 
 Так-же можно перенести закладки в Speed Dial, правда у меня почему-то не прогрузились картинки сайтов с закладок, но я думаю это пофиксят или я что-то сделал не так.
 Импорт из сафари работает на ура, плюс ко всему он импортирует страницы которые отложены для чтения!
 
 ## Боковая панель
 
-{% include media-image.html url="vivaldi/vivaldi_left_panel.png" caption="Vivaldi – боковая панель" alt="Боковая панель в браузере Vivaldi" %}
+{% include media-image.html
+	url="vivaldi/left_panel.png"
+	caption="Vivaldi – боковая панель"
+	width="152"
+	height="337"
+	alt="Боковая панель в браузере Vivaldi" %}
 
 Боковая панель выполнена в традициях старой оперы. В ней располагаются закладки, почта (еще не работает, но скоро будет), менеджер загрузок, и заметки!
 
@@ -76,24 +107,65 @@ social_image: vivaldi/vivaldi_default_view.png
 
 Менеджер загрузок такой же как и в старой Опере. Даже диалог спрашивает, что делать со скачиваемым файлом.
 
-{% include media-image.html url="vivaldi/vivaldi_download_1.png" caption="Vivaldi – окно загрузки #1" alt="Vivaldi – окно загрузки #1" %}
-{% include media-image.html url="vivaldi/vivaldi_download_2.png" caption="Vivaldi – окно загрузки #2" alt="Vivaldi – окно загрузки #2" noborder="" %}
-{% include media-image.html url="vivaldi/vivaldi_download_3.png" caption="Vivaldi – окно загрузки #3" alt="Vivaldi – окно загрузки #3" %}
+{% include media-image.html
+	url="vivaldi/download_1.png"
+	caption="Vivaldi – окно загрузки #1"
+	width="457"
+	height="212"
+	alt="Vivaldi – окно загрузки #1" %}
+
+{% include media-image.html
+	url="vivaldi/download_2.png"
+	caption="Vivaldi – окно загрузки #2"
+	alt="Vivaldi – окно загрузки #2"
+	width="536"
+	height="304"
+	noborder="" %}
+
+{% include media-image.html
+	url="vivaldi/download_3.png"
+	caption="Vivaldi – окно загрузки #3"
+	width="283"
+	height="289"
+	alt="Vivaldi – окно загрузки #3" %}
 
 ## Заметки прямо в браузере
 
-{% include media-image.html url="vivaldi/vivaldi_notes.png" caption="Vivaldi – заметки в браузере" alt="Заметки в браузере Vivaldi" %}
+{% include media-image.html
+	url="vivaldi/notes.png"
+	caption="Vivaldi – заметки в браузере"
+	width="286"
+	height="706"
+	alt="Заметки в браузере Vivaldi" %}
 
 Так же есть возможность добавить ссылку к заметке и сгенерировать превью.
 
 ##  Page actions, или действия со страницей
 
-{% include media-image.html url="vivaldi/vivaldi_page_actions.png" caption="Vivaldi – page actions" alt="Page actions в браузере Vivaldi" %}
+{% include media-image.html
+	url="vivaldi/page_actions.png"
+	caption="Vivaldi – page actions"
+	width="260"
+	height="532"
+	alt="Page actions в браузере Vivaldi" %}
 
 Одним кликом мышки можно поиграться фильтрами для сайта. Добавилась важная для разработчиков штука как подсветка всех блоков или подсветка по ховеру. Один минус, страница перезагружается :-)
 
-{% include media-image.html url="vivaldi/vivaldi_page_actions_hover.png" caption="Vivaldi – page actions hover" alt="Page actions hover в браузере Vivaldi" noborder="" %}
-{% include media-image.html url="vivaldi/vivaldi_page_actions_outline.png" caption="Vivaldi – page actions hover" alt="Page actions hover в браузере Vivaldi" noborder="" %}
+{% include media-image.html
+	url="vivaldi/page_actions_hover.png"
+	caption="Vivaldi – page actions hover"
+	alt="Page actions hover в браузере Vivaldi"
+	width="1392"
+	height="885"
+	noborder="" %}
+
+{% include media-image.html
+	url="vivaldi/page_actions_outline.png"
+	caption="Vivaldi – page actions hover"
+	alt="Page actions hover в браузере Vivaldi"
+	width="1392"
+	height="885"
+	noborder="" %}
 
 ## Над чем сейчас работают в Vivaldi
 

@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 .tmp
 node_modules
+.DS_Store

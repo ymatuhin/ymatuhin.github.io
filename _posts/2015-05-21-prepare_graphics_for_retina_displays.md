@@ -15,28 +15,31 @@ tags: >
 
 ## Photoshop плагин Retinize It
 
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="520" alt="Retinize It — плагин для фотошопа для оптимизации графики под ретина" src="/assets/img/retina/retinizeit.png">
-	<figcaption itemprop="description">Retinize It — плагин для фотошопа для оптимизации графики под ретина</figcaption>
-</figure>
+{%
+	include media-image.html
+	url="retina/retinizeit.png"
+	width="520"
+	height="340"
+	caption="Retinize It — плагин для фотошопа для оптимизации графики под ретина"
+%}
 
-Как написано на официальном сайте: «Лучший плагин к Photoshop для оптимизации графики на сайте для iOS и Retina-дисплеев». Скачать его можно на <a href="http://retinize.it/">странице проекта</a>.
+Как написано на официальном сайте: «Лучший плагин к Photoshop для оптимизации графики на сайте для iOS и Retina-дисплеев». Скачать его можно на [странице проекта][1].
 
 Плагин представляет собой записанные действия, которые можно будет воспроизводить через горячие клавиши или пункты меню. Плагин выделяет слои, создает новый файл с ними, делает трим (обрезку краев) и сохраняет изображение в 1-м, 2-х или 3-х размерах.
 
-Работать с ним очень просто:
-<ol>
-    <li>Выберите слои или или группу слоев</li>
-    <li>Запустите Retinize It (можно добавить сочетание клавиш)</li>
-    <li>Назовите ваши файлы</li>
-    <li>Получите ваши нарезанные изображения</li>
-</ol>
+Работать с ним просто:
+* Выберите слои или или группу слоев
+* Запустите Retinize It (можно добавить сочетание клавиш)
+* Назовите ваши файлы
+* Получите ваши нарезанные изображения
 
-
-<figure itemscope itemtype="http://schema.org/ImageObject">
-	<img itemprop="contentUrl" width="940" alt="Как работает плагин Retinize It" src="/assets/img/retina/install.png">
-	<figcaption itemprop="description">Как работает плагин Retinize It</figcaption>
-</figure>
+{%
+	include media-image.html
+	url="retina/install.png"
+	width="940"
+	height="220"
+	caption="Как работает плагин Retinize It"
+%}
 
 Для дальнейшего использования рекомендую сохранять файлы с постфиксами @2x, @3x. К примеру: `file.png`, `file@2x.png`, `file@3x.png`.
 
@@ -44,12 +47,12 @@ tags: >
 Тут все просто, подключаем js библиотеку, и она определит нужно ли загружать изображение для retina экранов. Если нужно, то ссылка на исходный файл заменяется на `***@2x.***` или `***@3x.***`.
 
 ## Примесь для LESS
-Скачать примесь можно <a href="http://imulus.github.io/retinajs/" rel="nofollow">на сайте</a>.
+Скачать примесь можно [на сайте][2].
 
 После подключения она будет доступна для использования. Написав следующее: `.at2x(@path, @width, @height);` (вместо @path, @width и @height нужно написать ваш путь к изображению и его размеры).
 
 Пример:
-~~~css
+~~~scss
 #logo {
   .at2x('/images/my_image.png', 200px, 100px);
 }
@@ -69,6 +72,9 @@ tags: >
 }
 ~~~
 
-Подробнее о retina.js и примесях можно прочитать <a href="http://imulus.github.io/retinajs/" rel="nofollow">на сайте</a>, скачать можно там-же.
+Подробнее о retina.js и примесях можно прочитать [на сайте][2], скачать можно там-же.
 
 Если у вас есть вопроси, или нужно будет дополнить чем-то эту статью —  напишите об этом в комментариях :-)
+
+[1]: http://retinize.it/
+[2]: http://imulus.github.io/retinajs/

@@ -4,14 +4,15 @@ title: 'Ускоряем загрузку ресурсов для сайта: pr
 categories: front-end
 description: HTML5 Link Prefetch указывает браузеру какие ресурсы вам понадобятся в будущем на сайте и максимально подготовит их дальнейшую загрузку.
 tags: [cdn, preconnect, prefetch, prerender, preloading, оптимизация]
+
 social_image: link_prefetch/html5_link_prefetch.png
+social_caption: Стадии загрузки ресурса / HTML5 Link Prefetch
+social_width: 1144
+social_height: 564
+noborder: true
 ---
 
-{%
-	include media-image.html
-	url="link_prefetch/html5_link_prefetch.png"
-	caption="Стадии загрузки ресурса (HTML5 Link Prefetch)"
-%}
+{% include media-post-image.html %}
 
 Сегодня мы рассмотрим «HTML5 Link Prefetch», а именно dns-prefetch, prefetch, preconnect, subresource, prerender и еще неработающий preload. HTML5 Link Prefetch уменьшит время загрузки для ресурсов, которые нам понадобятся позже.
 

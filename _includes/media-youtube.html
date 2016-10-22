@@ -1,15 +1,15 @@
 {% if include.url %}
-<figure itemscope itemtype="http://schema.org/VideoObject">
-		<iframe itemprop="contentUrl"
-				src="https://www.youtube.com/embed/{{ include.url | replace: 'https://www.youtube.com/watch?v=', '' }}"
-				width="{{ include.width }}"
-				height="{{ include.height }}"
-				scrolling="no"
-				frameborder="0"
-				allowtransparency
-				allowfullscreen>
-			Загружаю…
-		</iframe>
-	<figcaption itemprop="name">{{ include.caption }}</figcaption>
-</figure>
+<table class="media-table" width="100%">
+	<tr><td width="{{ include.width }}">
+		<figure>
+		    <amp-youtube
+		        data-videoid="{{ include.url }}"
+		        layout="responsive"
+		        width="{{ include.width }}"
+		        height="{{ include.height }}">
+		    </amp-youtube>
+			<figcaption>{{ include.caption }}</figcaption>
+		</figure>
+	</td><td></td></tr>
+</table>
 {% endif %}

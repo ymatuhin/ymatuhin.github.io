@@ -5,13 +5,12 @@ categories: front-end
 tags: [jekyll, блог]
 
 social_image: jekyll/jekyll-logo.png
+social_width: 960
+social_height: 480
+social_alt: Логотип Jekyll
 ---
 
-{%
-	include media-image.html
-	url="jekyll/jekyll-logo.png"
-	caption="Логотип Jekyll"
-%}
+{% include media-post-image.html %}
 
 [Jekyll](https://jekyllrb.com/) — генератор статических сайтов. Чаще всего используется для блогов как альтернатива WordPress. Набрал свою популярность вместе с GitHub, который позволяет разместить в GitHub Pages ваш сайт на Jekyll. Таким образом у вас есть бесплатный хостинг для Jekyll сайта на домене 3 уровня, который можно перенаправить на любой другой домен (как у меня сейчас).
 
