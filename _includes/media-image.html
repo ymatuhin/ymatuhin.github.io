@@ -13,11 +13,11 @@
 					srcset="
 					{% assign url = include.url | prepend: '/assets/img/' %}
 					{% assign width = include.width | plus:'1' %}
-					{% if width > 200  %}{{ url | replace_first: '.jpg','-200.jpg' | replace_first: '.png','-200.png' }} 200w,{% endif %}
-					{% if width > 400  %}{{ url | replace_first: '.jpg','-400.jpg' | replace_first: '.png','-400.png' }} 400w,{% endif %}
-					{% if width > 600  %}{{ url | replace_first: '.jpg','-600.jpg' | replace_first: '.png','-600.png' }} 600w,{% endif %}
-					{% if width > 800  %}{{ url | replace_first: '.jpg','-800.jpg' | replace_first: '.png','-800.png' }} 800w,{% endif %}
-					{% if width > 1000 %}{{ url | replace_first: '.jpg','-1000.jpg' | replace_first: '.png','-1000.png' }} 1000w,{% endif %}
+					{% if width > 200  %}{{ url | replace_first: '.jpg','-200.jpg' | replace_first: '.jpeg','-200.jpeg' | replace_first: '.png','-200.png' }} 200w,{% endif %}
+					{% if width > 400  %}{{ url | replace_first: '.jpg','-400.jpg' | replace_first: '.jpeg','-400.jpeg' | replace_first: '.png','-400.png' }} 400w,{% endif %}
+					{% if width > 600  %}{{ url | replace_first: '.jpg','-600.jpg' | replace_first: '.jpeg','-600.jpeg' | replace_first: '.png','-600.png' }} 600w,{% endif %}
+					{% if width > 800  %}{{ url | replace_first: '.jpg','-800.jpg' | replace_first: '.jpeg','-800.jpeg' | replace_first: '.png','-800.png' }} 800w,{% endif %}
+					{% if width > 1000 %}{{ url | replace_first: '.jpg','-1000.jpg' | replace_first: '.jpeg','-1000.jpeg' | replace_first: '.png','-1000.png' }} 1000w,{% endif %}
 					"
 				{% endunless %}
 					class="{% if include.pixelart %}pixel-art{% endif %} {% if include.noborder %}noborder{% endif %}">

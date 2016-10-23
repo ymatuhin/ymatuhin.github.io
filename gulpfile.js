@@ -3,7 +3,7 @@ var logger = require('gulp-logger');
 var responsive = require('gulp-responsive');
 
 gulp.task('default', function() {
-	return gulp.src('_site/assets/img/**/*.{jpg,png}')
+	return gulp.src('_site/assets/img/**/*.{jpg,png,jpeg}')
 		.pipe(logger({
 			// before: 'Starting Gzip...',
 			// after: 'Gzipping complete!',
