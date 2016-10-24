@@ -34,13 +34,23 @@
 	"author": {
 	  "@type": "Person",
 	  "name": "Yury Matuhin"
-	}
+  	},
+	"publisher": {
+	   "@type": "Person",
+	   "name": "Yury Matuhin",
+	   "logo": {
+		 "@type": "ImageObject",
+		 "url": "{{ site.url }}/assets/icons/mstile-310x310.png",
+		 "width": "310",
+		 "height": "310"
+	   }
+	 },
 	{% if page.social_image %}
 	,"image": {
 	  "@type": "ImageObject",
-	  "url": "{{ page.social_image }}",
-	  "height": {{ page.social_width }},
-	  "width": {{ page.social_height }}
+	  "url": "{{ site.url }}{{ page.social_image | prepend: '/assets/img/' }}",
+	  "height": "{{ page.social_width }}",
+	  "width": "{{ page.social_height }}"
 	}
 	{% endif %}
   }
