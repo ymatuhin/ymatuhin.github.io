@@ -44,9 +44,8 @@
 		 "width": "310",
 		 "height": "310"
 	   }
-	 },
-	{% if page.social_image %}
-	,"image": {
+	}{% if page.social_image %},
+	"image": {
 	  "@type": "ImageObject",
 	  "url": "{{ site.url }}{{ page.social_image | prepend: '/assets/img/' }}",
 	  "height": "{{ page.social_width }}",
