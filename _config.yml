@@ -2,30 +2,24 @@ title: Юрий Матюхин
 email: ym@ymatuhin.ru
 baseurl: ""
 url: "https://ymatuhin.ru"
-
-# Build settings
 permalink: /:categories/:title/
 excerpt_separator: <!-- more -->
-
+safe: true
 paginate: 18
-paginate_path: "/blog/page:num/"
-
+paginate_path: "/blog/:num/"
 sass:
   style: compressed
-
 safe: true
 gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-sitemap
-
 permalinks: pretty
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: true
   syntax_highlighter: rouge
-
 exclude:
   - 'node_modules/**/*'
   - '*.json'
