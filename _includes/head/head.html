@@ -14,6 +14,13 @@
 <meta name="description" content="{{ page_description }}">
 <link rel="canonical" href="{{ page_url }}">
 
+{% if paginator.previous_page %}
+<link rel="prev" href="{{ paginator.previous_page_path }}">
+{% endif %}
+{% if paginator.next_page %}
+<link rel="next" href="{{ paginator.next_page_path }}">
+{% endif %}
+
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <script type="application/ld+json">
   {
