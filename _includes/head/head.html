@@ -58,6 +58,13 @@
 	  "height": "{{ page.social_width }}",
 	  "width": "{{ page.social_height }}"
 	}
+	{% else %},
+	"image": {
+	  "@type": "ImageObject",
+	  "url": "{{ site.url }}/assets/img/default_image_192_192.gif",
+	  "height": "192",
+	  "width": "192"
+	}
 	{% endif %}
   }
 </script>

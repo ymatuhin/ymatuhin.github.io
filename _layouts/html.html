@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		{% include head/variables.html %}
+
+		<meta charset="utf-8">
+		<title>{{ page_title }}</title>
+		<meta name="description" content="{{ page_description }}">
+
+		<link rel="canonical" href="{{ page_url }}">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+		<style>
+			{% capture include_to_scssify %}
+			  {% include main.scss %}
+			{% endcapture %}
+			{{ include_to_scssify | scssify }}
+		</style>
+
+		{% include head/meta_lang.html %}
+		{% include head/meta_rss.html %}
+		{% include head/meta_twitter.html %}
+		{% include head/meta_icon.html %}
+	</head>
+	<body>
+		{{ content | replace:'«','<span class="elka"></span><span class="l_elka">«</span>' | replace:'(','<span class="skobka"> </span><span class="l_skobka">(</span>' }}
+	</body>
+</html>
