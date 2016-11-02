@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google AMP
+title: Accelerated Mobile Pages
 categories: front-end
 description: >
 tags: []

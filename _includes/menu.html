@@ -8,31 +8,36 @@
 	{% endif %}
 
 	<p class="top-panel__lead">
-		Я&nbsp;фронтенд разработчик, верстаю и&nbsp;программирую сайты и&nbsp;сервисы. Интересуюсь архитектурой приложений, дизайном и&nbsp;текстом. Хочу запустить и&nbsp;поддерживать качественный продукт, который будет решать чью-то проблему. Если у&nbsp;вас есть такой проект или идея, давайте познакомимся: <a href="mailto:ym@ymatuhin.ru">ym@ymatuhin.ru</a>
+		Я&nbsp;фронтенд разработчик, верстаю и&nbsp;программирую сайты и&nbsp;сервисы. Интересуюсь архитектурой приложений, дизайном и&nbsp;текстом.
+		<br>
+		Хочу стать одним из основателей проекта с посещаемостью 1 000 000 человек в месяц. Если у&nbsp;вас такой проект или идея, то
+		{% if page.url == "/contacts/" %}давайте познакомимся.
+		{% else %}<a href="/contacts/">давайте познакомимся</a>.
+		{% endif %}
 	</p>
 
 	<ul class="top-menu">
 		{% if page.url == "/blog/" %}
 			<li><strong>Заметки</strong>
-		{% else page.url == "/blog/" %}
+		{% else %}
 			<li><a href="/blog/">Заметки</a>
 		{% endif %}
 
 		{% if page.url == "/projects/" %}
 			<li><strong>Проекты</strong>
-		{% else page.url == "/projects/" %}
+		{% else %}
 			<li><a href="/projects/">Проекты</a>
 		{% endif %}
 
 		{% if page.url == "/resume/" %}
 			<li><strong>Резюме</strong>
-		{% else page.url == "/resume/" %}
+		{% else %}
 			<li><a href="/resume/">Резюме</a>
 		{% endif %}
 
 		{% if page.url == "/about/" %}
 			<li><strong>Обо мне</strong>
-		{% else page.url == "/about/" %}
+		{% else %}
 			<li><a href="/about/">Обо мне</a>
 		{% endif %}
 	</ul>
