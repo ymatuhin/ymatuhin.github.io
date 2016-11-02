@@ -22,11 +22,11 @@
 
 	.top-panel {
 		&__home-text {
-			font-size: .642857143rem; // 18px
+			font-size: .714285714rem; // 20px
 			line-height: 1rem;
 		}
 		&__lead {
-			margin-bottom: .321428571rem // 9px
+			margin-bottom: .5rem
 		}
 	}
 
@@ -36,6 +36,7 @@
 }
 
 .top-menu {
+	font-family: $sans;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
