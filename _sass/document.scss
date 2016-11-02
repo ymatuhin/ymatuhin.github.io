@@ -21,8 +21,13 @@ body {
 	margin: 0;
 	font: .642857143rem/1.555555556 $serif;
 
-	padding: 10%;
-	padding: 10vh 10vw;
+	padding: 8%;
+	padding: 8vh 8vw;
+
+	@media (max-width: 480px) {
+		padding: 5%;
+		padding: 5vh 5vw;
+	}
 
 	font-weight: 400;
 	color: $text-color;
