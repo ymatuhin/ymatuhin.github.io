@@ -4,6 +4,7 @@ title: Как увольняться из «Payler» и «Polonium Arts», ч�
 categories: blog
 tags: [payler, polonium art, увольнение, константин копыльцов, кидалово, обман, Брянск]
 
+published: false
 social_image: payler/payler.jpg
 social_width: 736
 social_height: 184
