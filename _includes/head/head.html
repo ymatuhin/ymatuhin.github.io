@@ -26,11 +26,18 @@
   {
 	"@context": "http://schema.org",
 	{% if layout.is_post %}
-	"@type": "BlogPosting",
+		"@type": "BlogPosting",
+		"mainEntityOfPage": "{{ page_url }}",
+	{% elsif page.type %}
+		"@type": "{{ page.type }}",
+		"mainEntityOfPage": "{{ page_url }}",
 	{% else %}
-	"@type": "WebPage",
+		"@type": "NewsArticle",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "{{ page_url }}"
+		},
 	{% endif %}
-	"mainEntityOfPage": "{{ page_url }}",
 	"headline": "{{ page_title }}",
 	{% if page.date %}
 	"datePublished": "{{ page.date|date_to_xmlschema }}",

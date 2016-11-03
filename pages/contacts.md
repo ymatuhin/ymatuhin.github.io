@@ -1,5 +1,6 @@
 ---
 layout: page
+type: ContactPage
 title: «Сказать Привет!»
 permalink: /contacts/
 description: Контактная информация и социальные сети

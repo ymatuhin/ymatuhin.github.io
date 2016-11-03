@@ -1,5 +1,6 @@
 ---
 layout: page
+type: AboutPage
 title: Обо мне
 permalink: /about/
 tags: front end разработчик интерфейсов web сайты html css javascript программист
