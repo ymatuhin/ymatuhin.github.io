@@ -3,8 +3,9 @@ pre {
 	vertical-align: top;
 	margin: 0;
 	padding: .5em 1em;
-	background: #f3f3f3;
+	background: #fff;
 	border-radius: 3px;
+	border: 1px solid #f0f0f0;
 }
 
 code,
@@ -14,13 +15,15 @@ pre {
 }
 
 code {
-	background: #f3f3f3;
+	background: #fff;
 	border-radius: 3px;
 	padding: 1px 5px;
+	border: 1px solid #f0f0f0;
 }
 
 pre code {
 	padding: 0;
+	border: 0;
 }
 
 .highlighter-rouge.highlighter-rouge,

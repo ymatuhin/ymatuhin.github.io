@@ -9,7 +9,7 @@ social_image: jekyll/jekyll-logo.png
 social_caption: Логотип Jekyll
 social_width: 960
 social_height: 480
-noborder: true
+_noborder: true
 ---
 
 Релиз третьей версии генератора статических сайтов Jekyll прошел 27 октября 2015 года. А 1 февраля 2016 года GitHub Pages [официально поддерживают][1]{:rel='nofollow'} Jekyll 3. В тот момент я захотел перевести блог на новую версию и прикрутить к нему Gulp.

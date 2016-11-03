@@ -8,7 +8,7 @@ social_image: pixel-art/pixel-art.gif
 social_caption: "Пиратский сюжет, автор: <a href='http://bugpixel.com/' rel='nofollow'>bugpixel</a>."
 social_width: 652
 social_height: 486
-noborder: true
+_noborder: true
 pixelart: true
 ---
 

@@ -8,7 +8,7 @@ social_image: need_to_frontend/i-have-a-plan.jpg
 social_width: 604
 social_height: 219
 social_caption: "Кажется у меня есть план…"
-noborder: true
+_noborder: true
 ---
 
 {% include media-post-image.html %}

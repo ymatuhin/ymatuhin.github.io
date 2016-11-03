@@ -9,7 +9,7 @@ social_image: link_prefetch/html5_link_prefetch.png
 social_caption: Стадии загрузки ресурса / HTML5 Link Prefetch
 social_width: 1144
 social_height: 564
-noborder: true
+_noborder: true
 ---
 
 {% include media-post-image.html %}

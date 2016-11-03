@@ -8,7 +8,7 @@ tags: [adblock, ads, реклама]
 social_image: adblock/logo_adblock.png
 social_width: 512
 social_height: 128
-noborder: true
+_noborder: true
 ---
 
 {% include media-post-image.html %}

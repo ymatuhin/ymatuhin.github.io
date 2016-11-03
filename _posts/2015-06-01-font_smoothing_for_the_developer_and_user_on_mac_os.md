@@ -8,7 +8,7 @@ social_image: font-smooth/compare.png
 social_width: 720
 social_height: 540
 social_alt: Сглаживание шрифтов CSS
-noborder: true
+_noborder: true
 ---
 
 {% include media-post-image.html %}
