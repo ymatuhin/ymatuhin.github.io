@@ -7,12 +7,14 @@
 		<h1 class="top-panel__home-text">Юрий Матюхин</h1>
 	{% endif %}
 
+	{% if page.url == "/" %}
 	<p class="top-panel__lead">
 		Я&nbsp;фронтенд разработчик, верстаю и&nbsp;программирую сайты и&nbsp;сервисы. Интересуюсь архитектурой приложений, дизайном и&nbsp;текстом.
 		Хочу стать одним из&nbsp;основателей проекта с&nbsp;посещаемостью 1&nbsp;000&nbsp;000&nbsp;в месяц. Если у&nbsp;вас такой проект или идея, то&nbsp;{% if page.url == "/contacts/" %}давайте познакомимся.
 		{% else %}<a href="/contacts/">давайте познакомимся</a>.
 		{% endif %}
 	</p>
+	{% endif %}
 
 	<ul class="top-menu">
 		{% if page.url == "/blog/" %}
@@ -37,6 +39,12 @@
 			<li><strong>Обо мне</strong>
 		{% else %}
 			<li><a href="/about/">Обо мне</a>
+		{% endif %}
+
+		{% if page.url == "/contacts/" %}
+			<li><strong>«Сказать Привет!»</strong>
+		{% else %}
+			<li><a href="/contacts/">«Сказать Привет!»</a>
 		{% endif %}
 	</ul>
 </div>
