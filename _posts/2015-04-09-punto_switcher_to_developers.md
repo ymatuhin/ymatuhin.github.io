@@ -2,6 +2,8 @@
 layout: post
 title: Punto Switcher для разработчиков
 categories: tools
+redirect_from:
+  - /all/punto_switcher_to_every_home/
 tags: >
   punto switcher пунто свитчер свичер настройка как пользоваться автозамена раскладка клавиатуры в каждый дом
 description: >
