@@ -1,7 +1,7 @@
 ---
 layout: page
 type: ContactPage
-title: «Сказать Привет!»
+title: Сказать «Привет!»
 permalink: /contacts/
 description: Контактная информация и социальные сети
 tags: привет написать контакты связь вк фейсбук твитер гитхаб
