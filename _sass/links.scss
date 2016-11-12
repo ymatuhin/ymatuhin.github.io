@@ -1,20 +1,23 @@
 a:link {
-	color: #008ACE;
+	color: #1c7cd6;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #B40EB4;
-	border-bottom-color: rgba(180, 14, 180, .5);
+	color: #ae3ec9;
+	// border-bottom-color: rgba(180, 14, 180, .5);
 }
 
 a:link:hover,
 a:visited:hover {
-	color: #CC0000;
+	color: #f03e3e;
 	-webkit-transition: 0s ease;
 	transition: 0s ease;
-	border-bottom-color: rgba(204, 0, 0, .5);
+	// border-bottom-color: rgba(204, 0, 0, .5);
 }
 
 a:link:hover,
-a:visited:hover{-webkit-transition:0s ease;transition:0s ease}
+a:visited:hover{
+	-webkit-transition:0s ease;
+	transition:0s ease;
+}

@@ -33,13 +33,7 @@ body {
 
 	font-weight: 400;
 	color: $text-color;
-	background: #f3f3f3;
-
-	&.grid {
-		background-image: linear-gradient(#eee 1px, transparent 1px);
-		background-size: 100% 1rem;
-		background-position: 0 10vh;
-	}
+	background: #f1f3f5;
 }
 
 .content {
