@@ -48,6 +48,7 @@
 		display: block;
 		line-height: 1rem;
 		padding-top: .25rem;
+		font-weight: 600;
 	}
 
 	&__item-image {
@@ -60,6 +61,7 @@
 
 	&__time {
 		margin: 0;
+		font-size: 14px;
 	}
 
 	a {
@@ -70,8 +72,9 @@
 time {
 	display: block;
 	font-family: $sans;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1rem;
-	font-style: italic;
+	// font-style: italic;
+	// opacity: .8;
 	margin-top: .5rem;
 }

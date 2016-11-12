@@ -1,5 +1,6 @@
-$sans: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$serif: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans: 'Proxima Nova', $default;
+$serif: 'Proxima Nova', $default;
 $mono: 'Fira Code', Consolas, monaco, monospace;
 
 $text-color: #262626;

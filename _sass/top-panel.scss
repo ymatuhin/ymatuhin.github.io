@@ -24,6 +24,7 @@
 		&__home-text {
 			font-size: .714285714rem; // 20px
 			line-height: 1rem;
+			font-weight: 700;
 		}
 		&__lead {
 			margin-bottom: .5rem
@@ -50,5 +51,9 @@
 
 	li + li {
 		margin-left: .5em;
+	}
+
+	strong {
+		font-weight: 600;
 	}
 }

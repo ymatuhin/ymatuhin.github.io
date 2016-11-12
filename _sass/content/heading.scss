@@ -2,9 +2,8 @@
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	font-weight: 800;
 	position: relative;
-	font-weight: 800;
+	font-weight: 900;
 	font-family: $sans;
 	max-width: $headers-max-width;
 }
@@ -33,4 +32,9 @@ h1 + *,
 h2 + *,
 h3 + * {
   margin-top: .25rem; /* 0.5 baselines */
+}
+
+h2 > sup,
+h3 > sup {
+	font-weight: 700;
 }
