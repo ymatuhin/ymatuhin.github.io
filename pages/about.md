@@ -12,7 +12,7 @@ description: >
 Мне 24&nbsp;года, я&nbsp;разрабатываю сайты и&nbsp;веб приложения **4,5&nbsp;года**.
 Люблю **минимализм** в&nbsp;дизайне и&nbsp;жизни, **оптимизировать** и&nbsp;**автоматизировать** все что попадется. Хочу сделать лучший сервис или стать партнером с&nbsp;процентной долей в&nbsp;стартапе и&nbsp;делать его лучше каждый день.
 
-По&nbsp;работе я&nbsp;разрабатываю международный проект &laquo;[Ride With Local](https://ridewithlocal.com){:rel=&rsquo;nofollow&rsquo;}&raquo; удаленно из&nbsp;Брянского офиса.
+По&nbsp;работе я&nbsp;разрабатываю международный проект [Ride With Local](https://ridewithlocal.com){:rel=&rsquo;nofollow&rsquo;} удаленно из&nbsp;Брянска.
 
 В&nbsp;свободное время изучаю и&nbsp;тестирую новые технологии и&nbsp;фичи на&nbsp;своих [проектах](/projects/), изучаю английский, [читаю книженции](/books/), ремонтирую дом и&nbsp;отдыхаю.
 
@@ -38,8 +38,3 @@ description: >
 ## Резюме
 
 [Моё резюме](/resume/) и&nbsp;[профиль на&nbsp;гитхабе](https://github.com/ymatuhin). Там&nbsp;же есть несколько проектов. Если интересен мой JavaScript код, то&nbsp;загляните в&nbsp;репозиторий [codewars](https://github.com/ymatuhin/codewars){:rel=&rsquo;nofollow&rsquo;}.
-
-
-## Почему мы&nbsp;должны взять тебя?
-
-Не&nbsp;должны. Прием на&nbsp;работу&nbsp;&mdash; взаимовыгодное предложение. Я&nbsp;предлагаю свои умения и&nbsp;навыки, чтобы развивать и&nbsp;разработывать ваш продукт. Вы&nbsp;&mdash; денежное вознаграждение, чай, кофе, печеньки и&nbsp;дружный коллектив. Поэтому если вам нужен опытный фронтенд разработчик, пишите мне на&nbsp;почту [ym@ymatuhin.ru](mailto:ym@ymatuhin.ru){:rel=&rsquo;nofollow&rsquo;}

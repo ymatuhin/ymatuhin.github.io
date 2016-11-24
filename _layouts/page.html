@@ -23,5 +23,10 @@ is_page: true
 	</div>
 </div>
 
+{% if page.with_comments %}
+	<div class="vspace"></div>
+	{% include media-comments.html %}
+{% endif %}
+
 <div class="vspace"></div>
 {% include footer.html %}

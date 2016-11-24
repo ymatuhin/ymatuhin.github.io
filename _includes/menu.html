@@ -41,11 +41,13 @@
 			<li><a href="/about/">Обо мне</a>
 		{% endif %}
 
-		{% if page.url == "/contacts/" %}
-			<li><strong>Сказать «Привет!»</strong>
-		{% else %}
-			<li><a href="/contacts/">Сказать «Привет!»</a>
-		{% endif %}
+		{% unless page.url == "/" %}
+			{% if page.url == "/contacts/" %}
+				<li><strong>Сказать «Привет!»</strong>
+			{% else %}
+				<li><a href="/contacts/">Сказать «Привет!»</a>
+			{% endif %}
+		{% endunless %}
 	</ul>
 </div>
 <div class="vspace"></div>
