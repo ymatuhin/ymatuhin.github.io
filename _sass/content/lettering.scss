@@ -15,3 +15,15 @@
 
 .l_skobka { margin-left: -.28em }
 .skobka { margin-right: .28em }
+
+pre, code {
+	.elka,
+	.skobka {
+		font-size: 0;
+	}
+
+	.l_elka,
+	.l_skobka {
+		margin: 0;
+	}
+}
