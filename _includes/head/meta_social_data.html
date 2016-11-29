@@ -1,0 +1,47 @@
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+
+{% if page.image %}
+	<meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
+	<link rel="image_src" href="{{ site.url }}/assets/img/{{ page.image }}">
+{% endif %}
+
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{{ page_title }}">
+<meta itemprop="description" content="{{ page_description }}">
+
+{% if page.image %}
+	<meta itemprop="image" content="{{ site.url }}/assets/img/{{ page.image }}">
+{% endif %}
+
+<!-- Twitter Card data -->
+{% if page.image %}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
+	<meta name="twitter:image:alt" content="{{ page_title }}">
+{% else %}
+	<meta name="twitter:card" content="summary">
+{% endif %}
+<meta name="twitter:site" content="@ymatuhin">
+<meta name="twitter:creator" content="@ymatuhin">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:type" content="article">
+{% if page.image %}
+	<meta property="og:image" content="{{ site.url }}/assets/img/{{ page.image }}">
+{% endif %}
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:description" content="{{ page_description }}">
+<meta property="og:site_name" content="Юрий Матюхин">
+
+{% if page.date %}
+	<meta property="article:published_time" content="{{ page.date|date_to_xmlschema }}">
+{% else %}
+	<meta property="article:published_time" content="{{ site.time|date_to_xmlschema }}">
+{% endif %}
