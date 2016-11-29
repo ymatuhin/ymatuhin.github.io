@@ -2,7 +2,7 @@
 layout: post
 title: Код. Как удалить дубликаты из массива
 categories: front-end
-tags: [ jquery, width, getBoundingClientRect, округление ]
+tags: [ советы, код, дубликаты, массив, JavaScript, array, es5, es6 ]
 social_image: tips/array_uniq.jpg
 social_width: 1440
 social_height: 480
