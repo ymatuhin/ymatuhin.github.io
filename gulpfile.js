@@ -3,7 +3,7 @@ var logger = require('gulp-logger');
 var responsive = require('gulp-responsive');
 
 gulp.task('default', function() {
-	return gulp.src('_site/assets/original-images/jquery/*.{jpg,png,jpeg}')
+	return gulp.src('_site/assets/original-images/tips/*.{jpg,png,jpeg}')
 		.pipe(logger({
 			// before: 'Starting Gzip...',
 			// after: 'Gzipping complete!',
@@ -38,5 +38,5 @@ gulp.task('default', function() {
 			skipOnEnlargement: true,
 			withMetadata: false,
 		}))
-		.pipe(gulp.dest('assets/img/jquery'));
+		.pipe(gulp.dest('assets/img/tips'));
 });
