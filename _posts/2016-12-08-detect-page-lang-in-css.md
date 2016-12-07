@@ -14,3 +14,5 @@ tags: [css, lang]
     /* стили для русской локали */
 }
 ```
+
+Поддержка IE7+, подробнее на [caniuse](http://caniuse.com/#search=%3Alang)
