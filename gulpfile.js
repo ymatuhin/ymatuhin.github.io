@@ -1,9 +1,11 @@
-var gulp = require('gulp');
-var logger = require('gulp-logger');
-var responsive = require('gulp-responsive');
+const gulp = require('gulp')
+const logger = require('gulp-logger')
+const responsive = require('gulp-responsive')
+const folder = `js30`
 
 gulp.task('default', function() {
-	return gulp.src('_site/assets/original-images/tips/*.{jpg,png,jpeg}')
+	return gulp
+		.src(`_site/assets/original-images/${folder}/*.{jpg,png,jpeg}`)
 		.pipe(logger({
 			// before: 'Starting Gzip...',
 			// after: 'Gzipping complete!',
@@ -38,5 +40,5 @@ gulp.task('default', function() {
 			skipOnEnlargement: true,
 			withMetadata: false,
 		}))
-		.pipe(gulp.dest('assets/img/tips'));
+		.pipe(gulp.dest(`assets/${folder}/js30`));
 });
