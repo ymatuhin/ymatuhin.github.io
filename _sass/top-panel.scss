@@ -1,6 +1,7 @@
 @import 'variables';
 
 .top-panel {
+	position: relative;
 	&__home-text {
 		font-family: $sans;
 	}
