@@ -1,16 +1,15 @@
-<address class="footer">
-	{% include next-prev.html %}
+<h4>Копирайт</h4>
+<p>
+	©
+	{% if page.url != "/" %}<a href="/">{% endif %}
+	Юрий Матюхин{% if page.url != "/" %}</a>{% endif %}, 2013 — 2017
+	<br>
+	Эл. почта: <a rel="nofollow" href="mailto:ym@ymatuhin.ru" class="dotted">ym@ymatuhin.ru</a>,
+	твиттер: <a rel="nofollow" href="https://twitter.com/ymatuhin">@ymatuhin</a>
+</p>
 
-    {% include search.html %}
-    <br>
-
-    <p>© <span>Юрий Матюхин</span>, 2013 — 2016</p>
-    <p>
-        Эл. почта: <a rel="nofollow" href="mailto:ym@ymatuhin.ru" class="dotted">ym@ymatuhin.ru</a>,
-        твиттер: <a rel="nofollow" href="https://twitter.com/ymatuhin">@ymatuhin</a>
-    </p>
-
-    {% if page.tags %}
-        <p class="tags wrap-medium-box">{% for tag in page.tags %} {{ tag }}{% endfor %}</p>
-    {% endif %}
-</address>
+<p class="tags">
+{% if page.tags %}
+	{% for tag in page.tags %} {{ tag }}{% endfor %}
+{% endif %}
+</p>

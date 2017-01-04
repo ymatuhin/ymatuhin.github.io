@@ -1,15 +1,18 @@
 img {
 	vertical-align: middle;
 	max-width: 100%;
-	background: #fff;
 }
 
 amp-img {
-	border: 1px solid $gray-border;
+	border: 1px solid #1f2a2f;
 	&.noborder { border: 0; }
 }
 
 .media-table {
+	.container & {
+		max-width: 100%;
+	}
+
 	td, th {
 		border: 0;
 		padding: 0;
@@ -26,12 +29,21 @@ figure {
 		margin: 0;
 	}
 	figcaption {
-		color: rgba(0, 0, 0, .5);
+		color: #49656f;
 		text-align: right;
+		margin-top: .25rem;
+		font-size: 16px;
+		line-height: 1;
 
-		font-size: (15rem/28);
-		line-height: 1rem;
-		font-family: 'PT Sans', "Helvetica Neue", Arial, Helvetica, sans-serif;
+		&::before {
+			content: '/*';
+			padding-right: 1ch;
+		}
+
+		&::after {
+			content: '*/';
+			padding-left: 1ch;
+		}
 	}
 	span {
 		display: none;

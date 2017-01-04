@@ -27,7 +27,7 @@ social_alt: Atom
 
 Открытый файл html в Atom потом Sublime.
 
-<div class="wrap-large clearfix">
+<div class="full-width clearfix">
 	<div class="column-50">
 		{%
 			include media-image.html
@@ -52,7 +52,7 @@ social_alt: Atom
 
 Окно настроек в редакторах кода Atom и Sublime.
 
-<div class="wrap-large clearfix">
+<div class="full-width clearfix">
 	<div class="column-50">
 		{%
 			include media-image.html

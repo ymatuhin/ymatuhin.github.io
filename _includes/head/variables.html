@@ -1,5 +1,9 @@
 <!-- Title -->
-{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' | strip_html | strip_newlines }} / {{ site.title | replace: ' ', ' ' }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+{% if page.url == "/" %}
+	{% capture page_title %}Юрий Матюхин, фронтенд разработчик{% endcapture %}
+{% else %}
+	{% capture page_title %}{% if page.title %}{{ page.title | replace: ' ', ' ' | strip_html | strip_newlines }} / {{ site.title | replace: ' ', ' ' }}{% else %}{{ site.title | replace: ' ', ' ' }}{% endif %}{% endcapture %}
+{% endif %}
 
 <!-- Description -->
 {% capture page_description %}{% if page.description %}{{ page.description | replace: ' ', ' ' | strip_html }}{% else %}{{ page.excerpt | strip_html | replace: ' ', ' ' | strip_newlines | truncate: 160 }}{% endif %}{% endcapture %}

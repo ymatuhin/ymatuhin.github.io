@@ -4,12 +4,23 @@
 		{% include head/head.html %}
 	</head>
 	<body>
-		{{ content }}
+<!--
+		{%
+			include media-image.html
+			url="vivaldi/fast_commands.png"
+			caption="Vivaldi – быстрые команды"
+			width="563"
+			height="396"
+		%} -->
 
-		<amp-font
+		<div class="container">
+			{{ content }}
+		</div>
+
+		<!-- <amp-font
 			layout="nodisplay"
 			font-family="Proxima Nova"
-			timeout="3000"></amp-font>
+			timeout="3000"></amp-font> -->
 
 		<amp-pixel src="https://mc.yandex.ru/watch/28017147"></amp-pixel>
 	</body>

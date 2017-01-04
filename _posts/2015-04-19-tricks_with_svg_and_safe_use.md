@@ -10,6 +10,7 @@ social_image: svg/svg_logo.png
 social_width: 400
 social_height: 200
 social_alt: Логотип SVG
+_noborder: true
 ---
 
 {% include media-post-image.html %}

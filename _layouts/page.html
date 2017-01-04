@@ -3,10 +3,7 @@ layout: default
 is_page: true
 ---
 
-<div role="main" class="main">
-	{% include menu.html small="true" %}
-
-	<amp-ad
+	<!-- <amp-ad
 		class="ads"
 		width="728"
 		height="90"
@@ -14,19 +11,21 @@ is_page: true
 		type="adsense"
 		data-ad-client="ca-pub-6430039911615607"
 		data-ad-slot="4852376176">
-	</amp-ad>
-	{% include pubdate.html %}
-	<h1>{{ page.title }}</h1>
+	</amp-ad> -->
 
-	<div class="content">
-		{{ content | replace:'«','<span class="elka"></span><span class="l_elka">«</span>' | replace:'(','<span class="skobka"> </span><span class="l_skobka">(</span>' }}
-	</div>
-</div>
+<h1>{{ page.title }}</h1>
+{% include pubdate.html %}
+{{ content | replace:'«','<span class="elka"></span><span class="l_elka">«</span>' | replace:'(','<span class="skobka"> </span><span class="l_skobka">(</span>' }}
 
-{% if page.with_comments %}
-	<div class="vspace"></div>
+{% if layout.is_post %}
+	<h4>Комментарии</h4>
 	{% include media-comments.html %}
 {% endif %}
 
-<div class="vspace"></div>
+{% include menu.html %}
+
+{% unless page.is_blog %}
+	{% include last-posts.html %}
+{% endunless %}
+
 {% include footer.html %}

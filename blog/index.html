@@ -1,31 +1,30 @@
 ---
 layout: page
-title: Блог фронтенд разработчика
 is_blog: true
+title: Блог фронтендера
 redirect_from:
+  - /blog/1/
+  - /blog/2/
+  - /blog/3/
+  - /blog/4/
+  - /blog/5/
+  - /blog/6/
+  - /blog/7/
+  - /blog/8/
+  - /blog/9/
   - /front-end/
   - /tools/
   - /all/
 ---
 
-<ul class="posts">
-{% for post in paginator.posts %}
-	{% include post.html %}
-{% endfor %}
-</ul>
-
-<!-- Pagination links -->
-{% if paginator.previous_page or paginator.next_page %}
-<p class="next-prev">
-	{% if paginator.previous_page %}
-		<a class="next-prev__link next-prev__link_prev" href="{{ paginator.previous_page_path }}">
-			↤ Предыдущая страница
-		</a>
-	{% endif %}
-	{% if paginator.next_page %}
-		<a class="next-prev__link next-prev__link_next" href="{{ paginator.next_page_path }}">
-			Следующая страница ↦
-		</a>
-	{% endif %}
+<p>
+	Когда не ленюсь, то пишу сюда заметки. Если у вас есть идея для статьи, или у вас есть трудности с чем-то — <a href="/contacts/">напишите мне</a>. Я постараюсь вам помочь, а может напишу еще одну статью.
 </p>
-{% endif %}
+
+<ol reversed>
+{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+</ol>

@@ -1,7 +1,7 @@
-$default: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$sans: 'Proxima Nova', $default;
-$serif: 'Proxima Nova', $default;
+$default: Helvetica, Arial, sans-serif;
 $mono: 'Fira Code', Consolas, monaco, monospace;
+$sans: $mono;
+$serif: $mono;
 
 $text-color: #262626;
 $text-max-width: 660px;

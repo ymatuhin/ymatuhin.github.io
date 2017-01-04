@@ -5,8 +5,6 @@ url: "https://ymatuhin.ru"
 permalink: /:categories/:title/
 excerpt_separator: <!-- more -->
 safe: true
-paginate: 18
-paginate_path: "/blog/:num/"
 sass:
   style: compressed
 safe: true

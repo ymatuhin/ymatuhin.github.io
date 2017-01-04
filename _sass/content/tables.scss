@@ -3,9 +3,9 @@ table {
 	border-spacing: 0;
 	margin-bottom: 1rem;
 }
+
 th, td {
 	padding: .5rem;
-	line-height: .5rem;
 
 	-ms-word-break: break-all;
 	word-break: break-all;
@@ -16,6 +16,7 @@ th, td {
 	-moz-hyphens: auto;
 	hyphens: auto;
 }
+
 td, th {
 	border: 1px solid $gray-border;
 }

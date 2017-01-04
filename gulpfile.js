@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const logger = require('gulp-logger')
 const responsive = require('gulp-responsive')
-const folder = `js30`
+const folder = `jekyll`
 
 gulp.task('default', function() {
 	return gulp
@@ -40,5 +40,5 @@ gulp.task('default', function() {
 			skipOnEnlargement: true,
 			withMetadata: false,
 		}))
-		.pipe(gulp.dest(`assets/${folder}/js30`));
+		.pipe(gulp.dest(`assets/img/${folder}`));
 });

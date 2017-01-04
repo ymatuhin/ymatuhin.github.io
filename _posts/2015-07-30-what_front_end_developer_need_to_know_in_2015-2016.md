@@ -66,7 +66,7 @@ social_alt: Какими знаниями должен обладать фрон
 
 * **20** — JQuery
 * **3** — underscore.js
-* **<**/b> у Lo-Dash, MooTools, Prototype
+* **2** у Lo-Dash, MooTools, Prototype
 
 ## JS фреймворки
 
@@ -76,7 +76,7 @@ social_alt: Какими знаниями должен обладать фрон
 * **7** — React.js
 * **7** — Ember.js
 * **4** — Knockout
-* **<**/b> у cordova, extJS
+* **2** у cordova, extJS
 
 
 ## Модульность

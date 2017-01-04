@@ -1,19 +1,29 @@
 a:link {
-	color: #1c7cd6;
+	color: #89ddff;
 	text-decoration: none;
+
+	&:hover {
+		border-bottom: 1px solid rgba(137, 221, 255, .5);
+	}
 }
 
 a:visited {
-	color: #ae3ec9;
-	// border-bottom-color: rgba(180, 14, 180, .5);
+	color: #c792ea;
+
+	&:hover {
+		border-bottom-color: rgba(199, 146, 234, .5);
+	}
 }
 
 a:link:hover,
 a:visited:hover {
-	color: #f03e3e;
+	color: #f77669;
 	-webkit-transition: 0s ease;
 	transition: 0s ease;
-	// border-bottom-color: rgba(204, 0, 0, .5);
+
+	&:hover {
+		border-bottom-color: rgba(247, 118, 105, .5);
+	}
 }
 
 a:link:hover,

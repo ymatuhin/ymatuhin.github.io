@@ -1,63 +1,22 @@
-<div class="top-panel {% if include.small %}top-panel_size_small{% endif %}">
-	{% if include.small %}
-		<a href="/" class="top-panel__home-link">
-			<strong class="top-panel__home-text">Юрий Матюхин</strong>
-		</a>
-
-		<amp-ad
-			class="ads-right"
-			width="300"
-			height="250"
-			layout="responsive"
-			type="adsense"
-			data-ad-client="ca-pub-6430039911615607"
-			data-ad-slot="3471056171">
-		</amp-ad>
-	{% else %}
-		<h1 class="top-panel__home-text">Юрий Матюхин</h1>
+<h4>Меню</h4>
+<ul class="f">
+	{% if page.url != "/blog/" %}
+		<li><a href="/blog/">Заметки</a>
 	{% endif %}
 
-	{% if page.url == "/" %}
-	<p class="top-panel__lead">
-		Я&nbsp;фронтенд разработчик, верстаю и&nbsp;программирую сайты и&nbsp;сервисы. Интересуюсь архитектурой приложений, дизайном и&nbsp;текстом.
-		Хочу стать одним из&nbsp;основателей проекта с&nbsp;посещаемостью 1&nbsp;000&nbsp;000&nbsp;в месяц. Если у&nbsp;вас такой проект или идея, то&nbsp;{% if page.url == "/contacts/" %}давайте познакомимся.
-		{% else %}<a href="/contacts/">давайте познакомимся</a>.
-		{% endif %}
-	</p>
+	{% if page.url != "/projects/" %}
+		<li><a href="/projects/">Проекты</a>
 	{% endif %}
 
-	<ul class="top-menu">
-		{% if page.url == "/blog/" %}
-			<li><strong>Заметки</strong>
-		{% else %}
-			<li><a href="/blog/">Заметки</a>
-		{% endif %}
+	{% if page.url != "/resume/" %}
+		<li><a href="/resume/">Резюме</a>
+	{% endif %}
 
-		{% if page.url == "/projects/" %}
-			<li><strong>Проекты</strong>
-		{% else %}
-			<li><a href="/projects/">Проекты</a>
-		{% endif %}
+	{% if page.url != "/about/" %}
+		<li><a href="/about/">Обо мне</a>
+	{% endif %}
 
-		{% if page.url == "/resume/" %}
-			<li><strong>Резюме</strong>
-		{% else %}
-			<li><a href="/resume/">Резюме</a>
-		{% endif %}
-
-		{% if page.url == "/about/" %}
-			<li><strong>Обо мне</strong>
-		{% else %}
-			<li><a href="/about/">Обо мне</a>
-		{% endif %}
-
-		{% unless page.url == "/" %}
-			{% if page.url == "/contacts/" %}
-				<li><strong>Сказать «Привет!»</strong>
-			{% else %}
-				<li><a href="/contacts/">Сказать «Привет!»</a>
-			{% endif %}
-		{% endunless %}
-	</ul>
-</div>
-<div class="vspace"></div>
+	{% if page.url != "/contacts/" %}
+		<li><a href="/contacts/">Сказать «Привет!»</a>
+	{% endif %}
+</ul>

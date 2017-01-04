@@ -5,7 +5,6 @@ title: Сказать «Привет!»
 permalink: /contacts/
 description: Контактная информация и социальные сети
 tags: привет написать контакты связь вк фейсбук твитер гитхаб
-with_comments: true
 ---
 
 Привет!
@@ -20,8 +19,6 @@ with_comments: true
 * [Твитер][3]
 * [Гитхаб][4]
 * [Фейсбук][2]
-
-Или просто пишите в комментариях ⬇️
 
 [1]: https://vk.com/ymatuhin
 [2]: https://www.facebook.com/ym.ymatuhin

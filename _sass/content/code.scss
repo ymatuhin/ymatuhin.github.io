@@ -3,10 +3,16 @@ pre {
 	vertical-align: top;
 	margin: 0;
 	padding: .5em 1em;
-	background: #fff;
+	background: #3a4d55;
+	background: #1f2a2f;
 	border-radius: 3px;
-	border: 1px solid $gray-border;
+	// border: 1px solid $gray-border;
+
+	.container & {
+		max-width: 100%;
+	}
 }
+
 
 code,
 pre {
@@ -15,10 +21,11 @@ pre {
 }
 
 code {
-	background: #fff;
+	background: #3a4d55;
+	background: #1f2a2f;
 	border-radius: 3px;
 	padding: 1px 5px;
-	border: 1px solid $gray-border;
+	// border: 1px solid $gray-border;
 }
 
 pre code {

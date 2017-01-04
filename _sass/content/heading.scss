@@ -5,33 +5,30 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	font-weight: 900;
 	font-family: $sans;
-	max-width: $headers-max-width;
+
+	.container & {
+		max-width: 20rem;
+	}
 }
 
-h1 {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-
-h2 {
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-}
-h3 {
-	font-size: 1rem;
-	line-height: 1.5rem;
-}
+h1 { font-size: 1rem; }
+h2 { font-size: .888888889rem; }
+h3 { font-size: .777777778rem; }
+h4, h5, h6 { font-size: .666666667rem; }
 
 
-* + h2,
-* + h3 {
-  margin-top: 1.75rem; /* 1.5 baselines */
+* + h1, * + h2, * + h3 {
+	margin-top: 1.5rem; /* 1.5 baselines */
 }
 
-h1 + *,
-h2 + *,
-h3 + * {
-  margin-top: .25rem; /* 0.5 baselines */
+* + h4, * + h5, * + h6 {
+	margin-top: 5rem;
+}
+
+h1 + *, h2 + *,
+h3 + *, h4 + *,
+h5 + *, h6 + * {
+  margin-top: .5rem; /* 0.5 baselines */
 }
 
 h2 > sup,

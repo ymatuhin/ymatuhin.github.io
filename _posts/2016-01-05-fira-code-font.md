@@ -74,49 +74,49 @@ social_height: 340
 
 ## Примеры шрифта
 
-#### Ruby
+### Ruby
 {% include media-image.html
 	url="fira-code/ruby.png"
 	width="1836"
 	height="417"
 	%}
 
-#### JavaScript
+### JavaScript
 {% include media-image.html
 	url="fira-code/javascript.png"
 	width="1836"
 	height="745"
 	%}
 
-#### Erlang
+### Erlang
 {% include media-image.html
 	url="fira-code/erlang.png"
 	width="1836"
 	height="803"
 	%}
 
-#### Go
+### Go
 {% include media-image.html
 	url="fira-code/go.png"
 	width="1836"
 	height="502"
 	%}
 
-#### Haskell
+### Haskell
 {% include media-image.html
 	url="fira-code/haskell.png"
 	width="1836"
 	height="360"
 	%}
 
-#### В браузере
+### В браузере
 {% include media-image.html
 	url="fira-code/in-browser.png"
 	width="576"
 	height="96"
 	%}
 
-#### В редакторе
+### В редакторе
 {% include media-image.html
 	url="fira-code/in-editor.png"
 	width="756"
