@@ -5,6 +5,11 @@
 html {
 	// 1rem = 30px
 	font-size: 27px;
+
+	@media (max-width: 480px) {
+		font-size: 24px;
+	}
+
 	-webkit-text-size-adjust: 100%;
 	font-variant-ligatures: contextual;
 	text-rendering: optimizeLegibility;
@@ -14,7 +19,7 @@ html {
 
 body {
 	// 18/27
-	font: 18px/1.5 $serif;
+	font: .666666667rem/1.5 $serif;
 	color: #CDD3DE;
 	background: #253237;
 }
@@ -24,6 +29,13 @@ body {
 	margin: 10vh 10vw;
 	max-width: 80%;
 	max-width: 80vw;
+
+	@media (max-width: 480px) {
+		margin: 5%;
+		margin: 5vh 5vw;
+		max-width: 90%;
+		max-width: 90vw;
+	}
 
 	& > * {
 		max-width: 24rem; // 648
