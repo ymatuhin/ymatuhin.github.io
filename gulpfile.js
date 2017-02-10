@@ -1,11 +1,11 @@
 const gulp = require('gulp')
 const logger = require('gulp-logger')
 const responsive = require('gulp-responsive')
-const folder = `jekyll`
+const folder = `.`
 
 gulp.task('default', function() {
 	return gulp
-		.src(`_site/assets/original-images/${folder}/*.{jpg,png,jpeg}`)
+		.src(`assets/original-images/${folder}/*.{jpg,png,jpeg}`)
 		.pipe(logger({
 			// before: 'Starting Gzip...',
 			// after: 'Gzipping complete!',
