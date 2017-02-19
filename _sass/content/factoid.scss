@@ -1,10 +1,12 @@
+.pos-r {
+	position: relative;
+}
 .factoid {
 	position: absolute;
 	width: 160px;
-	left: 660px;
+	left: 24rem;
 	padding: 0;
 	font-size: .888888889em;
-	color: rgba(49, 49, 49, .5);
 	margin-left: 2rem;
 
 	.big {
