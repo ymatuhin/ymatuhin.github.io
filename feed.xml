@@ -5,8 +5,8 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Mar 2017 12:13:45 +0300</pubDate>
-    <lastBuildDate>Wed, 15 Mar 2017 12:13:45 +0300</lastBuildDate>
+    <pubDate>Wed, 15 Mar 2017 15:57:48 +0300</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2017 15:57:48 +0300</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -57,6 +57,7 @@
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wmaurer.join-lines&quot;&gt;Join lines&lt;/a&gt; — фиксит не работающее сочетание &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + J&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark&quot;&gt;Atom One Dark Theme&lt;/a&gt; — привычная тема из Atom&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme&quot;&gt;Material Icon Theme&lt;/a&gt; — иконки для файлов&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate&quot;&gt;Duplicate action&lt;/a&gt; — дублирование файла/директории через контекстное меню в боковой панели (спасибо &lt;strong&gt;c01nd01r&lt;/strong&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;После этого, большинство проблема отпали сами собой.&lt;/p&gt;
@@ -78,6 +79,7 @@
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=medzhidov.hex-rgba-converter&quot;&gt;ESLint&lt;/a&gt; — линтер&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css&quot;&gt;HTML CSS Support&lt;/a&gt; — автодополнение классов в HTML&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig&quot;&gt;EditorConfig for VS Code&lt;/a&gt; — поддержка EditorConfig&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss&quot;&gt;SCSS IntelliSense&lt;/a&gt; — автодополнение для переменных в SCSS (спасибо &lt;strong&gt;c01nd01r&lt;/strong&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;Размышления-вконце&quot;&gt;Размышления в конце&lt;/h3&gt;
