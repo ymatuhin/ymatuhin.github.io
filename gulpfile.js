@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const logger = require('gulp-logger')
 const responsive = require('gulp-responsive')
-const folder = `.`
+const folder = `vscode`
 
 gulp.task('default', function() {
 	return gulp

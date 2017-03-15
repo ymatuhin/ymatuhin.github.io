@@ -5,9 +5,112 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Mar 2017 23:01:33 +0300</pubDate>
-    <lastBuildDate>Sun, 12 Mar 2017 23:01:33 +0300</lastBuildDate>
+    <pubDate>Wed, 15 Mar 2017 11:58:59 +0300</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2017 11:58:59 +0300</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>Миграция на Visual&amp;nbsp;Studio&amp;nbsp;Code</title>
+        
+            <description>
+                
+                
+	&lt;figure&gt;
+		&lt;img src=&quot;https://ymatuhin.ru/assets/img/vscode/icon-dribbble.png&quot; alt=&quot;&quot;/&gt;
+
+		
+			&lt;figcaption&gt;Альтернативная версия иконки для VS Code, автор &lt;a href='https://dribbble.com/shots/2436746-Visual-Studio-Code-replacement-icon'&gt;James Gilyead&lt;/a&gt;&lt;/figcaption&gt;
+		
+	&lt;/figure&gt;
+
+
+                
+&lt;table class=&quot;media-table&quot; width=&quot;100%&quot;&gt;
+	&lt;tr&gt;&lt;td width=&quot;800&quot;&gt;
+		&lt;figure&gt;
+			&lt;a rel=&quot;nofollow&quot; href=&quot;/assets/img/vscode/icon-dribbble.png&quot;&gt;
+				&lt;amp-img src=&quot;/assets/img/vscode/icon-dribbble.png&quot; alt=&quot;Альтернативная версия иконки для VS Code, автор &amp;lt;a href='https://dribbble.com/shots/2436746-Visual-Studio-Code-replacement-icon'&amp;gt;James Gilyead&amp;lt;/a&amp;gt;&quot; width=&quot;800&quot; height=&quot;480&quot; layout=&quot;responsive&quot; class=&quot; &quot;&gt;
+				&lt;/amp-img&gt;
+			&lt;/a&gt;
+
+			
+				&lt;figcaption&gt;Альтернативная версия иконки для VS Code, автор &lt;a href=&quot;https://dribbble.com/shots/2436746-Visual-Studio-Code-replacement-icon&quot;&gt;James Gilyead&lt;/a&gt;&lt;/figcaption&gt;
+			
+		&lt;/figure&gt;
+	&lt;/td&gt;&lt;td&gt; &amp;nbsp; &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Уже 2 недели я использую &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt; для работы. Он пришел на замену, моему любимому, атому. В этой статье я расскажу почему так произошло и поделюсь впечатлениями.&lt;/p&gt;
+
+&lt;h2 id=&quot;Почему-захотелось-перейти&quot;&gt;Почему захотелось перейти&lt;/h2&gt;
+
+&lt;p&gt;Основная причина перейти на другой текстовый редактор — &lt;strong&gt;ужасная тормознутость&lt;/strong&gt; Atom. Случайно откроешь не тот файл, который чуть больше половины мегабайта и снова приходится открывать диспетчер задач.&lt;/p&gt;
+
+&lt;p&gt;Вторая же причина — у VS Code встроенный IntelliSense. Т.е. он могет как крутая IDE оставаясь таким же легковесным как Sublime Text.&lt;/p&gt;
+
+&lt;h3 id=&quot;Что-мешало-миграции&quot;&gt;Что мешало миграции&lt;/h3&gt;
+
+&lt;p&gt;Самая большая проблема — нужно привыкать к новым горячим клавишам (хоткеям). Именно это мне помешало перейти на VS Code пол года назад. В этот раз я основательно подготовился и нашел плагины, которые делают VS Code похожим на Atom:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings&quot;&gt;Atom keymap&lt;/a&gt; — переносит привычные сочетания из Atom в VS Code. Автор плагина — Microsoft. Как же я рад что они сделали это.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wmaurer.join-lines&quot;&gt;Join lines&lt;/a&gt; — фиксит не работающее сочетание &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + J&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark&quot;&gt;Atom One Dark Theme&lt;/a&gt; — привычная тема из Atom&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme&quot;&gt;Material Icon Theme&lt;/a&gt; — иконки для файлов&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;После этого, большинство проблема отпали сами собой.&lt;/p&gt;
+
+&lt;h3 id=&quot;Мои-расширения-под-vscode&quot;&gt;Мои расширения под VS Code&lt;/h3&gt;
+
+&lt;p&gt;Помимо описанных выше, я так-же установил:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring&quot;&gt;Babel ES6/ES7&lt;/a&gt; — подсветка es6/es7&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify&quot;&gt;Beautify&lt;/a&gt; — форматирование документа, взято исключительно из-за параметра &lt;code class=&quot;highlighter-rouge&quot;&gt;wrap_attributes&lt;/code&gt;, который переносит html аттрибуты на новую строчку&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=robinbentley.sass-indented&quot;&gt;Sass&lt;/a&gt; — думаю тут все понятно&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense&quot;&gt;Path Intellisense&lt;/a&gt; — автодополнение для путей к файлам&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode&quot;&gt;Prettier — JavaScript formatter&lt;/a&gt; — форматирование при сохранении, временно требуется для NodeJS курсов&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager&quot;&gt;Project Manager&lt;/a&gt; — менеджер проектов, такой-же как в Atom&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize&quot;&gt;Colorize&lt;/a&gt; — подсветка цветов&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css&quot;&gt;Custom CSS and JS Loader&lt;/a&gt; — подгрузка своего CSS и JS для изменений внутри VS Code&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint&quot;&gt;Hex-rgba converter&lt;/a&gt; — конвертер цветов&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=medzhidov.hex-rgba-converter&quot;&gt;ESLint&lt;/a&gt; — линтер&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css&quot;&gt;HTML CSS Support&lt;/a&gt; — автодополнение классов в HTML&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig&quot;&gt;EditorConfig for VS Code&lt;/a&gt; — поддержка EditorConfig&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;Размышления-вконце&quot;&gt;Размышления в конце&lt;/h3&gt;
+
+&lt;p&gt;Редактором VS Code я доволен. Думаю что всем кому не подошел Atom, подойдет VS Code. Который исправил все проблемы, которые были в атоме и доказал что проблема не в лагучем Electron (читай JavaScript).&lt;/p&gt;
+
+&lt;p&gt;Если у вас есть чем дополнить статью или вы хотите поделиться вашим опытом использования этого редактора — милости прошу в комментарии.&lt;/p&gt;
+
+&lt;p&gt;Спасибо за внимание.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/tools/migrate-to-vs-studio-code/&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Wed, 15 Mar 2017 00:00:00 +0300</pubDate>
+        <link>https://ymatuhin.ru/tools/migrate-to-vs-studio-code/</link>
+        <guid isPermaLink="true">https://ymatuhin.ru/tools/migrate-to-vs-studio-code/</guid>
+        
+        <category>vscode</category>
+        
+        <category>visual studio code</category>
+        
+        <category>atom</category>
+        
+        <category>текстовый редактор</category>
+        
+        <category>редактор кода</category>
+        
+        
+        <category>tools</category>
+        
+      </item>
     
       <item>
         <title>Челендж JavaScript30</title>
@@ -685,72 +788,6 @@
         <category>забота</category>
         
         <category>псевдозабота</category>
-        
-        
-        <category>front-end</category>
-        
-      </item>
-    
-      <item>
-        <title>Обновляемся до Jekyll v3.x</title>
-        
-            <description>
-                
-                
-	&lt;figure&gt;
-		&lt;img src=&quot;https://ymatuhin.ru/assets/img/jekyll/jekyll-logo.png&quot; alt=&quot;&quot;/&gt;
-
-		
-			&lt;figcaption&gt;Логотип Jekyll&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;
-
-
-                &lt;p&gt;Релиз третьей версии генератора статических сайтов Jekyll прошел 27 октября 2015 года. А 1 февраля 2016 года GitHub Pages &lt;a href=&quot;https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0&quot; rel=&quot;nofollow&quot;&gt;официально поддерживают&lt;/a&gt; Jekyll 3. В тот момент я захотел перевести блог на новую версию и прикрутить к нему Gulp.&lt;/p&gt;
-
-&lt;table class=&quot;media-table&quot; width=&quot;100%&quot;&gt;
-	&lt;tr&gt;&lt;td width=&quot;960&quot;&gt;
-		&lt;figure&gt;
-			&lt;a rel=&quot;nofollow&quot; href=&quot;/assets/img/jekyll/jekyll-logo.png&quot;&gt;
-				&lt;amp-img src=&quot;/assets/img/jekyll/jekyll-logo.png&quot; alt=&quot;Логотип Jekyll&quot; width=&quot;960&quot; height=&quot;480&quot; layout=&quot;responsive&quot; class=&quot; noborder&quot;&gt;
-				&lt;/amp-img&gt;
-			&lt;/a&gt;
-
-			
-				&lt;figcaption&gt;Логотип Jekyll&lt;/figcaption&gt;
-			
-		&lt;/figure&gt;
-	&lt;/td&gt;&lt;td&gt; &amp;nbsp; &lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;В тот момент я много работал. А освободился только пару дней назад и решил таки обновить у себя Jekyll. Что из этого вышло и стоит ли обновляться я расскажу в этой статье.&lt;/p&gt;
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/migrate-to-jekyll-3/&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Mon, 21 Mar 2016 00:00:00 +0300</pubDate>
-        <link>https://ymatuhin.ru/front-end/migrate-to-jekyll-3/</link>
-        <guid isPermaLink="true">https://ymatuhin.ru/front-end/migrate-to-jekyll-3/</guid>
-        
-        <category>jekyll</category>
-        
-        <category>генератор статических сайтов</category>
-        
-        <category>github</category>
-        
-        <category>обновление</category>
-        
-        <category>миграция</category>
-        
-        <category>markdown</category>
-        
-        <category>kramdown</category>
-        
-        <category>rouge</category>
-        
-        <category>pigments</category>
         
         
         <category>front-end</category>
