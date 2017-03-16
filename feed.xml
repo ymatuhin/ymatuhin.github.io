@@ -5,8 +5,8 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Mar 2017 10:19:13 +0300</pubDate>
-    <lastBuildDate>Thu, 16 Mar 2017 10:19:13 +0300</lastBuildDate>
+    <pubDate>Thu, 16 Mar 2017 13:11:39 +0300</pubDate>
+    <lastBuildDate>Thu, 16 Mar 2017 13:11:39 +0300</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -44,7 +44,7 @@
 
 &lt;h2 id=&quot;Почему-захотелось-перейти&quot;&gt;Почему захотелось перейти&lt;/h2&gt;
 
-&lt;p&gt;Основная причина перейти на другой текстовый редактор — &lt;strong&gt;ужасная тормознутость&lt;/strong&gt; Atom. Случайно откроешь не тот файл, который чуть больше половины мегабайта и снова приходится открывать диспетчер задач.&lt;/p&gt;
+&lt;p&gt;Основная причина перейти на другой текстовый редактор — &lt;em&gt;ужасная тормознутость&lt;/em&gt; Atom. Случайно откроешь не тот файл, который чуть больше половины мегабайта и снова приходится открывать диспетчер задач.&lt;/p&gt;
 
 &lt;p&gt;Вторая же причина — у VS Code встроенный IntelliSense. Т.е. он могет как крутая IDE оставаясь таким же легковесным как Sublime Text.&lt;/p&gt;
 
@@ -57,7 +57,7 @@
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wmaurer.join-lines&quot;&gt;Join lines&lt;/a&gt; — фиксит не работающее сочетание &lt;code class=&quot;highlighter-rouge&quot;&gt;CMD + J&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark&quot;&gt;Atom One Dark Theme&lt;/a&gt; — привычная тема из Atom&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme&quot;&gt;Material Icon Theme&lt;/a&gt; — иконки для файлов&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate&quot;&gt;Duplicate action&lt;/a&gt; — дублирование файла/директории через контекстное меню в боковой панели (спасибо &lt;strong&gt;c01nd01r&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate&quot;&gt;Duplicate action&lt;/a&gt; — дублирование файла/директории через контекстное меню в боковой панели (спасибо &lt;em&gt;c01nd01r&lt;/em&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;После этого, большинство проблема отпали сами собой.&lt;/p&gt;
@@ -92,10 +92,13 @@
 &lt;h4 id=&quot;Из-комментариев&quot;&gt;Из комментариев&lt;/h4&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate&quot;&gt;Duplicate action&lt;/a&gt; — дублирование файла/директории через контекстное меню в боковой панели (спасибо &lt;strong&gt;c01nd01r&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss&quot;&gt;SCSS IntelliSense&lt;/a&gt; — автодополнение для переменных в SCSS (спасибо &lt;strong&gt;c01nd01r&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Compulim.vscode-express&quot;&gt;Express&lt;/a&gt; — управление экспресс сервером (спасибо &lt;strong&gt;Владислав Алтынцев&lt;/strong&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync&quot;&gt;Settings Sync&lt;/a&gt; — синхронизация настроек (спасибо &lt;strong&gt;LeusMaximus&lt;/strong&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate&quot;&gt;Duplicate action&lt;/a&gt; — дублирование файла/директории через контекстное меню в боковой панели (спасибо &lt;em&gt;c01nd01r&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss&quot;&gt;SCSS IntelliSense&lt;/a&gt; — автодополнение для переменных в SCSS (спасибо &lt;em&gt;c01nd01r&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Compulim.vscode-express&quot;&gt;Express&lt;/a&gt; — управление экспресс сервером (спасибо &lt;em&gt;Владиславу Алтынцеву&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync&quot;&gt;Settings Sync&lt;/a&gt; — синхронизация настроек (спасибо &lt;em&gt;LeusMaximus&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=ilich8086.Untabify&quot;&gt;Untabify&lt;/a&gt; — замена табов на пробелы и наоборот (спасибо &lt;em&gt;Виталию Юрьеву&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wmaurer.vscode-jumpy&quot;&gt;Jumpy&lt;/a&gt; — прыгает по коду (спасибо &lt;em&gt;Виталию Юрьеву&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame&quot;&gt;Git blame&lt;/a&gt; — показыет кто и когда редактировал текующу строку (спасибо &lt;em&gt;Виталию Юрьеву&lt;/em&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 
 
