@@ -5,9 +5,115 @@
     <author>Юрий Матюхин</author>
     <link>https://ymatuhin.ru/</link>
     <atom:link href="https://ymatuhin.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Apr 2017 10:19:39 +0300</pubDate>
-    <lastBuildDate>Sun, 02 Apr 2017 10:19:39 +0300</lastBuildDate>
+    <pubDate>Wed, 19 Apr 2017 12:10:55 +0300</pubDate>
+    <lastBuildDate>Wed, 19 Apr 2017 12:10:55 +0300</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Связывание текстового редактора с Git</title>
+        
+            <description>
+                
+                
+
+                &lt;p&gt;При редактировании сообщений комита Git по умолчанию открывает Vim. Для тех кто с ним не знаком, это может стать серьезной проблемой. Хорошо что это поведение легко изменить выполнив одну команду в терминале.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Редактор&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Команда&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Visual Studio Code&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;code --wait&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Atom&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;atom --wait&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;TextMate&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;mate -w&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;nano&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;nano -w&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Text Wrangler (Mac)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;edit -w&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sublime Text (Mac)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;subl -n -w&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sublime Text (Win, x32)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;'c:/program files (x86)/sublime text 3/sublime_text.exe' -w&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Sublime Text (Win, x64)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;'c:/program files/sublime text 3/sublime_text.exe' -w&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Notepad++ (Win, x32)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Notepad++ (Win, x64)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;'c:/program files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Kate (Linux)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;kate&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Gedit (Linux)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;gedit --wait --new-window&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Scratch (Linux)&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;scratch-text-editor&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;emacs&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;emacs&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;vim&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git config --global core.editor &quot;vim&quot;&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Я привязал VSCode к гиту. Пригождается когда нужно изменить сообщение комита &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit --amend&lt;/code&gt;.&lt;/p&gt;
+
+
+                
+                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/tools/git-default-editor/&quot;&gt;Читать дальше…&lt;/a&gt;
+            </description>
+        
+        <pubDate>Wed, 19 Apr 2017 00:00:00 +0300</pubDate>
+        <link>https://ymatuhin.ru/tools/git-default-editor/</link>
+        <guid isPermaLink="true">https://ymatuhin.ru/tools/git-default-editor/</guid>
+        
+        <category>vscode</category>
+        
+        <category>visual studio code</category>
+        
+        <category>git</category>
+        
+        <category>atom</category>
+        
+        <category>sublime</category>
+        
+        
+        <category>tools</category>
+        
+      </item>
     
       <item>
         <title>Миграция на Visual&amp;nbsp;Studio&amp;nbsp;Code</title>
@@ -738,72 +844,6 @@
         <category>front-end</category>
         
         <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>За и против. Оформление незагруженных изображений.</title>
-        
-            <description>
-                
-                
-	&lt;figure&gt;
-		&lt;img src=&quot;https://ymatuhin.ru/assets/img/broken-icons/broken-icons.png&quot; alt=&quot;&quot;/&gt;
-
-		
-			&lt;figcaption&gt;Браузеры отображают незагруженное изображение&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;
-
-
-                
-&lt;table class=&quot;media-table&quot; width=&quot;100%&quot;&gt;
-	&lt;tr&gt;&lt;td width=&quot;600&quot;&gt;
-		&lt;figure&gt;
-			&lt;a rel=&quot;nofollow&quot; href=&quot;/assets/img/broken-icons/broken-icons.png&quot;&gt;
-				&lt;amp-img src=&quot;/assets/img/broken-icons/broken-icons.png&quot; alt=&quot;Браузеры отображают незагруженное изображение&quot; width=&quot;600&quot; height=&quot;200&quot; layout=&quot;responsive&quot; class=&quot; &quot;&gt;
-				&lt;/amp-img&gt;
-			&lt;/a&gt;
-
-			
-				&lt;figcaption&gt;Браузеры отображают незагруженное изображение&lt;/figcaption&gt;
-			
-		&lt;/figure&gt;
-	&lt;/td&gt;&lt;td&gt; &amp;nbsp; &lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Восьмого марта 2016 года, Ире Адеринокун опубликовала пост «&lt;a href=&quot;http://bitsofco.de/styling-broken-images/&quot; rel=&quot;nofollow&quot;&gt;Styling Broken Images&lt;/a&gt;», в котором рассказала о способе оформления не загрузившихся изображений через псевдоэлементы &lt;code class=&quot;highlighter-rouge&quot;&gt;before/after&lt;/code&gt;. Эта статья, вызвала оживление сообщества. Её перевели на русский язык одновременно на нескольких ресурсах с задержкой около недели.&lt;/p&gt;
-
-&lt;p&gt;Если вы не знакомы с этой заметкой, то вот тезисы из неё:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Если картинка не загрузилась, в некоторых браузерах для неё работают превдоэлементы &lt;code class=&quot;highlighter-rouge&quot;&gt;before/after&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Псевдоэлементы имеют свойство &lt;code class=&quot;highlighter-rouge&quot;&gt;content&lt;/code&gt;, в которое можно передать значение атрибута.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-                
-                &lt;br&gt;&lt;a href=&quot;https://ymatuhin.ru/front-end/styling-broken-images-user-care-or-not/&quot;&gt;Читать дальше…&lt;/a&gt;
-            </description>
-        
-        <pubDate>Tue, 22 Mar 2016 00:00:00 +0300</pubDate>
-        <link>https://ymatuhin.ru/front-end/styling-broken-images-user-care-or-not/</link>
-        <guid isPermaLink="true">https://ymatuhin.ru/front-end/styling-broken-images-user-care-or-not/</guid>
-        
-        <category>css</category>
-        
-        <category>изображения</category>
-        
-        <category>оформление</category>
-        
-        <category>стилизация</category>
-        
-        <category>забота</category>
-        
-        <category>псевдозабота</category>
-        
-        
-        <category>front-end</category>
         
       </item>
     
