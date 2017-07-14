@@ -20,6 +20,7 @@ social:
     - https://www.facebook.com/ym.ymatuhin
 
 # Build settings
+safe: true
 paginate: 10
 paginate_path: "/archive/:num/"
 
