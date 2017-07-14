@@ -78,10 +78,14 @@
     ol {
         padding-left: $lh;
 
+        ul, ol {
+            margin-top: $lh/2;
+            margin-bottom: $lh/2;
+        }
     }
 
-    li * {
-        margin-bottom: $lh/2;
+    li > * + * {
+        margin-top: $lh/2;
     }
 
     li + li {
