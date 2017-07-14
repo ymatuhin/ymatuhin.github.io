@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include ads.html %}
+
+<article class="post typo white-content" itemscope itemtype="http://schema.org/BlogPosting">
+  {% include post-header.html %}
+
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>
+
+{% include comments.html %}
+<div class="email-subscribe">
+  Если вам нравятся мои заметки, можете подписаться на <a href="http://eepurl.com/bkY7hb"><b>email-рассылку</b></a> новых заметок. Раз в неделю, без спама.
+</div>
+{% include ads.html %}
+
+{% include related.html %}
+

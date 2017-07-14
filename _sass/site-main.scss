@@ -1,0 +1,10 @@
+.site-main {
+    margin-left: $sidebar-width;
+    overflow: hidden;
+
+    @media (max-width: $max-content-width) {
+        margin-left: 0;
+    }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNpdGUtbWFpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNEJBQTRCO0lBQzVCLGlCQUFpQjs7SUFFakI7UUFDSSxlQUFlO0tBQ2xCO0NBQ0oiLCJmaWxlIjoic2l0ZS1tYWluLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2l0ZS1tYWluIHtcbiAgICBtYXJnaW4tbGVmdDogJHNpZGViYXItd2lkdGg7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgIEBtZWRpYSAobWF4LXdpZHRoOiAkbWF4LWNvbnRlbnQtd2lkdGgpIHtcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDA7XG4gICAgfVxufVxuIl19 */

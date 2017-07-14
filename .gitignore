@@ -1,6 +1,3 @@
 _site
 .sass-cache
 .jekyll-metadata
-.tmp
-node_modules
-.DS_Store
