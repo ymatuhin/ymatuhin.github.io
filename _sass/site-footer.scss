@@ -12,7 +12,7 @@
 
     display: flex;
 
-    @media (max-width: $max-content-width) {
+    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;

@@ -6,6 +6,11 @@
     padding: $gap;
     // padding-left: 0;
 
+    @media (min-width: $max-content-width) and (max-height: $hide-footer-height) {
+        max-height: 100vh;
+        overflow: auto;
+    }
+
     @media (max-width: $max-content-width) {
         position: static;
         width: auto;
