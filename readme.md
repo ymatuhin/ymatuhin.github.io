@@ -1,3 +1,3 @@
-# Исходники сайта ymatuhin.ru
+# Yury Matuhin, frontend developer
 
-Все собирается из master-ветки гитхабом, отправляется через CNAME на cloudflare, а он туда на <a href="https://ymatuhin.ru">ymatuhin.ru</a>
+Hi, it's my Jekyll powered website/blog — <a href="https://ymatuhin.ru">ymatuhin.ru</a>
