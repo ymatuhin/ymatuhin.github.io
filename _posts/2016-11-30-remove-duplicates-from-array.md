@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Код. Как удалить дубликаты из массива
+description: Три простых способа
 categories: front-end
 tags: [ JS, Tips, Array ]
 image:

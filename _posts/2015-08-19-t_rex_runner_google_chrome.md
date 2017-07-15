@@ -21,7 +21,7 @@ has_youtube: true
 
 ## Как играть в динозавра
 
-> Если есть интернет: перейдите на сайт **[googledino.ru](http://googledino.ru/)**
+> Если есть интернет: перейдите на сайт **[googledino.ru](http://googledino.ru/){:class="bigger"}**
 
 Если нет, тогда:
 

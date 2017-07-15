@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Определяем язык страницы в CSS
+description: 'Через псевдокласс О_о'
 categories: front-end
 tags: [CSS, Lang, Tips]
 ---
