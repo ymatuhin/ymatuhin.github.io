@@ -25,8 +25,7 @@ image:
 У нас есть несколько вариантов использования SVG изображений в HTML странице:
 
 1. В теге `img` — `<img src="test.svg" alt="">`
-1. Через CSS свойство `background-image` — `background-image:
-  path: /assets/img/url(test.svg)`
+1. Через CSS свойство `background-image` — `background-image: url(test.svg)`
 1. Вставить svg инлайн (не рассматривается в статье)</li>
 
 Для первых двух способов есть очень изящные решения. Начнем со способа в котором мы используем тег `img`.
@@ -65,8 +64,7 @@ image:
 
 ```css
 .my-element {
-  background-image:
-  path: /assets/img/url(test.png);
+  background-image: url(test.png);
   background-image:
     linear-gradient(transparent, transparent),
     url(test.svg);
