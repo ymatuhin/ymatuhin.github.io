@@ -32,3 +32,9 @@ window.scroll({
 Без полифила работает только в Firefox, в Chrome под экспериментальным флагом. Можно добавить [полифил](http://iamdustan.com/smoothscroll/) и заработает везде. Поэтому я советую использовать именно этот метод для прокрутки на странице и отказаться от сторонних библиотек. А через пару лет можно будет и полифил выкинуть.
 
 Работает для методов `scroll`, `scrollTo`, `scrollBy`, `scrollIntoView`.
+
+### Ссылки
+
+1. [Github полифила](https://github.com/iamdustan/smoothscroll)
+2. [Черновик спецификации](https://drafts.csswg.org/cssom-view/#extensions-to-the-window-interface)
+3. [Документация на MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)
