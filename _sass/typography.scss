@@ -28,6 +28,11 @@
         margin-bottom: $lh;
     }
 
+    * + ul,
+    * + ol {
+        margin-top: $lh * -0.5;
+    }
+
     h1,
     h2,
     h3,

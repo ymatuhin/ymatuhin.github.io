@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Связывание текстового редактора с Git
-description: Как указать текстовый редактор по умолчанию для Git. VSCode, Atom, TextMate, Nano, Sublime Text и другие.
+description: Как указать текстовый редактор по умолчанию для Git. VSCode, Atom, TextMate, Nano, Sublime Text и другие
 categories: tools
 tags: [git, tools, editor]
 ---
