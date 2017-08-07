@@ -83,14 +83,14 @@ const codes = [21, 37];
 ```js
 // Плохо
 const user = {
-    userName: 'test'
-    getUsername() {}
+    userName: 'test',
+    getUsername() {},
 };
 
 // Хорошо
 const user = {
-    name: 'test'
-    getName() {}
+    name: 'test',
+    getName() {},
 };
 ```
 
