@@ -20,11 +20,11 @@ image:
 Традиционно название строковой переменной — **существительное**. Как и во всех остальных типах, мы должны понимать что находится в переменной по её названию. Со строкой сложно напортачить, используйте существительные и давайте более осмысленные имена, например:
 
 ```js
-const serverMessage = '...'
-const componentHtml = '...'
-const login = '...'
-const password = '...'
-const ACCESS_TOKEN = '...'
+const serverMessage = 'hello from server'
+const componentHtml = '<h1>Hello</h1>'
+const login = 'username'
+const password = 'qwerty'
+const ACCESS_TOKEN = 'xxxxx'
 ```
 
 ## Числа
@@ -69,9 +69,9 @@ const disabled = true;
 Массивы это существительные во множественном числе. Оканчиваются на суффиксы **s** и **es**.
 
 ```js
-const users = [];
-const letters = [];
-const codes = [];
+const users = [{ name: 'Yury'}];
+const letters = ['A', 'B', 'C'];
+const codes = [21, 37];
 ```
 
 ## Объекты
