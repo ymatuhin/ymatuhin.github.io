@@ -1,5 +1,5 @@
 {
-    "name": "\u042e\u0440\u0438\u0439 \u041c\u0430\u0442\u044e\u0445\u0438\u043d",
+    "name": "Юрий Матюхин",
     "icons": [
         {
             "src": "/assets/icons/android-chrome-192x192.png?v=JymzngPEmg",
@@ -12,7 +12,11 @@
             "type": "image/png"
         }
     ],
+    "start_url": "https://ymatuhin.ru/",
     "theme_color": "#0c00ff",
     "background_color": "#0c00ff",
-    "display": "standalone"
+    "display": "standalone",
+    "lang": "ru",
+    "short_name": "ymatuhin",
+    "description": "Фронтенд разработчик, веду блог, интересуюсь архитектурой приложений, дизайном и текстом. Хочу работать на себя."
 }

@@ -6,7 +6,9 @@
   {% feed_meta %}
   {% seo %}
 
-  <link rel="stylesheet" href="/assets/main.css?v={{ site.time | date: '%s' }}">
+  <!-- inline css -->
+  {% capture include_to_scssify %}{% include critical.scss %}{% endcapture %}
+  <style>{{ include_to_scssify | scssify }}</style>
 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=JymzngPEmg2">
@@ -17,4 +19,6 @@
   <link rel="shortcut icon" href="/assets/icons/favicon.ico?v=JymzngPEmg2">
   <meta name="msapplication-config" content="/assets/icons/browserconfig.xml?v=JymzngPEmg2">
   <meta name="theme-color" content="#0c00ff">
+
+  <link rel="manifest" href="/manifest.json">
 </head>
