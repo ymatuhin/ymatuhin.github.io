@@ -1,7 +1,7 @@
 .site-navigation {
     margin-top: $lh * 2;
 
-    @media (max-width: $max-content-width) {
+    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
         margin-top: $lh / 2;
     }
 
@@ -12,7 +12,7 @@
         font-weight: 300;
         color: $c-gray-link;
 
-        @media (max-width: $max-content-width) {
+        @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
             display: inline-block;
             vertical-align: top;
             padding: 4px;

@@ -4,7 +4,7 @@
     margin-bottom: $gap;
     background: $c-content;
 
-    @media (max-width: $max-content-width) {
+    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
         padding-top: $gap-sm;
         margin: $gap-sm;
     }

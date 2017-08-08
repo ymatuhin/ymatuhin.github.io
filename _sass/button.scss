@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: $gap;
 
-    @media (max-width: $max-content-width) {
+    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
         margin-top: $gap-sm;
     }
 }

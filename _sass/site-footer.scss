@@ -4,15 +4,17 @@
     bottom: 0;
     width: $sidebar-width;
     padding: $gap;
-    // padding-left: 0;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
 
-    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+    @media (min-width: $max-website-width) {
+        left: 50%;
+        margin-left: $max-website-width / 2 * -1;
+    }
+
+     @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -20,11 +22,7 @@
         width: auto;
         padding: $gap-sm;
         text-align: center;
-    }
-
-    @media (min-width: $max-website-width) {
-        left: 50%;
-        margin-left: $max-website-width / 2 * -1;
+        margin-left: initial;
     }
 
     &__link {

@@ -3,7 +3,7 @@
     padding: $gap;
     overflow: hidden;
 
-    @media (max-width: $max-content-width) {
+    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
         padding: $gap-sm;
     }
 }
