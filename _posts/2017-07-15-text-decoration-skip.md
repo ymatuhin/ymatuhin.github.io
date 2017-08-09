@@ -38,7 +38,7 @@ a {
 ### Примечания
 
 * В сафари на macOS подчеркивание выглядит хорошо и без text-decoration-skip
-* В хроме можно установить разрешение [User JavaScript and CSS](https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld) и добавить туда:
+* В хроме можно установить расширение [User JavaScript and CSS](https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld) и добавить туда:
     ```css
     a {
         -webkit-text-decoration-skip: ink;
