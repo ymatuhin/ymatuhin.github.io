@@ -11,19 +11,13 @@
   -webkit-column-width: 300px;
   column-width: 300px;
 
-  -webkit-column-gap: $gap;
-
-  column-gap: $gap;
-
-  @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-    -webkit-column-gap: $gap-sm;
-    column-gap: $gap-sm;
-  }
+  -webkit-column-gap: $gap-sm;
+  column-gap: $gap-sm;
 
   .card {
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
-    margin-bottom: $gap;
+    margin-bottom: $gap-sm;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     &:last-child {
