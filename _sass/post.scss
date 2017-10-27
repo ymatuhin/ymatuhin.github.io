@@ -1,6 +1,6 @@
 .white-content {
   background: $c-content;
-  padding: 0 $gap $gap;
+  padding: $gap;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   // margin-bottom: $gap;
@@ -11,7 +11,6 @@
 }
 
 .post-header {
-  padding-top: $gap;
   margin-bottom: $lh;
   font-weight: 300;
 
