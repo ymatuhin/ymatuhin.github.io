@@ -1,35 +1,25 @@
 .white-content {
-    background: $c-content;
-    padding: $gap;
-    overflow: hidden;
+  background: $c-content;
+  padding: 0 $gap $gap;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // margin-bottom: $gap;
 
-    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-        padding: $gap-sm;
-    }
-}
-
-.post {
-    &::after {
-        display: block;
-        content: '⌘ \00a0⌘ \00a0⌘';
-        margin-top: $gap;
-        text-align: center;
-    }
-
-    &_no_comments::after {
-        display: none;
-    }
+  @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+    padding: 0 $gap-sm $gap-sm;
+  }
 }
 
 .post-header {
-    margin-bottom: $lh;
-    font-weight: 300;
+  padding-top: $gap;
+  margin-bottom: $lh;
+  font-weight: 300;
 
-    &__info {
-        display: block;
-        font-size: $fz-sm;
-        // line-height: $lh;
-        color: $c-gray;
-        margin-bottom: $lh/4;
-    }
+  &__info {
+    display: block;
+    font-size: $fz-sm;
+    // line-height: $lh;
+    color: $c-gray;
+    margin-bottom: $lh/4;
+  }
 }

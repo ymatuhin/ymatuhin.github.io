@@ -1,20 +1,21 @@
 .more-box {
-    text-align: center;
-    margin-top: $gap;
+  text-align: center;
+  margin-top: $gap;
 
-    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-        margin-top: $gap-sm;
-    }
+  @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+    margin-top: $gap-sm;
+  }
 }
 
 .round-btn {
-    background: $c-content;
-    border-radius: 27px;
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 12px 37px;
-    margin: 0 auto;
-    color: $c-text;
-    font-weight: bold;
+  background: $c-content;
+  border-radius: 27px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 37px;
+  margin: 0 auto;
+  color: $c-text;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

@@ -16,4 +16,12 @@
 @import './syntax';
 @import './cards';
 @import './button';
-@import './email-subscribe';
+
+.mac-spacer {
+  text-align: center;
+  margin: $gap-sm 0;
+}
+
+p.email-subscribe {
+  margin-bottom: $gap-sm;
+}
