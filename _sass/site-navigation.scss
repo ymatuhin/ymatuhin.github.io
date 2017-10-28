@@ -1,25 +1,26 @@
 .site-navigation {
-    margin-top: $lh * 2;
+  margin-top: $lh * 2;
+
+  @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+    margin-top: $lh / 2;
+  }
+
+  &__item {
+    display: block;
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: $c-gray-link;
 
     @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-        margin-top: $lh / 2;
+      display: inline-block;
+      vertical-align: top;
+      padding: 4px;
     }
-
-    &__item {
-        display: block;
-        padding: 4px 0;
-        font-size: 16px;
-        font-weight: 300;
-        color: $c-gray-link;
-
-        @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-            display: inline-block;
-            vertical-align: top;
-            padding: 4px;
-        }
-    }
+  }
 }
 
 b.site-navigation__item {
-    font-weight: 500;
+  font-weight: 500;
+  color: #000;
 }
