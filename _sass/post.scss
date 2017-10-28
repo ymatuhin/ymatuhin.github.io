@@ -2,11 +2,10 @@
   background: $c-content;
   padding: $gap;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  // margin-bottom: $gap;
+  border: 1px solid $c-card-border;
 
   @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-    padding: 0 $gap-sm $gap-sm;
+    padding: $gap-sm;
   }
 }
 

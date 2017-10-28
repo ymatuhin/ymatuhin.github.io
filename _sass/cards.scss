@@ -18,7 +18,7 @@
     -webkit-column-break-inside: avoid;
     break-inside: avoid;
     margin-bottom: $gap-sm;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid $c-card-border;
 
     &:last-child {
       margin-bottom: 0;
