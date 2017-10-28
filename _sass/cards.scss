@@ -15,8 +15,9 @@
   column-gap: $gap-sm;
 
   .card {
-    -webkit-column-break-inside: avoid;
-    break-inside: avoid;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* IE 10+ */
     margin-bottom: $gap-sm;
     border: 1px solid $c-card-border;
 
