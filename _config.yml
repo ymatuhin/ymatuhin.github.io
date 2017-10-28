@@ -22,7 +22,7 @@ social:
 # Build settings
 safe: true
 paginate: 10
-paginate_path: "/archive/:num/"
+paginate_path: "/page:num/"
 
 permalinks: pretty
 permalink: /:categories/:title/

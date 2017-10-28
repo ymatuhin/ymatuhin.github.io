@@ -9,11 +9,11 @@
   </p>
 
   <nav class="site-navigation" role="navigation">
+    {% if page.url == '/' %}<b class="site-navigation__item">Заметки</b>
+    {% else %}<a class="site-navigation__item" href="/archive/">Заметки</a>{% endif %}
+
     {% if page.url == '/projects/' %}<b class="site-navigation__item">Проекты</b>
     {% else %}<a class="site-navigation__item" href="/projects/">Проекты</a>{% endif %}
-
-    {% if page.url == '/archive/' %}<b class="site-navigation__item">Заметки</b>
-    {% else %}<a class="site-navigation__item" href="/archive/">Заметки</a>{% endif %}
 
     {% if page.url == '/about/' %}<b class="site-navigation__item">Обо мне</b>
     {% else %}<a class="site-navigation__item" href="/about/">Обо мне</a>{% endif %}
