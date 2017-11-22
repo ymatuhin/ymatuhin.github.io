@@ -2,7 +2,7 @@
   padding: $gap;
   padding-left: 0;
 
-  @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+  @media (max-width: $sidebar-min-width), (max-height: $hide-footer-height) {
     padding: 0 $gap-sm;
   }
 }
@@ -10,22 +10,22 @@
 .cards {
   -webkit-column-width: 300px;
   column-width: 300px;
-
   -webkit-column-gap: $gap-sm;
   column-gap: $gap-sm;
 
   .card {
-    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-    page-break-inside: avoid; /* Firefox */
-    break-inside: avoid; /* IE 10+ */
     margin-bottom: $gap-sm;
     border: 1px solid $c-card-border;
+    break-inside: avoid; /* IE 10+ */
+    page-break-inside: avoid; /* Firefox */
+
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+    @media (max-width: $sidebar-min-width), (max-height: $hide-footer-height) {
       margin-bottom: $gap-sm;
     }
   }
@@ -37,7 +37,7 @@
       padding-right: $gap;
     }
 
-    @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+    @media (max-width: $sidebar-min-width), (max-height: $hide-footer-height) {
       padding: $gap-sm;
       padding-bottom: 0;
     }
@@ -54,13 +54,13 @@
   }
 
   a {
-    color: $c-text;
     display: block;
+    color: $c-text;
   }
 
   img {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 
   .tags {
@@ -78,9 +78,9 @@
   }
 
   .title {
+    margin: 0;
     font-size: 3rem;
     line-height: 1.2;
-    margin: 0;
 
     a {
       font-weight: inherit;

@@ -1,7 +1,7 @@
 <div class="card">
     {% if include.image %}
         {% if include.link %}<a href="{{ include.link }}">{% endif %}
-        <img src="{{ include.image }}" alt="{{ include.title }}">
+        <img src="{{ include.image }}" alt="{{ include.title | xml_escape }}">
         {% if include.link %}</a>{% endif %}
     {% endif %}
 

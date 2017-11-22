@@ -1,10 +1,10 @@
 .white-content {
-  background: $c-content;
-  padding: $gap;
   overflow: hidden;
+  padding: $gap;
   border: 1px solid $c-card-border;
+  background: $c-content;
 
-  @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
+  @media (max-width: $sidebar-min-width), (max-height: $hide-footer-height) {
     padding: $gap-sm;
   }
 }
@@ -15,9 +15,9 @@
 
   &__info {
     display: block;
-    font-size: $fz-sm;
+    margin-bottom: $lh/4;
     // line-height: $lh;
     color: $c-gray;
-    margin-bottom: $lh/4;
+    font-size: $fz-sm;
   }
 }

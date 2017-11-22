@@ -1,42 +1,41 @@
 .site-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: $sidebar-width;
-    padding: $gap;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: $gap;
+  width: $sidebar-width;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  @media (min-width: $max-website-width) {
+    left: 50%;
+    margin-left: $max-website-width / 2 * -1;
+  }
 
-    @media (min-width: $max-website-width) {
-        left: 50%;
-        margin-left: $max-website-width / 2 * -1;
+  @media (max-width: $sidebar-min-width), (max-height: $hide-footer-height) {
+    position: static;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: initial;
+    padding: $gap-sm;
+    width: auto;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-right: 14px;
+    vertical-align: top;
+
+    @media (max-width: $bp-mobile) {
+      padding: 0 7px;
     }
+  }
 
-     @media (max-width: $max-content-width), (max-height: $hide-footer-height) {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        position: static;
-        width: auto;
-        padding: $gap-sm;
-        text-align: center;
-        margin-left: initial;
-    }
-
-    &__link {
-        display: inline-block;
-        vertical-align: top;
-        padding-right: 14px;
-
-        @media (max-width: $bp-mobile) {
-            padding: 0 7px;
-        }
-    }
-
-    &__icon {
-        display: block;
-        height: 20px;
-    }
+  &__icon {
+    display: block;
+    height: 20px;
+  }
 }
