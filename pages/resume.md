@@ -24,9 +24,7 @@ permalink: /resume/
 
 &nbsp;
 
-### Апрель 2015&nbsp;&mdash; Февраль 2016 (9 месяцев)
-
-<br>Март 2014&nbsp;&mdash; август 2014 (6 месяцев)
+### Апрель 2015&nbsp;&mdash; Февраль 2016 (9 месяцев) <br>Март 2014&nbsp;&mdash; август 2014 (6 месяцев)
 
 **Poloniumarts**, Брянск, [poloniumarts.com](http://poloniumarts.com)
 
