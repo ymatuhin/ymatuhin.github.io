@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Код. Как удалить дубликаты из массива
-description: Три простых способа
+title: 'Код. Удаляем дубликаты из массива'
+description: Простые способы для ES5 и ES2015
 categories: front-end
 tags: [ JS, Tips, Array ]
 image:
@@ -23,7 +23,7 @@ var uniqueArray = function(arrArg) {
 }
 ```
 
-## ES6
+## ES6 (ES2015)
 
 ```js
 var uniqEs6 = (arrArg) => {
