@@ -18,10 +18,14 @@
 @import './button';
 
 .mac-spacer {
-  text-align: center;
   margin: $gap-sm 0;
+  text-align: center;
 }
 
 p.email-subscribe {
   margin-bottom: $gap-sm;
+}
+
+.ya-share2 ul {
+  padding: 0 !important;
 }
