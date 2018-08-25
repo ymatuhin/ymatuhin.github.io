@@ -59,8 +59,8 @@ const newMessageCount = 2
 ```js
 const isPopupOpen = true;
 const hasUpperLetters = true;
-const containObject = false;
-const shoudUpdate = false;
+const containsObject = false;
+const shouldUpdate = false;
 const disabled = true;
 ```
 
