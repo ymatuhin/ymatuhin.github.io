@@ -21,7 +21,7 @@ has_youtube: true
 |----+----|
 Chrome 35+ | 3 секунды | + | +
 Opera | 3 секунды | + | +
-Firefox 3 секунды | + | +
+Firefox | 3 секунды | + | +
 Internet Explorer | 0 секунд | + | +
 Safari | нет ожидания | - | -
 
