@@ -5,8 +5,8 @@
     "Hi, it's my Jekyll powered website — <a href=\"https://ymatuhin.ru\">ymatuhin.ru</a>",
   "scripts": {
     "postinstall": "bundle",
-    "dev": "jekyll server --limit_posts 15",
-    "start": "jekyll server"
+    "dev": "bundle exec jekyll server --limit_posts 15",
+    "start": "bundle exec jekyll server"
   },
   "repository": {
     "type": "git",

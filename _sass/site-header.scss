@@ -23,16 +23,11 @@
   }
 
   &__title {
-    padding-right: $lh * 1.5;
     color: $c-text;
     letter-spacing: -0.04em;
     font-weight: bold;
     font-size: 3.6rem;
     line-height: 1.2;
-
-    @media (max-width: $sidebar-min-width), (max-height: $hide-footer-height) {
-      padding-right: 0;
-    }
   }
 
   &__description {
