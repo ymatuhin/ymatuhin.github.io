@@ -1,0 +1,125 @@
+@use "sass:math";
+
+/* Setup */
+html {
+  /* Change default typefaces here */
+  font-size: math.div($base-font-size, 16) * 100%;
+  // Make everything look a little nicer in webkit
+  -webkit-font-smoothing: antialiased;
+  // -webkit-text-size-adjust: auto
+  // -moz-text-size-adjust: auto
+  // -ms-text-size-adjust: auto
+  // -o-text-size-adjust: auto
+  // text-size-adjust: auto
+}
+
+/* Copy & Lists */
+p {
+  line-height: $leading;
+  margin-top: $leading;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: $leading;
+  margin-bottom: $leading;
+  li {
+    line-height: $leading;
+  }
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+blockquote {
+  line-height: $leading;
+  margin-top: $leading;
+  margin-bottom: $leading;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  margin-top: $leading;
+  margin-bottom: 0;
+  line-height: $leading;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 3 * $header-scale * 1rem;
+  line-height: 3 * $leading;
+  margin-top: 2 * $leading;
+}
+h2 {
+  font-size: 2 * $header-scale * 1rem;
+  line-height: 2 * $leading;
+  margin-top: 2 * $leading;
+}
+h3 {
+  font-size: 1 * $header-scale * 1rem;
+}
+h4 {
+  font-size: math.div($header-scale, 2) * 1rem;
+}
+
+// /* Tables */
+// table {
+//   margin-top: $leading;
+//   border-spacing: 0px;
+//   border-collapse: collapse;
+// }
+// td,
+// th {
+//   padding: 0;
+//   line-height: $base-line-height * $base-font-size - 0px;
+// }
+
+code {
+  /* Code blocks */
+  // Forces text to constrain to the line-height. Not ideal, but works.
+  vertical-align: bottom;
+}
+
+.lead {
+  /* Leading paragraph text */
+  font-size: $header-scale * 1rem;
+}
+
+.hug {
+  /* Hug a the block above you */
+  margin-top: 0;
+}
+
+.text---extralarge {
+  color: #000;
+  margin-left: -1vw;
+  padding-left: 0;
+  font-size: 18vw;
+  font-weight: 500;
+  line-height: 0.9;
+
+  @media (min-width: 980px) {
+    margin-left: -0.8vw;
+    font-size: 13vw;
+  }
+  @media (min-width: 1440px) {
+    margin-left: -0.8vw;
+    font-size: 11vw;
+  }
+}
+
+.text--large {
+  color: #000;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.headline {
+  margin-top: calc(3rem + 5vh);
+  margin-bottom: calc(5rem + 5vh);
+}

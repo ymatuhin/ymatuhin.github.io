@@ -1,0 +1,13 @@
+$color-black: #000;
+$color-dark-gray: #696969;
+$color-light-gray: #efefef;
+$color-white: #fff;
+
+$base-font-size: 20 !default; // in pixels
+$base-line-height: 1.5 !default;
+$leading: $base-line-height * 1rem !default;
+
+// Rate of growth for headings
+$header-scale: 1.414 !default;
+
+$page-space: calc(0.5rem + 2vh) calc(1rem + 5vw);

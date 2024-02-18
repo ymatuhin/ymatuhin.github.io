@@ -1,0 +1,25 @@
+* {
+  min-width: 0;
+}
+
+html {
+  margin: $page-space;
+}
+
+body {
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  --color-bg: #{$color-white};
+  --color-text: #{$color-dark-gray};
+  --color-header: #{$color-black};
+  --color-border: #{$color-light-gray};
+}
+
+a {
+  color: var(--color-header);
+  text-decoration: none;
+}

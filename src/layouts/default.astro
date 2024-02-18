@@ -1,0 +1,90 @@
+---
+import { SITE_COLOR, TOP_MENU_ITEMS } from "../consts";
+import { TopMenu } from "../components/top-menu";
+import "../styles/index.scss";
+
+type Props = {
+  children: any;
+  title: string;
+  description: string;
+  locale: string;
+};
+const { locale = "ru", title, description } = Astro.props as Props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <link rel="canonical" href={canonical} />
+    <meta name="description" content={description} />
+
+    <!-- <link rel="icon" href="/favicon.ico" sizes="any" />-->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color={SITE_COLOR} />
+  </head>
+
+  <body>
+    <TopMenu pathname={Astro.url.pathname} menuItems={TOP_MENU_ITEMS} />
+
+    <header class="header">
+      <h1 class="headline text---extralarge">
+        Юрий<br />
+        Матюхин
+      </h1>
+
+      <div class="info">
+        <div class="contacts">
+          <h4 class="contacts-header">В интернете</h4>
+          <ul class="contacts-list">
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+        <div class="about text--large">
+          Хааай, я фронтенд лид в <a href="#">лайфхакере</a>. Изредка делаю
+          какие-то <a href="#">проекты</a>. Чуть чаще пишу в <a href="#">блог</a
+          > и <a href="#">телеграм-канал</a>. А еще я учил ребят в SaintCode
+          Bootcamp и многие из них теперь фронтендеры.
+        </div>
+      </div>
+    </header>
+
+    <slot />
+  </body>
+</html>
+
+<style lang="scss">
+  @import "../styles/variables.scss";
+
+  .info {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .contacts {
+    flex-basis: 40%;
+  }
+  .about {
+    flex-basis: 60%;
+  }
+  .contacts-header {
+    font-size: inherit;
+    font-weight: inherit;
+    color: $color-dark-gray;
+    margin: 0 0 0.5rem;
+  }
+  .contacts-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+</style>
