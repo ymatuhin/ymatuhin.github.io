@@ -9,7 +9,7 @@ export async function mediaImageShortcode(
 ) {
   const imageUrl = url;
   const imageAlt = (alt || '').toString();
-  let imageLoading = 'lazy';
+  const imageLoading = loading === 'eager' ? 'eager' : 'lazy';
 
   if (!imageUrl) return '';
 
@@ -30,6 +30,10 @@ export async function mediaImageShortcode(
     loading: imageLoading,
     decoding: 'async',
   };
+
+  if (imageLoading === 'eager') {
+    imageAttributes.fetchpriority = 'high';
+  }
 
   const captionText = typeof caption === 'string' ? caption : imageAlt;
   const captionHtml = caption ? `<figcaption>${captionText}</figcaption>` : '';

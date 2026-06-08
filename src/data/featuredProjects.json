@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Какая сейчас неделя?",
+        "summary": "Подсказывает студентам, четная сейчас неделя или нет, и помогает не запутаться в расписании.",
+        "category": "service",
+        "cover": "projects/whataweek.png",
+        "link": "https://whataweek.ru/"
+    },
+    {
+        "name": "Lines98",
+        "summary": "Небольшая браузерная игра-головоломка по мотивам классических Lines 98 с шариками и сериями.",
+        "category": "game",
+        "link": "https://lines98.ru/"
+    },
+    {
+        "name": "Автопрефиксер онлайн",
+        "summary": "Расставляет вендорные префиксы в CSS прямо в браузере, без установки Node.js и сборщика.",
+        "category": "service",
+        "cover": "projects/autoprefixer.png",
+        "link": "https://autoprefixer.github.io/"
+    },
+    {
+        "name": "Решатель замков для Gothic 1 Remake",
+        "summary": "Солвер замков сундуков для Gothic 1 Remake: подбирает последовательность поворотов отмычки.",
+        "category": "service",
+        "link": "https://gothic-lockpick.com/"
+    }
+]

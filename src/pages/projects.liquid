@@ -1,0 +1,32 @@
+---
+layout: blocks
+title: Проекты
+description: Мои небольшие веб-проекты и инструменты.
+permalink: /projects/
+---
+
+<div class="typo">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="projects">
+  {% for project in featuredProjects %}
+    {% assign projectDomain = project.link | replace: "https://", "" | replace: "http://", "" | replace: "/", "" %}
+    {% assign projectCategory = project.category | tagLabel %}
+    <article class="project">
+      <div class="project__index" aria-hidden="true">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</div>
+      <div class="project__body">
+        <h2 class="project__title">
+          <a href="{{ project.link }}">{{ project.name }}</a>
+        </h2>
+        <p class="project__summary">{{ project.summary }}</p>
+        <p class="project__domain">{{ projectDomain }}</p>
+      </div>
+      <p class="project__category">{{ projectCategory }}</p>
+    </article>
+  {% endfor %}
+</div>
+
+{% css %}
+  {% include "styles/projects.css" %}
+{% endcss %}

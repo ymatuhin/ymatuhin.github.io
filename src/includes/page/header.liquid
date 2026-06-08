@@ -18,8 +18,11 @@
       {% if page.url == nonDevelopmentTagUrl %}<b>не разработка</b>
       {% else %}<a href="{{ nonDevelopmentTagUrl }}">не разработка</a>{% endif %}
 
-      {% if page.url == '/tags/' %}<b>все теги</b>
-      {% else %}<a href="/tags/">все теги</a>{% endif %}
+      {% if page.url == '/projects/' %}<b>проекты</b>
+      {% else %}<a href="/projects/">проекты</a>{% endif %}
+
+      {% if page.url == '/tags/' %}<b>теги</b>
+      {% else %}<a href="/tags/">теги</a>{% endif %}
     </nav>
     <nav aria-label="Социальные ссылки: GitHub, Telegram, почта и RSS">
       <a href="https://github.com/ymatuhin">гитхаб</a>
