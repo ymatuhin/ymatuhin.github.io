@@ -48,6 +48,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter('tagLabel', toTagLabel);
   eleventyConfig.addFilter('relatedPosts', buildRelatedPosts);
   eleventyConfig.addFilter('maxLevelHeading', findMaxLevelHeading);
+  eleventyConfig.addFilter('json', (value) => JSON.stringify(value));
+  eleventyConfig.addFilter('pageCount', (total, pageSize) => Math.ceil(total / pageSize));
 
   // Shortcodes
   eleventyConfig.addAsyncShortcode('mediaImage', mediaImageShortcode);

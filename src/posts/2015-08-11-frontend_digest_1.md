@@ -3,8 +3,7 @@ layout: post
 title: 'Фронтенд дайджест #1 — Awesome lists, bower, regexp, RSS, Git'
 description: >-
   Когда я нахожу интересные ссылки, то хочу ими поделиться. Поэтому я собираю эти ссылки в
-  Wunderlist, а когда набирается 15, публикую в дайджесте. Caption: "Демка с милейшим львом на
-  svg" %}.
+  Wunderlist, а когда набирается 15, публикую в дайджесте.
 tags:
   - development
   - frontend

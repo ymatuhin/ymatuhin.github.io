@@ -7,6 +7,7 @@ pagination:
 permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 eleventyComputed:
   title: "Все заметки, страница #{{ pagination.pageNumber | plus: 1 }}"
+  description: "Архив публикаций Юрия Матюхина о фронтенд-разработке и технологиях. Страница {{ pagination.pageNumber | plus: 1 }}."
 ---
 
 <h1>Все заметки</h1>

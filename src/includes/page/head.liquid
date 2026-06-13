@@ -1,11 +1,30 @@
 <head>
+  {% assign seoTitle = title | default: site.title %}
+  {% assign seoDescription = description | default: site.description %}
+  {% assign canonicalUrl = site.url | append: page.url %}
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title | default: site.title }}</title>
-  <meta name="description" content="{{ description | default: site.description }}">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="{{ site.url }}{{ permalink | default: page.url }}">
+  <title>{{ seoTitle | escape }}</title>
+  <meta name="description" content="{{ seoDescription | escape }}">
+  <meta name="robots" content="{{ robots | default: 'index,follow' }}">
+  <link rel="canonical" href="{{ canonicalUrl }}">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <meta property="og:locale" content="{{ ogLocale | default: 'ru_RU' }}">
+  <meta property="og:site_name" content="{{ siteName | default: site.title | escape }}">
+  <meta property="og:type" content="{% if layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ seoTitle | escape }}">
+  <meta property="og:description" content="{{ seoDescription | escape }}">
+  <meta property="og:url" content="{{ canonicalUrl }}">
+  <meta name="twitter:card" content="{% if image and image.path %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ seoTitle | escape }}">
+  <meta name="twitter:description" content="{{ seoDescription | escape }}">
+  {% if image and image.path %}
+    <meta property="og:image" content="{{ site.url }}/assets/img/{{ image.path }}">
+    <meta property="og:image:alt" content="{{ image.alt | default: seoTitle | escape }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ image.path }}">
+  {% endif %}
 
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">

@@ -2,20 +2,20 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "{{ site.url }}/#website",
-  "url": "{{ site.url }}",
-  "name": "{{ site.social.name }}",
-  "description": "{{ site.description }}",
-  "inLanguage": "ru-RU",
+  "@id": {{ site.url | append: "/#website" | json }},
+  "url": {{ site.url | append: "/" | json }},
+  "name": {{ siteName | default: site.social.name | json }},
+  "description": {{ schemaDescription | default: site.description | json }},
+  "inLanguage": {{ languageTag | default: "ru-RU" | json }},
   "publisher": {
     "@type": "Person",
-    "@id": "{{ site.url }}/#author",
-    "name": "{{ site.social.name }}",
-    "url": "{{ site.url }}",
+    "@id": {{ site.url | append: "/#author" | json }},
+    "name": {{ authorName | default: site.social.name | json }},
+    "url": {{ site.url | append: "/" | json }},
     "sameAs": [
-      "{{  site.social.githubUrl }}",
-      "{{  site.social.twitterUrl }}",
-      "{{  site.social.vkUrl }}"
+      {{ site.social.githubUrl | json }},
+      {{ site.social.twitterUrl | json }},
+      {{ site.social.vkUrl | json }}
     ]
   }
 }

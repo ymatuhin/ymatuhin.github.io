@@ -11,12 +11,20 @@
 
   <div class="layout{% if layoutClass %} {{ layoutClass }}{% endif %}">
     <div class="layout__content">
-      {% include "page/header.liquid" %}
+      {% if lang == "en" %}
+        {% include "page/header-en.liquid" %}
+      {% else %}
+        {% include "page/header.liquid" %}
+      {% endif %}
 
       <main class="layout__main">{{ content }}</main>
     </div>
 
-    {% include "page/footer.liquid", class: 'layout__footer' %}
+    {% if lang == "en" %}
+      {% include "page/footer-en.liquid", class: 'layout__footer' %}
+    {% else %}
+      {% include "page/footer.liquid", class: 'layout__footer' %}
+    {% endif %}
   </div>
 
   {% css %}

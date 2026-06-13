@@ -7,13 +7,13 @@ export default {
     'Фронтенд-лид в Lifehacker и BurningHut. Пишу про разработку (CSS, JS, Nuxt, Vue), делюсь кодом и мыслями. Живу в Брянской области, люблю аниме и делать что-то руками.',
   baseurl: '',
   url: 'https://ymatuhin.ru',
-  logo: '/assets/icons/android-chrome-512x512.png',
+  logo: '/apple-touch-icon.png',
   social: {
     name: 'Юрий Матюхин',
     githubUrl: 'https://github.com/ymatuhin',
     twitterUrl: 'https://twitter.com/ymatuhin',
     vkUrl: 'https://vk.com/ymatuhin',
-    email: 'ym@ymauthin.ru',
+    email: 'ym@ymatuhin.ru',
   },
   feed_url: '/feed.xml',
 };

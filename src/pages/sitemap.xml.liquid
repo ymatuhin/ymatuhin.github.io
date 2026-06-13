@@ -4,7 +4,7 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- assign static_pages = "/,/about/,/autoprefixer_instruction/,/posts/,/projects/,/resume/,/tags/" | split: "," -%}
+  {%- assign static_pages = "/,/about/,/autoprefixer_instruction/,/en/,/posts/,/projects/,/resume/,/tags/" | split: "," -%}
 
   {%- for page_url in static_pages -%}
     <url>
@@ -25,13 +25,9 @@ layout: null
     {%- endunless -%}
   {%- endfor -%}
 
-  {%- assign posts_per_page = 10 -%}
+  {%- assign posts_per_page = 12 -%}
   {%- assign posts_total = collections.posts.size -%}
-  {%- assign posts_pages = posts_total | divided_by: posts_per_page -%}
-  {%- assign posts_remainder = posts_total | modulo: posts_per_page -%}
-  {%- if posts_remainder > 0 -%}
-    {%- assign posts_pages = posts_pages | plus: 1 -%}
-  {%- endif -%}
+  {%- assign posts_pages = posts_total | pageCount: posts_per_page -%}
 
   {%- if posts_pages > 1 -%}
     {%- for page_num in (2..posts_pages) -%}

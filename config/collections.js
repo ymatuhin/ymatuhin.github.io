@@ -10,7 +10,7 @@ const staticLegacyRedirects = [
   { from: '/page6/', to: '/posts/6/' },
   { from: '/page7/', to: '/posts/7/' },
   { from: '/page8/', to: '/posts/8/' },
-  { from: '/page9/', to: '/posts/9/' },
+  { from: '/page9/', to: '/posts/8/' },
 ];
 const extractPostTags = (item) => {
   if (!item?.data?.tags) return [];

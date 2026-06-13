@@ -2,6 +2,7 @@
 layout: page
 type: AboutPage
 title: Обо мне
+description: О Юрии Матюхине — фронтенд-разработчике и авторе блога ymatuhin.ru.
 permalink: /about/
 ---
 
