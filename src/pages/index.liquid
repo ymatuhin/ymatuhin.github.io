@@ -7,30 +7,30 @@ permalink: index.html
 
 {% include "page/intro.liquid" %}
 
-<div class="cards">
-  {% for post in collections.posts limit: 10 %}
-  {% assign cardImageLoading = "lazy" %}
-  {% if forloop.first %}
-    {% assign cardImageLoading = "eager" %}
-  {% endif %}
-  {% include "posts/post-card.liquid"
-    tag: "h2",
-    tags: post.data.tags,
-    date: post.date,
-    imagePath: post.data.image.path,
-    imageAlt: post.data.image.alt,
-    imageLoading: cardImageLoading,
-    link: post.url,
-    title: post.data.title,
-    description: post.data.description %}
+<div class="cards cards--home">
+  {% for post in collections.posts limit: 7 %}
+    {% assign cardImageLoading = "lazy" %}
+    {% if forloop.first %}
+      {% assign cardImageLoading = "eager" %}
+    {% endif %}
+    {% include "posts/post-card.liquid"
+      tag: "h2",
+      tags: post.data.tags,
+      date: post.date,
+      imagePath: post.data.image.path,
+      imageAlt: post.data.image.alt,
+      imageLoading: cardImageLoading,
+      link: post.url,
+      title: post.data.title,
+      description: post.data.description %}
   {% endfor %}
 </div>
 
 <hr class="divider">
 
-{% if collections.posts.size > 10 %}
+{% if collections.posts.size > 7 %}
   <nav class="posts-pagination" aria-label="Posts pagination">
-    <a class="posts-pagination__older / button" href="/posts/2/">Остальные записи</a>
+    <a class="posts-pagination__older / button" href="/posts/">Все записи</a>
   </nav>
 {% endif %}
 

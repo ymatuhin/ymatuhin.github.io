@@ -16,7 +16,7 @@ eleventyComputed:
 
 <h1>Тег: {{ currentTagPage.name }}</h1>
 
-<div class="cards">
+<div class="cards cards--list">
   {% assign isFirstTagCard = true %}
   {% for post in collections.posts %}
     {% assign showPost = false %}

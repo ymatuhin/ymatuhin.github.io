@@ -1,15 +1,16 @@
 ---
 layout: default
+layoutClass: layout_post
 ---
 
-<article class="post">
-  {% include "posts/post-card.liquid",
-    tag: "h1",
-    tags: tags,
-    date: page.date,
-    title: title,
-    in-post: true %}
+{% include "posts/post-card.liquid",
+  tag: "h1",
+  tags: tags,
+  date: page.date,
+  title: title,
+  in-post: true %}
 
+<article class="post">
   <heading-anchors position="afterbegin" class="post__content">
     {{ content }}
   </heading-anchors>

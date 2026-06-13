@@ -1,3 +1,22 @@
+.layout_post :where(.post__content, .layout__main > aside) > :where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p:not(:has(> :where(img, picture, video, iframe))),
+  ul,
+  ol,
+  blockquote
+) {
+  max-width: 52rem;
+}
+
+heading-anchors {
+  display: block;
+}
+
 .post__content > :first-child {
   margin-top: 0
 }

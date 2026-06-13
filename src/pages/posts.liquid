@@ -2,7 +2,7 @@
 layout: default
 pagination:
   data: collections.posts
-  size: 10
+  size: 12
   alias: postsPage
 permalink: "/posts/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 eleventyComputed:
@@ -11,14 +11,19 @@ eleventyComputed:
 
 <h1>Все заметки</h1>
 
-<div class="cards">
+<div class="cards cards--list">
   {% for post in postsPage %}
+    {% assign cardImageLoading = "lazy" %}
+    {% if forloop.first %}
+      {% assign cardImageLoading = "eager" %}
+    {% endif %}
     {% include "posts/post-card.liquid"
       tag: "h2",
       tags: post.data.tags,
       date: post.date,
       imagePath: post.data.image.path,
       imageAlt: post.data.image.alt,
+      imageLoading: cardImageLoading,
       link: post.url,
       title: post.data.title,
       description: post.data.description %}
@@ -29,10 +34,10 @@ eleventyComputed:
 
 <nav class="posts-pagination" aria-label="Предыдущая и следующая страница">
   {% if pagination.href.next %}
-    <a class="posts-pagination__older / button" href="{{ pagination.href.next }}"> « По старее</a>
+    <a class="posts-pagination__older / button" href="{{ pagination.href.next }}"> « Старее</a>
   {% endif %}
   {% if pagination.href.previous %}
-    <a class="posts-pagination__newer / button" href="{{ pagination.href.previous }}">По новее »</a>
+    <a class="posts-pagination__newer / button" href="{{ pagination.href.previous }}">Новее »</a>
   {% endif %}
 </nav>
 

@@ -9,7 +9,7 @@
 
   {% include "page/head.liquid" %}
 
-  <div class="layout">
+  <div class="layout{% if layoutClass %} {{ layoutClass }}{% endif %}">
     <div class="layout__content">
       {% include "page/header.liquid" %}
 

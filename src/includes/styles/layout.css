@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     padding: 3rem 1.5rem;
-    max-width: 58rem;
+    max-width: 78rem;
     min-height: 100vh;
     background-color: var(--background-color);
   }

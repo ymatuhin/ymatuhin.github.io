@@ -50,4 +50,16 @@
   .post-card__meta a {
     color: inherit;
   }
+
+  .cards > .post-card .post-card__content {
+    margin-top: .75rem;
+  }
+
+  @media (min-width: 900px) {
+    .cards > .post-card + .post-card {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+  }
 }
