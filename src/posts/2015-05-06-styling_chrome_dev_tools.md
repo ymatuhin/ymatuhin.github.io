@@ -12,7 +12,7 @@ tags:
   - css
 image:
   path: dev_tools/dev_tools.png
-  alt: Темная темя для Chrome Dev Tools
+  alt: Темная тема для Chrome Dev Tools
 redirects:
   - /front-end/styling_chrome_dev_tools/
   - /tools/styling_chrome_dev_tools/

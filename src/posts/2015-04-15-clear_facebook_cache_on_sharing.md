@@ -31,7 +31,7 @@ _поделиться_», Facebook сообщает нам, что страни�
 
 {% mediaImage "facebook_sharing_error/facebook_debugger.png", "Debugger — окно для очистки КЭШа в Facebook" %}
 
-После этого, нужно нажать на кнопку <mark>Fetch new scrape information</mark>, для того, чтобы Facebook обновил
+После этого нужно нажать на кнопку <mark>Fetch new scrape information</mark>, чтобы Facebook обновил
 информацию о нашей странице в своей базе. Кстати, этот способ также подойдет, если вы изменили заголовок или описание
 вашей страницы, а при шаринге отображаются старые.
 
@@ -43,4 +43,4 @@ _поделиться_», Facebook сообщает нам, что страни�
 **UPD #1** Вконтакте тоже бывают такие проблемы, для этого есть [отдельная
 страница](https://vk.com/dev/pages.clearCache) в которой нужно ввести url страницы.
 
-{% mediaImage "facebook_sharing_error/vk_sharing.png", "Форма очиститки кэша при шаринге Вконтакте" %}
+{% mediaImage "facebook_sharing_error/vk_sharing.png", "Форма очистки кэша при шаринге Вконтакте" %}

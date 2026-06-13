@@ -47,12 +47,12 @@ redirects:
 * Кроссплатформенные приложения на web стеке? Github [Electron](http://electron.atom.io) поможет. На нем написан Atom,
   Slack, Avocode.
 
-* ассуждения Максима Ильяхова
+* Рассуждения Максима Ильяхова
   о [вопросительном знаке в заголовке](http://maximilyahov.ru/blog/?go=all/voprositelny-znak-v-zagolovke/).
 
 * [Словарь терминов по фронтенду](https://github.com/web-standards-ru/dictionary/) редакции «Веб-стандартов».
 
-* [HMTL 5 Please](http://html5please.com) — покажет какие фичи из HTML5 и CSS3 можно использовать и что для этого
+* [HTML 5 Please](http://html5please.com) — покажет какие фичи из HTML5 и CSS3 можно использовать и что для этого
   требуется.
 
 * [Учебник по холсту в HTML5 (canvas)](http://www.html5canvastutorials.com).

@@ -21,4 +21,4 @@ permalink: /about/
 [//]: # ()
 [//]: # (Лучший способ связаться со&nbsp;мной&nbsp;&mdash; написать мне на&nbsp;почту [ym@ymatuhin.ru]&#40;mailto:ym@ymatuhin.ru&#41;.)
 
-[//]: # (Чаще чем на&nbsp;почте я&nbsp;бываю в твитере [@ymatuhin]&#40;https://twitter.com/ymatuhin&#41;.)
+[//]: # (Чаще чем на&nbsp;почте я&nbsp;бываю в твиттере [@ymatuhin]&#40;https://twitter.com/ymatuhin&#41;.)

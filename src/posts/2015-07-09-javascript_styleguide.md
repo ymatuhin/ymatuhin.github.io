@@ -262,23 +262,23 @@ class="pds">'</span></span> <span class="k">+</span> <span class="v">this</span>
     <div class="highlight highlighter-rouge"><pre><span class="c">// плохо</span>
 
 <span class="k">var</span> errorMessage <span class="k">=</span> <span class="s"><span class="pds">'</span>Эта
-сверхдлинная ошибка возникла из-за белой обезьяны. Не говори про обезъяну! Не слушай об обезьяне! Не думай об обезъяне!<
+сверхдлинная ошибка возникла из-за белой обезьяны. Не говори про обезьяну! Не слушай об обезьяне! Не думай об обезьяне!<
 span
 class="pds">'</span></span>;
 
 <span class="c">// плохо</span>
 <span class="k">var</span> errorMessage <span class="k">=</span> <span class="s"><span class="pds">'</span>Эта
 сверхдлинная ошибка возникла из-за белой обезьяны. \</span>
-<span class="s">Не говори про обезъяну! Не слушай об обезьяне! \</span>
-<span class="s">Не думай об обезъяне!<span class="pds">'</span></span>;
+<span class="s">Не говори про обезьяну! Не слушай об обезьяне! \</span>
+<span class="s">Не думай об обезьяне!<span class="pds">'</span></span>;
 
 <span class="c">// хорошо</span>
 <span class="k">var</span> errorMessage <span class="k">=</span> <span class="s"><span class="pds">'</span>Эта
 сверхдлинная ошибка возникла из-за белой обезьяны. <span
 class="pds">'</span></span> <span class="k">+</span>
-<span class="s"><span class="pds">'</span>Не говори про обезъяну! Не слушай об обезьяне! <span
+<span class="s"><span class="pds">'</span>Не говори про обезьяну! Не слушай об обезьяне! <span
 class="pds">'</span></span> <span class="k">+</span>
-<span class="s"><span class="pds">'</span>Не думай об обезъяне!<span class="pds">'</span></span>;</pre>
+<span class="s"><span class="pds">'</span>Не думай об обезьяне!<span class="pds">'</span></span>;</pre>
 </div>
   </li>
   <li><p>Когда строка создается программным путем, используйте Array::join вместо объединения строк. В основном для IE:
@@ -608,7 +608,7 @@ undefined</span>
 }
 
 <span class="c">// Интерпретатор переносит объявление переменной</span>
-<span class="c">// к верху области видимости.</span>
+<span class="c">// кверху области видимости.</span>
 <span class="c">// Что значит, что предыдущий пример в действительности</span>
 <span class="c">// будет воспринят интерпретатором так:</span>
 <span class="k">function</span> <span class="en">example</span>() {
@@ -866,7 +866,7 @@ class="k">||</span> <span class="s"><span class="pds">'</span>no type<span class
 </div>
   </li>
   <li><p>Префикс <code>TODO</code> помогает другим разработчикам быстро понять, что вы указываете на проблему, к которой
-      нужно вернуться в дальнейшем, или если вы предлагете решение проблемы, которое должно быть реализовано. Эти
+      нужно вернуться в дальнейшем, или если вы предлагаете решение проблемы, которое должно быть реализовано. Эти
       комментарии отличаются от обычных комментариев, так как не описывают текущее поведение, а призывают к действию,
       например <code>TODO -- нужно реализовать интерфейс</code>. Такие комментарии также автоматически обнаруживаются
       многими IDE и редакторами кода, что позволяет быстро перемещаться между ними.</p></li>
@@ -1197,7 +1197,7 @@ class="c1">0</span>;</pre>
   </li>
   <li><p><strong>Примечание:</strong> Будьте осторожны с побитовыми операциями. Числа в JavaScript являются <a
         rel="nofollow" href="http://es5.github.io/#x4.3.19">64-битными значениями</a>, но побитовые операции всегда
-      возвращают 32-битные значенения. [Источник](http://es5.github.io/#x11.7). Побитовые
+      возвращают 32-битные значения. [Источник](http://es5.github.io/#x11.7). Побитовые
       операции над числами, значение которых выходит за 32 бита (верхний предел: 2,147,483,647).</p>
 
     <pre><code>2147483647 &gt;&gt; 0 //=&gt; 2147483647

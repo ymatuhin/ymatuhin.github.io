@@ -70,7 +70,7 @@ require(['jquery'], function ($) { /* Ваш код тут */
 1. [Google CDN](https://developers.google.com/speed/libraries/) поддерживает Angular JS, Angular Material,
    Dojo, Ext JS, jQuery, jQuery Mobile, MooTools, Prototype, SWFObject, three.js, SPF и Web Font Loader;
 1. [Yandex CDN](https://tech.yandex.ru/jslibs/) (RU), из доступных библиотек AngularJS, Backbone.js,
-   Bootstrap, D3.js, Dojo, Highlight.js,jQuery, jQuery UI, Lo-Dash, Modernizr, Raphaёl, SWFObject, Underscore.js;
+   Bootstrap, D3.js, Dojo, Highlight.js,jQuery, jQuery UI, Lo-Dash, Modernizr, Raphaël, SWFObject, Underscore.js;
 1. [jQuery CDN](http://code.jquery.com/) (только для jQuery);
 1. [Microsoft CDN](https://www.asp.net/ajax/cdn) поддерживает jQuery/UI/Mobile, Modernizr, JSHint, Bootstrap,
    ASP.NET Web Forms and Ajax и другие;
@@ -80,7 +80,7 @@ require(['jquery'], function ($) { /* Ваш код тут */
 1. [OssCDN](https://osscdn.com/) — тоже много библиотек с возможностью загружать свои;
 
 Из всех, вышеперечисленных сервисов, только Яндекс на русском языке. Поэтому если вы не сильны в английском, я бы
-рекомендовал именно его. К тому же, там действительно одни из самых популярных javascript библиотек, в том числе
+рекомендовал именно его. К тому же там действительно представлены одни из самых популярных JavaScript-библиотек, в том числе
 очень популярный бутстрап. Для которого можно также воспользоваться [Bootstrap
 CDN](https://www.bootstrapcdn.com/).
 

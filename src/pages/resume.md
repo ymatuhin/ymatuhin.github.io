@@ -94,7 +94,7 @@ permalink: /resume/
 [//]: # ()
 [//]: # (* Прошел [подготовительные курсы для дизайнеров]&#40;/assets/img/sert.png&#41; в школу стажеров Бюро Горбунова)
 
-[//]: # (* Cлушал курс «архитектура JavaScript приложений» в [javascript.ninja]&#40;http://javascript.ninja&#41;)
+[//]: # (* Слушал курс «архитектура JavaScript приложений» в [javascript.ninja]&#40;http://javascript.ninja&#41;)
 
 [//]: # (* Был на встрече Яндекс БЭМап)
 
@@ -111,7 +111,7 @@ permalink: /resume/
 
 [//]: # (* JavaScript, CoffeeScript, ES2015, ES2016)
 
-[//]: # (* Разрабатывал как SPA, так и&nbsp;статику с&nbsp;бекендом на&nbsp;RoR)
+[//]: # (* Разрабатывал как SPA, так и&nbsp;статику с&nbsp;бэкендом на&nbsp;RoR)
 
 [//]: # (* VanillaJS, AngularJS 1.x, jQuery, Backbone, Jest)
 

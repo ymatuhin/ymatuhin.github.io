@@ -46,9 +46,9 @@ rel='nofollow'}. А я опишу новые (или старые) фишки, �
 
 ## Большие вкладки (табы) с превью, группировкой и возможностью поменять расположение.
 
-{% mediaImage "vivaldi/tabs_top.png", " аскрытые табы сверху в браузере Vivaldi" %}
+{% mediaImage "vivaldi/tabs_top.png", "Раскрытые табы сверху в браузере Vivaldi" %}
 
-{% mediaImage "vivaldi/tabs_left.png", " аскрытые табы слева в браузере Vivaldi" %}
+{% mediaImage "vivaldi/tabs_left.png", "Раскрытые табы слева в браузере Vivaldi" %}
 
 {% mediaImage "vivaldi/settings.png", "Vivaldi – Окно настроек" %}
 

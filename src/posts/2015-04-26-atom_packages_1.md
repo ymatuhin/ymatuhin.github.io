@@ -32,7 +32,7 @@ redirects:
         <br>
     </li>
     <li><strong>stylus</strong> (~12 000)
-        <br>Добавляет кучу снипетов для stylus
+        <br>Добавляет кучу сниппетов для stylus
         <br>
         <br>
     </li>
