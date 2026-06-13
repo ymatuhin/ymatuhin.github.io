@@ -1,5 +1,17 @@
 [
     {
+        "name": "Решатель замков для Gothic 1 Remake",
+        "summary": "Солвер замков сундуков для Gothic 1 Remake: подбирает последовательность поворотов отмычки.",
+        "category": "service",
+        "link": "https://gothic-lockpick.com/"
+    },
+    {
+        "name": "Pingometr для SwiftBar",
+        "summary": "Плагин для меню-бара macOS: показывает задержку, потери пакетов и стабильность сети, в том числе при работе через VPN.",
+        "category": "service",
+        "link": "https://github.com/ymatuhin/swiftbar-pingometer"
+    },
+    {
         "name": "Какая сейчас неделя?",
         "summary": "Подсказывает студентам, четная сейчас неделя или нет, и помогает не запутаться в расписании.",
         "category": "service",
@@ -18,11 +30,5 @@
         "category": "service",
         "cover": "projects/autoprefixer.png",
         "link": "https://autoprefixer.github.io/"
-    },
-    {
-        "name": "Решатель замков для Gothic 1 Remake",
-        "summary": "Солвер замков сундуков для Gothic 1 Remake: подбирает последовательность поворотов отмычки.",
-        "category": "service",
-        "link": "https://gothic-lockpick.com/"
     }
 ]
