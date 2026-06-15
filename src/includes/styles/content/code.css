@@ -18,6 +18,8 @@ pre {
   border: 1px solid var(--border-color);
   tab-size: 2;
   font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 code code,
